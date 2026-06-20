@@ -1,7 +1,15 @@
 # core/schema.py
 import strawberry
 from .models import Company, QuestionnaireResponse, InnovationInsight
-from .services.llm_service import generate_innovation_insight
+from .services.llm_services import generate_innovation_insight
+
+
+@strawberry.type
+class Query:
+    @strawberry.field
+    def health(self) -> str:
+        return "ok"
+
 
 @strawberry.type
 class InsightType:
@@ -9,15 +17,16 @@ class InsightType:
     ai_output: str
     innovation_score: float | None
 
+
 @strawberry.type
 class Mutation:
     @strawberry.mutation
     def submit_questionnaire(
-        self,
-        company_name: str,
-        sector: str,
-        size: str,
-        answers: strawberry.scalars.JSON
+            self,
+            company_name: str,
+            sector: str,
+            size: str,
+            answers: strawberry.scalars.JSON
     ) -> InsightType:
         company = Company.objects.create(name=company_name, sector=sector, size=size)
         qr = QuestionnaireResponse.objects.create(company=company, answers=answers)
@@ -30,5 +39,6 @@ class Mutation:
             ai_output=ai_text
         )
         return InsightType(id=insight.id, ai_output=ai_text, innovation_score=None)
+
 
 schema = strawberry.Schema(mutation=Mutation)
