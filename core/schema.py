@@ -30,7 +30,7 @@ class Mutation:
     ) -> InsightType:
         company = Company.objects.create(name=company_name, sector=sector, size=size)
         qr = QuestionnaireResponse.objects.create(company=company, answers=answers)
-        ai_text = generate_innovation_insight(
+        ai_text, duration_ms = generate_innovation_insight(
             {"name": company_name, "sector": sector, "size": size}, answers
         )
         insight = InnovationInsight.objects.create(
@@ -41,4 +41,4 @@ class Mutation:
         return InsightType(id=insight.id, ai_output=ai_text, innovation_score=None)
 
 
-schema = strawberry.Schema(mutation=Mutation)
+schema = strawberry.Schema(query=Query, mutation=Mutation)
