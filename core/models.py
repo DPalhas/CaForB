@@ -21,3 +21,13 @@ class InnovationInsight(models.Model):
     ai_output = models.TextField()  # Gemma4's recommendation
     innovation_score = models.FloatField(null=True)
     generated_at = models.DateTimeField(auto_now_add=True)
+    context_bundle = models.JSONField(default=dict)
+
+
+class LLMTrace(models.Model):
+    insight = models.ForeignKey(InnovationInsight, on_delete=models.CASCADE, related_name="traces")
+    step_name = models.CharField(max_length=100, default="single_inference")
+    input_payload = models.JSONField()
+    output_payload = models.JSONField()
+    duration_ms = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
