@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Force readable text colors across all elements */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a;
+}
+
+p, span, label, li {
+  color: #374151;
+}
+
+input, textarea, select {
+  color: #111827;
+  background-color: #ffffff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
