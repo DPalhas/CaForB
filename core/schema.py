@@ -2,7 +2,7 @@ import strawberry
 import json
 from typing import List
 from .models import Company, QuestionnaireResponse, InnovationInsight, LLMTrace
-from .services.llm_services import generate_innovation_insight
+from .services.llm_services import generate_innovation_insight, _extract_json
 
 
 # --- Output Types ---
@@ -80,12 +80,8 @@ class Mutation:
             {"name": company_name, "sector": sector, "size": size}, answers
         )
 
-        try:
-            parsed = json.loads(ai_text)
-            score = parsed.get("maturity_score", None)
-        except (json.JSONDecodeError, AttributeError):
-            parsed = {}
-            score = None
+        parsed = _extract_json(ai_text)
+        score = parsed.get("maturity_score", None)
 
         insight = InnovationInsight.objects.create(
             response=qr,
