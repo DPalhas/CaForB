@@ -21,71 +21,77 @@ export default function ResultsPage() {
   const insight = data?.getInsight;
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="w-full max-w-2xl mx-auto">
+    <>
+      {/* Navbar */}
+      <nav className="w-full px-8 py-5 flex items-center justify-between border-b border-gray-100 bg-white">
+        <span className="text-lg font-bold text-teal-700 tracking-tight">CaForB</span>
+        <button
+          onClick={() => router.push("/assessment")}
+          className="px-4 py-2 text-sm font-semibold text-teal-600 border border-teal-200 rounded-lg hover:bg-teal-50 transition"
+        >
+          ← New Assessment
+        </button>
+      </nav>
 
-        {/* Header */}
-        <div className="mb-8 text-center">
-          <h1 className="text-2xl font-bold text-gray-900">Your Innovation Assessment</h1>
-          <p className="text-sm text-gray-500 mt-1">
-            {loading ? "Generating your personalised strategy..." : `Analysis #${id}`}
-          </p>
-        </div>
+      <main className="min-h-screen bg-gray-50 py-12 px-4">
+        <div className="w-full max-w-2xl mx-auto">
 
-        {/* Loading state */}
-        {loading && (
-          <div className="flex flex-col items-center gap-4 mb-8">
-            <div className="w-10 h-10 border-4 border-teal-600 border-t-transparent rounded-full animate-spin" />
-            <p className="text-sm text-gray-500">Analysing your company profile with AI...</p>
+          {/* Header */}
+          <div className="mb-8 text-center">
+            <h1 className="text-2xl font-bold text-gray-900">Your Innovation Assessment</h1>
+            <p className="text-sm text-gray-500 mt-1">
+              {loading ? "Generating your personalised strategy..." : `Analysis #${id}`}
+            </p>
           </div>
-        )}
-        {loading && <ResultsSkeleton />}
 
-        {/* Error state */}
-        {error && (
-          <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-            <p className="text-red-700 font-medium">Something went wrong loading your results.</p>
-            <p className="text-red-500 text-sm mt-1">{error.message}</p>
-            <button
-              onClick={() => router.push("/assessment")}
-              className="mt-4 px-4 py-2 text-sm bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
-            >
-              Try Again
-            </button>
-          </div>
-        )}
+          {/* Loading state */}
+          {loading && (
+            <div className="flex flex-col items-center gap-4 mb-8">
+              <div className="w-10 h-10 border-4 border-teal-600 border-t-transparent rounded-full animate-spin" />
+              <p className="text-sm text-gray-500">Analysing your company profile with AI...</p>
+            </div>
+          )}
+          {loading && <ResultsSkeleton />}
 
-        {/* Results */}
-        {insight && (
-          <div className="flex flex-col gap-6">
-
-            {/* Score */}
-            {insight.innovationScore !== null && (
-              <ScoreCard score={insight.innovationScore} />
-            )}
-
-            {/* Opportunities */}
-            <OpportunitiesList opportunities={insight.opportunities} />
-
-            {/* Next Steps */}
-            <NextStepsList steps={insight.nextSteps} />
-
-            {/* Weaknesses */}
-            <WeaknessesList weaknesses={insight.keyWeaknesses} />
-
-            {/* CTA */}
-            <div className="text-center pt-4 pb-8">
+          {/* Error state */}
+          {error && (
+            <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
+              <p className="text-red-700 font-medium">Something went wrong loading your results.</p>
+              <p className="text-red-500 text-sm mt-1">{error.message}</p>
               <button
                 onClick={() => router.push("/assessment")}
-                className="px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition"
+                className="mt-4 px-4 py-2 text-sm bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
               >
-                Run Another Assessment →
+                Try Again
               </button>
             </div>
-          </div>
-        )}
+          )}
 
-      </div>
-    </main>
+          {/* Results */}
+          {insight && (
+            <div className="flex flex-col gap-6">
+
+              {insight.innovationScore !== null && (
+                <ScoreCard score={insight.innovationScore} />
+              )}
+
+              <OpportunitiesList opportunities={insight.opportunities} />
+              <NextStepsList steps={insight.nextSteps} />
+              <WeaknessesList weaknesses={insight.keyWeaknesses} />
+
+              <div className="text-center pt-4 pb-8">
+                <button
+                  onClick={() => router.push("/assessment")}
+                  className="px-6 py-3 text-sm font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition"
+                >
+                  Run Another Assessment →
+                </button>
+              </div>
+            </div>
+          )}
+
+        </div>
+      </main>
+    </>
   );
 }
