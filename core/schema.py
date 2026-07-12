@@ -1,6 +1,6 @@
 import strawberry
 import json
-from typing import List
+from typing import List, Optional
 from .models import Company, QuestionnaireResponse, InnovationInsight, LLMTrace
 from .services.llm_services import generate_innovation_insight, _extract_json
 
@@ -8,12 +8,28 @@ from .services.llm_services import generate_innovation_insight, _extract_json
 # --- Output Types ---
 
 @strawberry.type
+class ExecutionPlanType:
+    first_actions: List[str]
+    resources_needed: List[str]
+    success_metric: str
+    milestones: List[str]
+
+
+@strawberry.type
 class OpportunityType:
     type: str
     title: str
     rationale: str
+    execution_plan: Optional[ExecutionPlanType]
     impact: str
     difficulty: str
+    timeframe: str
+
+
+@strawberry.type
+class NextStepType:
+    action: str
+    owner: str
     timeframe: str
 
 
@@ -23,7 +39,7 @@ class InsightType:
     ai_output: str
     innovation_score: float | None
     opportunities: List[OpportunityType]
-    next_steps: List[str]
+    next_steps: List[NextStepType]
     key_weaknesses: List[str]
 
 
@@ -31,15 +47,39 @@ class InsightType:
 
 def _insight_to_type(insight: InnovationInsight) -> InsightType:
     bundle = insight.context_bundle or {}
-    opportunities = [
-        OpportunityType(**o) for o in bundle.get("opportunities", [])
+
+    opportunities = []
+    for o in bundle.get("opportunities", []):
+        exec_plan_data = o.get("execution_plan")
+        exec_plan = ExecutionPlanType(**exec_plan_data) if exec_plan_data else None
+
+        opportunities.append(
+            OpportunityType(
+                type=o.get("type", ""),
+                title=o.get("title", ""),
+                rationale=o.get("rationale", ""),
+                execution_plan=exec_plan,
+                impact=o.get("impact", ""),
+                difficulty=o.get("difficulty", ""),
+                timeframe=o.get("timeframe", ""),
+            )
+        )
+
+    next_steps = [
+        NextStepType(
+            action=s.get("action", ""),
+            owner=s.get("owner", ""),
+            timeframe=s.get("timeframe", ""),
+        )
+        for s in bundle.get("next_steps", [])
     ]
+
     return InsightType(
         id=insight.id,
         ai_output=insight.ai_output,
         innovation_score=insight.innovation_score,
         opportunities=opportunities,
-        next_steps=bundle.get("next_steps", []),
+        next_steps=next_steps,
         key_weaknesses=bundle.get("key_weaknesses", [])
     )
 
