@@ -9,11 +9,21 @@ export const GET_INSIGHT = gql`
         type
         title
         rationale
+        executionPlan {
+          firstActions
+          resourcesNeeded
+          successMetric
+          milestones
+        }
         impact
         difficulty
         timeframe
       }
-      nextSteps
+      nextSteps {
+        action
+        owner
+        timeframe
+      }
       keyWeaknesses
     }
   }

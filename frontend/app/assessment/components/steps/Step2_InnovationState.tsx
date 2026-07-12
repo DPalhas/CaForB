@@ -62,6 +62,26 @@ export default function Step2_InnovationState({ data, onChange }: Props) {
           className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none"
         />
       </div>
+      {/* Customer/Market Feedback */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Customer feedback process *
+        </label>
+        <p className="text-xs text-gray-500 mb-2">
+          How does your company currently gather customer or market feedback?
+        </p>
+        <select
+          value={data.customerFeedback}
+          onChange={(e) => onChange("customerFeedback", e.target.value)}
+          className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+        >
+          <option value="">Select an option</option>
+          <option value="no_formal_process">No formal process</option>
+          <option value="informal_conversations">Informal conversations</option>
+          <option value="surveys_nps">Surveys or NPS</option>
+          <option value="dedicated_research">Dedicated customer research function</option>
+        </select>
+      </div>
     </div>
   );
 }

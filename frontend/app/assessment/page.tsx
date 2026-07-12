@@ -17,10 +17,10 @@ const STEP_LABELS = [
 ];
 
 const STEP_REQUIRED: (keyof AssessmentFormData)[][] = [
-  ["companyName", "sector", "size"],
-  ["innovationProcess"],
+  ["companyName", "sector", "size", "companyDescription"],
+  ["innovationProcess", "customerFeedback"],
   ["strategicGoals", "timeHorizon"],
-  ["teamSize", "digitalMaturity"],
+  ["teamSize", "digitalMaturity","budgetAllocation", "decisionMaking"],
   ["mainBarrier"],
 ];
 
@@ -111,13 +111,16 @@ export default function AssessmentPage() {
 
   const [submitQuestionnaire, { loading }] = useMutation(SUBMIT_QUESTIONNAIRE);
 
-  const handleChange = (field: keyof AssessmentFormData, value: string) => {
+  const handleChange = (field: keyof AssessmentFormData, value: string | string[]) => {
     setForm((prev) => ({ ...prev, [field]: value }));
     setError(null);
   };
 
   const isStepValid = () =>
-    STEP_REQUIRED[step].every((field) => form[field] !== "");
+  STEP_REQUIRED[step].every((field) => {
+    const value = form[field];
+    return Array.isArray(value) ? value.length > 0 : value !== "";
+  });
 
   const handleNext = () => {
     if (!isStepValid()) {
@@ -140,12 +143,16 @@ export default function AssessmentPage() {
     }
 
     const answers = {
+      company_description: form.companyDescription,
       innovation_process: form.innovationProcess,
       past_initiatives: form.pastInitiatives,
+      customer_feedback: form.customerFeedback,
       strategic_goals: form.strategicGoals,
       time_horizon: form.timeHorizon,
       team_size: form.teamSize,
       digital_maturity: form.digitalMaturity,
+      budget_allocation: form.budgetAllocation,
+      decision_making: form.decisionMaking,
       main_barrier: form.mainBarrier,
       additional_context: form.additionalContext,
     };

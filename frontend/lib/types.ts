@@ -1,4 +1,11 @@
-export type CompanySize = "SME" | "Mid" | "Large";
+export type CompanySize = "Micro" | "Small" | "Medium" | "Large";
+
+export type RevenueRange =
+  | "under_1m"
+  | "1m_to_10m"
+  | "10m_to_50m"
+  | "over_50m"
+  | "";
 
 export interface AssessmentFormData {
   // Section 1 — Company Profile
@@ -17,10 +24,16 @@ export interface AssessmentFormData {
   // Section 4 — Internal Capabilities
   teamSize: string;
   digitalMaturity: string;
+  budgetPercentage: number;     // 0-100, replaces budgetAllocation dropdown
+  revenueRange: RevenueRange;   // NEW — absolute revenue bracket
+  decisionMaking: string;
 
   // Section 5 — Pain Points
-  mainBarrier: string;
+  mainBarrier: string[];
   additionalContext: string;
+
+  companyDescription: string;
+  customerFeedback: string;
 }
 
 export const EMPTY_FORM: AssessmentFormData = {
@@ -33,6 +46,11 @@ export const EMPTY_FORM: AssessmentFormData = {
   timeHorizon: "",
   teamSize: "",
   digitalMaturity: "",
-  mainBarrier: "",
+  budgetPercentage: 5,
+  revenueRange: "",
+  decisionMaking: "",
+  mainBarrier: [],
   additionalContext: "",
+  companyDescription: "",
+  customerFeedback: "",
 };

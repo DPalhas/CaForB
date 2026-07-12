@@ -19,11 +19,21 @@ export const SUBMIT_QUESTIONNAIRE = gql`
         type
         title
         rationale
+        executionPlan {
+          firstActions
+          resourcesNeeded
+          successMetric
+          milestones
+        }
         impact
         difficulty
         timeframe
       }
-      nextSteps
+      nextSteps {
+        action
+        owner
+        timeframe
+      }
       keyWeaknesses
     }
   }
