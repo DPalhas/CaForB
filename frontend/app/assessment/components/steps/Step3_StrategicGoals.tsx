@@ -11,6 +11,19 @@ const HORIZONS = [
   { value: "long", label: "Long-term", description: "3+ years" },
 ];
 
+const RISK_APPETITES = [
+  { value: "conservative", label: "Conservative", description: "Prefer safe, proven, low-disruption changes" },
+  { value: "balanced", label: "Balanced", description: "Open to moderate risk if the upside justifies it" },
+  { value: "bold", label: "Bold", description: "Willing to make big bets, even if some fail" },
+];
+
+const STRATEGIC_PRIORITIES = [
+  { value: "growth", label: "Growth", description: "Expand revenue, market share or customer base" },
+  { value: "efficiency", label: "Efficiency", description: "Reduce costs, streamline operations" },
+  { value: "market_defense", label: "Market Defense", description: "Protect existing position from competitors" },
+  { value: "diversification", label: "Diversification", description: "Enter new markets or product lines" },
+];
+
 export default function Step3_StrategicGoals({ data, onChange }: Props) {
   return (
     <div className="space-y-6">
@@ -38,6 +51,30 @@ export default function Step3_StrategicGoals({ data, onChange }: Props) {
         />
       </div>
 
+      {/* Primary strategic priority — NEW */}
+      <div className="space-y-2">
+        <label className="block text-sm font-medium text-gray-700">
+          What is your primary strategic priority? <span className="text-red-500">*</span>
+        </label>
+        <div className="grid grid-cols-2 gap-3">
+          {STRATEGIC_PRIORITIES.map(({ value, label, description }) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => onChange("strategicPriority", value)}
+              className={`border rounded-lg p-3 text-left transition-all
+                ${data.strategicPriority === value
+                  ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
+                  : "border-gray-200 hover:border-gray-300"
+                }`}
+            >
+              <div className="text-sm font-semibold text-gray-800">{label}</div>
+              <div className="text-xs text-gray-500">{description}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Time horizon */}
       <div className="space-y-2">
         <label className="block text-sm font-medium text-gray-700">
@@ -51,6 +88,30 @@ export default function Step3_StrategicGoals({ data, onChange }: Props) {
               onClick={() => onChange("timeHorizon", value)}
               className={`border rounded-lg p-3 text-left transition-all
                 ${data.timeHorizon === value
+                  ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
+                  : "border-gray-200 hover:border-gray-300"
+                }`}
+            >
+              <div className="text-sm font-semibold text-gray-800">{label}</div>
+              <div className="text-xs text-gray-500">{description}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Risk appetite — NEW */}
+      <div className="space-y-2">
+        <label className="block text-sm font-medium text-gray-700">
+          How much risk is your company willing to take to pursue innovation? <span className="text-red-500">*</span>
+        </label>
+        <div className="grid grid-cols-3 gap-3">
+          {RISK_APPETITES.map(({ value, label, description }) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => onChange("riskAppetite", value)}
+              className={`border rounded-lg p-3 text-left transition-all
+                ${data.riskAppetite === value
                   ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
                   : "border-gray-200 hover:border-gray-300"
                 }`}

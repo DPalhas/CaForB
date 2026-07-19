@@ -14,6 +14,12 @@ const BARRIERS = [
   { value: "strategy", label: "Unclear strategic direction" },
 ];
 
+const COMPETITIVE_LEVELS = [
+  { value: "low", label: "Low urgency", description: "We're keeping pace or ahead" },
+  { value: "medium", label: "Medium urgency", description: "Some competitors moving faster" },
+  { value: "high", label: "High urgency", description: "Competitors clearly innovating faster" },
+];
+
 export default function Step5_PainPoints({ data, onChange }: Props) {
   const toggleBarrier = (value: string) => {
     const current = data.mainBarrier;
@@ -58,6 +64,33 @@ export default function Step5_PainPoints({ data, onChange }: Props) {
                 )}
               </span>
               {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Competitive pressure — NEW */}
+      <div className="space-y-2">
+        <label className="block text-sm font-medium text-gray-700">
+          Are competitors already innovating faster than you? <span className="text-red-500">*</span>
+        </label>
+        <p className="text-xs text-gray-500">
+          Higher urgency favors bolder, faster-moving opportunities over purely incremental ones.
+        </p>
+        <div className="grid grid-cols-3 gap-3">
+          {COMPETITIVE_LEVELS.map(({ value, label, description }) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => onChange("competitivePressure", value)}
+              className={`border rounded-lg p-3 text-left transition-all
+                ${data.competitivePressure === value
+                  ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
+                  : "border-gray-200 hover:border-gray-300"
+                }`}
+            >
+              <div className="text-sm font-semibold text-gray-800">{label}</div>
+              <div className="text-xs text-gray-500">{description}</div>
             </button>
           ))}
         </div>

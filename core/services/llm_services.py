@@ -36,6 +36,10 @@ def _estimate_budget(answers: dict) -> str:
 def build_innovation_prompt(company: dict, answers: dict) -> str:
     formatted_answers = json.dumps(answers, indent=2)
     estimated_budget = _estimate_budget(answers)
+    regulatory_level = answers.get("regulatoryEnvironment", "unknown")
+    competitive_pressure = answers.get("competitivePressure", "unknown")
+    risk_appetite = answers.get("riskAppetite", "unknown")
+    strategic_priority = answers.get("strategicPriority", "unknown")
 
     return f"""You are a strategic innovation advisor. Analyse the following company 
 profile and questionnaire responses, then respond ONLY with valid JSON in this exact format:
@@ -76,6 +80,10 @@ Questionnaire answers:
 Consider the following when forming your assessment:
 - Estimated annual innovation budget: {estimated_budget}. Decision-making structure ({answers.get('decisionMaking', 'unknown')}) should directly influence the "difficulty" and "timeframe" values, as well as the concreteness of "resources_needed" in execution_plan. When estimating resources_needed (e.g. tools, headcount, consulting spend), stay within the realistic bounds of the estimated budget above. Low budget or single-owner approval should bias toward lower-difficulty, faster-timeframe opportunities with minimal resource asks unless justified otherwise.
 - Customer feedback process ({answers.get('customerFeedback', 'unknown')}) should influence whether opportunities lean toward validated, incremental improvements or exploratory, radical bets.
+- Regulatory environment ({regulatory_level}) should directly influence "difficulty" and "timeframe": high regulation should push toward higher difficulty, longer timeframes, and "first_actions" that explicitly include compliance, legal review, or certification steps where relevant. Low regulation allows faster, more experimental timeframes without added compliance overhead.
+- Competitive pressure ({competitive_pressure}) should influence the balance between "incremental" and "radical" opportunity types: high urgency should bias toward including at least one radical, faster-moving opportunity even if higher risk, while low urgency justifies purely incremental, longer-horizon suggestions. Explicitly reflect this urgency in the "rationale" field when relevant.
+- Risk appetite ({risk_appetite}) should be the primary driver of the "type" field for each opportunity: "conservative" should produce mostly or entirely "incremental" opportunities with cautious framing in the rationale; "bold" should include at least one clearly "radical" opportunity even if difficulty is high; "balanced" should mix both types roughly evenly. Do not contradict a conservative risk appetite with a majority-radical opportunity list, even if competitive pressure is high — in that case, favor faster-timeframe incremental moves instead.
+- Strategic priority ({strategic_priority}) should shape the "title" and "rationale" of each opportunity so they visibly serve that priority: "growth" opportunities should target new revenue, customers or markets; "efficiency" opportunities should target cost reduction or process optimization; "market_defense" opportunities should target retention, competitive moats or countering specific competitor moves; "diversification" opportunities should target new products, verticals or business models distinct from the core business.
 
 CRITICAL REQUIREMENTS FOR EXECUTION PLANS:
 - "first_actions" must be concrete and immediately actionable — name specific tools, roles, or deliverables. Avoid vague phrases like "establish a process" or "conduct analysis" without specifying what the process/analysis actually involves.
