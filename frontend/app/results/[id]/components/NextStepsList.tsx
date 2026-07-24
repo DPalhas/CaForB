@@ -14,7 +14,7 @@ export default function NextStepsList({ steps }: NextStepsListProps) {
   return (
     <div className="bg-teal-50 rounded-2xl border border-teal-100 p-6">
       <h2 className="text-lg font-semibold text-teal-800 mb-4">
-        ✅ Recommended Next Steps
+          Recommended Next Steps
       </h2>
       <ol className="flex flex-col gap-4">
         {steps.map((step, index) => (

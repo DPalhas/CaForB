@@ -8,7 +8,7 @@ export default function WeaknessesList({ weaknesses }: WeaknessesListProps) {
   return (
     <div className="bg-red-50 rounded-2xl border border-red-100 p-6">
       <h2 className="text-lg font-semibold text-red-800 mb-4">
-        ⚠️ Key Weaknesses Identified
+        Key Weaknesses Identified
       </h2>
       <ul className="flex flex-col gap-2">
         {weaknesses.map((weakness, index) => (

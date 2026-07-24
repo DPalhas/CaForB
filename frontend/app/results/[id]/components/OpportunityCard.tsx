@@ -81,7 +81,7 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
             <div className="mt-4 flex flex-col gap-4 border-t border-gray-100 pt-4">
 
               <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">🎯 First Actions</p>
+                <p className="text-xs font-semibold text-gray-700 mb-2">First Actions</p>
                 <ul className="flex flex-col gap-1.5">
                   {opportunity.executionPlan!.firstActions.map((action, i) => (
                     <li key={i} className="text-xs text-gray-600 leading-relaxed flex gap-2">
@@ -93,7 +93,7 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
               </div>
 
               <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">🧰 Resources Needed</p>
+                <p className="text-xs font-semibold text-gray-700 mb-2">Resources Needed</p>
                 <div className="flex flex-wrap gap-1.5">
                   {opportunity.executionPlan!.resourcesNeeded.map((resource, i) => (
                     <span key={i} className="text-xs bg-gray-50 text-gray-600 px-2 py-1 rounded-lg border border-gray-100">
@@ -104,14 +104,14 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
               </div>
 
               <div>
-                <p className="text-xs font-semibold text-gray-700 mb-1.5">📊 Success Metric</p>
+                <p className="text-xs font-semibold text-gray-700 mb-1.5">Success Metric</p>
                 <p className="text-xs text-teal-700 font-medium bg-teal-50 px-3 py-2 rounded-lg border border-teal-100">
                   {opportunity.executionPlan!.successMetric}
                 </p>
               </div>
 
               <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">🗓 Milestones</p>
+                <p className="text-xs font-semibold text-gray-700 mb-2">Milestones</p>
                 <ul className="flex flex-col gap-1.5">
                   {opportunity.executionPlan!.milestones.map((milestone, i) => (
                     <li key={i} className="text-xs text-gray-600 leading-relaxed flex gap-2">
