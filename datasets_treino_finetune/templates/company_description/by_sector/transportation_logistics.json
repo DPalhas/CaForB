@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "Temperature-controlled logistics provider operating 50 refrigerated trucks and 8,000 m² of cold storage warehousing. Specialize in pharmaceutical and fresh food distribution across Iberia. Evaluating real-time temperature monitoring sensors and predictive cold-chain failure alerting.",
+    "Last-mile parcel delivery company handling 15,000 packages per day for e-commerce clients in urban and suburban areas. Fleet of 60 electric vans and 40 cargo bikes for city-center deliveries. Key challenge is dynamic route optimization accounting for real-time traffic and parking availability.",
+    "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors.",
+    "Port terminal operator handling container and bulk cargo at a major Atlantic port. Processing 180,000 TEU annually with 4 ship-to-shore cranes. Currently evaluating automated stacking cranes and digital twin simulation for yard optimization to increase throughput by 15%."
+  ]
+}

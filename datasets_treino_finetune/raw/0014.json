@@ -1,0 +1,122 @@
+{
+  "id": "0014",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:53:29.819351+00:00",
+    "duration_ms": 38543,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metals Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Precision Metals Inc. is a medium-sized manufacturer specializing in high-precision metal components for the aerospace and medical device industries. The company operates under strict quality control standards requiring extensive documentation and compliance with environmental regulations.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently implemented a formal R&D pipeline focused on material science improvements and automated production line optimization. They have also completed several regulatory compliance audits successfully over the last two years to ensure operational stability.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly improve operational efficiency by reducing waste and cycle times, thereby lowering production costs while maintaining uncompromising quality standards. We aim to stay competitive in high-compliance markets through smarter processes.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core engineering team is small but highly skilled, collaborating closely with a growing compliance department to manage complex regulatory requirements.",
+      "digitalMaturity": 3,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The market is highly competitive, requiring continuous innovation not just in product design but also in operational throughput."
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Implement AI-Driven Predictive Maintenance for Machinery",
+        "rationale": "Given the high regulatory environment and efficiency priority, implementing predictive maintenance can drastically reduce unplanned downtime and material waste. This radical shift requires advanced data integration capabilities to monitor equipment health in real-time.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three critical production lines for pilot AI installation.",
+            "Select a vendor specializing in industrial IoT sensors."
+          ],
+          "resources_needed": [
+            "Data engineering consultant",
+            "Initial hardware investment ($50,000)"
+          ],
+          "success_metric": "Reduction of unplanned downtime by 30% within 12 months.",
+          "milestones": [
+            "Pilot implementation complete (Month 6)",
+            "Full integration and performance review (Month 10)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Streamline Regulatory Documentation via Digital Twin Modeling",
+        "rationale": "To meet high regulatory demands efficiently, developing a digital twin model of the production process can simulate compliance scenarios and automate documentation generation. This incremental step improves accuracy and speeds up audit readiness.",
+        "execution_plan": {
+          "first_actions": [
+            "Define scope for modeling key assembly stages.",
+            "Invest in specialized simulation software licenses."
+          ],
+          "resources_needed": [
+            "Software licensing fee ($30,000)",
+            "Data scientist hours (part-time)"
+          ],
+          "success_metric": "Reduction of manual documentation preparation time by 40%.",
+          "milestones": [
+            "Model functional prototype (Month 7)",
+            "Integration into Quality Assurance workflow (Month 12)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional task force (Engineering, IT, Compliance) to evaluate the feasibility of AI pilot projects.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct gap analysis between current operational data infrastructure and requirements for digital twin modeling.",
+        "owner": "IT Director",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Form a project charter and secure budget approval for the pilot of predictive maintenance (Opportunity 1).",
+        "owner": "CFO / VP of Strategy",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Outdated legacy production scheduling systems hindering real-time efficiency gains.",
+      "High reliance on key personnel for specialized machinery maintenance, creating talent vulnerability.",
+      "Bureaucratic bottlenecks in the formal approval process slowing down rapid prototyping."
+    ]
+  }
+}

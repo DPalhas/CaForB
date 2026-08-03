@@ -1,0 +1,142 @@
+{
+  "id": "0025",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:57:52.402221+00:00",
+    "duration_ms": 22615,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "AgriTrack Solutions",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "AgriTrack Solutions provides cloud-based precision farming software designed to optimize crop yield and resource management for mid-sized commercial farms. We focus on integrating IoT data with predictive analytics, offering a comprehensive platform that streamlines operational efficiency.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We recently launched a major UI overhaul of our core dashboard (incremental) and have begun pilot testing an AI integration for automated disease detection within the next fiscal year.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is achieving sustainable revenue growth by increasing market penetration in high-value agricultural regions. We aim to solidify our position as a trusted, reliable platform provider while maintaining operational stability and controlled expansion.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core product team consists of 10 specialized engineers and 3 sales/marketing personnel, operating in a collaborative environment focused on stability.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Feature Expansion for Adjacent Market Integration",
+        "rationale": "Leveraging existing platform stability and data foundation allows us to incrementally add value by integrating specialized advisory modules targeting niche commodity markets (e.g., hydroponics). This reduces technical risk while exploring new revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market needs assessment for 2 adjacent vertical niches.",
+            "Allocate 3 junior developers to build MVP feature spec."
+          ],
+          "resources_needed": [
+            "1 part-time UX consultant (40 hrs/month)",
+            "Internal development hours budget ($5k)"
+          ],
+          "success_metric": "Achieve 15% adoption rate in the first target niche within Q3.",
+          "milestones": [
+            "Q2: Finalize feature roadmap for Niche A."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive AI Model for Early Pest/Disease Identification",
+        "rationale": "Developing a proprietary machine learning model will enable proactive, hyper-localized alerts. While requiring significant effort, this aligns with our growth priority by creating a defensible IP moat that significantly differentiates us from competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Acquire 5 years of high-resolution historical sensor data.",
+            "Hire one specialized Data Scientist."
+          ],
+          "resources_needed": [
+            "Salaries for Data Scientist ($120k/year)",
+            "Cloud ML computing credits ($20k)"
+          ],
+          "success_metric": "Model accuracy improvement of 30% over baseline within the first year.",
+          "milestones": [
+            "Month 4: Model training completion."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Customer Retention Program Optimization",
+        "rationale": "Focusing on improving user experience and reducing churn through targeted service enhancements is a low-risk way to ensure stable growth. This directly supports the conservative risk appetite by protecting existing revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement automated quarterly health check surveys.",
+            "Launch a dedicated customer success onboarding team."
+          ],
+          "resources_needed": [
+            "Training for 2 CS staff ($10k)",
+            "CRM integration costs ($3k)"
+          ],
+          "success_metric": "Reduce annual churn rate by 8% through Q4.",
+          "milestones": [
+            "Month 2: Roll out automated survey pipeline."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional task force to evaluate the feasibility of the Predictive AI Model (Opportunity 2).",
+        "owner": "CTO / Head of R&D",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Define KPIs and resource allocation for optimizing Customer Retention Program based on current NPS data.",
+        "owner": "VP of Marketing",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a comprehensive talent audit to identify skill gaps required for expanding the development team.",
+        "owner": "HR Director",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow time-to-market for new features due to rigid formal process.",
+      "High dependency on a few key technical personnel (talent concentration).",
+      "Inconsistent data quality across various client implementations."
+    ]
+  }
+}

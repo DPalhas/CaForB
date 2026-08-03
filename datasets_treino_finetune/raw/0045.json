@@ -1,0 +1,123 @@
+{
+  "id": "0045",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:07:36.827758+00:00",
+    "duration_ms": 46391,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metals Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Precision Metals specializes in the production of high-grade aerospace components. The company operates within a highly regulated environment due to stringent quality and environmental standards required for defense contracts. It employs specialized labor and utilizes advanced CNC machinery.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Over the last three years, the company has focused on incremental improvements in material usage and workflow optimization. They successfully implemented a partial digital upgrade to their inventory tracking system but have not yet adopted fully integrated AI-driven process automation.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goals are to reduce operational overhead by 15% through process streamlining and enhance product quality consistency. The company aims to maintain compliance while simultaneously lowering the cost per unit produced for key contracts.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core innovation team consists of 5 dedicated engineering and operations specialists who work closely with management to implement change.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Manufacturing Workflow Redesign",
+        "rationale": "Implementing standard Lean principles for material flow can reduce waste and operational cycle times without risking regulatory non-compliance. This directly targets the efficiency priority.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a 30-day process mapping exercise in the machining department",
+            "Pilot Kanban system implementation for raw material inventory tracking"
+          ],
+          "resources_needed": [
+            "1 Operations Analyst FTE (part-time)",
+            "Software for process visualization tools ($5,000)"
+          ],
+          "success_metric": "Reduce machine idle time by 12% within Q3",
+          "milestones": [
+            "Q2: Complete process mapping and resource allocation",
+            "Q3: Full pilot of Kanban system in one production line"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Regulatory Compliance Automation (Tier 1)",
+        "rationale": "Automating the data collection and reporting for standard compliance checks will reduce manual entry errors and ensure faster regulatory sign-offs, improving efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three repetitive documentation tasks requiring manual review",
+            "Evaluate low-code automation tools (e.g., RPA) feasibility for data extraction"
+          ],
+          "resources_needed": [
+            "Consultant specializing in industry compliance ($10,000)",
+            "Licensing fees for RPA software ($2,000)"
+          ],
+          "success_metric": "Reduce documentation review time by 40% and eliminate manual data entry errors",
+          "milestones": [
+            "Q3: Final selection of automation tool",
+            "Q4: Successful deployment on one compliance reporting module"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to define the scope and success metrics for the Lean Manufacturing Workflow Redesign.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct an internal audit of current documentation processes against key regulatory standards (e.g., ISO, specific defense standards).",
+        "owner": "Compliance Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Schedule a meeting with the small leadership team to review and approve the initial budget request for the process mapping phase.",
+        "owner": "CEO",
+        "timeframe": "Within 1 week"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on manual data entry, leading to potential errors and time waste.",
+      "Siloed knowledge among senior engineering staff hindering cross-departmental efficiency gains.",
+      "Conservative adoption of AI/ML technologies due to perceived high initial integration cost."
+    ]
+  }
+}

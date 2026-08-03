@@ -1,0 +1,147 @@
+{
+  "id": "0019",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:55:16.854090+00:00",
+    "duration_ms": 21162,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Fabrication Inc.",
+      "sector": "Manufacturing",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Precision Metal Fabrication Inc. specializes in custom component manufacturing for the automotive and industrial sectors, utilizing CNC machinery. The company operates with a highly localized supply chain, focusing on high-quality output rather than mass production scale. Operations are currently stable but face increasing pressure to reduce operational overhead and improve throughput.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently implemented lean manufacturing principles focused on reducing waste in the assembly process. They have also begun exploring automated toolpath optimization for their primary CNC machines to minimize material usage.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to achieve significant operational efficiency by streamlining production bottlenecks and lowering the cost per unit. We aim to maintain high quality while aggressively cutting non-value-added processes over the next three years.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "The team consists of 15 skilled technicians and a small management group focused heavily on production oversight. Communication flows primarily through daily operational stand-ups.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is competitive, demanding faster turnaround times and lower unit costs while maintaining stringent quality standards."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Process Mapping Initiative",
+        "rationale": "As the core strategic goal is efficiency, mapping current workflows will identify specific bottlenecks and redundant steps that can be eliminated immediately.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a full value stream map of the top three production lines.",
+            "Identify the top five areas of material waste using time studies."
+          ],
+          "resources_needed": [
+            "Internal project lead time (20% allocation)",
+            "Software for process mapping tools"
+          ],
+          "success_metric": "15% reduction in cycle time across targeted lines within 6 months.",
+          "milestones": [
+            "Complete full value stream map (Month 1).",
+            "Implement three high-impact waste reduction changes (Months 2-4)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Toolpath Optimization Pilot",
+        "rationale": "Leveraging existing digital tools to optimize CNC toolpaths can reduce material scrap and machining time, directly impacting operational cost efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-volume product line for the pilot.",
+            "Evaluate off-the-shelf software solutions for CAD/CAM optimization."
+          ],
+          "resources_needed": [
+            "Software licensing cost (estimated $5k)",
+            "Time from the lead technician"
+          ],
+          "success_metric": "10% reduction in material scrap rate within 9 months.",
+          "milestones": [
+            "Pilot software evaluation complete (Month 2).",
+            "Successful implementation on pilot line and performance review (Month 5)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Automation of Quality Inspection via AI Vision",
+        "rationale": "Implementing computer vision to replace manual quality checks can drastically improve consistency, reduce human error (a major efficiency drain), and potentially speed up the inspection process.",
+        "execution_plan": {
+          "first_actions": [
+            "Define key defect patterns for automated detection software.",
+            "Investigate cloud-based AI vision services."
+          ],
+          "resources_needed": [
+            "Initial subscription/platform fee ($10k-$20k)",
+            "Data scientist consultation (part-time)"
+          ],
+          "success_metric": "25% reduction in quality-related rework hours.",
+          "milestones": [
+            "Proof of concept model trained on internal data (Month 4).",
+            "Full integration and monitoring phase (Month 8)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Efficiency Task Force.",
+        "owner": "Owner/Management Group",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Schedule deep-dive assessments for the Lean Process Mapping initiative.",
+        "owner": "Production Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a preliminary budget proposal for the Toolpath Optimization Pilot.",
+        "owner": "Owner/Finance Lead",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on single skilled technicians, leading to high turnover risk.",
+      "Lack of standardized maintenance procedures, resulting in unpredictable machine downtime and waste.",
+      "Informal communication channels limiting the rapid sharing of operational efficiency data between departments.",
+      "Limited investment in predictive maintenance technology."
+    ]
+  }
+}

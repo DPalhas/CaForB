@@ -1,0 +1,123 @@
+{
+  "id": "0071",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:20:22.072565+00:00",
+    "duration_ms": 19804,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Precision Components Inc. is a medium-sized manufacturer specializing in high-tolerance industrial components for the medical device and aerospace sectors. The company operates under strict ISO certifications and must adhere to rigorous environmental and safety regulations. Their operations are labor-intensive but require increasingly precise quality control systems.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently implemented a Lean manufacturing overhaul aimed at reducing scrap rates by 15%. They also invested in pilot projects for automated inspection tools, though full integration remains challenging.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to achieve operational excellence and drastically reduce production costs while maintaining zero compliance violations. Secondary goals include expanding into high-margin specialized components.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core innovation team consists of 5 senior engineers and two process specialists who operate with autonomy but require executive alignment on major capital expenditures.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is highly competitive with smaller agile firms and large, heavily automated competitors. Regulatory compliance costs are currently a significant drain on operational efficiency."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Full AI-Driven Predictive Maintenance and Process Optimization Platform",
+        "rationale": "Given the high regulatory demands for uptime and efficiency, adopting a radical predictive maintenance system using ML can drastically reduce unplanned downtime and optimize resource allocation across the factory floor.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a 3-month feasibility study on sensor integration in critical machinery.",
+            "Form an interdepartmental task force (Engineering, IT) to define data requirements."
+          ],
+          "resources_needed": [
+            "Cloud computing subscription for ML model training",
+            "Hiring one Data Science specialist"
+          ],
+          "success_metric": "Reduce unscheduled downtime by 30% within 12 months.",
+          "milestones": [
+            "Q1: Pilot integration on three critical production lines.",
+            "Q3: Full rollout across all key machinery."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Modular, Automated Quality Check Line Implementation",
+        "rationale": "To improve efficiency and meet high regulatory standards, implementing smaller automated inspection modules rather than a monolithic overhaul will allow for phased integration with controlled testing environments.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one specific production line for automation pilot project.",
+            "Audit current tooling to identify bottleneck quality control points."
+          ],
+          "resources_needed": [
+            "Capital expenditure for robotic inspection equipment",
+            "Training workshops for existing technicians"
+          ],
+          "success_metric": "Decrease defect rate by 10% in the pilot line.",
+          "milestones": [
+            "Q2: Select vendor and finalize ROI calculation.",
+            "Q4: Complete implementation on selected production line."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional steering committee to define efficiency KPIs and high-priority regulatory pain points.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate the feasibility study for AI predictive maintenance, including budget approval request.",
+        "owner": "Chief Technology Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Review current supply chain processes against industry best practices to identify immediate incremental efficiencies.",
+        "owner": "Head of Supply Chain",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent cross-departmental communication regarding innovation strategy",
+      "High reliance on manual quality checks leading to inefficiency and potential errors",
+      "Lack of a dedicated, specialized data science talent pool",
+      "Process rigidity hindering the rapid implementation of incremental improvements"
+    ]
+  }
+}

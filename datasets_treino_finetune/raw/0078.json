@@ -1,0 +1,147 @@
+{
+  "id": "0078",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:23:18.675955+00:00",
+    "duration_ms": 23117,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Precision Components is a medium-sized manufacturer specializing in high-tolerance machined parts for the aerospace and medical device industries. The company operates within heavily regulated environments, requiring stringent quality control and compliance protocols for every product line.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has invested moderately in upgrading machinery to improve output efficiency and recently implemented a phased rollout of new ERP software modules to streamline supply chain management.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maintain market share by aggressively defending our existing high-margin contracts while simultaneously exploring premium, compliance-heavy niche markets. We aim to ensure operational resilience against global manufacturing shifts.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core R&D and operations teams consist of about 50 highly skilled engineers and technicians dedicated to maintaining product integrity.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The sector faces intense pressure from emerging competitors, especially in automation and supply chain responsiveness."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Smart Quality Control Integration (Incremental)",
+        "rationale": "Implementing AI-driven sensor technology for real-time defect detection can drastically reduce material scrap rates and improve compliance documentation accuracy in a high-regulation environment.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot vision system on one critical production line.",
+            "Identify three key suppliers for digital integration feasibility study."
+          ],
+          "resources_needed": [
+            "$150,000",
+            "2 specialized data scientists (contract)"
+          ],
+          "success_metric": "Reduction in scrap rate by 30% within 18 months.",
+          "milestones": [
+            "Q2: System pilot completion and ROI validation.",
+            "Q4: Full integration across all high-risk production lines."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Modular, Autonomous Micro-Factory Cells (Radical)",
+        "rationale": "To defend against labor shortages and increase agility, Apex should explore radical automation using modular robotic cells that can be rapidly reconfigured to produce diverse parts under stringent automated quality checks.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated 'Future Ops' incubator team.",
+            "Secure seed funding for advanced robotics R&D partnership."
+          ],
+          "resources_needed": [
+            "$500,000",
+            "Strategic partnership with an automation startup."
+          ],
+          "success_metric": "Successful deployment of one fully automated cell capable of handling 4 product variants.",
+          "milestones": [
+            "Q3: Tech feasibility and vendor selection complete.",
+            "Q1: Initial prototype manufacturing and stress testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Regulatory Compliance Automation (Incremental)",
+        "rationale": "Automating documentation and compliance reporting using blockchain or specialized software tools will reduce the time spent on manual audits, allowing the core team to focus on strategic defense initiatives.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing regulatory data workflows.",
+            "Select a SaaS platform specializing in industry-specific compliance reporting."
+          ],
+          "resources_needed": [
+            "$50,000",
+            "Internal IT project management specialist time."
+          ],
+          "success_metric": "Reduction of audit preparation time by 40%.",
+          "milestones": [
+            "Q2: Platform selection and integration plan finalized.",
+            "Q3: Full migration of one compliance cycle to the new system."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1 year"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to define the requirements and budget for the 'Smart Quality Control Integration' pilot.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate due diligence on three potential automation technology partners for the radical cell concept.",
+        "owner": "CTO / R&D Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch a focused internal workshop to map out key cultural barriers related to adopting bold, risk-taking technologies.",
+        "owner": "HR Director",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on legacy machinery requiring frequent maintenance and downtime.",
+      "Talent scarcity in advanced robotics and AI engineering roles.",
+      "Slow internal process for cross-departmental communication regarding innovation projects.",
+      "Risk aversion within the existing operational culture due to high regulatory stakes."
+    ]
+  }
+}

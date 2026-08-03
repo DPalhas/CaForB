@@ -1,0 +1,148 @@
+{
+  "id": "0098",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:32:11.109173+00:00",
+    "duration_ms": 24002,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "SynergySaaS Solutions",
+      "sector": "Information Technology",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "SynergySaaS is a medium-sized B2B Software as a Service (SaaS) provider specializing in supply chain optimization tools for the logistics industry. The company operates primarily through subscription models and relies heavily on cloud infrastructure to deliver its core platform.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently implemented a migration to a hybrid cloud environment to reduce operational costs by 15%. They have also initiated quarterly internal process reviews focused on streamlining the sales-to-support workflow.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to significantly enhance operational efficiency across our entire software lifecycle while maintaining stable recurring revenue. We aim to reduce customer churn by optimizing service delivery and internal resource allocation over the next three years.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core development team consists of 12 full-time employees focused on maintaining platform stability and iterative feature releases. The management structure is lean.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is highly saturated with competitors offering similar SaaS solutions. While product quality is high, continuous investment in operational efficiency and automation is required to maintain profitability."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Legacy System Refactoring",
+        "rationale": "Refactoring outdated internal modules using low-code automation tools can significantly reduce manual administrative overhead and technical debt, directly improving operational efficiency without major R&D risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis of the top three most time-consuming manual processes in the QA pipeline.",
+            "Pilot a low-code automation solution for ticket routing and reporting."
+          ],
+          "resources_needed": [
+            "Internal IT specialist consulting hours",
+            "License fees for existing low-code platform"
+          ],
+          "success_metric": "30% reduction in manual time spent on Level 1 support tasks within Q3.",
+          "milestones": [
+            "Complete Gap Analysis (Month 1)",
+            "Pilot Program Launch and Evaluation (Month 2)",
+            "Full Deployment of Automation Module (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Churn Modeling",
+        "rationale": "Implementing a sophisticated AI model to predict customer churn using historical usage and support data allows for proactive, targeted interventions that maximize retention efficiency, moving beyond current reactive strategies.",
+        "execution_plan": {
+          "first_actions": [
+            "Data cleansing and feature engineering of the last 2 years of user activity logs.",
+            "Identify external ML vendor partners for model training."
+          ],
+          "resources_needed": [
+            "External Data Scientist contract",
+            "Cloud computing resources (initial investment)"
+          ],
+          "success_metric": "10% improvement in customer retention rate over 12 months.",
+          "milestones": [
+            "Data Preparation Complete (Month 3)",
+            "Model Training and Validation (Month 5)",
+            "Integration with CRM Dashboard (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Zero-Waste Infrastructure Optimization",
+        "rationale": "A comprehensive audit of cloud infrastructure to identify underutilized resources and implement aggressive auto-scaling policies will immediately lower operational compute costs, enhancing financial efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement automated resource tagging and usage monitoring across all environments.",
+            "Develop and enforce strict auto-shutdown schedules for non-production servers."
+          ],
+          "resources_needed": [
+            "Cloud FinOps consultant fee",
+            "Minor engineering time allocation (2 FTE equivalent)"
+          ],
+          "success_metric": "18% reduction in monthly infrastructure spending.",
+          "milestones": [
+            "Infrastructure Audit and Identification (Month 1)",
+            "Auto-scaling Policy Deployment (Month 3)",
+            "Cost Reporting & Monitoring Baseline Established (Month 5)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Appoint a cross-functional efficiency task force focused on process mapping.",
+        "owner": "COO / Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Finalize the vendor selection for the AI Churn Modeling pilot and allocate initial budget.",
+        "owner": "CFO / Head of Product",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Schedule quarterly 'Efficiency Review' meetings with leadership to track KPI progress.",
+        "owner": "CEO",
+        "timeframe": "Monthly starting next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Process bottlenecks in the handoff between Sales and Customer Success teams.",
+      "Lack of standardized documentation across legacy technical modules, leading to high maintenance costs.",
+      "Limited dedicated internal talent pool capable of advanced data science/ML implementation."
+    ]
+  }
+}

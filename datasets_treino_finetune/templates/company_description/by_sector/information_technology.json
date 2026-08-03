@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "Managed IT services provider offering helpdesk, network management, cybersecurity monitoring, and cloud migration services to 150+ SME clients. 24/7 NOC with 18 technicians. Currently developing a self-service client portal for ticket tracking and automated health reporting.",
+    "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations.",
+    "Cybersecurity consultancy performing penetration testing, SOC 2 compliance audits, and incident response retainer services. Team of 12 certified ethical hackers and compliance auditors. Seeking to productize recurring vulnerability scanning with an automated reporting dashboard.",
+    "Data engineering and business intelligence consultancy designing data warehouses, ETL pipelines, and Power BI dashboards for finance and retail clients. Team of 15 data engineers and analysts. Exploring AI-augmented analytics offering including natural language querying of client datasets."
+  ]
+}

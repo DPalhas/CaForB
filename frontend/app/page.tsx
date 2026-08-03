@@ -1,58 +1,169 @@
 import Link from "next/link";
+import { Sparkles, ArrowRight, ShieldCheck, Zap, Target, Cpu, TrendingUp, CheckCircle2 } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-purple-500 selection:text-white">
+      
+      {/* Background Glow Overlay */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 left-1/3 w-96 h-96 bg-fuchsia-500/10 rounded-full blur-3xl" />
+      </div>
 
-      {/* Navbar */}
-      <nav className="w-full px-8 py-5 flex items-center justify-between border-b border-gray-100 bg-white">
-        <span className="text-lg font-bold text-teal-700 tracking-tight">CaForB</span>
-        <Link
-          href="/assessment"
-          className="px-4 py-2 text-sm font-semibold text-white bg-teal-600 rounded-lg hover:bg-teal-700 transition"
-        >
-          Start Assessment
-        </Link>
-      </nav>
+      {/* Header / Navbar */}
+      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 px-6 lg:px-12 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-500 to-indigo-400 flex items-center justify-center shadow-lg shadow-purple-500/20">
+              <Cpu className="w-5 h-5 text-slate-950 font-bold" />
+            </div>
+            <div>
+              <span className="text-xl font-bold text-white tracking-tight">CaForB</span>
+              <span className="ml-2 text-xs font-mono text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded-full border border-purple-800/50">
+                v2.0 AI
+              </span>
+            </div>
+          </div>
 
-      {/* Hero */}
-      <section className="flex-1 flex flex-col items-center justify-center text-center px-4 py-24">
-        <span className="text-xs font-semibold uppercase tracking-widest text-teal-600 bg-teal-50 px-3 py-1 rounded-full mb-6">
-          AI-Powered Innovation Intelligence
-        </span>
-        <h1 className="text-5xl font-bold text-gray-900 leading-tight max-w-2xl mb-6">
-          Turn your company's context into a{" "}
-          <span className="text-teal-600">strategic roadmap</span>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/assessment"
+              className="px-5 py-2.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-xl hover:from-purple-300 hover:to-indigo-300 transition shadow-lg shadow-purple-500/20 flex items-center gap-2 group"
+            >
+              <span>Start Assessment</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 py-20 lg:py-28 max-w-5xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-950/80 border border-purple-800/60 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-8 shadow-inner">
+          <Sparkles className="w-4 h-4 text-purple-400 animate-pulse" />
+          <span>AI-Powered Innovation Advisor</span>
+        </div>
+
+        <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mb-6">
+          Transform your corporate context into a{" "}
+          <span className="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-indigo-400 bg-clip-text text-transparent">
+            strategic roadmap
+          </span>
         </h1>
-        <p className="text-lg text-gray-500 max-w-xl mb-10 leading-relaxed">
-          Answer 5 short sections about your business. Get a personalised
-          innovation maturity score, ranked opportunities, and actionable next steps — in under 2 minutes.
-        </p>
-        <Link
-          href="/assessment"
-          className="px-8 py-4 text-base font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition shadow-lg shadow-teal-200"
-        >
-          Start Free Assessment →
-        </Link>
-      </section>
 
-      {/* Feature strip */}
-      <section className="w-full border-t border-gray-100 bg-white py-10 px-8">
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-8 text-center">
+        <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-normal">
+          Complete a quick 5-section evaluation of your organization. Receive a tailored maturity score, prioritized opportunities, and an actionable execution plan powered by specialized AI.
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <Link
+            href="/assessment"
+            className="w-full sm:w-auto px-8 py-4 text-base font-semibold text-slate-950 bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 rounded-xl hover:opacity-95 transition-all shadow-xl shadow-purple-500/25 flex items-center justify-center gap-3 group"
+          >
+            <span>Begin Free Assessment</span>
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
+        {/* Key Metrics / Highlights strip */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-slate-800/80 w-full max-w-4xl text-left">
           {[
-            { icon: "🎯", title: "Context-aware", desc: "Tailored to your sector, size, and strategic goals" },
-            { icon: "⚡", title: "Instant results", desc: "AI analysis powered by a fine-tuned LLM" },
-            { icon: "📋", title: "Actionable output", desc: "Scored opportunities with timeframes and difficulty ratings" },
-          ].map(({ icon, title, desc }) => (
-            <div key={title}>
-              <div className="text-3xl mb-3">{icon}</div>
-              <div className="text-sm font-semibold text-gray-800 mb-1">{title}</div>
-              <div className="text-xs text-gray-500">{desc}</div>
+            { label: "Completion Time", value: "< 3 Mins", desc: "5 structured sections" },
+            { label: "AI Model", value: "Fine-tuned", desc: "Domain specific context" },
+            { label: "Output", value: "360° Roadmap", desc: "Scored opportunities" },
+            { label: "Privacy", value: "Enterprise-grade", desc: "Secure input analysis" },
+          ].map((stat, idx) => (
+            <div key={idx} className="p-4 rounded-xl bg-slate-900/50 border border-slate-800/60 backdrop-blur-sm">
+              <p className="text-2xl font-bold text-white mb-1">{stat.value}</p>
+              <p className="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-1">{stat.label}</p>
+              <p className="text-xs text-slate-500">{stat.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-    </main>
+      {/* Feature Showcase Grid */}
+      <section className="relative z-10 bg-slate-900/60 border-t border-b border-slate-800/80 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-white mb-4">Precision Intelligence for Corporate Growth</h2>
+            <p className="text-slate-400 text-sm sm:text-base">
+              Designed specifically for corporate leaders, strategy managers, and innovation directors looking to make data-backed bets.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <Target className="w-6 h-6 text-purple-400" />,
+                title: "Context-Aware Scoring",
+                desc: "Evaluates your company size, regulatory pressure, risk appetite, and budget constraints to filter out unrealistic strategies.",
+              },
+              {
+                icon: <Zap className="w-6 h-6 text-fuchsia-400" />,
+                title: "Prioritized Opportunities",
+                desc: "Distinguishes between quick-win incremental projects and high-impact radical transformations tailored to your industry.",
+              },
+              {
+                icon: <TrendingUp className="w-6 h-6 text-indigo-400" />,
+                title: "Actionable Execution Plans",
+                desc: "Get concrete first steps, required resources, key performance indicators, and timeline milestones for immediate adoption.",
+              },
+            ].map(({ icon, title, desc }, idx) => (
+              <div
+                key={idx}
+                className="p-8 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-purple-500/50 transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  {icon}
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="relative z-10 py-20 px-6 max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-white mb-3">Simple 3-Step Process</h2>
+          <p className="text-slate-400 text-sm">From baseline assessment to executive implementation</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 relative">
+          {[
+            { step: "01", title: "Assessment Input", desc: "Share details on your process, team capabilities, budget, and strategic priorities." },
+            { step: "02", title: "LLM Processing", desc: "Our model cross-examines your responses with corporate innovation frameworks." },
+            { step: "03", title: "Strategy Delivery", desc: "Receive your maturity score and tailored roadmap immediately on screen." },
+          ].map((item, idx) => (
+            <div key={idx} className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 relative">
+              <span className="text-4xl font-extrabold text-purple-500/20 font-mono block mb-4">{item.step}</span>
+              <h3 className="text-base font-bold text-white mb-2">{item.title}</h3>
+              <p className="text-xs text-slate-400 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <Link
+            href="/assessment"
+            className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-slate-950 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-xl hover:from-purple-300 hover:to-indigo-300 transition shadow-lg shadow-purple-500/20"
+          >
+            <span>Launch Assessment Now</span>
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 border-t border-slate-800/80 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500">
+        <p>© {new Date().getFullYear()} CaForB — Corporate Innovation Decision Support System. All rights reserved.</p>
+      </footer>
+
+    </div>
   );
 }

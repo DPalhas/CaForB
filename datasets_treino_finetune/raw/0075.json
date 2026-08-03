@@ -1,0 +1,146 @@
+{
+  "id": "0075",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:22:10.133613+00:00",
+    "duration_ms": 22905,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "SecureCloud Solutions Inc.",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "SecureCloud Solutions provides enterprise-grade cloud security and compliance software tailored for mid-sized businesses. We focus on regulatory adherence in the finance and healthcare sectors where data sensitivity is high. Our core product suite includes AI-driven threat detection platforms.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We recently launched a suite of automated compliance tools, which was driven by customer needs identified through dedicated research interviews. We are currently piloting an internal framework for rapid feature iteration based on early user feedback.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maintain our strong market position and secure high-value enterprise contracts against larger competitors. We aim to expand into adjacent security verticals through strategic acquisition or product expansion.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 5 engineers and 2 product managers. We prioritize cross-functional collaboration to ensure rapid deployment cycles.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Security Dashboards",
+        "rationale": "By leveraging existing data analytics capabilities and focusing on user experience improvements, we can enhance customer retention within the enterprise sector.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct A/B testing on three key dashboard layouts.",
+            "Integrate real-time threat alerts directly into a personalized notification system."
+          ],
+          "resources_needed": [
+            "2 Senior UX designers",
+            "1 Dedicated DevOps engineer (part-time)"
+          ],
+          "success_metric": "Increase 6-month customer retention by 5%",
+          "milestones": [
+            "Q3: Beta launch of personalized dashboard pilot.",
+            "Q4: Full integration and KPI measurement."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Compliance Engine (Quantum AI)",
+        "rationale": "To defend against emerging regulatory shifts and competitive threats, we should develop a proprietary predictive engine that anticipates compliance requirements before they become mandatory.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated cross-functional R&D squad focused solely on advanced ML/AI.",
+            "Secure partnership with 1 leading academic institution for specialized data modeling expertise."
+          ],
+          "resources_needed": [
+            "Hiring of 2 specialized AI researchers",
+            "Investment in high-performance computing infrastructure ($300k)"
+          ],
+          "success_metric": "Reduced compliance error rate by 40% within the first year.",
+          "milestones": [
+            "Year 1: Prototype development and internal validation.",
+            "Year 2: Pilot launch with 5 major enterprise clients."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Vertical Expansion: Healthcare Data Module",
+        "rationale": "Expanding into the healthcare vertical leverages our existing core security technology and taps into a high-growth, defensible market segment.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 key needs of mid-sized hospital IT departments regarding HIPAA compliance.",
+            "Develop MVP focusing only on data encryption and access controls."
+          ],
+          "resources_needed": [
+            "1 Compliance expert (consultant)",
+            "Development time allocation (5 engineers)"
+          ],
+          "success_metric": "Acquire 10 new healthcare clients within the first year.",
+          "milestones": [
+            "Q3: MVP launch and pilot program enrollment.",
+            "Q4: Full feature parity with existing core products."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the dedicated R&D squad structure and secure initial funding for the Predictive Compliance Engine.",
+        "owner": "CTO / Head of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Complete detailed market analysis on potential adjacent vertical expansion (e.g., Financial Services) to inform Q4 planning.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Run internal workshops focused on improving cross-functional process efficiency for faster feature iteration.",
+        "owner": "VP of Operations",
+        "timeframe": "Next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on legacy development processes leading to slow feature adoption cycles.",
+      "High dependency on a small pool of specialized engineering talent, creating retention risk.",
+      "Lack of formalized strategic roadmap beyond immediate product feature updates.",
+      "Limited external market presence outside of the core enterprise security segment."
+    ]
+  }
+}

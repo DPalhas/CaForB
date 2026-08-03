@@ -1,0 +1,147 @@
+{
+  "id": "0015",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:53:51.589970+00:00",
+    "duration_ms": 21752,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision Components Inc. is a medium-sized manufacturer specializing in high-tolerance metal components for the automotive and industrial machinery sectors. We operate primarily within North America, focusing on established supply chains and maintaining high quality standards.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We have recently invested in upgrading our CNC machinery to reduce production time by 15%. Previously, R&D efforts were limited mainly to incremental material science improvements rather than market expansion projects.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The company's primary goal is strategic diversification into adjacent industrial sectors while maintaining profitability in our core components business. We aim to establish a secondary product line within the next three years.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The R&D and strategy team is small, consisting of five key personnel dedicated to process optimization and market analysis.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Competition is fierce in the component sector, requiring us to continually innovate on cost efficiency and niche specialization."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automation of Low-Tolerance Processes",
+        "rationale": "Implementing targeted automation in specific component finishing stages will reduce operational costs and improve quality consistency without requiring massive capital expenditure or major structural change.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the three highest-volume, lowest-margin processes for automation review.",
+            "Pilot a robotic handling system on one non-critical component line."
+          ],
+          "resources_needed": [
+            "Automation consulting services",
+            "Hardware acquisition budget ($150k)"
+          ],
+          "success_metric": "Reduction in direct labor costs by 12% within 6 months.",
+          "milestones": [
+            "Q1: Feasibility study complete.",
+            "Q3: Pilot system operational and ROI calculated."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Market Penetration (Specialty Alloys)",
+        "rationale": "Diversification can be achieved by focusing on a highly specialized material niche where our precision capabilities offer a competitive edge, minimizing the risk associated with entering entirely new markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market analysis for three high-growth specialty alloys.",
+            "Develop targeted marketing materials for potential partners."
+          ],
+          "resources_needed": [
+            "Targeted sales personnel training",
+            "Market research budget ($50k)"
+          ],
+          "success_metric": "Secure two new contracts in the specialized alloy market by year-end.",
+          "milestones": [
+            "Q2: Market validation report finalized.",
+            "Q4: First pilot order secured."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "medium"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Partnership/Acquisition in Adjacent Tech",
+        "rationale": "To achieve true diversification, a conservative approach to M&A or strategic alliances can provide immediate access to new technologies (like advanced AI-driven design) that fundamentally change our production capabilities.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an internal M&A screening criteria matrix for synergistic tech.",
+            "Identify three potential small, agile software startups specializing in design optimization."
+          ],
+          "resources_needed": [
+            "Legal counsel retainer",
+            "Due diligence budget ($300k)"
+          ],
+          "success_metric": "Finalize a binding strategic partnership agreement within 12 months.",
+          "milestones": [
+            "Q1: Partnership pipeline established (5 candidates).",
+            "Q4: Definitive deal structure approved."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a full audit of current operational bottlenecks and prioritize the top three candidates for automation.",
+        "owner": "Chief Operations Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Begin formal market research on specialty alloys to validate diversification potential and build an initial business case.",
+        "owner": "VP of Business Development",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a detailed, phased implementation plan for the selected incremental automation project.",
+        "owner": "Director of Engineering",
+        "timeframe": "End of Q1"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on outdated manufacturing processes",
+      "Limited internal expertise in digital transformation",
+      "High employee turnover within the R&D team",
+      "Lack of formal strategy linking current operations to long-term diversification goals"
+    ]
+  }
+}

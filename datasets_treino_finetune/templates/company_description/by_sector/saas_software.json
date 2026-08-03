@@ -1,0 +1,9 @@
+{
+  "variants": [
+    "B2B SaaS platform for field service management including scheduling, dispatching, mobile work orders, and invoicing. 600+ customers across HVAC, plumbing, and electrical trades. Processing 2 million work orders annually. Current ARR growth rate of 40%. Evaluating AI-powered route optimization and parts inventory prediction modules.",
+    "Vertical SaaS providing compliance management software for the pharmaceutical industry covering GxP training, deviation tracking, and audit readiness. 85 enterprise customers including 3 of the top 10 global pharma companies. SOC 2 Type II certified. Considering a no-code workflow builder to allow clients to customize compliance processes.",
+    "HR tech SaaS platform for mid-market companies offering recruitment pipeline management, onboarding automation, and performance review cycles. 400+ customers, 80,000 active employee profiles. Recently launched an AI-assisted job description generator. Evaluating skills-gap analysis and internal mobility recommendation features.",
+    "Marketing automation SaaS specializing in email campaign orchestration, landing page building, and multi-touch attribution for B2B technology companies. 1,200 customers. Evaluating AI-driven content personalization and predictive lead scoring as next product pillars.",
+    "API-first payments infrastructure SaaS providing white-label payment gateway, recurring billing engine, and reconciliation automation for marketplace and subscription businesses. Processing €400M in annual transaction volume across 8 EU countries. Seeking PSD3 compliance preparation and real-time fraud detection enhancements."
+  ]
+}

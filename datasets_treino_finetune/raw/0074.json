@@ -1,0 +1,123 @@
+{
+  "id": "0074",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:21:47.212341+00:00",
+    "duration_ms": 20604,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "AgriFlow SaaS",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "AgriFlow SaaS develops cloud-based IoT solutions for precision agriculture, focusing on yield optimization and resource efficiency. The company provides subscription services to mid-sized farming operations across the Midwest.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We successfully launched three core modules in the last year and piloted an integration with a local seed supplier. We have also conducted several internal hackathons focused on improving user adoption rates.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to achieve revenue diversification by expanding our solution set into adjacent industrial sectors like sustainable supply chain logistics. We aim to increase our market penetration in the APAC region within three years.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core team consists of 8 highly specialized engineers and product managers. The culture is fast-paced and results-oriented, valuing experimentation over strict adherence to legacy processes.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent",
+        "time",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Vertical Market Expansion into Aquaculture Tech",
+        "rationale": "While our core strength is terrestrial agriculture, the underlying IoT and data-driven optimization principles are highly transferable to controlled environment aquaculture. This radical shift offers a completely new revenue stream and market entry point.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on water quality monitoring sensors",
+            "Identify three potential pilot partners in Southeast Asian aquaculture"
+          ],
+          "resources_needed": [
+            "Seed capital for R&D prototype development ($50k)",
+            "Hiring a specialist marine data scientist (6-month contract)"
+          ],
+          "success_metric": "Secure 2 paying pilot contracts in Aquaculture within 9 months",
+          "milestones": [
+            "Q1: Finalize technical roadmap and partnership agreements",
+            "Q3: Launch MVP for Marine Optimization Module"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Platform Integration Service Bundling",
+        "rationale": "By creating standardized API connectors, we can offer an incremental service bundling feature that integrates our existing data insights with third-party supply chain management software. This leverages our current digital strength to capture adjacent B2B sales.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop three key integration SDKs",
+            "Create a tiered pricing model for enterprise integrations"
+          ],
+          "resources_needed": [
+            "Software development hours ($30k)",
+            "Marketing materials refresh budget ($15k)"
+          ],
+          "success_metric": "Achieve 15% increase in average contract value (ACV) within one year",
+          "milestones": [
+            "Month 2: Beta launch of the integration marketplace",
+            "Month 6: Achieve $X revenue from bundled services"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate the feasibility study and secure initial funding for the Aquaculture Tech pilot.",
+        "owner": "CEO/Owner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct an internal skill audit to identify necessary talent hires for sector diversification.",
+        "owner": "Head of HR / Product Lead",
+        "timeframe": "End of next month"
+      },
+      {
+        "action": "Finalize the API integration roadmap and assign development resources.",
+        "owner": "CTO/Engineering Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of cross-sector domain expertise outside agriculture",
+      "Slow internal process for radical innovation testing (bottleneck)",
+      "Limited marketing reach beyond the domestic agricultural sector",
+      "High dependency on a single core technology stack"
+    ]
+  }
+}

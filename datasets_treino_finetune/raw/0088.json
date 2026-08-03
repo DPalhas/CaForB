@@ -1,0 +1,145 @@
+{
+  "id": "0088",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:27:57.697023+00:00",
+    "duration_ms": 24568,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "DataFlow Solutions Inc.",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "DataFlow Solutions provides cloud-based analytics and CRM software targeting mid-sized enterprises in the logistics sector. We focus on streamlining supply chain data management through scalable subscription models.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We have recently launched three minor feature updates based on NPS feedback and piloted a small integration project with a key industry partner last quarter.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to secure our leading position in the logistics SaaS market by enhancing product reliability and expanding our enterprise client base. We aim to minimize churn while maintaining strong revenue growth from existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core team consists of 8 dedicated employees, comprising developers and sales specialists. Decision-making authority rests with a small leadership team for strategic direction.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We face increasing pressure from larger, more integrated competitors who are aggressively acquiring niche features and improving their retention strategies."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Maintenance Module",
+        "rationale": "Implementing an AI module to predict potential system failures will significantly improve product reliability and reduce churn among enterprise clients, directly supporting market defense.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify high-risk modules for predictive modeling.",
+            "Allocate 2 senior data scientists to the project."
+          ],
+          "resources_needed": [
+            "Data science consulting retainer ($15k)",
+            "Internal dev hours reallocation (approx. 400 hrs)"
+          ],
+          "success_metric": "Reduction in critical system downtime by 15% within six months.",
+          "milestones": [
+            "Q3: Pilot module deployment and initial data validation.",
+            "Q4: Full feature integration and beta launch for top-tier clients."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical Customization Engine (VCE)",
+        "rationale": "Developing a VCE would allow us to offer highly specialized, vertical-specific solutions that competitors cannot easily replicate, creating a strong defensive moat in our niche.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market research to identify the top 3 underserved logistics sub-sectors.",
+            "Form an internal cross-functional task force (Product/Sales)."
+          ],
+          "resources_needed": [
+            "Dedicated UX/UI designer ($20k)",
+            "External legal counsel review for IP strategy"
+          ],
+          "success_metric": "Acquisition of 5 new enterprise clients utilizing VCE within the first year.",
+          "milestones": [
+            "Q1: MVP definition and initial technical architecture design.",
+            "Q2-Q3: Full feature build and beta testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Proactive Customer Success Platform",
+        "rationale": "Enhancing the existing support structure with proactive analytics will improve customer retention, which is crucial for market defense in a subscription-based model.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate usage data feeds into the current CRM.",
+            "Redesign the onboarding workflow based on churn data."
+          ],
+          "resources_needed": [
+            "CRM integration specialist ($5k)",
+            "Internal training for support staff (20 hrs)"
+          ],
+          "success_metric": "Decrease customer churn rate by 8% annually.",
+          "milestones": [
+            "Q3: Platform overhaul completion and team training.",
+            "Q4: Full rollout and performance tracking."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to define the scope and initial requirements for the Vertical Customization Engine (VCE).",
+        "owner": "VP of Product",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Launch a detailed feasibility study for the AI-Driven Predictive Maintenance Module, including data readiness assessment.",
+        "owner": "Head of Engineering",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Review current customer churn data and map it to technical gaps in the Proactive Customer Success Platform roadmap.",
+        "owner": "VP of Customer Success",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited internal capacity for radical innovation projects due to resource constraints.",
+      "Reliance on legacy infrastructure which complicates rapid feature deployment.",
+      "High turnover in specialized technical talent leading to knowledge gaps."
+    ]
+  }
+}

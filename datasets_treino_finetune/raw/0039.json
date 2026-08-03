@@ -1,0 +1,121 @@
+{
+  "id": "0039",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:04:30.855870+00:00",
+    "duration_ms": 23024,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Industrial Components",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Industrial Components is a medium-sized manufacturer specializing in custom metal components for the automotive and aerospace industries. The company focuses on high-precision tooling and operates primarily domestically, benefiting from relatively stable local regulations.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has implemented minor process automation across its assembly line to reduce manual error. They also conducted a pilot study on optimizing inventory management based on historical demand data.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to achieve significant operational efficiency by streamlining production workflows and reducing waste in material usage. We aim to lower our unit costs while maintaining high quality standards for key clients.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core innovation team consists of a small leadership team of four dedicated operational experts and two software specialists.",
+      "digitalMaturity": 2,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We are currently focused on internal cost-saving measures rather than aggressive market expansion."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Full Digital Twin Implementation for Predictive Maintenance",
+        "rationale": "Implementing a digital twin can radically transform maintenance scheduling and yield efficiency by predicting machine failures before they occur, moving the company from reactive to proactive maintenance.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one critical bottleneck machine for pilot testing.",
+            "Select and purchase basic IoT sensors compatible with existing PLC systems."
+          ],
+          "resources_needed": [
+            "Hardware budget ($25k)",
+            "Contract specialized data analytics consultant ($30k)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 15% within 12 months.",
+          "milestones": [
+            "Month 1-2: Pilot setup and baseline data collection.",
+            "Month 4: Full system integration into the ERP."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Workflow Automation and Standardization (Lean 4.0)",
+        "rationale": "Focusing on incremental changes to standardize production steps based on Lean principles can deliver immediate, measurable efficiency gains without requiring major capital investment or cultural overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current end-to-end manufacturing process flow.",
+            "Identify 3 high-waste manual processes for digitization."
+          ],
+          "resources_needed": [
+            "Internal training budget ($5k)",
+            "Process mapping software license ($1k)"
+          ],
+          "success_metric": "20% reduction in cycle time for the targeted production line.",
+          "milestones": [
+            "Month 1-3: Implement standardized SOPs and basic digital checklist."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to assess the feasibility and ROI of the Digital Twin pilot.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop detailed SOPs for the Lean Automation project based on initial process mapping.",
+        "owner": "Production Manager",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Finalize budget request and vendor selection for the pilot phase.",
+        "owner": "Finance Lead",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on legacy production software leading to data silos.",
+      "Limited internal expertise in advanced data analytics and IoT integration.",
+      "Resistance to process change from long-term operational staff."
+    ]
+  }
+}

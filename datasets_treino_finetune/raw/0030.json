@@ -1,0 +1,124 @@
+{
+  "id": "0030",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:00:02.801246+00:00",
+    "duration_ms": 19617,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "This medium-sized manufacturer specializes in producing custom electronic components for the automotive supply chain. They operate with moderate regulatory oversight concerning quality standards and environmental compliance.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has recently implemented minor automation in their assembly line and updated inventory management software to reduce stockouts by 15%. However, large-scale R&D projects remain sporadic due to resource constraints.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly improve operational efficiency, specifically targeting a 20% reduction in production lead times and lowering material waste by optimizing the supply chain.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of five engineers and a lean operations manager, providing focused but limited resources for large-scale changes.",
+      "digitalMaturity": 2,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Competitors are increasingly leveraging AI-driven predictive maintenance, forcing this company to urgently review its operational processes."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Implement Predictive Maintenance System (PdM)",
+        "rationale": "By deploying IoT sensors on key machinery and using machine learning models to predict failures, the company can transition from reactive maintenance to proactive scheduling. This directly addresses efficiency by minimizing unplanned downtime.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot sensor installation on three critical CNC machines.",
+            "Identify and train two internal data analysts for ML model monitoring."
+          ],
+          "resources_needed": [
+            "IoT hardware setup ($15k)",
+            "Consultant for initial ML algorithm training ($20k)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 30% within six months.",
+          "milestones": [
+            "Q1: Sensor deployment and data collection complete.",
+            "Q2: PdM model validation and integration into maintenance workflow."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Adopt Additive Manufacturing for Tooling/Prototyping",
+        "rationale": "Shifting from traditional subtractive manufacturing methods for low-volume, high-complexity parts to 3D printing could drastically reduce material waste and shorten the design-to-production cycle. This is a radical move that fundamentally changes production speed.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on adopting industrial polymer AM technology.",
+            "Identify one high-waste component type for immediate prototyping."
+          ],
+          "resources_needed": [
+            "Investment in industrial 3D printer and material feedstock ($50k)",
+            "Internal training program development budget ($10k)"
+          ],
+          "success_metric": "30% reduction in raw material waste for prototyped components.",
+          "milestones": [
+            "Q1: Feasibility study completion and supplier vetting.",
+            "Q3: Successful prototype production run utilizing AM."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed operational waste audit across all production lines.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Form a cross-functional task force to assess the feasibility and budget for implementing PdM technology.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Initiate a pilot project focusing on process bottleneck reduction using current internal resources.",
+        "owner": "Process Improvement Lead",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented data silos hindering comprehensive process visibility.",
+      "High reliance on specialized, expensive technical talent for maintenance and optimization tasks.",
+      "Adoption of legacy software systems that limit real-time decision-making.",
+      "Culture resistance to adopting new, automated workflows."
+    ]
+  }
+}

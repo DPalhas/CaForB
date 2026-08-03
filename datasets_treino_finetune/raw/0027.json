@@ -1,0 +1,146 @@
+{
+  "id": "0027",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:58:36.323724+00:00",
+    "duration_ms": 23944,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Manufacturing",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Precision Manufacturing is a medium-sized firm specializing in custom metal fabrication for the aerospace and automotive sectors. The company operates with a lean workforce and prides itself on high-quality, bespoke components.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently implemented workflow optimization software to reduce material waste by 15% and invested modestly in basic CNC machine upgrades to improve throughput.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to achieve a sustained 10% reduction in operational overhead through process streamlining. We aim to increase unit output per employee by automating repetitive tasks within the next three years.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The internal innovation team consists of four dedicated engineers and a project manager, working in close collaboration to drive change.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance Integration for CNC Assets",
+        "rationale": "Integrating AI-driven sensor data from existing machinery can move maintenance from reactive to predictive, significantly reducing unexpected downtime and associated costs. This directly addresses the strategic priority of efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot sensor installation on the three most critical CNC machines.",
+            "Select a low-cost IoT platform for data ingestion."
+          ],
+          "resources_needed": [
+            "Hardware procurement ($15,000)",
+            "Cloud subscription fees ($2,000)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 20% within six months.",
+          "milestones": [
+            "Q1: Sensor deployment and data baseline established.",
+            "Q3: Predictive alerts integrated into maintenance schedule."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Robotic Assembly Cell Implementation (Cobots)",
+        "rationale": "Implementing collaborative robots for high-precision, repetitive assembly tasks offers a radical leap in efficiency and quality control. This requires a bold approach to talent acquisition but promises massive operational cost savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on robotic integration costs vs. labor savings.",
+            "Establish partnerships with robotics vendors for pilot programs."
+          ],
+          "resources_needed": [
+            "Robotic arm purchase and installation ($40,000)",
+            "Specialized training contracts ($10,000)"
+          ],
+          "success_metric": "Achieve 30% reduction in direct labor hours for designated assembly lines.",
+          "milestones": [
+            "Q2: Vendor selection and lab setup completed.",
+            "Q4: Pilot cell operational; ROI analysis finalized."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cross-Functional Lean Workflow Automation",
+        "rationale": "Using low-code automation tools to connect inventory, scheduling, and quality control data across departments will streamline internal processes. This is a low-cost, high-impact efficiency gain.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current end-to-end production process.",
+            "Identify three manual handoff points suitable for automation."
+          ],
+          "resources_needed": [
+            "Automation software licensing ($5,000)",
+            "Internal staff training ($3,000)"
+          ],
+          "success_metric": "Reduce average order processing time by 15%.",
+          "milestones": [
+            "Q2: Process mapping and tool selection finalized.",
+            "Q4: Automation tool live across two key departments."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate the feasibility study and vendor selection for the Predictive Maintenance project.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Form a cross-functional task force to evaluate capital expenditure for the Robotic Assembly Cell (Radical Opportunity).",
+        "owner": "CEO/VP Strategy",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Conduct an internal audit of current workflow bottlenecks and define scope for Lean Automation.",
+        "owner": "Process Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on manual data entry leading to high error rates.",
+      "Limited internal expertise in advanced automation and IoT integration.",
+      "Siloed communication between design, production, and maintenance teams.",
+      "Slow decision-making cycle for capital expenditure approval."
+    ]
+  }
+}

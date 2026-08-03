@@ -1,0 +1,7 @@
+{
+  "variants": [
+    "Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+    "We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+    "The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity."
+  ]
+}

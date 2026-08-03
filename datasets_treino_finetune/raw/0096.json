@@ -1,0 +1,155 @@
+{
+  "id": "0096",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:31:26.797288+00:00",
+    "duration_ms": 49319,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metals Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Precision Metals specializes in high-precision industrial components for the aerospace and automotive sectors. We operate under strict environmental compliance and quality standards, requiring rigorous operational procedures throughout our supply chain.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have implemented Lean manufacturing principles to reduce waste and standardized our quality control checks across all production lines. Recently, we piloted a software integration for inventory management but found scaling it proved challenging due to legacy system incompatibility.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly improve operational efficiency by reducing manufacturing cycle times and lowering material waste by 15% over the next three years. We aim to maintain a dominant market position through superior cost-competitiveness.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of five engineers, two process specialists, and one dedicated IT liaison working closely with operational staff.",
+      "digitalMaturity": 3,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We face increasing pressure from lower-cost competitors in emerging markets, necessitating continuous process optimization to maintain margins."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Advanced Predictive Maintenance System Implementation",
+        "rationale": "Implementing IoT sensors on key machinery can predict equipment failures before they occur, drastically reducing unplanned downtime and maintenance costs, directly supporting the efficiency priority.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot sensors on top 5 critical CNC machines.",
+            "Establish data pipeline from existing ERP system.",
+            "Conduct vendor assessment for cloud-based analytics."
+          ],
+          "resources_needed": [
+            "Sensor hardware (estimated $40k)",
+            "Data analyst consultation (internal/external mix)",
+            "Software subscription fee ($15k annually)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 20% within the first year.",
+          "milestones": [
+            "Sensor Pilot completion (Month 3)",
+            "Full system integration feasibility study (Month 6)",
+            "Rollout to all critical production lines (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Supply Chain Optimization Platform",
+        "rationale": "Developing a radical digital platform utilizing machine learning to dynamically predict material price volatility and optimize raw material sourcing routes, which could unlock substantial cost savings beyond traditional process improvements.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated cross-functional AI project team (IT, Procurement).",
+            "Identify a key partnership with a specialized ML startup.",
+            "Define MVP scope focused only on raw material cost forecasting."
+          ],
+          "resources_needed": [
+            "External AI development consultancy ($150k initial investment)",
+            "Cloud computing resources for large dataset training",
+            "Dedicated project manager salary allocation"
+          ],
+          "success_metric": "Achieve 12% reduction in raw material procurement costs within two years.",
+          "milestones": [
+            "Platform MVP deployed and tested (Month 9)",
+            "Integration with key supplier APIs (Month 15)",
+            "Full market launch feasibility study (Month 18)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Workflow Automation for Regulatory Documentation",
+        "rationale": "Automating the collection, verification, and submission of compliance documentation can significantly reduce manual effort in the high-regulatory environment while decreasing human error rates.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current documentation flow and identify bottlenecks.",
+            "Investigate low-code workflow automation tools (e.g., Power Automate).",
+            "Develop standardized templates for compliance reporting."
+          ],
+          "resources_needed": [
+            "Automation software licensing ($20k)",
+            "Internal process specialist time allocation",
+            "Training materials development"
+          ],
+          "success_metric": "Reduce documentation processing time by 30% and error rate to near zero.",
+          "milestones": [
+            "Prototype workflow developed (Month 4)",
+            "Testing in a controlled compliance environment (Month 6)",
+            "Full departmental rollout (Month 9)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1 year"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional steering committee to approve the Predictive Maintenance initiative budget and scope.",
+        "owner": "CEO / Operations VP",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Commission a detailed feasibility study for the AI Supply Chain Optimization platform, including partnership viability assessments.",
+        "owner": "Chief Strategy Officer (CSO)",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Establish a standardized framework for collecting efficiency metrics across all manufacturing sites to inform future incremental projects.",
+        "owner": "Head of Quality Assurance",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on outdated legacy ERP systems which impede real-time data flow.",
+      "Cultural resistance to adopting new digital tools and process changes among long-term staff.",
+      "Inconsistent quality control procedures across different shifts and production lines.",
+      "Limited internal expertise in advanced machine learning and predictive analytics."
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "0007",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:50:30.206212+00:00",
+    "duration_ms": 22106,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "SynergyFlow Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "SynergyFlow Analytics is a medium-sized B2B SaaS company specializing in AI-driven supply chain optimization tools for mid-market manufacturers. We focus on providing scalable software solutions that help clients reduce operational costs and improve efficiency. Our core team consists of experienced engineers and sales professionals dedicated to product refinement and market expansion.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We recently launched a feature upgrade focused on predictive demand forecasting, which resulted in a 15% increase in customer retention. Previously, we experimented with integrating machine learning models into our core platform but lacked standardized testing protocols for new algorithm deployment.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to achieve significant recurring revenue growth by expanding market penetration into the European sector and diversifying our service offerings beyond basic analytics. We aim to establish SynergyFlow as a top-tier solution provider in the logistics software niche.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The team is moderately sized (25 people), comprising dedicated product management, engineering, and customer success staff. While specialized, the structure is flexible enough to allow cross-functional project teams.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is rapidly scaling, requiring continuous feature innovation to maintain competitive advantage."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Autonomous Optimization Engine (AOE)",
+        "rationale": "Developing a proprietary AI engine that autonomously adjusts supply chain parameters in real-time, moving beyond predictive analytics to prescriptive action. This radical shift is necessary to capture higher value and significantly differentiate us from competitors who rely solely on descriptive reporting.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated high-level R&D task force",
+            "Conduct feasibility study for LLM integration in logistics planning"
+          ],
+          "resources_needed": [
+            "Hire 2 specialized ML engineers",
+            "Allocate $50k for initial prototyping and data acquisition"
+          ],
+          "success_metric": "Successful pilot of AOE with a 10% reduction in average client operational costs within 6 months.",
+          "milestones": [
+            "Q3: Data pipeline infrastructure established",
+            "Q4: Core ML model MVP deployed to internal testing"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Tiered Enterprise Service Integration Package",
+        "rationale": "Introduce a tiered service model that bundles advanced security features, dedicated on-site support, and bespoke industry compliance reporting for larger clients. This incrementally expands revenue per customer without requiring a full product overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop detailed pricing structure for new tiers",
+            "Draft marketing materials targeting enterprise sales teams"
+          ],
+          "resources_needed": [
+            "Allocate $15k for dedicated sales enablement and compliance review",
+            "Update existing CRM infrastructure"
+          ],
+          "success_metric": "Achieve a 20% increase in Average Revenue Per User (ARPU) within the first year.",
+          "milestones": [
+            "Q3: Finalize pricing models and service SLA documents",
+            "Q4: Launch new enterprise sales campaign"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Acquisition of Niche Logistics Platform",
+        "rationale": "Acquiring a smaller, specialized logistics platform would immediately grant us access to untapped European markets and proprietary data sets. This high-risk move is the fastest way to achieve aggressive growth targets.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 5 potential target companies in key European regions",
+            "Create a preliminary valuation and due diligence framework"
+          ],
+          "resources_needed": [
+            "Allocate $20k for legal and M&A advisory fees",
+            "Internal team time commitment (full-time search)"
+          ],
+          "success_metric": "Successful acquisition of target company within 18 months, resulting in a minimum 30% increase in total market share.",
+          "milestones": [
+            "Q2: Target identification and initial outreach",
+            "Q4: Definitive purchase agreement signed"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a deep-dive product roadmap review focused on the Autonomous Optimization Engine (AOE) architecture.",
+        "owner": "CTO/Product Lead",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Develop a formal market entry strategy and preliminary valuation model for the targeted acquisition target.",
+        "owner": "CEO/Strategy Head",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Implement standardized A/B testing protocols for all new feature releases to improve process consistency.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent scaling of data infrastructure supporting rapid growth.",
+      "Talent pipeline competition in the specialized AI/ML engineering domain.",
+      "Over-reliance on a single sales channel."
+    ]
+  }
+}

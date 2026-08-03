@@ -1,0 +1,121 @@
+{
+  "id": "0048",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:09:32.139733+00:00",
+    "duration_ms": 20144,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Fabrication",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Precision Fabrication is a mid-sized manufacturer specializing in high-tolerance industrial components for the aerospace and medical device industries. The company operates within a heavily regulated environment requiring strict adherence to international quality standards like ISO 13485 and various environmental regulations. Revenue is stable but growth is constrained by capital expenditure requirements.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "In the last three years, we have focused on incremental improvements in production efficiency through automation upgrades and minor process streamlining. We also initiated a formal internal review of our legacy supply chain to ensure compliance with new environmental mandates.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is maintaining premium quality reputation and securing long-term contracts within the aerospace sector. Secondary goals include reducing operational costs through optimized resource allocation while ensuring zero regulatory infractions.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of five engineers and three operations managers, working collaboratively to implement change.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "budget"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Compliance Automation Integration",
+        "rationale": "Given the high regulatory environment, automating documentation and compliance reporting can drastically reduce manual process errors and audit risk, directly supporting market defense by minimizing potential penalties.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 regulatory pain points requiring manual data entry.",
+            "Pilot a low-cost API solution for tracking key compliance metrics."
+          ],
+          "resources_needed": [
+            "Software licensing fee ($15k)",
+            "Internal IT resource time (20 hours)"
+          ],
+          "success_metric": "Reduction in audit preparation time by 30% within 9 months.",
+          "milestones": [
+            "Q1: Tool selection and proof of concept completion.",
+            "Q3: Full integration into relevant operational workflows."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9-12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Quality AI for Material Stress Testing",
+        "rationale": "Implementing a radical predictive model using machine learning on sensor data from fabrication machines could revolutionize quality control, allowing for proactive adjustments rather than reactive inspection. This offers a significant competitive advantage by guaranteeing defect prevention.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated cross-functional AI project team (Engineering + Data Science).",
+            "Acquire necessary sensor data licenses and cloud GPU resources."
+          ],
+          "resources_needed": [
+            "Data Scientist salary ($100k)",
+            "High-performance computing hardware upgrade ($50k)"
+          ],
+          "success_metric": "Reduction in scrap material rate by 20% within 18 months.",
+          "milestones": [
+            "Q2: Data pipeline setup and model training initiation.",
+            "Q4: Successful pilot deployment on one critical production line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18-24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a thorough audit of current regulatory reporting workflows to quantify compliance process bottlenecks.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Form a cross-functional task force (Engineering, IT, Compliance) to evaluate vendor solutions for compliance automation software.",
+        "owner": "Small Leadership Team Lead",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Develop the business case and initial MVP scope for the Predictive Quality AI project, including required talent acquisition strategy.",
+        "owner": "CEO/Strategy Head",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on manual data entry leading to potential human error in compliance reporting.",
+      "Limited internal talent pool specialized in advanced predictive maintenance and AI."
+    ]
+  }
+}

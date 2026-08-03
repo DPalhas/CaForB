@@ -1,0 +1,148 @@
+{
+  "id": "0099",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:32:59.180817+00:00",
+    "duration_ms": 48027,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "AuraFlow Logistics Solutions",
+      "sector": "Transportation & Logistics",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "AuraFlow Logistics is a medium-sized provider specializing in last-mile delivery optimization for e-commerce businesses. The company operates primarily across regional hubs, focusing on minimizing operational costs through route planning and fleet utilization.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "They recently implemented an AI-driven dynamic routing system to reduce fuel consumption by 15% and successfully piloted a subscription-based tracking module for key enterprise clients. These initiatives focused heavily on process improvement and resource optimization.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly improve operational efficiency across the supply chain while maintaining high customer retention rates through superior service reliability.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "A mid-sized, cross-functional team of 35 people including dedicated data scientists and operations managers. The team is structured to support both maintaining current service quality and driving technological improvements.",
+      "digitalMaturity": 4,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is increasingly demanding faster and more transparent delivery options, requiring continuous technological adaptation to stay competitive."
+    }
+  },
+  "output": {
+    "maturity_score": 8.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Autonomous Predictive Scheduling Platform (APSP)",
+        "rationale": "Developing a fully autonomous system that predicts traffic, weather, and demand fluctuations in real-time across the entire regional fleet could radically optimize routing beyond current static models. This addresses efficiency goals by eliminating manual decision latency.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study for ML model training on existing historical logistics data.",
+            "Allocate dedicated time (2 months) and budget for a pilot API integration."
+          ],
+          "resources_needed": [
+            "Data science consultant fee ($50k)",
+            "Cloud computing resources for simulation ($20k)"
+          ],
+          "success_metric": "Reduction in average route completion time by 30% within 18 months.",
+          "milestones": [
+            "Q1: Data pipeline validation and model architecture finalization",
+            "Q2: Pilot deployment on a single regional lane",
+            "Q4: Scalability assessment for full fleet integration"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Warehouse Automation Integration (WAI)",
+        "rationale": "Integrating low-cost robotic sorting and inventory tracking systems in the central distribution hub will incrementally improve throughput and accuracy, directly addressing internal process inefficiencies.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three high-volume handling tasks for initial automation testing.",
+            "Conduct a cost-benefit analysis comparing CapEx vs. OpEx savings."
+          ],
+          "resources_needed": [
+            "Hardware procurement and installation ($80k)",
+            "Internal project team hours (10% staff allocation)"
+          ],
+          "success_metric": "Reduction in manual picking errors by 40%.",
+          "milestones": [
+            "Month 3: Vendor selection and contract finalization",
+            "Month 6: Pilot installation in one warehouse module",
+            "Month 9: Full operational rollout across two modules"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "incremental",
+        "title": "Dynamic Pricing Model for Small Vendors",
+        "rationale": "Implementing a simple dynamic pricing model that optimizes the cost structure for smaller, localized service providers will incrementally improve margin efficiency and vendor satisfaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop MVP algorithm based on supply/demand elasticity.",
+            "Conduct internal training for sales team on new pricing structures."
+          ],
+          "resources_needed": [
+            "Software development resources (internal allocation)",
+            "Marketing materials budget ($15k)"
+          ],
+          "success_metric": "Increase in average vendor contract renewal rate by 10%.",
+          "milestones": [
+            "Month 2: Algorithm completion and internal testing",
+            "Month 4: Soft launch with a select group of vendors",
+            "Month 6: Full integration into primary sales pipeline"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional steering committee to oversee the APSP feasibility study.",
+        "owner": "Chief Operations Officer (COO)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate vendor RFPs for Warehouse Automation hardware and software solutions.",
+        "owner": "Director of IT/Procurement",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch a rapid internal workshop on data literacy to upskill the operational team.",
+        "owner": "Head of Talent Development",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on legacy planning software requiring significant manual intervention.",
+      "Limited in-house data science talent specializing in predictive logistics modeling.",
+      "Siloed communication between the sales, operations, and IT departments hindering rapid change adoption."
+    ]
+  }
+}

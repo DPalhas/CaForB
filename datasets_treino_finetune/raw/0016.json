@@ -1,0 +1,146 @@
+{
+  "id": "0016",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:54:14.688110+00:00",
+    "duration_ms": 23080,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "NovaSolutions Inc.",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "NovaSolutions is a B2B SaaS provider specializing in project management and data analytics tools for mid-sized enterprises. They operate primarily online, handling scalable cloud infrastructure with minimal direct regulatory oversight.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The company has recently launched two minor feature updates based on user feedback but does not have a structured pipeline for major new product development or market entry strategies.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to reduce reliance on the existing domestic enterprise market by successfully entering two adjacent geographical regions and identifying three completely new vertical industries.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core R&D team consists of 15 engineers and product managers, working collaboratively but lacking dedicated cross-functional innovation roles.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company is currently prioritizing stability and predictable growth over aggressive market disruption."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Vertical Feature Expansion (Adjacent Market Entry)",
+        "rationale": "Leveraging existing core competency to target a completely new industry vertical, such as logistics or professional services, provides low-risk diversification. This uses current technical skills and minimizes brand risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three potential adjacent verticals (e.g., HR Tech, Field Service Management).",
+            "Develop a Minimum Viable Product (MVP) framework for one identified vertical."
+          ],
+          "resources_needed": [
+            "Consultant hours (low-cost initial market validation)",
+            "Engineering time reallocation (part-time)"
+          ],
+          "success_metric": "Achieve 5 paying pilot customers in the new vertical within Q3.",
+          "milestones": [
+            "Market validation report completed by end of Month 1.",
+            "MVP feature set launch and feedback loop established."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Strategic Partnership for Market Access",
+        "rationale": "Instead of internal expansion, NovaSolutions can diversify by forming strategic alliances with established players who already dominate new geographic or vertical markets. This lowers competitive pressure and speeds up entry.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit top 5 potential partnership targets based on revenue/market share.",
+            "Develop a tailored pitch package focusing on complementary technology."
+          ],
+          "resources_needed": [
+            "Legal consultation (for contract review)",
+            "Executive time allocation for relationship building"
+          ],
+          "success_metric": "Secure one formal strategic partnership agreement within 9 months.",
+          "milestones": [
+            "Finalize MoU with a target partner.",
+            "Execute joint pilot program."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Core Platform Re-architecture for Scalability",
+        "rationale": "To support future diversification goals, the current monolithic architecture needs a radical overhaul to allow rapid deployment of new vertical features. This is high risk but necessary if they wish to pursue high-growth markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct technical feasibility study for microservices transition.",
+            "Establish a dedicated internal 'Innovation Task Force'."
+          ],
+          "resources_needed": [
+            "Increased budget allocation (requires 10% temporary dip in operational spend)",
+            "Hiring of one senior architect."
+          ],
+          "success_metric": "Reduction in average feature deployment time by 40%.",
+          "milestones": [
+            "Phase 1 architecture blueprint finalized.",
+            "Successful migration of core services to cloud-native microservices framework."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Launch a formal cross-departmental 'Adjacent Market Feasibility Study' led by the leadership team.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Identify and initiate contact with three potential strategic partnership targets in new verticals.",
+        "owner": "Head of Business Development",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Complete the technical feasibility assessment for microservices transition to support radical opportunities.",
+        "owner": "CTO",
+        "timeframe": "End of Q3"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal process lacks structured pipeline visibility.",
+      "High reliance on current core product, limiting diversification potential.",
+      "Talent gap in dedicated innovation and cross-functional roles.",
+      "Lack of formalized market validation methodology."
+    ]
+  }
+}

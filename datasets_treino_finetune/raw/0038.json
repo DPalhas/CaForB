@@ -1,0 +1,124 @@
+{
+  "id": "0038",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:04:07.815275+00:00",
+    "duration_ms": 44379,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Global Power Solutions Inc.",
+      "sector": "Energy & Utilities",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Global Power Solutions is a mid-sized utility company specializing in regional power distribution and grid maintenance. The business operates under strict federal and state regulatory oversight regarding environmental compliance and pricing structures. They manage significant infrastructure assets across several states.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently launched an internal software upgrade for asset management, but major strategic R&D projects have been stalled due to lengthy approval cycles. They have piloted a small solar integration project in one state.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to secure new, high-growth revenue streams by entering adjacent markets like distributed energy storage and smart grid technology. This requires developing non-core assets.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 5 subject matter experts supported by a small IT unit.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Government mandates are rapidly increasing the complexity of infrastructure upgrades, forcing proactive strategic pivots."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Smart Grid Optimization Software Integration",
+        "rationale": "Implementing an incremental software solution to manage existing infrastructure more efficiently allows for immediate ROI and compliance improvements without major capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a needs assessment survey across three regional hubs.",
+            "Pilot the existing asset management software with predictive maintenance features."
+          ],
+          "resources_needed": [
+            "Internal IT specialist time (100 hours)",
+            "Software licensing for pilot upgrade ($5k)"
+          ],
+          "success_metric": "Reduction in operational downtime by 12% within one fiscal year",
+          "milestones": [
+            "Month 1: Pilot completion.",
+            "Month 6: Full regional rollout planning."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Diversification into Micro-Grid Storage Services",
+        "rationale": "Developing proprietary battery storage solutions allows the company to pivot from being purely a distribution utility provider into a technology service provider, capitalizing on the growing demand for renewable energy integration.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a small external R&D partnership with a specialized tech startup.",
+            "Allocate seed funding ($50k) to a dedicated proof-of-concept lab."
+          ],
+          "resources_needed": [
+            "External consulting fees ($30k)",
+            "Initial prototype hardware development ($60k)"
+          ],
+          "success_metric": "Secure two major private sector contracts for storage services within 18 months",
+          "milestones": [
+            "Month 4: Proof-of-concept validation.",
+            "Month 12: First commercial service contract."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force between Operations and R&D to define the requirements for smart grid software integration.",
+        "owner": "VP of Technology",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate due diligence and partnership discussions with specialized battery storage technology providers.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Review the organizational structure to streamline the internal approval process for non-core strategic projects.",
+        "owner": "Executive Management Team",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow decision-making due to complex regulatory compliance requirements",
+      "High reliance on legacy infrastructure that limits agility for new service offerings",
+      "Lack of specialized talent in emerging areas like energy storage technology",
+      "Internal risk aversion slowing down high-potential diversification projects"
+    ]
+  }
+}

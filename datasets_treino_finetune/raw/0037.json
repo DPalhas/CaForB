@@ -1,0 +1,145 @@
+{
+  "id": "0037",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:03:23.418456+00:00",
+    "duration_ms": 25478,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "CloudFlow Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "CloudFlow Analytics is a B2B SaaS provider offering data visualization and predictive modeling tools for mid-sized enterprises. They focus on providing modular solutions that allow clients to customize their reporting workflows without extensive coding knowledge.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has focused primarily on iterative feature releases based on customer feedback and successful A/B testing of core platform modules. They have also experimented with minor integration partnerships to enhance data connectivity.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive revenue growth through expanding enterprise client base penetration and increasing Average Revenue Per User (ARPU). The company aims to solidify its position in the mid-market segment.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The team consists of 8 core employees, including product managers and a small engineering unit, operating within a small_leadership_team structure.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Tiered Feature Expansion (Pro/Enterprise)",
+        "rationale": "Expanding the current software tiers to introduce advanced predictive analytics capabilities addresses customer demand for higher value without requiring a complete overhaul of existing infrastructure. This incremental approach minimizes development risk while directly supporting ARPU growth.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct deep-dive market research into competitor pricing structures for enterprise SaaS tiers.",
+            "Define the minimum viable product (MVP) features for the 'Enterprise' tier based on NPSA data."
+          ],
+          "resources_needed": [
+            "Senior Product Manager allocation",
+            "Dedicated QA testing budget ($15,000)"
+          ],
+          "success_metric": "Increase in ARPU by 18% within Q3.",
+          "milestones": [
+            "Define feature roadmap and pricing strategy (Month 1)",
+            "Launch Enterprise pilot program for 5 anchor clients (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Vertical Integration via Acquisition/Partnership",
+        "rationale": "To achieve significant growth, the company should pursue a strategic partnership or acquisition of a niche data provider. This radical move immediately expands market reach into high-value vertical sectors like logistics or healthcare, bypassing slow organic customer acquisition.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-potential niche software vendors in Logistics/Healthcare space.",
+            "Develop a preliminary valuation and due diligence framework."
+          ],
+          "resources_needed": [
+            "Legal counsel for M&A",
+            "Business Development team expansion budget ($50,000)"
+          ],
+          "success_metric": "Secure at least one strategic partnership leading to 10 new enterprise leads.",
+          "milestones": [
+            "Complete market screening and vendor shortlisting (Month 2)",
+            "Finalize Letter of Intent (LOI) or Partnership Agreement (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Internal Process Automation for Onboarding",
+        "rationale": "By implementing automated workflows for customer onboarding and initial technical support documentation, the company can reduce operational friction. This conserves time and allows small teams to focus on high-value product development rather than repetitive administrative tasks.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit the current manual client onboarding process and map pain points.",
+            "Select and implement a low-code workflow automation tool (e.g., Zapier integration)."
+          ],
+          "resources_needed": [
+            "Automation tool subscription ($5,000)",
+            "Time allocation for two existing engineers (part-time)"
+          ],
+          "success_metric": "Reduce average client onboarding time by 30%.",
+          "milestones": [
+            "Complete process mapping and tool selection (Month 1)",
+            "Deploy automation system across core support functions (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the feature roadmap for the tiered expansion based on competitive analysis.",
+        "owner": "Head of Product",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Initiate outreach to three identified potential strategic partnership targets in the logistics vertical.",
+        "owner": "VP of Business Development",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Complete the audit of current client onboarding processes and select a suitable automation tool.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High churn rate in early customer adoption phase due to poor initial user experience (UX).",
+      "Lack of formalized, scalable sales process leading to inconsistent lead conversion rates.",
+      "Limited in-house expertise in advanced data science required for truly radical product features."
+    ]
+  }
+}

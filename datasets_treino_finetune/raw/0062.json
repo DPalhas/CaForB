@@ -1,0 +1,123 @@
+{
+  "id": "0062",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:16:15.030980+00:00",
+    "duration_ms": 19542,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Fabrication Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "A medium-sized manufacturer specializing in custom metal fabrication for the industrial supply sector. The company has a stable client base but relies heavily on manual quality control and legacy software systems for order tracking and inventory management. They are focused primarily on maintaining existing operational excellence rather than rapid market disruption.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The company recently implemented minor updates to its internal database structure to improve data entry consistency. There have been no major, capital-intensive process innovations in the last two years as resources were prioritized for maintenance and scaling current operations.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to reduce operational overhead by 15% through optimized material usage and streamlined production scheduling. We aim to enhance product quality consistency to maintain a high level of client trust and reliability.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core operational team consists of 10 skilled craftsmen, supported by a small administrative staff of three. Innovation efforts are currently led entirely by the owner.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market requires increasingly precise output and faster turnaround times, putting pressure on existing manual workflows."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Production Workflow Mapping",
+        "rationale": "Mapping the current order-to-delivery process will identify redundant steps and bottlenecks causing waste in material handling and labor time. This is a low-risk, incremental change that can yield immediate efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a month-long workflow audit on the top three product lines.",
+            "Identify three high-impact manual handoffs for automation review."
+          ],
+          "resources_needed": [
+            "Owner time (20 hours)",
+            "Basic flow charting software subscription ($500)"
+          ],
+          "success_metric": "Reduction in lead-time by 8% within 6 months",
+          "milestones": [
+            "Workflow mapping complete (Month 1 end)",
+            "Pilot implementation of optimized scheduling logic (Month 4 end)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Automated Quality Control System Integration",
+        "rationale": "Implementing basic vision-based quality inspection during the fabrication process could significantly reduce scrap rates and improve consistency, offering a transformative efficiency gain.",
+        "execution_plan": {
+          "first_actions": [
+            "Research low-cost industrial camera/vision setup solutions.",
+            "Develop a proof-of-concept module for inspecting critical weld points."
+          ],
+          "resources_needed": [
+            "Contract for specialized hardware ($15,000)",
+            "External consultant for system integration (3 months)"
+          ],
+          "success_metric": "Reduction in material waste/scrap rate by 20% annually",
+          "milestones": [
+            "Proof-of-concept successful testing with new hardware (Month 9)",
+            "Full system integration into production line (Month 15)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Schedule a dedicated workshop with the owner to finalize the scope and budget for the Lean Production Workflow Mapping initiative.",
+        "owner": "Owner",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Contact two specialized external vendors offering low-cost vision systems to evaluate feasibility for the quality control radical opportunity.",
+        "owner": "Innovation Lead (Owner)",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a detailed 12-month efficiency roadmap based on the prioritized opportunities and present it to the management team.",
+        "owner": "Owner",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on manual processes leading to inconsistent output quality.",
+      "Limited formal process documentation, hindering scalable efficiency improvements.",
+      "Slow decision-making cycle due to owner-alone structure, delaying investment in new tools."
+    ]
+  }
+}

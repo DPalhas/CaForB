@@ -1,0 +1,124 @@
+{
+  "id": "0063",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:16:37.006727+00:00",
+    "duration_ms": 21956,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "ReguSoft Solutions",
+      "sector": "Information Technology",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "ReguSoft provides specialized cloud software solutions for mid-sized financial institutions, focusing heavily on regulatory compliance and data security protocols. The company operates in a highly regulated environment where continuous updates to legal frameworks are mandatory.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has implemented incremental automation of manual reporting processes over the last two years. A pilot project for integrating AI-driven compliance checks is currently underway but remains preliminary.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Achieve operational efficiency by automating 40% of routine compliance tasks and reduce regulatory risk exposure through proactive system monitoring. The goal is to scale operations without compromising security standards.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core development team consists of 10 highly specialized engineers and compliance officers, operating under a structured hierarchy.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The industry is rapidly adopting GenAI for compliance monitoring, creating both opportunities and significant operational challenges."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting Engine (Phase 1)",
+        "rationale": "Implementing a structured workflow to automate the generation of routine compliance reports will directly address the strategic priority of efficiency by minimizing manual labor and reducing human error risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current reporting workflows.",
+            "Select RPA tool for simple data ingestion."
+          ],
+          "resources_needed": [
+            "Software licensing (RPA tool)",
+            "Internal process documentation time"
+          ],
+          "success_metric": "Reduction in report generation time by 30% within 6 months.",
+          "milestones": [
+            "Q1: Workflow Mapping Complete",
+            "Q2: Pilot Automation Go-Live",
+            "Q3: Full Department Integration"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Proactive Compliance Monitoring Platform",
+        "rationale": "Developing a predictive AI model that monitors regulatory changes in real-time and flags potential compliance breaches before they occur represents a radical shift, moving beyond reactive reporting to proactive risk management.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish dedicated cross-functional task force (Legal/Tech).",
+            "Acquire necessary data science talent."
+          ],
+          "resources_needed": [
+            "Data Science team salaries",
+            "High-level cloud computing infrastructure"
+          ],
+          "success_metric": "Reduction in critical compliance errors by 50% YoY.",
+          "milestones": [
+            "Q1: MVP Model Training Complete",
+            "Q2: Internal Stress Testing Complete",
+            "Q3: Limited External Beta Launch"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed cost-benefit analysis for the Automated Compliance Reporting Engine (Phase 1).",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a 'Culture & Talent' workshop focusing on upskilling existing staff to manage new automation tools.",
+        "owner": "Head of HR",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define the data requirements and initial scope for the AI-Driven Proactive Compliance Monitoring Platform (radical opportunity).",
+        "owner": "Chief Technology Officer",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow adoption of new technologies due to conservative risk culture.",
+      "High dependency on manual data entry and reporting.",
+      "Lack of dedicated, specialized talent in advanced AI/Machine Learning for regulatory forecasting."
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "0022",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:56:20.223292+00:00",
+    "duration_ms": 19572,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "GlobalMart E-Commerce",
+      "sector": "E-commerce",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "GlobalMart is a medium-sized e-commerce platform specializing in consumer goods across three major categories. It operates primarily through its own website and several third-party marketplaces, serving a loyal customer base focused on convenience.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company has recently implemented A/B testing frameworks for UI improvements and conducted quarterly product roadmap reviews to align with seasonal market trends. They have also piloted an in-house logistics optimization project.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "To maintain a dominant market share within the consumer electronics segment and reduce customer churn by offering superior service experiences. The primary goal is preserving existing revenue streams against aggressive competitors.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core innovation team consists of 5 product managers and 2 software engineers, reporting directly to the C-suite. They are lean but highly specialized.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company faces intense price competition and rapid technological shifts in logistics, requiring continuous adaptation to stay relevant."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Personalized Loyalty Engine V2",
+        "rationale": "Developing a sophisticated AI-driven personalization engine can significantly increase customer lifetime value and reduce churn by tailoring product recommendations precisely to individual user behavior.",
+        "execution_plan": {
+          "first_actions": [
+            "Complete discovery phase for ML data requirements",
+            "Allocate budget for specialized data scientist contractor"
+          ],
+          "resources_needed": [
+            "Data science team allocation",
+            "Cloud infrastructure upgrade"
+          ],
+          "success_metric": "Increase in average order value (AOV) by 15% within 12 months.",
+          "milestones": [
+            "Q3: Prototype launched for top 10% of customers",
+            "Q4: Full integration and A/B testing rollout"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyperlocal Micro-Fulfillment Network",
+        "rationale": "To defend market share against faster delivery competitors, establishing a network of small, automated micro-fulfillment centers in key metropolitan areas could drastically cut last-mile delivery times.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on robotics and warehousing solutions",
+            "Identify potential partnership targets with local logistics providers"
+          ],
+          "resources_needed": [
+            "Capital investment for automated inventory systems",
+            "Legal expertise for new operational contracts"
+          ],
+          "success_metric": "Reduction in average delivery time by 30% within 18 months.",
+          "milestones": [
+            "Q2: Final site selection and business case approval",
+            "Q4: Pilot launch in two target cities"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated task force to evaluate the ROI of adopting the Personalized Loyalty Engine V2.",
+        "owner": "Head of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a pilot program for hyperlocal micro-fulfillment in one high-density metro area, securing necessary operational agreements.",
+        "owner": "Chief Operations Officer (COO)",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct an internal skills gap analysis to address the talent needs for advanced data science required by both opportunities.",
+        "owner": "Head of HR",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Stagnant core technology stack which limits rapid feature deployment.",
+      "High reliance on third-party logistics providers, leading to inconsistent delivery experience.",
+      "Talent gap in specialized AI and machine learning expertise needed for next-generation personalization."
+    ]
+  }
+}

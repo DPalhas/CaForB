@@ -1,0 +1,123 @@
+{
+  "id": "0076",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:22:30.900176+00:00",
+    "duration_ms": 20717,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "MediSolve Healthtech",
+      "sector": "Healthtech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "MediSolve is a medium-sized healthtech firm specializing in AI-driven diagnostic tools for chronic disease management. The company operates in a highly regulated environment due to FDA compliance requirements, necessitating rigorous testing and adherence to evolving privacy laws.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "They have successfully launched two software prototypes addressing specific clinical pain points but struggle with scaling the technology into commercial products. Recent efforts focus on streamlining internal R&D cycles.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive market penetration in North America within three years by securing major partnerships and expanding the service portfolio. We aim to capture a significant share of the mid-market diagnostic testing segment.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 6 highly skilled engineers and clinical advisors, supported by a small operations staff. Talent retention remains a key focus.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Competitors are rapidly integrating similar AI diagnostics into hospital systems, requiring MediSolve to maintain a strong pipeline of innovative products."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Clinical Data Pipeline Integration",
+        "rationale": "Implementing standardized data pipelines will significantly reduce the time required for internal clinical validation and regulatory submission preparation. This addresses current process bottlenecks without requiring massive R&D expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and pilot a low-cost cloud data integration platform (e.g., AWS/Azure service).",
+            "Create a dedicated 'Data Compliance' working group."
+          ],
+          "resources_needed": [
+            "Internal IT allocation (part-time)",
+            "Software licensing fees ($5k)"
+          ],
+          "success_metric": "Reduce average time from prototype validation to submission readiness by 30%.",
+          "milestones": [
+            "Q1: Platform selection and sandbox environment setup.",
+            "Q2: Integration of one legacy data source for pilot testing."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Developing a Personalized Preventative Health Model (GenAI)",
+        "rationale": "Leveraging cutting-edge Generative AI to create truly personalized treatment recommendations based on individual genetic and lifestyle data could position the company as a market leader. This is high risk but offers massive growth potential.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate $50k for external PhD consultant consultation.",
+            "Establish a dedicated R&D sprint team."
+          ],
+          "resources_needed": [
+            "External AI/ML consultancy fees ($40k)",
+            "Dedicated engineering hours (2 FTE)"
+          ],
+          "success_metric": "Achieve 15% adoption rate among pilot clinical partners.",
+          "milestones": [
+            "Q3: Proof-of-concept model trained on proprietary data.",
+            "Q4: Internal beta testing and regulatory pathway feasibility assessment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to evaluate the regulatory impact of cloud data solutions.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Define KPIs for the personalized health model and secure external seed funding.",
+        "owner": "CEO",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Standardize internal process documentation to improve operational efficiency.",
+        "owner": "Head of R&D",
+        "timeframe": "Ongoing (Q3)"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow internal innovation pipeline for new product types.",
+      "High dependency on a single core technical team member (talent risk).",
+      "Lack of established formal partnership scaling process.",
+      "Limited experience navigating complex international regulatory compliance."
+    ]
+  }
+}

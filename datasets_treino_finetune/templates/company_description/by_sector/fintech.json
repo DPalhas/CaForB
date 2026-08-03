@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "Digital lending platform offering point-of-sale consumer financing and SME working capital loans through an API-integrated credit decisioning engine. Underwritten €120M in loans across 40 merchant partners. Risk scoring combines traditional bureau data with open banking transaction analysis. Evaluating real-time affordability assessment enhancements.",
+    "B2B buy-now-pay-later provider embedding installment payment options at checkout for B2B marketplaces and wholesale platforms. Serving 200 merchant partners and 8,000 business buyers. Key innovation challenge is automated credit limit adjustment based on real-time business financial health signals.",
+    "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration.",
+    "Insurtech MGA underwriting parametric weather insurance for smallholder farmers in Southern Europe. Payouts triggered automatically by satellite-verified rainfall deficit or frost events. Currently operating in Portugal and Spain with 5,000 policies. Evaluating expansion to parametric heat stress insurance for livestock."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "Digital health platform for chronic disease management focusing on diabetes and hypertension. Combining connected glucometer and blood pressure monitor data with AI-driven care coaching and medication adherence reminders. 25,000 active patients managed through partnerships with 40 clinics. Evaluating predictive health deterioration alerts.",
+    "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. 500+ credentialed physicians on the platform with 120,000 completed consultations. Regulated as a Class I medical device. Seeking AI-powered triage and symptom checking to optimize specialist routing.",
+    "Health data interoperability startup building FHIR-based API infrastructure to connect hospital EHR systems, lab information systems, and patient-facing health apps. 12 hospital clients integrated. Addressing the fragmented health data exchange landscape. Evaluating AI-assisted clinical data normalization and semantic mapping.",
+    "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools."
+  ]
+}

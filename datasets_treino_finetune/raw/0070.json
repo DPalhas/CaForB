@@ -1,0 +1,146 @@
+{
+  "id": "0070",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:20:02.233406+00:00",
+    "duration_ms": 21634,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Technical Solutions",
+      "sector": "Professional & Consulting Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Technical Solutions is a medium-sized consulting firm specializing in industrial process optimization and supply chain compliance for large manufacturers. The firm operates under stringent government regulations regarding data privacy and environmental standards, which requires significant investment in specialized expertise.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "They recently launched an internal training program focused on sustainable operations auditing but have struggled to fully integrate new digital tools into their legacy compliance workflow. Previous efforts were limited to minor process improvements rather than major structural changes.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is market diversification by expanding service offerings beyond core industrial consulting into adjacent regulatory compliance and specialized technology integration sectors. They aim to capture new high-margin opportunities in emerging markets while maintaining operational stability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core team consists of 25 highly specialized consultants, supported by a small operations department. The culture is knowledge-driven but occasionally slow to adopt rapid technological shifts.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The firm faces intense competition from both large global consultancies and smaller niche tech startups offering automated compliance solutions."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Workflow Integration",
+        "rationale": "Given the high regulatory environment and formal process, automating compliance tasks incrementally can significantly reduce human error and increase service delivery speed without risking core operational stability.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 3 most time-consuming manual compliance steps.",
+            "Pilot a low-cost RPA tool for data entry/reporting in one department."
+          ],
+          "resources_needed": [
+            "Cloud RPA software license",
+            "2 dedicated internal process analysts (part-time)"
+          ],
+          "success_metric": "Reduction of 40% in time spent on routine compliance reporting within 6 months.",
+          "milestones": [
+            "Q1: Tool selection and scoping complete.",
+            "Q3: Pilot program successful across one vertical."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical-Specific Healthtech Integration Service",
+        "rationale": "To achieve diversification, the firm should develop a new consulting service by integrating regulatory compliance with emerging healthtech standards in industrial settings (e.g., worker safety regulations related to specific machinery). This opens a high-growth adjacent market.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional task force between legal, technical, and sales teams.",
+            "Conduct market research on top 3 emerging healthtech regulatory niches."
+          ],
+          "resources_needed": [
+            "External regulatory compliance expert retainer",
+            "Small R&D grant for preliminary studies"
+          ],
+          "success_metric": "Secure 2 new client contracts in the Healthtech adjacent compliance niche within 18 months.",
+          "milestones": [
+            "Q2: Task force established and MVP of service defined.",
+            "Q4: Revenue generated from first specialized contract."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Strategic Talent Upskilling Program",
+        "rationale": "Addressing the talent barrier requires formal upskilling to handle new, complex regulatory and digital requirements. This strengthens internal capability before expanding services.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current consultant skill gaps against future diversification needs.",
+            "Establish a formalized mentorship program focused on digital compliance tools."
+          ],
+          "resources_needed": [
+            "Budget for external certification courses",
+            "Internal training platform access"
+          ],
+          "success_metric": "80% internal consultant proficiency score in new regulatory framework areas within 1 year.",
+          "milestones": [
+            "Q2: Program curriculum finalized and launched.",
+            "Q4: Annual talent assessment completed."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated cross-functional task force to define the scope and feasibility of the 'Vertical-Specific Healthtech Integration Service'.",
+        "owner": "CEO / Head of Strategy",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate the pilot program for RPA tool integration in the compliance department.",
+        "owner": "CTO / COO",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct a gap analysis on consultant skills and budget for external certification programs.",
+        "owner": "HR Director / Head of Consulting",
+        "timeframe": "Within 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "slow adoption of digital tools due to legacy systems",
+      "high dependency on key senior consultants (talent risk)",
+      "formal process creating bureaucratic bottlenecks",
+      "limited market presence outside the core industrial sector"
+    ]
+  }
+}

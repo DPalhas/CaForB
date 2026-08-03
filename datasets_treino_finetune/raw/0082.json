@@ -1,0 +1,146 @@
+{
+  "id": "0082",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:25:40.002120+00:00",
+    "duration_ms": 22152,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Industrial Solutions",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Industrial Solutions is a medium-sized manufacturer specializing in precision components for the industrial equipment sector. The company operates across several specialized product lines, providing key inputs to aerospace and heavy machinery industries. It maintains strong regional presence but faces increasing scrutiny regarding sustainability and operational compliance standards.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently launched a pilot program for smart predictive maintenance using IoT sensors across its production line. Previously, innovation was largely project-based and driven by specific client demands.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goals are to expand our market footprint beyond traditional components into adjacent high-growth industrial sectors like specialized robotics. We aim to achieve revenue diversification across at least two new product categories within three years, ensuring long-term resilience.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core R&D team consists of 10 highly skilled engineers and two dedicated product managers who are focused on high-impact, transformative projects.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "strategy",
+        "time",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Increased regulatory compliance costs are challenging margins, necessitating strategic moves toward novel market entries."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Establish a 'Venture Lab' for New Material Science",
+        "rationale": "To achieve true diversification, the company must move beyond incremental improvements in existing product lines. Developing novel materials offers the potential to create entirely new product categories that penetrate untapped high-value markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 15% of the bold budget to seed three external material science startups annually.",
+            "Form a cross-functional 'Venture Lab' team comprising R&D, business development, and finance leads."
+          ],
+          "resources_needed": [
+            "Seed capital for initial lab setup ($2M)",
+            "Hiring two specialized materials scientists (talent acquisition)"
+          ],
+          "success_metric": "Revenue from new material-derived products accounts for 15% of total revenue within 36 months.",
+          "milestones": [
+            "Q4 Year 1: Lab operational and first prototype identified",
+            "Q2 Year 2: Pilot production run completed with external vendor"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Implement AI-Driven Supply Chain Optimization",
+        "rationale": "Optimizing the existing supply chain process through AI can immediately improve efficiency and reduce costs. This incremental step frees up capital and operational bandwidth necessary to fund larger diversification bets.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a machine learning model for demand forecasting across all product lines.",
+            "Integrate real-time sensor data from existing machinery into the ERP system."
+          ],
+          "resources_needed": [
+            "Software subscription costs ($500k)",
+            "Data science consulting firm retainer ($300k)"
+          ],
+          "success_metric": "20% reduction in inventory holding costs within 18 months.",
+          "milestones": [
+            "Q1 Year 1: Demand forecasting model deployed",
+            "Q4 Year 1: Inventory cost savings realized and sustained"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Invest in a Green Hydrogen Component Division",
+        "rationale": "To diversify into emerging energy sectors, the company should aggressively pursue a radical pivot into low-emission industrial components. This aligns with medium regulatory pressure and taps into high-future growth areas.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure initial government grants for pilot hydrogen component manufacturing research.",
+            "Identify and acquire a small startup specializing in electrolyzer technology."
+          ],
+          "resources_needed": [
+            "Grants applications/legal fees ($50k)",
+            "Acquisition costs for seed company ($1M)"
+          ],
+          "success_metric": "Achieve $1M in annual revenue from green component sales by Year 4.",
+          "milestones": [
+            "Q3 Year 2: Pilot project approval secured",
+            "Q1 Year 3: Initial commercial product launch"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated 'Diversification Steering Committee' to prioritize radical opportunities.",
+        "owner": "CEO / Strategy Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Complete the feasibility study and budget request for the Green Hydrogen component division.",
+        "owner": "VP of R&D",
+        "timeframe": "End of Q1 Year 1"
+      },
+      {
+        "action": "Initiate a comprehensive talent mapping exercise to address key skill gaps in emerging technologies.",
+        "owner": "HR Director",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of internal expertise in high-risk areas (e.g., advanced materials science).",
+      "Slow, formal innovation process that discourages rapid experimentation.",
+      "Over-reliance on existing client base, limiting market diversification."
+    ]
+  }
+}

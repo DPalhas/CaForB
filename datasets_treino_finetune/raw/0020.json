@@ -1,0 +1,122 @@
+{
+  "id": "0020",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:55:38.560563+00:00",
+    "duration_ms": 21690,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "InnovateFlow SaaS",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "InnovateFlow SaaS develops B2B workflow automation tools for mid-market businesses, focusing on supply chain visibility and operational efficiency. The company operates primarily through a subscription model and serves diverse industries like logistics and manufacturing. Current growth is driven by expanding its enterprise client base.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The team recently launched 'FlowMax,' an AI-driven predictive analytics module that integrates with existing workflows, significantly increasing customer retention. They also completed a major platform migration to a microservices architecture to improve scalability and reduce operational latency.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive revenue growth through market penetration in the APAC region over the next three years. Secondary goals include increasing average customer lifetime value (CLV) by offering premium, high-touch enterprise features and entering two adjacent vertical markets.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core team is a lean group of 15 engineers and product managers with deep domain expertise in operational tech.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Vertical Pivot into FinTech Integration",
+        "rationale": "Given the medium risk appetite and growth priority, pivoting to develop a highly specialized compliance automation module for the financial services vertical could unlock significant new revenue streams. This is radical as it requires building an entirely new feature set and sales funnel.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on core FinTech compliance needs.",
+            "Form a dedicated cross-functional task force (Product, Legal)."
+          ],
+          "resources_needed": [
+            "3-person legal/compliance consultant retainer",
+            "Seed funding allocation for specialized development."
+          ],
+          "success_metric": "Secure 5 pilot enterprise clients in the FinTech sector within 9 months.",
+          "milestones": [
+            "Define MVP scope and compliance requirements (Month 3)",
+            "Launch beta program with early adopter customers (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Long"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Upsell Engine",
+        "rationale": "Enhancing the current platform with a sophisticated AI engine that proactively identifies underutilized features for existing clients allows for higher ARPU (Average Revenue Per User) and improves customer lifetime value incrementally. This is crucial for sustaining growth in the current base.",
+        "execution_plan": {
+          "first_actions": [
+            "Analyze usage data to identify top 20% of feature users.",
+            "Prototype personalized upgrade path messaging."
+          ],
+          "resources_needed": [
+            "1 full-stack ML engineer for integration",
+            "Minor UX redesign budget."
+          ],
+          "success_metric": "Increase average customer CLV by 15% within the next fiscal year.",
+          "milestones": [
+            "Integrate initial recommendation engine (Month 4)",
+            "Roll out full upselling feature to 20% of active users (Month 8)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate detailed market research and scoping for the FinTech vertical pivot.",
+        "owner": "VP of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish metrics and KPIs to track growth-oriented initiatives (CLV, ARPU).",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct quarterly review of the current platform architecture for scalability.",
+        "owner": "CTO",
+        "timeframe": "Ongoing (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on a small core team leading to scaling bottlenecks.",
+      "Slow adaptation to rapidly changing regulatory requirements in new markets.",
+      "Limited brand recognition outside of the initial niche industry focus."
+    ]
+  }
+}

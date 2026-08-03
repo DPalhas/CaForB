@@ -1,0 +1,118 @@
+{
+  "id": "0052",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:11:27.618832+00:00",
+    "duration_ms": 23122,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Component Manufacturing",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision Component Manufacturing produces high-tolerance mechanical parts used in the automotive and aerospace sectors. The company operates globally with strict quality control requirements (ISO standards). They maintain a strong reputation for reliability but face increasing pressure to reduce operational overhead.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently implemented a comprehensive lean manufacturing audit, resulting in a 12% reduction in inventory waste. They have also piloted minor automation upgrades on their assembly line to improve throughput.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Primary goals include achieving operational excellence by streamlining production workflows and significantly reducing unit cost per component. The company aims to become the most efficient supplier in its niche within three years.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 4 dedicated engineers and a project manager, operating as a small leadership team focused on cross-functional process optimization.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is highly competitive, requiring continuous incremental improvements in manufacturing quality and speed."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation Pilot (RPA)",
+        "rationale": "Implementing Robotic Process Automation (RPA) for repetitive administrative tasks in quality assurance and inventory management can immediately boost efficiency without requiring a massive capital outlay. This addresses the 'process' barrier directly.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-volume, low-complexity manual processes (e.g., data entry, reporting).",
+            "Select and trial RPA software for a 30-day pilot phase."
+          ],
+          "resources_needed": [
+            "Software license subscription ($5k)",
+            "1 FTE dedicated to process mapping"
+          ],
+          "success_metric": "Reduction in manual data entry time by 40% during the pilot.",
+          "milestones": [
+            "Month 1: Process identification and scope definition",
+            "Month 2: Pilot execution and performance review"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 4 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Maintenance using IoT",
+        "rationale": "Deploying Industrial Internet of Things (IoT) sensors on key production machinery allows for predictive maintenance, drastically reducing unplanned downtime and optimizing maintenance schedules. This is a high-impact efficiency move that requires strategic investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Select two critical pieces of equipment for sensor installation.",
+            "Develop a proof-of-concept model using existing operational data."
+          ],
+          "resources_needed": [
+            "Initial hardware and sensor deployment ($30k)",
+            "Data science consulting hours (internal or external)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 25% within the first year.",
+          "milestones": [
+            "Month 1-3: Sensor installation and data collection",
+            "Month 4-6: Predictive model validation and integration into maintenance schedule"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-departmental steering committee (Operations, IT, Finance) to prioritize the RPA pilot.",
+        "owner": "Director of Operations",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Form a focused working group to conduct a feasibility study and budget proposal for the IoT Predictive Maintenance project.",
+        "owner": "Head of Engineering",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Legacy manufacturing systems hindering real-time data flow.",
+      "High staff turnover in specialized technical roles affecting knowledge retention.",
+      "Siloed departmental processes preventing end-to-end workflow optimization."
+    ]
+  }
+}

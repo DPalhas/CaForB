@@ -1,0 +1,145 @@
+{
+  "id": "0050",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:10:19.240684+00:00",
+    "duration_ms": 22098,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Components Ltd.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Precision Metal Components Ltd. is a medium-sized manufacturer specializing in high-tolerance metal parts for the automotive and aerospace industries. The company maintains strong contracts with established clients, focusing on quality consistency and operational efficiency.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The last three years have focused heavily on internal process optimization, including lean manufacturing adoption and minor automation upgrades to improve output quality rather than developing entirely new product lines.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to maintain a dominant market share within the existing niche by ensuring zero defects in our core product line. We aim to enhance operational efficiency to better withstand pricing pressures from larger competitors.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The R&D and process engineering teams consist of 15 dedicated specialists who are highly experienced in traditional machining and quality control.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Standardized Quality Protocol Automation",
+        "rationale": "Implementing automated quality checks on key manufacturing stages will reduce human error and allow for faster throughput without requiring a complete overhaul of current production methods. This directly defends market position by reducing defect rates.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current manual inspection points",
+            "Pilot vision system integration on the critical component line"
+          ],
+          "resources_needed": [
+            "Software licensing for vision system ($15k)",
+            "Internal training hours (30 person-hours)"
+          ],
+          "success_metric": "Reduction in scrap rate by 10% within 6 months",
+          "milestones": [
+            "Q2: Pilot completed and data collected",
+            "Q3: Full line integration and validation"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Supply Chain Resilience Mapping",
+        "rationale": "Developing a detailed mapping of sub-tier suppliers will identify single points of failure in the supply chain, allowing for proactive risk mitigation and stabilizing lead times. This supports market defense against competitors who might leverage unreliable sourcing.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 5 critical suppliers",
+            "Develop a risk scoring matrix"
+          ],
+          "resources_needed": [
+            "Consultant hours for supply chain mapping ($10k)",
+            "Internal project management time"
+          ],
+          "success_metric": "Reduction in average supplier lead time variability by 15%",
+          "milestones": [
+            "Q2: Mapping completed",
+            "Q3: Implementation of dual-source strategy for Tier 1 components"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Additive Manufacturing Feasibility Study (Niche Applications)",
+        "rationale": "Exploring small-scale additive manufacturing for customized, low-volume components could open a secondary niche market or provide faster prototyping capabilities. While high risk, successful implementation requires minimal capital investment initially.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 non-critical product lines suitable for AM",
+            "Contact two regional AM service providers for quotes"
+          ],
+          "resources_needed": [
+            "Material samples and prototyping budget ($5k)",
+            "Small internal feasibility study team allocation"
+          ],
+          "success_metric": "Successful delivery of 3 prototype components within cost constraints",
+          "milestones": [
+            "Q1: Technology assessment complete",
+            "Q2: Small-scale production trial initiated"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional working group (Operations, R&D, Finance) to prioritize and resource the Standardized Quality Protocol Automation project.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a detailed competitive analysis focusing on competitor quality metrics to inform market defense strategy.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define the budget and resource requirements for the Additive Manufacturing Feasibility Study project.",
+        "owner": "CFO",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on manual quality checks leading to high error rates.",
+      "Limited capital expenditure allocated to digital transformation initiatives.",
+      "Siloed communication between R&D and production teams regarding process improvements."
+    ]
+  }
+}

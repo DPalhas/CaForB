@@ -1,0 +1,149 @@
+{
+  "id": "0002",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:48:42.060945+00:00",
+    "duration_ms": 44647,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex BioSciences",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex BioSciences is a mid-sized biotech firm focused on developing next-generation oncology drugs. The company operates in a highly regulated environment requiring extensive clinical trial documentation and strict adherence to global safety standards.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has implemented several incremental process improvements focusing on streamlining R&D paperwork. They have also piloted a small digital platform for internal data sharing, though these initiatives are often slow due to regulatory hurdles.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is enhancing operational efficiency across the supply chain and reducing time-to-market for new drug candidates. We aim to optimize resource allocation without compromising stringent quality standards.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 8 specialized scientists and 3 operational managers, working closely under a small leadership team.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Clinical Trial Optimization",
+        "rationale": "Implementing AI/ML tools to predict trial bottlenecks and optimize patient recruitment strategy could radically reduce the time and cost associated with late-stage trials, directly supporting efficiency goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on using predictive modeling for patient cohort selection.",
+            "Identify and secure initial data partnerships with academic institutions."
+          ],
+          "resources_needed": [
+            "Data science consultant retainer",
+            "High-performance computing access"
+          ],
+          "success_metric": "Reduction of Phase II trial cycle time by 15% within 3 years.",
+          "milestones": [
+            "Q1: Feasibility Study Complete",
+            "Q3: Pilot AI Model Deployment (Internal)",
+            "Q4: Full Integration into Trial Protocol Management System"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Documentation Workflow",
+        "rationale": "Streamlining the manual process of generating and submitting regulatory documentation using RPA to minimize human error and significantly reduce administrative overhead, improving operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current end-to-end documentation flow.",
+            "Select and integrate an RPA tool for common reporting tasks."
+          ],
+          "resources_needed": [
+            "RPA software license",
+            "Internal IT resource reallocation"
+          ],
+          "success_metric": "Reduction in regulatory submission error rate from 5% to <1% within 6 months.",
+          "milestones": [
+            "Month 2: Workflow Mapping Complete",
+            "Month 4: Pilot RPA Implementation for SOPs",
+            "Month 8: Full Departmental Rollout"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Direct-to-Patient Data Sharing Platform (Decentralized)",
+        "rationale": "Exploring a decentralized data ledger approach to securely share anonymized patient trial outcomes with approved external partners, potentially bypassing traditional slow approval processes and increasing strategic collaboration.",
+        "execution_plan": {
+          "first_actions": [
+            "Engage legal counsel on cross-jurisdictional data sharing agreements.",
+            "Establish a sandbox environment for blockchain/decentralized ledger testing."
+          ],
+          "resources_needed": [
+            "Legal consultation fees",
+            "Cybersecurity specialist contract"
+          ],
+          "success_metric": "Establish secure data exchange protocol with 2 external partners within 18 months.",
+          "milestones": [
+            "Q1: Legal Framework Established",
+            "Q3: Sandbox Operational and Tested",
+            "Q4: Initial Partner Data Exchange Trial Launch"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to assess the technical feasibility and ROI of the AI Clinical Trial Optimization opportunity.",
+        "owner": "VP of R&D Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a deep dive audit of current documentation processes to identify high-friction points suitable for incremental RPA implementation.",
+        "owner": "Director of Process Improvement",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Begin preliminary legal and regulatory consultation on the requirements for a decentralized data sharing platform.",
+        "owner": "General Counsel",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed data management across research departments.",
+      "High staff turnover due to intense competition for specialized scientific talent.",
+      "Slow internal approval cycles bottlenecking time-to-market.",
+      "Limited investment in advanced, cross-departmental digital infrastructure."
+    ]
+  }
+}

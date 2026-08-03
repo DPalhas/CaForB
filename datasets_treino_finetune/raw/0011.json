@@ -1,0 +1,124 @@
+{
+  "id": "0011",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:52:01.952338+00:00",
+    "duration_ms": 21539,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "ApexData Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "ApexData Analytics is a medium-sized B2B SaaS provider specializing in predictive analytics for the logistics sector. They offer subscription-based platforms that help clients optimize supply chain routes and inventory management. The company operates with a strong focus on data privacy compliance across various international markets.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "In the last year, they successfully migrated their core platform to a cloud infrastructure, which significantly improved scalability. They also launched three new feature modules based directly on customer feedback surveys to enhance user engagement and retention.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to solidify market share within the enterprise logistics vertical by offering superior data integration capabilities. Secondary goals include expanding into adjacent industries through platform modularity and reducing churn by 15%.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core engineering team consists of 8 experienced full-stack developers and a dedicated product management group, focusing heavily on domain expertise.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense competition from established enterprise software providers and agile startups, requiring continuous investment in R&D to maintain a competitive edge."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized AI Insights Module",
+        "rationale": "Developing an incremental upgrade to the predictive analytics engine using machine learning will allow us to offer hyper-personalized route optimization suggestions tailored to specific client constraints, which directly strengthens our market defense against competitors offering generic solutions.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on integrating a lightweight ML model into the current platform API.",
+            "Allocate 1 full-time data scientist for a 6-month dedicated project."
+          ],
+          "resources_needed": [
+            "New cloud compute resources",
+            "Data science talent (contract or full-time)"
+          ],
+          "success_metric": "Increase feature adoption rate by 20% within Q3.",
+          "milestones": [
+            "Q1: Model proof of concept complete.",
+            "Q2: Beta launch with 5 anchor clients.",
+            "Q3: Full integration and monetization strategy defined."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical Expansion into Cold Chain Logistics Platform",
+        "rationale": "To ensure long-term market defense, we should explore a radical pivot by developing a specialized SaaS solution specifically for the volatile cold chain logistics industry. This targets an underserved niche with high regulatory barriers, creating a new revenue stream and locking out generalist competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 potential pilot customers in the Cold Chain sector.",
+            "Form a cross-functional task force (Product, Sales, Engineering)."
+          ],
+          "resources_needed": [
+            "Seed funding for dedicated vertical development team",
+            "Legal consultation on specialized industry compliance"
+          ],
+          "success_metric": "Secure 3 paying pilot clients within the first year.",
+          "milestones": [
+            "Q1: Market validation and MVP definition.",
+            "Q2: Dedicated platform build commencement.",
+            "Q4: Commercial launch of Cold Chain vertical."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate the feasibility study for the Hyper-Personalized AI Insights Module.",
+        "owner": "VP of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a cross-functional task force to evaluate the Cold Chain Logistics vertical expansion.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Conduct an internal talent gap analysis for specialized ML engineering roles.",
+        "owner": "Head of HR",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on key technical personnel, creating single-point-of-failure risk.",
+      "Slow internal process for pivoting from feature development to strategic market expansion.",
+      "Limited external sales expertise outside of the core logistics vertical."
+    ]
+  }
+}

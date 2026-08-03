@@ -1,0 +1,122 @@
+{
+  "id": "0084",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:26:21.971909+00:00",
+    "duration_ms": 18834,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Logistics Solutions",
+      "sector": "Transportation & Logistics",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Logistics Solutions is a medium-sized provider specializing in last-mile delivery and supply chain optimization for industrial goods. The company focuses on leveraging modern routing software to reduce operational costs and improve delivery speed across regional hubs.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently implemented an ERP system upgrade and piloted a new route optimization algorithm, which resulted in a 10% reduction in fuel consumption over the last year. They also established a cross-functional task force focused on streamlining internal procurement.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to achieve significant operational efficiency by minimizing waste and optimizing fleet utilization. Secondary goals include expanding market share in high-demand regional corridors through optimized delivery schedules.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The innovation team consists of five dedicated engineers and two operations managers who work closely together.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 22,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company is highly competitive in the regional logistics space, requiring continuous investment in tech to maintain cost competitiveness."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Dynamic Route Optimization Platform",
+        "rationale": "Implementing a radical AI platform could fundamentally change how Apex manages its routing and vehicle allocation, offering potential efficiency gains far beyond incremental changes. This addresses the main barrier of 'process' by automating complex decision-making.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct vendor RFPs for specialized route optimization AI software.",
+            "Establish a proof-of-concept project focused on one regional cluster."
+          ],
+          "resources_needed": [
+            "Software licensing costs ($50k)",
+            "Data science consultant retainer ($30k)"
+          ],
+          "success_metric": "Achieve 15% reduction in fuel consumption within the first six months.",
+          "milestones": [
+            "Q3: Platform selection complete and PoC initiated.",
+            "Q4: Full integration and pilot rollout."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cross-Departmental Workflow Automation (RPA)",
+        "rationale": "By implementing Robotic Process Automation (RPA) for internal tasks like invoice processing and inventory tracking, the company can drive efficiency gains without disrupting core operations. This is a lower-risk way to tackle 'process' bottlenecks.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top three most time-consuming manual administrative tasks.",
+            "Select and deploy a low-code RPA tool."
+          ],
+          "resources_needed": [
+            "RPA software subscription ($15k)",
+            "Internal training materials development ($5k)"
+          ],
+          "success_metric": "Reduce processing time for invoices by 40%.",
+          "milestones": [
+            "Month 2: Complete automation of procurement and invoicing.",
+            "Month 6: Full rollout across warehousing operations."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated task force to evaluate AI platform vendors and define technical requirements.",
+        "owner": "Chief Operations Officer (COO)",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a detailed cost-benefit analysis for the radical route optimization project, including ROI projections.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Pilot RPA implementation on the top administrative bottleneck to demonstrate immediate efficiency gains.",
+        "owner": "Director of IT/Operations",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on legacy systems for core operational data.",
+      "Siloed communication between the logistics and sales departments.",
+      "High turnover rate among specialized engineering talent."
+    ]
+  }
+}

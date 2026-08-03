@@ -1,0 +1,124 @@
+{
+  "id": "0006",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:50:08.063997+00:00",
+    "duration_ms": 20689,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "InnovateFlow SaaS",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "InnovateFlow SaaS develops B2B workflow automation software tailored for logistics companies. We leverage AI to optimize supply chain routes and inventory management, targeting mid-sized enterprises globally.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "In the last year, we successfully launched three core product modules and completed a major platform migration to a cloud infrastructure provider. These initiatives were driven by internal roadmap planning.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive market share expansion in emerging international logistics markets over the next five years. We aim to increase Annual Recurring Revenue (ARR) by 150% through strategic product diversification and rapid scaling.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core engineering team consists of 20 highly skilled developers, supported by a small dedicated product management unit that collaborates cross-functionally on new feature development.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time",
+        "strategy",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is rapidly evolving with entrants focusing on hyper-specialized AI tools, requiring constant innovation to maintain a competitive edge."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Launch Hyper-Personalized Predictive Maintenance Module (AI Overlay)",
+        "rationale": "Implementing a radical AI overlay that integrates real-time IoT data from logistics partners will move us beyond simple route optimization into proactive, predictive maintenance planning. This is necessary to capture premium enterprise contracts and justify aggressive growth.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot the Predictive Maintenance algorithm on 5 anchor clients in Q3",
+            "Establish a dedicated data science sprint team focused solely on this feature"
+          ],
+          "resources_needed": [
+            "Hire 2 senior AI/ML engineers (Salary: $180k+ annually)",
+            "Cloud computing credits for high-volume simulation testing ($50k)"
+          ],
+          "success_metric": "Achieve a 30% reduction in client downtime reported by pilot users within six months.",
+          "milestones": [
+            "Algorithm prototype completion (Month 2)",
+            "Closed Beta with 10 clients (Month 4)",
+            "Full commercial rollout (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Expand API Ecosystem for Third-Party Integrations",
+        "rationale": "To drive rapid growth, we must broaden our integration capabilities beyond existing enterprise partners. This incremental move ensures platform stickiness and opens new revenue streams through marketplace integrations.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current API documentation for gaps in common industry workflows",
+            "Launch a dedicated Partner Onboarding Program (M1-M3)"
+          ],
+          "resources_needed": [
+            "Contract with an external integration specialist firm ($40k)",
+            "Allocate 50 hours/week from existing development team"
+          ],
+          "success_metric": "Increase the number of unique third-party integrations by 50% in one year.",
+          "milestones": [
+            "API documentation overhaul completion (Month 1)",
+            "Onboarding program scaled to 25 partners (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct detailed feasibility study and resource allocation plan for the Predictive Maintenance Module.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Formalize the KPI framework and establish governance structure for high-risk projects.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Initiate Q3 Data Science Sprint to build initial MVP prototype foundation.",
+        "owner": "Head of Engineering",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on a small, highly specialized engineering team leading to potential single-point-of-failure risk.",
+      "Scaling infrastructure costs quickly as user load increases (cost inefficiency).",
+      "Slow internal communication channels between product development and sales teams causing feature misalignment."
+    ]
+  }
+}

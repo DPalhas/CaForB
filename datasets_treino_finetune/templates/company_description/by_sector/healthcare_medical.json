@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "Private hospital group operating 3 general hospitals and 8 outpatient clinics with 450 beds and 1,800 staff including 350 physicians. Performing 22,000 surgeries annually. Currently implementing an integrated hospital information system and evaluating AI-assisted radiology image triage for chest X-rays and CT scans.",
+    "Diagnostic imaging center network with 12 locations offering MRI, CT, ultrasound, and X-ray services. Processing 80,000 exams per year. Radiologist team of 25 reading remotely across subspecialties. Evaluating AI-assisted detection tools for mammography and lung nodule analysis with radiologist-in-the-loop workflow.",
+    "Clinical laboratory performing hematology, biochemistry, microbiology, and molecular diagnostics for 300+ referring physicians and clinics. Processing 5,000 samples daily. Evaluating total lab automation track systems and AI-based peripheral blood smear analysis for differential cell counting.",
+    "Home healthcare services provider delivering nursing, physiotherapy, and palliative care to 1,200 patients at home. Managing a workforce of 180 healthcare professionals with complex scheduling and routing requirements. Seeking to implement a mobile workforce management platform with intelligent visit scheduling optimization."
+  ]
+}

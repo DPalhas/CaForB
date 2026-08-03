@@ -1,0 +1,120 @@
+{
+  "id": "0061",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:15:55.463046+00:00",
+    "duration_ms": 19550,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Precision Components manufactures high-tolerance metal parts used primarily in specialized medical devices and aerospace sub-assemblies. The company operates under strict environmental, quality control, and safety regulations due to the sensitive nature of its end products.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently invested heavily in upgrading CNC machinery and implemented a new lean manufacturing system aimed at reducing waste. Historically, innovation has been incremental, focusing on process optimization rather than radical product redesign.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to maintain market dominance in high-specification components by ensuring unparalleled quality and operational compliance. We aim to solidify our position against emerging competitors through continuous technological refinement.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The R&D team consists of 15 highly specialized engineers and a small operations group, focused intensely on technical excellence.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The industry is undergoing rapid shifts toward automated assembly and stricter ESG reporting requirements, demanding agility in both production methods and material sourcing."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Establish a fully automated, AI-driven quality assurance system.",
+        "rationale": "Given the high regulatory environment and market defense priority, automating quality checks reduces human error and provides an unassailable compliance record. This radical shift can drastically lower defect rates and allow us to undercut competitors on reliability.",
+        "execution_plan": {
+          "first_actions": [
+            "Procure specialized vision systems for real-time inspection of critical components."
+          ],
+          "resources_needed": [
+            "R&D equipment acquisition ($1.5M)",
+            "Data science talent hiring (6 months)"
+          ],
+          "success_metric": "Reduction in manufacturing defect rate by 30% within 18 months.",
+          "milestones": [
+            "Phase 1: Pilot system integration and data pipeline setup (6 months)",
+            "Phase 2: Full production deployment and validation (15 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Implement blockchain-based supply chain traceability.",
+        "rationale": "To address high regulatory scrutiny regarding material sourcing and ethical compliance, a formal blockchain system will provide immutable proof of origin for all components. This defensive move enhances brand trust significantly.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a suitable private blockchain platform (e.g., Hyperledger)."
+          ],
+          "resources_needed": [
+            "Legal consultation ($50k)",
+            "Integration development team allocation (2 full-time FTEs)"
+          ],
+          "success_metric": "100% traceability compliance for all Tier 1 suppliers.",
+          "milestones": [
+            "Prototype integration with key raw material partners (4 months)",
+            "Full system rollout across critical supply chain nodes (9 months)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a feasibility study for AI-driven quality assurance, identifying potential vendor partners.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize the technical scope and secure funding for the blockchain traceability pilot project.",
+        "owner": "COO / CFO",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish a cross-functional steering committee to oversee innovation roadmap alignment with market defense strategy.",
+        "owner": "CEO",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on legacy manufacturing processes that limit radical output flexibility.",
+      "Limited internal expertise in advanced data science needed for predictive quality control.",
+      "High operational costs associated with maintaining stringent, manual compliance documentation."
+    ]
+  }
+}

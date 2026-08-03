@@ -1,0 +1,145 @@
+{
+  "id": "0008",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:50:51.881966+00:00",
+    "duration_ms": 21623,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "SynergyCloud Solutions",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "SynergyCloud is a medium-sized B2B SaaS provider specializing in workflow automation tools for mid-market enterprises. The company focuses on improving operational efficiency through scalable cloud software solutions.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company has successfully piloted three major platform upgrades focusing on enhancing data security and integrating new AI modules into their core product suite over the last two years.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maintain market share by differentiating our existing product offerings through continuous feature improvements. We aim to secure key enterprise contracts in emerging vertical markets.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core innovation team consists of 5 software engineers and 2 product managers, operating under a close small leadership team structure.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Despite strong retention, we are facing increased pressure from larger competitors who offer more integrated solutions."
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Maintenance Module",
+        "rationale": "Implementing an incremental AI module into the existing platform can significantly enhance customer retention and product stickiness by offering proactive solutions.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a suitable ML model for predicting system failures within Q3.",
+            "Allocate dedicated resources from the engineering team to build an MVP."
+          ],
+          "resources_needed": [
+            "2 Senior Data Scientists",
+            "Budget for cloud compute (estimated $50k)"
+          ],
+          "success_metric": "15% reduction in customer churn rate within 6 months.",
+          "milestones": [
+            "Model training completed by end of Q3.",
+            "Beta launch with top 2 pilot clients in Q4."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical-Specific Hyper-Automation Platform",
+        "rationale": "A radical approach involves developing a completely new, highly specialized automation platform targeting a specific high-growth vertical (e.g., FinTech compliance) that current offerings do not address.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct deep market analysis for the 'FinTech Compliance' niche.",
+            "Form a dedicated cross-functional task force."
+          ],
+          "resources_needed": [
+            "Hiring 2 specialized domain experts",
+            "Seed funding allocation ($150k)"
+          ],
+          "success_metric": "Capture 5 paying customers in the targeted vertical within 18 months.",
+          "milestones": [
+            "Product blueprint finalized by Q3.",
+            "Launch of V1 specialized platform by end of Year 2."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2-4 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Customer Success Automation Overhaul",
+        "rationale": "Streamlining the customer onboarding and support lifecycle using advanced AI chatbots and personalized workflow routing can reduce operational costs while improving service quality.",
+        "execution_plan": {
+          "first_actions": [
+            "Evaluate current CRM/Support tools for integration capabilities.",
+            "Implement an internal automation framework."
+          ],
+          "resources_needed": [
+            "1 DevOps Engineer",
+            "Licensing costs ($20k)"
+          ],
+          "success_metric": "30% reduction in average customer support response time (MTTR).",
+          "milestones": [
+            "Internal pilot deployment complete within 4 months.",
+            "Full rollout across all tiers by end of year."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the business case and resource allocation for the AI Predictive Maintenance Module.",
+        "owner": "VP of Product",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Initiate market research phase for the 'Vertical-Specific Hyper-Automation Platform' radical opportunity.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 30 days"
+      },
+      {
+        "action": "Conduct a full audit of current customer success processes to identify immediate efficiency gains (incremental).",
+        "owner": "Director of Operations",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on legacy technical debt in core infrastructure.",
+      "Talent bottleneck for specialized AI/ML skills.",
+      "Slow internal process for radical product ideation and execution."
+    ]
+  }
+}

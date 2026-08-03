@@ -1,0 +1,146 @@
+{
+  "id": "0042",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:06:05.445002+00:00",
+    "duration_ms": 23814,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Fabrication Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "This medium-sized manufacturer specializes in custom industrial components for the automotive sector. The company maintains relatively low regulatory burdens due to its stable operational compliance and localized supply chain presence.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has previously piloted small software upgrades for inventory tracking, showing modest efficiency gains. However, large-scale process automation remains largely under consideration rather than fully implemented.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly reduce operational overhead and improve output consistency across all production lines. We aim to become a leaner, more agile manufacturer within three years.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of 5 engineers and 2 operations specialists who work closely with the owners to drive change.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Legacy System Integration for Predictive Maintenance",
+        "rationale": "Implementing AI-driven predictive maintenance software on key machinery will reduce unplanned downtime and maintenance costs by optimizing scheduled interventions based on real-time operational data. This aligns directly with the efficiency priority.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a needs assessment for IoT sensor installation on three critical machines.",
+            "Select an off-the-shelf predictive maintenance platform (e.g., specialized industrial software)."
+          ],
+          "resources_needed": [
+            "$30,000 for initial sensor hardware and integration consulting",
+            "40 hours of internal engineering time"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 15% within the first 6 months.",
+          "milestones": [
+            "Q1: Pilot installation on one assembly line.",
+            "Q2: Full system deployment and baseline efficiency metrics."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Full Autonomous Material Flow Optimization",
+        "rationale": "Develop and pilot a fully automated material handling system (using robotics/advanced logistics software) to eliminate human error and drastically reduce the physical cycle time between raw material intake and finished component output.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated cross-functional task force with external automation consultants.",
+            "Identify one non-core production line for initial robotic piloting."
+          ],
+          "resources_needed": [
+            "$150,000 for hardware prototypes and specialized robotics",
+            "6 months of high-level consulting fees"
+          ],
+          "success_metric": "Achieve a 30% reduction in total manufacturing cycle time.",
+          "milestones": [
+            "Q1: Final selection and procurement of automation vendor.",
+            "Q4: Successful pilot operation on the selected line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Lean Inventory Management Tool",
+        "rationale": "Transition from manual inventory tracking to an integrated, cloud-based ERP module designed specifically for lean manufacturing principles. This will improve stock turnover and reduce holding costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current manual inventory processes and identify bottlenecks.",
+            "Integrate a moderate-tier ERP inventory module into the existing system."
+          ],
+          "resources_needed": [
+            "$25,000 for software licensing and training",
+            "3 months of internal process re-engineering time"
+          ],
+          "success_metric": "Reduction in average inventory holding costs by 10% within the first year.",
+          "milestones": [
+            "Q1: ERP module selection and data migration plan finalized.",
+            "Q2: Full system rollout across all fabrication units."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the project scope and budget for the Predictive Maintenance Pilot.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate RFP process for the autonomous material flow optimization vendor.",
+        "owner": "CEO/Project Lead",
+        "timeframe": "End of Q1"
+      },
+      {
+        "action": "Schedule quarterly review meetings to track efficiency KPIs against initial targets.",
+        "owner": "Finance Department",
+        "timeframe": "Monthly, starting next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on legacy operational systems that lack real-time data capabilities",
+      "High staff turnover in specialized maintenance and engineering roles",
+      "Inconsistent cross-departmental communication hindering end-to-end process optimization",
+      "Siloed decision-making structure limiting rapid implementation of large initiatives"
+    ]
+  }
+}

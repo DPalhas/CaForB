@@ -1,0 +1,100 @@
+```json
+{
+  "maturity_score": 6.8,
+  "opportunities": [
+    {
+      "type": "radical",
+      "title": "Establish Employer Skills Validation and Certification Platform",
+      "rationale": "To meet the mandated strategic goal of diversification (25% new revenue), Pulse must evolve from a training provider to an educational ecosystem. Building a platform that validates skills for employers creates a high-margin, sticky B2B revenue stream distinct from traditional bootcamp enrollment fees.",
+      "execution_plan": {
+        "first_actions": [
+          "Develop a lightweight MVP blueprint (wireframes and feature list) focusing solely on skill testing modules (e.g., GitHub integration for automated proof of work).",
+          "Identify 3 ideal anchor partner companies willing to pilot validation services.",
+          "Create a standardized pricing model for corporate skills audits."
+        ],
+        "resources_needed": [
+          "Freelance UX/Product Designer (10-20 hours, budget share)",
+          "Small initial allocated budget (~€8,000 - €12,000) for MVP tooling and integration APIs",
+          "None dedicated headcount initially (Leverage existing developers' prototyping time)"
+        ],
+        "success_metric": "Secure paid pilot agreements with 3 founding enterprise partners by Q3 end.",
+        "milestones": [
+          "Month 1: Design blueprint and partner outreach strategy finalized.",
+          "Month 2-3: Build MVP functionality using existing coding challenge infrastructure; initiate pilot conversations."
+        ]
+      },
+      "impact": "high",
+      "difficulty": "medium",
+      "timeframe": "6-9 months (Pilot launch)"
+    },
+    {
+      "type": "incremental",
+      "title": "Formalize Customer Voice and Learning Data Pipelines",
+      "rationale": "Currently relying on 'informal conversations' for feedback is a major process bottleneck. Formalizing this into structured data streams (feedback tickets, post-completion surveys) will allow Pulse to systematically improve its current curriculum and onboarding flow, ensuring low-cost, immediate ROI improvements.",
+      "execution_plan": {
+        "first_actions": [
+          "Implement standardized survey widgets (e.g., SurveyMonkey or Typeform) at the completion of every module/cohort phase.",
+          "Create a centralized 'Voice of Customer' Notion database schema for tagging feedback by topic, segment, and severity.",
+          "Establish bi-weekly 30-minute meeting cadence involving Customer Success and Developers to review newly categorized feedback."
+        ],
+        "resources_needed": [
+          "Subscription cost for professional survey tool (low monthly fee, e.g., <€50/month)",
+          "Designated 'Process Owner' (Founders time commitment)",
+          "Existing developers (2-3 hours per week support)"
+        ],
+        "success_metric": "Achieve a 70% response rate on structured exit surveys within the next two cohorts.",
+        "milestones": [
+          "Week 1: Tools selected and basic survey deployed in staging environment.",
+          "Month 1: Full integration into onboarding flow; manual tracking of feedback insights."
+        ]
+      },
+      "impact": "medium",
+      "difficulty": "low",
+      "timeframe": "2-3 months (Full adoption)"
+    },
+    {
+      "type": "radical",
+      "title": "Internal Tech Stack Simplification and Automation Assessment Service Line",
+      "rationale": "This opportunity leverages the company's deep technical expertise in a way that is easily productized. Instead of just training companies to fix their tech, Pulse sells the audit itself. This diversifies revenue into a high-margin B2B consulting service (gap analysis) with low physical overhead.",
+      "execution_plan": {
+        "first_actions": [
+          "Develop 3 distinct 'Audit Packages' outlining scope, deliverables, and pricing for common SME pain points (e.g., AWS cost optimization audit, basic security posture review).",
+          "Create a dedicated landing page/sales collateral summarizing these packages.",
+          "Run internal workshops with the core development team to standardize diagnostic best practices."
+        ],
+        "resources_needed": [
+          "Founder time commitment (Product packaging and sales pitch refinement)",
+          "Sales collateral design tools (e.g., Canva Pro, low cost)",
+          "Budget for targeted LinkedIn advertising campaign ($1,000 initial spend)"
+        ],
+        "success_metric": "Book 2 paid pilot consulting engagements within the first quarter of offering.",
+        "milestones": [
+          "Week 3: Audit Packages defined and pricing set.",
+          "Month 2: Targeted marketing campaign launched; sales pipeline initialized."
+        ]
+      },
+      "impact": "high",
+      "difficulty": "medium",
+      "timeframe": "4-6 months (Sales traction)"
+    }
+  ],
+  "next_steps": [
+    {
+      "action": "Formalize and allocate dedicated time slots for the two generalist developers to focus on developing the automated grading API framework required by the 'Skills Validation Platform' opportunity.",
+      "owner": "Founder",
+      "timeframe": "Within 2 weeks"
+    },
+    {
+      "action": "Initiate a formal mapping exercise of all current client interactions and touchpoints (from initial query to graduation) to identify manual process bottlenecks that hinder scale.",
+      "owner": "Operations lead/Designated staff",
+      "timeframe": "Within 4 weeks"
+    },
+    {
+      "action": "Schedule a discovery call with the existing top-tier partner company (the most reliable revenue source) to understand their biggest post-graduation pain points, validating the need for the 'Skills Validation' platform.",
+      "owner": "Founder",
+      "timeframe": "Within 1 week"
+    }
+  ],
+  "key_weaknesses": [
+    "Reliance on informal customer feedback (risk of missing systemic issues)",
+    "Lack of dedicated innovation capacity, leading to

@@ -1,0 +1,152 @@
+{
+  "id": "0013",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:52:51.257946+00:00",
+    "duration_ms": 22332,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "GrowthTrack Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "GrowthTrack Analytics is a B2B SaaS provider offering project management and data visualization tools tailored for the construction industry. We focus on optimizing resource allocation through predictive analytics modules integrated into our existing platform.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company recently launched three incremental updates to its core software suite focused on user experience improvements and minor feature enhancements. A pilot project for a new AI-driven forecasting module is currently underway but not yet scaled.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is aggressive revenue growth by capturing market share within the mid-market construction sector over the next three years. We aim to achieve 40% annual recurring revenue (ARR) growth.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core team consists of 12 dedicated engineers, product managers, and sales specialists focused primarily on execution and stability.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We face competition from established enterprise software providers and emerging niche startups offering specialized AI tools."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Feature Expansion: Integrated Industry Templates",
+        "rationale": "This involves creating standardized project templates that automate setup for new clients, which addresses internal process bottlenecks and allows us to upsell premium features efficiently. This is a low-risk way to increase perceived value.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 5 high-value client use cases",
+            "Define template structure and required data fields",
+            "Build MVP of the automation tool"
+          ],
+          "resources_needed": [
+            "1 dedicated product manager",
+            "2 backend developers (part-time)",
+            "UX design sprint budget"
+          ],
+          "success_metric": "50% increase in demo conversion rate for new leads within 6 months",
+          "milestones": [
+            "Template V1 MVP complete: Month 3",
+            "Beta testing with 2 pilot clients: Month 5"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Customer Success Program Optimization",
+        "rationale": "By formalizing a proactive Customer Success (CS) program focused on retention and upsells, we can improve customer lifetime value (CLV), which is crucial for sustained growth. This leverages existing customer relationships.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct NPS deep dive to identify churn indicators",
+            "Develop tiered onboarding automation scripts",
+            "Train the support team on proactive engagement tactics"
+          ],
+          "resources_needed": [
+            "1 CS manager (internal shift)",
+            "Licensing for CRM enhancement tools ($5k)",
+            "Training materials budget"
+          ],
+          "success_metric": "Reduce churn rate by 10% over the next fiscal year",
+          "milestones": [
+            "Implement tiered onboarding system: Month 4",
+            "Q3 CLV increase target: End of Q4"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Maintenance AI Module (V2)",
+        "rationale": "Developing a truly predictive AI module that forecasts equipment failure for construction sites moves us from optimization to prediction, creating a significant competitive moat. This aligns directly with our growth priority and market need.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure specialized data scientists (contract)",
+            "Conduct comprehensive dataset audit",
+            "Establish a dedicated cross-functional 'Innovation Squad'"
+          ],
+          "resources_needed": [
+            "2 Data Science consultants ($40k initial)",
+            "Cloud ML compute resources ($15k/year estimate)",
+            "Hiring budget for 1 senior AI engineer (Year 2)"
+          ],
+          "success_metric": "Achieve a 15% reduction in client downtime reported by users",
+          "milestones": [
+            "Proof of concept model trained: Month 8",
+            "API integration with core platform: Month 12"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Schedule a formal review of the Customer Success playbook to identify immediate retention gaps.",
+        "owner": "CS Manager",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Finalize resource allocation and project roadmap for the V2 Predictive AI module, securing initial data science contracts.",
+        "owner": "COO/VP of Product",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch an internal cross-departmental workshop to redefine core product templates and standardize feature requests.",
+        "owner": "Head of Product",
+        "timeframe": "Within 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on a single core engineering team, creating high burnout risk.",
+      "Slow internal process for scaling development from pilot to enterprise level.",
+      "Limited direct control over long-term strategic technological shifts due to conservative appetite.",
+      "Inconsistent customer data quality across different project types."
+    ]
+  }
+}

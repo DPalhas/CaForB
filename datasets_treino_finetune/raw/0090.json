@@ -1,0 +1,147 @@
+{
+  "id": "0090",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:28:43.931611+00:00",
+    "duration_ms": 22649,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Tooling Solutions Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision Tooling Solutions specializes in manufacturing high-tolerance components for the aerospace and automotive sectors. We operate a mid-sized facility with moderate regulatory compliance requirements regarding quality control and environmental standards. The company focuses on maintaining operational stability while seeking improvements in production throughput.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently implemented a digital inventory tracking system to reduce material waste by 12% and initiated a pilot program for predictive maintenance on key CNC machinery. These efforts were driven primarily by immediate operational needs rather than long-term disruptive strategy.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to improve operational efficiency across the supply chain, reducing per-unit manufacturing costs by 15% within two years. We aim to streamline production workflows and minimize downtime through better asset management.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The engineering and operations teams consist of 65 skilled professionals, with a lean focus on technical execution rather than speculative R&D.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Competition is intense, driving the need for cost leadership. Investment is prioritized where it yields measurable, incremental operational gains."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Manufacturing Workflow Optimization",
+        "rationale": "Implementing Lean principles in the assembly line can identify and eliminate non-value-added steps, directly improving throughput and reducing waste without requiring radical technological overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a 5S audit across all production cells.",
+            "Map current end-to-end production process to identify bottlenecks."
+          ],
+          "resources_needed": [
+            "Internal Lean trainer or consultant (limited budget)",
+            "Time allocation from floor supervisors"
+          ],
+          "success_metric": "Reduction in cycle time by 10% within Q3.",
+          "milestones": [
+            "Complete process mapping and waste identification by Month 2",
+            "Implement initial Kaizen improvements by Month 6"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Preventative Maintenance Scheduling Enhancement",
+        "rationale": "Leveraging the existing predictive maintenance pilot data to transition from reactive repairs to a more proactive, scheduled maintenance system will significantly reduce unexpected downtime.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate sensor data into the CMMS (Computerized Maintenance Management System).",
+            "Develop standardized checklists for critical machinery."
+          ],
+          "resources_needed": [
+            "Software license add-on for CMMS integration.",
+            "Training for maintenance technicians"
+          ],
+          "success_metric": "Decrease in unplanned downtime by 20% annually.",
+          "milestones": [
+            "Finalize sensor data integration and scheduling protocol by Month 4",
+            "Achieve target downtime reduction by end of Year 1"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Automated Quality Inspection via Machine Vision",
+        "rationale": "Investing in machine vision technology could automate critical quality checks, drastically reducing manual inspection costs and improving consistency, which is a high-impact efficiency gain.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the highest defect rate areas for immediate testing.",
+            "Conduct vendor assessments for suitable machine vision systems."
+          ],
+          "resources_needed": [
+            "Capital investment in hardware and software (approx. $150k).",
+            "Hiring one specialized data scientist/engineer (high cost)."
+          ],
+          "success_metric": "Reduction in manual inspection labor costs by 40%.",
+          "milestones": [
+            "Vendor selection and proof-of-concept testing by Month 3",
+            "Full system deployment for a single high-volume product line by Year 2"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force (Operations, Engineering, IT) to lead the Lean Manufacturing process mapping.",
+        "owner": "COO (Chief Operating Officer)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a detailed ROI model for the machine vision investment and initiate vendor RFPs.",
+        "owner": "CFO",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Schedule quarterly review meetings to track efficiency KPIs (cycle time, waste reduction) against strategic goals.",
+        "owner": "VP of Operations",
+        "timeframe": "Ongoing (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent adoption of digital tools across operational sites.",
+      "Shortage of technical talent specialized in Industry 4.0 and data analytics.",
+      "Operational processes are siloed, hindering cross-departmental efficiency gains.",
+      "High reliance on manual quality inspection leading to labor inefficiency."
+    ]
+  }
+}

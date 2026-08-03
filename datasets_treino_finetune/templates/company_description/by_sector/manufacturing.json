@@ -1,0 +1,9 @@
+{
+  "variants": [
+    "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation.",
+    "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing.",
+    "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Blend of CNC routing for repetitive components with traditional joinery for finishing. Evaluating digital twin assembly planning to reduce custom project lead times from 12 to 7 weeks.",
+    "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability.",
+    "Textile mill producing technical fabrics for workwear, outdoor equipment, and medical scrubs. Recently invested in waterless dyeing technology and recycled polyester yarn sourcing. Looking to digitize quality inspection with computer vision to replace manual fabric defect grading."
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "0056",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:12:55.861516+00:00",
+    "duration_ms": 18346,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Components",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Precision Components is a medium-sized manufacturer specializing in high-precision metal components for the automotive and aerospace industries. They operate in several key regions, requiring compliance with both federal quality standards and international trade regulations.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "In the last two years, they have focused on incremental process improvements, such as automating specific welding lines to increase output efficiency by 15%. They also pilot a small R&D team exploring sustainable material alternatives for their core products.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to secure long-term contracts within the defense sector and maintain our current market share against emerging low-cost competitors. We aim to solidify our position as a reliable, high-quality supplier in specialized niches.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "The core R&D and operations teams are small but highly skilled, focused on niche expertise rather than broad scale. They are agile and driven by project success.",
+      "digitalMaturity": 3,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The competition is increasingly leveraging automation and lower-cost supply chains, necessitating proactive defense strategies."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Maintenance System",
+        "rationale": "Implementing a radical predictive maintenance system using machine learning could reduce unplanned downtime by anticipating equipment failures before they occur. This addresses the talent barrier by allowing existing staff to focus on higher-value tasks and provides a strong competitive moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Select pilot manufacturing line for data collection.",
+            "Identify internal data science lead or contract expert."
+          ],
+          "resources_needed": [
+            "ML platform licensing fee",
+            "3 dedicated engineers (part-time)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 20% within 18 months.",
+          "milestones": [
+            "Pilot system deployment and validation (Month 6)",
+            "Full integration into three core production lines (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Certification Pathway Streamlining",
+        "rationale": "Streamlining the compliance and certification documentation process will reduce operational friction and internal time waste. This is a low-risk, immediate move that improves efficiency and reduces the barrier of 'process' complexity.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current regulatory requirements vs. desired standards.",
+            "Document bottlenecks in the approval pipeline."
+          ],
+          "resources_needed": [
+            "Consultant fees for compliance review",
+            "Internal project management time allocation"
+          ],
+          "success_metric": "Reduction of average certification lead time by 30%.",
+          "milestones": [
+            "Process mapping and gap analysis (Month 2)",
+            "Implementation of automated documentation templates (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a feasibility study for the AI predictive maintenance pilot.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Establish a cross-functional task force to map current regulatory bottlenecks.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Finalize budget and resource allocation for the immediate incremental efficiency project.",
+        "owner": "CFO",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on key individuals for specialized knowledge (talent risk)",
+      "Slow, manual process for regulatory compliance updates",
+      "Limited investment in scalable digital infrastructure outside of core production systems"
+    ]
+  }
+}

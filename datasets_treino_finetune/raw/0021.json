@@ -1,0 +1,146 @@
+{
+  "id": "0021",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:56:00.632781+00:00",
+    "duration_ms": 22046,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "InnovateFlow SaaS",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "InnovateFlow SaaS develops cloud-based project management and analytics software for mid-sized enterprises. The company operates in a highly scalable environment with minimal direct government regulation affecting its core product, allowing for global market expansion.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Over the last year, they launched three minor feature updates and initiated exploratory research into integrating AI-driven predictive analytics into their platform to tap into new service offerings.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The primary goal is to diversify revenue streams by launching two entirely new product verticals outside of core project management. We aim to reduce reliance on the current enterprise segment while establishing a foothold in emerging markets.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The team consists of 15 highly skilled engineers and product managers, structured to handle rapid experimentation and market entry across new segments.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company has strong technical debt issues in legacy systems, which limits the speed of radical innovation implementation."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Adjacent Vertical Product Line Launch (AI Integration)",
+        "rationale": "Leveraging existing data infrastructure and high digital maturity, the company should pursue a radical pivot into an adjacent vertical like HR workflow management or supply chain optimization. This provides immediate diversification away from core project management.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 'Diversification Task Force' (3 people).",
+            "Allocate 5% of the budget to external AI research consultation."
+          ],
+          "resources_needed": [
+            "Contract specialized AI consultants.",
+            "Internal reallocation of 2 senior engineers."
+          ],
+          "success_metric": "Achieve $1M in recurring revenue from a new vertical within 18 months.",
+          "milestones": [
+            "Q3: Finalize business case and technical feasibility study.",
+            "Q4: Minimum Viable Product (MVP) launch for the first adjacent vertical."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Strategic M&A of Niche SaaS Tools",
+        "rationale": "Acquiring a small, specialized tool in an untapped market (e.g., specific industry compliance software) allows for rapid diversification with minimal internal development risk. This is a lower-risk way to enter new markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear criteria for target companies based on revenue and market penetration.",
+            "Engage specialized M&A advisory firm."
+          ],
+          "resources_needed": [
+            "Reserved capital of $500k for acquisition budget.",
+            "Legal counsel retainer."
+          ],
+          "success_metric": "Successful integration of the acquired company's technology, resulting in 10% cross-selling revenue growth within one year.",
+          "milestones": [
+            "Q2: Identify and short-list 5 potential acquisition targets.",
+            "Q4: Complete due diligence and close first acquisition."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Decentralized Community Platform Development",
+        "rationale": "To truly diversify, the company could pivot a portion of its tech stack into building an open-source community platform. This builds brand equity outside the enterprise and attracts talent from other sectors.",
+        "execution_plan": {
+          "first_actions": [
+            "Appoint a dedicated Community Lead.",
+            "Pilot development on a separate cloud instance."
+          ],
+          "resources_needed": [
+            "Dedicated engineering team for community maintenance (part-time).",
+            "Marketing budget focused on thought leadership content."
+          ],
+          "success_metric": "Achieve 10,000 active non-paying users/contributors within two years.",
+          "milestones": [
+            "Q3: Launch initial beta version of the community features.",
+            "Q4: Establish a formal open-source contribution roadmap."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct an intensive 3-month market scan for three non-core industry verticals.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Form the Diversification Task Force and define KPIs for the AI integration MVP.",
+        "owner": "VP of Product",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate discussions with M&A advisors regarding target profiles for niche SaaS acquisitions.",
+        "owner": "CFO/Strategy Lead",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High technical debt limiting speed of radical innovation.",
+      "Limited in-house expertise outside core project management functions.",
+      "Potential talent retention risk due to high competition from tech giants.",
+      "Reluctance among mid-level staff to champion high-risk, long-term strategic projects."
+    ]
+  }
+}

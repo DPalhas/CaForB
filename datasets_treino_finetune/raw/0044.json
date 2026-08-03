@@ -1,0 +1,145 @@
+{
+  "id": "0044",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:06:50.381726+00:00",
+    "duration_ms": 22907,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "AgriTrack Solutions",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "A medium-sized B2B SaaS company providing subscription software for large commercial farms to optimize resource allocation and yield prediction. The company focuses on improving operational efficiency through data analytics.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Implemented several minor UI/UX updates in the last year focusing on user retention and standardized the API documentation process across all product modules. We have also conducted quarterly market surveys to gauge feature demand among key enterprise clients.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to secure our existing major contracts through superior service quality and maintain a competitive edge against emerging regional players in the AgTech space. We aim to increase customer lifetime value by 15% through deeper platform integration.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core team consists of 8 engineers, product managers, and two sales executives who drive all development and go-to-market activities.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Technical Debt Reduction for Scalability",
+        "rationale": "Refactoring legacy code modules will reduce maintenance overhead and improve system stability, which is crucial for maintaining service quality during periods of high customer demand.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top three most problematic legacy services.",
+            "Allocate 10% of Q3 engineering time exclusively to refactoring sprints."
+          ],
+          "resources_needed": [
+            "Two dedicated senior engineers (part-time allocation)",
+            "Budget for specialized tooling/code analysis software ($8k)"
+          ],
+          "success_metric": "Reduction in critical bug reports by 25% within Q4.",
+          "milestones": [
+            "Complete refactor of core data ingestion pipeline by end of July",
+            "Full deployment and performance benchmark testing completed by September 30"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Enhanced Customer Onboarding Flow (UX Improvement)",
+        "rationale": "By simplifying the initial setup and integration process, we can reduce support tickets and improve early-stage customer satisfaction, directly supporting market defense by improving NPS.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current onboarding journey to identify friction points (e.g., complex data mapping).",
+            "Develop a streamlined guided setup wizard prototype."
+          ],
+          "resources_needed": [
+            "1 dedicated UX designer for 4 weeks",
+            "Minimal development hours ($5k)"
+          ],
+          "success_metric": "Decrease in average time-to-value by 20%.",
+          "milestones": [
+            "Prototype testing and internal review completion by August 31",
+            "Full feature rollout to pilot customers by November 30"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Automation for Feature Deployment (CI/CD)",
+        "rationale": "Automating the continuous integration and delivery pipeline will allow the team to push critical defensive updates faster, improving responsiveness to competitive changes without major architectural shifts.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current deployment scripts for manual steps.",
+            "Implement basic automated testing framework (unit/integration tests) for all core features."
+          ],
+          "resources_needed": [
+            "Training for existing DevOps staff ($3k)",
+            "License for CI/CD platform upgrade ($2k)"
+          ],
+          "success_metric": "Reduction in average deployment time from 3 days to under 1 day.",
+          "milestones": [
+            "Pilot automation on one non-critical service by Q4",
+            "Full pipeline automation implemented across all modules by end of year."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 Months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a full technical audit of the current codebase and prioritize refactoring tasks.",
+        "owner": "CTO/Engineering Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop detailed requirements for the enhanced customer onboarding flow based on NPS feedback.",
+        "owner": "Product Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish a formal sprint planning process incorporating automated testing milestones.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High technical debt in core modules affecting development speed.",
+      "Inconsistent documentation and knowledge silos within the engineering team.",
+      "Limited dedicated budget allocation for proactive R&D outside of immediate feature requests."
+    ]
+  }
+}

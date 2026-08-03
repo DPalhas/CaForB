@@ -1,0 +1,146 @@
+{
+  "id": "0092",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:29:26.720549+00:00",
+    "duration_ms": 22862,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Fabrication Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "This company specializes in custom metal fabrication for industrial machinery and construction components. They operate primarily within regional supply chains, focusing on high-quality, niche products rather than mass production.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has recently implemented minor process improvements focused on reducing material waste through optimized cutting schedules. They have also piloted a new CRM system to better track client specifications and recurring order needs over the last 18 months.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maintain market share against larger competitors by increasing operational efficiency and securing long-term, stable contracts with key industrial clients. We aim to solidify our position as a reliable supplier in the regional market.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core operational team consists of 15 employees, led by a small management group focused on production and sales execution.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": "4",
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We are facing increasing pressure from larger, automated manufacturers who can offer lower prices. Maintaining quality and operational reliability is key to surviving this competitive environment."
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Supply Chain Resilience Audit",
+        "rationale": "Given the medium regulatory environment and competitive pressure, a conservative audit of our existing supply chain could identify low-cost ways to mitigate future disruptions without requiring massive capital investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 5 single-source suppliers",
+            "Conduct cost/risk assessment on alternative sourcing for raw materials"
+          ],
+          "resources_needed": [
+            "Internal analyst time (10 hours)",
+            "External consulting services budget ($5k)"
+          ],
+          "success_metric": "Reduce critical material lead time by 8%",
+          "milestones": [
+            "Month 1: Supplier mapping complete",
+            "Month 3: Risk mitigation plan finalized"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Automated Quality Control Pilot (IoT)",
+        "rationale": "To defend market share against automated competitors, implementing low-cost IoT sensors on key fabrication stages could provide real-time quality metrics, offering a radical competitive advantage in consistency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-volume product line for pilot",
+            "Procure and integrate basic sensor array on critical machining centers"
+          ],
+          "resources_needed": [
+            "Hardware purchase ($20k)",
+            "Software integration labor (3 person months)"
+          ],
+          "success_metric": "Increase defect rate reduction from 5% to <1%",
+          "milestones": [
+            "Month 4: Pilot installation and initial data collection",
+            "Month 9: Full process evaluation & Go/No-Go decision"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Client Retention Program Enhancement",
+        "rationale": "Focusing on existing customers through targeted service enhancements is a low-risk method to secure recurring revenue and strengthen the competitive moat against aggressive pricing strategies.",
+        "execution_plan": {
+          "first_actions": [
+            "Launch tiered loyalty program based on volume tiers",
+            "Implement quarterly preventative maintenance check-ins for top 20% of clients"
+          ],
+          "resources_needed": [
+            "Marketing software subscription ($1k/year)",
+            "Sales team training time"
+          ],
+          "success_metric": "Increase customer retention rate by 5%",
+          "milestones": [
+            "Month 2: Loyalty program launch",
+            "Month 6: Quarterly performance review of client satisfaction metrics"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to evaluate the feasibility and ROI of the Automated Quality Control Pilot.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Finalize the scope, budget, and timeline for the Supply Chain Resilience Audit by consulting with external experts.",
+        "owner": "CFO / Procurement Lead",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Develop a formal internal communication strategy to roll out the new Client Retention Program framework.",
+        "owner": "Head of Sales & Marketing",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Resistance to process change within long-tenured operational staff.",
+      "Reliance on key personnel for specialized technical knowledge (talent risk).",
+      "Lack of scalable digital infrastructure for real-time data collection and analysis.",
+      "Slow decision-making cycles due to the small leadership team structure."
+    ]
+  }
+}

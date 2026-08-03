@@ -1,0 +1,118 @@
+{
+  "id": "0036",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:02:57.922938+00:00",
+    "duration_ms": 42511,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Veridian HealthTech Solutions",
+      "sector": "Healthtech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Veridian HealthTech Solutions is a small SaaS company specializing in AI-driven diagnostic support tools for general practitioners. We focus on streamlining patient data and improving clinical decision-making processes through proprietary machine learning algorithms.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We have successfully implemented iterative updates to our core platform based on user feedback, focusing primarily on feature enhancements rather than fundamental architectural overhauls.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive market penetration in the domestic healthcare system and establishing a recognized brand presence. We aim to capture significant market share within three years through product expansion and strategic partnerships.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The team consists of 5 highly specialized developers, product managers, and a small sales support unit who are agile in responding to market demands.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is competitive, with established hospital systems and larger tech firms entering the diagnostic space."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Powered Predictive Coding Module Integration",
+        "rationale": "Enhancing existing clinical workflows by adding a predictive module would increase user retention and provide a distinct competitive edge without requiring a total platform rebuild. This directly supports our growth goal by increasing feature stickiness.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot integration with three key pilot clinics",
+            "Allocate 30% of engineering sprint capacity for module development"
+          ],
+          "resources_needed": [
+            "Senior ML Engineer (part-time contract)",
+            "Cloud computing resources upgrade ($5k)"
+          ],
+          "success_metric": "Increase in monthly active user engagement by 15%",
+          "milestones": [
+            "Prototype completion within Q2",
+            "Full integration and pilot launch within Q3"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical-Specific Diagnostic AI Platform (Niche Focus)",
+        "rationale": "Developing a highly specialized diagnostic tool for a specific sub-sector (e.g., oncology or cardiology) could unlock premium pricing and allow us to bypass broader market competition. This high-risk move is crucial for achieving exponential growth.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct in-depth market research on one vertical's pain points",
+            "Identify potential strategic M&A targets or partnership opportunities with medical device manufacturers"
+          ],
+          "resources_needed": [
+            "Dedicated R&D team of 2 (salaries)",
+            "Legal consultation for IP strategy ($15k)"
+          ],
+          "success_metric": "Secure one major strategic partnership or pivot to a new vertical within 4 quarters",
+          "milestones": [
+            "Vertical feasibility study completion within 3 months",
+            "Minimum viable product (MVP) concept finalized within 9 months"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the scope and resource allocation for the Predictive Coding Module pilot.",
+        "owner": "Product Manager",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a dedicated market validation study to assess feasibility of vertical specialization (Radical Opportunity).",
+        "owner": "CEO/Strategy Lead",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited capital for large-scale R&D and marketing campaigns.",
+      "High dependency on a single, highly specialized engineering talent pool (talent risk).",
+      "Slow process for transitioning from partial to formal innovation structures as the company scales.",
+      "Over-reliance on manual data processing in legacy diagnostic workflows."
+    ]
+  }
+}

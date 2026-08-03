@@ -1,0 +1,146 @@
+{
+  "id": "0023",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:57:06.238398+00:00",
+    "duration_ms": 45999,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "ReguSolve Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "ReguSolve Analytics provides AI-driven compliance and reporting software for mid-sized enterprises in highly regulated industries. The company focuses on automating manual regulatory review processes to ensure clients maintain continuous compliance.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We recently implemented a phased rollout of an automated data validation module, which reduced manual processing time by 30% while ensuring adherence to new industry standards. We also piloted a platform integration project aimed at streamlining client reporting workflows.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to significantly improve operational efficiency and reduce compliance overhead across our software suite through technology-driven automation. Secondary goals include expanding market share by offering more comprehensive, automated regulatory solutions.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core engineering and product team consists of 15 highly specialized professionals who work in cross-functional squads. We maintain a lean structure focused on rapid execution.",
+      "digitalMaturity": 4,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 22,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The high regulatory environment requires constant vigilance, but our medium size allows us to innovate quickly by leveraging advanced digital tools."
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Compliance Engine",
+        "rationale": "Developing a radical predictive engine that uses machine learning to anticipate regulatory changes and flag potential non-compliance risks in real-time will move the company beyond reactive reporting into proactive risk management.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an internal task force focused solely on ML model architecture.",
+            "Allocate dedicated budget for external data science consultation."
+          ],
+          "resources_needed": [
+            "High-performance cloud computing resources",
+            "Senior Data Scientist hire"
+          ],
+          "success_metric": "Reduction in reported compliance errors by 50% within 12 months.",
+          "milestones": [
+            "M1: Proof of Concept for predictive risk scoring (Q3)",
+            "M2: Pilot integration with top-tier client data (Q4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "API Integration Ecosystem for Workflow Automation",
+        "rationale": "Implementing robust, standardized APIs will allow ReguSolve to integrate seamlessly with other critical enterprise systems (ERPs, HR tools), dramatically improving efficiency in the client's operational workflow.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing API capabilities and prioritize high-value integrations.",
+            "Standardize documentation and developer resources."
+          ],
+          "resources_needed": [
+            "Dedicated integration development sprints",
+            "Cloud infrastructure scaling budget"
+          ],
+          "success_metric": "Increase in client adoption rate of integrated features by 25%.",
+          "milestones": [
+            "M1: Open and maintain a public API documentation portal (Q3)",
+            "M2: Onboard 5 major partner integrations (Q4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "short"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Change Monitoring Dashboard",
+        "rationale": "Enhancing the existing compliance dashboard with automated change monitoring will reduce manual review time and ensure immediate awareness of regulatory updates, directly addressing efficiency goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify key legislative databases to ingest data feeds.",
+            "Update internal training materials for the compliance team."
+          ],
+          "resources_needed": [
+            "Subscription fees for regulatory data feeds",
+            "Internal DevOps engineering time"
+          ],
+          "success_metric": "Reduction in manual report generation time by 40%.",
+          "milestones": [
+            "M1: Full ingestion pipeline operational (Q2)",
+            "M2: Feature launch for real-time change alerts (Q3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Innovation Steering Committee to vet the AI Predictive Engine concept.",
+        "owner": "CEO/CTO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate technical scoping and resource allocation for API Integration Ecosystem development.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct a comprehensive efficiency audit focused on current regulatory data processing bottlenecks.",
+        "owner": "COO",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on manual compliance review, leading to inefficiency and error risk.",
+      "Specialized talent scarcity in advanced AI/ML engineering needed for radical innovation.",
+      "Slow internal process changes due to the need for formal regulatory approvals across the organization."
+    ]
+  }
+}

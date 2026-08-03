@@ -1,0 +1,124 @@
+{
+  "id": "0003",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:49:00.780173+00:00",
+    "duration_ms": 18691,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "InnovateFlow SaaS",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "InnovateFlow is a medium-sized B2B software company specializing in project management tools for the construction industry. They focus on optimizing workflow efficiency and resource allocation through cloud-based solutions.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently implemented a minor feature update based on internal user feedback to improve reporting speed. They have also experimented with integrating basic AI components into their project scheduling module, but these efforts remain small scale and exploratory.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive revenue growth through expanding market penetration in new geographic territories. The company aims to increase customer lifetime value by offering premium service tiers based on their established product stability.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core development team consists of 15 engineers and a small dedicated marketing unit.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Market competition is intense in the project management niche. The company relies heavily on maintaining technical excellence to justify premium pricing."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Customer Onboarding Workflow",
+        "rationale": "By streamlining the onboarding process with automated documentation and guided setup modules, we can reduce friction for new clients, leading to higher retention rates without major architectural changes. This is a low-risk way to improve customer experience.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current onboarding steps",
+            "Develop a simplified automated checklist",
+            "Pilot the workflow with 10 new trial users"
+          ],
+          "resources_needed": [
+            "Internal project management tool subscription (low cost)",
+            "2 dedicated developer hours"
+          ],
+          "success_metric": "Reduce onboarding completion time by 30% within Q3.",
+          "milestones": [
+            "Finalize automated checklist (Month 1)",
+            "Launch pilot program for new feature (Month 2)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Tiered Feature Expansion Strategy",
+        "rationale": "Instead of a radical overhaul, we will focus on incremental growth by developing high-value add-ons for our existing user base. This leverages current technical capabilities and directly supports the goal of increasing customer lifetime value.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three most requested feature enhancements from NPS feedback",
+            "Create a phased roadmap linking features to premium pricing tiers",
+            "Run A/B testing on pricing structure changes for one tier"
+          ],
+          "resources_needed": [
+            "UX/UI consultation (small fee)",
+            "Internal marketing resources"
+          ],
+          "success_metric": "Increase average revenue per user (ARPU) by 10% in the premium tier.",
+          "milestones": [
+            "Define feature roadmap for next 6 months (Month 2)",
+            "Launch premium pricing pilot (Month 5)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed analysis of current customer onboarding friction points and prioritize the most impactful incremental improvement.",
+        "owner": "Head of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a lean project plan for the automated onboarding pilot and secure necessary internal resources.",
+        "owner": "CTO / Operations Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish quarterly metrics tracking key growth indicators (e.g., churn reduction, ARPU) related to strategic goals.",
+        "owner": "COO",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow internal process for feature request prioritization leads to missed opportunities.",
+      "Talent scarcity in specialized cloud infrastructure engineering.",
+      "High reliance on manual data entry points, which increases operational risk."
+    ]
+  }
+}

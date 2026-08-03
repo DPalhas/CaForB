@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown, Zap, Target, Clock, ShieldCheck, Flag } from "lucide-react";
 
 interface ExecutionPlan {
   firstActions: string[];
@@ -25,14 +26,19 @@ interface OpportunityCardProps {
 }
 
 const tagColor = (value: string) => {
-  const map: Record<string, string> = {
-    high: "bg-green-100 text-green-700",
-    medium: "bg-yellow-100 text-yellow-700",
-    low: "bg-gray-100 text-gray-600",
-    radical: "bg-purple-100 text-purple-700",
-    incremental: "bg-blue-100 text-blue-700",
-  };
-  return map[value.toLowerCase()] ?? "bg-gray-100 text-gray-600";
+  const v = value.toLowerCase();
+  if (v === "high" || v === "radical") return "bg-purple-950/40 text-purple-300 border-purple-800/40";
+  if (v === "medium" || v === "strategic") return "bg-indigo-950/40 text-indigo-300 border-indigo-800/40";
+  if (v === "low" || v === "incremental") return "bg-cyan-950/40 text-cyan-300 border-cyan-800/40";
+  return "bg-slate-900/60 text-slate-300 border-slate-800/60";
+};
+
+const tagBgPill = (value: string) => {
+  const v = value.toLowerCase();
+  if (v === "high" || v === "radical") return "bg-purple-950/60 text-purple-300";
+  if (v === "medium" || v === "strategic") return "bg-indigo-950/60 text-indigo-300";
+  if (v === "low" || v === "incremental") return "bg-cyan-950/60 text-cyan-300";
+  return "bg-slate-800/60 text-slate-300";
 };
 
 export default function OpportunityCard({ opportunity, index }: OpportunityCardProps) {
@@ -40,92 +46,129 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
   const hasExecutionPlan = !!opportunity.executionPlan;
 
   return (
-    <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition-shadow">
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <div className="flex items-center gap-3">
-          <span className="w-7 h-7 rounded-full bg-teal-600 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
-            {index + 1}
-          </span>
-          <h3 className="text-sm font-semibold text-gray-800">{opportunity.title}</h3>
-        </div>
-        <span className={`text-xs font-medium px-2 py-1 rounded-full flex-shrink-0 capitalize ${tagColor(opportunity.type)}`}>
-          {opportunity.type}
-        </span>
-      </div>
-
-      <p className="text-sm text-gray-600 leading-relaxed mb-4 pl-10">{opportunity.rationale}</p>
-
-      <div className="flex flex-wrap gap-2 pl-10 mb-4">
-        <span className="text-xs text-gray-500">Impact:</span>
-        <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${tagColor(opportunity.impact)}`}>
-          {opportunity.impact}
-        </span>
-        <span className="text-xs text-gray-500 ml-2">Difficulty:</span>
-        <span className={`text-xs font-medium px-2 py-0.5 rounded-full capitalize ${tagColor(opportunity.difficulty)}`}>
-          {opportunity.difficulty}
-        </span>
-        <span className="text-xs text-gray-500 ml-2">⏱ {opportunity.timeframe}</span>
-      </div>
-
-      {hasExecutionPlan && (
-        <div className="pl-10">
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="text-xs font-semibold text-teal-700 hover:text-teal-800 flex items-center gap-1.5 transition"
-          >
-            <span className={`transition-transform ${expanded ? "rotate-90" : ""}`}>▶</span>
-            {expanded ? "Hide execution plan" : "How to execute"}
-          </button>
-
-          {expanded && (
-            <div className="mt-4 flex flex-col gap-4 border-t border-gray-100 pt-4">
-
-              <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">First Actions</p>
-                <ul className="flex flex-col gap-1.5">
-                  {opportunity.executionPlan!.firstActions.map((action, i) => (
-                    <li key={i} className="text-xs text-gray-600 leading-relaxed flex gap-2">
-                      <span className="text-teal-500">•</span>
-                      {action}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">Resources Needed</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {opportunity.executionPlan!.resourcesNeeded.map((resource, i) => (
-                    <span key={i} className="text-xs bg-gray-50 text-gray-600 px-2 py-1 rounded-lg border border-gray-100">
-                      {resource}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <p className="text-xs font-semibold text-gray-700 mb-1.5">Success Metric</p>
-                <p className="text-xs text-teal-700 font-medium bg-teal-50 px-3 py-2 rounded-lg border border-teal-100">
-                  {opportunity.executionPlan!.successMetric}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs font-semibold text-gray-700 mb-2">Milestones</p>
-                <ul className="flex flex-col gap-1.5">
-                  {opportunity.executionPlan!.milestones.map((milestone, i) => (
-                    <li key={i} className="text-xs text-gray-600 leading-relaxed flex gap-2">
-                      <span className="text-teal-500 font-mono">→</span>
-                      {milestone}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
+    <div className="glass-card rounded-3xl border border-slate-800/80 shadow-md hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 overflow-hidden">
+      <div className="p-6 sm:p-7">
+        
+        {/* Card Header */}
+        <div className="flex items-start justify-between gap-4 mb-4">
+          <div className="flex items-center gap-3">
+            <span className="w-8 h-8 rounded-xl bg-purple-950/60 text-purple-400 font-mono text-xs font-bold flex items-center justify-center flex-shrink-0 border border-purple-800/40 shadow-sm">
+              #{index + 1}
+            </span>
+            <div>
+              <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border mb-1 inline-block ${tagColor(opportunity.type)}`}>
+                {opportunity.type} Opportunity
+              </span>
+              <h3 className="text-lg font-bold text-white leading-snug">{opportunity.title}</h3>
             </div>
-          )}
+          </div>
         </div>
-      )}
+
+        {/* Rationale Text */}
+        <p className="text-sm text-slate-300 leading-relaxed mb-6">
+          {opportunity.rationale}
+        </p>
+
+        {/* Impact, Difficulty, Timeframe badges */}
+        <div className="flex flex-wrap items-center gap-2.5 pt-4 border-t border-slate-800/60">
+          <div className="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-800/60 text-xs">
+            <span className="text-slate-400 font-medium">Impact:</span>
+            <span className={`font-bold capitalize ${tagBgPill(opportunity.impact)} px-2 py-0.5 rounded-md`}>
+              {opportunity.impact}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-800/60 text-xs">
+            <span className="text-slate-400 font-medium">Difficulty:</span>
+            <span className={`font-bold capitalize ${tagBgPill(opportunity.difficulty)} px-2 py-0.5 rounded-md`}>
+              {opportunity.difficulty}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-1.5 bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-800/60 text-xs font-medium text-slate-300 ml-auto">
+            <Clock className="w-3.5 h-3.5 text-purple-400" />
+            <span>{opportunity.timeframe}</span>
+          </div>
+        </div>
+
+        {/* Expandable Execution Roadmap */}
+        {hasExecutionPlan && (
+          <div className="mt-5 pt-4 border-t border-slate-800/60">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="w-full py-2.5 px-4 rounded-xl bg-purple-950/40 hover:bg-purple-950/60 border border-purple-800/40 text-xs font-bold text-purple-300 flex items-center justify-between transition group"
+            >
+              <div className="flex items-center gap-2">
+                <Zap className="w-4 h-4 text-purple-400" />
+                <span>{expanded ? "Hide Execution Roadmap" : "View Detailed Execution Roadmap"}</span>
+              </div>
+              <ChevronDown className={`w-4 h-4 text-purple-400 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`} />
+            </button>
+
+            {expanded && (
+              <div className="mt-5 space-y-5 bg-slate-900/60 p-5 rounded-2xl border border-slate-800/60 step-fade">
+
+                {/* Immediate Actions */}
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-2 flex items-center gap-1.5">
+                    <Target className="w-3.5 h-3.5 text-purple-400" />
+                    <span>Immediate Action Steps</span>
+                  </h4>
+                  <ul className="space-y-2">
+                    {opportunity.executionPlan!.firstActions.map((action, i) => (
+                      <li key={i} className="text-xs text-slate-300 flex items-start gap-2 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/60">
+                        <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 flex-shrink-0" />
+                        <span className="leading-relaxed">{action}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Resources Needed */}
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-2">Required Resources</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {opportunity.executionPlan!.resourcesNeeded.map((resource, i) => (
+                      <span key={i} className="text-xs font-semibold bg-slate-950/60 text-slate-300 px-3 py-1 rounded-lg border border-slate-800/60 shadow-2xs">
+                        {resource}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Success Metric */}
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-1.5 flex items-center gap-1.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-purple-400" />
+                    <span>Success Metric (KPI)</span>
+                  </h4>
+                  <p className="text-xs font-semibold text-purple-300 bg-purple-950/40 px-3 py-2 rounded-xl border border-purple-800/40">
+                    {opportunity.executionPlan!.successMetric}
+                  </p>
+                </div>
+
+                {/* Milestones */}
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-200 mb-2 flex items-center gap-1.5">
+                    <Flag className="w-3.5 h-3.5 text-purple-400" />
+                    <span>Key Timeline Milestones</span>
+                  </h4>
+                  <ul className="space-y-2">
+                    {opportunity.executionPlan!.milestones.map((milestone, i) => (
+                      <li key={i} className="text-xs text-slate-300 flex items-start gap-2 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/60">
+                        <span className="text-purple-400 font-mono font-bold">M{i+1}:</span>
+                        <span className="leading-relaxed">{milestone}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+              </div>
+            )}
+          </div>
+        )}
+
+      </div>
     </div>
   );
 }

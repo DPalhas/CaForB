@@ -1,0 +1,146 @@
+{
+  "id": "0031",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:00:23.947435+00:00",
+    "duration_ms": 21084,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Components Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision Components Inc. is a medium-sized manufacturer specializing in high-precision metal and electronic components for the automotive supply chain. The company operates in a highly regulated environment due to strict quality control standards required by major global automotive clients.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has recently implemented Lean manufacturing principles to reduce waste and improve cycle times on existing production lines. They have also invested modestly in upgrading their ERP system.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to significantly improve operational efficiency by reducing unit cost by 15% over the next three years. We aim to maintain high quality standards while expanding our market share within the specialty component sector.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core R&D and operations team consists of 25 highly skilled engineers and technicians who prioritize stability and reliable execution over rapid, high-risk experimentation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We face increasing pressure from competitors who are leveraging automation, which threatens our current cost structure and speed to market."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Supply Chain Automation Pilot",
+        "rationale": "Implementing a small-scale robotic system for quality inspection in the finishing phase can reduce manual error rates and labor costs incrementally.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-error processes for automation targeting Year 1 Q2.",
+            "Conduct a feasibility study on existing component handling equipment."
+          ],
+          "resources_needed": [
+            "Automation software license estimate",
+            "Contract for pilot system integration consultation"
+          ],
+          "success_metric": "Reduction in scrap rate by 5% within the first year.",
+          "milestones": [
+            "Feasibility study complete (Month 3)",
+            "Pilot system operational and data collected (Month 9)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12-18 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Maintenance System",
+        "rationale": "Developing a machine learning model to predict equipment failure in CNC machines can drastically reduce unplanned downtime, a major source of efficiency loss.",
+        "execution_plan": {
+          "first_actions": [
+            "Gather 3 years of historical sensor data for key machinery.",
+            "Hire/contract a specialized data science consultant."
+          ],
+          "resources_needed": [
+            "Data science talent budget",
+            "Cloud computing infrastructure setup"
+          ],
+          "success_metric": "Reduction in unplanned maintenance events by 30%.",
+          "milestones": [
+            "Model training complete (Month 6)",
+            "System deployed on 5 critical machines (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Streamlining Audit",
+        "rationale": "Conduct a comprehensive audit of the current production workflow to eliminate redundant steps and bottlenecks that consume significant labor time.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out end-to-end manufacturing process using value stream mapping (VSM).",
+            "Identify three non-value-added processes for immediate elimination."
+          ],
+          "resources_needed": [
+            "Internal project management hours",
+            "External VSM consulting fee"
+          ],
+          "success_metric": "Reduction in total manufacturing lead time by 10%.",
+          "milestones": [
+            "VSM completion and bottleneck identification (Month 4)",
+            "Implementation of first three process improvements (Month 9)"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional Efficiency Task Force (Ops, Engineering, Finance) to define the top 3 process bottlenecks.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct initial vendor vetting for IoT/sensor technology compatible with existing machinery.",
+        "owner": "Director of Engineering",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a detailed ROI model comparing the incremental automation pilot vs. internal labor cost savings.",
+        "owner": "Finance Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Outdated legacy ERP system limiting real-time inventory visibility.",
+      "High dependency on specialized, hard-to-retain technical talent.",
+      "Inefficient manual quality control checkpoints leading to high scrap rates.",
+      "Slow communication flow between R&D and Production teams."
+    ]
+  }
+}

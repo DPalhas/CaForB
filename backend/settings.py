@@ -57,17 +57,6 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
 
 CORS_ALLOW_CREDENTIALS = True
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "caforb",
-        "USER": "postgres",
-        "PASSWORD": "yourpassword",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
-}
-
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [

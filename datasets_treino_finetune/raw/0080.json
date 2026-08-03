@@ -1,0 +1,145 @@
+{
+  "id": "0080",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:24:56.041385+00:00",
+    "duration_ms": 45375,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metal Fabrication Co.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision Metal Fabrication Co. specializes in custom industrial components for the aerospace and automotive sectors. The company maintains stringent quality controls due to strict industry standards, requiring regular compliance audits. Operations involve complex supply chain management and specialized machinery.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The team has implemented a pilot program for CNC machine optimization over the last year. They also conducted internal workshops focused on streamlining inventory tracking protocols.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to improve operational efficiency by reducing waste and optimizing throughput in our fabrication processes. We aim to enhance profitability through streamlined production cycles.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core innovation team consists of 3 specialized engineers and one project manager, reporting directly to the operations director.",
+      "digitalMaturity": 4,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Process Automation Pilot for Machine Scheduling",
+        "rationale": "Implementing AI-driven scheduling software could reduce machine idle time and optimize workflow sequencing without requiring a full system overhaul. This directly addresses the efficiency priority.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three key production bottlenecks suitable for automation testing.",
+            "Select and procure a low-cost, off-the-shelf scheduling module."
+          ],
+          "resources_needed": [
+            "External consultant (20 hours)",
+            "Software licensing fee ($5k)"
+          ],
+          "success_metric": "Reduce machine idle time by 15% within 6 months.",
+          "milestones": [
+            "Q3: Pilot implementation in one department.",
+            "Q4: Full rollout planning based on pilot success."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Digital Inventory Tracking (WMS Lite)",
+        "rationale": "Moving from manual tracking to a lightweight Warehouse Management System (WMS) will improve material flow visibility, reducing time spent searching for parts and lowering inventory shrinkage.",
+        "execution_plan": {
+          "first_actions": [
+            "Define core data requirements for the WMS integration.",
+            "Select a cloud-based solution with an affordable subscription model."
+          ],
+          "resources_needed": [
+            "Internal IT resource reallocation (50% time)",
+            "WMS platform subscription ($1k/month)"
+          ],
+          "success_metric": "Decrease material search time by 25% within 4 months.",
+          "milestones": [
+            "Month 1: Data migration and system configuration.",
+            "Month 3: Full operational integration."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "IoT Sensor Integration for Predictive Maintenance (Feasibility Study)",
+        "rationale": "While conservative, a foundational study into using basic IoT sensors on critical machinery could enable predictive maintenance. This shifts the company from reactive repairs to proactive scheduling, significantly boosting efficiency and reducing costly downtime.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a vendor RFP for industrial vibration/temp monitoring sensors.",
+            "Define the scope of the feasibility study (focus on one high-impact machine)."
+          ],
+          "resources_needed": [
+            "R&D budget allocation ($15k)",
+            "External sensor technology assessment team"
+          ],
+          "success_metric": "Successful proof-of-concept demonstrating 90% accuracy in predicting component failure.",
+          "milestones": [
+            "Q3: Sensor vendor selection and PoC setup.",
+            "Q1 Next Year: Final cost/benefit analysis for full integration."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional Task Force to evaluate the feasibility of the IoT Predictive Maintenance study.",
+        "owner": "Operations Director",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize vendor selection and budget approval for the WMS Lite implementation.",
+        "owner": "Finance Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Draft detailed project charters for the top two opportunities (Automation Pilot & IoT Study).",
+        "owner": "Innovation Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "reliance on manual data entry leading to errors and delays.",
+      "high turnover in specialized technical roles due to limited upskilling programs.",
+      "slow internal bureaucracy hindering rapid process changes."
+    ]
+  }
+}

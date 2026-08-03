@@ -1,0 +1,124 @@
+{
+  "id": "0053",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:11:46.328919+00:00",
+    "duration_ms": 18695,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Industrial Solutions",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Industrial Solutions is a medium-sized manufacturer specializing in custom heavy machinery and specialized components for the automotive sector. They possess strong operational expertise but struggle with recent market shifts toward automated, sustainable production methods.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has invested heavily in incremental improvements regarding supply chain logistics and minor process automation in its existing assembly lines. However, they have historically lacked a formal framework for exploring entirely new product categories or geographic markets.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "To achieve sustainable revenue growth by establishing significant market presence outside the traditional automotive niche within three years. This requires developing novel product lines and identifying adjacent industries where our manufacturing expertise can be leveraged.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core innovation team is small (4-6 individuals) but highly skilled in engineering and supply chain management.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 22,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Entry into Sustainable Component Manufacturing",
+        "rationale": "Leveraging existing heavy machinery expertise to pivot into producing high-demand sustainable components (e.g., electric vehicle chassis parts). This represents a radical shift from traditional mechanical production and aligns perfectly with the strategic goal of diversification.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on battery component compatibility.",
+            "Identify potential supply chain partnerships for sustainable raw materials."
+          ],
+          "resources_needed": [
+            "R&D budget increase ($150k)",
+            "External engineering consultant contract"
+          ],
+          "success_metric": "Secure pilot order for a new product line by Q4.",
+          "milestones": [
+            "Pilot project completion (Q3)",
+            "New production line tooling acquisition (Q4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Vertical Integration in Specialized Niche",
+        "rationale": "Focusing on incremental improvements within the existing automotive supply chain by developing proprietary, high-precision tooling. This builds a stronger foundation and reduces reliance on external suppliers before tackling broader diversification.",
+        "execution_plan": {
+          "first_actions": [
+            "Automate current quality control checks using IoT sensors.",
+            "Implement lean manufacturing principles for existing lines."
+          ],
+          "resources_needed": [
+            "IoT sensor hardware and software licenses",
+            "Training for maintenance staff"
+          ],
+          "success_metric": "Reduce equipment downtime by 15% within 6 months.",
+          "milestones": [
+            "Pilot IoT implementation (2 months)",
+            "Achieve target reduction in MTTR (Mean Time To Repair)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional 'Diversification Task Force' to evaluate three target adjacent markets.",
+        "owner": "CEO/COO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Finalize the resource request and business case for the Sustainable Component manufacturing pilot project.",
+        "owner": "CTO",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch an internal culture workshop focused on innovation and risk tolerance to address cultural barriers.",
+        "owner": "HR Director",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized market entry strategy outside core business segments",
+      "High dependency on key operational talent for custom engineering projects (talent risk)",
+      "Inconsistent innovation culture between the executive and operational teams",
+      "Slow internal approval process hindering radical project initiation"
+    ]
+  }
+}

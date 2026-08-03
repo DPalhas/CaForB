@@ -1,4 +1,5 @@
 import { AssessmentFormData, CompanySize } from "@/lib/types";
+import { Building2, Globe2, Users2, ShieldAlert } from "lucide-react";
 
 interface Props {
   data: AssessmentFormData;
@@ -42,119 +43,140 @@ const SIZES: { value: CompanySize; label: string; description: string }[] = [
 ];
 
 const REGULATORY_LEVELS: { value: string; label: string; description: string }[] = [
-  { value: "low", label: "Low", description: "Minimal oversight, e.g. most software" },
-  { value: "medium", label: "Medium", description: "Some compliance requirements" },
-  { value: "high", label: "High", description: "Heavily regulated, e.g. finance, healthcare, energy" },
+  { value: "low", label: "Low Oversight", description: "Minimal compliance, typical in standard software" },
+  { value: "medium", label: "Moderate", description: "Standard industry regulations & data rules" },
+  { value: "high", label: "Heavily Regulated", description: "Strict oversight: Finance, Health, Energy" },
 ];
 
 export default function Step1_CompanyProfile({ data, onChange }: Props) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-7">
       <div>
-        <h2 className="text-xl font-semibold text-gray-800">Company Profile</h2>
-        <p className="text-sm text-gray-500 mt-1">
-          Tell us about your organisation so we can tailor the assessment.
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/40 text-purple-300 text-xs font-bold uppercase tracking-wider mb-2 border border-purple-800/40">
+          <Building2 className="w-3.5 h-3.5" />
+          <span>Section 1 of 5</span>
+        </div>
+        <h2 className="text-2xl font-bold text-white">Company Profile</h2>
+        <p className="text-sm text-slate-400 mt-1">
+          Provide your company baseline so the AI can calibrate industry context and benchmarks.
         </p>
       </div>
 
       {/* Company Name */}
-      <div className="space-y-1">
-        <label className="block text-sm font-medium text-gray-700">
-          Company name <span className="text-red-500">*</span>
+      <div className="space-y-2">
+        <label className="block text-sm font-semibold text-slate-200">
+          Company Name <span className="text-purple-400">*</span>
         </label>
-        <input
-          type="text"
-          value={data.companyName}
-          onChange={(e) => onChange("companyName", e.target.value)}
-          placeholder="e.g. Acme Technologies"
-          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
-        />
+        <div className="relative">
+          <input
+            type="text"
+            value={data.companyName}
+            onChange={(e) => onChange("companyName", e.target.value)}
+            placeholder="e.g. Acme Innovations Corp"
+            className="w-full border border-slate-800 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent shadow-sm"
+          />
+        </div>
       </div>
 
       {/* Sector */}
-      <div className="space-y-1">
-        <label className="block text-sm font-medium text-gray-700">
-          Industry sector <span className="text-red-500">*</span>
+      <div className="space-y-2">
+        <label className="block text-sm font-semibold text-slate-200">
+          Industry Sector <span className="text-purple-400">*</span>
         </label>
-        <select
-          value={data.sector}
-          onChange={(e) => onChange("sector", e.target.value)}
-          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
-        >
-          <option value="">Select a sector</option>
-          {SECTORS.map((s) => (
-            <option key={s} value={s}>{s}</option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            value={data.sector}
+            onChange={(e) => onChange("sector", e.target.value)}
+            className="w-full border border-slate-800 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-slate-900/60 shadow-sm appearance-none cursor-pointer"
+          >
+            <option value="">Select your sector...</option>
+            {SECTORS.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+            <Globe2 className="w-4 h-4" />
+          </div>
+        </div>
       </div>
 
       {/* Size */}
       <div className="space-y-2">
-        <label className="block text-sm font-medium text-gray-700">
-          Company size <span className="text-red-500">*</span>
+        <label className="block text-sm font-semibold text-slate-200">
+          Company Size <span className="text-purple-400">*</span>
         </label>
         <div className="grid grid-cols-2 gap-3">
-          {SIZES.map(({ value, label, description }) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => onChange("size", value)}
-              className={`border rounded-lg p-3 text-left transition-all
-                ${data.size === value
-                  ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
-                  : "border-gray-200 hover:border-gray-300"
+          {SIZES.map(({ value, label, description }) => {
+            const isSelected = data.size === value;
+            return (
+              <button
+                key={value}
+                type="button"
+                onClick={() => onChange("size", value)}
+                className={`border rounded-2xl p-4 text-left transition-all relative ${
+                  isSelected
+                    ? "border-purple-500 bg-purple-950/40 ring-2 ring-purple-500/30 shadow-sm text-purple-300"
+                    : "border-slate-800 hover:border-slate-700 bg-slate-900/40 text-slate-300"
                 }`}
-            >
-              <div className="text-sm font-semibold text-gray-800">{label}</div>
-              <div className="text-xs text-gray-500">{description}</div>
-            </button>
-          ))}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <span className={`text-sm font-bold ${isSelected ? "text-purple-300" : "text-slate-200"}`}>
+                    {label}
+                  </span>
+                  <Users2 className={`w-4 h-4 ${isSelected ? "text-purple-400" : "text-slate-500"}`} />
+                </div>
+                <div className="text-xs text-slate-400">{description}</div>
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Regulatory environment — NEW */}
+      {/* Regulatory environment */}
       <div className="space-y-2">
-        <label className="block text-sm font-medium text-gray-700">
-          How regulated is your industry? <span className="text-red-500">*</span>
+        <label className="block text-sm font-semibold text-slate-200">
+          Industry Regulatory Environment <span className="text-purple-400">*</span>
         </label>
-        <p className="text-xs text-gray-500">
-          This affects realistic timeframes and risk framing for recommendations.
-        </p>
-        <div className="grid grid-cols-3 gap-3">
-          {REGULATORY_LEVELS.map(({ value, label, description }) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => onChange("regulatoryEnvironment", value)}
-              className={`border rounded-lg p-3 text-left transition-all
-                ${data.regulatoryEnvironment === value
-                  ? "border-teal-600 bg-teal-50 ring-2 ring-teal-500"
-                  : "border-gray-200 hover:border-gray-300"
+        <div className="grid sm:grid-cols-3 gap-3">
+          {REGULATORY_LEVELS.map(({ value, label, description }) => {
+            const isSelected = data.regulatoryEnvironment === value;
+            return (
+              <button
+                key={value}
+                type="button"
+                onClick={() => onChange("regulatoryEnvironment", value)}
+                className={`border rounded-2xl p-3.5 text-left transition-all ${
+                  isSelected
+                    ? "border-purple-500 bg-purple-950/40 ring-2 ring-purple-500/30 shadow-sm text-purple-300"
+                    : "border-slate-800 hover:border-slate-700 bg-slate-900/40 text-slate-300"
                 }`}
-            >
-              <div className="text-sm font-semibold text-gray-800">{label}</div>
-              <div className="text-xs text-gray-500">{description}</div>
-            </button>
-          ))}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <span className={`text-xs font-bold ${isSelected ? "text-purple-300" : "text-slate-200"}`}>
+                    {label}
+                  </span>
+                  <ShieldAlert className={`w-3.5 h-3.5 ${isSelected ? "text-purple-400" : "text-slate-500"}`} />
+                </div>
+                <div className="text-[11px] text-slate-400 leading-tight">{description}</div>
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* Company Description */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Company description <span className="text-red-500">*</span>
+      <div className="space-y-2">
+        <label className="block text-sm font-semibold text-slate-200">
+          Brief Business Activity Overview <span className="text-purple-400">*</span>
         </label>
-        <p className="text-xs text-gray-500 mb-2">
-          Provide a brief overview of your company's core business activity.
-        </p>
         <textarea
           value={data.companyDescription}
           onChange={(e) => onChange("companyDescription", e.target.value)}
-          placeholder="e.g. We provide cloud-based inventory management software for small retail businesses."
+          placeholder="e.g. We develop B2B software for supply chain tracking with 40 active enterprise clients..."
           rows={3}
-          className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none"
+          className="w-full px-4 py-3 text-sm font-medium border border-slate-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none shadow-sm"
         />
       </div>
     </div>
   );
-}
+}

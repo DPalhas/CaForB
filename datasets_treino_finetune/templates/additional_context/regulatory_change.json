@@ -1,0 +1,8 @@
+{
+  "variants": [
+    "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities — explainability, human oversight, risk classification documentation — into our product roadmap immediately to avoid market access risk when enforcement begins.",
+    "Our industry is facing a pending regulatory shift that will require mandatory carbon emissions reporting and supply chain due diligence starting next fiscal year. We currently have no systematic data collection for these requirements. Innovation efforts must account for compliance infrastructure investment as a non-negotiable prerequisite to growth initiatives.",
+    "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity.",
+    "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment."
+  ]
+}

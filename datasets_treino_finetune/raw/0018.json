@@ -1,0 +1,123 @@
+{
+  "id": "0018",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:54:55.673673+00:00",
+    "duration_ms": 19468,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Industrial Components",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex is a mid-sized manufacturer specializing in precision industrial components for the aerospace and medical device sectors. The company operates in highly regulated environments requiring strict compliance with ISO standards and environmental safety protocols. While established, rapid technological shifts necessitate constant process improvement.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The last two years focused on incremental updates to existing production lines to meet current efficiency targets. We have piloted a digital quality control system but have not fully scaled it across all facilities yet.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maintain stable market share in high-value contracts by ensuring uncompromising product quality and compliance. We aim to mitigate new market entrants through operational excellence and defensive technology adoption.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core innovation team consists of 5 engineers, focused primarily on process optimization. The overall organizational structure is stable but resistant to rapid change.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "culture",
+        "time",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is consolidating, and key competitors are rapidly adopting automation in their component fabrication processes. We need to defend our position without risking significant capital."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Process Automation for Compliance Audits",
+        "rationale": "Implementing a targeted automation layer to streamline documentation and compliance reporting will reduce the 'process' barrier while mitigating high regulatory risks effectively. This is a defensive move that protects existing contracts.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 3 regulatory bottlenecks in production documentation.",
+            "Pilot RPA (Robotic Process Automation) for data entry and report generation."
+          ],
+          "resources_needed": [
+            "50 hours of external consulting for compliance automation setup",
+            "Software licensing for basic RPA tools"
+          ],
+          "success_metric": "Reduce documentation preparation time by 30% within Q3.",
+          "milestones": [
+            "Q1: Complete bottleneck analysis and tool selection.",
+            "Q2: Successful pilot implementation in one facility."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Agile Design for Component Customization Service",
+        "rationale": "Develop a radical new service model allowing for rapid, customized component design feedback from clients. This shifts the company from selling standardized parts to offering high-value, bespoke solutions, creating a defensible competitive moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated cross-functional 'Design Squad' team (R&D + Sales).",
+            "Create a Minimum Viable Product (MVP) offering for one niche client segment."
+          ],
+          "resources_needed": [
+            "Hiring of 2 UX/Industrial Design specialists",
+            "Dedicated prototyping lab space expansion"
+          ],
+          "success_metric": "Achieve 15% revenue contribution from bespoke services within 18 months.",
+          "milestones": [
+            "Q1-Q2: MVP launch and initial client feedback loop.",
+            "Q3: Full service integration into sales pipeline."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-departmental task force to map all regulatory compliance pain points.",
+        "owner": "COO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate feasibility study and budget allocation for the Lean Process Automation pilot project.",
+        "owner": "VP of Operations",
+        "timeframe": "End of Q2"
+      },
+      {
+        "action": "Conduct market analysis on competitor service models to validate the 'Radical' design opportunity.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependency on legacy manual documentation processes.",
+      "Resistance within the existing engineering culture to adopting new digital workflows.",
+      "Limited internal talent pool for advanced data analytics and AI integration."
+    ]
+  }
+}

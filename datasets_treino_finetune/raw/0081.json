@@ -1,0 +1,146 @@
+{
+  "id": "0081",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:25:17.831930+00:00",
+    "duration_ms": 21772,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Industrial Components",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Industrial Components manufactures precision mechanical components for the automotive and aerospace industries. The company has established itself as a reliable supplier with high quality standards but faces increasing pressure from global competitors to innovate faster.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "In the past three years, Apex implemented several process improvements focused on reducing waste and optimizing supply chain logistics. They also invested moderately in R&D for material science enhancements to maintain component durability.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The primary goal is to solidify market share within the high-margin automotive segment through superior product quality and operational efficiency. Additionally, Apex aims to develop proprietary technologies that create barriers against new entrants in their niche.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The innovation team consists of 5 dedicated engineers and project managers, providing a strong technical foundation for structured development.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Process Automation for Quality Control (QC)",
+        "rationale": "Implementing moderate automation in the existing QC process can reduce cycle times and minimize human error, directly improving product consistency—a key component of market defense. This is achievable with a balanced budget allocation.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed workflow audit of the current QC station.",
+            "Pilot an automated vision system on one high-volume product line."
+          ],
+          "resources_needed": [
+            "Budget for vision software licensing ($50k)",
+            "Internal training time (2 engineers)"
+          ],
+          "success_metric": "Reduction in scrap rate by 15% within 6 months.",
+          "milestones": [
+            "Q3: Software procurement and pilot setup complete.",
+            "Q4: Full integration into the primary production line."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "New Material Development Lab",
+        "rationale": "Developing a proprietary, lightweight composite material could create a significant technological moat, making existing competitors' products less relevant. While risky, this aligns with market defense by securing future high-value contracts.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and hire one external materials scientist specialist.",
+            "Establish a small, dedicated lab prototyping facility."
+          ],
+          "resources_needed": [
+            "R&D budget allocation ($150k)",
+            "Hiring costs for specialized talent"
+          ],
+          "success_metric": "Successful prototype validation and patent filing within 2 years.",
+          "milestones": [
+            "Year 1: Material formulation complete.",
+            "Year 2: Patent application filed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "36 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance System Integration",
+        "rationale": "Integrating IoT sensors into core machinery allows for predictive maintenance, reducing unplanned downtime and improving operational efficiency. This stabilizes output quality, which is critical for market defense against competitors with lower operational costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Install vibration and thermal sensors on the top 5 most critical machines.",
+            "Integrate data stream into existing ERP system."
+          ],
+          "resources_needed": [
+            "Hardware installation costs ($80k)",
+            "IT integration labor"
+          ],
+          "success_metric": "Decrease in unplanned downtime by 20% annually.",
+          "milestones": [
+            "Q3: Sensor deployment complete.",
+            "Q1 next year: Predictive analytics dashboard live."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional steering committee to review the feasibility and prioritization of all three identified opportunities.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Allocate the initial budget for the Process Automation pilot project (QC) and commence vendor selection.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Initiate a talent search for an experienced materials science consultant to support the radical New Material Development opportunity.",
+        "owner": "VP of R&D",
+        "timeframe": "Start recruitment immediately"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on legacy manufacturing processes that lack scalability.",
+      "High turnover rate in specialized engineering talent, leading to knowledge loss.",
+      "Slow adoption of advanced digital technologies within the core production floor."
+    ]
+  }
+}

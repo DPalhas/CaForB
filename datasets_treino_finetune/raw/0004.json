@@ -1,0 +1,147 @@
+{
+  "id": "0004",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:49:23.415467+00:00",
+    "duration_ms": 22618,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "GreenHarvest Logistics",
+      "sector": "Transportation & Logistics",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "GreenHarvest Logistics is a medium-sized firm specializing in the transportation and supply chain management for agricultural products. The company operates primarily within domestic markets, focusing on efficiency improvements rather than high regulatory compliance hurdles.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Over the last three years, the team has implemented several incremental process optimizations focused on route density and fleet maintenance. A small pilot project exploring cold-chain technology for perishable goods was also initiated but remains in the testing phase.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to diversify revenue streams by entering adjacent sectors, specifically renewable energy component distribution. The company aims to grow its market share beyond current regional boundaries while maintaining operational excellence.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core team consists of 15 professionals, mixing logistics experts and business development specialists who are agile enough to handle cross-functional projects.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company faces strong pricing pressure from larger incumbents but benefits from the low regulatory risk in its primary operational zones."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Vertical Integration: Launch 'GreenFarm Solutions'",
+        "rationale": "Entering the renewable energy component distribution sector is a high-risk but high-reward move that directly addresses the strategic priority of diversification. This requires fundamentally shifting the company's core competency from logistics to specialized supply chain services for green tech.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market feasibility study on renewable component distribution in 6 months.",
+            "Identify and vet potential acquisition targets or strategic partnerships (Q1).",
+            "Develop a preliminary business case with projected ROI."
+          ],
+          "resources_needed": [
+            "Consultant fees for sector entry analysis ($50k)",
+            "Dedicated innovation task force headcount (2 FTEs)"
+          ],
+          "success_metric": "Securing one strategic partnership or acquisition target by end of Q3.",
+          "milestones": [
+            "Market Feasibility Report Complete (Month 4)",
+            "Partnership/Acquisition Identified (Month 7)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Market Expansion: Cold Chain Consulting",
+        "rationale": "Leveraging existing expertise in cold chain logistics, the company can enter a niche consulting market. This is a lower-risk way to diversify revenue by packaging and selling specialized knowledge rather than building entirely new infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop standardized consulting packages based on current route optimization successes.",
+            "Create a dedicated sales pitch for the consulting service."
+          ],
+          "resources_needed": [
+            "Marketing collateral development ($10k)",
+            "Training materials for sales team"
+          ],
+          "success_metric": "Achieve 2 new consulting clients generating $500k in revenue within one year.",
+          "milestones": [
+            "Consulting Service Pilot Launch (Month 3)",
+            "First 5 Consulting Clients Secured (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Digital Platform: Predictive Logistics SaaS Module",
+        "rationale": "Developing a proprietary software module for predictive demand forecasting using AI could create a new, scalable revenue stream independent of physical transport volume. This requires significant investment in talent and technology but offers massive diversification potential.",
+        "execution_plan": {
+          "first_actions": [
+            "Hire a specialized data scientist/AI developer (Q1).",
+            "Define the MVP scope focused only on demand forecasting for one product line."
+          ],
+          "resources_needed": [
+            "Salaries for 1 senior Data Scientist ($80k annually)",
+            "Cloud infrastructure costs and software licensing"
+          ],
+          "success_metric": "Achieve 10% adoption rate among existing customers within 12 months.",
+          "milestones": [
+            "MVP Feature Complete (Month 5)",
+            "Beta Launch with Top 5 Clients (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form an internal steering committee to evaluate the viability of the 'GreenFarm Solutions' radical initiative.",
+        "owner": "CEO/Innovation Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Conduct detailed market research and competitor analysis for cold chain consulting services.",
+        "owner": "Sales Director",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Begin recruitment process for a specialized Data Scientist to build the predictive logistics module MVP.",
+        "owner": "CTO/HR Lead",
+        "timeframe": "Ongoing, start Q1"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited inter-departmental communication hindering radical idea scaling.",
+      "Over-reliance on existing freight revenue streams leading to poor diversification focus.",
+      "High reliance on key personnel (talent risk).",
+      "Slow iteration cycles in the current partial innovation process."
+    ]
+  }
+}

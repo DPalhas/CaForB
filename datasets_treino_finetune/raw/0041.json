@@ -1,0 +1,144 @@
+{
+  "id": "0041",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:05:41.588796+00:00",
+    "duration_ms": 26514,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Metal Fabrication LLC",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Metal Fabrication is a small, regional manufacturer specializing in custom metal brackets and components for the automotive supply chain. The company operates with limited overhead and relies heavily on skilled, specialized labor. Their production runs are steady but highly manual.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company implemented a simple workflow change to reduce material waste by 5% during Q1. They also piloted a new internal inventory tracking system manually.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The primary goal is to enhance operational efficiency and reduce production cycle time without significant capital expenditure. We aim to improve profitability through leaner processes.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "A lean team of four skilled craftsmen manages all operations and decision-making. Innovation initiatives are driven by immediate, measurable improvements.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The company faces stiff competition on price from larger firms and struggles with inconsistent order scheduling."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Standardized Workflows for Fabrication",
+        "rationale": "Implementing standardized work instructions will reduce variability in production time and minimize rework caused by inconsistent manual processes. This is a low-risk step focused purely on efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out the current fabrication process from raw material intake to final shipment.",
+            "Document 'best practice' steps for the top three most common bracket types."
+          ],
+          "resources_needed": [
+            "Time allocation (10 hours/week)",
+            "Internal management bandwidth"
+          ],
+          "success_metric": "Reduction in average production cycle time by 8%",
+          "milestones": [
+            "Complete process mapping within month 1",
+            "Implement documented workflow on one product line by month 2"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Material Yield Optimization",
+        "rationale": "By utilizing the data gathered during the process mapping phase, we can identify specific material offcuts or inefficiencies that lead to waste. This is a direct and conservative efficiency lever.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed analysis of scrap rates over the last six months.",
+            "Identify three high-waste components requiring immediate redesign."
+          ],
+          "resources_needed": [
+            "Time for material engineering review",
+            "Small investment in CAD software modules (if necessary)"
+          ],
+          "success_metric": "Reduction in material waste percentage by 3%",
+          "milestones": [
+            "Finalize the top three high-waste components and updated cutting plans within month 2"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "5 months"
+      },
+      {
+        "type": "radical",
+        "title": "Simple Automated Inventory Tracking Pilot",
+        "rationale": "While we are conservative, adopting a simple digital solution for tracking raw materials and finished goods can drastically improve process transparency and reduce time spent on manual counts. This offers high efficiency gains with manageable upfront investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Evaluate three low-cost inventory management software options suitable for micro businesses.",
+            "Pilot the chosen system using a QR code tracking method for incoming raw materials."
+          ],
+          "resources_needed": [
+            "Software subscription costs ($20/month)",
+            "Training time for 1 staff member"
+          ],
+          "success_metric": "Reduction in inventory reconciliation errors by 50%",
+          "milestones": [
+            "System selection and contract signing within month 3",
+            "Pilot system fully operational for raw materials tracking by month 6"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional 'Process Review Team' to define current bottlenecks and baseline metrics.",
+        "owner": "Owner/Manager",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Complete the process mapping exercise for the top product line (Opp. 1) and assign resources.",
+        "owner": "Operations Lead",
+        "timeframe": "End of Q1"
+      },
+      {
+        "action": "Investigate and select a low-cost inventory management software provider to begin pilot testing.",
+        "owner": "Owner/Manager",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent process documentation leading to variability in output quality.",
+      "High reliance on key personnel; knowledge silos exist regarding complex fabrication steps.",
+      "Limited digital tools resulting in slow and error-prone manual inventory tracking."
+    ]
+  }
+}

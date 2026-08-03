@@ -1,0 +1,151 @@
+{
+  "id": "0054",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:12:14.300667+00:00",
+    "duration_ms": 27956,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Precision Components",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Precision Components is a mid-sized manufacturer specializing in custom metal components for the automotive and aerospace industries. The company operates with 50 employees across design, production, and quality control facilities. They focus on high-precision tooling but struggle to scale operational efficiency through process standardization.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has previously implemented minor inventory tracking software which improved material flow visibility by 12%. A recent internal initiative focused on cross-training staff in basic automation protocols showed mixed success regarding adoption and required further refinement.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to significantly improve operational efficiency across the entire production lifecycle while maintaining high product quality standards. We aim to reduce waste by 20% within three years and optimize labor utilization through smart resource allocation.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core innovation team consists of five dedicated engineers and two operations managers, reporting directly to the executive leadership. They are agile but require structured guidance for large-scale projects.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is currently seeing increased pressure on component pricing, forcing a need for internal structural improvements to maintain profitability."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Lean Process Automation Implementation",
+        "rationale": "Implementing standardized workflow software and basic machine learning models for material flow can immediately reduce non-value-added steps in the production process, directly addressing the efficiency goal without requiring massive capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a 30-day process mapping exercise of the top three production lines.",
+            "Pilot a low-cost workflow automation tool (e.g., integration with existing ERP).",
+            "Identify and train key personnel in basic data analytics for operational reporting."
+          ],
+          "resources_needed": [
+            "1 dedicated project manager allocation (part-time)",
+            "Software licensing costs ($5k-$10k)",
+            "Internal training budget ($3k)"
+          ],
+          "success_metric": "Reduce cycle time by 15% in pilot lines within six months.",
+          "milestones": [
+            "Process mapping complete (Month 1).",
+            "Automation tool selection and integration phase finished (Month 2).",
+            "Efficiency gains quantified for Q3 reporting."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Industry 4.0 Predictive Maintenance System",
+        "rationale": "Integrating IoT sensors on critical machinery and an AI system for predictive maintenance can drastically reduce unplanned downtime, which is a major efficiency drain in precision manufacturing, but requires significant initial investment and technical upskilling.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 10 high-risk machines for sensor installation.",
+            "Partner with an external IoT solutions provider for proof-of-concept.",
+            "Develop a phased rollout plan focusing on the highest-cost equipment."
+          ],
+          "resources_needed": [
+            "Initial hardware and sensor costs ($50k-$100k)",
+            "Data scientist/engineer contractor ($30k monthly retainer)",
+            "Internal IT infrastructure upgrades ($20k)"
+          ],
+          "success_metric": "Decrease unplanned maintenance downtime by 40% within 18 months.",
+          "milestones": [
+            "Proof-of-concept successful on one machine (6 months).",
+            "Full system integration and rollout to 5 critical assets (Months 7-12)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18+ months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cross-Functional Digital Standardization (BPM)",
+        "rationale": "Creating a unified digital platform for managing requests, documentation, and communication between design, procurement, and production will eliminate current silos and reduce time spent on manual handoffs.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and configure an existing low-code BPM platform (e.g., SharePoint/ServiceNow).",
+            "Establish a task force to define standardized digital workflows for three key processes (e.g., material requisition, quality sign-off).",
+            "Pilot the new system within one specific department."
+          ],
+          "resources_needed": [
+            "Software platform subscription ($2k/month)",
+            "Internal business analyst time (10% allocation)"
+          ],
+          "success_metric": "Reduce average inter-departmental handoff time by 50%.",
+          "milestones": [
+            "BPM platform fully configured and tested (Month 3).",
+            "Standardized workflows live in Pilot Department (Month 4)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to prioritize and scope the 'Lean Process Automation' pilot.",
+        "owner": "COO (Chief Operating Officer)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a detailed feasibility study for the Industry 4.0 Predictive Maintenance system, including vendor RFPs.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct a comprehensive audit of all internal documentation and knowledge gaps to identify 'talent' development needs related to automation.",
+        "owner": "HR Manager",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent process documentation leading to high variability in production output.",
+      "Limited internal data analytics capability preventing proactive identification of efficiency bottlenecks.",
+      "High reliance on specialized staff for critical operational tasks, posing a talent retention risk."
+    ]
+  }
+}

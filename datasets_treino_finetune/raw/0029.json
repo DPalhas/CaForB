@@ -1,0 +1,145 @@
+{
+  "id": "0029",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:59:43.151589+00:00",
+    "duration_ms": 25758,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "GrowthFlow Solutions",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "GrowthFlow Solutions is a B2B SaaS provider specializing in customized project management and resource allocation software for mid-sized engineering firms. We operate primarily online, servicing clients across various industries.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have recently implemented a phased rollout of an AI-driven reporting module and successfully integrated two new CRM connectors to expand our feature set.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The primary goal is aggressive market share expansion within the European SME segment over the next three years. This involves driving user adoption by 40% through product enhancement and securing key enterprise contracts.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core development team consists of 15 specialized engineers, supported by a small product management unit focused on iterative delivery.",
+      "digitalMaturity": 3,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Tiered Feature Unlock Strategy",
+        "rationale": "To drive growth conservatively, we should incrementally introduce premium features behind a lower-cost tier to capture new segments without risking core product stability.",
+        "execution_plan": {
+          "first_actions": [
+            "Define three tiers based on feature complexity.",
+            "Prototype the 'Growth Package' module within one month."
+          ],
+          "resources_needed": [
+            "Product team hours (40)",
+            "UI/UX design consultation ($5,000)"
+          ],
+          "success_metric": "Increase in Premium Tier conversion rate by 15% within Q3.",
+          "milestones": [
+            "Tier structure finalization: Month 1",
+            "Growth Package Beta launch: Month 4"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Targeted Niche Vertical Integration",
+        "rationale": "Focusing resources on integrating specialized compliance modules for the Healthcare Tech niche offers a lower-risk entry point into high-value markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market gap analysis for healthcare compliance needs.",
+            "Develop a lightweight module specification."
+          ],
+          "resources_needed": [
+            "Legal consultation retainer ($10,000)",
+            "Engineering time (80 hours)"
+          ],
+          "success_metric": "Secure 3 pilot clients in the Healthcare Tech sector within 9 months.",
+          "milestones": [
+            "Niche requirement documentation: Month 2",
+            "Pilot launch readiness: Month 6"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1 year"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Personalized Predictive Analytics Engine",
+        "rationale": "To achieve high growth, we must explore a radical shift in our data processing capabilities to offer unique predictive insights that competitors cannot easily replicate.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an internal 'Moonshot' task force (5-7 key engineers).",
+            "Allocate $20,000 for exploratory AI/ML R&D tools."
+          ],
+          "resources_needed": [
+            "Data Scientist salary ($150k annual allocation)",
+            "Cloud computing infrastructure upgrade ($30,000)"
+          ],
+          "success_metric": "Achieve 90% prediction accuracy for client churn within 18 months.",
+          "milestones": [
+            "Feasibility study completion: Month 6",
+            "MVP deployment of predictive engine: Month 12"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the product roadmap for the 'Growth Package' tier and assign engineering leads.",
+        "owner": "Head of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a formal feasibility study for the Predictive Analytics Engine (Moonshot project).",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Conduct a comprehensive review of current talent capabilities to identify skill gaps necessary for aggressive growth.",
+        "owner": "HR Director",
+        "timeframe": "End of next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Scalability limitations in the core architecture as user base grows significantly.",
+      "High dependency on a few key engineering talent pools, leading to potential turnover risk.",
+      "Slow internal process for migrating legacy code to modern microservices infrastructure."
+    ]
+  }
+}

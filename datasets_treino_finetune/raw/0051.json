@@ -1,0 +1,146 @@
+{
+  "id": "0051",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:11:04.480067+00:00",
+    "duration_ms": 45193,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Metals Inc.",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "A medium-sized manufacturer specializing in high-precision steel components used primarily in aerospace and specialized industrial machinery. The company operates under strict international safety and environmental compliance standards due to the nature of its output.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company has conducted periodic design reviews but relies heavily on established engineering protocols for product development. They have implemented standardized quality control procedures, though major capital expenditures are infrequent due to conservative financial planning.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to maintain a dominant market share in high-specification components by ensuring zero critical failures and meeting stringent regulatory compliance requirements. We aim to solidify our existing customer base through reliability.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The innovation team is small, consisting of five highly experienced engineers and one project manager who works closely with senior leadership.",
+      "digitalMaturity": 4,
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Competitors are aggressively pursuing automation, which poses a threat to our current operational efficiency and component lead times."
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Quality Assurance Integration (Incremental)",
+        "rationale": "Implementing low-cost IoT sensors across key production lines can provide real-time data monitoring, reducing material waste and improving consistency without requiring a complete overhaul of the existing formal process. This is a conservative step to enhance existing reliability.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot sensor deployment on one critical component line",
+            "Develop basic dashboard for data visualization"
+          ],
+          "resources_needed": [
+            "50k budget for hardware and installation",
+            "10 hours of engineering time allocated"
+          ],
+          "success_metric": "Reduction in material scrap rate by 8% within the first quarter.",
+          "milestones": [
+            "Q1: Pilot completion and data validation",
+            "Q2: Full line integration planning"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Near-Term Additive Manufacturing Partnership (Radical)",
+        "rationale": "Exploring a strategic partnership with an advanced additive manufacturing firm could allow us to rapidly prototype new geometries for specialized components, giving us a defensive capability against competitors who might use novel designs. This is high-risk but necessary for future resilience.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three potential add-tech partners",
+            "Define required material standards (high regulatory focus)"
+          ],
+          "resources_needed": [
+            "30k budget for prototype materials and consulting fees",
+            "Dedicated project management support"
+          ],
+          "success_metric": "Successful production run of a novel component within 9 months.",
+          "milestones": [
+            "Month 1-2: Partner selection and feasibility study",
+            "Month 6: First functional prototype delivered"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Streamlining via Digital Documentation (Incremental)",
+        "rationale": "Digitizing and standardizing all compliance documentation will reduce the time spent on manual regulatory submissions, protecting us from fines or delays. This supports our conservative nature by reducing exposure through better process control.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a formal QMS software solution",
+            "Map and digitize the top five most frequent compliance documents"
+          ],
+          "resources_needed": [
+            "15k budget for software subscription",
+            "2 months of internal staff training"
+          ],
+          "success_metric": "Reduction in regulatory submission cycle time by 30%.",
+          "milestones": [
+            "Q1: Software selection and documentation mapping complete",
+            "Q3: Full organizational transition to digital forms"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive audit of current engineering process bottlenecks.",
+        "owner": "Head of Engineering",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize and secure funding for the Automated Quality Assurance Pilot project.",
+        "owner": "CFO/Innovation Lead",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Establish a formal 'Regulatory Compliance Task Force' to oversee digital documentation transition.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependency on manual quality checks, leading to human error risk.",
+      "Slower than competitors in design iteration due to rigid formal processes.",
+      "Limited internal expertise in advanced automation technologies."
+    ]
+  }
+}

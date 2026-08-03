@@ -1,0 +1,149 @@
+{
+  "id": "0077",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:22:55.498159+00:00",
+    "duration_ms": 24551,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "InsightFlow Analytics",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "InsightFlow Analytics is a mid-sized B2B SaaS provider specializing in supply chain optimization software for manufacturing clients. The company focuses on providing modular modules to improve operational efficiency and reduce logistical costs. It operates primarily within regulated industries, requiring compliance with data privacy standards.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The team recently launched two major feature updates based on direct customer feedback. They have also explored integrating AI for predictive maintenance in their core platform, though implementation remains siloed and cautious.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is aggressive market penetration into the European logistics sector. The company aims to increase annual recurring revenue (ARR) by 40% over the next three years by expanding their enterprise client base.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core team consists of 15 engineers and product managers, working in cross-functional pods.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company is currently competing against established giants in the logistics tech space and must prioritize stable, high-conversion features over risky platform overhauls."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Feature Enhancement for European Compliance Modules",
+        "rationale": "Implementing targeted updates to meet specific regulatory requirements in key European markets is a low-risk way to secure new enterprise contracts and demonstrate reliability.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed gap analysis with legal counsel for three target EU countries",
+            "Prioritize the development of compliance module v2.1 based on NPS feedback"
+          ],
+          "resources_needed": [
+            "Dedicated Product Manager (part-time)",
+            "Legal consultation retainer"
+          ],
+          "success_metric": "Increase in qualified leads from EU enterprise accounts by 30% within 6 months",
+          "milestones": [
+            "Finalize compliance requirements document: Month 1",
+            "Launch MVP of v2.1 for pilot customers: Month 4",
+            "Full rollout and tracking Q3: Month 9"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Integration of Predictive Maintenance Lite Module",
+        "rationale": "Adding a simplified version of the AI predictive maintenance feature will help differentiate our platform from competitors and provide 'sticky' value to existing manufacturing clients without requiring massive R&D shifts.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-value manufacturing partner for pilot integration",
+            "Define scope limiting AI usage to specific, low-risk operational data points"
+          ],
+          "resources_needed": [
+            "Data scientist contract (short term)",
+            "Cloud computing resource allocation"
+          ],
+          "success_metric": "Customer adoption rate of the predictive module from pilot users achieving 15%",
+          "milestones": [
+            "Complete API integration for pilot client: Month 3",
+            "Gather performance metrics and refine model: Month 6",
+            "Internal feasibility report complete: Month 7"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Modular API Marketplace for Third-Party Logistics Integration",
+        "rationale": "Developing a public, standardized API marketplace allows third parties to build specialized logistics tools quickly, opening entirely new revenue streams and accelerating market penetration.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the core architectural standards for all future APIs",
+            "Identify 5 target technology partners (e.g., specialized routing software)"
+          ],
+          "resources_needed": [
+            "Senior Software Architect hire",
+            "Dedicated marketing/sales resource for partner acquisition"
+          ],
+          "success_metric": "Onboarding 3 paying third-party integration partners by end of Year 2",
+          "milestones": [
+            "Launch API documentation portal: Month 4",
+            "Secure first paid partnership agreement: Month 8",
+            "Establish community forum and partner support structure: Month 10"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Schedule quarterly strategic review with the leadership team to re-prioritize feature roadmap based on EU compliance findings.",
+        "owner": "CEO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate scoping phase for the Modular API Marketplace, including technical feasibility assessment and required talent profiles.",
+        "owner": "CTO/VP of Product",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Analyze NPS data to identify top 3 pain points in manufacturing operations that can be addressed through incremental efficiency gains.",
+        "owner": "Head of Customer Success",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent cross-departmental communication regarding feature prioritization.",
+      "Limited budget allocated for long-term R&D and foundational infrastructure upgrades.",
+      "High turnover in specialized engineering talent due to competitive compensation offers.",
+      "Slow adoption of formalized, scalable process documentation."
+    ]
+  }
+}

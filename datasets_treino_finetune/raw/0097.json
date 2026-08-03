@@ -1,0 +1,122 @@
+{
+  "id": "0097",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:31:47.060144+00:00",
+    "duration_ms": 20230,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "SwiftCart Global",
+      "sector": "E-commerce",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "SwiftCart Global is a rapidly growing micro-SaaS e-commerce platform specializing in niche digital goods. The company operates primarily online, focusing on streamlined checkout processes and international fulfillment logistics. They leverage modern cloud infrastructure but are currently scaling their operational capacity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We recently implemented a Shopify upgrade and experimented with AI-driven product recommendations to improve conversion rates in Q3.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is aggressive market share expansion within the European digital goods sector. We aim to achieve 50% YoY revenue growth by establishing international distribution channels.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The core team consists of three highly skilled full-stack developers and one operations manager, prioritizing agility over strict hierarchy.",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 20,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent",
+        "time",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We are currently competing against established giants and need disruptive ideas to capture emerging niche markets quickly."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Cross-Border Hyper-Local Marketplace Integration",
+        "rationale": "The current platform is domestically focused. A radical shift would involve building a decentralized marketplace feature that allows local sellers to instantly tap into international demand, bypassing traditional high-cost logistics partners.",
+        "execution_plan": {
+          "first_actions": [
+            "Partner with one key fulfillment API provider for pilot integration.",
+            "Allocate 50 hours of developer time for MVP architecture design."
+          ],
+          "resources_needed": [
+            "2 Freelance UI/UX consultant (Budget: $3k)",
+            "API subscription fees ($1k)"
+          ],
+          "success_metric": "Achieve 1,000 unique cross-border transactions in Q4.",
+          "milestones": [
+            "Q3: Finalize technical roadmap and select partner.",
+            "Q4: Launch MVP with one pilot seller group."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Powered Predictive Inventory Module",
+        "rationale": "Implementing a sophisticated AI module that predicts demand fluctuations across different international regions will allow us to optimize inventory levels, reducing holding costs and improving customer satisfaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Procure existing machine learning service subscription (e.g., AWS SageMaker).",
+            "Assign the lead developer to a dedicated 6-week feature sprint."
+          ],
+          "resources_needed": [
+            "Software subscription fees ($5k)",
+            "Internal dev time allocation"
+          ],
+          "success_metric": "Reduce average inventory holding cost by 15% within 6 months.",
+          "milestones": [
+            "Month 2: Data pipeline setup and model training phase.",
+            "Month 4: Internal beta testing and feature rollout."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a formal feasibility study for the Cross-Border Marketplace feature.",
+        "owner": "Owner / CTO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate vendor discovery and cost analysis for AI inventory tools.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Draft a revised Q1 growth strategy focusing on international market entry metrics.",
+        "owner": "Owner / Strategy Lead",
+        "timeframe": "End of next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited operational capacity to handle unexpected spikes in demand.",
+      "High dependency on a single key developer for core platform maintenance.",
+      "Slow internal process for testing and deploying new features."
+    ]
+  }
+}

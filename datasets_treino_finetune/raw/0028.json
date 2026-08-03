@@ -1,0 +1,123 @@
+{
+  "id": "0028",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:59:17.344663+00:00",
+    "duration_ms": 40980,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Power Generation Corp",
+      "sector": "Energy & Utilities",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Power Generation Corp is a large utility provider specializing in power generation and distribution across multiple states. The company operates under stringent environmental regulations concerning emissions, resource management, and infrastructure safety standards.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company has implemented several efficiency projects focusing on grid optimization and predictive maintenance for turbines. Recent efforts have included a pilot program for smart meter integration across key distribution centers.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Primary goals are to significantly reduce operational energy costs through process streamlining and enhance system reliability via predictive analytics. The company aims to maintain regulatory compliance while achieving industry-leading efficiency metrics.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The innovation team comprises about 40 dedicated engineers, data scientists, and operational experts, operating in cross-functional units.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company faces intense competition from newer renewable energy sources and needs rapid, scalable solutions to maintain its cost competitiveness."
+    }
+  },
+  "output": {
+    "maturity_score": 8.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Smart Grid Predictive Maintenance System (SG-PMS)",
+        "rationale": "Implementing a centralized machine learning model to predict equipment failure allows for proactive maintenance scheduling rather than reactive repairs. This incremental change directly addresses operational efficiency by minimizing unplanned downtime and reducing emergency repair costs, which is crucial under high regulatory scrutiny.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing sensor data streams in the primary generation plant.",
+            "Select a suitable ML platform vendor."
+          ],
+          "resources_needed": [
+            "Cloud computing subscription for AI processing",
+            "Data science consultant contract (6 months)"
+          ],
+          "success_metric": "Reduction of unplanned downtime by 15% within the first year.",
+          "milestones": [
+            "Pilot implementation in one substation (Month 3)",
+            "Full integration across primary assets (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Autonomous Asset Optimization Platform (AAOP)",
+        "rationale": "Develop an AI platform that autonomously manages energy flow and resource allocation across the grid in real-time, optimizing generation and distribution based on dynamic market pricing. This radical shift could redefine operational efficiency by removing human latency from high-stakes decision-making, though it requires significant investment in new software architecture.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated 'skunkworks' team focusing solely on simulation modeling.",
+            "Secure internal seed funding for proof-of-concept."
+          ],
+          "resources_needed": [
+            "Dedicated software development team (5 FTEs)",
+            "High-performance computing infrastructure budget"
+          ],
+          "success_metric": "Achieving a 10% reduction in overall operational energy cost per MWh.",
+          "milestones": [
+            "Completion of simulation model V1.0 (Month 6)",
+            "Closed beta testing with internal distribution network (Month 18)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize ROI and regulatory risk assessment for the SG-PMS project.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Launch internal workshops to define scope and resource allocation for the AAOP radical initiative.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Formal presentation of efficiency roadmap and budget proposal to the formal committee.",
+        "owner": "C-Suite Leadership Team",
+        "timeframe": "End of Q3"
+      }
+    ],
+    "key_weaknesses": [
+      "High operational complexity leading to slow process cycles",
+      "Significant dependency on legacy infrastructure which limits scalability and rapid modernization",
+      "Talent scarcity in specialized AI/ML engineering roles compared to the need for radical digital transformation",
+      "Siloed decision-making structure hindering cross-departmental efficiency gains"
+    ]
+  }
+}

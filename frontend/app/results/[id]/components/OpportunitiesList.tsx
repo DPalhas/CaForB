@@ -18,7 +18,7 @@ export default function OpportunitiesList({ opportunities }: OpportunitiesListPr
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-gray-800 mb-4">
+      <h2 className="text-lg font-semibold text-white mb-4">
         Innovation Opportunities
       </h2>
       <div className="flex flex-col gap-3">

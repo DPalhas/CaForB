@@ -1,0 +1,123 @@
+{
+  "id": "0040",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:05:15.029240+00:00",
+    "duration_ms": 44135,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Precision Machining Systems",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Precision Machining Systems operates a medium-sized facility specializing in high-tolerance components for the aerospace sector. The company is heavily regulated due to strict quality control standards and safety mandates inherent in their supply chain.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The last three years have focused primarily on incremental improvements, such as optimizing machine throughput using lean manufacturing principles and updating obsolete software interfaces for compliance reporting. No major radical technological leaps have been attempted.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to improve operational efficiency by 15% through process streamlining and reducing waste, ensuring strict adherence to regulatory standards across all production lines.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "The core innovation team consists of five engineers and two operations specialists.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Implement Predictive Maintenance for CNC Machinery",
+        "rationale": "By integrating sensor data into existing maintenance schedules, the company can reduce unplanned downtime and optimize machine utilization, directly improving operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select pilot equipment with embedded IoT sensors.",
+            "Develop a baseline KPI for unplanned downtime reduction."
+          ],
+          "resources_needed": [
+            "$50,000 for sensor hardware and integration software.",
+            "1 dedicated data analyst (part-time)."
+          ],
+          "success_metric": "Reduction in unplanned machine downtime by 10% within 6 months.",
+          "milestones": [
+            "Q3: Pilot program completion and data collection.",
+            "Q4: Full system integration into the maintenance workflow."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "radical",
+        "title": "Automated Quality Assurance via Computer Vision",
+        "rationale": "Implementing a computer vision system could automate critical visual inspection tasks, significantly reducing human error and processing time while meeting high regulatory standards.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on camera placement and AI model training data requirements.",
+            "Identify potential software partnerships."
+          ],
+          "resources_needed": [
+            "Estimated $150,000 for hardware (cameras) and initial AI development licensing.",
+            "Hiring a specialized ML engineer for 3 months."
+          ],
+          "success_metric": "Increase in defect detection accuracy by 25% compared to manual inspection.",
+          "milestones": [
+            "Month 1-2: Data acquisition and model training pipeline setup.",
+            "Month 4: Internal pilot testing on a single production line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to evaluate the feasibility and ROI of Predictive Maintenance.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Begin preliminary R&D scouting for computer vision software vendors.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Update the current internal process documentation to identify all potential bottlenecks causing efficiency loss.",
+        "owner": "Process Manager",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Resistance to change due to conservative risk culture",
+      "Outdated legacy machinery requiring high maintenance costs",
+      "Limited internal expertise in advanced data analytics for efficiency gains",
+      "Slow documentation and knowledge transfer processes"
+    ]
+  }
+}

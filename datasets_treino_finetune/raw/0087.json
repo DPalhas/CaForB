@@ -1,0 +1,156 @@
+{
+  "id": "0087",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:27:33.093597+00:00",
+    "duration_ms": 25239,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Metro Power Distribution",
+      "sector": "Energy & Utilities",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Metro Power Distribution is a medium-sized utility company responsible for managing the electrical grid and distribution network across three major metropolitan areas. The company faces constant scrutiny regarding safety standards, environmental compliance, and rate structures mandated by federal and state regulators.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company has recently implemented a digital meter reading system but struggles with integrating this data into legacy billing software. They also participated in three small pilot programs for renewable energy integration, though scaling remains difficult due to permitting hurdles.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goals are to ensure grid reliability and customer satisfaction while actively diversifying revenue streams away from traditional electricity sales into energy services and resilience consulting. We aim to establish sustainable growth in non-core areas like smart infrastructure solutions.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The innovation team is a small, cross-functional group of 5 experts consisting of engineers, legal counsel, and data scientists. They operate with limited autonomy.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Maintenance for Grid Assets",
+        "rationale": "Implementing machine learning models can significantly reduce operational downtime and maintenance costs in the existing infrastructure, providing immediate efficiency gains without requiring major new market entry.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 10 critical substations for pilot sensor installation",
+            "Develop a proof-of-concept ML model using historical outage data",
+            "Secure internal resources from the IT and Operations departments"
+          ],
+          "resources_needed": [
+            "Data science consultant retainer",
+            "Sensor hardware procurement ($50k)",
+            "Internal engineering hours reallocation"
+          ],
+          "success_metric": "Reduction in unplanned outages by 15% within 6 months",
+          "milestones": [
+            "Q2: Pilot deployment completion",
+            "Q3: Model validation and operational integration plan",
+            "Q4: Full scaling readiness assessment"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1 year"
+      },
+      {
+        "type": "radical",
+        "title": "Community Microgrid as a Service (MaaS)",
+        "rationale": "Leveraging regulatory shifts towards decentralized energy and community resilience, the company could pivot into providing managed microgrids for local businesses. This allows diversification outside of core utility regulation.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on three target municipal partnerships",
+            "Establish a dedicated regulatory task force to navigate new market rules",
+            "Identify potential initial community partners for pilot project"
+          ],
+          "resources_needed": [
+            "Legal consulting fees ($75k)",
+            "Business development team expansion (1 FTE)",
+            "Initial site assessment costs"
+          ],
+          "success_metric": "Securing two signed Master Service Agreements (MSAs) for community projects",
+          "milestones": [
+            "Q2: Regulatory framework deep dive and partnership MOU draft",
+            "Q3: Selection of first microgrid pilot location",
+            "Q4: Operational launch readiness"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "2 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Compliance & Reporting Platform",
+        "rationale": "Developing a centralized digital platform to automate the collection and reporting of regulatory metrics will reduce manual effort, mitigate compliance risks, and free up staff for more strategic tasks.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current manual reporting workflows across all departments",
+            "Select a low-code platform vendor (e.g., internal tool)",
+            "Define key regulatory data points to automate first"
+          ],
+          "resources_needed": [
+            "Platform licensing fee ($30k)",
+            "Internal project management allocation",
+            "Training budget for staff"
+          ],
+          "success_metric": "Decrease compliance reporting error rate by 50%",
+          "milestones": [
+            "Q1: Workflow mapping and requirements gathering completion",
+            "Q2: Platform MVP (Minimum Viable Product) launch",
+            "Q3: Full department rollout and regulatory sign-off"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated steering committee to assess the ROI and regulatory feasibility of the Microgrid MaaS opportunity.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a detailed audit of current operational data infrastructure and identify key integration friction points for incremental AI adoption.",
+        "owner": "Head of IT",
+        "timeframe": "End of next month"
+      },
+      {
+        "action": "Develop a phased roadmap connecting compliance automation efforts with the strategic diversification goals.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Legacy IT infrastructure hindering data utilization",
+      "Slow internal approval process for capital expenditure and new projects",
+      "High reliance on traditional utility revenue streams, limiting risk tolerance",
+      "Cultural resistance to adopting decentralized/innovative operational models"
+    ]
+  }
+}

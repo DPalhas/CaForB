@@ -1,0 +1,121 @@
+{
+  "id": "0026",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T15:58:12.325827+00:00",
+    "duration_ms": 19906,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Workflow Solutions",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Workflow Solutions provides cloud-based project management and automation software tailored for mid-sized B2B service companies. The company focuses on integrating disparate operational tools into a single, efficient platform to reduce client overhead.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "They have recently implemented an automated onboarding sequence for new clients, which reduced setup time by 40%. They are currently exploring AI integration to predict potential bottlenecks in workflow execution.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to maximize operational efficiency across our platform and service delivery channels. We aim to achieve a 25% reduction in internal process latency within the next fiscal year.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The core development team consists of 12 full-time employees across engineering and operations, supported by a small sales leadership team.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Bottleneck Identification",
+        "rationale": "Integrating machine learning models to predict where process delays will occur before they happen allows for proactive system adjustments rather than reactive troubleshooting. This is critical for achieving the strategic goal of significant efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on integrating existing operational data streams (CRM, usage logs) with a lightweight ML model.",
+            "Identify and secure 2 internal Data Science resources or contract an external consultant."
+          ],
+          "resources_needed": [
+            "Data science team allocation",
+            "Cloud computing budget for initial pilot testing"
+          ],
+          "success_metric": "Reduction in average workflow cycle time by 15% within 6 months.",
+          "milestones": [
+            "Q3: Model proof-of-concept successful.",
+            "Q4: Pilot deployment to one key client segment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Micro-Task Automation Library",
+        "rationale": "Develop a standardized library of low-code micro-scripts to automate repetitive, manual administrative tasks within the platform. This focuses on immediate efficiency gains by freeing up valuable engineering time.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional task force (Engineering and Ops) to map 10 high-frequency manual tasks.",
+            "Allocate budget for low-code development tools training."
+          ],
+          "resources_needed": [
+            "Training workshops",
+            "Tool subscription costs for automation platforms"
+          ],
+          "success_metric": "30% reduction in internal operational hours spent on administrative tasks.",
+          "milestones": [
+            "Q2: Library of 10 micro-tasks fully documented and implemented."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish the AI Pilot Task Force and define initial data requirements for bottleneck analysis.",
+        "owner": "COO (Chief Operating Officer)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Launch a dedicated sprint focused on documenting and automating 5 high-frequency micro-tasks.",
+        "owner": "Head of Engineering",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Review the current talent structure to identify gaps in data science/ML expertise necessary for opportunity execution.",
+        "owner": "HR Director",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Process documentation is scattered and outdated, hindering scalability.",
+      "Lack of dedicated data science talent limits the ability to pursue advanced predictive initiatives.",
+      "Engineering team often prioritizes feature development over internal efficiency tooling."
+    ]
+  }
+}

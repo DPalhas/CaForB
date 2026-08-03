@@ -1,0 +1,151 @@
+{
+  "id": "0100",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:33:23.268798+00:00",
+    "duration_ms": 24038,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "AgriTech Solutions Inc.",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "AgriTech Solutions provides cloud-based predictive analytics and resource management software tailored for mid-sized commercial farms. We focus on optimizing crop yield, water usage, and input costs through data integration.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We recently launched a significant upgrade to our core AI prediction engine and initiated several cross-departmental feature sprints focused on improving user retention metrics across key agricultural verticals.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The primary goal is to solidify our dominant position in the regional market by increasing customer lifetime value (CLV) through platform specialization and proactive defense against emerging competitors. We aim to achieve steady, predictable recurring revenue growth.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The team consists of 15 engineers and product managers working in cross-functional pods, maintaining a lean structure focused on execution.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Vertical Deep-Dive Modular Expansion",
+        "rationale": "To defend market share against larger competitors, we should incrementally develop specialized software modules for high-value agricultural niches (e.g., organic farming or vertical farming). This leverages our existing data infrastructure without requiring a complete platform overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 underserved verticals based on current customer churn data.",
+            "Allocate dedicated engineering resource team for MVP development of specialized modules.",
+            "Pilot the module with 5 existing high-value clients."
+          ],
+          "resources_needed": [
+            "1 full-time specialist (domain expert)",
+            "Software licensing for new analytics tools",
+            "Product management time reallocation"
+          ],
+          "success_metric": "Increase in Customer Lifetime Value (CLV) by 20% within 18 months.",
+          "milestones": [
+            "Q3: Completion of Vertical 1 MVP.",
+            "Q4: Successful rollout and stabilization of Module 1."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Medium"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Autonomous Farm Operations (Pilot)",
+        "rationale": "A radical venture into autonomous operational decision-making using reinforcement learning. While risky, this could create a significant moat by offering hyper-personalized, fully automated resource management plans that far exceed current market offerings.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 'Horizon 3' innovation squad with AI/ML specialists.",
+            "Identify one geographically isolated client willing to serve as a controlled testbed.",
+            "Conduct comprehensive risk assessment regarding data security and operational failure."
+          ],
+          "resources_needed": [
+            "Hiring of 2 senior ML engineers",
+            "Cloud computing costs for intensive training models ($50k)",
+            "Dedicated R&D budget allocation (15%)"
+          ],
+          "success_metric": "Achieve a successful, quantified reduction in operational input costs by 30% for the pilot client.",
+          "milestones": [
+            "Q2: Proof of Concept (PoC) validation.",
+            "Q4: Controlled pilot deployment and performance metric review."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Long"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Customer Success Automation",
+        "rationale": "Implement an automated feedback loop that proactively identifies potential churn risks and triggers personalized intervention campaigns (e.g., tailored training content or feature highlights) based on usage patterns, thereby strengthening retention.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate existing usage data with a CRM/Marketing automation tool.",
+            "Define trigger rules for 'at-risk' customers.",
+            "Develop and test 3 personalized outreach sequences."
+          ],
+          "resources_needed": [
+            "Integration licensing costs ($10k)",
+            "Time from Customer Success team (2 FTEs focused on automation setup)"
+          ],
+          "success_metric": "Reduce customer churn rate by 5% year-over-year.",
+          "milestones": [
+            "Q3: Automated risk scoring implementation.",
+            "Q4: Full rollout and performance monitoring."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed feasibility study for the Vertical Deep-Dive expansion.",
+        "owner": "Head of Product",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Form an exploratory committee to begin scoping the Autonomous Operations PoC (Horizon 3).",
+        "owner": "CTO / Head of R&D",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Audit current Customer Success automation setup and identify immediate low-hanging fruit for retention gains.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on a single core software platform (risk concentration)",
+      "Siloed R&D and Sales teams leading to slow feature adoption",
+      "Limited internal talent pool specializing in advanced AI/ML deployment",
+      "Process bottlenecks in moving from idea conception to market launch"
+    ]
+  }
+}

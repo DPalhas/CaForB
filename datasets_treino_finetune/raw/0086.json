@@ -1,0 +1,145 @@
+{
+  "id": "0086",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:27:07.820704+00:00",
+    "duration_ms": 23117,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "FinTech Solutions Inc.",
+      "sector": "Fintech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "FinTech Solutions Inc. is a medium-sized firm specializing in providing cloud-based accounting and payment processing software for small to medium enterprises (SMEs). The company focuses on streamlining financial operations through automation, aiming to capture market share from legacy providers.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The team has successfully launched several iterative feature updates and developed a new API integration layer within the past year. However, large-scale platform overhauls remain largely conceptual due to resource constraints.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is aggressive market penetration and user acquisition by expanding our product suite. We aim to become the leading financial operating system for SME businesses in the next three years.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "The core team consists of 8 developers, product managers, and a small operations group. The culture is collaborative but focused on execution rather than radical experimentation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Financial Advisory Engine",
+        "rationale": "Integrating advanced generative AI to move beyond basic reporting and offer prescriptive, predictive financial modeling tailored specifically to each SME's unique cash flow patterns. This would create a strong competitive moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 1 dedicated R&D sprint for core ML model feasibility.",
+            "Pilot the AI engine with 20 high-value clients."
+          ],
+          "resources_needed": [
+            "Senior Data Scientist salary",
+            "Cloud compute budget increase"
+          ],
+          "success_metric": "Increase in average customer retention by 15% within 9 months.",
+          "milestones": [
+            "Q3: Successful proof-of-concept deployment.",
+            "Q4: Beta launch with early adopters."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Compliance Module (Modular Update)",
+        "rationale": "Develop a modular, automated compliance update system that allows for rapid adaptation to changing financial regulations without needing full-scale platform rewrites.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing API structure for modularity requirements.",
+            "Assign 1 dedicated engineering lead."
+          ],
+          "resources_needed": [
+            "Internal tool training budget",
+            "Engineering time reallocation (50% effort)"
+          ],
+          "success_metric": "Reduction in manual compliance audit time by 30%.",
+          "milestones": [
+            "Next 6 weeks: Compliance module MVP.",
+            "Next quarter: Integration into core product."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "incremental",
+        "title": "Strategic Expansion into Cross-Border Payment Infrastructure (API Focus)",
+        "rationale": "Focus on building robust, standardized APIs to facilitate seamless payments between our existing SME clients and international partners, opening up significant untapped market segments.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 key international banking partners for API sync.",
+            "Conduct feasibility study on cross-border security protocols."
+          ],
+          "resources_needed": [
+            "Legal consultation fee",
+            "Marketing budget for partner outreach"
+          ],
+          "success_metric": "Onboard 5 new international payment partners by end of fiscal year.",
+          "milestones": [
+            "Month 1-2: Partner selection and contract negotiation.",
+            "Month 3: API integration testing completion."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Launch feasibility study for the AI-Driven Advisory Engine.",
+        "owner": "Chief Product Officer (CPO)",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate internal audit of existing platform modularity to support compliance updates.",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Identify and qualify three potential cross-border API integration partners.",
+        "owner": "Head of Business Development",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Scaling the current technical infrastructure to support exponential user growth.",
+      "High reliance on a few key senior engineers leading to single points of failure in innovation.",
+      "Slow internal process for moving from conceptual idea to MVP development due to operational bottlenecks."
+    ]
+  }
+}

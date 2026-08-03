@@ -1,0 +1,122 @@
+{
+  "id": "0067",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T16:18:55.782668+00:00",
+    "duration_ms": 21590,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "GreenHarvest Logistics",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "GreenHarvest Logistics is a mid-sized provider specializing in cold-chain and last-mile delivery solutions for perishable agricultural goods. The company operates primarily within the domestic supply chain, serving regional farms with specialized temperature-controlled transport and warehousing services.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The company recently implemented an automated route optimization software pilot to reduce fuel costs by 10% in Q3. They have also begun exploring partnerships with local food processing firms for expanded storage capacity.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "To expand our service footprint into adjacent markets like specialized chemical transport and perishable pharmaceutical delivery. We aim to secure a foothold in two new geographic regions within the next three years.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The core team consists of 15 dedicated professionals, including logistics experts and software developers. They are highly specialized in supply chain efficiency but lack cross-functional innovation talent.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The industry is currently experiencing a surge in demand for sustainable and specialized agricultural logistics solutions."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Specialized Chemical Transport Module",
+        "rationale": "Leveraging existing cold-chain expertise to enter the adjacent chemical logistics market offers a lower-risk diversification path by utilizing current infrastructure and regulatory knowledge. This builds on established trust with key regional agricultural clients.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study for chemical handling compliance.",
+            "Identify three potential anchor partners in the chemical distribution sector."
+          ],
+          "resources_needed": [
+            "Consultant fees (budget allocation: $5k)",
+            "Internal training session on HAZMAT logistics."
+          ],
+          "success_metric": "Secure a signed MOU with one specialty chemical distributor by end of Q4.",
+          "milestones": [
+            "Feasibility study completion",
+            "Pilot service launch in new market segment"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Route Optimization AI Upgrade for Cross-Docking",
+        "rationale": "Upgrading the current software to incorporate machine learning can significantly increase operational efficiency (reducing time/cost) and create a new revenue stream through offering 'smart' optimization services to other, non-competitor logistics firms.",
+        "execution_plan": {
+          "first_actions": [
+            "Select an ML platform vendor for integration.",
+            "Define KPIs for predictive maintenance and route efficiency."
+          ],
+          "resources_needed": [
+            "Software licensing fees ($15k)",
+            "Data scientist contract (phased commitment)."
+          ],
+          "success_metric": "Achieve a 15% reduction in fuel costs through optimized routes within the first quarter.",
+          "milestones": [
+            "Vendor selection and integration planning",
+            "System go-live and KPI verification"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form an internal cross-functional task force to evaluate the feasibility and regulatory requirements of diversifying into chemical transport services.",
+        "owner": "CEO/COO",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Initiate a vendor RFP for an ML platform capable of advanced predictive route optimization.",
+        "owner": "CTO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct a comprehensive internal audit of existing talent skills to identify gaps necessary for new service diversification.",
+        "owner": "HR Director",
+        "timeframe": "Within 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited cross-functional innovation talent pool, relying heavily on specialized domain experts rather than generalist innovators.",
+      "High process complexity in regulatory compliance, which slows down the pace of diversification initiatives.",
+      "Outdated ERP system limiting real-time data integration required for advanced AI optimization."
+    ]
+  }
+}
