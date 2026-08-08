@@ -1,0 +1,124 @@
+{
+  "id": "0411",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:03:03.364848+00:00",
+    "duration_ms": 22080,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Prime Systems",
+      "sector": "Information Technology",
+      "size": "Small",
+      "companyName": "Prime Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Data engineering and business intelligence consultancy designing data warehouses, ETL pipelines, and Power BI dashboards for finance and retail clients. The company specializes in building scalable cloud infrastructure solutions using modern stack technologies like Snowflake and Kafka. As a growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through structured Quarterly Strategy Reviews, which allocate dedicated 'blue sky' time. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats through highly customized, proprietary data models and specialized vertical industry integrations.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 22,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Current staff capacity is strained by the need to simultaneously maintain legacy client deliverables and explore new tech; internal cross-functional collaboration often lags due to siloed project structures.",
+      "companyName": "Prime Systems",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Implementation of proprietary AI Data Discovery Platform (AI-DD)",
+        "rationale": "Leveraging the 'bold' risk appetite, investing in an internal tool for natural language querying of client datasets could create a significant defensible moat against competitors. This moves beyond basic automation into creating a unique service offering.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and secure seed funding/internal budget allocation for AI exploration team.",
+            "Launch a dedicated 6-month PoC focused solely on NLP query capability for top three clients."
+          ],
+          "resources_needed": [
+            "Junior ML Engineer salary (12 months)",
+            "Cloud compute credits for specialized AI models ($50k est.)",
+            "Dedicated budget line item for R&D exploration (15% of 22%)"
+          ],
+          "success_metric": "Achieve a 40% reduction in time-to-insight for client data queries within 9 months.",
+          "milestones": [
+            "End of Q3: Successful PoC completion and prototype validation.",
+            "End of Q1 next year: Pilot deployment with one key anchor client."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Client Onboarding Workflow (CI/CD for Consulting)",
+        "rationale": "To address the 'process' barrier, automating repetitive data pipeline setup and dashboard provisioning will drastically improve operational efficiency and reduce service delivery costs. This is a lower-risk way to build internal capacity.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current manual onboarding steps for ETL pipelines.",
+            "Select and integrate a low-code automation tool (e.g., custom orchestration layer) into existing platform."
+          ],
+          "resources_needed": [
+            "Internal DevOps time reallocation (50% effort)",
+            "Licensing costs for the chosen automation tool ($10k est.)",
+            "Training for 3 core engineers."
+          ],
+          "success_metric": "Reduce average client onboarding time by 40%.",
+          "milestones": [
+            "End of next quarter: Deployment of MVP workflow.",
+            "End of Q2: Full integration and validation with top two clients."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal AI Strategy Task Force and secure initial seed funding for the PoC.",
+        "owner": "Chief Technology Officer (CTO)",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct process mapping workshops with Engineering and Client Success teams to identify immediate 'process' bottlenecks.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Finalize vendor selection for low-code automation tool based on PoC findings.",
+        "owner": "Lead Data Engineer",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Operational scalability bottleneck due to reliance on owner-alone decision-making and ad-hoc system integrations.",
+      "Tight budget (22%) restricts dedicated innovation staffing, forcing core engineers into reactive production work.",
+      "Lack of standardized data governance framework needed for formal scaling and regulatory compliance in the medium-risk environment."
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "0339",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:30:24.443409+00:00",
+    "duration_ms": 28636,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Prime Innovations.com",
+      "sector": "Manufacturing",
+      "size": "Micro",
+      "companyName": "Prime Innovations.com"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Prime Innovations is a micro-scale specialty chemical manufacturer focusing on high-performance industrial adhesives and sealants, primarily serving the demanding automotive repair aftermarket. The company operates with tight margins but maintains strict quality control standards required for compliance within this sector.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The company is currently facing supply chain volatility due to raw material sourcing, which requires more resilient and diversified manufacturing processes.",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "companyName": "Prime Innovations.com"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Digital Traceability System Implementation",
+        "rationale": "Implementing the proposed batch recipe management and raw material traceability system will immediately reduce operational errors, improve product consistency, and provide critical data for regulatory compliance. This is a low-cost initiative that directly supports core manufacturing efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and pilot an off-the-shelf IoT/ERP module for batch tracking.",
+            "Allocate 5% of the budget to system integration consulting hours."
+          ],
+          "resources_needed": [
+            "Internal development team hours (10)",
+            "Off-the-shelf software subscription ($2,000)"
+          ],
+          "success_metric": "98% reduction in batch deviation errors within 6 months",
+          "milestones": [
+            "System selection and proof of concept complete: Month 3",
+            "Full integration into production line pilot: Month 6"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Adjacent Market Partnership (Growth Focus)",
+        "rationale": "Given the low competitive pressure, a bold move is to partner with a larger distributor or OEM in an adjacent market segment. This allows Prime Innovations to leverage its specialized chemical formulation expertise without needing immediate capital investment in new infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 potential non-competing industrial distributors.",
+            "Develop a standardized, scalable partnership proposal emphasizing unique material properties."
+          ],
+          "resources_needed": [
+            "Executive time for negotiation (10 hours)",
+            "Marketing collateral development budget ($5,000)"
+          ],
+          "success_metric": "Secure one strategic distribution agreement leading to 15% new revenue stream",
+          "milestones": [
+            "Finalize partnership terms: Month 4",
+            "Pilot supply run with partner: Month 9"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Automation for Lab Synthesis",
+        "rationale": "Investing in small, targeted automation (e.g., semi-automated mixing or temperature control) can significantly improve yield and reduce material waste, directly impacting the constrained budget by optimizing existing inputs.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed process mapping of the lowest yielding product line.",
+            "Identify one high-impact automation tool vendor via pilot program."
+          ],
+          "resources_needed": [
+            "Pilot machine/tool rental ($10,000)",
+            "Process engineering consultation (5 hours)"
+          ],
+          "success_metric": "5% increase in material yield within 9 months",
+          "milestones": [
+            "Vendor selection and purchase: Month 2",
+            "Automation pilot run complete: Month 7"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated cross-functional 'Growth Task Force' to formalize and document the vertical vs. horizontal expansion strategy.",
+        "owner": "CEO/Owner Alone",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate deep skill training for one generalist developer in advanced chemical kinetics modeling to address the 'talent' barrier.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Execute pilot program for Digital Traceability System implementation as a core operational efficiency project.",
+        "owner": "Engineering Team",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal, structured innovation pipeline leading to opportunistic rather than planned improvement.",
+      "High reliance on 'owner_alone' decision-making, risking misalignment with technical or market realities.",
+      "Fragile talent pool characterized by generalists who lack specialized deep expertise in both chemistry and advanced digital systems.",
+      "Limited capital runway (13% budget allocation) which restricts the ability to pursue large, high-risk radical projects."
+    ]
+  }
+}

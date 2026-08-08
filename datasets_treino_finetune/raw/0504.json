@@ -1,0 +1,149 @@
+{
+  "id": "0504",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:35:07.337864+00:00",
+    "duration_ms": 25050,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.431717+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Capital",
+      "sector": "Transportation & Logistics",
+      "size": "Large",
+      "companyName": "Nova Capital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 17,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are planning an IPO within 24 months and need to demonstrate a track record of innovation-driven growth to public market investors. The CFO has asked for a 3-year innovation investment plan with clear KPIs that can be included in our equity story and analyst presentations. Bonus points for initiatives that improve our ESG metrics, as this is a key focus area for the listing venue.",
+      "companyName": "Nova Capital",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation in Customs Declarations",
+        "rationale": "Implementing Robotic Process Automation (RPA) for document classification and data entry will immediately tackle manual inefficiencies related to the high volume of customs declarations. This is a low-risk, quick win that directly addresses process optimization goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot RPA implementation on top 3 most time-consuming declaration types",
+            "Identify and automate data extraction from key regulatory documents"
+          ],
+          "resources_needed": [
+            "Internal IT integration specialist (part-time)",
+            "RPA software licensing subscription"
+          ],
+          "success_metric": "Reduction in manual processing time by 30% within Q3",
+          "milestones": [
+            "Q1: Process mapping and tool selection complete",
+            "Q2: Pilot deployment successful, demonstrating ROI",
+            "Q3: Full rollout across all trade corridors"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Demand & Capacity Matching Engine",
+        "rationale": "Develop a proprietary machine learning model that analyzes global trade trends, geopolitical events, and vessel/truck availability to predict bottlenecks 6 weeks in advance. This radical approach moves Nova Capital from reactive management to proactive supply chain optimization, directly addressing margin compression.",
+        "execution_plan": {
+          "first_actions": [
+            "Assemble a cross-functional team (data scientists + logistics veterans)",
+            "Secure necessary historical trade and carrier data sets",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data science headcount (1 FTE),",
+            "Cloud computing costs for ML model training"
+          ],
+          "success_metric": "Increase in successful delivery predictability by 20% within 18 months",
+          "milestones": [
+            "Year 1: Model beta testing and validation of predictive accuracy",
+            "Year 2: Integration into core operational planning system",
+            "Year 3: Commercial launch and scaling across all major corridors"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Enhanced Regulatory Change Monitoring Dashboard",
+        "rationale": "Implement an automated system that aggregates regulatory updates from 15 trade corridors and flags specific compliance risks instantly. This improves risk management, which is critical given the high regulatory environment, allowing for faster adaptation.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a dedicated SaaS platform for regulatory intelligence",
+            "Define data ingestion pipelines from key government sources"
+          ],
+          "resources_needed": [
+            "SaaS subscription fees ($50k/year estimate)",
+            "Compliance officer time for setup"
+          ],
+          "success_metric": "Reduction in compliance-related fines by 15% within the first year",
+          "milestones": [
+            "Q1: Dashboard requirements finalized and platform selected",
+            "Q2: Integration with core operational data feeds complete",
+            "Q3: Full operational readiness and mandatory training for staff"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated Steering Committee to prioritize and fund the AI-driven Predictive Matching Engine pilot.",
+        "owner": "CFO / Head of Innovation",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate formal process documentation for the RPA automation initiative to improve organizational velocity.",
+        "owner": "COO",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process prevents scaling successful pilot projects quickly due to lack of standardized governance.",
+      "Low digital maturity (Level 3) means current technology infrastructure is not scalable or easily integrated with radical AI initiatives.",
+      "Over-reliance on manual processes and high regulatory complexity creates critical bottlenecks in achieving the core efficiency goal.",
+      "Lack of formalized customer feedback loops makes it difficult to validate self-service investments, risking wasted capital."
+    ]
+  }
+}

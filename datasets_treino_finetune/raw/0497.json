@@ -1,0 +1,152 @@
+{
+  "id": "0497",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:31:30.895325+00:00",
+    "duration_ms": 27151,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.429697+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Information Technology",
+      "size": "Micro",
+      "companyName": "Crest"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Crest is a specialized consultancy providing data engineering and business intelligence solutions, focusing heavily on ensuring data integrity for highly regulated finance and retail clients. The firm specializes in building robust ETL pipelines and Power BI dashboards that meet stringent industry compliance standards (like GDPR or SOX). With a lean team of 15 professionals, Crest operates in the rapidly evolving IT space while maintaining strict operational discipline.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Crest",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Regulatory Compliance Automation in ETL Pipelines",
+        "rationale": "Given the high regulatory environment, automating compliance checks within existing ETL pipelines offers a low-risk path to reducing audit failures and operational risk. This incremental change directly supports market defense by enhancing our reliability narrative.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 high-risk data points for SOX/GDPR compliance.",
+            "Implement automated validation scripts for these points using existing tools."
+          ],
+          "resources_needed": [
+            "Consultant time (approx. 20% of team capacity)",
+            "Licensing for advanced governance software"
+          ],
+          "success_metric": "Reduction in audit findings related to data lineage errors by 50% within Q3.",
+          "milestones": [
+            "Month 1: Compliance risk mapping complete.",
+            "Month 3: Automated validation tool integrated into pilot ETL process."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Augmented Data Quality Reporting",
+        "rationale": "To leverage the nascent AI trend without high R&D costs, we can incrementally implement Natural Language Query (NLQ) capabilities for internal data analysts. This boosts talent efficiency and improves customer delivery speed in a targeted way.",
+        "execution_plan": {
+          "first_actions": [
+            "Evaluate low-code NLQ tools compatible with existing Power BI infrastructure.",
+            "Pilot the tool on one core client dataset.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Subscription costs for a pilot AI platform",
+            "Training hours for 2 key developers"
+          ],
+          "success_metric": "Average time to generate complex ad-hoc reports reduced by 30%.",
+          "milestones": [
+            "Month 1: Tool selection and POC completion.",
+            "Month 5: Pilot deployment to a paid client."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Modular, API-First Client Experience Layer (Bold)",
+        "rationale": "To genuinely compete on 'modern customer experience,' Crest must decouple the service delivery layer from legacy proprietary systems using a robust API framework. This bold shift allows for faster onboarding of new client data sources and reduces maintenance overhead as clients demand more flexible integrations.",
+        "execution_plan": {
+          "first_actions": [
+            "Select an enterprise-grade API management platform (e.g., Apigee/Kong).",
+            "Define the core RESTful endpoints required for standard client data ingestion.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Contracted developer hours for system architecture overhaul",
+            "Increased budget allocation due to architectural complexity."
+          ],
+          "success_metric": "Reduction in time-to-onboard new client integrations by 50%.",
+          "milestones": [
+            "Month 1: Architecture finalized and MVP defined.",
+            "Month 4: API layer fully operational for one major retail client."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months (Strategic Investment)"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed regulatory gap analysis and prioritize automation targets for ETL pipelines.",
+        "owner": "Head of Data Engineering",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a proof-of-concept roadmap for integrating a low-code AI tool into internal reporting workflows.",
+        "owner": "Lead Developer",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Draft the Series A pitch focusing on defensible compliance advantages and incremental efficiency gains to VCs.",
+        "owner": "Founder/CEO",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme lean operational budget (3% allocation) limiting investment in R&D or large-scale talent acquisition.",
+      "Lack of dedicated innovation leadership resulting in reactive, opportunistic rather than planned development cycles.",
+      "High reliance on owner-alone decision making exacerbating the bottleneck caused by process and time barriers.",
+      "Micro size makes Crest highly vulnerable to competitors offering bundled 'turnkey' solutions."
+    ]
+  }
+}

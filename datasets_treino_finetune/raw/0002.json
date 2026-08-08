@@ -3,147 +3,120 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Pharmaceuticals & Biotech",
-    "size": "Medium",
+    "sector": "Manufacturing",
+    "size": "Large",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
     "competitive_pressure": "high",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:48:42.060945+00:00",
-    "duration_ms": 44647,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:25:15.532684+00:00",
+    "duration_ms": 27517,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.252896+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex BioSciences",
-      "sector": "Pharmaceuticals & Biotech",
-      "size": "Medium"
+      "name": "Titan.com",
+      "sector": "Manufacturing",
+      "size": "Large",
+      "companyName": "Titan.com"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Apex BioSciences is a mid-sized biotech firm focused on developing next-generation oncology drugs. The company operates in a highly regulated environment requiring extensive clinical trial documentation and strict adherence to global safety standards.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company has implemented several incremental process improvements focusing on streamlining R&D paperwork. They have also piloted a small digital platform for internal data sharing, though these initiatives are often slow due to regulatory hurdles.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is enhancing operational efficiency across the supply chain and reducing time-to-market for new drug candidates. We aim to optimize resource allocation without compromising stringent quality standards.",
+      "companyDescription": "Titan.com is a large industrial bakery specializing in the production of frozen dough and par-baked products for supermarkets and food service distributors. Operating across four high-volume production lines, their core challenges revolve around optimizing supply chain logistics for perishable ingredients and extending product shelf-life through advanced modified atmosphere packaging techniques. The organization possesses significant capital and deep operational expertise but currently relies on stable, risk-mitigating processes rather than rapid process innovation or market disruption.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The company has not undertaken any formal, systematic innovation programs or transformation initiatives in recent years. While leadership recognizes the imperative to modernize production methods, there is a noted absence of defined ownership, dedicated funding streams, or structured roadmaps for new product development or operational efficiency projects. Currently, all capital expenditure is focused strictly on maintaining current output levels and managing existing compliance requirements.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "The primary objective for the next two years is a stringent 15% reduction in operating expenses achieved through process optimization and automation. This focus will concentrate on identifying high-ROI opportunities within manual workflows such as order processing, automated inventory management, and customer service response systems. Success is measured by measurable gains in throughput efficiency rather than market expansion or headcount growth.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 8 specialized scientists and 3 operational managers, working closely under a small leadership team.",
+      "teamSize": "The company maintains a dedicated Corporate Innovation Division comprised of over 50 staff, including research scientists and process engineers. This team manages a portfolio of approximately 15 active projects across various maturity stages, from foundational R&D collaborations to near-commercialization prototypes, governed by formal stage-gate funding decisions approved by the executive committee.",
       "digitalMaturity": "2",
       "revenueRange": "10m_to_50m",
       "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "process",
-        "talent",
-        "time"
+        "strategy"
       ],
       "competitivePressure": "high",
-      "additionalContext": ""
+      "additionalContext": "The industry is facing an imminent mandatory carbon emissions reporting requirement and rigorous supply chain due diligence starting next fiscal year, demanding immediate investment in data collection systems. Innovation efforts must therefore be structured to integrate necessary compliance infrastructure as a foundational prerequisite for any operational scaling initiatives.",
+      "companyName": "Titan.com"
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "AI-Driven Clinical Trial Optimization",
-        "rationale": "Implementing AI/ML tools to predict trial bottlenecks and optimize patient recruitment strategy could radically reduce the time and cost associated with late-stage trials, directly supporting efficiency goals.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct a feasibility study on using predictive modeling for patient cohort selection.",
-            "Identify and secure initial data partnerships with academic institutions."
-          ],
-          "resources_needed": [
-            "Data science consultant retainer",
-            "High-performance computing access"
-          ],
-          "success_metric": "Reduction of Phase II trial cycle time by 15% within 3 years.",
-          "milestones": [
-            "Q1: Feasibility Study Complete",
-            "Q3: Pilot AI Model Deployment (Internal)",
-            "Q4: Full Integration into Trial Protocol Management System"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "long"
-      },
-      {
         "type": "incremental",
-        "title": "Automated Regulatory Documentation Workflow",
-        "rationale": "Streamlining the manual process of generating and submitting regulatory documentation using RPA to minimize human error and significantly reduce administrative overhead, improving operational efficiency.",
+        "title": "ERP and Line Automation Integration",
+        "rationale": "Implementing integrated Enterprise Resource Planning (ERP) systems across all four production lines will provide real-time data on throughput and material usage, directly supporting the 15% efficiency goal. This incremental step leverages existing digital maturity to identify immediate waste in inventory management and scheduling.",
         "execution_plan": {
           "first_actions": [
-            "Map current end-to-end documentation flow.",
-            "Select and integrate an RPA tool for common reporting tasks."
+            "Conduct a gap analysis of current operational software vs. ideal ERP integration features.",
+            "Select and pilot an ERP module specifically for order processing and material tracking.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "RPA software license",
-            "Internal IT resource reallocation"
+            "Software licensing/integration consultant fees ($50k)",
+            "Internal IT project management time (1 FTE)"
           ],
-          "success_metric": "Reduction in regulatory submission error rate from 5% to <1% within 6 months.",
+          "success_metric": "Reduction in manual data entry hours by 30% within Q3.",
           "milestones": [
-            "Month 2: Workflow Mapping Complete",
-            "Month 4: Pilot RPA Implementation for SOPs",
-            "Month 8: Full Departmental Rollout"
+            "Q2: ERP Requirements Finalization and Vendor Selection",
+            "Q4: Pilot Rollout on Line 1 Production Data Collection"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "Direct-to-Patient Data Sharing Platform (Decentralized)",
-        "rationale": "Exploring a decentralized data ledger approach to securely share anonymized patient trial outcomes with approved external partners, potentially bypassing traditional slow approval processes and increasing strategic collaboration.",
+        "title": "Green Logistics and Packaging Redesign (Bold)",
+        "rationale": "To aggressively address the regulatory carbon reporting pressure, Titan.com should initiate a radical redesign of its packaging materials and distribution model. This would involve switching to fully bio-degradable or highly recycled materials that require less energy for modified atmosphere storage and optimizing distribution routes based on real-time consumption data.",
         "execution_plan": {
           "first_actions": [
-            "Engage legal counsel on cross-jurisdictional data sharing agreements.",
-            "Establish a sandbox environment for blockchain/decentralized ledger testing."
+            "Partner with material science startups to test 3 viable sustainable packaging alternatives.",
+            "Run a simulation modeling the impact of localized, low-emission delivery hubs.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Legal consultation fees",
-            "Cybersecurity specialist contract"
+            "R&D partnership budget ($150k)",
+            "External consulting for supply chain mapping ($75k)"
           ],
-          "success_metric": "Establish secure data exchange protocol with 2 external partners within 18 months.",
+          "success_metric": "Achieve a 20% reduction in CO2 per unit shipped within 18 months.",
           "milestones": [
-            "Q1: Legal Framework Established",
-            "Q3: Sandbox Operational and Tested",
-            "Q4: Initial Partner Data Exchange Trial Launch"
+            "Q3: Material Vetting and Pilot Production Run",
+            "Q6: Full Distribution Network Strategy Implementation"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "long"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to assess the technical feasibility and ROI of the AI Clinical Trial Optimization opportunity.",
-        "owner": "VP of R&D Operations",
+        "action": "Establish a dedicated, cross-functional 'Process Efficiency Task Force' with clear KPIs for automation identification.",
+        "owner": "COO/VP of Operations",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Conduct a deep dive audit of current documentation processes to identify high-friction points suitable for incremental RPA implementation.",
-        "owner": "Director of Process Improvement",
-        "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Begin preliminary legal and regulatory consultation on the requirements for a decentralized data sharing platform.",
-        "owner": "General Counsel",
-        "timeframe": "Within 3 weeks"
+        "action": "Initiate the feasibility study and budget approval process for the Green Logistics project, focusing on regulatory alignment.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "Siloed data management across research departments.",
-      "High staff turnover due to intense competition for specialized scientific talent.",
-      "Slow internal approval cycles bottlenecking time-to-market.",
-      "Limited investment in advanced, cross-departmental digital infrastructure."
+      "Lack of systematic innovation maturity (process is 'none', requiring foundational change)",
+      "Sole focus on short-term stability rather than proactive operational velocity",
+      "Absence of formalized, cross-functional ownership for efficiency projects",
+      "High regulatory compliance risk due to lack of structured data collection infrastructure"
     ]
   }
 }

@@ -3,144 +3,149 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "bold",
     "strategic_priority": "efficiency",
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:58:36.323724+00:00",
-    "duration_ms": 23944,
+    "generated_at": "2026-08-03T17:39:08.657735+00:00",
+    "duration_ms": 30198,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Precision Manufacturing",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Atlas",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro",
+      "companyName": "Atlas"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Apex Precision Manufacturing is a medium-sized firm specializing in custom metal fabrication for the aerospace and automotive sectors. The company operates with a lean workforce and prides itself on high-quality, bespoke components.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company recently implemented workflow optimization software to reduce material waste by 15% and invested modestly in basic CNC machine upgrades to improve throughput.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to achieve a sustained 10% reduction in operational overhead through process streamlining. We aim to increase unit output per employee by automating repetitive tasks within the next three years.",
+      "companyDescription": "Atlas is a regional supermarket chain operating 28 stores across central and northern Portugal. The company relies heavily on its private-label program, which accounts for 35% of revenue, making supply chain efficiency critical to profitability. They are currently rolling out self-checkout kiosks and evaluating AI-driven demand forecasting to reduce fresh produce waste by 25%. This tight-knit operation functions with high agility but lacks formal technological infrastructure.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have never run a formal innovation initiative. Problems are solved ad-hoc as they arise, usually by the most directly affected team member when facing an immediate operational bottleneck. There is no dedicated budget, no structured ideation process, and no track record of experimenting with new technologies or business models beyond basic operational necessity.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount; we want to maximize output per existing team member.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The internal innovation team consists of four dedicated engineers and a project manager, working in close collaboration to drive change.",
-      "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 18,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 22,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
+        "culture",
         "process",
-        "talent",
-        "time"
+        "talent"
       ],
       "competitivePressure": "medium",
-      "additionalContext": ""
+      "additionalContext": "The company faces increasing competition from larger national chains and must constantly optimize local sourcing to remain competitive. Navigating Portuguese import/logistics regulations requires careful, albeit flexible, adaptation.",
+      "companyName": "Atlas",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 2.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Predictive Maintenance Integration for CNC Assets",
-        "rationale": "Integrating AI-driven sensor data from existing machinery can move maintenance from reactive to predictive, significantly reducing unexpected downtime and associated costs. This directly addresses the strategic priority of efficiency.",
+        "title": "Workflow Automation for Back-Office Invoicing",
+        "rationale": "Implementing low-code tools to automate repetitive tasks in invoicing and order processing can immediately reduce manual labor costs and processing time. This is a high-impact, immediate efficiency gain.",
         "execution_plan": {
           "first_actions": [
-            "Pilot sensor installation on the three most critical CNC machines.",
-            "Select a low-cost IoT platform for data ingestion."
+            "Select a suitable low-cost automation platform (e.g., Zapier integration)",
+            "Map the top three most time-consuming manual invoice generation steps",
+            "Pilot automation on one specific department workflow"
           ],
           "resources_needed": [
-            "Hardware procurement ($15,000)",
-            "Cloud subscription fees ($2,000)"
+            "Subscription fees for automation software (approx. €300/month)",
+            "One week dedicated time from founder or contractor"
           ],
-          "success_metric": "Reduction in unplanned downtime by 20% within six months.",
+          "success_metric": "Reduce invoice processing time by 40% within Q2",
           "milestones": [
-            "Q1: Sensor deployment and data baseline established.",
-            "Q3: Predictive alerts integrated into maintenance schedule."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "6 months"
-      },
-      {
-        "type": "radical",
-        "title": "Robotic Assembly Cell Implementation (Cobots)",
-        "rationale": "Implementing collaborative robots for high-precision, repetitive assembly tasks offers a radical leap in efficiency and quality control. This requires a bold approach to talent acquisition but promises massive operational cost savings.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct a feasibility study on robotic integration costs vs. labor savings.",
-            "Establish partnerships with robotics vendors for pilot programs."
-          ],
-          "resources_needed": [
-            "Robotic arm purchase and installation ($40,000)",
-            "Specialized training contracts ($10,000)"
-          ],
-          "success_metric": "Achieve 30% reduction in direct labor hours for designated assembly lines.",
-          "milestones": [
-            "Q2: Vendor selection and lab setup completed.",
-            "Q4: Pilot cell operational; ROI analysis finalized."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "18 months"
-      },
-      {
-        "type": "incremental",
-        "title": "Cross-Functional Lean Workflow Automation",
-        "rationale": "Using low-code automation tools to connect inventory, scheduling, and quality control data across departments will streamline internal processes. This is a low-cost, high-impact efficiency gain.",
-        "execution_plan": {
-          "first_actions": [
-            "Map the current end-to-end production process.",
-            "Identify three manual handoff points suitable for automation."
-          ],
-          "resources_needed": [
-            "Automation software licensing ($5,000)",
-            "Internal staff training ($3,000)"
-          ],
-          "success_metric": "Reduce average order processing time by 15%.",
-          "milestones": [
-            "Q2: Process mapping and tool selection finalized.",
-            "Q4: Automation tool live across two key departments."
+            "Platform selection and setup complete (Week 1)",
+            "Pilot live and validated (Week 3)"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "9 months"
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Localized AI Demand Forecasting for Waste Reduction",
+        "rationale": "Leveraging machine learning to analyze hyperlocal weather, local events, and seasonal trends can predict fresh produce demand with extreme precision. This radical shift addresses the core strategic priority of reducing operating expenses through massive waste reduction.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 5 key stores for pilot data collection",
+            "Acquire or develop a light ML model focusing solely on produce and perishable goods demand",
+            "Integrate forecasting output into the existing ordering system for one store segment"
+          ],
+          "resources_needed": [
+            "Data science consultant/freelancer fee (€5,000)",
+            "API access costs for external weather/local data providers"
+          ],
+          "success_metric": "Achieve a minimum 20% reduction in fresh produce spoilage",
+          "milestones": [
+            "Data pipeline established (Month 1)",
+            "Pilot AI model deployed and tested across three stores (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Self-Service Customer Support Bot Implementation",
+        "rationale": "Deploying an AI chatbot on the website to handle Level 1 customer queries (order tracking, basic FAQs) can significantly reduce reliance on expensive human support staff and improve operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Define top 20 most common customer service queries",
+            "Select a no-code chatbot solution compatible with existing website platform",
+            "Train the bot using historical customer interaction data"
+          ],
+          "resources_needed": [
+            "Monthly SaaS subscription (€150)",
+            "Internal staff time for content training (40 hours total)"
+          ],
+          "success_metric": "Deflection rate of 30% on routine inquiries",
+          "milestones": [
+            "Chatbot MVP launched (Month 2)",
+            "Full integration with CRM and operational system (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 5 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Initiate the feasibility study and vendor selection for the Predictive Maintenance project.",
-        "owner": "Head of Operations",
+        "action": "Conduct a detailed cost-benefit analysis for the AI Demand Forecasting project to secure initial funding.",
+        "owner": "Founder",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Establish a lightweight process framework (even if informal) for capturing and iterating on operational bottlenecks.",
+        "owner": "Operations Lead (or Founder)",
         "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Form a cross-functional task force to evaluate capital expenditure for the Robotic Assembly Cell (Radical Opportunity).",
-        "owner": "CEO/VP Strategy",
-        "timeframe": "Within 8 weeks"
-      },
-      {
-        "action": "Conduct an internal audit of current workflow bottlenecks and define scope for Lean Automation.",
-        "owner": "Process Manager",
-        "timeframe": "Within 6 weeks"
+        "action": "Initiate the pilot for low-code back-office automation in the invoicing department.",
+        "owner": "Contractor/Technical Resource",
+        "timeframe": "Start planning immediately (Week 2)"
       }
     ],
     "key_weaknesses": [
-      "Reliance on manual data entry leading to high error rates.",
-      "Limited internal expertise in advanced automation and IoT integration.",
-      "Siloed communication between design, production, and maintenance teams.",
-      "Slow decision-making cycle for capital expenditure approval."
+      "Lack of formalized innovation process leading to ad-hoc decision making and wasted effort.",
+      "Digital maturity level of 1, indicating severe limitations in data literacy and advanced system integration capabilities.",
+      "High founder dependence creating a single point of failure for technical and strategic direction.",
+      "Inconsistent operational processes that hinder scalable efficiency gains."
     ]
   }
 }

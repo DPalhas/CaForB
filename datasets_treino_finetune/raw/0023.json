@@ -3,144 +3,149 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Healthcare & Medical",
     "size": "Medium",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "efficiency",
     "competitive_pressure": "medium",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:57:06.238398+00:00",
-    "duration_ms": 45999,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:37:25.872850+00:00",
+    "duration_ms": 26762,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.259414+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "ReguSolve Analytics",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Core Analytics",
+      "sector": "Healthcare & Medical",
+      "size": "Medium",
+      "companyName": "Core Analytics"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "ReguSolve Analytics provides AI-driven compliance and reporting software for mid-sized enterprises in highly regulated industries. The company focuses on automating manual regulatory review processes to ensure clients maintain continuous compliance.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "We recently implemented a phased rollout of an automated data validation module, which reduced manual processing time by 30% while ensuring adherence to new industry standards. We also piloted a platform integration project aimed at streamlining client reporting workflows.",
+      "companyDescription": "Core Analytics is a private hospital group operating 3 general hospitals and 8 outpatient clinics with 450 beds and 1,800 staff including 350 physicians. Performing 22,000 surgeries annually. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to significantly improve operational efficiency and reduce compliance overhead across our software suite through technology-driven automation. Secondary goals include expanding market share by offering more comprehensive, automated regulatory solutions.",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The core engineering and product team consists of 15 highly specialized professionals who work in cross-functional squads. We maintain a lean structure focused on rapid execution.",
-      "digitalMaturity": 4,
+      "digitalMaturity": "3",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 22,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 26,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
+        "budget",
         "process",
-        "talent",
-        "strategy",
-        "time"
+        "strategy"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The high regulatory environment requires constant vigilance, but our medium size allows us to innovate quickly by leveraging advanced digital tools."
+      "additionalContext": "The market is increasingly demanding streamlined patient pathways and lower operational overhead, while simultaneously facing strict compliance requirements for any new technology deployment in a high-regulation environment.",
+      "companyName": "Core Analytics",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "AI-Driven Predictive Compliance Engine",
-        "rationale": "Developing a radical predictive engine that uses machine learning to anticipate regulatory changes and flag potential non-compliance risks in real-time will move the company beyond reactive reporting into proactive risk management.",
+        "type": "incremental",
+        "title": "AI-Driven Surgical Workflow Optimization",
+        "rationale": "Leveraging the existing interest in AI triage for radiology, this initiative expands to integrate machine learning models that predict surgical complications or resource bottlenecks proactively. This provides immediate efficiency gains by reducing unplanned downtime and optimizing staff allocation.",
         "execution_plan": {
           "first_actions": [
-            "Form an internal task force focused solely on ML model architecture.",
-            "Allocate dedicated budget for external data science consultation."
+            "Establish a pilot team focused on one high-volume procedure using current image data.",
+            "Develop a proof-of-concept dashboard tracking real-time resource utilization vs. scheduled efficiency targets.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "High-performance cloud computing resources",
-            "Senior Data Scientist hire"
+            "1 Data Scientist FTE for 6 months",
+            "Cloud computing budget increase ($50k)"
           ],
-          "success_metric": "Reduction in reported compliance errors by 50% within 12 months.",
+          "success_metric": "Reduction in average procedure recovery time by 15% within one pilot site.",
           "milestones": [
-            "M1: Proof of Concept for predictive risk scoring (Q3)",
-            "M2: Pilot integration with top-tier client data (Q4)"
+            "Q3: Pilot model validation and KPI baseline established.",
+            "Q4: Successful integration into two outpatient clinics."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Intelligent Predictive Resource Allocation Engine (IPRAE)",
+        "rationale": "This bold initiative aims to fundamentally redesign operational scheduling by creating an autonomous engine that dynamically adjusts staffing and bed allocation based on predicted patient influx, seasonal demands, and anticipated regulatory constraints. This radically shifts efficiency from reactive management to proactive, automated optimization.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a deep dive into all current operational bottlenecks (staffing, OR scheduling) across all 11 sites.",
+            "Design an MVP for the IPRAE model focused solely on predicting ER/OR spikes.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "External system architecture consulting ($200k)",
+            "Cross-functional task force (Ops, IT, Finance)"
+          ],
+          "success_metric": "Achieve a 10% reduction in labor costs per procedure within the first year of full deployment.",
+          "milestones": [
+            "Month 3: Final selection of core tech stack and vendor vetting.",
+            "Month 9: IPRAE MVP operational across one hospital site."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "medium"
+        "timeframe": "18 months"
       },
       {
         "type": "incremental",
-        "title": "API Integration Ecosystem for Workflow Automation",
-        "rationale": "Implementing robust, standardized APIs will allow ReguSolve to integrate seamlessly with other critical enterprise systems (ERPs, HR tools), dramatically improving efficiency in the client's operational workflow.",
+        "title": "Automated Clinical Documentation & Billing Streamline (CDBS)",
+        "rationale": "Focusing on reducing manual touchpoints, this project targets the high administrative burden in healthcare documentation. Implementing intelligent voice recognition and NLP tools can significantly decrease physician charting time and associated billing errors.",
         "execution_plan": {
           "first_actions": [
-            "Audit existing API capabilities and prioritize high-value integrations.",
-            "Standardize documentation and developer resources."
+            "Audit current electronic health record (EHR) interfaces for automation gaps.",
+            "Select an NLP vendor specializing in clinical note summarization."
           ],
           "resources_needed": [
-            "Dedicated integration development sprints",
-            "Cloud infrastructure scaling budget"
+            "Software licensing and integration costs ($150k)",
+            "Training budget for 350 physicians"
           ],
-          "success_metric": "Increase in client adoption rate of integrated features by 25%.",
+          "success_metric": "Decrease average physician documentation time by 2 hours per day.",
           "milestones": [
-            "M1: Open and maintain a public API documentation portal (Q3)",
-            "M2: Onboard 5 major partner integrations (Q4)"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "short"
-      },
-      {
-        "type": "incremental",
-        "title": "Automated Regulatory Change Monitoring Dashboard",
-        "rationale": "Enhancing the existing compliance dashboard with automated change monitoring will reduce manual review time and ensure immediate awareness of regulatory updates, directly addressing efficiency goals.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify key legislative databases to ingest data feeds.",
-            "Update internal training materials for the compliance team."
-          ],
-          "resources_needed": [
-            "Subscription fees for regulatory data feeds",
-            "Internal DevOps engineering time"
-          ],
-          "success_metric": "Reduction in manual report generation time by 40%.",
-          "milestones": [
-            "M1: Full ingestion pipeline operational (Q2)",
-            "M2: Feature launch for real-time change alerts (Q3)"
+            "Q1: Vendor selection and API integration planning.",
+            "Q3: Full rollout and compliance verification across three major clinics."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-functional Innovation Steering Committee to vet the AI Predictive Engine concept.",
-        "owner": "CEO/CTO",
-        "timeframe": "Within 3 weeks"
-      },
-      {
-        "action": "Initiate technical scoping and resource allocation for API Integration Ecosystem development.",
-        "owner": "VP of Engineering",
-        "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Conduct a comprehensive efficiency audit focused on current regulatory data processing bottlenecks.",
-        "owner": "COO",
+        "action": "Form a dedicated cross-functional steering committee to define and prioritize the IPRAE radical project scope.",
+        "owner": "Chief Operating Officer (COO)",
         "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate a detailed feasibility study for the AI-driven surgical workflow optimization, including regulatory pathway analysis.",
+        "owner": "Director of Technology",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Conduct a comprehensive cost-benefit analysis comparing potential efficiency gains against current budget constraints for all three initiatives.",
+        "owner": "Finance Director",
+        "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on manual compliance review, leading to inefficiency and error risk.",
-      "Specialized talent scarcity in advanced AI/ML engineering needed for radical innovation.",
-      "Slow internal process changes due to the need for formal regulatory approvals across the organization."
+      "Partial innovation process leading to slow mid-cycle funding approval and rigid decision-making chains.",
+      "High reliance on formal business case approvals which can stifle rapid iteration needed for bold, high-risk initiatives.",
+      "Moderate digital maturity (Level 3) means legacy systems present integration challenges that could impede radical efficiency gains."
     ]
   }
 }

@@ -1,0 +1,122 @@
+{
+  "id": "0324",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:19:10.994400+00:00",
+    "duration_ms": 21468,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.363034+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Atlas",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Micro",
+      "companyName": "Atlas"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Atlas is a family-owned mixed-crop farm specializing in high-quality cereals, specialty vegetables, and olives. Operating within this sector means navigating stringent environmental regulations concerning water usage and pesticide runoff, which necessitates careful input management. The operation relies on traditional knowledge blended with opportunistic, small-scale technological experiments to maintain quality amidst intense market competition.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory by achieving greater efficiency and diversifying revenue streams. We are willing to make significant strategic bets, such as investing in high-yield crop genetics or establishing direct-to-consumer channels, provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication—two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real.",
+      "companyName": "Atlas",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 3.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Precision Soil Health & Water Optimization",
+        "rationale": "Given the high regulatory environment and focus on water usage, implementing localized soil sensors allows Atlas to incrementally optimize irrigation schedules and targeted nutrient application. This directly addresses process bottlenecks related to input management while providing measurable efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a pilot study on sensor deployment for the most water-intensive crop area (e.g., olives).",
+            "Identify and contract one specialized consulting firm for initial data interpretation.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Investment in 3-5 soil sensors ($5k)",
+            "Consulting fees for 6 months ($10k)"
+          ],
+          "success_metric": "Reduction in water usage per hectare by 10% within one growing season.",
+          "milestones": [
+            "Sensor deployment complete (Month 3)",
+            "Pilot data analysis complete and recommendation delivered (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Yield and Input Prediction Engine",
+        "rationale": "To meet high competitive pressure, Atlas must shift from reactive farming to proactive optimization. Developing a proprietary machine learning model that integrates satellite imagery with historical weather data can predict optimal planting times, disease outbreaks, and yield outcomes across the entire 120 hectares.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure seed funding/grant focused on Agri-Tech R&D.",
+            "Identify a freelance Data Scientist partner to build the initial predictive model.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Contractor fees for 9 months ($50k)",
+            "Software licenses for satellite data processing ($10k)"
+          ],
+          "success_metric": "Model-driven prediction accuracy achieving 80% correlation with actual yield outcomes.",
+          "milestones": [
+            "Data pipeline established and initial model training complete (Month 4)",
+            "Pilot deployment of AI recommendations on one crop line (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional steering committee (Founder + new integration lead) to define the 'Growth Technology Roadmap' and prioritize investments.",
+        "owner": "Owner",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate due diligence on two potential M&A targets in adjacent high-efficiency agricultural regions to test strategic expansion hypotheses.",
+        "owner": "Founder / Strategic Lead",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme dependence on the founder for all critical product and technology decisions, creating a severe bottleneck.",
+      "Lack of formalized process documentation leads to high operational risk when scaling or integrating systems post-merger.",
+      "Low digital maturity (Level 2) limits ability to leverage sophisticated data analytics necessary for competitive growth strategies."
+    ]
+  }
+}

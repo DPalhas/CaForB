@@ -1,0 +1,149 @@
+{
+  "id": "0146",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:47:18.576523+00:00",
+    "duration_ms": 26063,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.302532+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest Corporation",
+      "sector": "Energy & Utilities",
+      "size": "Micro",
+      "companyName": "Crest Corporation"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Crest Corporation is a regional micro-utility operator responsible for managing the physical distribution of electricity across 8,000 km of medium and low-voltage infrastructure. The company is focused on transitioning its grid management systems toward smart technology to handle fluctuating renewable energy inputs like rooftop solar without compromising reliability.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We recently installed advanced IoT sensors across 40% of our key distribution transformers and implemented a pilot for predictive maintenance, which successfully reduced unplanned outages by 15%. We currently operate within a highly siloed operational structure where system upgrades often require bespoke solutions rather than standardized platform integrations.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth, Crest seeks to achieve this by exploring adjacent business models such as providing demand response services and expanding into commercial solar energy management contracts. The core strategic dilemma is whether to focus resources on deepening our technical expertise in grid optimization or pursuing horizontal expansion into related service categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense pressure from large incumbent utilities and tech giants to modernize infrastructure rapidly, demanding scalable but low-risk solutions that fit their constrained capital budgets.",
+      "companyName": "Crest Corporation",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Metering Data Optimization",
+        "rationale": "Implementing an incremental upgrade to the existing smart meter platform can streamline data acquisition and reduce operational costs related to manual data processing. This is a low-risk, high-return initiative that directly improves process efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct internal audit of current billing and data ingestion processes.",
+            "Define minimum viable product (MVP) requirements for automated data normalization."
+          ],
+          "resources_needed": [
+            "Internal IT developer time (part-time)",
+            "Licensing costs for data processing middleware"
+          ],
+          "success_metric": "30% reduction in manual data handling hours within 6 months",
+          "milestones": [
+            "Data Audit Complete (Month 1)",
+            "MVP Pilot Deployment (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Digital Twin for Grid Resilience Modeling",
+        "rationale": "Developing a simplified digital twin model of the local grid will allow Crest to simulate complex scenarios (like high solar injection or equipment failure) in a virtual environment, reducing physical risk and enabling sophisticated growth strategies that are currently impossible.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify key operational assets for 3D mapping.",
+            "Engage a specialized external consultant for initial modeling setup."
+          ],
+          "resources_needed": [
+            "External consulting fees ($20k-$50k)",
+            "Cloud computing resources for simulation"
+          ],
+          "success_metric": "Successful simulation of three critical grid stress tests",
+          "milestones": [
+            "Modeling Environment Established (Month 3)",
+            "First Resilience Report Generated (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Targeted EV Infrastructure Service Pilot",
+        "rationale": "Given the growth goal, piloting a niche service focused on managing and billing charging infrastructure for local commercial fleets provides an immediate revenue stream and tests horizontal market expansion with minimal capital outlay.",
+        "execution_plan": {
+          "first_actions": [
+            "Survey existing fleet customers regarding EV adoption intent.",
+            "Develop a basic software module to track and bill charging events."
+          ],
+          "resources_needed": [
+            "20% of available developer time",
+            "Small marketing budget for pilot outreach"
+          ],
+          "success_metric": "Secure 5 commercial EV fleet contracts within the first year",
+          "milestones": [
+            "Service Pilot Launch (Month 6)",
+            "Revenue Projection Achieved (Month 12)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, small working group for Digital Twin feasibility and resource allocation.",
+        "owner": "CEO / Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate the data audit for Metering Data Optimization (Opportunity 1).",
+        "owner": "Lead Developer",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Define market segments and feasibility study for the EV Infrastructure Pilot.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of specialized technical expertise in complex energy physics required for advanced grid modeling.",
+      "Digital maturity level is low (Level 2), resulting in a reactive, siloed operational structure that stifles proactive innovation.",
+      "Limited internal resources, with developers heavily overburdened by urgent operational maintenance tasks.",
+      "High competitive pressure necessitates rapid technological adaptation while maintaining a conservative capital budget."
+    ]
+  }
+}

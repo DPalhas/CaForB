@@ -1,0 +1,156 @@
+{
+  "id": "0250",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T23:07:43.538730+00:00",
+    "duration_ms": 24608,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.335340+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Synapse Labs.ai",
+      "sector": "Transportation & Logistics",
+      "size": "Large",
+      "companyName": "Synapse Labs.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Temperature-controlled logistics provider operating 50 refrigerated trucks and 8,000 m² of cold storage warehousing. Specialize in pharmaceutical and fresh food distribution across Iberia. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management rather than speed.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing—only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning—either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication—two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real.",
+      "companyName": "Synapse Labs.ai",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 3.1,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Route Optimization Software Integration (Low Risk)",
+        "rationale": "Implementing a basic AI-driven route optimization tool can improve fuel efficiency and delivery speed without requiring massive cultural or capital shifts. This directly addresses operational costs, which is crucial for market defense in a consolidated environment.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 key logistics routes for pilot testing",
+            "Select an off-the-shelf optimization SaaS solution (POC)",
+            "Allocate €50k from innovation fund for integration with existing TMS platform"
+          ],
+          "resources_needed": [
+            "1 Data Analyst FTE (6 months contract)",
+            "€50,000 software license/integration costs",
+            "Internal IT support hours"
+          ],
+          "success_metric": "Reduce average route miles per delivery by 7% within Q3",
+          "milestones": [
+            "Month 1: Successful POC and data validation.",
+            "Month 4: Pilot deployment on one regional fleet."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Cold-Chain Compliance Service",
+        "rationale": "Focusing on hyper-specific, high-margin pharmaceutical distribution channels allows the company to build a defensible niche rather than competing broadly on volume. This leverages existing talent depth and minimizes regulatory risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Consult with legal team on emerging compliance gaps",
+            "Develop service package for 50 high-value pharma clients",
+            "Create a marketing collateral detailing specialized cold-chain certifications"
+          ],
+          "resources_needed": [
+            "1 Junior Consultant (part-time)",
+            "€20,000 for marketing materials and certification review",
+            "Internal management time"
+          ],
+          "success_metric": "Increase high-margin revenue from this niche by 15% in year one",
+          "milestones": [
+            "Month 3: Finalize compliance framework.",
+            "Month 6: Secure first three anchor clients."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Decentralized Autonomous Logistics (DAL) Pilot",
+        "rationale": "While conservative, a small-scale bold experiment in blockchain or smart contracts for supply chain transparency could create high switching costs. This is intended to build platform stickiness by offering unparalleled data integrity and trust.",
+        "execution_plan": {
+          "first_actions": [
+            "Define scope for pilot (single pharmaceutical route)",
+            "Select a low-code blockchain platform provider",
+            "Form a small cross-functional team of 5 staff across IT, Ops, and Legal"
+          ],
+          "resources_needed": [
+            "€100k R&D budget allocated from innovation fund",
+            "Contract with specialized blockchain development firm",
+            "External legal counsel for smart contract review"
+          ],
+          "success_metric": "Achieve 95% data transparency audit score on the pilot route.",
+          "milestones": [
+            "Month 1-4: Platform selection and PoC build.",
+            "Month 7-12: Full operational integration of the DAL tracking system."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated process for vetting internal incremental projects against the €5M annual innovation budget.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate scoping and budgeting for the Route Optimization Software integration pilot.",
+        "owner": "Operations Director",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Conduct a cross-functional workshop to define the technical requirements for the DAL radical project.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Low digital maturity hindering rapid process change.",
+      "Decentralized innovation leading to lack of standardized IP management.",
+      "High sensitivity to budget constraints limiting long-term radical exploration.",
+      "Cultural resistance and 'change fatigue' following the merger."
+    ]
+  }
+}

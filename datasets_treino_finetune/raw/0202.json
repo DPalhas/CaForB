@@ -1,0 +1,122 @@
+{
+  "id": "0202",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:13:48.162831+00:00",
+    "duration_ms": 20812,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.319517+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian Holdings",
+      "sector": "Financial Services",
+      "size": "Medium",
+      "companyName": "Meridian Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Retail bank operating 45 branches across northern Portugal serving 180,000 individual and 12,000 business customers. Core product portfolio includes mortgages, consumer loans, current accounts, and SME lending. The highly regulated environment requires continuous investment in compliance technology to mitigate risks associated with AML, KYC, and financial reporting standards.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory through stable, compliant product offerings. We are willing to make significant strategic bets—potentially including M&A or geographic expansion—provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The current lack of a defined innovation process means that any new initiatives are ad-hoc and often fail to scale. The board requires clear, measurable ROI justification before committing capital, which is currently hampered by the absence of structured pipeline management.",
+      "companyName": "Meridian Holdings",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 3.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Regulatory Tech (RegTech) Integration for Operational Efficiency",
+        "rationale": "Implementing incremental improvements in automated compliance checks and reporting tools can reduce operational friction and mitigate the high regulatory risk inherent in the sector. This is a low-risk, high-impact way to improve efficiency without requiring fundamental shifts.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis of current compliance workflows against emerging EU directives.",
+            "Pilot one RegTech solution focused solely on KYC/AML data ingestion."
+          ],
+          "resources_needed": [
+            "Budget allocation for software pilot ($50k)",
+            "Internal IT resource (1 dedicated analyst)"
+          ],
+          "success_metric": "Reduction in manual compliance review time by 20% within 6 months.",
+          "milestones": [
+            "Q1: Gap analysis complete and solution selection finalized.",
+            "Q2: Pilot program launched and initial ROI assessment."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized SME Credit Underwriting Platform",
+        "rationale": "Developing a bold new credit adjudication model using machine learning could significantly reduce risk exposure while unlocking previously underserved SME market segments. While complex, this offers the potential for disruptive growth and provides a key competitive differentiator.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional squad (Product + Data Engineering) dedicated to proof of concept (PoC).",
+            "Secure external data partnership access to expand training sets.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "External ML consultant retainer ($150k)",
+            "Data storage infrastructure upgrade"
+          ],
+          "success_metric": "Achieve a 15% reduction in default rates among the target SME portfolio within 2 years.",
+          "milestones": [
+            "Q3: PoC completion and validation with internal risk team.",
+            "Q4: Final business case approval for scaled rollout."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, lean innovation pipeline and governance structure.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate the Q1 RegTech Pilot project for incremental efficiency gains.",
+        "owner": "Chief Risk Officer (CRO)",
+        "timeframe": "Start immediately"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation process, leading to inconsistent resource allocation and failed projects.",
+      "Strategy is currently reactive rather than proactive, failing to align growth mandates with specific investment initiatives.",
+      "Low digital maturity (Level 2) hinders the ability to leverage emerging technologies effectively for competitive advantage.",
+      "Culture exhibits inertia and risk aversion, potentially slowing the adoption of necessary structural changes."
+    ]
+  }
+}

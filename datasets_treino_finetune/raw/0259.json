@@ -1,0 +1,126 @@
+{
+  "id": "0259",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:48:15.246012+00:00",
+    "duration_ms": 22289,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Labs.ai",
+      "sector": "Healthtech",
+      "size": "Medium",
+      "companyName": "Nova Labs.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Nova Labs.ai is a telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. With 500+ credentialed physicians on the platform and over 120,000 completed consultations, the company operates as a Class I medical device under relevant state and federal regulations. The current focus is leveraging proprietary AI models to implement sophisticated clinical workflows.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month because participants felt sessions generated interesting ideas without clear paths to execution or budget allocation. This initiative faded without producing any tangible outcome, highlighting a critical gap between idea generation and resource commitment.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering two new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The industry is rapidly moving toward value-based care models, which requires Nova Labs.ai to integrate predictive analytics beyond simple triage to truly capture market share and secure favorable reimbursement rates.",
+      "companyName": "Nova Labs.ai",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Proactive Patient Management System (Predictive Health)",
+        "rationale": "Developing a predictive analytics engine that moves beyond reactive triage to proactively identify high-risk patient cohorts allows Nova Labs.ai to create a differentiated service offering, significantly increasing customer lifetime value and justifying premium pricing.",
+        "execution_plan": {
+          "first_actions": [
+            "Define core metrics for risk prediction (e.g., readmission rates)",
+            "Allocate 30% of R&D budget specifically to predictive model training",
+            "Pilot the system in one geographic market segment."
+          ],
+          "resources_needed": [
+            "Data Scientist (contract/full-time)",
+            "Cloud compute resources increase",
+            "Regulatory consultation for new clinical claims."
+          ],
+          "success_metric": "Reduction in 30-day readmission rate by 15% within the pilot cohort.",
+          "milestones": [
+            "Q1: Predictive model MVP completed (8 weeks)",
+            "Q2: Successful controlled pilot launch and data validation",
+            "Q3: Formal regulatory pathway initiation for new AI feature."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Optimized B2B Sales Channel Integration",
+        "rationale": "Formalizing a dedicated sales team focused solely on integrating the platform into hospital/clinic workflows will streamline acquisition and directly support the growth objective by creating predictable, high-volume contracts.",
+        "execution_plan": {
+          "first_actions": [
+            "Define optimal pricing tiers for B2B integration (e.g., per-consultation volume)",
+            "Hire two dedicated enterprise sales representatives",
+            "Develop a standardized implementation playbook."
+          ],
+          "resources_needed": [
+            "Sales personnel salaries ($150k+ total cost of hire)",
+            "CRM system upgrade licenses",
+            "Marketing collateral for B2B channels."
+          ],
+          "success_metric": "Increase in B2B contract volume by 40% within 18 months.",
+          "milestones": [
+            "Month 1-2: Sales team fully onboarded and trained",
+            "Month 6: First major hospital partnership secured",
+            "Month 12: Achieve target B2B revenue contribution (35%)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, quarterly innovation pipeline review process",
+        "owner": "Director of R&D",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct a deep-dive cost-benefit analysis on the Predictive Health opportunity",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process lacking clear execution pathways.",
+      "Over-reliance on a small leadership team, limiting cross-functional bandwidth for complex projects.",
+      "Budget constraints ($9% allocation) hindering investment in high-risk, long-term radical tech.",
+      "High competitive pressure requiring constant feature updates rather than strategic platform expansion."
+    ]
+  }
+}

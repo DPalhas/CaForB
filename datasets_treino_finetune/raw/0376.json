@@ -1,0 +1,151 @@
+{
+  "id": "0376",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:48:01.822990+00:00",
+    "duration_ms": 25009,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.384379+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pioneer Solutions",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro",
+      "companyName": "Pioneer Solutions"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Pioneer Solutions operates in a fragmented specialty coffee and gourmet food market, managing inventory across six high-traffic physical locations and an expanding direct e-commerce platform. The company focuses on maintaining quality through in-house roasting while scaling its curated product line to meet demand. The core challenge is streamlining the supply chain integration between brick-and-mortar sales and online fulfillment.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The market is highly fragmented with strong local competition and increasing demand for personalized, sustainable sourcing stories.",
+      "companyName": "Pioneer Solutions",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Inventory Reconciliation Automation (Incremental)",
+        "rationale": "Implementing low-cost API integration between the physical POS and e-commerce platform can significantly reduce manual inventory reconciliation errors and time spent tracking stock levels. This addresses core operational efficiency without requiring a major overhaul of existing systems.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current ERP/POS system capabilities for API access.",
+            "Identify 2-3 high-volume SKU data points for initial pilot integration."
+          ],
+          "resources_needed": [
+            "10 hours of internal IT time",
+            "$500 for a middleware connector subscription"
+          ],
+          "success_metric": "Reduction in inventory discrepancy errors by 25% within Q3.",
+          "milestones": [
+            "Month 1: System audit complete and requirements defined.",
+            "Month 2: Pilot integration deployed on one channel."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Local 'Zero-Waste' Subscription Model (Bold)",
+        "rationale": "Develop a bold subscription service focused entirely on reducing packaging waste through localized, reusable delivery containers. This taps into the growing consumer trend for sustainability and could create a new high-margin recurring revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot two 'Zero-Waste' container suppliers in the primary metro area.",
+            "Develop a minimum viable product (MVP) subscription tier with bundled low-waste products."
+          ],
+          "resources_needed": [
+            "$10,000 for packaging pilot and initial marketing",
+            "Consultant time for local logistics mapping"
+          ],
+          "success_metric": "Achieve a 5% recurring revenue rate from the new subscription model within 9 months.",
+          "milestones": [
+            "Month 3: Finalize supplier contracts and design.",
+            "Month 6: Launch pilot program with 100 local customers."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Customer Support Chatbot (Incremental)",
+        "rationale": "Deploy a basic chatbot integrated into the e-commerce site to handle 30% of common order status and product inquiry questions. This allows the small team to focus on high-value customer interactions while improving immediate operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a no-code chatbot platform (e.g., Dialogflow Lite).",
+            "Train the bot solely on existing FAQ and order status data."
+          ],
+          "resources_needed": [
+            "$2,000 for platform subscription/setup",
+            "Internal team training time (10 hours)"
+          ],
+          "success_metric": "Increase in resolved customer inquiries by 30% with a response time under 5 minutes.",
+          "milestones": [
+            "Month 2: Basic FAQ and order tracking bot live on website.",
+            "Month 4: Integrate basic inventory check functionality."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a deep-dive operational mapping session focused on identifying the top 5 manual bottlenecks in order fulfillment.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a lean budget proposal for the Inventory Reconciliation Automation pilot project.",
+        "owner": "Finance/Strategy Team",
+        "timeframe": "Within 30 days"
+      },
+      {
+        "action": "Identify and test three potential packaging suppliers for the Zero-Waste subscription model.",
+        "owner": "Product Development Lead",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on founder expertise leading to single points of failure in technical and strategic decision-making.",
+      "Limited operational budget (3%) severely restricting investment in necessary automation tools or hiring specialized talent.",
+      "Founder's bandwidth is entirely consumed by day-to-day operations, leaving minimal dedicated time for proactive innovation scouting outside immediate bottlenecks.",
+      "Culture potentially resistant to adopting radical changes due to the conservative risk appetite and 'no growth headcount' mandate."
+    ]
+  }
+}

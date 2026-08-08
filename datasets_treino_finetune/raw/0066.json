@@ -3,143 +3,116 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Real Estate",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "bold",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "high",
+    "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:18:34.171519+00:00",
-    "duration_ms": 23442,
+    "generated_at": "2026-08-03T17:57:11.855897+00:00",
+    "duration_ms": 26466,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "ApexFlow Analytics",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Apex Industries",
+      "sector": "Real Estate",
+      "size": "Large",
+      "companyName": "Apex Industries"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "ApexFlow Analytics develops AI-driven analytics platforms designed to optimize supply chain logistics for mid-sized enterprises. The company operates in a high-growth niche with minimal direct regulatory oversight concerning data handling or software deployment.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The team has successfully launched three major feature updates and integrated three new API partners over the last two years, focusing on incremental improvements to core platform functionality.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to solidify market share against larger incumbents by introducing proprietary predictive modeling capabilities that competitors currently lack. We aim to become the definitive industry standard in logistics forecasting.",
+      "companyDescription": "Apex Industries is a large real estate developer specializing in urban residential projects including mid-rise apartment buildings and townhouse communities. They manage a current pipeline of 350 units across four active projects, focusing heavily on optimizing construction efficiency through emerging technologies like modular components and advanced BIM modeling.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with implementing a customer self-service portal two years ago after observing competitors offering similar functionality. We built an MVP using external agency resources in three months, but initial adoption was disappointing, suggesting a failure to properly validate user needs before significant investment.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where major competitors are merging to capture economies of scale. Our independent position is increasingly vulnerable; therefore, we must proactively strengthen our competitive positioning either by deepening specialization in high-margin niche markets or building platform-like switching costs that increase customer stickiness.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The team consists of 15 highly skilled engineers and product managers, fostering a culture that prioritizes rapid experimentation and aggressive feature development.",
-      "digitalMaturity": "4",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 25,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 24,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "time",
-        "strategy"
+        "culture",
+        "time"
       ],
-      "competitivePressure": "high",
-      "additionalContext": "The market is rapidly consolidating with large tech firms entering the logistics space, necessitating aggressive and proactive innovation to maintain relevance."
+      "competitivePressure": "medium",
+      "additionalContext": "We completed a merger with a similarly-sized competitor four months ago and are currently in the middle of integrating teams, systems, and processes. The combined organization suffers from significant duplication across CRMs and HR systems. There is a unique window to redesign core processes rather than patching legacy approaches, but cultural integration remains fragile due to change fatigue.",
+      "companyName": "Apex Industries",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Hyper-Personalized Predictive Maintenance Module",
-        "rationale": "To defend market share against larger competitors who offer generalized analytics, ApexFlow should develop a radical module that uses deep learning to predict asset failure with near 90% accuracy for specific client supply chains.",
-        "execution_plan": {
-          "first_actions": [
-            "Form a dedicated R&D squad focused solely on the predictive model architecture.",
-            "Conduct feasibility study and pilot program with one anchor client."
-          ],
-          "resources_needed": [
-            "Hiring two specialized ML engineers",
-            "Allocate $150,000 for cloud computing resources and data acquisition"
-          ],
-          "success_metric": "Achieve 90% accuracy in predicting component failure within the pilot phase.",
-          "milestones": [
-            "Q3: Model MVP completion.",
-            "Q4: Successful closed-beta pilot launch."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "9 months"
-      },
-      {
         "type": "incremental",
-        "title": "API Ecosystem Expansion and Integration Suite",
-        "rationale": "Focus on extending our current API offerings by building a comprehensive integration suite that allows third-party logistics providers to embed ApexFlow's analytics directly into their existing operations, making us indispensable.",
+        "title": "Hyper-Efficient Modular Construction Pipeline",
+        "rationale": "Leveraging existing BIM and modular exploration efforts allows Apex to significantly reduce construction timelines and material waste across their 350 unit pipeline. This incremental gain addresses immediate cost pressures.",
         "execution_plan": {
           "first_actions": [
-            "Audit and prioritize the top 10 potential system integrations.",
-            "Develop standardized SDK documentation for easier onboarding."
+            "Establish a cross-functional task force (Architecture, Engineering, Operations) to define the optimal modular mix for three high-priority projects.",
+            "Allocate 15% of the R&D budget specifically for pilot testing and certification of two new proprietary connection types."
           ],
           "resources_needed": [
-            "Contract specialized integration consultants",
-            "Allocate $75,000 for marketing and developer relations"
+            "Dedicated BIM specialist contractor (3 months)",
+            "Internal engineering time reallocation ($200k)"
           ],
-          "success_metric": "Increase the number of active third-party integrations by 50% within 12 months.",
+          "success_metric": "Reduction in average project construction timeline by 15%",
           "milestones": [
-            "Q3: Launch core integration toolkit.",
-            "Q4: Secure 5 major enterprise partnerships."
+            "Q3: Final selection of modular material standard.",
+            "Q4: Completion of pilot installation on a non-critical project."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "6 months"
+        "timeframe": "Within 6 months"
       },
       {
         "type": "radical",
-        "title": "Market-Defensive Acquisition of Niche Data Providers",
-        "rationale": "Acquiring a small, specialized data firm in a complementary vertical would instantly fill critical knowledge gaps and accelerate our path to market dominance.",
+        "title": "Real Estate Asset Management Platform (REAMP)",
+        "rationale": "To achieve market defense, Apex should pivot from a pure developer to an asset management platform. This radical shift creates high switching costs by integrating development data with predictive maintenance and automated ESG reporting, making the organization indispensable to existing portfolio owners.",
         "execution_plan": {
           "first_actions": [
-            "Identify three potential acquisition targets matching the required niche expertise.",
-            "Prepare initial valuation models and synergy assessments."
+            "Form a dedicated 'Platform' innovation unit with 5 core engineers focused solely on SaaS integration capabilities.",
+            "Conduct rapid customer interviews with five key portfolio stakeholders to define minimum viable platform features (e.g., predictive maintenance dashboards)."
           ],
           "resources_needed": [
-            "Allocate $50,000 for due diligence and legal fees",
-            "Internal executive time allocation (time constraint managed by small leadership team)"
+            "External software architecture consultancy retainer ($300k)",
+            "Hiring 2 senior product managers with B2B SaaS experience."
           ],
-          "success_metric": "Successful acquisition of at least one target achieving 2x revenue growth within 18 months.",
+          "success_metric": "Acquisition of 5 new asset management clients generating $1M in recurring subscription revenue by Year 2.",
           "milestones": [
-            "Q4: Target identification and initial outreach.",
-            "Q2 Next Year: Final valuation and negotiation."
+            "Q1: MVP definition and core feature set locked.",
+            "Year 1 End: Launch Beta version with first paying pilot customers."
           ]
         },
         "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "18 months"
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Finalize the core requirements and budget for the Hyper-Personalized Predictive Maintenance Module pilot.",
-        "owner": "Chief Technology Officer (CTO)",
-        "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Develop a detailed strategic roadmap linking market defense initiatives to quarterly KPIs.",
-        "owner": "VP of Strategy",
+        "action": "Initiate a formal Change Management Program focused on 'Integration Through Transparency' to mitigate cultural friction following the merger.",
+        "owner": "Chief Operating Officer",
         "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Initiate discreet outreach and preliminary due diligence on niche data provider acquisition targets.",
-        "owner": "M&A Lead/CEO",
-        "timeframe": "Start planning immediately"
+        "action": "Launch a rapid internal process audit to identify top three areas of workflow duplication and mandate decommissioning plans for legacy systems.",
+        "owner": "Head of Process Improvement",
+        "timeframe": "End of Q2"
       }
     ],
     "key_weaknesses": [
-      "Dependency on a small core engineering team for specialized talent.",
-      "Slow internal process for translating radical ideas into scalable product features.",
-      "Limited existing direct customer feedback loop outside of NPS surveys."
+      "Informal innovation process lacks standardized KPI tracking, leading to inconsistent investment prioritization.",
+      "Significant organizational inertia and cultural friction hindering cross-divisional collaboration required for complex projects.",
+      "Fragmented digital infrastructure (multiple CRMs/HR systems) impeding the rapid scaling of new technology initiatives."
     ]
   }
 }

@@ -1,0 +1,148 @@
+{
+  "id": "0432",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:12:49.682949+00:00",
+    "duration_ms": 26913,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum",
+      "sector": "Manufacturing",
+      "size": "Micro",
+      "companyName": "Quantum"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Quantum is a bespoke custom furniture manufacturer specializing in solid wood pieces for the high-end hospitality and luxury residential markets. We leverage a hybrid production model, combining precision CNC routing with artisanal traditional joinery techniques to maintain quality while optimizing throughput.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, demonstrating a commitment to scaling successful prototypes into revenue streams. Our current portfolio includes active projects spanning new material sourcing and the development of digital design tools.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible by diversifying service offerings.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The primary competitive threat comes from large regional manufacturers who are rapidly automating low-complexity components and leveraging larger supply chains. Quantum's immediate challenge is maintaining quality perception while adapting to lean operational costs.",
+      "companyName": "Quantum",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Service-as-a-Product (SaaP) Digital Module",
+        "rationale": "Given the owner's personal involvement and low budget, Quantum should explore radical shifting from selling physical goods to selling digital design/assembly services for high-end custom pieces. This lowers capital expenditure while increasing margin.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 core complex product lines suitable for modularization.",
+            "Develop a minimum viable 'Design Consultation' platform MVP."
+          ],
+          "resources_needed": [
+            "Consultant fees",
+            "Basic web development services (low cost)"
+          ],
+          "success_metric": "Increase in non-product revenue stream by 15% within 9 months.",
+          "milestones": [
+            "Q1: Define and prototype MVP scope.",
+            "Q2: Launch Beta service with 5 pilot clients."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "CNC Optimization & Material Substitution",
+        "rationale": "Focus on incremental operational improvements by investing the allocated budget into optimizing current CNC routines and testing sustainable, higher-margin wood composites that require less finishing time.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a full process mapping audit to identify bottlenecks in joinery/routing.",
+            "Invest in simulation software for optimized material usage."
+          ],
+          "resources_needed": [
+            "Software licensing",
+            "Training for existing staff"
+          ],
+          "success_metric": "Reduce average project lead time by 10% and material waste by 5% within 6 months.",
+          "milestones": [
+            "Month 1: Complete process mapping.",
+            "Month 3: Implement first batch of optimized routines."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Targeted B2B Digital Presence (Self-Service)",
+        "rationale": "To combat churn, implement simple digital tools—like augmented reality configurators or detailed material spec libraries—to allow mid-tier customers to self-service basic customizations.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate a 3D visualization tool into the existing project intake form.",
+            "Create a centralized digital library of custom wood finishes and joinery options."
+          ],
+          "resources_needed": [
+            "Subscription to CAD/Visualization software",
+            "Dedicated owner time for content creation"
+          ],
+          "success_metric": "Decrease customer service inquiry volume by 20% in the first year.",
+          "milestones": [
+            "Month 4: Launch basic configurator feature.",
+            "Q3: Gather usage data and iterate."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate feasibility study for the Service-as-a-Product (SaaP) digital module.",
+        "owner": "Founder / Innovation Committee",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct a full operational bottleneck audit focusing on CNC routing efficiency.",
+        "owner": "Operations Lead (Internal)",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a simple customer-facing digital spec library for pilot testing.",
+        "owner": "Technology Consultant / Founder",
+        "timeframe": "Within 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme reliance on the founder, limiting bandwidth and scaling potential.",
+      "High capital constraint (10% budget) severely restricts large-scale infrastructure investment.",
+      "Formal innovation process is hampered by owner-alone decision-making bottlenecks.",
+      "Low digital maturity limits ability to automate customer service or self-service sales."
+    ]
+  }
+}

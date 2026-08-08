@@ -1,0 +1,122 @@
+{
+  "id": "0363",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:41:53.382683+00:00",
+    "duration_ms": 22925,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.379173+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Ember Networks.tech",
+      "sector": "Legal Services",
+      "size": "Micro",
+      "companyName": "Ember Networks.tech"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "LegalTech startup providing an AI-powered contract lifecycle management platform for SME legal departments. Automating contract review, clause extraction, obligation tracking, and renewal management. The company focuses heavily on ensuring compliance with regional data privacy laws like GDPR while expanding into automated regulatory change monitoring through contract impact analysis.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins.",
+      "companyName": "Ember Networks.tech",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Contract Query Refinement (Market Defense)",
+        "rationale": "Enhance the existing AI engine to handle complex legal queries and provide more nuanced, legally sound answers. This directly addresses customer churn reasons related to product stagnation by improving core value delivery.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current AI model performance against top 5 customer pain points.",
+            "Allocate 10% of remaining budget specifically for prompt engineering and fine-tuning."
+          ],
+          "resources_needed": [
+            "Existing developer time (reallocated),",
+            "External legal expertise consultation"
+          ],
+          "success_metric": "Reduction in support tickets related to AI output quality by 20% within Q3.",
+          "milestones": [
+            "Q1: Baseline performance benchmark established.",
+            "Q2: Targeted model refinement and A/B testing complete."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Proactive Regulatory Compliance Portal (Market Defense)",
+        "rationale": "Develop a fully automated compliance monitoring dashboard that proactively alerts legal teams to upcoming regulatory changes affecting their contracts. This moves the company from reactive management to proactive risk mitigation, creating a strong competitive moat against larger providers.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 high-risk regulatory areas for SME contractors (e.g., specific clauses related to labor law).",
+            "Define MVP scope focusing only on monitoring and reporting, deferring full automated impact analysis."
+          ],
+          "resources_needed": [
+            "Dedicated data scientist/developer allocation (part-time),",
+            "Subscription costs for regulatory data feeds"
+          ],
+          "success_metric": "Launch of the compliance portal with 5 pilot clients utilizing the feature.",
+          "milestones": [
+            "Q3: Minimum Viable Product (MVP) launch.",
+            "Q4: Integration testing and rollout to enterprise customers."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive audit of the current customer self-service tools and prioritize UX/UI improvements for retention.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a dedicated talent scouting program focused on acquiring one mid-level specialist in ML Ops or Compliance Engineering to stabilize the tech team.",
+        "owner": "CEO/Founder",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe talent bottleneck and lack of dedicated R&D personnel due to micro-team structure.",
+      "High operational risk stemming from the owner-alone decision-making model which limits cross-functional innovation speed.",
+      "Tight cash runway (4% budget) that makes long-term, high-CAPEX radical projects financially unviable.",
+      "Dependence on legacy system maintenance rather than proactive feature development."
+    ]
+  }
+}

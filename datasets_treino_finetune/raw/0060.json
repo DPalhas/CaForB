@@ -3,120 +3,149 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Information Technology",
-    "size": "Medium",
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "diversification",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:15:35.893449+00:00",
-    "duration_ms": 41246,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:54:30.268852+00:00",
+    "duration_ms": 29305,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.272581+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Data Analytics",
-      "sector": "Information Technology",
-      "size": "Medium"
+      "name": "Lumina Dynamics",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro",
+      "companyName": "Lumina Dynamics"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "Apex Data Analytics is a mid-sized IT firm specializing in providing tailored data visualization and consulting services to various B2B clients. The company focuses primarily on improving operational efficiency for existing enterprise clients through bespoke software integrations.",
+      "companyDescription": "Lumina Dynamics is a specialty coffee and gourmet food retailer operating six physical locations, underpinned by an e-commerce channel. The company focuses on high-margin, artisanal products, maintaining in-house roasting capabilities and curating over 200 unique items to serve discerning urban customers. Currently, the core challenge lies in scaling operational efficiency and building a robust subscription loyalty framework.",
       "innovationProcess": "formal",
-      "pastInitiatives": "We have successfully implemented several incremental updates to our proprietary reporting dashboards, focusing on internal process improvements. We also recently piloted a small-scale expansion into a niche AI-driven predictive maintenance tool for manufacturing partners.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is strategic diversification by entering adjacent data analytics markets and developing new product lines outside our core consulting services. We aim to establish presence in the FinTech integration space over the next three years.",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through structured quarterly hackathons and a formal patent portfolio management system. We also utilize a rotating 'innovation fellow' program to dedicate high-potential employees to exploratory projects, demonstrating a commitment to continuous learning and process improvement.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are heavily dependent on our top three product categories and concentrated customer base, creating significant revenue vulnerability. Our primary goal is aggressive diversification by identifying adjacent market segments—including new wholesale partners or entirely new private-label food lines—to reduce single-source risk.",
       "strategicPriority": "diversification",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The team consists of 8 full-time employees, highly skilled in data science and cloud infrastructure management.",
       "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 4,
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 3,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "time",
         "budget",
-        "talent"
+        "talent",
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "high",
+      "additionalContext": "Operating in a high-pressure specialty food market requires constant adaptation to evolving sourcing costs and consumer trends. The current lean structure means innovation relies heavily on maximizing the output of existing operational staff.",
+      "companyName": "Lumina Dynamics",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
     }
   },
   "output": {
-    "maturity_score": 3.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Service Line Expansion (Niche Integration)",
-        "rationale": "Leveraging our existing talent and formal process, we can incrementally expand into a specific vertical like FinTech integration. This is lower risk as it builds on current technical expertise.",
+        "title": "Product Portfolio Diversification (Niche Expansion)",
+        "rationale": "Given the conservative risk profile and low budget, incremental diversification is safer. This involves launching a small capsule of hyper-niche, regionally sourced artisanal products that appeal to an adjacent customer segment without requiring massive capital or operational overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Identify three high-potential FinTech partners for pilot projects.",
-            "Develop a standardized 'FinTech Readiness' service package scope."
+            "Identify 3 underrepresented product niches (e.g., specific regional coffee roasts).",
+            "Develop a pilot line for the niche with minimal inventory commitment.",
+            "Test pricing and marketing messaging on existing e-commerce channels."
           ],
           "resources_needed": [
-            "2 dedicated consultant hours per month",
-            "SaaS subscription for specialized financial data APIs (approx. $1,500/year)"
+            "Small marketing budget ($5k)",
+            "Time allocation from 1 developer (4 hours/week)"
           ],
-          "success_metric": "Secure two paying pilot contracts within 6 months.",
+          "success_metric": "Achieve 10% of new revenue from the pilot line within Q3.",
           "milestones": [
-            "Q3: Finalize service blueprint and pricing model.",
-            "Q4: Launch first FinTech integration project."
+            "Finalize niche sourcing and contract by Month 2",
+            "Launch and gather feedback on pilot line (Month 4)",
+            "Scale to 5% of total sales in Month 6"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "6-9 months"
+        "timeframe": "6 Months"
       },
       {
-        "type": "radical",
-        "title": "AI-Driven Micro-SaaS Tool Development",
-        "rationale": "To achieve true diversification, we can build a small, focused software tool solving a specific pain point in the market. While high risk, keeping the scope highly narrow allows for controlled testing within our conservative budget.",
+        "type": "incremental",
+        "title": "B2B Wholesale Subscription Service (Diversification)",
+        "rationale": "To mitigate customer concentration risk, the company should explore a bold shift into B2B wholesale. This involves creating a curated 'Office Coffee' or 'Gourmet Pantry' subscription model specifically targeting small offices and boutique hospitality venues, leveraging existing inventory expertise.",
         "execution_plan": {
           "first_actions": [
-            "Conduct market validation interviews with 100 potential users.",
-            "Define Minimum Viable Product (MVP) features."
+            "Develop a tiered B2B wholesale catalog focused on recurring office/cafe needs.",
+            "Identify 5 potential anchor B2B partners for pilot contracts.",
+            "Establish the minimum viable subscription fulfillment process."
           ],
           "resources_needed": [
-            "Contract a freelance AI/ML developer for MVP build ($5,000 - $8,000)",
-            "Internal time allocation: 10 hours per week from one senior engineer."
+            "Legal review consultation ($10k)",
+            "Time from small leadership team (dedicated project oversight)"
           ],
-          "success_metric": "Achieve 50 active beta users within the first quarter.",
+          "success_metric": "Secure 3 recurring B2B wholesale contracts representing $5,000 MRR within the first year.",
           "milestones": [
-            "Month 2: Functional MVP launched internally.",
-            "Month 4: Public launch and initial revenue generation."
+            "Finalize wholesale packaging and pricing structure (Month 3)",
+            "Onboard first 3 anchor clients and launch pilot service (Month 6)",
+            "Establish self-service ordering portal for B2B customers (Month 9)"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "12-18 months"
+        "timeframe": "12 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Optimized E-commerce Conversion Flow",
+        "rationale": "Leveraging existing digital maturity (3), the company should focus on incremental improvements to its e-commerce site. This includes simple UI/UX changes and targeted SEO that utilizes basic data analytics to improve conversion rates without requiring complex new technology.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct A/B testing on top 5 product pages' layouts.",
+            "Implement improved mobile responsiveness checks across all devices.",
+            "Improve checkout abandonment rate by targeting friction points identified in customer research."
+          ],
+          "resources_needed": [
+            "Freelance UI/UX consultant retainer ($7k)",
+            "Time allocation from 2 generalist developers (10 hours total)"
+          ],
+          "success_metric": "Increase e-commerce conversion rate by 8% within six months.",
+          "milestones": [
+            "Complete UX audit and wireframing (Month 2)",
+            "Implement A/B tests on top 5 pages (Month 4)",
+            "Analyze data and implement winning changes company-wide (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a small task force to define the top three diversification targets (e.g., FinTech, Healthtech).",
-        "owner": "CEO/Strategy Lead",
-        "timeframe": "Within 2 weeks"
+        "action": "Conduct a deep dive feasibility study on the B2B wholesale subscription model.",
+        "owner": "Small Leadership Team/Founder",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Audit current internal talent capabilities against identified future needs and prioritize upskilling for the next 12 months.",
-        "owner": "HR Manager",
-        "timeframe": "End of Month 1"
-      },
-      {
-        "action": "Develop a detailed cost-benefit analysis comparing incremental expansion costs vs. radical tool development risks.",
-        "owner": "Innovation Committee",
-        "timeframe": "Within 4 weeks"
+        "action": "Assign one generalist developer to lead the UX optimization initiative and schedule consultant onboarding.",
+        "owner": "Head of Operations/Ops Lead",
+        "timeframe": "Within 1 week"
       }
     ],
     "key_weaknesses": [
-      "Dependency on key senior technical talent for critical projects.",
-      "Limited institutional knowledge outside of current core service offerings.",
-      "Slow internal bureaucracy hindering rapid prototyping and testing cycles."
+      "Severe capital constraint (3% budget) limiting scaling potential.",
+      "Lack of dedicated, specialized R&D talent within the core team.",
+      "Time scarcity forcing innovation to occur only during non-operational cycles.",
+      "High dependence on a single product category and concentrated customer base."
     ]
   }
 }

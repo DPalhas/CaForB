@@ -1,0 +1,121 @@
+{
+  "id": "0268",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:53:03.751121+00:00",
+    "duration_ms": 20084,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Beacon Innovations",
+      "sector": "Legal Services",
+      "size": "Micro",
+      "companyName": "Beacon Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "LegalTech startup providing an AI-powered contract lifecycle management platform for SME legal departments. Automating contract review, clause extraction, obligation tracking, and renewal management. 150 customers across Europe. Expanding into regulatory change monitoring with automated contract impact analysis.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. This failure highlighted that we prioritized feature development over validating the core user pain points related to regulatory compliance.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 7,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The company currently relies heavily on manual data entry for regulatory tracking, which is highly prone to human error and compliance risks. There are significant internal challenges in standardizing legal documentation across different European jurisdictions.",
+      "companyName": "Beacon Innovations",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Regulatory Compliance Deepening (High-Margin Niche Focus)",
+        "rationale": "Given the high regulatory environment and micro size, focusing innovation on highly specialized compliance modules for specific industries (e.g., FinTech or BioTech contracts) can create defensible moats that competitors cannot easily replicate.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a deep dive into the top three high-margin, complex regulatory niches currently underserved.",
+            "Allocate 10% of the remaining budget to feature development for this niche specialization."
+          ],
+          "resources_needed": [
+            "Contract/Regulatory specialist consultation (part-time)",
+            "Time investment from founder for market validation."
+          ],
+          "success_metric": "Increase average contract value (ACV) by 15% in the target niche within Q4.",
+          "milestones": [
+            "Identify and secure partnership with one high-value industry regulator/consultant by Month 3.",
+            "Launch MVP feature specifically addressing complex clause extraction for the chosen niche by Month 6."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Autonomous Regulatory Monitoring Engine (AI)",
+        "rationale": "Develop a radical capability to move beyond passive tracking into predictive contract impact analysis, where the AI proactively flags potential regulatory changes and automatically suggests required contractual amendments.",
+        "execution_plan": {
+          "first_actions": [
+            "Proof-of-concept using existing NLP models on unstructured legal texts within 3 months.",
+            "Identify a single, high-risk regulatory area (e.g., GDPR updates) for the initial radical feature."
+          ],
+          "resources_needed": [
+            "Investment in specialized ML/AI contractor or low-code platform license.",
+            "Increased budget allocation (up to 30% of remaining funds)."
+          ],
+          "success_metric": "Achieve 90% accuracy in flagging relevant regulatory changes and generating amendment suggestions within a test set.",
+          "milestones": [
+            "Complete POC for the predictive monitoring engine by Month 4.",
+            "Secure initial pilot program with 5 European SME clients utilizing the autonomous alerts by Month 8."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the innovation process by defining clear, low-cost validation loops for all new feature requests.",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a focused pilot program targeting one high-margin regulatory niche to validate the incremental specialization opportunity.",
+        "owner": "Product Lead",
+        "timeframe": "End of Q2"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme resource constraint (7% budget) limits investment in necessary talent and high-compute AI infrastructure.",
+      "Informal innovation process leads to inconsistent feature prioritization and poor ROI tracking.",
+      "High dependency on the founder's personal bandwidth creates a single point of failure for strategic execution.",
+      "Low digital maturity prevents effective utilization of advanced platform capabilities (e.g., scalable self-service)."
+    ]
+  }
+}

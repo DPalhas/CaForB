@@ -1,0 +1,147 @@
+{
+  "id": "0139",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:44:28.427144+00:00",
+    "duration_ms": 23247,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.300518+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan.co",
+      "sector": "Transportation & Logistics",
+      "size": "Micro",
+      "companyName": "Titan.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Titan.co is a micro-freight forwarding and customs brokerage firm specializing in complex sea, air, and road shipments for SMEs operating internationally. The company currently manages approximately 300 customs declarations monthly across various trade corridors, facing significant regulatory hurdles related to compliance and documentation accuracy.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year aimed at improving internal workflow efficiency, but adoption was inconsistent across teams due to lack of training and integration friction. We ultimately reverted to spreadsheets and email for most tracking, confirming that structured change management is required before any digital adoption can succeed.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative but constrained by market saturation in traditional brokerage services. We are actively exploring adjacent business models to drive growth, specifically focusing on creating a subscription-based compliance service layer or a localized data monetization play derived from our proprietary trade flow information.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company is in the final stages of being acquired by a larger international group, which provides a future pathway for technology investment. In the interim, operations are focused on maintaining compliance while preparing internal systems for post-acquisition modernization.",
+      "companyName": "Titan.co",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Subscription Compliance Layer (Data Monetization)",
+        "rationale": "Leveraging the proprietary customs data collected across trade corridors could allow Titan.co to transition from a transactional brokerage model to a recurring SaaS service. This diversification reduces dependency on fluctuating freight volumes and positions the company for higher margins.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 key trade corridors with high data density.",
+            "Develop an MVP pricing tier based on document classification services.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Freelance regulatory consultant (approx. $1,000)",
+            "Time allocation: 5 hours/week from owner."
+          ],
+          "success_metric": "Secure 3 paying pilot clients for the subscription service within 6 months.",
+          "milestones": [
+            "Market validation and pricing structure defined (Month 1-2)",
+            "Launch Beta version of document classification tool (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Document Classification Flow",
+        "rationale": "Implementing a standardized, low-cost automated system for classifying incoming customs documents will reduce manual processing errors and turnaround times. This directly addresses the primary operational bottleneck identified in customer feedback.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out the 5 most common document types causing delays.",
+            "Investigate low-code automation platforms (e.g., Zapier integration).",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Subscription to a basic workflow automation tool ($100/year)",
+            "Internal time for process mapping."
+          ],
+          "success_metric": "Reduce average processing time per declaration by 25% within Q3.",
+          "milestones": [
+            "Identify and implement the top 3 document workflows (Month 1-3)",
+            "Full automation of internal routing protocols (Month 4-6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Localized SME Market Expansion Pilot",
+        "rationale": "Given the micro structure, exploring a new, high-growth geographical region (e.g., specific trade hub in Southeast Asia) allows for controlled market diversification without major capital outlay.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct targeted informal interviews with 50 potential SME clients in the target region.",
+            "Establish minimal cross-border partnership framework.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Travel/communication costs for initial field research ($500)",
+            "Owner time commitment to relationship building."
+          ],
+          "success_metric": "Secure 1 formal B2B contract in the new region within 9 months.",
+          "milestones": [
+            "Market entry feasibility study complete (Month 3)",
+            "First international SME partnership signed (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9-12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the subscription service business case and initial technical requirements.",
+        "owner": "Founder/Owner",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Begin process mapping for document classification automation MVP (incremental win).",
+        "owner": "Operations Lead (Founder)",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal digital infrastructure and low technological maturity (Maturity Level 1).",
+      "Informal decision-making process leading to inconsistent adoption of initiatives.",
+      "Reliance on a single founder for all technical and operational decisions, creating extreme bandwidth constraints.",
+      "Struggling with formalized change management processes required for scaling pilot programs."
+    ]
+  }
+}

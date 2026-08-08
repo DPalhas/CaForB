@@ -1,0 +1,126 @@
+{
+  "id": "0243",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:32:13.153287+00:00",
+    "duration_ms": 21696,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan Partners",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Small",
+      "companyName": "Titan Partners"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Titan Partners is a family-owned mixed-crop farm specializing in high-quality cereals, seasonal vegetables, and specialty olives sold through regional domestic wholesale channels. The company is currently investing heavily in precision agriculture technologies to achieve significant gains in water efficiency and reduce environmental chemical runoff while maintaining food safety standards.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The digital transformation program has focused on establishing modern operational foundations, including a cloud-based ERP migration and a comprehensive data warehouse. They have successfully implemented self-service BI dashboards and established a center of excellence for process automation using RPA tools, resulting in demonstrable annualized cost savings.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior; therefore, we cannot rely on incremental improvements to our legacy commodity business. We must identify entirely new value propositions that leverage our established brand trust, operational capabilities, or specific agronomic expertise in adjacent markets where demand is growing.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 7,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity, requiring innovation initiatives to be tightly sequenced around this mandatory work.",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "companyName": "Titan Partners"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Niche High-Value Crop Processing Line",
+        "rationale": "Leverage existing operational assets to create a small processing unit for specialty olives or unique heirloom vegetables that command higher margins in gourmet markets. This requires minimal fundamental process change and utilizes current production capacity.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market feasibility study for three high-value crop derivatives.",
+            "Pilot a small batch processing line integration (low-code/off-the-shelf solutions).",
+            "Assess required packaging and certification costs."
+          ],
+          "resources_needed": [
+            "Seed capital ($15,000)",
+            "Consultant fee for market analysis ($3,000)",
+            "Internal operational staff time (20 hours)"
+          ],
+          "success_metric": "Achieve 15% margin increase on pilot product within 6 months.",
+          "milestones": [
+            "Market validation complete (Month 2).",
+            "Pilot production run successful (Month 4).",
+            "Scale assessment and decision to proceed (Month 6)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Agronomic Data-as-a-Service Platform (Diversification)",
+        "rationale": "Develop and launch a subscription service offering anonymized precision farming data insights to neighboring small farms or commercial entities. This moves the company from being just a producer to being an advisory technology provider, capturing new revenue streams outside traditional crop sales.",
+        "execution_plan": {
+          "first_actions": [
+            "Define Minimum Viable Product (MVP) data package based on existing BI warehouse capabilities.",
+            "Establish secure API access protocols for external users.",
+            "Develop a simple subscription pricing model."
+          ],
+          "resources_needed": [
+            "Dedicated engineering time (2 staff FTE)",
+            "Cloud infrastructure scaling costs ($10,000 initial setup)",
+            "Legal consultation on data privacy compliance."
+          ],
+          "success_metric": "Onboard 3 paying external users within the first year.",
+          "milestones": [
+            "MVP feature set complete (Month 4).",
+            "Beta launch with 5 pilot users (Month 7).",
+            "Launch paid subscription service (Month 10)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate a dedicated 'Diversification Task Force' to map potential adjacent markets.",
+        "owner": "CTO / CEO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Schedule deep-dive review on integrating the new cloud infrastructure requirements with innovation pipeline sequencing.",
+        "owner": "COO",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Ad-hoc system integration between existing digital tools hinders rapid scaling of innovative ideas.",
+      "Limited dedicated time for innovation bets due to high commitment to mandatory ERP migration and core operations.",
+      "Culture resistance or inertia regarding adopting new, non-legacy business models required for diversification.",
+      "Over-reliance on a small leadership team may struggle with the complexity of balancing short-term operational needs against long-term radical growth."
+    ]
+  }
+}

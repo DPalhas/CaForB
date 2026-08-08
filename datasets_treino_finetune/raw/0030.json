@@ -3,122 +3,144 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Healthcare & Medical",
+    "size": "Large",
     "regulatory_environment": "medium",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:00:02.801246+00:00",
-    "duration_ms": 19617,
+    "generated_at": "2026-08-03T17:40:27.110543+00:00",
+    "duration_ms": 25604,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Catalyst.io",
+      "sector": "Healthcare & Medical",
+      "size": "Large",
+      "companyName": "Catalyst.io"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "This medium-sized manufacturer specializes in producing custom electronic components for the automotive supply chain. They operate with moderate regulatory oversight concerning quality standards and environmental compliance.",
+      "companyDescription": "Catalyst.io operates a large diagnostic imaging center network with 12 locations, providing advanced services including MRI, CT, ultrasound, and X-ray. They process approximately 80,000 exams annually and utilize a remote team of 25 radiologists for subspecialty consultations. The company is currently focused on integrating AI detection tools, such as those for mammography and lung nodule analysis, into existing radiologist-in-the-loop workflows.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company has recently implemented minor automation in their assembly line and updated inventory management software to reduce stockouts by 15%. However, large-scale R&D projects remain sporadic due to resource constraints.",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to significantly improve operational efficiency, specifically targeting a 20% reduction in production lead times and lowering material waste by optimizing the supply chain.",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of five engineers and a lean operations manager, providing focused but limited resources for large-scale changes.",
-      "digitalMaturity": 2,
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "owner_alone",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "process",
-        "talent",
-        "time",
-        "culture"
+        "strategy",
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "Competitors are increasingly leveraging AI-driven predictive maintenance, forcing this company to urgently review its operational processes."
+      "competitivePressure": "high",
+      "additionalContext": "Catalyst.io faces intense competition from both regional hospital systems and specialized AI startups targeting diagnostic speed and cost reduction.",
+      "companyName": "Catalyst.io",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 6.8,
     "opportunities": [
       {
-        "type": "incremental",
-        "title": "Implement Predictive Maintenance System (PdM)",
-        "rationale": "By deploying IoT sensors on key machinery and using machine learning models to predict failures, the company can transition from reactive maintenance to proactive scheduling. This directly addresses efficiency by minimizing unplanned downtime.",
+        "type": "radical",
+        "title": "Predictive Resource Allocation Engine (PRAE)",
+        "rationale": "Implement an AI-driven system to predict exam volume and resource needs at each of the 12 locations, allowing for dynamic scheduling and preventative maintenance. This radical shift addresses core efficiency by eliminating idle staff time and optimizing equipment utilization proactively.",
         "execution_plan": {
           "first_actions": [
-            "Pilot sensor installation on three critical CNC machines.",
-            "Identify and train two internal data analysts for ML model monitoring."
+            "Pilot PRAE in two geographically diverse locations.",
+            "Establish data pipeline integration between imaging modalities (PACS) and the new engine."
           ],
           "resources_needed": [
-            "IoT hardware setup ($15k)",
-            "Consultant for initial ML algorithm training ($20k)"
+            "Data science team augmentation",
+            "Cloud infrastructure upgrades for ML processing"
           ],
-          "success_metric": "Reduction in unplanned downtime by 30% within six months.",
+          "success_metric": "Reduction in non-billable labor hours by 10% within 18 months.",
           "milestones": [
-            "Q1: Sensor deployment and data collection complete.",
-            "Q2: PdM model validation and integration into maintenance workflow."
+            "Q1: PRAE pilot completion and baseline operational metrics established.",
+            "Q3: Full rollout planning based on pilot ROI."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "6-9 months"
+        "timeframe": "2-3 years"
       },
       {
-        "type": "radical",
-        "title": "Adopt Additive Manufacturing for Tooling/Prototyping",
-        "rationale": "Shifting from traditional subtractive manufacturing methods for low-volume, high-complexity parts to 3D printing could drastically reduce material waste and shorten the design-to-production cycle. This is a radical move that fundamentally changes production speed.",
+        "type": "incremental",
+        "title": "Intelligent Workflow Automation (IWA)",
+        "rationale": "Use Robotic Process Automation (RPA) and natural language processing to automate repetitive tasks in the invoicing, billing reconciliation, and patient intake workflows. This incremental approach targets immediate OpEx reduction by minimizing manual data entry errors and speeding up cycle times.",
         "execution_plan": {
           "first_actions": [
-            "Conduct feasibility study on adopting industrial polymer AM technology.",
-            "Identify one high-waste component type for immediate prototyping."
+            "Identify top 3 high-volume/high-error manual processes.",
+            "Invest in RPA software licensing for core administrative tasks."
           ],
           "resources_needed": [
-            "Investment in industrial 3D printer and material feedstock ($50k)",
-            "Internal training program development budget ($10k)"
+            "IT project management support",
+            "RPA vendor contract and implementation services"
           ],
-          "success_metric": "30% reduction in raw material waste for prototyped components.",
+          "success_metric": "30% reduction in invoice processing cycle time; 15% decrease in manual data entry errors.",
           "milestones": [
-            "Q1: Feasibility study completion and supplier vetting.",
-            "Q3: Successful prototype production run utilizing AM."
+            "Q2: Implementation of IWA for invoicing workflow.",
+            "Q4: Expansion of automation to patient intake forms."
           ]
         },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "12 months"
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1-2 years"
+      },
+      {
+        "type": "incremental",
+        "title": "AI Triage and Prioritization Layer",
+        "rationale": "Integrate AI models not just for detection (mammography/lung nodules) but also for intelligent pre-triage of incoming studies, flagging urgent cases that require immediate radiologist review to improve patient throughput.",
+        "execution_plan": {
+          "first_actions": [
+            "Train existing radiology team on new triage prioritization protocols.",
+            "Integrate AI model outputs directly into the PACS worklist interface."
+          ],
+          "resources_needed": [
+            "AI/ML model retraining budget",
+            "Internal training and change management resources"
+          ],
+          "success_metric": "Increase in urgent case throughput by 15% while maintaining quality standards.",
+          "milestones": [
+            "Q2: Internal validation of triage model accuracy against expert reads.",
+            "Q4: Full integration into the clinical workflow."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "1.5 years"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a detailed operational waste audit across all production lines.",
-        "owner": "Operations Manager",
-        "timeframe": "Within 3 weeks"
+        "action": "Establish a dedicated cross-functional steering committee focused solely on AI efficiency ROI.",
+        "owner": "Chief Strategy Officer (CSO)",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Form a cross-functional task force to assess the feasibility and budget for implementing PdM technology.",
-        "owner": "VP of Engineering",
+        "action": "Develop detailed business cases and budget allocations for the Predictive Resource Allocation Engine (PRAE) pilot.",
+        "owner": "Innovation VP",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Initiate a comprehensive gap analysis between current operational processes and desired digital maturity levels.",
+        "owner": "COO",
         "timeframe": "Within 6 weeks"
-      },
-      {
-        "action": "Initiate a pilot project focusing on process bottleneck reduction using current internal resources.",
-        "owner": "Process Improvement Lead",
-        "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "Fragmented data silos hindering comprehensive process visibility.",
-      "High reliance on specialized, expensive technical talent for maintenance and optimization tasks.",
-      "Adoption of legacy software systems that limit real-time decision-making.",
-      "Culture resistance to adopting new, automated workflows."
+      "Organizational inertia stemming from the formal stage-gate decision-making process, which can slow down agile efficiency initiatives.",
+      "High dependency on senior executive sponsorship for aligning disparate divisions, leading to potential bottlenecks in cross-functional project execution.",
+      "Partial innovation process structure creates silos between R&D and operational implementation, hindering rapid feedback loops necessary for high digital maturity progression."
     ]
   }
 }

@@ -1,0 +1,152 @@
+{
+  "id": "0348",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:34:17.578877+00:00",
+    "duration_ms": 26088,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.374626+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Atlas Group",
+      "sector": "Insurance",
+      "size": "Large",
+      "companyName": "Atlas Group"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Atlas Group is a large insurance brokerage firm that provides comprehensive risk management programs for corporate clients, handling complex lines such as property, casualty, cyber, and D&O. With 35 brokers managing significant premiums, the firm operates under stringent state and federal regulations requiring meticulous compliance and sophisticated underwriting practices.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The increasing complexity of cyber liability and climate risk mandates rapid technological adaptation, while the regulatory environment demands near-perfect audit trails for all client data. Atlas Group must balance this need for rigorous compliance with the urgent operational pressure to streamline service delivery.",
+      "companyName": "Atlas Group",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation & Digitization (Low Hanging Fruit)",
+        "rationale": "Implementing RPA and workflow automation tools to handle routine data entry and compliance checks will immediately address the current operational throughput bottlenecks. This provides rapid, measurable efficiency gains within existing systems.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot RPA tool integration for claims intake documentation.",
+            "Identify top 3 high-volume manual tasks for automation scope definition.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Specialized automation consultant fees ($50k)",
+            "Internal IT resource reallocation (2 FTE equivalent)"
+          ],
+          "success_metric": "Reduction in claims processing cycle time by 15% within 6 months.",
+          "milestones": [
+            "Q3: RPA pilot success and ROI validation.",
+            "Q4: Full departmental integration of automated workflows."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Dynamic Risk Underwriting Platform (Bold)",
+        "rationale": "Develop a proprietary AI engine that uses machine learning to dynamically model and price client risk exposure in real-time, moving beyond static benchmarking. This radical shift will fundamentally change how Atlas Group assesses liability and pricing structures.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish core data science team focused solely on predictive modeling.",
+            "Secure seed funding for external ML vendor partnership.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data scientist salaries ($150k/year)",
+            "Cloud infrastructure investment ($200k)"
+          ],
+          "success_metric": "Achieve 3% increase in underwriting profit margin through dynamic pricing within 2 years.",
+          "milestones": [
+            "Year 1: MVP launch with internal validation.",
+            "Year 2: Commercial deployment and integration into core systems."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Client Self-Service Risk Reporting Portal",
+        "rationale": "Create a dedicated portal where clients can access standardized risk metrics and compliance documents, reducing the volume of ad-hoc requests to the broker team. This improves client satisfaction while freeing up high-value personnel.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing documentation repository for standardization gaps.",
+            "Design UX/UI flow for simplified compliance document retrieval."
+          ],
+          "resources_needed": [
+            "UX/UI design firm retainer ($40k)",
+            "Internal development resources (1 FTE)"
+          ],
+          "success_metric": "30% reduction in support tickets related to documentation requests.",
+          "milestones": [
+            "Q3: Beta launch with 5 key corporate clients.",
+            "Q4: Full rollout across all client segments."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated cross-functional task force to prioritize and budget the workflow automation roadmap.",
+        "owner": "Chief Operations Officer (COO)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate discovery phase for AI/ML underwriting capabilities, defining data requirements and potential partnerships.",
+        "owner": "Head of Innovation",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Conduct a cultural assessment survey to identify friction points in the partial innovation process that hinder cross-departmental adoption.",
+        "owner": "HR Director",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High organizational inertia and resistance to change, particularly concerning legacy system integration.",
+      "Partial innovation process causing bottlenecks between idea generation and formal execution/funding.",
+      "Budget constraints (9%) limiting the scale and breadth of necessary investments required for a radical digital transformation.",
+      "Risk management complexity inherent in operating within a high regulatory environment, increasing operational friction."
+    ]
+  }
+}

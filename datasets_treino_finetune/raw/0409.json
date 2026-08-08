@@ -1,0 +1,124 @@
+{
+  "id": "0409",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:02:15.444223+00:00",
+    "duration_ms": 22565,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Industries",
+      "sector": "Nonprofit / NGO",
+      "size": "Medium",
+      "companyName": "Nova Industries"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "As a leading environmental conservation foundation, Nova Industries operates in a sector characterized by high public scrutiny and complex grant compliance. The organization manages 15 protected areas and habitat restoration projects, requiring meticulous attention to scientific methodology while navigating evolving government regulations regarding land use and biodiversity reporting.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to improve donor engagement efficiency.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from two well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base by reducing churn, strengthening switching costs through personalized scientific reporting, and matching the digital transparency our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "While the core mission is non-profit, Nova Industries relies heavily on donor trust and demonstrating measurable impact, making efficiency improvements directly tied to perceived organizational effectiveness.",
+      "companyName": "Nova Industries",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Donor Retention Platform",
+        "rationale": "Given the high competitive pressure and medium digital maturity, developing a personalized donor dashboard can significantly increase switching costs for large institutional funders. This incremental step leverages existing CRM infrastructure to provide 'proof of impact' specific to each funder's interests.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct user interviews with key donor segments (institutional vs individual)",
+            "Pilot a modular dashboard design using current CRM data points",
+            "Identify integration gap between core ERP and marketing automation for personalized content delivery"
+          ],
+          "resources_needed": [
+            "1 FTE UX/UI specialist for reporting visualization",
+            "Subscription to advanced donor analytics tool (e.g., Salesforce extension)",
+            "Internal training module development budget"
+          ],
+          "success_metric": "Increase in Donor Retention Rate by 5% within 12 months.",
+          "milestones": [
+            "Q1: Finalize MVP requirements and technical architecture",
+            "Q2: Beta launch with top 10 institutional donors",
+            "Q4: Full integration into standard donor communications workflow"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Deforestation Modeling",
+        "rationale": "To decisively defend market leadership, Nova Industries should move beyond descriptive monitoring (what is happening) to predictive modeling (what will happen). Implementing advanced satellite imagery analysis and machine learning can identify high-risk degradation zones weeks in advance.",
+        "execution_plan": {
+          "first_actions": [
+            "Partner with a specialized geospatial data provider",
+            "Establish a dedicated ML data science pipeline focusing on species identification accuracy",
+            "Develop proof-of-concept model to predict fire risk based on historical climate and land use variables"
+          ],
+          "resources_needed": [
+            "1 Senior Data Scientist FTE (contract or internal shift)",
+            "Cloud computing resources for intensive geospatial processing",
+            "Data licensing fees for high-resolution satellite imagery"
+          ],
+          "success_metric": "Reduction in undetected habitat loss incidents by 20% within 3 years.",
+          "milestones": [
+            "Q1: Data pipeline establishment and initial model training set creation",
+            "Q3: Successful field validation of predictive accuracy against known degradation sites",
+            "Q4: Full deployment into the operational monitoring workflow"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize a dedicated 'Customer Retention' sprint team focused solely on the donor platform MVP.",
+        "owner": "Director of Innovation",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a talent pipeline program targeting specialized ML and geospatial data analytics skills through NGO partnerships or university collaborations.",
+        "owner": "Head of HR",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow innovation process velocity due to varied decision-making frameworks across business units.",
+      "High dependency on grant cycles which constrains long-term strategic investment and steady R&D funding.",
+      "Limited integration between core operational systems (ERP, CRM) leading to data silos hindering holistic impact reporting."
+    ]
+  }
+}

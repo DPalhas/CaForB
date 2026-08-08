@@ -1,0 +1,133 @@
+{
+  "id": "0483",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:25:11.815818+00:00",
+    "duration_ms": 26469,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.423070+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Strato Systems",
+      "sector": "Manufacturing",
+      "size": "Medium",
+      "companyName": "Strato Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Strato Systems is a custom furniture manufacturer crafting solid wood pieces for high-end hospitality and residential projects. They utilize sophisticated CNC routing for repetitive components alongside traditional joinery techniques for premium finishing, focusing on quality craftsmanship.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company's digital transformation program has been active for three years under a dedicated office focused on operational efficiency. Significant achievements include migrating the ERP system to the cloud and implementing an RPA/low-code center of excellence, resulting in $2.4M in annualized cost savings.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth through aggressive market share capture and expansion into adjacent customer segments. The immediate focus is determining the optimal strategy: deepening vertical specialization or broadening horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "teamSize": "The R&D function comprises 10-12 engineers split between core product innovation and exploratory prototyping, supported by two dedicated data engineers.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Strato Systems faces intense competition from both high-volume commodity producers and bespoke artisan firms. The current operational structure struggles to keep pace with the rapid demand for sustainable, highly customized interiors in the hospitality sector.",
+      "companyName": "Strato Systems"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimized Modular Component Library",
+        "rationale": "Leveraging existing CNC capabilities to develop a standardized library of modular structural components that can be rapidly configured for various hospitality and residential projects. This addresses lead time concerns without requiring full re-tooling.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current 20 core component designs for standardization potential",
+            "Pilot 3 new modular assembly jigs in the existing facility",
+            "Complete preliminary CAD modeling for 5 key standardized components"
+          ],
+          "resources_needed": [
+            "$15,000 for specialized tooling and software licenses",
+            "2 dedicated engineering hours/week from R&D team",
+            "Internal process mapping specialist time"
+          ],
+          "success_metric": "Reduce average custom project assembly time by 1.5 weeks within Q3.",
+          "milestones": [
+            "Q1: Component standardization framework finalized",
+            "Q2: Pilot program successfully deployed and data collected",
+            "End of Q3: Initial cost-benefit analysis complete for scale"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Advanced Sustainable Material Prototyping (Bio-Resin)",
+        "rationale": "Develop a radical new product line using bio-resins and advanced composite materials that offer superior structural integrity and sustainability compared to traditional solid wood. This capitalizes on the high regulatory environment by positioning the company as an early adopter of green manufacturing.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish partnership with a university research lab for material testing",
+            "Allocate $50,000 for specialized bio-resin tooling and pilot batch production",
+            "Form a cross-functional 'Sustainability Task Force' led by the transformation office",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "$75,000 capital expenditure (CapEx)",
+            "External material science consultants ($30k)",
+            "Dedicated pilot manufacturing line time"
+          ],
+          "success_metric": "Launch 1 fully sustainable product prototype with positive customer feedback score > 4/5.",
+          "milestones": [
+            "Q2: Material viability testing and safety certification",
+            "Q3: Successful small-scale production run (10 units)",
+            "End of Q4: Initial market penetration testing for new materials"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a rapid internal assessment of existing component modularity and identify the top 3 highest-impact incremental improvements.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a preliminary business case for the radical sustainable material initiative, focusing on ROI against long-term regulatory compliance and market differentiation.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish a dedicated inter-departmental task force to streamline cross-functional communication bottlenecks between R&D, operations, and the transformation office.",
+        "owner": "CEO/COO",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on informal decision-making despite a formal process structure, leading to execution velocity inconsistencies.",
+      "Budget constraints limit the ability to pursue high-CAPEX radical innovations without significant external funding or strategic partnerships.",
+      "Digital infrastructure silos and lack of seamless integration between ERP/CRM systems hinder data-driven design iteration.",
+      "Slow internal bureaucracy in moving from formal R&D concept approval to pilot testing."
+    ]
+  }
+}

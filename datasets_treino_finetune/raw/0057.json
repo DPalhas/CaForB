@@ -3,143 +3,146 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Information Technology",
-    "size": "Medium",
+    "sector": "Hospitality & Tourism",
+    "size": "Small",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:13:18.318904+00:00",
-    "duration_ms": 22414,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:53:06.384273+00:00",
+    "duration_ms": 55272,
+    "attempts": 2
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "SaaS InnovateFlow Solutions",
-      "sector": "Information Technology",
-      "size": "Medium"
+      "name": "Catalyst",
+      "sector": "Hospitality & Tourism",
+      "size": "Small",
+      "companyName": "Catalyst"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "SaaS InnovateFlow Solutions develops cloud-based workflow automation tools tailored for mid-sized enterprises in the professional services sector. The company focuses on providing scalable, efficient solutions to streamline internal processes like project management and client reporting.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "They recently launched a modular feature update based on direct customer requests to improve user adoption metrics and invested moderately in refining their core platform architecture.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is maintaining market share against larger competitors by focusing on deep integration capabilities. We aim to solidify our position as the most reliable workflow automation partner.",
+      "companyDescription": "Catalyst is an adventure tourism operator specializing in guided hiking, canyoning, and rock climbing experiences across 3 national parks. They manage a high volume of activities with 25 certified guides leading approximately 4,000 clients annually. The company operates from several dispersed locations requiring robust coordination for booking, safety waivers, and guide scheduling.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core team consists of 8 highly skilled engineers and product managers, operating in a collaborative small leadership team structure.",
-      "digitalMaturity": "4",
+      "digitalMaturity": "1",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 12,
+      "budgetPercentage": 9,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "talent",
+        "budget",
         "process",
-        "time"
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "As local regulations remain straightforward, the primary competitive pressure comes from optimizing operational efficiency and ensuring a superior guest experience via technology. We face seasonal demand spikes which currently stress our informal processes.",
+      "companyName": "Catalyst",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "AI-Driven Predictive Analytics Module",
-        "rationale": "Integrating predictive analytics into the workflow engine will allow us to move from reactive task management to proactive risk identification for clients, enhancing retention and defense against feature parity with larger competitors.",
+        "title": "Streamlined Self-Service Booking Portal (Quick Win)",
+        "rationale": "Implementing a basic, mobile-first booking portal directly addresses customer churn complaints regarding poor digital self-service tools. This is an incremental step that improves conversion and reduces administrative load for the small tech team.",
         "execution_plan": {
           "first_actions": [
-            "Pilot a machine learning model on existing usage data",
-            "Define MVP features focusing on churn prediction metrics"
+            "Define Minimum Viable Product (MVP) features: basic itinerary viewing, payment gateway integration.",
+            "Identify a low-cost SaaS solution or outsourced development contract."
           ],
           "resources_needed": [
-            "Data scientist contract (6 months)",
-            "Cloud compute budget increase"
+            "Contract for UI/UX consultation (low cost)",
+            "Allocation of 10% developer capacity over 3 months"
           ],
-          "success_metric": "30% reduction in customer churn rate within Q4.",
+          "success_metric": "Increase in direct booking conversion rate by 5%",
           "milestones": [
-            "Q2: Model training complete",
-            "Q3: Internal beta release and feedback incorporation"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "12 months"
-      },
-      {
-        "type": "radical",
-        "title": "Vertical-Specific Ecosystem Expansion (Niche AI Integrations)",
-        "rationale": "To defend market share, we must create unique value propositions that competitors cannot easily replicate. Developing proprietary integrations specific to high-growth niches will establish a defensible moat and attract new enterprise segments.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify two non-core vertical markets (e.g., specialized construction or legal tech)",
-            "Form a cross-functional 'Defense Squad' focused solely on these integrations"
-          ],
-          "resources_needed": [
-            "Dedicated integration engineering resources",
-            "Market research budget for niche validation"
-          ],
-          "success_metric": "Acquire 5 anchor clients in new vertical within 18 months.",
-          "milestones": [
-            "Q3: Vertical MVP launch",
-            "Q4: First revenue generation from niche segment"
+            "Q1: Finalize tech stack selection and wireframes.",
+            "Q2: Launch beta version to 5 key clients."
           ]
         },
         "impact": "medium",
-        "difficulty": "high",
-        "timeframe": "24 months"
+        "difficulty": "low",
+        "timeframe": "6 months"
       },
       {
         "type": "incremental",
-        "title": "Enhanced Customer Success Automation",
-        "rationale": "Improving the onboarding experience and providing automated, personalized support channels will reduce customer time-to-value and reinforce loyalty, which is crucial for market defense.",
+        "title": "Automated Safety Waiver Management System",
+        "rationale": "Transitioning manual safety waiver handling to a digital system will reduce administrative errors and improve compliance, which is critical for market defense in the tourism sector. This builds upon existing operational processes.",
         "execution_plan": {
           "first_actions": [
-            "Implement an advanced knowledge base using LLMs",
-            "Automate proactive check-ins based on usage patterns"
+            "Map out current waiver workflow and identify automation points (e.g., conditional email triggers).",
+            "Evaluate off-the-shelf compliance software."
           ],
           "resources_needed": [
-            "Internal training budget",
-            "Slight increase in customer service headcount (1 FTE)"
+            "Budget allocation for mid-tier CRM/workflow tool ($5k)",
+            "Internal project manager time reallocation"
           ],
-          "success_metric": "Increase Net Promoter Score (NPS) by 10 points.",
+          "success_metric": "Reduction in waiver processing errors by 80%",
           "milestones": [
-            "Q2: Knowledge base fully deployed and tested",
-            "Q3: Full rollout across the user base"
+            "Q3: System implementation and staff training.",
+            "Q4: Full rollout across all guiding departments."
           ]
         },
-        "impact": "low",
+        "impact": "medium",
         "difficulty": "low",
-        "timeframe": "6 months"
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Itinerary Generator",
+        "rationale": "Develop an AI engine that uses real-time booking data and user preferences to generate dynamic, personalized adventure itineraries. This is a radical move that would redefine the customer experience and create significant differentiation in a low-pressure market.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on LLM integration with existing operational data.",
+            "Pilot development of an MVP using current internal project management tools."
+          ],
+          "resources_needed": [
+            "Hiring or contracting a specialized AI/ML consultant",
+            "Dedicated innovation budget increase (15%)"
+          ],
+          "success_metric": "Achieve 20% increase in average customer spend per booking",
+          "milestones": [
+            "Q3: Proof of concept for itinerary generation.",
+            "Q1 Year 2: Full integration into the core platform."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a dedicated 'Market Defense' task force to define top 3 competitive vulnerabilities.",
-        "owner": "Chief Strategy Officer (CSO)",
+        "action": "Conduct a focused workshop with leadership to prioritize the Quick Win (Booking Portal) and secure dedicated time for its execution.",
+        "owner": "Product Manager",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Begin feasibility study and resource allocation for the AI-Driven Predictive Analytics Module (Opportunity 1).",
-        "owner": "Head of Product",
-        "timeframe": "End of Q2"
+        "action": "Audit current operational processes against industry best practices for waiver management, defining requirements for the automated system.",
+        "owner": "Operations Lead",
+        "timeframe": "End of next month"
       },
       {
-        "action": "Conduct a comprehensive review of current talent pipeline against future strategic needs.",
-        "owner": "VP of Engineering",
-        "timeframe": "Within 4 weeks"
+        "action": "Develop a low-cost proof-of-concept (POC) plan for AI itinerary generation to test feasibility and resource needs.",
+        "owner": "Tech Team Lead",
+        "timeframe": "Within 3 months"
       }
     ],
     "key_weaknesses": [
-      "High reliance on core product feature updates rather than platform innovation.",
-      "Limited budget allocation for long-term R&D and radical exploratory projects.",
-      "Key technical talent retention risk due to competition from larger tech firms."
+      "Lack of formal innovation pipeline, leading to inconsistent project execution and 'start-stop' cycles.",
+      "Low digital maturity (Level 1), making the company highly vulnerable to customer churn driven by poor self-service options.",
+      "Innovation is currently constrained by a tight budget (9%) and informal decision-making structure that lacks strategic alignment across all departments.",
+      "Inconsistent change management processes, resulting in failed adoption of previous digital tool experiments."
     ]
   }
 }

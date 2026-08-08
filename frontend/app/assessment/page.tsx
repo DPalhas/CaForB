@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { useMutation } from "@apollo/client/react";
 import { SUBMIT_QUESTIONNAIRE } from "@/lib/graphql/mutations";
 import { AssessmentFormData, EMPTY_FORM } from "@/lib/types";
-import { ArrowLeft, ArrowRight, Sparkles, Cpu, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import NavHeader from "@/components/NavHeader";
 import StepIndicator from "./components/StepIndicator";
 import Step1_CompanyProfile from "./components/steps/Step1_CompanyProfile";
 import Step2_InnovationState from "./components/steps/Step2_InnovationState";
@@ -46,25 +46,25 @@ function AnalysisSteps() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-3.5 w-full max-w-md bg-slate-900/60 p-6 rounded-2xl border border-slate-800/80 backdrop-blur-md">
+    <div className="flex flex-col gap-3.5 w-full max-w-md bg-stone-900/60 p-6 rounded-2xl border border-stone-800/80 backdrop-blur-md">
       {ANALYSIS_STEPS.map((step, i) => (
         <div
           key={i}
           className={`flex items-center gap-3 text-sm transition-all duration-500 ${
             i < current
-              ? "text-purple-400 font-medium"
+              ? "text-amber-400 font-medium"
               : i === current
               ? "text-white font-semibold"
-              : "text-slate-500"
+              : "text-stone-500"
           }`}
         >
-          <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full border border-slate-855 bg-slate-950">
+          <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full border border-stone-800 bg-stone-950">
             {i < current ? (
-              <CheckCircle className="w-4 h-4 text-purple-400" />
+              <CheckCircle className="w-4 h-4 text-amber-400" />
             ) : i === current ? (
-              <span className="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse" />
+              <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse" />
             ) : (
-              <span className="w-1.5 h-1.5 rounded-full bg-slate-700" />
+              <span className="w-1.5 h-1.5 rounded-full bg-stone-700" />
             )}
           </span>
           <span>{step}</span>
@@ -76,14 +76,14 @@ function AnalysisSteps() {
 
 function AnalysingOverlay() {
   return (
-    <div className="fixed inset-0 bg-slate-950/90 backdrop-blur-xl z-50 flex flex-col items-center justify-center gap-8 px-6">
+    <div className="fixed inset-0 bg-stone-950/90 backdrop-blur-xl z-50 flex flex-col items-center justify-center gap-8 px-6">
       
       {/* High-tech pulsing AI core indicator */}
       <div className="relative flex items-center justify-center">
-        <div className="w-24 h-24 rounded-full border-2 border-purple-500/20 border-t-purple-400 animate-spin" />
-        <div className="absolute inset-0 w-24 h-24 rounded-full border-2 border-indigo-500/20 border-b-indigo-400 animate-spin [animation-duration:3s]" />
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-indigo-400 flex items-center justify-center shadow-xl shadow-purple-500/30">
-          <Sparkles className="w-7 h-7 text-slate-950 animate-pulse" />
+        <div className="w-24 h-24 rounded-full border-2 border-amber-500/20 border-t-amber-400 animate-spin" />
+        <div className="absolute inset-0 w-24 h-24 rounded-full border-2 border-emerald-500/20 border-b-emerald-400 animate-spin [animation-duration:3s]" />
+        <div className="w-14 h-14 rounded-2xl bg-amber-400 flex items-center justify-center shadow-xl shadow-amber-500/30">
+          <Sparkles className="w-7 h-7 text-stone-950 animate-pulse" />
         </div>
       </div>
 
@@ -92,7 +92,7 @@ function AnalysingOverlay() {
         <h2 className="text-2xl font-bold text-white mb-2">
           Evaluating Corporate Intelligence
         </h2>
-        <p className="text-sm text-slate-400 leading-relaxed">
+        <p className="text-sm text-stone-400 leading-relaxed">
           Our specialized LLM is analyzing your company's inputs against corporate innovation frameworks.
         </p>
       </div>
@@ -199,33 +199,19 @@ export default function AssessmentPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-purple-500 selection:text-white">
+    <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col selection:bg-amber-500 selection:text-white">
       
       {/* Full-screen loading overlay */}
       {isAnalysing && <AnalysingOverlay />}
 
-      {/* Sticky Header */}
-      <header className="sticky top-0 z-30 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 px-6 py-4">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-purple-600 flex items-center justify-center text-white">
-              <Cpu className="w-4 h-4" />
-            </div>
-            <span className="text-lg font-bold text-white tracking-tight group-hover:text-purple-400 transition">CaForB</span>
-          </Link>
-
-          <span className="text-xs font-semibold text-slate-400 bg-slate-900/60 px-3 py-1.5 rounded-full border border-slate-800">
-            Corporate Assessment Engine
-          </span>
-        </div>
-      </header>
+      <NavHeader />
 
       {/* Main Form Container */}
       <main className="flex-1 flex items-start justify-center py-10 px-4">
         <div className="w-full max-w-2xl">
 
           {/* Main Card */}
-          <div className="glass-card rounded-3xl border border-slate-800/80 p-6 sm:p-10 shadow-2xl">
+          <div className="glass-card rounded-3xl border border-stone-800/80 p-6 sm:p-10 shadow-2xl">
             
             <StepIndicator
               currentStep={step}
@@ -247,11 +233,11 @@ export default function AssessmentPage() {
             )}
 
             {/* Navigation Bar */}
-            <div className="flex justify-between items-center mt-10 pt-6 border-t border-slate-800">
+            <div className="flex justify-between items-center mt-10 pt-6 border-t border-stone-800">
               <button
                 onClick={handleBack}
                 disabled={step === 0}
-                className="px-5 py-3 text-sm font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 rounded-xl hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed transition flex items-center gap-2"
+                className="px-5 py-3 text-sm font-semibold text-stone-300 bg-stone-900/80 border border-stone-800 rounded-xl hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed transition flex items-center gap-2"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>Back</span>
@@ -260,7 +246,7 @@ export default function AssessmentPage() {
               {step < steps.length - 1 ? (
                 <button
                   onClick={handleNext}
-                  className="px-7 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-xl hover:opacity-90 transition shadow-lg shadow-purple-500/20 flex items-center gap-2 group"
+                  className="px-7 py-3 text-sm font-semibold text-stone-950 bg-amber-400 rounded-xl hover:opacity-90 transition shadow-lg shadow-amber-500/20 flex items-center gap-2 group"
                 >
                   <span>Continue</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -269,11 +255,11 @@ export default function AssessmentPage() {
                 <button
                   onClick={handleSubmit}
                   disabled={loading || isAnalysing}
-                  className="px-7 py-3 text-sm font-bold text-slate-950 bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 rounded-xl hover:opacity-95 disabled:opacity-60 disabled:cursor-not-allowed transition shadow-xl shadow-purple-500/25 flex items-center gap-2"
+                  className="px-7 py-3 text-sm font-bold text-stone-950 bg-amber-400 rounded-xl hover:opacity-95 disabled:opacity-60 disabled:cursor-not-allowed transition shadow-xl shadow-amber-500/25 flex items-center gap-2"
                 >
                   {loading || isAnalysing ? (
                     <>
-                      <Loader2 className="w-4 h-4 animate-spin text-slate-950" />
+                      <Loader2 className="w-4 h-4 animate-spin text-stone-950" />
                       <span>Generating Analysis...</span>
                     </>
                   ) : (

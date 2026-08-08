@@ -1,0 +1,132 @@
+{
+  "id": "0319",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:17:15.009173+00:00",
+    "duration_ms": 22250,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.362014+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Element Analytics",
+      "sector": "E-commerce",
+      "size": "Medium",
+      "companyName": "Element Analytics"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Element Analytics is a multi-brand online marketplace aggregating over 300 independent Portuguese artisan brands across fashion, home decor, and gourmet food. We operate primarily via dropship and direct marketplace models supported by centralized logistics for top sellers. The company utilizes localized fulfillment centers to manage inventory flow efficiently.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes. This lack of structure results in high variability and difficulty in scaling successful tests.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We aim to double revenue within 3 years by entering two new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The primary focus is optimizing current operational efficiency to maximize short-term profitability while establishing foundational digital capabilities necessary for long-term market expansion.",
+      "companyName": "Element Analytics",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Niche Market Entry (Radical)",
+        "rationale": "Given the high competitive pressure and growth priority, testing a bold new geographic market entry or niche product vertical could unlock significant untapped revenue streams. This approach aligns with aggressive short-term growth goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three underserved international markets based on current brand strengths.",
+            "Develop a Minimum Viable Market (MVM) test plan for one chosen market focusing solely on localized logistics and marketing.",
+            "Secure initial seed funding (or budget reallocation) specifically for this pilot."
+          ],
+          "resources_needed": [
+            "Market research consultancy fee ($5k)",
+            "Dedicated 2-person cross-functional task force",
+            "Pilot operational budget allocation (€10k)"
+          ],
+          "success_metric": "Achieve 5% market penetration and positive customer acquisition cost (CAC) within 6 months.",
+          "milestones": [
+            "Month 1: Market validation complete",
+            "Month 3: Pilot launch in target region",
+            "Month 6: Decision point for scaling or pivoting"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Visual Search Integration (Incremental)",
+        "rationale": "Implementing the previously discussed AI-powered visual search functionality incrementally will improve conversion rates and customer experience without requiring a complete technological overhaul. This low-risk feature leverages existing digital maturity.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-volume product category for initial testing (e.g., home decor).",
+            "Integrate a third-party visual search API or simple in-house ML model prototype.",
+            "Develop A/B tests comparing search with and without the new visual feature."
+          ],
+          "resources_needed": [
+            "Software license/API subscription ($8k)",
+            "1 dedicated data engineer support (part-time)",
+            "Internal UX design hours"
+          ],
+          "success_metric": "Increase product page conversion rate by 5% within Q3.",
+          "milestones": [
+            "Month 2: Prototype complete and internal testing",
+            "Month 4: Controlled A/B test launch on key pages"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a minimal innovation governance framework and resource allocation process.",
+        "owner": "Head of Product/Innovation Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct formal market analysis for the top two potential geographic expansion targets.",
+        "owner": "Commercial Strategy Team",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Pilot and validate one incremental feature (Visual Search) using a lean startup methodology.",
+        "owner": "Technology Squad Lead",
+        "timeframe": "Within 4 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal innovation process resulting in inconsistent output and wasted effort.",
+      "High dependency on grassroots efforts rather than executive-sponsored strategic initiatives.",
+      "Severe budget constraints (4% allocation) limiting the ability to fund necessary long-term R&D.",
+      "Fragile relationship between short-term growth goals and foundational operational scaling needs."
+    ]
+  }
+}

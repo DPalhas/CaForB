@@ -1,0 +1,126 @@
+{
+  "id": "0392",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:55:21.740287+00:00",
+    "duration_ms": 23608,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.390769+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pioneer Group",
+      "sector": "Transportation & Logistics",
+      "size": "Medium",
+      "companyName": "Pioneer Group"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Pioneer Group is a specialized cold-chain logistics provider operating 50 refrigerated trucks and 8,000 m² of dedicated warehouse space. They serve critical sectors like high-value pharmaceuticals and fresh produce across the Iberian Peninsula, requiring strict adherence to GDP (Good Distribution Practice) standards. Their operations are characterized by complex cross-border compliance and stringent temperature monitoring requirements.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures, successfully reducing unplanned downtime by 15%. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within three years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We have a new CEO who joined three months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect.",
+      "companyName": "Pioneer Group",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance System Overhaul (Process Optimization)",
+        "rationale": "Leveraging existing IoT data to transition from reactive maintenance scheduling to predictive failure alerts across the entire fleet and warehouse infrastructure. This directly supports the efficiency goal by minimizing unplanned downtime, which is a major cost driver in logistics.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current legacy sensor hardware compatibility.",
+            "Develop a phased rollout plan for predictive analytics integration into the maintenance system.",
+            "Identify and upskill existing engineers in data interpretation."
+          ],
+          "resources_needed": [
+            "Software licensing for advanced AI/ML tools",
+            "External consultants specializing in industrial IoT implementation",
+            "Internal training budget"
+          ],
+          "success_metric": "Reduce unplanned downtime by 20% within the first year.",
+          "milestones": [
+            "Q1: Pilot predictive model deployed on top 5 fleet units.",
+            "Q3: Full operational integration of predictive system into ERP/Maintenance workflow."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Dynamic Cold-Chain Routing and Asset Management",
+        "rationale": "Implement a radical solution using machine learning to dynamically optimize delivery routes based on real-time variables like hyper-local temperature fluctuations, traffic conditions, and regulatory stop requirements. This moves beyond simple efficiency into creating an autonomous system that maximizes payload integrity while minimizing fuel consumption.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a sandbox environment for ML model training using historical operational data.",
+            "Identify key external data sources (weather APIs, traffic feeds).",
+            "Secure partnership with a specialized logistics AI startup.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "High-performance cloud computing resources (GPU access)",
+            "Specialized ML engineering talent recruitment or contract sourcing",
+            "Seed funding for external pilot project"
+          ],
+          "success_metric": "Achieve a 10% reduction in fuel consumption per mile without compromising temperature compliance.",
+          "milestones": [
+            "Q2: Develop and validate the initial dynamic routing algorithm (PoC).",
+            "Q4: Execute controlled, limited-scope pilot with fixed route constraints."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a deep-dive capability assessment on talent needs for advanced data science and AI integration.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a dedicated, cross-functional 'Efficiency Accelerator' team focusing solely on process bottlenecks in the cold chain pipeline.",
+        "owner": "Innovation Squad Lead",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Rigid multi-stakeholder decision-making process that slows down urgent, high-ROI projects.",
+      "Low digital maturity limiting the ability to fully utilize existing IoT data for advanced predictive modeling.",
+      "High dependence on centralized business case approval chains, causing delays in operational pilot testing."
+    ]
+  }
+}

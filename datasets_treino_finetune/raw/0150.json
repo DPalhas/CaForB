@@ -1,0 +1,152 @@
+{
+  "id": "0150",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:49:25.103889+00:00",
+    "duration_ms": 28666,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.304522+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Digital",
+      "sector": "Mining & Extraction",
+      "size": "Medium",
+      "companyName": "Lumina Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation, focusing heavily on optimizing material flow and minimizing operational downtime.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for in this hands-on operational environment.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market beyond local contractors, potentially pivot pricing models from one-time material sales to recurring maintenance and logistics contracts, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway due to high operational costs.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 18,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "As local permitting regulations tighten across several states, securing long-term supply agreements and demonstrating ESG compliance in extraction practices are becoming critical competitive differentiators. The internal culture is dominated by experienced operators who value efficiency over theoretical innovation or rapid technological shifts.",
+      "companyName": "Lumina Digital"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Autonomous Quarry Operations (AI/Robotics)",
+        "rationale": "Implementing fully automated cutting and crushing systems could drastically reduce operational labor costs and increase throughput efficiency by up to 40%. Given the bold risk appetite, this radical shift offers the highest potential ROI in a high-pressure environment.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct pilot study on autonomous drilling/crushing technology feasibility.",
+            "Establish partnership with specialized heavy equipment vendors for integration roadmap.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "€1.5M dedicated capital investment",
+            "3 Senior Robotics Engineers (hired)"
+          ],
+          "success_metric": "Reduction in operational labor costs by 25% within 3 years.",
+          "milestones": [
+            "Q4 2024: Technology feasibility study complete.",
+            "Q1 2026: Sandbox testing of primary autonomous unit."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3 years"
+      },
+      {
+        "type": "incremental",
+        "title": "IoT-Based Predictive Maintenance Platform",
+        "rationale": "Deploying IoT sensors on core machinery allows for the proactive identification of equipment failure, minimizing costly unplanned downtime and improving asset utilization. This incremental step builds digital maturity (Level 2 to 3) without requiring a full system overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Select three key assets for sensor pilot implementation.",
+            "Integrate basic data streams into existing ERP monitoring dashboard.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "€500k annual software/hardware costs",
+            "1 Data Analyst (part-time)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 18% annually.",
+          "milestones": [
+            "Q3 2024: Sensor deployment on quarry fleet complete.",
+            "Q1 2025: Predictive maintenance alerts successfully implemented."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "B2B Logistics & Supply Contract Platform",
+        "rationale": "Developing a centralized digital portal for contractors to manage material ordering, permitting status tracking, and recurring service schedules addresses the process weakness. This leverages existing core systems while improving contractor experience.",
+        "execution_plan": {
+          "first_actions": [
+            "Design MVP of the contractor portal focusing on real-time supply chain visibility.",
+            "Map out required integration points with current HRIS/ERP.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "€200k development budget",
+            "1 Full Stack Developer (contract)"
+          ],
+          "success_metric": "Increase in contractor retention rate by 15%.",
+          "milestones": [
+            "Q4 2024: Portal wireframes and core functionality defined.",
+            "Q3 2025: Beta launch with 5 key contractors."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Innovation Steering Committee focused specifically on validating the ROI of radical automation opportunities.",
+        "owner": "VP of Operations & Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop detailed technical specifications and preliminary budget proposal for the IoT Predictive Maintenance pilot project.",
+        "owner": "Head of Technology",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Define key performance indicators (KPIs) for the B2B platform MVP, focusing on user adoption and workflow efficiency metrics.",
+        "owner": "Director of Sales",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leading to inconsistent execution velocity across business units.",
+      "Low digital maturity (Level 2) resulting in poor integration between core operational systems (ERP, CRM).",
+      "High organizational culture resistance to rapid change and structured project management methodologies.",
+      "Lack of formal, systematic customer feedback loop hindering accurate product/service pivots."
+    ]
+  }
+}

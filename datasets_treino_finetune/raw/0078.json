@@ -3,145 +3,125 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Healthtech",
+    "size": "Small",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:23:18.675955+00:00",
-    "duration_ms": 23117,
-    "attempts": 1
+    "generated_at": "2026-08-03T18:03:11.714241+00:00",
+    "duration_ms": 23876,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.278268+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Synapse Systems.co",
+      "sector": "Healthtech",
+      "size": "Small",
+      "companyName": "Synapse Systems.co"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Apex Precision Components is a medium-sized manufacturer specializing in high-tolerance machined parts for the aerospace and medical device industries. The company operates within heavily regulated environments, requiring stringent quality control and compliance protocols for every product line.",
+      "companyDescription": "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. Synapse Systems manages a growing network of 500+ credentialed physicians across multiple states, focusing heavily on HIPAA compliance and data security protocols. The core business model relies on high-volume patient throughput and accurate diagnostic routing within strict federal healthcare regulations.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company has invested moderately in upgrading machinery to improve output efficiency and recently implemented a phased rollout of new ERP software modules to streamline supply chain management.",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. We have also piloted basic conversational AI chatbots for initial patient intake screening on our main website, although these initiatives remain siloed from core product development.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to maintain market share by aggressively defending our existing high-margin contracts while simultaneously exploring premium, compliance-heavy niche markets. We aim to ensure operational resilience against global manufacturing shifts.",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale and regulatory compliance advantages. Our independent position is increasingly vulnerable, necessitating proactive measures to either deepen our specialization in high-margin clinical niches or build robust platform-like switching costs through proprietary data integration.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The core R&D and operations teams consist of about 50 highly skilled engineers and technicians dedicated to maintaining product integrity.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 20,
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "process",
-        "talent",
         "culture",
-        "time"
+        "strategy",
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The sector faces intense pressure from emerging competitors, especially in automation and supply chain responsiveness."
+      "competitivePressure": "high",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern rather than actively pursuing long-term internal R&D projects.",
+      "companyName": "Synapse Systems.co",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 4.5,
     "opportunities": [
       {
-        "type": "incremental",
-        "title": "Smart Quality Control Integration (Incremental)",
-        "rationale": "Implementing AI-driven sensor technology for real-time defect detection can drastically reduce material scrap rates and improve compliance documentation accuracy in a high-regulation environment.",
-        "execution_plan": {
-          "first_actions": [
-            "Pilot vision system on one critical production line.",
-            "Identify three key suppliers for digital integration feasibility study."
-          ],
-          "resources_needed": [
-            "$150,000",
-            "2 specialized data scientists (contract)"
-          ],
-          "success_metric": "Reduction in scrap rate by 30% within 18 months.",
-          "milestones": [
-            "Q2: System pilot completion and ROI validation.",
-            "Q4: Full integration across all high-risk production lines."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "18 months"
-      },
-      {
         "type": "radical",
-        "title": "Modular, Autonomous Micro-Factory Cells (Radical)",
-        "rationale": "To defend against labor shortages and increase agility, Apex should explore radical automation using modular robotic cells that can be rapidly reconfigured to produce diverse parts under stringent automated quality checks.",
+        "title": "Predictive Diagnostic AI Engine (Sentinel)",
+        "rationale": "Developing a proprietary, highly accurate predictive triage model using machine learning to flag potential adverse events before they escalate is a radical move. This moves the company beyond simple symptom checking into proactive clinical decision support, creating a significant competitive moat.",
         "execution_plan": {
           "first_actions": [
-            "Establish a dedicated 'Future Ops' incubator team.",
-            "Secure seed funding for advanced robotics R&D partnership."
+            "Form a dedicated internal task force comprising 1 data scientist and 2 clinicians.",
+            "Conduct a rapid feasibility study on acquiring or licensing existing diagnostic datasets.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "$500,000",
-            "Strategic partnership with an automation startup."
+            "Contract for specialized ML consultants ($40k)",
+            "Access to anonymized clinical trial databases ($5k)"
           ],
-          "success_metric": "Successful deployment of one fully automated cell capable of handling 4 product variants.",
+          "success_metric": "Achieve 92% accuracy in early-stage adverse event prediction within Q3.",
           "milestones": [
-            "Q3: Tech feasibility and vendor selection complete.",
-            "Q1: Initial prototype manufacturing and stress testing."
+            "Define feature set and data requirements (Month 1).",
+            "MVP prototype development and initial validation (Months 2-4)."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "3 years"
+        "timeframe": "12 months"
       },
       {
         "type": "incremental",
-        "title": "Regulatory Compliance Automation (Incremental)",
-        "rationale": "Automating documentation and compliance reporting using blockchain or specialized software tools will reduce the time spent on manual audits, allowing the core team to focus on strategic defense initiatives.",
+        "title": "Hyper-Personalized Remote Monitoring Suite",
+        "rationale": "Leveraging the existing remote monitoring capabilities to integrate wearable device data (e.g., continuous glucose monitors) with physician notes. This incremental feature increases switching costs and positions Synapse as a superior holistic care provider.",
         "execution_plan": {
           "first_actions": [
-            "Audit existing regulatory data workflows.",
-            "Select a SaaS platform specializing in industry-specific compliance reporting."
+            "Audit current patient health data infrastructure for API compatibility.",
+            "Pilot integration with one major wearable vendor."
           ],
           "resources_needed": [
-            "$50,000",
-            "Internal IT project management specialist time."
+            "API integration costs ($15k)",
+            "Focus on existing DevOps resources (internal allocation)"
           ],
-          "success_metric": "Reduction of audit preparation time by 40%.",
+          "success_metric": "Increase patient retention rate by 8% within the pilot segment.",
           "milestones": [
-            "Q2: Platform selection and integration plan finalized.",
-            "Q3: Full migration of one compliance cycle to the new system."
+            "Complete data pipeline architecture design (Month 2).",
+            "Launch targeted pilot program with 50 high-engagement users (Months 4-6)."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "1 year"
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to define the requirements and budget for the 'Smart Quality Control Integration' pilot.",
-        "owner": "Head of Operations",
-        "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Initiate due diligence on three potential automation technology partners for the radical cell concept.",
-        "owner": "CTO / R&D Lead",
+        "action": "Conduct a formal 'Market Defense' strategy workshop to identify 3 high-margin niche markets for immediate specialization.",
+        "owner": "VP of Strategy",
         "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Launch a focused internal workshop to map out key cultural barriers related to adopting bold, risk-taking technologies.",
-        "owner": "HR Director",
+        "action": "Establish a dedicated, ring-fenced innovation budget proposal justifying the Predictive Diagnostic AI initiative to the potential acquirer.",
+        "owner": "CFO/CEO",
         "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Initiate deep cultural change projects focused on data literacy and cross-functional collaboration between clinical and tech teams.",
+        "owner": "Head of HR/Culture",
+        "timeframe": "Ongoing"
       }
     ],
     "key_weaknesses": [
-      "High reliance on legacy machinery requiring frequent maintenance and downtime.",
-      "Talent scarcity in advanced robotics and AI engineering roles.",
-      "Slow internal process for cross-departmental communication regarding innovation projects.",
-      "Risk aversion within the existing operational culture due to high regulatory stakes."
+      "Cultural resistance to risk: The current small team structure lacks formal innovation rituals, making it difficult for the team to pivot quickly when exploring high-risk radical ideas.",
+      "Fragmented Strategy Alignment: While strategic goals are defined, there is a lack of clear operational mapping that connects daily product development (e.g., CRM updates) directly to long-term market defense objectives.",
+      "Talent Scarcity in Specialized Healthtech AI: Difficulty recruiting and retaining specialized clinical data scientists necessary for the proposed predictive modeling initiative."
     ]
   }
 }

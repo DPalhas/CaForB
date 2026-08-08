@@ -1,0 +1,147 @@
+{
+  "id": "0414",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:04:23.125708+00:00",
+    "duration_ms": 26547,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Cipher Partners",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Micro",
+      "companyName": "Cipher Partners"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Cipher Partners is a boutique organic vineyard specializing in high-quality craft wines known for distinct terroir and sustainable practices. While maintaining direct-to-consumer sales, the company faces intense competition from large regional producers offering lower prices and slicker digital experiences. The operation relies heavily on traditional expertise but struggles to scale personalized customer engagement efficiently.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing—only 8% of customers created accounts. This experience highlighted that the focus should have been on deep understanding of customer needs before engineering solutions.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base—reducing churn, strengthening switching costs through personalized experiences, and matching the digital engagement offered by competitors without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 11,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The pressure is amplified by the fact that our current operational efficiency relies on aging manual processes, creating a bottleneck when trying to rapidly scale quality control and customer service simultaneously.",
+      "companyName": "Cipher Partners",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "IoT Sensor Integration for Quality Monitoring",
+        "rationale": "Implement low-cost IoT sensors in the fermentation tanks to provide real-time data on temperature and pH levels. This incrementally improves operational consistency, reduces human error, and provides a hard metric of quality control to defend our premium positioning.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 key fermentation stages for sensor implementation.",
+            "Source off-the-shelf industrial temperature/pH sensors."
+          ],
+          "resources_needed": [
+            "Hardware procurement ($5k)",
+            "Consultant support (10 hours)"
+          ],
+          "success_metric": "Reduction in batch quality variance by 15% within 6 months.",
+          "milestones": [
+            "Prototype sensor integration successful (Month 2)",
+            "Full system rollout across all vineyards (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Retention-Focused Personalized Marketing Automation",
+        "rationale": "Leverage existing customer data to build highly personalized, automated email sequences and limited-edition product offers. This strengthens switching costs by making the direct consumer experience feel bespoke and exclusive, directly countering competitor modern CX efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current CRM/sales data for segmentation potential.",
+            "Develop 3 automated loyalty tiers with personalized content."
+          ],
+          "resources_needed": [
+            "Marketing software subscription ($2k)",
+            "Internal developer time (5 hours)"
+          ],
+          "success_metric": "Increase in customer retention rate by 5% year-over-year.",
+          "milestones": [
+            "Implement basic segmentation and email flow (Month 3)",
+            "A/B test personalized offers on the highest segment (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Local Demand and Inventory Forecasting",
+        "rationale": "Develop a rudimentary predictive model that combines external factors (local weather, regional economic data) with internal sales data to predict demand for specific wine varietals in real-time. This radical shift moves the company from reactive inventory management to proactive supply chain allocation.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and clean historical sales/weather data sets.",
+            "Select a low-code ML platform (e.g., Python library)."
+          ],
+          "resources_needed": [
+            "ML service subscription ($1k)",
+            "Data scientist contract fee (6 months)"
+          ],
+          "success_metric": "Reduction in perishable inventory write-offs by 10%.",
+          "milestones": [
+            "Define and train initial forecasting model (Month 5)",
+            "Integrate basic API into sales pipeline (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a 'Process Improvement Task Force' to formalize informal innovation capture.",
+        "owner": "Owner/CEO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Pilot the IoT sensor implementation for fermentation monitoring on one core product line.",
+        "owner": "Generalist Developer Lead",
+        "timeframe": "Within 4 months"
+      },
+      {
+        "action": "Conduct deep customer journey mapping sessions to identify friction points in the current D2C process.",
+        "owner": "Owner/Marketing Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation pipeline leading to opportunistic, non-strategic efforts.",
+      "Severe constraints on dedicated talent and time for specialized R&D or digital initiatives.",
+      "Low existing digital maturity limiting the ability to leverage data for competitive differentiation."
+    ]
+  }
+}

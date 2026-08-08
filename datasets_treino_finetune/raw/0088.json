@@ -3,143 +3,119 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Manufacturing",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:27:57.697023+00:00",
-    "duration_ms": 24568,
+    "generated_at": "2026-08-03T18:07:34.798300+00:00",
+    "duration_ms": 22681,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "DataFlow Solutions Inc.",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Vault",
+      "sector": "Manufacturing",
+      "size": "Micro",
+      "companyName": "Vault"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "DataFlow Solutions provides cloud-based analytics and CRM software targeting mid-sized enterprises in the logistics sector. We focus on streamlining supply chain data management through scalable subscription models.",
+      "companyDescription": "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Vault operates at the intersection of traditional, hand-finished joinery and modern CNC routing, positioning itself in a niche where quality is paramount. The company currently prioritizes operational stability while attempting to leverage emerging automation technologies to maintain competitive pricing without compromising bespoke craftsmanship.",
       "innovationProcess": "partial",
-      "pastInitiatives": "We have recently launched three minor feature updates based on NPS feedback and piloted a small integration project with a key industry partner last quarter.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to secure our leading position in the logistics SaaS market by enhancing product reliability and expanding our enterprise client base. We aim to minimize churn while maintaining strong revenue growth from existing customers.",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core team consists of 8 dedicated employees, comprising developers and sales specialists. Decision-making authority rests with a small leadership team for strategic direction.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 10,
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 11,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "talent",
-        "process",
+        "budget",
         "strategy"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "We face increasing pressure from larger, more integrated competitors who are aggressively acquiring niche features and improving their retention strategies."
+      "additionalContext": "Vault faces intense competition from larger, automated suppliers who can offer faster turnaround times and lower per-unit costs. The company's high customization overhead makes it vulnerable to price wars while simultaneously struggling with the transition to necessary digital tools.",
+      "companyName": "Vault",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 4.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "AI-Driven Predictive Maintenance Module",
-        "rationale": "Implementing an AI module to predict potential system failures will significantly improve product reliability and reduce churn among enterprise clients, directly supporting market defense.",
+        "title": "Implement Modular Product Configuration Digital Tool",
+        "rationale": "To address customer pain points regarding complexity and slow lead times, developing a simple digital tool allows customers to visualize their custom product choices before production starts. This incremental step improves the sales process without requiring massive R&D investment.",
         "execution_plan": {
           "first_actions": [
-            "Identify high-risk modules for predictive modeling.",
-            "Allocate 2 senior data scientists to the project."
+            "Audit current order entry software capabilities",
+            "Prototype a web-based configuration selector for core products",
+            "Pilot tool with 10 key enterprise clients"
           ],
           "resources_needed": [
-            "Data science consulting retainer ($15k)",
-            "Internal dev hours reallocation (approx. 400 hrs)"
+            "Contract freelance UX/UI consultant (minimal)",
+            "Time allocation from founder (part-time)"
           ],
-          "success_metric": "Reduction in critical system downtime by 15% within six months.",
+          "success_metric": "Increase in average order cycle time reduction by 15% within Q3.",
           "milestones": [
-            "Q3: Pilot module deployment and initial data validation.",
-            "Q4: Full feature integration and beta launch for top-tier clients."
+            "Month 1: Configuration Tool MVP Launch",
+            "Month 2: Client feedback integration and iterative refinement"
           ]
         },
         "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "9 months"
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
       },
       {
         "type": "radical",
-        "title": "Vertical Customization Engine (VCE)",
-        "rationale": "Developing a VCE would allow us to offer highly specialized, vertical-specific solutions that competitors cannot easily replicate, creating a strong defensive moat in our niche.",
+        "title": "Invest in Advanced Sustainable/Material Innovation Line",
+        "rationale": "Given the market pressure, pivoting to a novel material (e.g., engineered timber or advanced composites) could create a premium, defensible niche that bypasses direct price competition. This requires radical strategic alignment but offers high long-term differentiation.",
         "execution_plan": {
           "first_actions": [
-            "Conduct market research to identify the top 3 underserved logistics sub-sectors.",
-            "Form an internal cross-functional task force (Product/Sales)."
+            "Identify 2 potential sustainable material suppliers",
+            "Conduct small feasibility study on CNC compatibility and finish quality",
+            "Secure grant funding or low-interest financing for pilot runs"
           ],
           "resources_needed": [
-            "Dedicated UX/UI designer ($20k)",
-            "External legal counsel review for IP strategy"
+            "Material samples and testing costs ($5k-$10k)",
+            "Consulting fees for material science validation"
           ],
-          "success_metric": "Acquisition of 5 new enterprise clients utilizing VCE within the first year.",
+          "success_metric": "Launch of one 'premium' product line capturing 5% of new revenue within the year.",
           "milestones": [
-            "Q1: MVP definition and initial technical architecture design.",
-            "Q2-Q3: Full feature build and beta testing."
+            "Month 6: Material Selection and Feasibility Complete",
+            "Month 9: Pilot Production Run and Quality Validation"
           ]
         },
         "impact": "high",
-        "difficulty": "high",
-        "timeframe": "18 months"
-      },
-      {
-        "type": "incremental",
-        "title": "Proactive Customer Success Platform",
-        "rationale": "Enhancing the existing support structure with proactive analytics will improve customer retention, which is crucial for market defense in a subscription-based model.",
-        "execution_plan": {
-          "first_actions": [
-            "Integrate usage data feeds into the current CRM.",
-            "Redesign the onboarding workflow based on churn data."
-          ],
-          "resources_needed": [
-            "CRM integration specialist ($5k)",
-            "Internal training for support staff (20 hrs)"
-          ],
-          "success_metric": "Decrease customer churn rate by 8% annually.",
-          "milestones": [
-            "Q3: Platform overhaul completion and team training.",
-            "Q4: Full rollout and performance tracking."
-          ]
-        },
-        "impact": "low",
-        "difficulty": "low",
-        "timeframe": "6 months"
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to define the scope and initial requirements for the Vertical Customization Engine (VCE).",
-        "owner": "VP of Product",
-        "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Launch a detailed feasibility study for the AI-Driven Predictive Maintenance Module, including data readiness assessment.",
-        "owner": "Head of Engineering",
-        "timeframe": "End of Q3"
-      },
-      {
-        "action": "Review current customer churn data and map it to technical gaps in the Proactive Customer Success Platform roadmap.",
-        "owner": "VP of Customer Success",
+        "action": "Establish a dedicated, part-time technical advisory role focused solely on technology evaluation.",
+        "owner": "Founder/Leadership Team",
         "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a costed roadmap for digital self-service tools and prioritize the 'Modular Configuration Tool' MVP.",
+        "owner": "Operations Lead (Volunteer)",
+        "timeframe": "Within 8 weeks"
       }
     ],
     "key_weaknesses": [
-      "Limited internal capacity for radical innovation projects due to resource constraints.",
-      "Reliance on legacy infrastructure which complicates rapid feature deployment.",
-      "High turnover in specialized technical talent leading to knowledge gaps."
+      "Over-reliance on founder expertise leading to limited technical bandwidth",
+      "Fragmented and manual innovation process lacking structured experimentation cycles",
+      "Limited digital maturity (Level 2) hindering scalable customer engagement tools",
+      "High dependency on legacy systems which complicates new technology integration"
     ]
   }
 }

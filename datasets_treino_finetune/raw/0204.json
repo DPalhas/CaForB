@@ -1,0 +1,141 @@
+{
+  "id": "0204",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:14:34.048037+00:00",
+    "duration_ms": 23828,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus Systems",
+      "sector": "Construction",
+      "size": "Micro",
+      "companyName": "Nexus Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, focusing initially on optimizing fleet fuel consumption and developing standardized digital safety checklists.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning either by deepening our specialization in high-margin niches like specialized utility infrastructure or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Nexus Systems maintains a strong local reputation due to its rapid response time and high quality standards for public works. The primary challenge is transitioning the firm's highly operational culture into a scalable, defensible service model without losing personalized client relationships.",
+      "companyName": "Nexus Systems",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimized Telematics Integration (Efficiency Gain)",
+        "rationale": "Implementing basic telematics across the entire fleet to monitor fuel consumption and maintenance schedules offers immediate operational cost savings and improves service reliability. This is a low-risk, foundational step that protects existing margins.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot IoT sensor installation on 10 core machines",
+            "Integrate basic fleet data into a centralized dashboard"
+          ],
+          "resources_needed": [
+            "Hardware purchase (sensors)",
+            "Outsourced integration consulting hours"
+          ],
+          "success_metric": "25% reduction in fuel consumption per operational hour within 6 months",
+          "milestones": [
+            "Q1: Pilot completion and data validation",
+            "Q3: Full fleet rollout plan finalized"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Niche Modular Infrastructure Platform (Market Defense)",
+        "rationale": "Develop a standardized, modular construction package (e.g., rapid road section components or specialized water filtration units) designed to be highly replicable and easily assembled by smaller teams. This moves the company from being a service provider to a component manufacturer.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three high-margin, repetitive infrastructure needs",
+            "Secure seed funding for prototyping/R&D partnership"
+          ],
+          "resources_needed": [
+            "Seed investment ($50k)",
+            "Contract specialized design consultant"
+          ],
+          "success_metric": "Develop and secure LOI for 2 modular product lines",
+          "milestones": [
+            "Q1-Q2: Concept validation and IP filing review",
+            "Q4: Prototype manufacturing readiness"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Digital Safety and Compliance Toolkit (Cost Reduction)",
+        "rationale": "Create a simple mobile application for field crews that automates safety checklists, generates digital compliance reports, and tracks required certifications. This reduces administrative overhead and mitigates liability.",
+        "execution_plan": {
+          "first_actions": [
+            "Define core regulatory requirements checklist",
+            "Develop MVP using low-code platform"
+          ],
+          "resources_needed": [
+            "Low-code development subscription",
+            "Internal project management hours"
+          ],
+          "success_metric": "15% reduction in safety compliance filing time",
+          "milestones": [
+            "Q2: MVP launch for field crew testing",
+            "Q4: Full integration across all operations"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated R&D task force focused solely on the Modular Infrastructure Platform (Radical Opportunity).",
+        "owner": "Founder/Owner",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Implement basic telematics pilot program to gather hard operational cost data.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Critical talent scarcity, making scaling and specialized technical development extremely difficult.",
+      "Extreme reliance on the single founder for all key product/technology decisions, posing a severe operational risk.",
+      "Severely constrained budget (10%), limiting large-scale capital expenditure necessary for radical shifts.",
+      "Operational culture is highly personalized and reactive, making it challenging to transition toward scalable platform thinking."
+    ]
+  }
+}

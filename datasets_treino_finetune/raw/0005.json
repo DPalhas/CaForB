@@ -3,144 +3,144 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Insurance",
+    "size": "Small",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:49:47.359294+00:00",
-    "duration_ms": 23915,
+    "generated_at": "2026-08-03T17:26:35.300769+00:00",
+    "duration_ms": 27592,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Industrial Components",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Prime Labs",
+      "sector": "Insurance",
+      "size": "Small",
+      "companyName": "Prime Labs"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "Apex Industrial Components is a mid-sized manufacturer specializing in precision metal components for the automotive and aerospace sectors. The company relies heavily on established supply chain relationships and consistent quality standards to maintain its market position. Operations are stable, focused primarily on high-volume, reliable production.",
+      "companyDescription": "Prime Labs is a focused insurance brokerage firm providing comprehensive risk management consulting for corporate clients across property, casualty, cyber, and D&O lines. The team of 35 brokers manages approximately €60M in placed premiums, specializing in complex risk exposure modeling. They operate from a centralized hub with localized service departments.",
       "innovationProcess": "partial",
-      "pastInitiatives": "Over the last three years, the team has conducted incremental improvements in manufacturing line efficiency through process mapping and minor material substitutions. They have also piloted a digital internal knowledge base to improve technical support response times for key clients.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to solidify market share within the existing automotive supply chain by emphasizing reliability and reducing operational costs. The company aims to maintain profitability through lean processes while defending against emerging low-cost competitors who are entering the niche.",
+      "pastInitiatives": "Our engineering team successfully adopted an agile methodology last year, transitioning from quarterly waterfall releases to 2-week sprints and continuous deployment cycles. This initiative increased development velocity by 60% but has highlighted a need for better communication channels between the technical dev team and client-facing operations.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We operate in a consolidating market where larger competitors are merging, making our independent position increasingly vulnerable to scale. Our goal is to proactively strengthen competitive positioning by either deepening our specialization in high-margin niches or building platform-like switching costs that make our core risk analytics offering indispensable.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The innovation team consists of five full-time engineers and two support staff, focused primarily on optimizing existing product lines rather than disruptive new market entries.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
       "budgetPercentage": 8,
       "decisionMaking": "formal_committee",
       "mainBarrier": [
+        "strategy",
         "talent",
-        "process",
         "time"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The company faces pressure from larger, more automated competitors and smaller firms offering highly specialized custom solutions."
+      "additionalContext": "The firm is currently facing intense pressure from large carriers offering bundled services. They need to transition from reactive risk advisory to proactive, data-driven predictive modeling to justify premium pricing and retention.",
+      "companyName": "Prime Labs",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Production Optimization for Core Product Line",
-        "rationale": "Implementing targeted process improvements can reduce material waste and cycle times by 10-12%, directly improving margins and making the existing product line more cost-competitive.",
+        "title": "Automated Data Normalization Pipeline (Quick Win)",
+        "rationale": "Implementing an automated pipeline for normalizing disparate client data will streamline the risk assessment process and significantly reduce manual input errors. This is a foundational step toward improving efficiency without requiring major platform overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a cross-functional value stream map of the top three product lines.",
-            "Identify and eliminate at least five non-value-added process steps."
+            "Identify 3 high-friction data points (e.g., loss history entry)",
+            "Define schema for normalization rules",
+            "Pilot integration with existing CRM tool"
           ],
           "resources_needed": [
-            "Internal project manager hours",
-            "Software for simulation/data analysis (low cost)"
+            "10% of senior engineer's time",
+            "License for basic ETL tool (e.g., Python/Pandas libraries)"
           ],
-          "success_metric": "10% reduction in manufacturing COGS within 9 months.",
+          "success_metric": "30% reduction in data entry error rate within Q2.",
           "milestones": [
-            "Q3: Pilot process mapping complete and bottlenecks identified.",
-            "Q4: Implementation of automated scheduling software."
+            "Data normalization prototype complete (Month 1)",
+            "Pilot deployment to one department (Month 2)"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      },
+      {
+        "type": "radical",
+        "title": "Proprietary Risk Prediction Engine Platform",
+        "rationale": "Develop a proprietary ML model that moves beyond simple exposure modeling to provide predictive risk scores for specific cyber and property events. This would create high switching costs by embedding Prime Labs' unique historical data directly into their platform.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 20% dedicated time to model exploration",
+            "Acquire or build specialized cloud infrastructure for ML training",
+            "Establish a cross-functional 'Risk Science Squad'"
+          ],
+          "resources_needed": [
+            "Hiring 1 Data Scientist (6 months)",
+            "Investment in AWS/Azure ML services ($5k/month)"
+          ],
+          "success_metric": "Achieve 90% accuracy in predicting property claims likelihood within 12 months.",
+          "milestones": [
+            "MVP model deployment and internal testing (Month 6)",
+            "Beta launch with top 5 corporate clients (Month 8)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Targeted Niche Content & Data Monetization",
+        "rationale": "Leverage dedicated research capabilities to create premium, specialized risk reports for a high-margin niche (e.g., specific industrial cyber risks). This directly supports market defense by focusing on areas where the firm can win against scale.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct gap analysis of current research output",
+            "Secure partnership with one industry-specific consultancy",
+            "Design a subscription tier for specialized reports"
+          ],
+          "resources_needed": [
+            "Contract fees ($2k/quarter)",
+            "Marketing budget reallocation (5%)"
+          ],
+          "success_metric": "Convert 10% of research clients to paying subscribers within the fiscal year.",
+          "milestones": [
+            "Identify and launch first niche report series (Month 3)",
+            "Achieve 20 paying subscriber base (Month 9)"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "9 months"
-      },
-      {
-        "type": "radical",
-        "title": "Niche High-Specification Component Development",
-        "rationale": "To defend against competitors, the company should develop a specialized series of ultra-high-tolerance components for a specific high-growth sector (e.g., advanced medical devices), creating a premium market that is less susceptible to price competition.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct a gap analysis on competitor's component offerings in the target niche.",
-            "Establish a small, dedicated R&D task force with external subject matter experts."
-          ],
-          "resources_needed": [
-            "External consulting fees",
-            "Pilot tooling investment ($50k)"
-          ],
-          "success_metric": "Capture 15% market share in the chosen niche within 3 years.",
-          "milestones": [
-            "Q2: Finalize product specifications and secure pilot contracts.",
-            "Q4: Launch of the first specialized component series."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "3 years"
-      },
-      {
-        "type": "incremental",
-        "title": "Predictive Maintenance Integration for Equipment",
-        "rationale": "Using IoT sensors on key machinery can move maintenance from reactive/preventative to predictive, significantly reducing unplanned downtime and improving operational efficiency in the defense of existing contracts.",
-        "execution_plan": {
-          "first_actions": [
-            "Pilot sensor deployment on critical CNC machines.",
-            "Integrate data streams into an existing internal dashboard."
-          ],
-          "resources_needed": [
-            "IoT hardware installation",
-            "Data analytics platform subscription ($20k/year)"
-          ],
-          "success_metric": "Achieve a 20% reduction in unplanned machine downtime.",
-          "milestones": [
-            "Q3: Sensor pilot completion and data validation.",
-            "Q1 (Next Year): Full rollout across all major production lines."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "12 months"
+        "timeframe": "6 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-departmental steering committee to evaluate the feasibility of the Lean Production Optimization project.",
-        "owner": "Operations Director",
-        "timeframe": "Within 2 weeks"
+        "action": "Establish a dedicated, small 'Risk Science Squad' with clear KPIs and budget.",
+        "owner": "Head of Innovation/COO",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Begin market research and competitor gap analysis for potential high-specification niche components.",
-        "owner": "R&D Lead",
-        "timeframe": "End of next month"
-      },
-      {
-        "action": "Assess the current digital infrastructure to identify low-cost IoT sensor integration points.",
-        "owner": "IT Manager",
-        "timeframe": "Within 4 weeks"
+        "action": "Execute the quick win for data normalization using existing engineering resources.",
+        "owner": "Senior Engineer/Tech Lead",
+        "timeframe": "Within 3 months"
       }
     ],
     "key_weaknesses": [
-      "Reliance on legacy production methods leading to high waste rates.",
-      "Insufficient specialized talent in advanced materials science required for radical innovation.",
-      "Slow internal decision-making process within the formal committee structure.",
-      "Limited investment budget restricting large, transformative projects."
+      "Lack of formalized, dedicated innovation budget beyond minimal operational costs.",
+      "High dependency on a single senior engineer for all prototyping and experimentation.",
+      "Slow internal communication between the technical team (agile sprints) and non-technical teams (marketing/support).",
+      "Fragmented innovation process that lacks standardized intake or prioritization criteria."
     ]
   }
 }

@@ -1,0 +1,126 @@
+{
+  "id": "0213",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:18:50.801864+00:00",
+    "duration_ms": 23550,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge Dynamics",
+      "sector": "Manufacturing",
+      "size": "Large",
+      "companyName": "Forge Dynamics"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Forge Dynamics is a leading technical textile manufacturer specializing in high-performance fabrics for demanding sectors like aerospace, industrial safety, and sustainable outdoor gear. The company operates complex supply chains involving specialized chemical treatments and material sourcing from recycled polymers, requiring strict compliance with global quality standards and environmental regulations.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing—only 8% of customers created accounts. This failure highlighted a critical gap in our process: we prioritized technological deployment over deep market validation and localized user experience design.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats through rapid product differentiation, exclusive partnerships, and service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 26,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are planning an IPO within 24 months and need to demonstrate a track record of innovation-driven growth to public market investors. The CFO has asked for a 3-year innovation investment plan with clear KPIs that can be included in our equity story and analyst presentations. Bonus points for initiatives that improve our ESG metrics, as this is a key focus area for the listing venue.",
+      "companyName": "Forge Dynamics",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Quality Control Integration",
+        "rationale": "Leveraging current investment in computer vision technology to automate fabric defect grading will drastically reduce manual inspection time and associated labor costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot CV system on one high-volume product line (e.g., medical scrubs) within Q2.",
+            "Integrate data pipeline between vision system and existing ERP for real-time defect tracking."
+          ],
+          "resources_needed": [
+            "Internal Data Science team allocation",
+            "Software licensing/API integration costs ($150k)"
+          ],
+          "success_metric": "Reduction in manual inspection time by 30% within 6 months.",
+          "milestones": [
+            "Q2: Pilot deployment complete and data validation successful.",
+            "Q3: Full roll-out plan finalized for two additional product lines."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Proprietary Bio-Based Polymer R&D",
+        "rationale": "Invest aggressively in developing a next-generation, fully bio-based technical fiber capable of matching or exceeding the performance metrics of petroleum-derived synthetics. This creates an insurmountable cost and sustainability moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish dedicated internal R&D team focusing on novel cellulose/algae composites.",
+            "Secure strategic partnerships with university material science departments."
+          ],
+          "resources_needed": [
+            "High-value external lab contracts ($500k initial)",
+            "Key personnel acquisition budget"
+          ],
+          "success_metric": "Successful proof-of-concept material ready for pilot manufacturing integration within 18 months.",
+          "milestones": [
+            "Q1: Target material identified and preliminary feasibility study complete.",
+            "Q4: Successful demonstration of commercial scalability in a controlled environment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2-3 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a rapid, agile 'Defense Task Force' focused solely on competitive threat analysis and M&A targets.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Allocate $1M of the innovation fund specifically for high-risk, bold material science research (Opportunity 2).",
+        "owner": "VP of Innovation",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch a 'User Validation Sprint' program to validate self-service and digital tools before major spend.",
+        "owner": "Head of Digital Transformation",
+        "timeframe": "Ongoing (Weekly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leads to inconsistent project prioritization and execution quality across business units.",
+      "High dependency on manual processes, limiting agility in scaling new technologies like computer vision.",
+      "Decentralized decision-making leading to potential cannibalization of resources or missed synergistic opportunities between units.",
+      "Lack of formalized market validation framework for digital initiatives, resulting in costly MVP failures."
+    ]
+  }
+}

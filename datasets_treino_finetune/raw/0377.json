@@ -1,0 +1,121 @@
+{
+  "id": "0377",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:48:26.399082+00:00",
+    "duration_ms": 24550,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge Systems.com",
+      "sector": "Public Administration",
+      "size": "Micro",
+      "companyName": "Forge Systems.com"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Forge Systems is a micro municipal government entity providing essential urban services like waste management and traffic optimization for 250,000 residents. Operating with minimal bureaucratic overhead, the company focuses on rapid deployment of localized data solutions to enhance public service delivery efficiency.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats through deep service integration and proprietary localized data that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 21,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities—explainability, human oversight, risk classification documentation—into our product roadmap immediately to avoid market access risk when enforcement begins.",
+      "companyName": "Forge Systems.com",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Proprietary Predictive Service Layer (AI/ML)",
+        "rationale": "Given the high competitive pressure and bold risk appetite, leveraging nascent AI models to predict localized infrastructure failures or citizen service demand allows Forge Systems to create a highly differentiated, proprietary service layer. This shifts the moat from operational efficiency to predictive intelligence.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one high-friction area (e.g., traffic light optimization) suitable for ML pilot.",
+            "Allocate 15% of the budget immediately for a specialized external data scientist consultant."
+          ],
+          "resources_needed": [
+            "Data science consultancy fee (€20k)",
+            "Access to existing operational sensor data sets",
+            "Founder time commitment (3 days/week)"
+          ],
+          "success_metric": "Achieve 15% reduction in response time for identified service bottlenecks within 6 months.",
+          "milestones": [
+            "Month 2: Data pipeline established and initial model trained.",
+            "Month 4: Successful pilot deployment with measurable efficiency gains."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-36 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Localized Citizen Portal Enhancement",
+        "rationale": "Focus on immediate competitive defense by deeply customizing the existing unified citizen services portal. This incremental improvement enhances user experience and loyalty without requiring a full technology overhaul, directly addressing informal customer feedback.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct rapid UX audit of the current citizen portal workflow.",
+            "Allocate 6% of the budget for front-end sprint development."
+          ],
+          "resources_needed": [
+            "UI/UX designer contract (€8k)",
+            "Existing web development team hours",
+            "Feedback collection infrastructure"
+          ],
+          "success_metric": "Increase citizen portal adoption rate by 25% within 12 months.",
+          "milestones": [
+            "Month 3: MVP of enhanced service module deployed.",
+            "Month 6: Full integration and user testing feedback cycle initiated."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional 'Compliance & Innovation Working Group' to rapidly map EU AI Act requirements onto the product roadmap.",
+        "owner": "Founder/Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop and present a detailed business case for the Predictive Service Layer pilot (Opportunity 1) to secure necessary seed funding or internal resources.",
+        "owner": "Owner_Alone",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal process structure limiting scalability and repeatable innovation cycles.",
+      "Extreme founder dependency creating single points of failure in technical decision-making.",
+      "Zero dedicated digital infrastructure, resulting in low digital maturity (1) despite operational complexity.",
+      "Inconsistent application of change management leading to failed technology pilots."
+    ]
+  }
+}

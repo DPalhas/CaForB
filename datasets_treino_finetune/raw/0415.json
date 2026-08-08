@@ -1,0 +1,156 @@
+{
+  "id": "0415",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:04:50.629350+00:00",
+    "duration_ms": 27481,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.397618+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Corporation",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Medium",
+      "companyName": "Lumina Corporation"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Lumina Corporation is a mid-sized media and entertainment firm focused on digital content strategy, influencer partnerships, and live stream production for emerging IP. The company manages complex licensing agreements and creative workflows across multiple platforms. We are currently scaling our operations to handle increased demand while maintaining high quality standards in a rapidly evolving market.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring for content segmentation.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense competition from global streaming platforms and fast-moving digital content creators, requiring constant operational agility.",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "companyName": "Lumina Corporation"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Content Rights Management (ACRM) Pilot",
+        "rationale": "Implementing basic AI tools for tracking usage and licensing of creative assets can drastically reduce manual overhead and compliance risk. This addresses the high regulatory environment by ensuring accurate royalty tracking.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 key content streams for pilot integration",
+            "Select a low-code ACRM platform vendor",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Platform licensing fee ($15k)",
+            "2 dedicated internal project managers (part-time)"
+          ],
+          "success_metric": "30% reduction in manual rights tracking hours within 6 months",
+          "milestones": [
+            "Vendor selection and contract signing (Month 1)",
+            "Pilot deployment on one content stream (Month 3)",
+            "Full integration review and scaling roadmap proposal (Month 5)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Personalized Media Experience Engine",
+        "rationale": "Developing a radical recommendation engine using deep learning to predict viewer engagement and dynamically tailor content feeds in real-time. This moves the company from selling 'content' to selling 'attention' efficiently.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated data science squad (reallocating 2 engineers)",
+            "Develop proof-of-concept model using existing user interaction data",
+            "Define core metrics for engagement lift per personalized feed",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Hiring 1 specialized ML engineer ($80k salary)",
+            "Cloud compute resources (AWS/Azure) for training ($30k annually)"
+          ],
+          "success_metric": "Achieve a 15% increase in average user session duration within Q4",
+          "milestones": [
+            "MVP model completion and validation (Month 6)",
+            "Internal A/B testing rollout to 20% of users (Month 8)",
+            "Full platform integration and monetization strategy launch (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "15 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cross-Functional Process Automation Sprint",
+        "rationale": "Focus on leveraging low-code tools (e.g., Zapier, internal workflow automation) to eliminate manual data transfers between creative and production teams, directly targeting time efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current top 3 most time-consuming cross-departmental workflows",
+            "Select a primary low-code integration tool for immediate deployment",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Training budget ($5k)",
+            "Time allocation from existing Ops staff (part of 20% time)"
+          ],
+          "success_metric": "Reduction of manual data entry hours by 40% in the targeted departments",
+          "milestones": [
+            "Workflow mapping and tool selection (Month 1)",
+            "Deployment and user training for Phase 1 automation (Month 2)",
+            "Review and optimization sprint (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated Efficiency Task Force to audit all manual workflows and identify the top 5 cost drivers.",
+        "owner": "COO/Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Launch the internal pitch competition with specific seed funding targets focused on radical tech for process efficiency.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate technical scoping and vendor evaluation for the ACRM pilot project.",
+        "owner": "CTO/Head of Technology",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on manual workflows, leading to significant time bottlenecks in content delivery and financial reporting.",
+      "Fragmented digital maturity across teams; while the tech org is mature (3), creative execution relies heavily on outdated or localized tools.",
+      "Critical talent shortage specifically in data science and advanced AI applications required for radical innovation.",
+      "Informal customer feedback loop which hinders rapid iteration of core content strategy."
+    ]
+  }
+}

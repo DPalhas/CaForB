@@ -1,0 +1,155 @@
+{
+  "id": "0466",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:15:29.352973+00:00",
+    "duration_ms": 28432,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Analytics",
+      "sector": "Real Estate",
+      "size": "Medium",
+      "companyName": "Lumina Analytics"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Commercial property management firm operating 12 office buildings, 3 retail centers, and 2 logistics parks totaling 120,000 sq. ft of leasable area. Managing 400+ tenant relationships across diverse industrial and residential sectors. Seeking to implement IoT-based building energy management and a tenant experience mobile app to modernize operational workflows.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks across our portfolio. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication across CRM and HR systems, creating silos that hinder streamlined data access. There is a unique window to redesign core operational workflows from scratch rather than patching legacy approaches, but cultural integration remains fragile.",
+      "companyName": "Lumina Analytics"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "IoT Energy Optimization Pilot",
+        "rationale": "Implementing IoT sensors in key logistics centers allows for granular monitoring of HVAC and lighting usage, providing an immediate opportunity to reduce utility costs and improve operational efficiency. This aligns perfectly with the short-term goal of improving EBITDA margins.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 10 high-load office buildings for a pilot installation.",
+            "Define specific ROI metrics tied directly to energy savings.",
+            "Allocate $50,000 from the operational budget for procurement and integration."
+          ],
+          "resources_needed": [
+            "IoT hardware sensors",
+            "Integration software licenses",
+            "1 dedicated project manager (internal)"
+          ],
+          "success_metric": "Achieve 8% reduction in energy expenditure within 6 months.",
+          "milestones": [
+            "Q3: Pilot deployment complete and baseline data established.",
+            "Q4: Full operational reporting and ROI validation."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Dynamic Lease Pricing Model (Bold)",
+        "rationale": "Leveraging machine learning to predict market shifts and optimize lease terms in real-time would fundamentally change how the company manages portfolio utilization. This radical approach targets the core efficiency goal by maximizing revenue per square foot while minimizing vacancy risk, though it requires significant process redesign.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated cross-functional task force (Finance, Tech, Operations).",
+            "Conduct market data feasibility study to validate model accuracy.",
+            "Allocate $150,000 for R&D and data science talent acquisition/consultancy."
+          ],
+          "resources_needed": [
+            "Senior Data Scientist",
+            "Cloud computing resources (GPU access)",
+            "Process redesign consulting services"
+          ],
+          "success_metric": "Model successfully simulates 3 potential pricing scenarios with >90% accuracy in predicting market response.",
+          "milestones": [
+            "Q2: Market data validation and MVP model proof-of-concept.",
+            "Q4: Formal committee review for phased pilot implementation."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Unified CRM/ERP System Consolidation",
+        "rationale": "Integrating the duplicated CRM and HR systems will resolve significant operational friction, reduce manual data entry errors, and improve cross-departmental visibility. This incremental step is crucial for overcoming the cultural silo barriers mentioned in the merger context.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current system usage across operations and commercial teams.",
+            "Select a platform that supports existing compliance needs (medium regulatory environment).",
+            "Establish a dedicated integration team to manage data migration."
+          ],
+          "resources_needed": [
+            "System integration software license",
+            "Internal IT resources reallocation",
+            "Change management training materials budget"
+          ],
+          "success_metric": "Reduce duplicate system maintenance costs by 20% within the first year.",
+          "milestones": [
+            "Q1: System selection and vendor contract finalized.",
+            "Q3: Data migration complete and operational go-live."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional steering committee to prioritize the IoT pilot and Dynamic Pricing project.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate discovery phase for AI modeling feasibility study for dynamic pricing model.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch change management workshop focused on post-merger system integration readiness.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Rigid and slow formal business case approval process",
+      "Significant cultural friction and change fatigue post-merger",
+      "Insufficient dedicated capital for high-impact R&D initiatives within a tight budget",
+      "High risk associated with short time horizons limiting long-term radical innovation exploration"
+    ]
+  }
+}

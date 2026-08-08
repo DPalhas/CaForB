@@ -1,0 +1,122 @@
+{
+  "id": "0499",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:32:15.695854+00:00",
+    "duration_ms": 21087,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.429697+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Strato.ai",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Large",
+      "companyName": "Strato.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Strato.ai is a large video game development studio specializing in creating narrative-driven indie games for PC and console platforms using the Unity engine. The team consists of 18 dedicated developers focused on quality, but currently lacks formal mechanisms to integrate emerging technologies or pivot their core product offerings into new market segments. We are actively evaluating procedural content generation tools and AI-driven playtesting automation to enhance development efficiency.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The company has not undertaken any systematic innovation or transformation programs; its operational model has remained largely stagnant for several years. While leadership acknowledges the need to modernize, there has been no allocation of resources, defined ownership, or committed timelines for any specific innovation initiative beyond internal maintenance.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base where our top three clients represent 55% of total revenue. This concentration risk is unacceptable, necessitating the urgent identification and development of new revenue streams through entirely new product lines or business models that leverage our existing intellectual property.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Strato.ai operates in a sector where content creation cycles are fast, meaning stagnation poses an existential threat. The lack of established feedback loops means they risk missing critical shifts in player preference and platform viability.",
+      "companyName": "Strato.ai",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Playtesting Integration",
+        "rationale": "Implementing AI tools for automated playtesting can significantly reduce manual QA time and provide data on player engagement patterns that are currently inaccessible. This is a low-risk, high-efficiency operational improvement.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot an AI tool integration with the current flagship project.",
+            "Identify and train internal staff on new automation scripts.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Software licensing for AI playtesting suite",
+            "2 full-time QA analyst hours assigned to pilot"
+          ],
+          "success_metric": "30% reduction in time spent on manual regression testing within 6 months.",
+          "milestones": [
+            "Q1: Tool selection and procurement complete",
+            "Q2: Pilot implementation and initial ROI report"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "IP Monetization via Platform-Agnostic Service Library",
+        "rationale": "To combat revenue concentration, Strato.ai should pivot towards developing a reusable content generation engine or SDK that allows third parties to license assets and build their own games. This creates a new business model outside of direct product sales.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated task force to map existing game assets into modular libraries.",
+            "Initiate legal review for licensing/SDK terms."
+          ],
+          "resources_needed": [
+            "3 Senior Content Developers (part-time)",
+            "Legal consultation budget"
+          ],
+          "success_metric": "Secure 1 pilot licensing agreement or framework established by end of year.",
+          "milestones": [
+            "Q3: Library MVP defined and documented",
+            "Q4: Initiate first third-party outreach meetings"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal 'Idea Incubation' pipeline and define clear KPIs for the next 18 months.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Conduct a deep-dive audit of current revenue streams to quantify concentration risk and prioritize diversification targets.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of defined innovation processes (process)",
+      "Absence of clear long-term strategic roadmap for diversification (strategy)",
+      "Low digital maturity requiring foundational skill uplift in AI/procedural tech (digital capability)"
+    ]
+  }
+}

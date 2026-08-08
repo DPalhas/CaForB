@@ -28,3 +28,15 @@ export const GET_INSIGHT = gql`
     }
   }
 `;
+
+export const MY_INSIGHTS = gql`
+  query MyInsights {
+    myInsights {
+      id
+      companyName
+      sector
+      innovationScore
+      submittedAt
+    }
+  }
+`;

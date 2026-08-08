@@ -3,121 +3,126 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Large",
     "regulatory_environment": "high",
     "risk_appetite": "conservative",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:54:55.673673+00:00",
-    "duration_ms": 19468,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:35:23.216258+00:00",
+    "duration_ms": 24600,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.257449+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Industrial Components",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Fusion",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Large",
+      "companyName": "Fusion"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Apex is a mid-sized manufacturer specializing in precision industrial components for the aerospace and medical device sectors. The company operates in highly regulated environments requiring strict compliance with ISO standards and environmental safety protocols. While established, rapid technological shifts necessitate constant process improvement.",
+      "companyDescription": "Fusion is a specialized biotech company focused on developing novel monoclonal antibody therapies for complex autoimmune diseases. The firm holds promising Phase II data for its lead candidate in rheumatoid arthritis, positioning it as a strong incumbent. Key innovation focuses heavily on leveraging AI-accelerated computational models to navigate the long and costly preclinical development cycle.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The last two years focused on incremental updates to existing production lines to meet current efficiency targets. We have piloted a digital quality control system but have not fully scaled it across all facilities yet.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to maintain stable market share in high-value contracts by ensuring uncompromising product quality and compliance. We aim to mitigate new market entrants through operational excellence and defensive technology adoption.",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration within the R&D department. However, adjacent teams like clinical operations and regulatory compliance are still adapting to the faster cadence of the new development lifecycle.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base by optimizing drug delivery methods and strengthening switching costs, ensuring we maintain premium positioning without triggering destructive price wars.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core innovation team consists of 5 engineers, focused primarily on process optimization. The overall organizational structure is stable but resistant to rapid change.",
       "digitalMaturity": "3",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 4,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
-        "process",
         "culture",
-        "time",
-        "talent"
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is consolidating, and key competitors are rapidly adopting automation in their component fabrication processes. We need to defend our position without risking significant capital."
+      "competitivePressure": "low",
+      "additionalContext": "The company is currently navigating complex FDA guidance related to novel biomarker usage, which requires constant internal updates. There is an internal push to integrate AI-driven predictive analytics directly into the clinical trial design phase for efficiency.",
+      "companyName": "Fusion",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Process Automation for Compliance Audits",
-        "rationale": "Implementing a targeted automation layer to streamline documentation and compliance reporting will reduce the 'process' barrier while mitigating high regulatory risks effectively. This is a defensive move that protects existing contracts.",
+        "title": "Platform Innovation: Next-Gen Target Identification Suite",
+        "rationale": "Developing a completely novel discovery platform focused on identifying entirely new disease targets, rather than just optimizing existing antibodies, could create defensible intellectual property and bypass competitors' incremental improvements. While high risk due to regulatory uncertainty, success would redefine the company’s long-term moat.",
         "execution_plan": {
           "first_actions": [
-            "Identify the top 3 regulatory bottlenecks in production documentation.",
-            "Pilot RPA (Robotic Process Automation) for data entry and report generation."
+            "Conduct a 6-month feasibility study on an entirely new therapeutic modality (e.g., cell therapy or RNA delivery) for autoimmune disease.",
+            "Allocate $50k budget to acquire external expertise in non-antibody target identification.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "50 hours of external consulting for compliance automation setup",
-            "Software licensing for basic RPA tools"
+            "External scientific advisory board retainer",
+            "Dedicated small internal cross-functional task force"
           ],
-          "success_metric": "Reduce documentation preparation time by 30% within Q3.",
+          "success_metric": "Successful initiation of a pilot project with predefined IP filing potential.",
           "milestones": [
-            "Q1: Complete bottleneck analysis and tool selection.",
-            "Q2: Successful pilot implementation in one facility."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "6 months"
-      },
-      {
-        "type": "radical",
-        "title": "Agile Design for Component Customization Service",
-        "rationale": "Develop a radical new service model allowing for rapid, customized component design feedback from clients. This shifts the company from selling standardized parts to offering high-value, bespoke solutions, creating a defensible competitive moat.",
-        "execution_plan": {
-          "first_actions": [
-            "Establish a dedicated cross-functional 'Design Squad' team (R&D + Sales).",
-            "Create a Minimum Viable Product (MVP) offering for one niche client segment."
-          ],
-          "resources_needed": [
-            "Hiring of 2 UX/Industrial Design specialists",
-            "Dedicated prototyping lab space expansion"
-          ],
-          "success_metric": "Achieve 15% revenue contribution from bespoke services within 18 months.",
-          "milestones": [
-            "Q1-Q2: MVP launch and initial client feedback loop.",
-            "Q3: Full service integration into sales pipeline."
+            "Q3: Feasibility Report Complete",
+            "Q4: External Partnership Secured (Target Identified)"
           ]
         },
         "impact": "high",
         "difficulty": "high",
         "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI Optimization of Clinical Trial Design and Endpoint Analysis",
+        "rationale": "Leveraging our existing AI infrastructure to predict patient response rates early in Phase I/II trials will reduce trial duration and improve the quality of data submitted to regulators. This incremental improvement directly addresses cost pressures while maintaining conservative risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate predictive modeling into current Phase II clinical protocols for 2 upcoming studies.",
+            "Train internal statisticians on machine learning deployment pipelines.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Internal software license upgrade",
+            "6 months of dedicated Data Science personnel time"
+          ],
+          "success_metric": "Reduction in average trial duration by 15% across pilot studies.",
+          "milestones": [
+            "Q3: AI Integration Pilot Launch",
+            "Q4: Initial Efficiency Metrics Verified"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-departmental task force to map all regulatory compliance pain points.",
-        "owner": "COO",
-        "timeframe": "Within 3 weeks"
+        "action": "Establish a dedicated 'Market Defense' review committee to audit current product portfolio against competitor pricing and feature sets.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Initiate feasibility study and budget allocation for the Lean Process Automation pilot project.",
-        "owner": "VP of Operations",
-        "timeframe": "End of Q2"
-      },
-      {
-        "action": "Conduct market analysis on competitor service models to validate the 'Radical' design opportunity.",
-        "owner": "Head of Strategy",
+        "action": "Finalize requirements for the AI optimization pilot program in collaboration with clinical operations and R&D leads.",
+        "owner": "Head of Innovation / Chief Data Officer",
         "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Audit current operational culture to identify specific bottlenecks causing friction between agile development and regulatory compliance teams.",
+        "owner": "HR Director",
+        "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "High dependency on legacy manual documentation processes.",
-      "Resistance within the existing engineering culture to adopting new digital workflows.",
-      "Limited internal talent pool for advanced data analytics and AI integration."
+      "Organizational inertia regarding process change (culture barrier).",
+      "Fragmented decision-making structure across different R&D and commercial teams.",
+      "Limited external pipeline for non-antibody therapeutic modalities.",
+      "High reliance on internal AI infrastructure which may lack the specialized domain expertise required for true radical innovation."
     ]
   }
 }

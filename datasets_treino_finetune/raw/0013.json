@@ -3,71 +3,73 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Professional & Consulting Services",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "conservative",
     "strategic_priority": "growth",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:52:51.257946+00:00",
-    "duration_ms": 22332,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:33:22.011530+00:00",
+    "duration_ms": 25151,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.255472+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "GrowthTrack Analytics",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Forge Corporation",
+      "sector": "Professional & Consulting Services",
+      "size": "Micro",
+      "companyName": "Forge Corporation"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "GrowthTrack Analytics is a B2B SaaS provider offering project management and data visualization tools tailored for the construction industry. We focus on optimizing resource allocation through predictive analytics modules integrated into our existing platform.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company recently launched three incremental updates to its core software suite focused on user experience improvements and minor feature enhancements. A pilot project for a new AI-driven forecasting module is currently underway but not yet scaled.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is aggressive revenue growth by capturing market share within the mid-market construction sector over the next three years. We aim to achieve 40% annual recurring revenue (ARR) growth.",
+      "companyDescription": "Engineering design consultancy providing structural, MEP, and sustainability consulting for large-scale commercial and infrastructure projects. The team leverages industry-standard tools like Revit and IES VE but operates without formalized CAD/BIM workflows or standardized data management protocols. Currently operating from a single location with very limited management layers, the firm relies heavily on individual engineer expertise rather than documented organizational knowledge.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. This failure highlighted a gap between technical build and market need.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments, specifically focusing on specialized carbon offset compliance consulting. The core question is whether to deepen our vertical specialization into sustainable infrastructure or broaden horizontally by offering integrated design and sustainability services.",
       "strategicPriority": "growth",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The core team consists of 12 dedicated engineers, product managers, and sales specialists focused primarily on execution and stability.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "talent",
-        "process",
-        "time"
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "We face competition from established enterprise software providers and emerging niche startups offering specialized AI tools."
+      "competitivePressure": "low",
+      "additionalContext": "The company is currently struggling to standardize its project documentation across different engineers due to the informal process. There is a recognized need for standardized knowledge management tools but no internal bandwidth or budget allocated for implementation.",
+      "companyName": "Forge Corporation",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 4.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Feature Expansion: Integrated Industry Templates",
-        "rationale": "This involves creating standardized project templates that automate setup for new clients, which addresses internal process bottlenecks and allows us to upsell premium features efficiently. This is a low-risk way to increase perceived value.",
+        "title": "Implement Low-Code Internal Knowledge Base",
+        "rationale": "Given the informal process and talent constraints, a low-code platform (e.g., SharePoint or Notion) can quickly digitize project documentation and institutional knowledge, improving internal efficiency without requiring extensive development resources.",
         "execution_plan": {
           "first_actions": [
-            "Identify top 5 high-value client use cases",
-            "Define template structure and required data fields",
-            "Build MVP of the automation tool"
+            "Select and pilot a low-cost platform for departmental documentation.",
+            "Identify two key engineers to document standard operating procedures (SOPs).",
+            "Allocate 50 hours of existing staff time per month for initial setup."
           ],
           "resources_needed": [
-            "1 dedicated product manager",
-            "2 backend developers (part-time)",
-            "UX design sprint budget"
+            "Software subscription ($10/user)",
+            "Internal labor hours (approx. 6-8 weeks total)",
+            "Basic training budget"
           ],
-          "success_metric": "50% increase in demo conversion rate for new leads within 6 months",
+          "success_metric": "Reduction in time spent locating project documents by 25%",
           "milestones": [
-            "Template V1 MVP complete: Month 3",
-            "Beta testing with 2 pilot clients: Month 5"
+            "Platform selection and POC complete (Month 1)",
+            "SOP documentation for structural design finalized (Month 3)"
           ]
         },
         "impact": "medium",
@@ -76,77 +78,77 @@
       },
       {
         "type": "incremental",
-        "title": "Customer Success Program Optimization",
-        "rationale": "By formalizing a proactive Customer Success (CS) program focused on retention and upsells, we can improve customer lifetime value (CLV), which is crucial for sustained growth. This leverages existing customer relationships.",
+        "title": "Targeted Niche Service Development (Adjacent Growth)",
+        "rationale": "To pursue growth, Forge should develop a highly specialized consulting package focused on the identified adjacent market: carbon offset compliance for infrastructure projects. This leverages existing expertise in MEP and sustainability but creates a distinct revenue stream.",
         "execution_plan": {
           "first_actions": [
-            "Conduct NPS deep dive to identify churn indicators",
-            "Develop tiered onboarding automation scripts",
-            "Train the support team on proactive engagement tactics"
+            "Conduct a feasibility study on demand for carbon-related audits.",
+            "Develop a preliminary service scope document.",
+            "Identify one partner company or consultant to co-develop the offering."
           ],
           "resources_needed": [
-            "1 CS manager (internal shift)",
-            "Licensing for CRM enhancement tools ($5k)",
-            "Training materials budget"
+            "Market research costs ($5k)",
+            "Consultant partnership fees",
+            "Marketing materials budget"
           ],
-          "success_metric": "Reduce churn rate by 10% over the next fiscal year",
+          "success_metric": "Conversion of 1 pilot project into a recurring service agreement within 9 months.",
           "milestones": [
-            "Implement tiered onboarding system: Month 4",
-            "Q3 CLV increase target: End of Q4"
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "9 months"
-      },
-      {
-        "type": "radical",
-        "title": "Predictive Maintenance AI Module (V2)",
-        "rationale": "Developing a truly predictive AI module that forecasts equipment failure for construction sites moves us from optimization to prediction, creating a significant competitive moat. This aligns directly with our growth priority and market need.",
-        "execution_plan": {
-          "first_actions": [
-            "Secure specialized data scientists (contract)",
-            "Conduct comprehensive dataset audit",
-            "Establish a dedicated cross-functional 'Innovation Squad'"
-          ],
-          "resources_needed": [
-            "2 Data Science consultants ($40k initial)",
-            "Cloud ML compute resources ($15k/year estimate)",
-            "Hiring budget for 1 senior AI engineer (Year 2)"
-          ],
-          "success_metric": "Achieve a 15% reduction in client downtime reported by users",
-          "milestones": [
-            "Proof of concept model trained: Month 8",
-            "API integration with core platform: Month 12"
+            "Feasibility study complete (Month 2)",
+            "First specialized consulting engagement secured (Month 6)"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "24 months"
+        "timeframe": "1 year"
+      },
+      {
+        "type": "incremental",
+        "title": "Integrate Generative AI for Initial Design Optimization (Bold)",
+        "rationale": "While the budget is tight, integrating a simplified generative design tool could dramatically reduce initial conceptual engineering time and allow engineers to explore hundreds of structural iterations rapidly. This bold shift addresses the talent bottleneck by augmenting existing staff efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a specific AI-driven parametric modeling plugin compatible with Revit/IFC.",
+            "Allocate dedicated funding for high-performance computing access or SaaS licensing.",
+            "Design a highly controlled, low-risk project to test the tool's output."
+          ],
+          "resources_needed": [
+            "AI software subscription ($5k/year)",
+            "Dedicated senior staff time for training (40 hours)",
+            "Minor hardware upgrade potential (if required)"
+          ],
+          "success_metric": "Reduction in initial structural modeling cycle time by 30% on pilot projects.",
+          "milestones": [
+            "Tool selection and integration finalized (Month 1-2)",
+            "Successful demonstration of AI-assisted design results (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Schedule a formal review of the Customer Success playbook to identify immediate retention gaps.",
-        "owner": "CS Manager",
-        "timeframe": "Within 1 week"
+        "action": "Establish a formalized, documented project intake and knowledge management workflow.",
+        "owner": "Operations Manager (Owner)",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Finalize resource allocation and project roadmap for the V2 Predictive AI module, securing initial data science contracts.",
-        "owner": "COO/VP of Product",
-        "timeframe": "Within 4 weeks"
+        "action": "Initiate the feasibility study for carbon offset compliance consulting service.",
+        "owner": "Business Development Lead",
+        "timeframe": "End of Q1"
       },
       {
-        "action": "Launch an internal cross-departmental workshop to redefine core product templates and standardize feature requests.",
-        "owner": "Head of Product",
-        "timeframe": "Within 30 days"
+        "action": "Pilot integration of a low-code knowledge base solution to address talent bottleneck and informal processes.",
+        "owner": "Lead Developer/Engineer",
+        "timeframe": "Within 3 months"
       }
     ],
     "key_weaknesses": [
-      "Reliance on a single core engineering team, creating high burnout risk.",
-      "Slow internal process for scaling development from pilot to enterprise level.",
-      "Limited direct control over long-term strategic technological shifts due to conservative appetite.",
-      "Inconsistent customer data quality across different project types."
+      "Lack of standardized engineering workflows, leading to inconsistent quality.",
+      "Extreme reliance on individual talent; high risk if key personnel leave.",
+      "Very low digital maturity (Maturity Level 1) preventing scalable process improvements.",
+      "Informal decision-making which risks misallocation of limited budget and missed market opportunities."
     ]
   }
 }

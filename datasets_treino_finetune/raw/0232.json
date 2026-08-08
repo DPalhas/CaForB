@@ -1,0 +1,124 @@
+{
+  "id": "0232",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:27:18.703358+00:00",
+    "duration_ms": 20872,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.329781+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum Digital",
+      "sector": "Mining & Extraction",
+      "size": "Medium",
+      "companyName": "Quantum Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region, relying heavily on heavy machinery and complex logistics. Major capital investment in automated cutting and crushing equipment is currently under evaluation as a key driver to enhance operational efficiency.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to improve customer acquisition efficiency.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory by diversifying revenue streams. We are willing to make significant strategic bets—potentially including M&A, new product lines focused on specialized aggregates, or geographic expansion—provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Supply chain volatility and fluctuating global commodity prices present continuous operational challenges that require agile decision-making and adaptive process innovation.",
+      "companyName": "Quantum Digital",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Full Operational Automation of Crushing Processes",
+        "rationale": "Automating existing core processes (cutting and crushing) directly addresses current efficiency bottlenecks and improves throughput. This is a low-risk initiative that leverages the company's planned capital investment to standardize output quality and reduce labor costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on sensor integration for primary crusher monitoring.",
+            "Identify and secure budget allocation for pilot automation unit testing.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "$500k capital expenditure",
+            "1 external automation consultant contract"
+          ],
+          "success_metric": "30% reduction in processing cycle time within 12 months.",
+          "milestones": [
+            "Q3: Feasibility Study Complete and ROI Model Approved.",
+            "Q4: Pilot Automation Unit Installed and Operational."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Development of Predictive Maintenance SaaS Platform",
+        "rationale": "Creating a software solution leveraging IoT and AI to predict equipment failure in real-time moves Quantum Digital from being purely an extractor to a technology provider. This radical shift creates entirely new, recurring revenue streams by selling data insights rather than just raw materials.",
+        "execution_plan": {
+          "first_actions": [
+            "Form cross-functional task force (Engineering/Data Science).",
+            "Define Minimum Viable Product (MVP) features for predictive analytics dashboard.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "$250k R&D budget",
+            "Hiring 1 specialized Data Scientist"
+          ],
+          "success_metric": "Secure 3 pilot agreements with mid-sized contractors.",
+          "milestones": [
+            "Q2: MVP Feature Set Defined and Initial Prototype Complete.",
+            "Q4: Successful Pilot Deployment and Feedback Loop Established."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the M&A due diligence process for regional specialized aggregate suppliers.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Launch internal training program focused on bridging the gap between manual operational teams and new digital tools (e.g., AI dashboard usage).",
+        "owner": "HR/Operations Manager",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant internal culture resistance to adopting necessary process changes and automation.",
+      "Inconsistent application of innovation methodology across the business, leading to siloed digital maturity pockets.",
+      "Talent scarcity in specialized data science and predictive maintenance engineering roles.",
+      "Reliance on a small leadership team which may lack deep industry-specific expertise in emerging technology trends."
+    ]
+  }
+}

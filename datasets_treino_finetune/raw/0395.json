@@ -1,0 +1,119 @@
+{
+  "id": "0395",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:56:31.036400+00:00",
+    "duration_ms": 21525,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Orbit Innovations.com",
+      "sector": "Manufacturing",
+      "size": "Large",
+      "companyName": "Orbit Innovations.com"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively—business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "companyName": "Orbit Innovations.com"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Process Automation for Packaging Line Optimization",
+        "rationale": "Implementing incremental upgrades to the existing packaging machinery using low-cost sensors and minor AI adjustments can reduce energy consumption per unit by 10% without requiring massive capital expenditure. This aligns perfectly with the conservative risk appetite.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a pilot study on sensor integration in one high-energy blast freezer line.",
+            "Allocate €25,000 from the innovation fund for IoT sensor procurement and integration testing."
+          ],
+          "resources_needed": [
+            "Engineering consultant",
+            "IoT hardware budget"
+          ],
+          "success_metric": "Achieve a measurable 8% reduction in kWh consumption per 1,000 units by Q3.",
+          "milestones": [
+            "Q1: Sensor integration and data baseline established.",
+            "Q2: Pilot optimization implementation and performance review."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Product Line Diversification through Nutritional Enhancement",
+        "rationale": "Focusing R&D efforts on incremental improvements to existing dough recipes, such as adding functional ingredients (e.g., specific fiber or protein sources) that appeal to niche distributor markets. This leverages the existing production infrastructure and minimizes market risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Commission a 6-month R&D project focusing on three new dough formulations with target functional attributes (e.g., low GI).",
+            "Collaborate with one key distributor to test market acceptance of the enhanced lines."
+          ],
+          "resources_needed": [
+            "R&D scientist hours",
+            "Market testing budget (€50,000)"
+          ],
+          "success_metric": "Secure 2 new distribution contracts carrying at least 10% higher margin.",
+          "milestones": [
+            "Q1: Formulation finalization and small-scale trial runs.",
+            "Q3: Successful launch of the first enhanced product line."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed competitive landscape analysis focusing on cost-to-produce for competing bakery products.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish KPIs and resource allocation for the 'Process Automation' pilot project in Q1 budgeting cycle.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited budget (3%) restricts high-risk radical ventures and expensive talent acquisition for niche food science expertise.",
+      "Organizational inertia and complex multi-layer governance slow down the formal innovation process, leading to long lead times for incremental improvements.",
+      "Reliance on a centralized R&D structure may struggle to capture localized market needs efficiently."
+    ]
+  }
+}

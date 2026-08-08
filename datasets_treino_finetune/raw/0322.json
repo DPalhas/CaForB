@@ -1,0 +1,146 @@
+{
+  "id": "0322",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:18:25.062881+00:00",
+    "duration_ms": 23827,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.363034+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Construction",
+      "size": "Small",
+      "companyName": "Crest"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Specialized facade engineering contractor designing and installing curtain wall systems, structural glazing, and rainscreen cladding for high-rise office towers. Deep expertise in EN 13830 compliance and thermal performance modeling. The company operates with stringent safety standards and complex permitting processes inherent to the commercial construction sector.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. The focus remains on optimizing existing operations rather than expanding market share.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity.",
+      "companyName": "Crest",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Shop Drawing Generation Pilot",
+        "rationale": "Implementing a low-cost parametric design tool pilot can significantly reduce the manual labor involved in translating engineering models into construction drawings, directly addressing operational efficiency goals. This incremental step minimizes risk by focusing on internal workflow improvements.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and license a low-code/parametric software solution.",
+            "Identify one standard curtain wall component for a 3-month pilot project.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Software licensing cost ($5k)",
+            "1 dedicated engineering resource (internal)"
+          ],
+          "success_metric": "Reduction in shop drawing turnaround time by 20%",
+          "milestones": [
+            "Q3: Tool selection and initial training.",
+            "Q4: Completion of pilot project and ROI analysis."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Supply Chain Optimization Dashboard",
+        "rationale": "Develop a basic dashboard to track material lead times and inventory consumption across multiple projects, identifying potential bottlenecks and optimizing ordering frequency. This focuses on process efficiency without requiring major capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current order-to-delivery flow for key suppliers.",
+            "Build a lightweight tracking dashboard using existing data sources.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data analyst time (part-time allocation)",
+            "Minimal software development hours"
+          ],
+          "success_metric": "Reduction in average material wait time by 10 days",
+          "milestones": [
+            "Q2: Data mapping and dashboard MVP deployment.",
+            "Q3: Full integration with project management systems."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Regulatory Compliance Engine (Bold)",
+        "rationale": "Invest in a bold AI initiative to ingest complex EN 13830 and local building codes, automatically flagging non-compliant design elements in real-time. This moves beyond manual compliance checks into proactive risk management.",
+        "execution_plan": {
+          "first_actions": [
+            "Hire or contract specialized regulatory tech consultant.",
+            "Define a narrow scope (e.g., flagging specific joint detailing requirements)."
+          ],
+          "resources_needed": [
+            "Consultancy retainer ($15k/year)",
+            "Data science allocation for 2 engineers (shared)"
+          ],
+          "success_metric": "Reduction in regulatory review cycle time by 30%",
+          "milestones": [
+            "Q1: Proof of concept on a specific compliance module.",
+            "Q2: Integration into the formal stage-gate process."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a cross-functional workshop to select one high-ROI incremental project (e.g., Shop Drawing Automation) within the next 30 days.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Formalize a 'Regulatory Risk Assessment' task force to prioritize compliance-driven innovation opportunities before the mandatory infrastructure migration begins.",
+        "owner": "Project Manager",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budget constraints (4% allocation) severely limit large-scale digital transformation efforts.",
+      "Limited dedicated innovation time and resource ring-fencing, making it difficult to pursue long-term radical projects alongside mandatory technical infrastructure work.",
+      "Lack of specialized talent in advanced automation and AI required for the high-impact regulatory compliance opportunity."
+    ]
+  }
+}

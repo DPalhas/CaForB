@@ -1,0 +1,153 @@
+{
+  "id": "0300",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:08:37.061854+00:00",
+    "duration_ms": 24067,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.356293+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian Systems",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Large",
+      "companyName": "Meridian Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The company is heavily reliant on navigating complex FDA/EMA filings, making compliance and validation a core innovation constraint.",
+      "companyName": "Meridian Systems",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Process Optimization for Drug Lead Identification",
+        "rationale": "Leveraging existing in-silico screening tools to reduce time and cost associated with candidate filtering, directly addressing the 'time' barrier. This is a low-risk expansion of current digital capabilities.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot machine learning model refinement on 10 existing data sets.",
+            "Allocate $50k from the innovation budget for cloud computation resources.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data science consultation (part-time)",
+            "Upgrade to high-performance computing instance rental"
+          ],
+          "success_metric": "Reduction of candidate screening cycle time by 15% within Q3.",
+          "milestones": [
+            "Q2: Model validation complete and internal pilot launch.",
+            "Q4: Integration into formal pipeline review process."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Adjacent Service Model for Clinical Data Management",
+        "rationale": "Capitalizing on existing talent and infrastructure by offering specialized, high-margin data service contracts to smaller biotech firms. This addresses the 'growth' priority safely.",
+        "execution_plan": {
+          "first_actions": [
+            "Define MVP service package based on current R&D needs.",
+            "Develop a partnership framework with two academic research centers.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Legal consultation for new service contracts",
+            "Staff reallocation from administrative support roles"
+          ],
+          "success_metric": "Secure 3 pilot service contracts within one year.",
+          "milestones": [
+            "Q1: Service catalog defined and pricing finalized.",
+            "Q3: First contract secured."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Federated Learning for Multi-Institutional Biomarker Prediction",
+        "rationale": "Developing a decentralized AI framework to predict complex disease progression using data from multiple hospitals without centralizing sensitive patient records. This offers a bold speed advantage in R&D while maintaining high regulatory compliance through localized data governance.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an internal task force including legal and IT security experts.",
+            "Identify two non-competing university partners for initial collaboration."
+          ],
+          "resources_needed": [
+            "Specialized AI/Security talent hire",
+            "Grant funding application for external research partnership"
+          ],
+          "success_metric": "Successful deployment of the federated learning prototype demonstrating >20% improvement in predictive accuracy.",
+          "milestones": [
+            "Year 1: Proof of concept achieved and regulatory pathway identified.",
+            "Year 3: Commercial viability assessment for platform integration."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "5+ years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated Digital Process Acceleration task force focused solely on streamlining the formal approval workflow.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Launch the pilot project for AI-driven process optimization (Opportunity #1) to demonstrate tangible ROI under the conservative budget constraints.",
+        "owner": "Head of Innovation",
+        "timeframe": "End of Q2"
+      },
+      {
+        "action": "Conduct a comprehensive talent mapping exercise to identify critical skills needed for scaling growth and address existing talent gaps.",
+        "owner": "VP of R&D",
+        "timeframe": "Within 6 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow decision-making velocity due to the formal committee structure conflicts with the need for rapid growth.",
+      "Severely constrained innovation budget (5%) limits investment in large, high-risk foundational research projects.",
+      "High dependency on internal subject matter experts, creating a significant talent bottleneck during scaling phases.",
+      "Process rigidity designed for risk mitigation hinders necessary experimental speed."
+    ]
+  }
+}

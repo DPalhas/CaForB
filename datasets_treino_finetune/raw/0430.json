@@ -1,0 +1,129 @@
+{
+  "id": "0430",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:11:57.028186+00:00",
+    "duration_ms": 28151,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.402698+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Dynamics.io",
+      "sector": "Information Technology",
+      "size": "Large",
+      "companyName": "Apex Dynamics.io"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Apex Dynamics.io is a leading cybersecurity consultancy specializing in penetration testing, SOC 2 compliance audits, and incident response retainer services for enterprise clients. The team consists of highly certified ethical hackers and compliance auditors working across multiple geographies, focusing on both defensive and offensive security postures. They are actively looking to productize recurring vulnerability scanning capabilities into scalable SaaS solutions.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days, significantly improving client satisfaction. This project involved deep collaboration across product development, compliance, and customer success teams, resulting in early NPS scores for new customers onboarded through this streamlined process being 22 points higher than the legacy method.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to rapid technological disruption and evolving global threat landscapes. We cannot rely solely on incremental improvements to our traditional consulting services; we need to identify entirely new, diversified value propositions that leverage our core brand reputation, proprietary intelligence, or operational capabilities in adjacent spaces where demand is rapidly growing.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization, emphasizing specialized skill sets like ML security analysts and compliance automation engineers.",
+      "companyName": "Apex Dynamics.io"
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance-as-a-Service (CaaS) Platform",
+        "rationale": "Leveraging existing internal SOC 2 and penetration testing workflows to build a repeatable, automated scanning platform offers immediate revenue through productization. This builds on current operational expertise while scaling service delivery.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a core MVP scope focusing solely on vulnerability scanning dashboard features.",
+            "Allocate 2 full-time engineers to the project in Q3.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "50,000 USD for initial cloud infrastructure setup",
+            "Internal reallocation of 1 senior compliance engineer (part-time)"
+          ],
+          "success_metric": "Achieve $2M in recurring revenue from the CaaS platform within 18 months.",
+          "milestones": [
+            "MVP feature set defined (Month 3)",
+            "Beta launch with 5 anchor clients (Month 6)",
+            "Full commercial product launch (Month 12)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Integrated AI-Driven Threat Intelligence Engine",
+        "rationale": "Developing a proprietary machine learning engine that analyzes global threat feeds and maps vulnerabilities to specific client business risks offers a significant competitive moat. This would fundamentally shift the company from reactive testing to predictive risk management.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure 2 key data partnerships for specialized threat feed access.",
+            "Form a dedicated AI research pod with cross-functional expertise.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "150,000 USD for ML platform licensing and specialist consulting",
+            "Hiring 3 specialized Data Scientists"
+          ],
+          "success_metric": "Reduction in critical incident detection time by 40% in a pilot environment.",
+          "milestones": [
+            "Feasibility study complete (Month 4)",
+            "Prototype deployed and tested internally (Month 9)",
+            "Integration into core service offering (Year 1)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2-3 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate formal feasibility study and resource allocation for the AI Threat Intelligence Engine.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define requirements and initial development sprints for the CaaS compliance platform MVP.",
+        "owner": "Head of Product/CTO",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Conduct organizational training workshops focused on shifting the security culture towards innovation and product-market fit mindset.",
+        "owner": "HR/Innovation Leads",
+        "timeframe": "Continuous (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed Innovation Execution: The decentralized nature of innovation across business units leads to inconsistent adoption and fragmented resource utilization.",
+      "Slow Time-to-Market for Radical Ideas: The formal committee approval process, while ensuring rigor, introduces significant delays that stifle the velocity needed in a fast-moving threat landscape.",
+      "Cultural Inertia: Resistance from established service teams regarding the transition from consulting revenue models to scalable product development requires targeted change management."
+    ]
+  }
+}

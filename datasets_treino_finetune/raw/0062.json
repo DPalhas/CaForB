@@ -3,70 +3,71 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Information Technology",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:16:15.030980+00:00",
-    "duration_ms": 19542,
+    "generated_at": "2026-08-03T17:55:23.347465+00:00",
+    "duration_ms": 28051,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metal Fabrication Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Fusion Analytics.ai",
+      "sector": "Information Technology",
+      "size": "Large",
+      "companyName": "Fusion Analytics.ai"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "A medium-sized manufacturer specializing in custom metal fabrication for the industrial supply sector. The company has a stable client base but relies heavily on manual quality control and legacy software systems for order tracking and inventory management. They are focused primarily on maintaining existing operational excellence rather than rapid market disruption.",
-      "innovationProcess": "informal",
-      "pastInitiatives": "The company recently implemented minor updates to its internal database structure to improve data entry consistency. There have been no major, capital-intensive process innovations in the last two years as resources were prioritized for maintenance and scaling current operations.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to reduce operational overhead by 15% through optimized material usage and streamlined production scheduling. We aim to enhance product quality consistency to maintain a high level of client trust and reliability.",
+      "companyDescription": "Managed IT services provider offering helpdesk, network management, cybersecurity monitoring, and cloud migration services to 150+ SME clients. With a 24/7 NOC staffed by 18 technicians and operating across multiple geographies, the firm maintains operational continuity through robust service delivery protocols.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes. This ad-hoc approach has resulted in scattered, unmeasured experiments.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "conservative",
-      "teamSize": "The core operational team consists of 10 skilled craftsmen, supported by a small administrative staff of three. Innovation efforts are currently led entirely by the owner.",
       "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 4,
-      "decisionMaking": "owner_alone",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "process",
+        "culture",
         "talent",
-        "time",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market requires increasingly precise output and faster turnaround times, putting pressure on existing manual workflows."
+      "competitivePressure": "high",
+      "additionalContext": "The SME IT service market is highly competitive and driven by price sensitivity, necessitating continuous operational optimization to maintain margins against larger competitors.",
+      "companyName": "Fusion Analytics.ai",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Production Workflow Mapping",
-        "rationale": "Mapping the current order-to-delivery process will identify redundant steps and bottlenecks causing waste in material handling and labor time. This is a low-risk, incremental change that can yield immediate efficiency gains.",
+        "title": "Automated Ticket Routing and Triage System",
+        "rationale": "Implementing basic AI/ML to categorize incoming helpdesk tickets will reduce manual sorting time for technicians, allowing them to focus on complex issue resolution. This addresses the core efficiency goal by optimizing existing labor resources without requiring a full system overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a month-long workflow audit on the top three product lines.",
-            "Identify three high-impact manual handoffs for automation review."
+            "Select and pilot low-cost automation tool compatible with current ticketing software.",
+            "Define clear KPIs focused on reduced average ticket handling time."
           ],
           "resources_needed": [
-            "Owner time (20 hours)",
-            "Basic flow charting software subscription ($500)"
+            "Small dedicated internal data analyst (part-time)",
+            "License cost for existing platform integration"
           ],
-          "success_metric": "Reduction in lead-time by 8% within 6 months",
+          "success_metric": "Reduction in Mean Time To Resolution (MTTR) by 15% within the first quarter.",
           "milestones": [
-            "Workflow mapping complete (Month 1 end)",
-            "Pilot implementation of optimized scheduling logic (Month 4 end)"
+            "Pilot implementation complete by Q2",
+            "Full rollout of routing logic across all 18 technicians by Q3"
           ]
         },
         "impact": "medium",
@@ -74,50 +75,73 @@
         "timeframe": "6 months"
       },
       {
-        "type": "radical",
-        "title": "Automated Quality Control System Integration",
-        "rationale": "Implementing basic vision-based quality inspection during the fabrication process could significantly reduce scrap rates and improve consistency, offering a transformative efficiency gain.",
+        "type": "incremental",
+        "title": "Cloud Resource Utilization Optimization Tooling",
+        "rationale": "Develop or acquire lightweight tooling to identify and decommission underutilized cloud instances (IaaS/PaaS). This directly targets cost drivers by ensuring the company only pays for what is actively used, providing a rapid ROI path.",
         "execution_plan": {
           "first_actions": [
-            "Research low-cost industrial camera/vision setup solutions.",
-            "Develop a proof-of-concept module for inspecting critical weld points."
+            "Conduct an immediate audit of cloud resource allocation across all business units.",
+            "Prototype automated reporting dashboard linking usage metrics to potential savings."
           ],
           "resources_needed": [
-            "Contract for specialized hardware ($15,000)",
-            "External consultant for system integration (3 months)"
+            "Cloud engineering hours for initial script development",
+            "Zero capital expenditure required (SaaS or open-source solutions preferred)"
           ],
-          "success_metric": "Reduction in material waste/scrap rate by 20% annually",
+          "success_metric": "Achieve a verifiable 10% reduction in monthly cloud operational spend within six months.",
           "milestones": [
-            "Proof-of-concept successful testing with new hardware (Month 9)",
-            "Full system integration into production line (Month 15)"
+            "Baseline utilization report generated by Month 1",
+            "Deployment of optimization scripts and validation by Month 4"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "18 months"
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Internal Knowledge Base and Playbook System (KM)",
+        "rationale": "Centralizing technical documentation, troubleshooting steps, and successful project playbooks will reduce the reliance on tribal knowledge residing with specific senior technicians. This initiative improves talent utilization and reduces training time.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a mandatory weekly contribution schedule for all tech staff to update SOPs.",
+            "Select a simple, easy-to-use internal documentation platform."
+          ],
+          "resources_needed": [
+            "Time allocation from operational staff for documentation",
+            "Subscription cost for the chosen KM software (minimal)"
+          ],
+          "success_metric": "Decrease average time spent on knowledge retrieval tasks by 20% in six months.",
+          "milestones": [
+            "Core SOP library established by Month 3",
+            "System fully integrated into the internal service management platform"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Schedule a dedicated workshop with the owner to finalize the scope and budget for the Lean Production Workflow Mapping initiative.",
-        "owner": "Owner",
-        "timeframe": "Within 1 week"
+        "action": "Form a cross-functional task force (Operations, Finance, IT) to prioritize and scope the top two efficiency opportunities.",
+        "owner": "Innovation Steering Committee Lead",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Contact two specialized external vendors offering low-cost vision systems to evaluate feasibility for the quality control radical opportunity.",
-        "owner": "Innovation Lead (Owner)",
-        "timeframe": "Within 3 weeks"
+        "action": "Develop detailed business cases for the automated ticket routing pilot project, including ROI projections.",
+        "owner": "Strategy Professional",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Develop a detailed 12-month efficiency roadmap based on the prioritized opportunities and present it to the management team.",
-        "owner": "Owner",
+        "action": "Audit current cloud spending baseline and identify immediate opportunities for waste elimination before Q3 budget approval.",
+        "owner": "Finance/Operations Head",
         "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on manual processes leading to inconsistent output quality.",
-      "Limited formal process documentation, hindering scalable efficiency improvements.",
-      "Slow decision-making cycle due to owner-alone structure, delaying investment in new tools."
+      "Lack of formalized innovation process leading to uncoordinated, isolated efforts.",
+      "High reliance on individual talent rather than standardized knowledge management systems.",
+      "Bottlenecks in decision-making due to the formal committee structure and slow ROI gating."
     ]
   }
 }

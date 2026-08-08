@@ -1,0 +1,146 @@
+{
+  "id": "0387",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:52:51.139700+00:00",
+    "duration_ms": 22906,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge Digital",
+      "sector": "Mining & Extraction",
+      "size": "Micro",
+      "companyName": "Forge Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Forge Digital is a boutique exploration company specializing in lithium and rare earth mineral prospecting. The firm currently manages 15 active concessions, focusing heavily on geological survey accuracy rather than large-scale mining operations. They are rapidly scaling their technical capacity while maintaining a lean operational structure.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 11,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Current operational focus is heavily skewed towards immediate concession viability and securing technical feasibility for next-phase drilling. The company operates with extremely limited capital reserves, making every efficiency gain critical.",
+      "companyName": "Forge Digital",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Drilling Data Pipeline",
+        "rationale": "Implementing a standardized data pipeline from core sample analysis to geological modeling will reduce manual data handling time by an estimated 30%. This incremental gain supports the efficiency goal and utilizes existing digital maturity effectively.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and prototype a low-code integration tool for existing lab software.",
+            "Define clear data schema requirements for all new sensor inputs."
+          ],
+          "resources_needed": [
+            "Contracting specialized data engineer (short term)",
+            "Software licensing for middleware/ETL tools ($5k)"
+          ],
+          "success_metric": "30% reduction in time spent on manual data aggregation.",
+          "milestones": [
+            "Q1: Data pipeline prototype complete and validated.",
+            "Q2: Integration of legacy systems with new pipeline."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Standardization for Concession Evaluation",
+        "rationale": "Formalizing the workflow for geological survey planning and reporting will reduce variation between projects, allowing existing talent to scale without needing new hires. This leverages current process knowledge.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the end-to-end workflow from prospect identification to drilling proposal submission.",
+            "Document standard operating procedures (SOPs) for mineral assessment."
+          ],
+          "resources_needed": [
+            "Internal project manager time reallocation",
+            "Training resources ($1k)"
+          ],
+          "success_metric": "25% reduction in variance between project cycle times.",
+          "milestones": [
+            "Q1: Core SOP documentation finalized for three key areas.",
+            "Q3: Full adoption of standardized workflow across new projects."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Resource Mapping (Pilot)",
+        "rationale": "Invest in a small, tailored machine learning model to predict high-probability resource zones based on sensor and geological data. While capital intensive, this radical approach offers the potential for significantly higher discovery success rates compared to traditional methods.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a 'Minimum Viable Data Set' (MVDS) of historical geological/assay data.",
+            "Partner with an external AI consultant for initial model architecture."
+          ],
+          "resources_needed": [
+            "External ML consulting fee ($30k - high risk)",
+            "Cloud computing resources ($10k)"
+          ],
+          "success_metric": "Increase in successful resource hits by 5% in the pilot area.",
+          "milestones": [
+            "Q2: MVP model deployed and tested on historical data.",
+            "Q4: Pilot results analyzed for full-scale feasibility."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate the automated drilling data pipeline prototype.",
+        "owner": "Founder/Contractor",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define and document core operational SOPs for standardization.",
+        "owner": "Project Manager (Internal)",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Allocate seed budget and secure ML consultant quote for the predictive mapping pilot.",
+        "owner": "Founder",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe reliance on single founder knowledge, creating a critical dependency risk regarding talent availability.",
+      "Limited digital maturity (Level 2) preventing effective scaling of data utilization and system integration.",
+      "High time constraint forcing prioritization of immediate operational needs over long-term strategic R&D."
+    ]
+  }
+}

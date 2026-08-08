@@ -1,0 +1,148 @@
+{
+  "id": "0138",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:44:05.161849+00:00",
+    "duration_ms": 24399,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.299515+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Digital",
+      "sector": "Healthtech",
+      "size": "Micro",
+      "companyName": "Nova Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Nova Digital is a mental health tech company providing an app-based cognitive behavioral therapy (CBT) program augmented by human therapist chat support. With 18,000 active users and strong clinical evidence showing a 40% reduction in PHQ-9 scores, the company is strategically pivoting toward scaling B2B corporate wellness solutions. The current focus includes integrating advanced AI models to enhance personalized therapeutic pathways while navigating stringent medical device compliance requirements.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Last year, our engineering team successfully adopted an agile methodology, shifting from waterfall releases to 2-week sprints with continuous deployment, which improved release cycle time by 60%. While this accelerated product iteration, adjacent departments like marketing and support are still adapting to the faster cadence and require further process formalization.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We aim to double revenue within three years through aggressive expansion into two new geographic markets and launching a robust direct-to-consumer (D2C) channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity required to support rapid volume growth without compromising clinical quality or eroding margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 16,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Our industry is facing a significant pending regulatory shift starting next fiscal year that mandates comprehensive carbon emissions reporting and rigorous supply chain due diligence. Currently, we lack the systematic data collection infrastructure to meet these compliance requirements, making technology investment a prerequisite for any large-scale growth initiatives.",
+      "companyName": "Nova Digital",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimize Corporate Wellness ROI Measurement Dashboard",
+        "rationale": "Given the strategic priority of growth and existing B2B interest, implementing a specialized dashboard that clearly articulates clinical outcomes in terms of corporate metrics (e.g., reduced employee burnout rates) will unlock immediate sales potential.",
+        "execution_plan": {
+          "first_actions": [
+            "Define core KPI metrics for corporate clients.",
+            "Integrate existing user data streams into a reporting layer.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Time from the founder (20 hours/week)",
+            "Light UI development assistance"
+          ],
+          "success_metric": "Achieve 5 paying corporate clients within Q3",
+          "milestones": [
+            "Q1: Dashboard MVP complete.",
+            "Q2: Pilot program with two corporate partners."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive AI for Dynamic Therapeutic Intervention (Radical)",
+        "rationale": "To meet the high regulatory standards and achieve radical growth, we must move beyond static CBT modules. Implementing a predictive AI engine that analyzes real-time user inputs to dynamically adjust therapeutic content and intervention strategies offers massive scalability and superior clinical personalization.",
+        "execution_plan": {
+          "first_actions": [
+            "Hire an external data scientist/AI consultant.",
+            "Allocate 10% of R&D budget for pilot model training.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "External AI developer retainer ($25k)",
+            "Data infrastructure setup (cloud compute)"
+          ],
+          "success_metric": "Achieve a 30% reduction in average patient session duration.",
+          "milestones": [
+            "Q1: Proof of concept model completed.",
+            "Q3: Integration into the core app for beta testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Compliance Data Pipeline",
+        "rationale": "The pending regulatory shift demands systematic data collection for carbon and supply chain reporting. Developing an internal pipeline to structure this compliance data now will mitigate future operational risks associated with mandatory reporting.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify necessary data points for new reporting.",
+            "Develop basic ETL (Extract, Transform, Load) scripts.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Contracted compliance consultant review",
+            "Internal IT resource allocation"
+          ],
+          "success_metric": "Zero reported non-compliance issues in the first regulatory audit.",
+          "milestones": [
+            "Q1: Compliance data schema finalized.",
+            "Q4: Successful internal simulation of mandatory reporting."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the AI/Tech roadmap and hire a part-time technical co-founder or senior contractor.",
+        "owner": "Founder",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Initiate the development of data collection pipelines necessary for carbon reporting compliance (Regulatory Prerequisite).",
+        "owner": "Operations/Compliance Lead (Future Role)",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on single founder for all strategic and technical decision-making, creating a severe bottleneck.",
+      "Lack of formal operational structure, making scaling complex processes (like regulatory data collection) difficult.",
+      "Low digital maturity limiting the ability to adopt sophisticated AI or advanced infrastructure without external reliance.",
+      "Insufficient investment in systematic data architecture needed to meet emerging high regulatory standards."
+    ]
+  }
+}

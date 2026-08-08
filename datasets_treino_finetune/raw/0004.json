@@ -3,145 +3,146 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Transportation & Logistics",
-    "size": "Medium",
+    "sector": "Education",
+    "size": "Micro",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "diversification",
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:49:23.415467+00:00",
-    "duration_ms": 22618,
+    "generated_at": "2026-08-03T17:26:07.652183+00:00",
+    "duration_ms": 27486,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "GreenHarvest Logistics",
-      "sector": "Transportation & Logistics",
-      "size": "Medium"
+      "name": "Pulse",
+      "sector": "Education",
+      "size": "Micro",
+      "companyName": "Pulse"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "GreenHarvest Logistics is a medium-sized firm specializing in the transportation and supply chain management for agricultural products. The company operates primarily within domestic markets, focusing on efficiency improvements rather than high regulatory compliance hurdles.",
+      "companyDescription": "Pulse operates in the rapidly evolving EdTech space, specializing in intensive technical bootcamps. We focus on high-demand skills like data science and cybersecurity tailored for immediate industry application. As a bootstrapped entity, our primary value proposition is rapid skill acquisition leading directly to placement.",
       "innovationProcess": "partial",
-      "pastInitiatives": "Over the last three years, the team has implemented several incremental process optimizations focused on route density and fleet maintenance. A small pilot project exploring cold-chain technology for perishable goods was also initiated but remains in the testing phase.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to diversify revenue streams by entering adjacent sectors, specifically renewable energy component distribution. The company aims to grow its market share beyond current regional boundaries while maintaining operational excellence.",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
       "strategicPriority": "diversification",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core team consists of 15 professionals, mixing logistics experts and business development specialists who are agile enough to handle cross-functional projects.",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
       "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
+      "revenueRange": "under_1m",
       "budgetPercentage": 8,
       "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "talent",
-        "strategy",
+        "culture",
+        "process",
         "time"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The company faces strong pricing pressure from larger incumbents but benefits from the low regulatory risk in its primary operational zones."
+      "additionalContext": "As a micro-company with limited capital, every strategic decision must prioritize high-leverage activities that minimize burn rate while actively pursuing market expansion to achieve diversification targets.",
+      "companyName": "Pulse"
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 3.8,
     "opportunities": [
       {
         "type": "radical",
-        "title": "Vertical Integration: Launch 'GreenFarm Solutions'",
-        "rationale": "Entering the renewable energy component distribution sector is a high-risk but high-reward move that directly addresses the strategic priority of diversification. This requires fundamentally shifting the company's core competency from logistics to specialized supply chain services for green tech.",
+        "title": "Vertical Market Vertical Specialization & Licensing",
+        "rationale": "Given the low regulatory environment and existing technical expertise, Pulse can develop highly niche, verticalized training programs (e.g., specific compliance frameworks for FinTech or specialized AI model deployment). This radical shift allows us to move away from general bootcamp offerings which face high competition.",
         "execution_plan": {
           "first_actions": [
-            "Conduct market feasibility study on renewable component distribution in 6 months.",
-            "Identify and vet potential acquisition targets or strategic partnerships (Q1).",
-            "Develop a preliminary business case with projected ROI."
+            "Identify three underserved B2B niches requiring highly specific certification.",
+            "Pilot a 'Certified Specialist' program for the chosen niche over Q3."
           ],
           "resources_needed": [
-            "Consultant fees for sector entry analysis ($50k)",
-            "Dedicated innovation task force headcount (2 FTEs)"
+            "Consultant hours ($5k)",
+            "Marketing collateral development budget ($10k)"
           ],
-          "success_metric": "Securing one strategic partnership or acquisition target by end of Q3.",
+          "success_metric": "Secure 2 paying B2B contracts in the new vertical by end of Q4.",
           "milestones": [
-            "Market Feasibility Report Complete (Month 4)",
-            "Partnership/Acquisition Identified (Month 7)"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "long"
-      },
-      {
-        "type": "incremental",
-        "title": "Niche Market Expansion: Cold Chain Consulting",
-        "rationale": "Leveraging existing expertise in cold chain logistics, the company can enter a niche consulting market. This is a lower-risk way to diversify revenue by packaging and selling specialized knowledge rather than building entirely new infrastructure.",
-        "execution_plan": {
-          "first_actions": [
-            "Develop standardized consulting packages based on current route optimization successes.",
-            "Create a dedicated sales pitch for the consulting service."
-          ],
-          "resources_needed": [
-            "Marketing collateral development ($10k)",
-            "Training materials for sales team"
-          ],
-          "success_metric": "Achieve 2 new consulting clients generating $500k in revenue within one year.",
-          "milestones": [
-            "Consulting Service Pilot Launch (Month 3)",
-            "First 5 Consulting Clients Secured (Month 6)"
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "radical",
-        "title": "Digital Platform: Predictive Logistics SaaS Module",
-        "rationale": "Developing a proprietary software module for predictive demand forecasting using AI could create a new, scalable revenue stream independent of physical transport volume. This requires significant investment in talent and technology but offers massive diversification potential.",
-        "execution_plan": {
-          "first_actions": [
-            "Hire a specialized data scientist/AI developer (Q1).",
-            "Define the MVP scope focused only on demand forecasting for one product line."
-          ],
-          "resources_needed": [
-            "Salaries for 1 senior Data Scientist ($80k annually)",
-            "Cloud infrastructure costs and software licensing"
-          ],
-          "success_metric": "Achieve 10% adoption rate among existing customers within 12 months.",
-          "milestones": [
-            "MVP Feature Complete (Month 5)",
-            "Beta Launch with Top 5 Clients (Month 9)"
+            "Niche Validation complete (Month 2).",
+            "Launch Pilot Program (Month 5)."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "medium"
+        "timeframe": "12 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Content Curation Engine",
+        "rationale": "Invest in a low-code tool to automate the identification and updating of technical curriculum based on real-time job market demands. This incremental step improves training relevance without requiring a massive R&D team or budget.",
+        "execution_plan": {
+          "first_actions": [
+            "Evaluate existing LMS for automation hooks.",
+            "Allocate 10% of developer time to prototype the curation script."
+          ],
+          "resources_needed": [
+            "Software subscription ($3k)",
+            "Internal engineering hours (20 hours)"
+          ],
+          "success_metric": "Reduction in 'curriculum relevance' feedback score by 15 points.",
+          "milestones": [
+            "Prototype finished (Month 4).",
+            "Full integration into Q3 curriculum."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Affiliate Partnership Network Expansion",
+        "rationale": "Leverage the 'informal_conversations' feedback loop by establishing a structured affiliate program targeting complementary services (e.g., specialized SaaS tools). This provides new revenue streams without requiring us to build entirely new product lines.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a tiered commission structure for partners.",
+            "Pitch the program to 10 relevant industry influencers."
+          ],
+          "resources_needed": [
+            "Sales time allocation (2 hours/week)",
+            "Initial marketing materials ($2k)"
+          ],
+          "success_metric": "Achieve $50k in affiliate-driven revenue by year-end.",
+          "milestones": [
+            "Program launch and 10 partners onboarded (Month 3).",
+            "Revenue goal hit."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 Months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form an internal steering committee to evaluate the viability of the 'GreenFarm Solutions' radical initiative.",
-        "owner": "CEO/Innovation Lead",
+        "action": "Form a small 'Diversification Task Force' focused solely on mapping three adjacent B2B markets for niche technical training.",
+        "owner": "Founder",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Allocate dedicated development time to prototype the automated content curation engine using low-code tools.",
+        "owner": "Generalist Developer Lead",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Identify and onboard 5 potential affiliate partners in the cybersecurity or data science SaaS space.",
+        "owner": "Customer Success Manager",
         "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Conduct detailed market research and competitor analysis for cold chain consulting services.",
-        "owner": "Sales Director",
-        "timeframe": "Within 6 weeks"
-      },
-      {
-        "action": "Begin recruitment process for a specialized Data Scientist to build the predictive logistics module MVP.",
-        "owner": "CTO/HR Lead",
-        "timeframe": "Ongoing, start Q1"
       }
     ],
     "key_weaknesses": [
-      "Limited inter-departmental communication hindering radical idea scaling.",
-      "Over-reliance on existing freight revenue streams leading to poor diversification focus.",
-      "High reliance on key personnel (talent risk).",
-      "Slow iteration cycles in the current partial innovation process."
+      "Severe resource constraint leading to high context-switching costs for developers (no dedicated R&D role).",
+      "Fragmented and 'partial' innovation process lacking formal documentation or standardized scaling frameworks.",
+      "Over-reliance on informal customer feedback, making strategic pivot identification slow and inconsistent.",
+      "Low digital maturity (Level 2) limiting the ability to leverage large-scale AI/ML tools for rapid product diversification."
     ]
   }
 }

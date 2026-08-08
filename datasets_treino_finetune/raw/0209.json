@@ -1,0 +1,143 @@
+{
+  "id": "0209",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:16:55.478805+00:00",
+    "duration_ms": 23690,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.321054+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pioneer",
+      "sector": "Healthtech",
+      "size": "Micro",
+      "companyName": "Pioneer"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Digital health platform for chronic disease management focusing on diabetes and hypertension. Combining connected glucometer and blood pressure monitor data with AI-driven care coaching and medication adherence reminders. 25,000 active patients managed through partnerships with 40 clinics. Evaluating predictive health deterioration alerts.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical – we need initiatives that can show measurable results within a compressed timeline.",
+      "companyName": "Pioneer",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhanced Data Analytics for Proactive Intervention",
+        "rationale": "Leveraging existing data infrastructure to move beyond simple alerts into predictive modeling that identifies high-risk patient clusters before deterioration occurs. This improves clinical value and differentiation.",
+        "execution_plan": {
+          "first_actions": [
+            "Run an exploratory project using current 25k patient datasets for cluster identification.",
+            "Allocate a small portion of the budget (1%) to developing a new feature dashboard."
+          ],
+          "resources_needed": [
+            "Existing ML engineer time",
+            "Subscription to a lightweight analytics tool ($200)"
+          ],
+          "success_metric": "Reduction in 30-day readmission rate by 5% within 6 months.",
+          "milestones": [
+            "Q1: Cluster Identification Model Prototype Complete",
+            "Q2: Pilot Clinical Validation of Alert System"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Vertical Expansion via Adjacent Care Integration (Partnership Focus)",
+        "rationale": "To achieve 30% growth, we must broaden horizontally. Partnering with a non-competing local service (e.g., specialized wearable tech or wellness platform) to offer bundled care solutions creates an immediate new market and reduces time-to-market risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 potential high-impact partners in the adjacent segment.",
+            "Develop a detailed white paper outlining the synergy value."
+          ],
+          "resources_needed": [
+            "Marketing time for partnership outreach",
+            "Legal consultation for initial MOUs ($500)"
+          ],
+          "success_metric": "Securing 1 strategic pilot partnership leading to 2,000 new users within 4 months.",
+          "milestones": [
+            "Q1: Partnership Scouting and Initial Outreach",
+            "Q3: Finalizing MOU and Launching Co-branded Feature"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Operational Efficiency through Automated Support Triage",
+        "rationale": "Addressing the 'time' bottleneck by implementing AI-driven ticketing and automated response flows for common patient questions, freeing up scarce developer cycles.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current support ticket volume and categorization.",
+            "Pilot a basic chatbot using existing NLP models to handle 20% of routine inquiries."
+          ],
+          "resources_needed": [
+            "Minor software licensing fee ($150)",
+            "Developer time for integration (approx. 8 weeks)"
+          ],
+          "success_metric": "Reduction in average support response time by 40%.",
+          "milestones": [
+            "Q2: Automated Triage System Live for Support Team",
+            "Q3: Full Integration across Website and App"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Develop the 12-month innovation roadmap focusing on growth partnerships and operational efficiency.",
+        "owner": "CEO/Founder",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize partnership pipeline by identifying and initiating contact with the top three adjacent care providers.",
+        "owner": "Head of Business Development",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe resource constraint (only 2 generalist developers, no dedicated R&D role).",
+      "High operational dependency on time-boxed initiatives due to lack of sustained innovation budget.",
+      "Low digital maturity level meaning legacy systems may hinder rapid scaling of new features.",
+      "Single decision-maker bottleneck (owner_alone) leading to slow prioritization."
+    ]
+  }
+}

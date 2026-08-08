@@ -1,0 +1,146 @@
+{
+  "id": "0105",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:30:19.995481+00:00",
+    "duration_ms": 24048,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.288844+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova",
+      "sector": "Manufacturing",
+      "size": "Micro",
+      "companyName": "Nova"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. We specialize in high-performance elastomeric compounds used in demanding environments like engine bay sealing and corrosion protection for post-vehicle repair.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats through process innovation, exclusive partnerships with Tier 1 repair shops, and service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical through demonstrating how controlled investments secure market share.",
+      "companyName": "Nova",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Process Automation for Batch Consistency",
+        "rationale": "Implementing advanced process control systems within our formal R&D structure can significantly reduce batch variability and waste, directly improving operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current batch recipe management software capabilities.",
+            "Pilot a low-cost sensor integration on the top 3 high-volume chemical lines."
+          ],
+          "resources_needed": [
+            "Software license for predictive analytics module",
+            "One dedicated process engineer (part-time)"
+          ],
+          "success_metric": "Reduction in batch scrap rate by 15% within Q3",
+          "milestones": [
+            "Q2: Final software selection and integration planning.",
+            "Q3: Pilot deployment completion."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Proprietary High-Performance Polymer Blend Development",
+        "rationale": "Developing a highly specialized, proprietary adhesive blend with superior thermal stability or resistance to specific automotive chemicals would create an instant and defensible product moat against low-cost competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated 'moat' R&D sub-team focused solely on novel polymer synthesis.",
+            "Allocate targeted budget to high-end material testing equipment.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Two PhD-level materials scientists (contract basis)",
+            "Investment in specialized testing apparatus"
+          ],
+          "success_metric": "Patent filing for the new blend within 12 months",
+          "milestones": [
+            "Q4: Synthesis and stability testing.",
+            "Q1 Next Year: Intellectual Property protection."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Enhanced Supply Chain Traceability System",
+        "rationale": "Improving raw material traceability beyond basic management will satisfy high regulatory standards and allow for quicker response to quality issues, strengthening customer trust.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate existing ERP system with supplier batch data feeds.",
+            "Implement a blockchain-lite solution prototype for key raw materials.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Integration specialist consultant",
+            "Minimal IT expenditure"
+          ],
+          "success_metric": "Achieve 95% real-time traceability across Tier 1 suppliers by year-end",
+          "milestones": [
+            "Q3: System integration and testing.",
+            "Q4: Full operational rollout."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the radical polymer development project roadmap and secure necessary specialized external scientific talent.",
+        "owner": "Chief R&D Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a cost-benefit analysis for immediate process automation pilots to demonstrate tangible ROI to the board during the Series B presentation.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme reliance on 'owner_alone' decision-making limiting strategic agility and scaling potential.",
+      "Severe resource constraint (3% budget) which prevents proactive, high-cost R&D or aggressive marketing initiatives.",
+      "High operational risk due to low digital maturity; reliance on manual processes risks inconsistent product quality as the company scales.",
+      "Lack of a dedicated innovation pipeline staff means new ideas are only realized opportunistically when core operations permit."
+    ]
+  }
+}

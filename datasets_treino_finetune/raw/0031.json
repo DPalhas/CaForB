@@ -3,144 +3,122 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Arts, Entertainment & Media",
+    "size": "Small",
     "regulatory_environment": "medium",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:00:23.947435+00:00",
-    "duration_ms": 21084,
+    "generated_at": "2026-08-03T17:40:53.846797+00:00",
+    "duration_ms": 26704,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Ember",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Small",
+      "companyName": "Ember"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Precision Components Inc. is a medium-sized manufacturer specializing in high-precision metal and electronic components for the automotive supply chain. The company operates in a highly regulated environment due to strict quality control standards required by major global automotive clients.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company has recently implemented Lean manufacturing principles to reduce waste and improve cycle times on existing production lines. They have also invested modestly in upgrading their ERP system.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to significantly improve operational efficiency by reducing unit cost by 15% over the next three years. We aim to maintain high quality standards while expanding our market share within the specialty component sector.",
+      "companyDescription": "Ember is a boutique music rights and publishing company managing a substantial catalog of 5,000 songs across 200 songwriters and composers. We handle complex revenue streams including mechanical royalties, performance licensing, and sync deals for major TV and advertising properties. The company operates with tight margins, requiring rigorous operational efficiency to maintain profitability in a highly competitive media landscape.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The core R&D and operations team consists of 25 highly skilled engineers and technicians who prioritize stability and reliable execution over rapid, high-risk experimentation.",
-      "digitalMaturity": "3",
+      "digitalMaturity": "2",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 6,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 4,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
+        "culture",
         "process",
-        "talent",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "We face increasing pressure from competitors who are leveraging automation, which threatens our current cost structure and speed to market."
+      "competitivePressure": "high",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience.",
+      "companyName": "Ember"
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Supply Chain Automation Pilot",
-        "rationale": "Implementing a small-scale robotic system for quality inspection in the finishing phase can reduce manual error rates and labor costs incrementally.",
+        "title": "Automated Royalty Reconciliation Workflow",
+        "rationale": "Manual royalty tracking is a major time sink and source of human error. Implementing an incremental automation tool that integrates data feeds from streaming platforms can significantly improve accuracy and save operational hours without requiring massive re-engineering.",
         "execution_plan": {
           "first_actions": [
-            "Identify 3 high-error processes for automation targeting Year 1 Q2.",
-            "Conduct a feasibility study on existing component handling equipment."
+            "Identify the top 3 manual reconciliation bottlenecks.",
+            "Map out a simple API integration plan for one major platform.",
+            "Develop a proof-of-concept (POC) script using existing developer resources."
           ],
           "resources_needed": [
-            "Automation software license estimate",
-            "Contract for pilot system integration consultation"
+            "0.5 FTE Backend Developer time",
+            "Subscription fee for specific data access APIs ($1,000)",
+            "Internal QA testing time"
           ],
-          "success_metric": "Reduction in scrap rate by 5% within the first year.",
+          "success_metric": "Reduce manual reconciliation error rate by 20% within 4 months.",
           "milestones": [
-            "Feasibility study complete (Month 3)",
-            "Pilot system operational and data collected (Month 9)"
+            "POC completion (Month 2)",
+            "Full pilot implementation with top 5 streams (Month 4)"
           ]
         },
         "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "12-18 months"
-      },
-      {
-        "type": "radical",
-        "title": "AI-Driven Predictive Maintenance System",
-        "rationale": "Developing a machine learning model to predict equipment failure in CNC machines can drastically reduce unplanned downtime, a major source of efficiency loss.",
-        "execution_plan": {
-          "first_actions": [
-            "Gather 3 years of historical sensor data for key machinery.",
-            "Hire/contract a specialized data science consultant."
-          ],
-          "resources_needed": [
-            "Data science talent budget",
-            "Cloud computing infrastructure setup"
-          ],
-          "success_metric": "Reduction in unplanned maintenance events by 30%.",
-          "milestones": [
-            "Model training complete (Month 6)",
-            "System deployed on 5 critical machines (Month 12)"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "24 months"
+        "difficulty": "low",
+        "timeframe": "6 months"
       },
       {
         "type": "incremental",
-        "title": "Process Streamlining Audit",
-        "rationale": "Conduct a comprehensive audit of the current production workflow to eliminate redundant steps and bottlenecks that consume significant labor time.",
+        "title": "Internal Operational Knowledge Base (Wiki)",
+        "rationale": "To combat the 'process' barrier, a formalized internal knowledge base could standardize procedures for sync licensing and rights clearance. This reduces reliance on tribal knowledge and speeds up onboarding while lowering operational friction.",
         "execution_plan": {
           "first_actions": [
-            "Map out end-to-end manufacturing process using value stream mapping (VSM).",
-            "Identify three non-value-added processes for immediate elimination."
+            "Identify core knowledge gaps across legal/ops teams.",
+            "Select and configure a low-code wiki platform (e.g., Confluence trial).",
+            "Assign ownership for content migration from existing shared drives."
           ],
           "resources_needed": [
-            "Internal project management hours",
-            "External VSM consulting fee"
+            "0.2 FTE Product Owner time",
+            "Licensing fee for Wiki software ($500/year)",
+            "Time allocated to documentation review"
           ],
-          "success_metric": "Reduction in total manufacturing lead time by 10%.",
+          "success_metric": "Decrease average time spent locating standard operating procedure (SOP) documents by 30%.",
           "milestones": [
-            "VSM completion and bottleneck identification (Month 4)",
-            "Implementation of first three process improvements (Month 9)"
+            "Knowledge Base structure finalized (Month 1)",
+            "Pilot SOP adoption across one business unit (Month 5)"
           ]
         },
         "impact": "low",
         "difficulty": "low",
-        "timeframe": "6 months"
+        "timeframe": "4 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional Efficiency Task Force (Ops, Engineering, Finance) to define the top 3 process bottlenecks.",
-        "owner": "VP of Operations",
-        "timeframe": "Within 2 weeks"
+        "action": "Conduct a focused process audit targeting the most time-consuming manual tasks.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Conduct initial vendor vetting for IoT/sensor technology compatible with existing machinery.",
-        "owner": "Director of Engineering",
-        "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Develop a detailed ROI model comparing the incremental automation pilot vs. internal labor cost savings.",
-        "owner": "Finance Manager",
+        "action": "Present the 'Automated Royalty Reconciliation' POC to the formal committee for budget approval.",
+        "owner": " CTO",
         "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "Outdated legacy ERP system limiting real-time inventory visibility.",
-      "High dependency on specialized, hard-to-retain technical talent.",
-      "Inefficient manual quality control checkpoints leading to high scrap rates.",
-      "Slow communication flow between R&D and Production teams."
+      "Lack of a documented, scalable innovation pipeline due to informal processes.",
+      "Severe time constraints preventing dedicated R&D efforts for non-critical initiatives.",
+      "Cultural resistance and lack of institutional memory surrounding the value of formal documentation and process adherence.",
+      "Low digital maturity requires focus on foundational efficiency before advanced AI implementations."
     ]
   }
 }

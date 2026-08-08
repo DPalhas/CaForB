@@ -3,145 +3,131 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
+    "sector": "Nonprofit / NGO",
     "size": "Small",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:55:16.854090+00:00",
-    "duration_ms": 21162,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:35:47.154589+00:00",
+    "duration_ms": 23921,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.258412+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metal Fabrication Inc.",
-      "sector": "Manufacturing",
-      "size": "Small"
+      "name": "Catalyst Analytics.tech",
+      "sector": "Nonprofit / NGO",
+      "size": "Small",
+      "companyName": "Catalyst Analytics.tech"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "Precision Metal Fabrication Inc. specializes in custom component manufacturing for the automotive and industrial sectors, utilizing CNC machinery. The company operates with a highly localized supply chain, focusing on high-quality output rather than mass production scale. Operations are currently stable but face increasing pressure to reduce operational overhead and improve throughput.",
+      "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. The organization focuses heavily on optimizing resource distribution to maximize impact per donor dollar while maintaining high operational standards for project delivery.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company recently implemented lean manufacturing principles focused on reducing waste in the assembly process. They have also begun exploring automated toolpath optimization for their primary CNC machines to minimize material usage.",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This streamlined the transition from beneficiary registration to program activation, demonstrating early success in improving administrative efficiency and reducing field staff paperwork.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to achieve significant operational efficiency by streamlining production bottlenecks and lowering the cost per unit. We aim to maintain high quality while aggressively cutting non-value-added processes over the next three years.",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
       "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The team consists of 15 skilled technicians and a small management group focused heavily on production oversight. Communication flows primarily through daily operational stand-ups.",
-      "digitalMaturity": "2",
+      "digitalMaturity": "3",
       "revenueRange": "1m_to_10m",
       "budgetPercentage": 4,
       "decisionMaking": "owner_alone",
       "mainBarrier": [
         "process",
         "talent",
-        "time",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is competitive, demanding faster turnaround times and lower unit costs while maintaining stringent quality standards."
+      "competitivePressure": "high",
+      "additionalContext": "The field operations are highly decentralized across various remote locations, making standardized technological deployment challenging. Donor compliance requirements often necessitate rigid procurement cycles that conflict with agile innovation timelines.",
+      "companyName": "Catalyst Analytics.tech",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Process Mapping Initiative",
-        "rationale": "As the core strategic goal is efficiency, mapping current workflows will identify specific bottlenecks and redundant steps that can be eliminated immediately.",
+        "title": "Field Data Automation Pilot",
+        "rationale": "Implement low-cost mobile forms and automated data pipelines to replace manual paper reporting from field staff. This is a high-impact, conservative efficiency gain that directly addresses process bottlenecks.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a full value stream map of the top three production lines.",
-            "Identify the top five areas of material waste using time studies."
+            "Identify 2 key operational processes for digitization.",
+            "Select and procure open-source mobile form platform (e.g., KoboToolbox or ODK).",
+            "Pilot deployment with 10 field staff in one country."
           ],
           "resources_needed": [
-            "Internal project lead time (20% allocation)",
-            "Software for process mapping tools"
+            "Training hours for field teams",
+            "Minimal software licensing cost (low)",
+            "Backfill time for the designated product owner"
           ],
-          "success_metric": "15% reduction in cycle time across targeted lines within 6 months.",
+          "success_metric": "Reduction of manual data entry time by 40% within 6 months.",
           "milestones": [
-            "Complete full value stream map (Month 1).",
-            "Implement three high-impact waste reduction changes (Months 2-4)."
+            "Platform selection and vendor contract signed (Month 1).",
+            "Pilot launch and data collection complete (Month 3).",
+            "Full rollout plan defined for next quarter (Month 4)."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "6 months"
+        "timeframe": "Within 6 months"
       },
       {
         "type": "incremental",
-        "title": "Toolpath Optimization Pilot",
-        "rationale": "Leveraging existing digital tools to optimize CNC toolpaths can reduce material scrap and machining time, directly impacting operational cost efficiency.",
+        "title": "AI-Driven Resource Allocation Engine (Bold)",
+        "rationale": "Develop a machine learning model that predicts regional needs for water/sanitation interventions based on satellite imagery and health data. This bold shift moves the organization from reactive distribution to predictive, high-efficiency allocation.",
         "execution_plan": {
           "first_actions": [
-            "Select one high-volume product line for the pilot.",
-            "Evaluate off-the-shelf software solutions for CAD/CAM optimization."
+            "Conduct feasibility study for integrating satellite imagery APIs (e.g., Sentinel).",
+            "Identify 1 existing ML talent or partner externally.",
+            "Define MVP metrics focusing on cost savings per intervention."
           ],
           "resources_needed": [
-            "Software licensing cost (estimated $5k)",
-            "Time from the lead technician"
+            "Data science consultancy fees ($50k - $100k, outside budget)",
+            "Cloud computing resources (variable)",
+            "Time allocation for a dedicated 'Innovation Lead' volunteer/part-time hire"
           ],
-          "success_metric": "10% reduction in material scrap rate within 9 months.",
+          "success_metric": "Demonstrate 15% reduction in logistical overhead costs within 12 months.",
           "milestones": [
-            "Pilot software evaluation complete (Month 2).",
-            "Successful implementation on pilot line and performance review (Month 5)."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "9 months"
-      },
-      {
-        "type": "radical",
-        "title": "Automation of Quality Inspection via AI Vision",
-        "rationale": "Implementing computer vision to replace manual quality checks can drastically improve consistency, reduce human error (a major efficiency drain), and potentially speed up the inspection process.",
-        "execution_plan": {
-          "first_actions": [
-            "Define key defect patterns for automated detection software.",
-            "Investigate cloud-based AI vision services."
-          ],
-          "resources_needed": [
-            "Initial subscription/platform fee ($10k-$20k)",
-            "Data scientist consultation (part-time)"
-          ],
-          "success_metric": "25% reduction in quality-related rework hours.",
-          "milestones": [
-            "Proof of concept model trained on internal data (Month 4).",
-            "Full integration and monitoring phase (Month 8)."
+            "Feasibility study completion and business case approval (Month 6).",
+            "MVP model trained and tested on pilot data (Month 9).",
+            "Integration into quarterly budget planning for next cycle (Month 10)."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "12 months"
+        "timeframe": "Within 18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-functional Efficiency Task Force.",
-        "owner": "Owner/Management Group",
-        "timeframe": "Within 1 week"
+        "action": "Conduct a comprehensive process mapping workshop focused on the top three cost drivers.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Schedule deep-dive assessments for the Lean Process Mapping initiative.",
-        "owner": "Production Manager",
-        "timeframe": "Within 3 weeks"
-      },
-      {
-        "action": "Develop a preliminary budget proposal for the Toolpath Optimization Pilot.",
-        "owner": "Owner/Finance Lead",
+        "action": "Allocate dedicated 'Innovation Time' (10% capacity) for the backend development team, explicitly protecting it from operational demands.",
+        "owner": "CTO",
         "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a detailed ROI model and resource estimate for the Field Data Automation Pilot (Incremental Opportunity).",
+        "owner": "Operations Manager",
+        "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "High dependence on single skilled technicians, leading to high turnover risk.",
-      "Lack of standardized maintenance procedures, resulting in unpredictable machine downtime and waste.",
-      "Informal communication channels limiting the rapid sharing of operational efficiency data between departments.",
-      "Limited investment in predictive maintenance technology."
+      "Over-reliance on owner-alone decision-making, leading to potential bottleneck and lack of cross-functional alignment.",
+      "Severe talent constraint: The lean team struggles to dedicate necessary focused time for large innovation bets without jeopardizing critical operational commitments.",
+      "Process rigidity: Existing compliance and procurement cycles are too slow to adapt to short-horizon, high-impact efficiency initiatives.",
+      "Low budget allocation (4%): Insufficient capital available for both incremental process improvements and high-risk radical technology exploration."
     ]
   }
 }

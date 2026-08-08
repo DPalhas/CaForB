@@ -1,0 +1,122 @@
+{
+  "id": "0337",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:29:33.060243+00:00",
+    "duration_ms": 21567,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.368672+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pioneer",
+      "sector": "Real Estate",
+      "size": "Large",
+      "companyName": "Pioneer"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Pioneer is a large real estate brokerage with 8 offices and 85 agents facilitating residential and light commercial transactions across major metropolitan areas. Average of 600 closed transactions annually, the firm leverages significant capital to invest in proprietary data sets and technology. The organization has deep talent pools but internal processes are designed for stability and risk management rather than rapid market adaptation.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This project was cross-functional involving product, compliance, and customer success teams, resulting in early NPS scores for new customers onboarded through this flow being 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The firm is currently experiencing intense competition from agile PropTech startups who utilize decentralized ledger technology to streamline property management and financing. Internal resistance to rapid scaling of new technologies poses a significant threat to their high-growth ambitions.",
+      "companyName": "Pioneer",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Predictive Property Matching Engine",
+        "rationale": "By integrating machine learning with customer behavioral data (from the existing NPS surveys), Pioneer can move beyond simple comparable analysis into truly predictive market segmentation. This incremental step offers immediate operational efficiency gains and enhances personalized client service, addressing key growth goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot AI matching model on 10% of new leads",
+            "Establish dedicated data science sprint team focused on customer intent signals",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Investment in specialized ML infrastructure (cloud compute)",
+            "Hiring two senior data scientists for a 6-month period"
+          ],
+          "success_metric": "Increase lead conversion rate by 15% within Q3",
+          "milestones": [
+            "Q2: Model baseline complete",
+            "Q3: Pilot results validated and integrated into CRM"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Decentralized Brokerage Ecosystem (PropTech Acquisition/Partnership)",
+        "rationale": "Given the bold risk appetite and high competitive pressure, Pioneer should consider radical moves into market disruption. This involves acquiring or forming a strategic partnership with a successful decentralized brokerage platform to immediately gain speed and access to next-generation transaction technologies.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an M&A scouting team focused on blockchain/decentralized solutions",
+            "Develop a fast-track due diligence framework for technology integration",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated M&A advisory firm retainer ($50k)",
+            "Seed capital allocation from the innovation fund ($2M)"
+          ],
+          "success_metric": "Successful acquisition/partnership signed within 9 months",
+          "milestones": [
+            "Q1: Identify and short-list three target companies",
+            "Q4: Complete due diligence for chosen partner"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-departmental 'Velocity Squad' focused on streamlining the regulatory approval pipeline for new technology pilots.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Allocate $500k from the innovation budget specifically for radical R&D exploration into decentralized finance applications in real estate transactions.",
+        "owner": "VP of Strategy and Innovation",
+        "timeframe": "End of Q2"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed organizational structure hindering rapid cross-functional innovation adoption.",
+      "Partial innovation process leading to bureaucratic friction that slows high-velocity initiatives.",
+      "Internal culture prioritizing risk aversion over the necessary 'bold' experimentation required for radical growth."
+    ]
+  }
+}

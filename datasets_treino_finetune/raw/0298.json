@@ -1,0 +1,122 @@
+{
+  "id": "0298",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:07:47.560306+00:00",
+    "duration_ms": 21911,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.355233+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Grid",
+      "sector": "SaaS / Software",
+      "size": "Large",
+      "companyName": "Grid"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "HR tech SaaS platform for mid-market companies offering recruitment pipeline management, onboarding automation, and performance review cycles. With 400+ customers and 80,000 active employee profiles, Grid operates in a highly regulated space requiring stringent data privacy (GDPR, CCPA) compliance across all modules. The recently launched AI-assisted job description generator is currently undergoing rigorous legal vetting to ensure algorithmic fairness and regulatory adherence.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company leverages proprietary data to enhance existing platform features, making rapid pivots risky but necessary for long-term margin defense.",
+      "companyName": "Grid",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting Module (Incremental Efficiency)",
+        "rationale": "Develop a low-risk incremental feature that automates the generation of regulatory compliance reports based on current HR law updates. This directly addresses process inefficiencies and reduces manual administrative overhead without requiring major system overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 3 regulatory reporting requirements for Q4",
+            "Allocate €50k from the innovation fund for a dedicated compliance automation sprint"
+          ],
+          "resources_needed": [
+            "1 Senior Compliance Analyst (part-time)",
+            "Existing RPA and low-code tool licenses"
+          ],
+          "success_metric": "30% reduction in time spent on manual reporting tasks within Q2",
+          "milestones": [
+            "M1: Regulatory scope finalized (Month 1)",
+            "M2: MVP compliance engine deployed for internal use (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Skill-Gap AI Engine for Internal Mobility (Radical)",
+        "rationale": "Invest in a bold internal capability: an advanced, proprietary AI engine that uses predictive analytics to not just identify gaps but recommend specific, personalized career pathways and internal mobility opportunities. This shifts the product offering from reactive management to proactive talent strategy.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a small cross-functional team (Product, Data Science, Legal)",
+            "Pilot the AI engine on 5 key high-risk business units"
+          ],
+          "resources_needed": [
+            "Hire one specialized ML engineer",
+            "Data storage/compute budget (€100k)"
+          ],
+          "success_metric": "Achieve a 15% increase in recommended internal mobility adoption rate within the pilot group.",
+          "milestones": [
+            "M1: Data pipeline and core model architecture finalized (Month 4)",
+            "M2: Beta launch with positive ROI metrics (Month 8)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize and prioritize the compliance automation project scope.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish a dedicated cross-functional steering committee for the predictive AI pilot.",
+        "owner": "Head of Product & Data Science",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High process friction limiting organizational velocity despite formal structures.",
+      "Conservative risk appetite resulting in slow adoption of potentially high-impact radical ideas.",
+      "Tight budget allocation (4%) restricts large-scale investment required for core platform modernization.",
+      "Siloed innovation execution due to decentralized resources struggling with group alignment."
+    ]
+  }
+}

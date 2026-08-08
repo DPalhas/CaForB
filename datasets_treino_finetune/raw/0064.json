@@ -3,122 +3,151 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Pharmaceuticals & Biotech",
+    "sector": "Construction",
     "size": "Medium",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "growth",
-    "competitive_pressure": "high",
-    "reviewed": false,
+    "competitive_pressure": "medium",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:17:45.483321+00:00",
-    "duration_ms": 68459,
-    "attempts": 3
+    "generated_at": "2026-08-03T17:56:16.216509+00:00",
+    "duration_ms": 26441,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.273643+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Global BioPharma Solutions",
-      "sector": "Pharmaceuticals & Biotech",
-      "size": "Medium"
+      "name": "Apex",
+      "sector": "Construction",
+      "size": "Medium",
+      "companyName": "Apex"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "This medium-sized firm specializes in developing and manufacturing specialized biologics for chronic diseases. Operations are heavily governed by FDA compliance and rigorous quality standards across multiple international markets. The company focuses on niche therapeutic areas requiring complex clinical trials.",
+      "companyDescription": "Apex specializes in residential renovation and deep energy retrofits, handling complex tasks like structural modifications, HVAC replacement, and advanced solar PV integration. They manage project lifecycles involving stringent local building codes, permitting processes, and environmental compliance certifications. This requires meticulous documentation to mitigate risk associated with multi-faceted construction projects.",
       "innovationProcess": "formal",
-      "pastInitiatives": "Over the last three years, the company has implemented several incremental improvements to its manufacturing line efficiency and successfully filed patents for new drug delivery methods. They have also invested in a dedicated internal R&D lab focused on pipeline expansion.",
-      "customerFeedback": "dedicated_research",
-      "strategicGoals": "The primary goal is aggressive market penetration and revenue growth, particularly in the emerging oncology sector over the next five years. This requires expanding our product portfolio significantly while maintaining uncompromising quality standards to secure regulatory approvals.",
+      "pastInitiatives": "Apex operates an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly, focusing on market entry in adjacent markets like commercial retrofits. Approved projects receive 6 months of funded incubation with dedicated resources, resulting in one standalone business unit focused on modular smart home energy systems.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base by expanding into the high-margin commercial retrofit segment and shifting 30% of service offerings to recurring maintenance contracts. This pivot requires developing scalable, tech-enabled operational workflows to support rapid market penetration.",
       "strategicPriority": "growth",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "bold",
-      "teamSize": "The innovation team consists of 8 highly specialized scientists and process engineers who work closely with legal counsel.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 20,
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 22,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "process",
+        "culture",
+        "strategy",
         "talent",
-        "time",
-        "strategy"
+        "time"
       ],
-      "competitivePressure": "high",
-      "additionalContext": "Intense competition from established giants and emerging biotech startups demands continuous innovation to maintain market share and justify high R&D expenditure."
+      "competitivePressure": "medium",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline.",
+      "companyName": "Apex",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
         "type": "radical",
-        "title": "AI-Driven Drug Discovery Platform Integration",
-        "rationale": "Leveraging advanced machine learning to predict molecular interactions could drastically shorten the preclinical phase and reduce R&D costs inherent in this high-risk sector. This radical shift positions the company as a technology leader.",
+        "title": "Autonomous Retrofit Planning AI Platform",
+        "rationale": "Given the high regulatory complexity and time constraint, developing an AI platform that automates the initial energy audit review and preliminary compliance documentation would dramatically reduce project lead times and human error. This addresses the core barrier of 'time' in a formal process.",
         "execution_plan": {
           "first_actions": [
-            "Pilot an ML model for lead compound identification targeting three specific targets.",
-            "Establish a cross-functional team including data scientists and process engineers."
+            "Form a dedicated cross-functional task force (Engineering, Strategy, Compliance) to define MVP scope.",
+            "Pilot AI system using existing audit data from 5 high-volume residential projects."
           ],
           "resources_needed": [
-            "Cloud computing infrastructure (GPU access)",
-            "Hiring of 3 specialized ML engineers"
+            "2 Data Scientists/ML Engineers (Contract)",
+            "Software licensing for specialized compliance databases"
           ],
-          "success_metric": "Reduction in time from lead identification to preclinical candidate selection by 40%.",
+          "success_metric": "Reduce average project planning and permitting time by 30% within 6 months.",
           "milestones": [
-            "Q1: Model MVP testing complete.",
-            "Q2: Integration into Phase I clinical trial planning."
+            "Month 1: Define technical requirements and data pipeline setup.",
+            "Month 4: Internal beta launch with core team feedback."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "long"
+        "timeframe": "6-8 months"
       },
       {
         "type": "incremental",
-        "title": "Hyper-Efficient Automated Manufacturing (Industry 4.0)",
-        "rationale": "Implementing smart sensors and robotics in the manufacturing process can significantly increase yield, reduce waste, and improve compliance documentation consistency without requiring a full overhaul of existing processes.",
+        "title": "Recurring Maintenance Subscription Model",
+        "rationale": "Transitioning from one-time project revenue to recurring service contracts will stabilize cash flow and directly support the strategic goal of achieving sustainable growth. This is a critical step for investor confidence.",
         "execution_plan": {
           "first_actions": [
-            "Audit current facility using IoT sensor technology mapping.",
-            "Implement predictive maintenance schedules on critical bioreactors."
+            "Develop tiered maintenance packages tailored for solar/HVAC systems.",
+            "Implement CRM integration to track service history.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Investment in automated robotics",
-            "Training for existing plant staff"
+            "Sales enablement materials",
+            "Updated financial modeling team time"
           ],
-          "success_metric": "Increase in manufacturing yield by 15% within 18 months.",
+          "success_metric": "Secure 20% of the total project portfolio moving onto recurring revenue contracts within a year.",
           "milestones": [
-            "Q3: Sensor network deployment phase complete.",
-            "Q4: Full automation integration testing."
+            "Month 3: Finalize service pricing structure and contract templates.",
+            "Month 6: Onboard first 15 maintenance contracts."
           ]
         },
-        "impact": "medium",
+        "impact": "high",
         "difficulty": "medium",
-        "timeframe": "medium"
+        "timeframe": "9-12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Modular, Prefabricated Energy Retrofit Kits",
+        "rationale": "To aggressively pursue market expansion and speed (growth priority), Apex should develop standardized, pre-certified modular building components for common energy upgrades. This bypasses much of the traditional project variability inherent in custom construction.",
+        "execution_plan": {
+          "first_actions": [
+            "Purchase specialized CNC/fabrication equipment quotes.",
+            "Establish a supply chain partnership with sustainable material vendors.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Capital expenditure for fabrication tools ($150k)",
+            "Material sourcing and QA personnel"
+          ],
+          "success_metric": "Reduce build time of standard retrofit kits by 40% compared to traditional methods.",
+          "milestones": [
+            "Month 2: Prototype design and material stress testing.",
+            "Month 9: Launch pilot project using the first modular kit."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "15 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a deep dive feasibility study on the AI-driven drug discovery platform.",
-        "owner": "Chief Innovation Officer",
-        "timeframe": "Within 4 weeks"
+        "action": "Finalize and secure funding for the Autonomous Retrofit Planning AI MVP.",
+        "owner": "Chief Strategy Officer (CSO)",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Establish regulatory compliance framework for agile R&D experimentation.",
+        "action": "Launch a formal pilot program testing the recurring maintenance subscription model with existing clients.",
         "owner": "VP of Operations",
         "timeframe": "Within 6 weeks"
       },
       {
-        "action": "Identify and secure funding for the automation pilot project.",
-        "owner": "CFO/Finance Lead",
-        "timeframe": "Within 8 weeks"
+        "action": "Establish dedicated 'Talent Acquisition' pipeline for specialized construction tech roles to mitigate talent barriers.",
+        "owner": "HR Director",
+        "timeframe": "Ongoing (Quarterly Check-in)"
       }
     ],
     "key_weaknesses": [
-      "High dependence on legacy manufacturing processes that limit scaling speed.",
-      "Talent gap in data science and AI expertise critical for growth initiatives.",
-      "Slow internal review cycle due to stringent regulatory process requirements.",
-      "Limited market share outside of established therapeutic niches."
+      "Inconsistent execution velocity across business units, leading to fragmented innovation adoption.",
+      "High dependency on informal customer feedback channels, creating risks regarding unmet needs and poor product alignment.",
+      "Significant cultural inertia resisting the rapid experimentation required by a bold risk appetite.",
+      "Structural misalignment between centralized core systems (ERP/CRM) and decentralized squad-level engineering efforts."
     ]
   }
 }

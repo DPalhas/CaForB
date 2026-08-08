@@ -1,0 +1,126 @@
+{
+  "id": "0180",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:01:51.265620+00:00",
+    "duration_ms": 23433,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge.com",
+      "sector": "Construction",
+      "size": "Micro",
+      "companyName": "Forge.com"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Forge.com is a residential renovation and energy retrofit company specializing in deep efficiency upgrades like external insulation, heat pump installation, and solar PV integration for tight-knit suburban communities. Completing approximately 80 projects annually, the firm relies on efficient project management to maintain high quality while managing thin margins. The team operates with a highly personalized service model where operational flexibility is key but often resource-constrained.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO, having successfully completed an ERP migration and established a self-service BI dashboard. We have also implemented RPA and low-code tools within our center of excellence to automate repetitive administrative tasks like grant application tracking and initial client onboarding. These initiatives have delivered documented annualized cost savings exceeding €2.4M.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "As the incumbent market leader, Forge.com's priority is to defend its installed base by reducing customer churn through superior after-sales support and enhancing switching costs via bundled service packages. The goal is to match competitor digital experiences in transparency and ease of interaction without engaging in destructive price wars that erode our already limited margins.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment.",
+      "teamSize": "We have two generalist developers who split their time between maintaining existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role; thus, improvements happen opportunistically when these developers have spare cycles, which are currently rare.",
+      "companyName": "Forge.com"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhanced Digital Client Journey Mapping",
+        "rationale": "Focusing on mapping the current customer journey from initial inquiry to post-retrofit warranty provides low-cost insights into friction points for churn reduction. This incremental effort will allow us to prioritize digital enhancements that directly support market defense without requiring large capital investments.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct 10 deep customer interviews focusing on pain points in the current onboarding process.",
+            "Pilot a simplified, single-page status update portal for clients with existing projects."
+          ],
+          "resources_needed": [
+            "Owner time (10 hours total)",
+            "Low-cost survey tools subscription"
+          ],
+          "success_metric": "Increase in project completion NPS by 5 points within 6 months.",
+          "milestones": [
+            "Q1: Finalized client journey map and prioritized top 3 pain points.",
+            "Q2: Launched pilot status portal."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Certification Workflow Automation (Process Improvement)",
+        "rationale": "Since recertification is a major time sink, incremental automation of documentation and compliance checking can reduce operational drag. This leverages existing low-code tooling to save employee time without needing bespoke software development.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the three most repetitive compliance tasks in the recertification process.",
+            "Develop a basic RPA script prototype for automated data extraction from project files."
+          ],
+          "resources_needed": [
+            "Internal developer time (20 hours)",
+            "Existing low-code platform license utilization"
+          ],
+          "success_metric": "Reduction in average time spent on certification paperwork by 30%.",
+          "milestones": [
+            "Q1: Define scope and documentation requirements for automation.",
+            "Q2: Successful deployment of the first compliance data extraction script."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize a quarterly 'Bottleneck Review' meeting to identify the top 3 operational bottlenecks.",
+        "owner": "CEO / Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Allocate 5 hours of dedicated developer time for Q1 project scoping focused on 'Enhanced Digital Client Journey Mapping'.",
+        "owner": "Generalist Developers",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "action": "Develop a cost-benefit analysis for the recertification automation pilot.",
+        "owner": "Owner Alone",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme resource scarcity: Lack of dedicated R&D/Innovation headcount limits opportunistic idea generation.",
+      "Budget constraint (3%): Innovation efforts must be extremely lean and strictly focused on high ROI incremental improvements.",
+      "Talent distribution: Generalist developers are stretched too thin across maintenance, support, and development tasks.",
+      "Time pressure from market competition: High external competitive pressure forces reactive rather than proactive innovation."
+    ]
+  }
+}

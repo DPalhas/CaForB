@@ -1,0 +1,123 @@
+{
+  "id": "0248",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T23:06:57.038003+00:00",
+    "duration_ms": 44658,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Catalyst Consulting",
+      "sector": "Education",
+      "size": "Small",
+      "companyName": "Catalyst Consulting"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Catalyst Consulting is a private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. The company specializes in curriculum delivery and uses technology to provide adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. Operations are centralized across core departments, focusing primarily on educational technology integration.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through structured processes like quarterly hackathons, maintenance of a formal patent portfolio, and a rotating 'innovation fellow' program for exploratory projects. Our last major initiative successfully produced a prototype for automated quality inspection using computer vision that was integrated into the learning management system, resulting in a 35% reduction in defect escape rate.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth is our primary objective, driven by identifying untapped demand within adjacent customer segments like specialized tutoring services. We are actively evaluating whether to deepen our vertical specialization in curriculum delivery or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The market is currently saturated with large EdTech vendors, making niche specialization crucial. Our low regulatory risk allows us to move faster on pilot programs and agile feature deployment.",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "companyName": "Catalyst Consulting"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Curriculum Micro-Optimization Platform",
+        "rationale": "Implement targeted feature updates for the existing adaptive learning platform to address specific performance gaps identified in customer NPS surveys. This offers a fast path to demonstrable value and improved retention without requiring massive architectural shifts.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 underperforming curriculum modules based on usage data.",
+            "Allocate dedicated sprint time (10% capacity) for feature refinement."
+          ],
+          "resources_needed": [
+            "Internal QA resources",
+            "Freelance UX consultation budget ($5k)"
+          ],
+          "success_metric": "Increase average student module completion rate by 5%.",
+          "milestones": [
+            "Q2: MVP deployment of micro-optimization suite.",
+            "Q3: Customer pilot validation and feedback loop integration."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Intervention Engine (Bold)",
+        "rationale": "Invest in a foundational AI model capable of dynamically adjusting educational content and feedback pathways in real-time for at-risk learners. This radical pivot addresses the core need for proactive early intervention, positioning the company as a market leader.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional 'AI Task Force' (CTO leading).",
+            "Conduct feasibility study and secure seed funding ($30k) from the 12% budget."
+          ],
+          "resources_needed": [
+            "Data scientist consultant (6 months retainer)",
+            "Seed investment allocation ($30,000)"
+          ],
+          "success_metric": "5% reduction in 'at-risk' student dropout rate within the first cohort.",
+          "milestones": [
+            "Q1: Model architecture finalized and initial data pipeline established.",
+            "Q4: Pilot launch of AI intervention engine with 300 students."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed technical deep dive on the AI platform feasibility.",
+        "owner": "CTO / Product Owner",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Formalize and document the 'Growth Adjacent Market' strategy (build vs. buy/partner).",
+        "owner": "Leadership Team",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Allocate specific budget for Q2 incremental feature development.",
+        "owner": "Finance / CTO",
+        "timeframe": "Next sprint planning cycle"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited capacity of the core tech team to handle high-complexity radical projects simultaneously without compromising daily operational stability.",
+      "Inconsistent process for translating customer feedback (surveys/NPS) directly into prioritized technical roadmaps due to a formal, yet slow, innovation cycle.",
+      "Over-reliance on the CTO as both product owner and technical lead, creating potential bottlenecks in dedicated innovation time allocation."
+    ]
+  }
+}

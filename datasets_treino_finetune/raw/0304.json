@@ -1,0 +1,147 @@
+{
+  "id": "0304",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:10:07.911643+00:00",
+    "duration_ms": 23804,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Beacon Technologies",
+      "sector": "Insurance",
+      "size": "Small",
+      "companyName": "Beacon Technologies"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Beacon Technologies is a small life insurance and retirement savings provider managing approximately €800M in mathematical provisions. The company utilizes traditional with-profits and unit-linked products, primarily distributed through bancassurance partnerships with three retail banks. They are currently exploring digital onboarding tools and advanced needs-analysis capabilities aimed at streamlining the relationship between bank advisors and policyholders.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company operates an internal venture studio model where cross-functional teams pitch innovation ideas to a dedicated investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, successfully graduating one project into a standalone business unit focused on niche digital wealth management.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within three years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks across policy administration and distribution channels. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company is highly competitive in the retail insurance space, necessitating rapid operational improvements rather than slow, large-scale transformation projects.",
+      "companyName": "Beacon Technologies",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Dynamic Underwriting and Pricing Engine",
+        "rationale": "Given the 'bold' risk appetite, integrating machine learning to dynamically adjust pricing based on granular customer data could radically reduce adverse selection costs. This targets both efficiency and competitive differentiation by eliminating static rating models.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a high-impact claims/underwriting segment for a pilot",
+            "Define MVP scope focused purely on risk prediction accuracy vs. current model"
+          ],
+          "resources_needed": [
+            "One data scientist (contract)",
+            "Cloud computing credits ($5k initial)"
+          ],
+          "success_metric": "Reduction of policy loss ratio by 10% within 6 months",
+          "milestones": [
+            "Q1: Data pipeline established and model trained on pilot segment.",
+            "Q2: Model integrated into internal workflow for shadow testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Automation of Policy Servicing Workflows",
+        "rationale": "Focusing on efficiency, automating the end-to-end onboarding and policy servicing process via low-code tools can drastically reduce operational touchpoints currently handled by bank advisors. This is a quick win that directly addresses unit cost reduction.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current manual handoffs in the banking partnership workflow",
+            "Select and deploy a low-code automation platform (e.g., RPA)"
+          ],
+          "resources_needed": [
+            "1 FTE business process analyst (part-time)",
+            "Subscription to RPA tool ($3k annually)"
+          ],
+          "success_metric": "Reduction in average policy onboarding time by 40%",
+          "milestones": [
+            "Month 2: Pilot automation implemented for one specific product line.",
+            "Month 6: Full rollout across two key bancassurance channels."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cost-to-Serve Optimization via Predictive Churn Modeling",
+        "rationale": "Leveraging existing customer data to predict policy attrition early allows the company to intervene with targeted retention offers, significantly reducing costly acquisition and servicing efforts. This aligns perfectly with efficiency goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Clean and unify existing customer behavioral data sets",
+            "Build a simple predictive model for churn risk scoring"
+          ],
+          "resources_needed": [
+            "Data infrastructure tuning time ($2k)",
+            "Marketing spend reallocation plan (internal)"
+          ],
+          "success_metric": "Decrease in annual policy churn rate by 5%",
+          "milestones": [
+            "Month 3: Model validated against historical data.",
+            "Month 6: Automated retention campaign deployed based on risk scores."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "5 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a rapid feasibility study and data readiness assessment for the AI Underwriting Engine pilot.",
+        "owner": "Head of Innovation/CTO",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate RPA project scoping and resource allocation plan for hyper-automation of onboarding workflows.",
+        "owner": "COO/Operations Director",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Develop a detailed cost-benefit analysis comparing the three identified opportunities to prioritize budget deployment in Q3.",
+        "owner": "Innovation Committee Chair",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Resource constraints leading to interruption of exploratory work by urgent production demands.",
+      "Informal structure of the innovation function, lacking dedicated talent and clear KPIs.",
+      "Strategy misalignment between long-term digital goals and short-term operational efficiency mandates.",
+      "High dependency on external bancassurance partners for core distribution channels."
+    ]
+  }
+}

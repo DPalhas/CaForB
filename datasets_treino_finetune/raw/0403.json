@@ -1,0 +1,120 @@
+{
+  "id": "0403",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:59:56.462296+00:00",
+    "duration_ms": 23019,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian Digital",
+      "sector": "SaaS / Software",
+      "size": "Large",
+      "companyName": "Meridian Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Meridian Digital is a leading HR tech SaaS platform for mid-market companies, specializing in recruitment pipeline management and employee lifecycle automation. They currently serve 400+ customers managing approximately 80,000 active employee profiles across various industries. The company recently introduced an AI-assisted job description generator and is now exploring advanced skills-gap analysis to better inform internal mobility recommendations.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team successfully transitioned from a waterfall methodology to 2-week agile sprints, significantly accelerating our release cadence and improving cross-functional collaboration. Despite this velocity gain, we are experiencing friction in product adoption among adjacent sales and support teams who require more tailored training on the new continuous deployment pipeline.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "As an incumbent leader, our primary focus is market defense: mitigating churn by enhancing switching costs through deep integration and maintaining high customer satisfaction. We aim to defend against well-funded entrants by aggressively improving the digital experience and data security while strategically scaling AI capabilities.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Meridian Digital",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Onboarding Flows",
+        "rationale": "Leveraging our existing AI/ML talent and customer data, we can incrementally enhance the onboarding automation features to drastically reduce time-to-value for new users. This directly addresses competitive pressure on modern UX while reinforcing switching costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 20% of budget to UX/AI feature refinement sprint planning",
+            "Conduct A/B testing on personalized onboarding sequences across two business units",
+            "Create a dedicated cross-functional task force for AI roadmap prioritization"
+          ],
+          "resources_needed": [
+            "Increased allocation to UX design resources",
+            "Specialized ML engineer for personalization model optimization"
+          ],
+          "success_metric": "Reduce customer churn rate by 5% within one quarter.",
+          "milestones": [
+            "Q3: MVP launch of personalized onboarding flow",
+            "Q4: Full integration and performance benchmark review"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Platform-as-a-Service (PaaS) Micro-SaaS Offering",
+        "rationale": "To counter high competitive pressure, we should explore a radical shift from pure SaaS to offering key components (like recruitment pipelines or compliance reporting modules) as standalone, subscription-based PaaS features. This creates new revenue streams and makes our platform harder for competitors to displace entirely.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional 'Platform' working group",
+            "Conduct market validation workshops on three high-value ancillary modules",
+            "Develop a minimum viable PaaS feature blueprint with cost modeling"
+          ],
+          "resources_needed": [
+            "Dedicated product strategist (part-time)",
+            "Cloud infrastructure engineering time for modular deployment"
+          ],
+          "success_metric": "Achieve 15% of new annual revenue from standalone PaaS modules by Year 2.",
+          "milestones": [
+            "Q3: Concept validation and pricing strategy",
+            "Q4: Initial development and pilot launch of one micro-SaaS module"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive feature prioritization exercise focusing on 'switching cost' enhancement vs. immediate customer pain points.",
+        "owner": "Head of Product",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Finalize the internal incubator requirements and pilot program structure for radical R&D projects, ensuring alignment with Series A narrative.",
+        "owner": "VP of Innovation",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Bottlenecks in talent acquisition and retention within specialized AI/ML engineering teams during high-pressure growth phases.",
+      "Partial innovation process resulting in inconsistent adoption across the business unit matrix, leading to siloed feature development.",
+      "Over-reliance on formal committee approvals which creates significant time delays for necessary agile adjustments required by competitive pressure."
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "0503",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:34:42.264539+00:00",
+    "duration_ms": 22921,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian Enterprises",
+      "sector": "Hospitality & Tourism",
+      "size": "Micro",
+      "companyName": "Meridian Enterprises"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Meridian Enterprises operates as a boutique event management firm, specializing in high-volume corporate conferences and bespoke luxury weddings within a single, consolidated venue. They leverage their 500+ annual events to manage complex logistics including tiered catering contracts, vendor coordination, and on-site hospitality services.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience.",
+      "companyName": "Meridian Enterprises",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation for Order Processing",
+        "rationale": "Implementing a low-cost CRM and workflow engine (e.g., Zapier integration) can immediately automate manual tasks like contract generation and initial invoicing, directly addressing the goal of reducing operational waste. This leverages existing digital maturity to yield quick efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 most time-consuming manual administrative tasks.",
+            "Pilot a low-code automation tool for order entry and invoice triggers."
+          ],
+          "resources_needed": [
+            "Subscription to low-cost workflow software (e.g., Airtable/Make)",
+            "10 hours of founder time for initial setup"
+          ],
+          "success_metric": "30% reduction in administrative processing time within Q2",
+          "milestones": [
+            "Month 1: Tool selection and workflow mapping complete.",
+            "Month 3: Full pilot rollout across catering orders."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Dynamic Resource Allocation Platform (Bold)",
+        "rationale": "Invest in a specialized, AI-driven scheduling platform that dynamically maps venue availability and staffing needs against event capacity. This radical shift moves the company from static resource management to predictive allocation, promising massive efficiency gains by minimizing idle time.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct vendor interviews for specialized dynamic scheduling software.",
+            "Allocate 5% of budget specifically for a proof-of-concept (PoC) integration."
+          ],
+          "resources_needed": [
+            "External consultant fee for PoC design ($5k)",
+            "Dedicated internal project manager time (part-time)"
+          ],
+          "success_metric": "10% increase in utilized venue/staff hours without increasing fixed costs.",
+          "milestones": [
+            "Month 2: Selection of vendor and development scope defined.",
+            "Month 6: Successful PoC completion with one satellite event space."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional efficiency task force focused on identifying the top 5 bottlenecks in order processing.",
+        "owner": "Founder",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Initiate a low-code pilot project for CRM/invoicing automation to deliver immediate, measurable time savings.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on the founder's personal bandwidth and limited formal technical talent pool (talent barrier).",
+      "Partial innovation process leading to fragmented initiatives that lack cohesive implementation.",
+      "Under-resourced budget for radical technology exploration, limiting high-impact but complex solutions."
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "0249",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T23:07:18.912449+00:00",
+    "duration_ms": 21859,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Digital",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small",
+      "companyName": "Apex Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Digital specializes in high-end specialty coffee and gourmet food retail, operating six physical locations supplemented by a growing e-commerce presence. They maintain strict quality control over 200+ artisanal products and are currently focused on streamlining inventory management across their fragmented channels to improve operational efficiency.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company operates a structured stage-gate innovation program supported by a dedicated R&D lab of twelve engineers, successfully launching four new product lines in the last three years that collectively account for 18% of total revenue. A recent success involved developing an AI recommendation engine that has significantly boosted SKU velocity and customer conversion rates across both brick-and-mortar and online sales.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The company aims to move beyond its stable core retail business by aggressively exploring adjacent business models, specifically focusing on developing a digital marketplace for independent local artisans or launching a scalable subscription service layer based on proprietary consumer data. They are committed to incubating 2-3 high-potential experimental business lines using seed funding.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "The innovation function is currently under-resourced, with one senior engineer allocated 20% of their time for exploration, though this allocation is frequently interrupted by immediate production demands and critical feature requests. There are no separate dedicated roles specifically managing long-term strategic incubation.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The industry is facing a pending regulatory shift requiring mandatory carbon emissions reporting and supply chain due diligence starting next fiscal year. Current innovation efforts must prioritize the investment in compliance infrastructure as a non-negotiable prerequisite for future scaling.",
+      "mainBarrier_details": [
+        "Internal cultural resistance to risk-taking and cross-functional collaboration between R&D and operations."
+      ],
+      "companyName": "Apex Digital"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Subscription Loyalty Optimization Engine",
+        "rationale": "Leveraging the existing AI recommendation engine and customer data to create hyper-personalized product bundles could increase customer retention and average order value (AOV) incrementally. This builds upon current digital maturity while requiring minimal structural change.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a tiered loyalty program focusing on recurring purchase incentives in 3 key locations.",
+            "Integrate AOV-based bundling suggestions into the existing e-commerce checkout flow."
+          ],
+          "resources_needed": [
+            "Data science hours (internal allocation)",
+            "Minor UX/UI development sprint",
+            "Existing cloud infrastructure maintenance"
+          ],
+          "success_metric": "Increase in Customer Retention Rate by 5% within 6 months.",
+          "milestones": [
+            "Q3: Beta launch of tiered loyalty tier for 10% of customers.",
+            "Q4: Full integration and performance review."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Local Artisan Marketplace (B2B/C2C)",
+        "rationale": "Given the strategic priority of diversification, launching a localized marketplace addressing the supply chain needs of small artisan producers represents a radical move. This would establish Apex as an ecosystem partner rather than just a retailer.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a Minimum Viable Product (MVP) platform focusing on digital storefront integration for local suppliers.",
+            "Identify and onboard 10 high-quality artisan partners in the home region."
+          ],
+          "resources_needed": [
+            "Dedicated project team of 2 full-time resources",
+            "Seed funding allocation ($50k) for platform development",
+            "Legal counsel for marketplace structure"
+          ],
+          "success_metric": "Establish a Gross Merchandise Volume (GMV) of $100,000 through third-party sales within 9 months.",
+          "milestones": [
+            "Month 3: MVP completion and pilot launch in one location.",
+            "Month 6: Scale to 5 partner locations and establish operational framework."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a cross-functional workshop to define the core principles and risk tolerance for diversification initiatives.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Form a dedicated small incubation team focused on validating the 'Artisan Marketplace' business model via lean testing.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on an informal R&D allocation that is easily disrupted by operational demands.",
+      "Lack of structured process for integrating mandatory compliance requirements (carbon reporting) into product design.",
+      "Low organizational tolerance for radical, high-risk experiments due to internal cultural barriers."
+    ]
+  }
+}

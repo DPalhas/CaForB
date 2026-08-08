@@ -3,143 +3,132 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Insurance",
+    "size": "Micro",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:06:50.381726+00:00",
-    "duration_ms": 22907,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:46:45.075345+00:00",
+    "duration_ms": 27723,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.267583+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "AgriTrack Solutions",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Atlas",
+      "sector": "Insurance",
+      "size": "Micro",
+      "companyName": "Atlas"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "A medium-sized B2B SaaS company providing subscription software for large commercial farms to optimize resource allocation and yield prediction. The company focuses on improving operational efficiency through data analytics.",
+      "companyDescription": "Atlas is a micro life insurance and retirement savings provider managing approximately £800M in mathematical provisions across niche products. The company primarily utilizes bancassurance models with three regional retail banks for distribution, focusing on unit-linked schemes tailored to specific local demographics. Currently, the firm is exploring lightweight digital onboarding flows to enhance advisor efficiency without requiring a large upfront investment.",
       "innovationProcess": "partial",
-      "pastInitiatives": "Implemented several minor UI/UX updates in the last year focusing on user retention and standardized the API documentation process across all product modules. We have also conducted quarterly market surveys to gauge feature demand among key enterprise clients.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to secure our existing major contracts through superior service quality and maintain a competitive edge against emerging regional players in the AgTech space. We aim to increase customer lifetime value by 15% through deeper platform integration.",
+      "pastInitiatives": "Our engineering team successfully transitioned to an agile methodology last year, shifting from waterfall releases to 2-week sprints with continuous deployment for claims reporting. This initiative reduced our release cycle time by 60% and improved cross-functional collaboration internally, though adoption across the broader marketing and support departments remains slow.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. Our primary goal is to solidify customer loyalty through superior service-level agreements and exclusive partnership channels, ensuring we build a defensible moat against low-cost entrants.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core team consists of 8 engineers, product managers, and two sales executives who drive all development and go-to-market activities.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
       "budgetPercentage": 4,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
+        "culture",
         "process",
-        "talent",
+        "strategy",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "high",
+      "additionalContext": "The micro-insurance landscape is increasingly saturated with low-margin offerings, making operational efficiency and targeted customer retention paramount for survival.",
+      "companyName": "Atlas",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 3.2,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Technical Debt Reduction for Scalability",
-        "rationale": "Refactoring legacy code modules will reduce maintenance overhead and improve system stability, which is crucial for maintaining service quality during periods of high customer demand.",
+        "title": "Automated Compliance Reporting Module",
+        "rationale": "Given the low budget and conservative risk profile, automating routine reporting processes using existing software (low-cost incremental change) can significantly reduce manual errors and operational costs. This directly improves process efficiency without requiring major strategic shifts.",
         "execution_plan": {
           "first_actions": [
-            "Identify the top three most problematic legacy services.",
-            "Allocate 10% of Q3 engineering time exclusively to refactoring sprints."
+            "Audit current manual reporting workflows",
+            "Identify off-the-shelf low-code automation tools (MVP testing)",
+            "Run a 30-day pilot on one product line's monthly regulatory reports"
           ],
           "resources_needed": [
-            "Two dedicated senior engineers (part-time allocation)",
-            "Budget for specialized tooling/code analysis software ($8k)"
+            "Internal IT staff time (part-time)",
+            "Subscription fee for low-code platform",
+            "Consultant hours for initial workflow mapping"
           ],
-          "success_metric": "Reduction in critical bug reports by 25% within Q4.",
+          "success_metric": "Reduction of manual reporting errors by 50% within Q3.",
           "milestones": [
-            "Complete refactor of core data ingestion pipeline by end of July",
-            "Full deployment and performance benchmark testing completed by September 30"
+            "Workflow mapped and tool selected (Week 2)",
+            "Pilot launched successfully (Week 6)",
+            "Full deployment planning complete (Week 10)"
           ]
         },
-        "impact": "medium",
+        "impact": "low",
         "difficulty": "low",
-        "timeframe": "6 Months"
+        "timeframe": "Within 3 months"
       },
       {
         "type": "incremental",
-        "title": "Enhanced Customer Onboarding Flow (UX Improvement)",
-        "rationale": "By simplifying the initial setup and integration process, we can reduce support tickets and improve early-stage customer satisfaction, directly supporting market defense by improving NPS.",
+        "title": "Hyper-Niche Partnership 'Defensive' Product Line",
+        "rationale": "To combat high competitive pressure, Atlas should explore forming an exclusive partnership with a specific, underserved local entity (e.g., a niche community association or specialized local broker). This bold move creates a unique distribution moat that is difficult for new entrants to replicate quickly.",
         "execution_plan": {
           "first_actions": [
-            "Map the current onboarding journey to identify friction points (e.g., complex data mapping).",
-            "Develop a streamlined guided setup wizard prototype."
+            "Identify three high-value, hyper-local partners",
+            "Develop a bespoke product tailored specifically to their demographic need",
+            "Draft a simple pilot agreement focusing on joint marketing/distribution support"
           ],
           "resources_needed": [
-            "1 dedicated UX designer for 4 weeks",
-            "Minimal development hours ($5k)"
+            "Small legal consultation fee",
+            "Marketing budget for localized outreach (minimal)",
+            "Executive time allocation for partnership negotiations"
           ],
-          "success_metric": "Decrease in average time-to-value by 20%.",
+          "success_metric": "Securing a signed exclusive distribution agreement with one partner by end of year.",
           "milestones": [
-            "Prototype testing and internal review completion by August 31",
-            "Full feature rollout to pilot customers by November 30"
+            "Partner identification and initial contact (Month 1)",
+            "Product customization finalized (Month 3)",
+            "Agreement negotiation/signing (Month 5)"
           ]
         },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "4 Months"
-      },
-      {
-        "type": "incremental",
-        "title": "Process Automation for Feature Deployment (CI/CD)",
-        "rationale": "Automating the continuous integration and delivery pipeline will allow the team to push critical defensive updates faster, improving responsiveness to competitive changes without major architectural shifts.",
-        "execution_plan": {
-          "first_actions": [
-            "Audit current deployment scripts for manual steps.",
-            "Implement basic automated testing framework (unit/integration tests) for all core features."
-          ],
-          "resources_needed": [
-            "Training for existing DevOps staff ($3k)",
-            "License for CI/CD platform upgrade ($2k)"
-          ],
-          "success_metric": "Reduction in average deployment time from 3 days to under 1 day.",
-          "milestones": [
-            "Pilot automation on one non-critical service by Q4",
-            "Full pipeline automation implemented across all modules by end of year."
-          ]
-        },
-        "impact": "medium",
+        "impact": "high",
         "difficulty": "medium",
-        "timeframe": "9 Months"
+        "timeframe": "Within 6 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a full technical audit of the current codebase and prioritize refactoring tasks.",
-        "owner": "CTO/Engineering Lead",
+        "action": "Conduct a deep dive into the three most critical customer retention points identified via informal feedback.",
+        "owner": "Head of Customer Experience",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Define clear, measurable service-level improvements (SLAs) that competitors cannot easily match.",
+        "owner": "VP of Operations",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Develop detailed requirements for the enhanced customer onboarding flow based on NPS feedback.",
-        "owner": "Product Manager",
+        "action": "Develop a detailed business case and resource plan for the Hyper-Niche Partnership radical opportunity.",
+        "owner": "Leadership Team Lead",
         "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Establish a formal sprint planning process incorporating automated testing milestones.",
-        "owner": "VP of Engineering",
-        "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "High technical debt in core modules affecting development speed.",
-      "Inconsistent documentation and knowledge silos within the engineering team.",
-      "Limited dedicated budget allocation for proactive R&D outside of immediate feature requests."
+      "Severe resource constraints leading to minimal dedicated innovation staff or budget",
+      "Slow internal change management culture hindering adoption of agile methodologies across the business",
+      "High dependence on existing, high-cost bancassurance distribution channels",
+      "Lack of a long-term, codified strategy focused purely on product differentiation rather than just cost containment"
     ]
   }
 }

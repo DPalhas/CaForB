@@ -3,145 +3,130 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Other",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
     "competitive_pressure": "medium",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:28:43.931611+00:00",
-    "duration_ms": 22649,
-    "attempts": 1
+    "generated_at": "2026-08-03T18:08:53.558046+00:00",
+    "duration_ms": 50880,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.283218+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Tooling Solutions Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Crest Networks",
+      "sector": "Other",
+      "size": "Micro",
+      "companyName": "Crest Networks"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Precision Tooling Solutions specializes in manufacturing high-tolerance components for the aerospace and automotive sectors. We operate a mid-sized facility with moderate regulatory compliance requirements regarding quality control and environmental standards. The company focuses on maintaining operational stability while seeking improvements in production throughput.",
+      "companyDescription": "Crest Networks is a diversified holding company spanning industrial packaging, specialty chemicals, and food ingredients. The portfolio consists of six operating companies with combined revenues of €180M, managed by a central corporate team focused on high-level strategy. We are currently evaluating cross-portfolio digital transformation initiatives and shared services platforms to drive consolidated operational savings.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company recently implemented a digital inventory tracking system to reduce material waste by 12% and initiated a pilot program for predictive maintenance on key CNC machinery. These efforts were driven primarily by immediate operational needs rather than long-term disruptive strategy.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to improve operational efficiency across the supply chain, reducing per-unit manufacturing costs by 15% within two years. We aim to streamline production workflows and minimize downtime through better asset management.",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days, demonstrating clear efficiency gains. This project involved cross-functional input from product and compliance teams, resulting in early NPS scores for new customers onboarded through this flow that were 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has set an aggressive target to improve EBITDA margins by 500 basis points within three years, necessitating a highly disciplined, data-driven approach to cost driver identification. We are open to technology investment that demonstrably reduces unit costs or eliminates manual touchpoints, provided every project demonstrates a clear ROI timeline of under twelve months.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The engineering and operations teams consist of 65 skilled professionals, with a lean focus on technical execution rather than speculative R&D.",
       "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 4,
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
       "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
-        "talent",
-        "time",
-        "culture"
+        "budget",
+        "culture",
+        "process"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "Competition is intense, driving the need for cost leadership. Investment is prioritized where it yields measurable, incremental operational gains."
+      "additionalContext": "We completed a merger with a similarly-sized competitor four months ago and are currently integrating teams, systems, and processes. This has created significant duplication across two CRMs and HR systems, creating a unique window to redesign core processes from scratch.",
+      "teamSize": "The founder handles all product and technology decisions personally, supplemented by occasional input from a part-time freelance developer. There is no formal engineering team; technical work is either performed by the founder or outsourced on a project basis, limiting dedicated innovation bandwidth.",
+      "mainBarrier_array": [
+        "budget",
+        "culture",
+        "process"
+      ],
+      "companyName": "Crest Networks"
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 4.0,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Manufacturing Workflow Optimization",
-        "rationale": "Implementing Lean principles in the assembly line can identify and eliminate non-value-added steps, directly improving throughput and reducing waste without requiring radical technological overhaul.",
+        "title": "Shared Services Platform for Finance and HR Integration",
+        "rationale": "Implementing a centralized platform to manage duplicated back-office functions (like finance reporting and HR systems) directly addresses the 'efficiency' priority by eliminating redundant software licensing costs. This is an incremental move that requires relatively low technical risk but offers predictable, quantifiable cost savings.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a 5S audit across all production cells.",
-            "Map current end-to-end production process to identify bottlenecks."
+            "Conduct a detailed audit of all current back-office software subscriptions and manual data entry points.",
+            "Identify the most immediate overlap between two CRMs or HR systems for consolidation review."
           ],
           "resources_needed": [
-            "Internal Lean trainer or consultant (limited budget)",
-            "Time allocation from floor supervisors"
+            "Consultant hours (short-term),",
+            "Internal project manager time"
           ],
-          "success_metric": "Reduction in cycle time by 10% within Q3.",
+          "success_metric": "30% reduction in duplicated software licensing fees within 6 months",
           "milestones": [
-            "Complete process mapping and waste identification by Month 2",
-            "Implement initial Kaizen improvements by Month 6"
+            "Q1: Complete software needs assessment.",
+            "Q2: Select and scope the integration platform."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "12 months"
+        "timeframe": "Within 6 months"
       },
       {
         "type": "incremental",
-        "title": "Preventative Maintenance Scheduling Enhancement",
-        "rationale": "Leveraging the existing predictive maintenance pilot data to transition from reactive repairs to a more proactive, scheduled maintenance system will significantly reduce unexpected downtime.",
+        "title": "Lean, Outsourced QC Automation Pilot (IoT/ML)",
+        "rationale": "Given the micro-company structure and conservative risk appetite, a bold attempt to use low-cost IoT sensors or simple machine learning models to automate quality control checks on one high-volume product line could drastically reduce manual inspection costs. While technically challenging due to lack of internal engineering, the potential for massive unit cost reduction justifies focused, limited investment.",
         "execution_plan": {
           "first_actions": [
-            "Integrate sensor data into the CMMS (Computerized Maintenance Management System).",
-            "Develop standardized checklists for critical machinery."
+            "Select one high-volume packaging line as a pilot target.",
+            "Identify existing data streams (e.g., machine error logs) suitable for simple anomaly detection."
           ],
           "resources_needed": [
-            "Software license add-on for CMMS integration.",
-            "Training for maintenance technicians"
+            "Pilot project budget allocation (€50k max),",
+            "Contract with specialized automation vendor"
           ],
-          "success_metric": "Decrease in unplanned downtime by 20% annually.",
+          "success_metric": "15% reduction in scrap/rework rate on pilot line within 9 months",
           "milestones": [
-            "Finalize sensor data integration and scheduling protocol by Month 4",
-            "Achieve target downtime reduction by end of Year 1"
+            "Q3: Define scope and select hardware/software stack.",
+            "Q4: Deploy and measure initial efficiency gains."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "18 months"
-      },
-      {
-        "type": "radical",
-        "title": "Automated Quality Inspection via Machine Vision",
-        "rationale": "Investing in machine vision technology could automate critical quality checks, drastically reducing manual inspection costs and improving consistency, which is a high-impact efficiency gain.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify the highest defect rate areas for immediate testing.",
-            "Conduct vendor assessments for suitable machine vision systems."
-          ],
-          "resources_needed": [
-            "Capital investment in hardware and software (approx. $150k).",
-            "Hiring one specialized data scientist/engineer (high cost)."
-          ],
-          "success_metric": "Reduction in manual inspection labor costs by 40%.",
-          "milestones": [
-            "Vendor selection and proof-of-concept testing by Month 3",
-            "Full system deployment for a single high-volume product line by Year 2"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "24 months"
+        "timeframe": "Within 12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force (Operations, Engineering, IT) to lead the Lean Manufacturing process mapping.",
-        "owner": "COO (Chief Operating Officer)",
-        "timeframe": "Within 2 weeks"
+        "action": "Form a cross-functional efficiency task force to map all current operational costs and identify the top three manual touchpoints for automation.",
+        "owner": "Founder",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Develop a detailed ROI model for the machine vision investment and initiate vendor RFPs.",
-        "owner": "CFO",
-        "timeframe": "Within 3 months"
+        "action": "Conduct a pilot project feasibility study (radical) for IoT QC in one product line, focusing strictly on low-cost entry points and measuring ROI against budget constraints.",
+        "owner": "Founder/Contractor",
+        "timeframe": "Within 2 months"
       },
       {
-        "action": "Schedule quarterly review meetings to track efficiency KPIs (cycle time, waste reduction) against strategic goals.",
-        "owner": "VP of Operations",
-        "timeframe": "Ongoing (Quarterly)"
+        "action": "Implement a standardized process documentation review to address cultural integration friction and clarify new cross-portfolio operational handoffs.",
+        "owner": "Founder",
+        "timeframe": "Ongoing, starting next month"
       }
     ],
     "key_weaknesses": [
-      "Inconsistent adoption of digital tools across operational sites.",
-      "Shortage of technical talent specialized in Industry 4.0 and data analytics.",
-      "Operational processes are siloed, hindering cross-departmental efficiency gains.",
-      "High reliance on manual quality inspection leading to labor inefficiency."
+      "Severe constraint on technical bandwidth leading to reliance on founder expertise which limits scalable digital initiatives.",
+      "Fragile organizational culture and change fatigue resulting from the recent merger integration efforts.",
+      "Limited capital (€3 budget percentage) making significant, long-term R&D or large system overhauls extremely risky under a conservative mandate.",
+      "Lack of formal engineering structure means innovation projects cannot easily transition from concept to robust execution."
     ]
   }
 }

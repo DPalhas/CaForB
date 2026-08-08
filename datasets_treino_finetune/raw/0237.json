@@ -1,0 +1,121 @@
+{
+  "id": "0237",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:29:54.534125+00:00",
+    "duration_ms": 21311,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Core Corporation",
+      "sector": "Insurance",
+      "size": "Medium",
+      "companyName": "Core Corporation"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "An insurance brokerage firm advising corporate clients on complex risk management programs spanning property, casualty, cyber, D&O, and employee benefits. The team of 35 brokers manages over €60M in placed premiums, operating within a heavily regulated environment requiring constant attention to solvency and compliance.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that successfully reduced average onboarding time from 12 days to 5 days. This cross-functional project involved product, compliance, and customer success teams, resulting in early NPS scores for new customers onboarded through this streamlined process being 22 points higher than the legacy manual workflow.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Despite having dedicated research functions, the formal process for translating market insights into product changes is slow and often delayed by internal committee approvals.",
+      "companyName": "Core Corporation",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Risk Scoring Dashboard for Retention",
+        "rationale": "Implement basic machine learning models to proactively identify high-risk client accounts based on stated loss events or engagement metrics. This is an incremental step that leverages existing data maturity (level 3) and directly supports market defense by identifying churn risks early.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the core dataset for client interaction and claim history.",
+            "Conduct a Proof of Concept (POC) for an automated risk scoring engine using existing data science talent."
+          ],
+          "resources_needed": [
+            "Contract specialized external data scientist support (€15k)",
+            "Allocate 40 hours per sprint to the dedicated product team."
+          ],
+          "success_metric": "Reduce enterprise segment churn rate by 5% within the next two quarters.",
+          "milestones": [
+            "POC completion (Month 2)",
+            "Pilot implementation with 10 key accounts (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Self-Service Policy Comparison Tool Expansion",
+        "rationale": "Expand the existing digital self-service tools beyond basic policy viewing to include comparative analysis features. This is a low-cost, high-impact incremental improvement that directly addresses customer feedback regarding product stagnation and enhances operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Define requirements for three key comparative policies (e.g., Cyber vs. Traditional).",
+            "Integrate the tool into the existing web platform MVP."
+          ],
+          "resources_needed": [
+            "Internal UI/UX resource time (estimated 10% of a full-time team member)",
+            "Minor API integration costs (€5k)"
+          ],
+          "success_metric": "Increase usage of the self-service comparison tool by 30% in Q3.",
+          "milestones": [
+            "Feature definition sign-off (Month 1)",
+            "Tool soft launch for internal testing (Month 3)"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional 'Retention Task Force' focused solely on defining metrics and implementation requirements for the Risk Scoring Dashboard POC.",
+        "owner": "VP of Product",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Conduct an internal talent assessment to identify high-potential engineers capable of leading the development of new digital self-service features.",
+        "owner": "Head of Technology",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Overly slow and bureaucratic formal committee decision-making process hampers short-term agility.",
+      "Significant cultural resistance to adopting new digital workflows, especially regarding data input accuracy in manual systems.",
+      "Limited budget allocation (3%) severely restricts the ability to invest in high-risk radical innovation.",
+      "Underutilized talent pool: While engineering squads exist, they struggle with cross-functional collaboration needed for enterprise initiatives."
+    ]
+  }
+}

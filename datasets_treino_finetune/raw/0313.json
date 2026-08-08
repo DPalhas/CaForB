@@ -1,0 +1,127 @@
+{
+  "id": "0313",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:13:56.476253+00:00",
+    "duration_ms": 20881,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Strato Holdings",
+      "sector": "Construction",
+      "size": "Small",
+      "companyName": "Strato Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Strato Holdings is a civil engineering firm specializing in public infrastructure tenders, such as bridge rehabilitation and road widening projects. They operate an owned heavy equipment fleet of 45 machines and are currently evaluating telematics to transition from reactive to predictive maintenance. The company is actively working to formalize governance structures while attempting to leverage existing digital tools.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering two new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The primary challenge is integrating fragmented data silos across the heavy equipment fleet and project management systems. Furthermore, internal resistance to formalizing processes hinders the adoption of any new tech initiatives.",
+      "companyName": "Strato Holdings",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimized Telematics Data Feedback Loop",
+        "rationale": "Instead of a full system overhaul, focus on incrementally refining the current telematics data to identify high-impact maintenance triggers that reduce unexpected downtime. This leverages existing tech investment with low risk and immediate operational savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement standardized reporting templates for engine diagnostics",
+            "Conduct bi-weekly review of critical machine failure data by the senior engineer",
+            "Pilot an automated alert system integrated into existing communication platforms"
+          ],
+          "resources_needed": [
+            "Time allocation (Senior Engineer)",
+            "Existing cloud platform analytics licenses ($500/yr estimate)"
+          ],
+          "success_metric": "Reduce unplanned equipment downtime by 15% within one fiscal year",
+          "milestones": [
+            "Q1: Finalize data schema and reporting templates",
+            "Q2: Achieve first measurable reduction in reported minor failures"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Standardization Audit for Growth Readiness",
+        "rationale": "To support rapid volume growth, formalizing key operational workflows (e.g., tender bid processing, safety compliance checks) will improve efficiency and reduce errors without requiring massive capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the end-to-end tender submission process",
+            "Identify three high-friction manual steps for automation (e.g., document generation)",
+            "Develop a simple 'Standard Operating Procedure' (SOP) library"
+          ],
+          "resources_needed": [
+            "Internal time (Leadership team support)",
+            "Consulting hours for process mapping ($2k estimate)"
+          ],
+          "success_metric": "Reduce average project cycle time by 10% through streamlined processes",
+          "milestones": [
+            "Month 3: Complete SOP draft library",
+            "Month 6: Roll out and measure initial impact on cycle time"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, low-cost 'Innovation Working Group' to formalize the informal process and define incremental project scopes.",
+        "owner": "Senior Engineer / Operations Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a clear communication plan targeting key internal stakeholders about the value of process standardization to address cultural resistance.",
+        "owner": "Leadership Team Representative",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Allocate $1,000 from the budget percentage for a small pilot project focusing solely on improving customer data capture mechanisms for new market entry.",
+        "owner": "Innovation Function Lead",
+        "timeframe": "Within 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Low digital maturity resulting in fragmented and ad-hoc system integration.",
+      "Informal innovation process leading to lack of structured change management and adoption inconsistency.",
+      "Limited budget (4%) severely restricting the capacity for radical or large-scale systemic upgrades required for growth.",
+      "High operational demand frequently interrupting the time allocated for exploratory tech projects."
+    ]
+  }
+}

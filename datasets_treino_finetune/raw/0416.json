@@ -1,0 +1,120 @@
+{
+  "id": "0416",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:05:15.095257+00:00",
+    "duration_ms": 24441,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Core Holdings",
+      "sector": "Nonprofit / NGO",
+      "size": "Medium",
+      "companyName": "Core Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. With a team of 200 field staff and 40 HQ personnel, the organization focuses on scaling impact while maintaining operational integrity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to streamline fundraising efforts.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning – either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 12,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Core Holdings recently secured a major grant focused on climate resilience, providing a strategic opportunity to pivot toward technology-driven solutions for sustainable resource management. The organization is currently facing intense competition from larger global NGOs who are aggressively integrating proprietary data analytics into their operations.",
+      "companyName": "Core Holdings",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Scaling Mobile Data Collection Platform",
+        "rationale": "Enhancing the existing mobile-based feedback collection tools with a unified data visualization layer will allow for standardized reporting across all six countries and improve donor transparency. This incremental step addresses immediate operational pain points while building toward a more cohesive digital ecosystem.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot the integration of new sensor data streams into the existing mobile app prototype.",
+            "Develop standardized reporting dashboards for HQ review."
+          ],
+          "resources_needed": [
+            "2 full-time mobile developers (contracted)",
+            "€30,000 software licensing and integration costs"
+          ],
+          "success_metric": "Reduction in manual data processing time by 25% within one quarter",
+          "milestones": [
+            "Q1: Successful pilot completion.",
+            "Q2: Full rollout to 3 out of 6 countries."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Develop Open-Source Monitoring SaaS Platform",
+        "rationale": "To build platform-like switching costs, Core Holdings should develop and launch an open-source monitoring dashboard that competitors cannot easily replicate. Licensing this tool to other smaller NGOs or government agencies creates a new revenue stream while solidifying market defensibility.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed market gap analysis for NGO monitoring software.",
+            "Form a dedicated cross-functional team (Dev, Data Scientist) to define MVP features."
+          ],
+          "resources_needed": [
+            "1 Data Scientist and 2 Senior Engineers (salary allocation)",
+            "€80,000 for platform development and initial cloud infrastructure"
+          ],
+          "success_metric": "Secure 5 paying institutional licenses within 18 months",
+          "milestones": [
+            "Q3: Feature complete MVP launch.",
+            "Q4: First pilot licensing agreement signed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the technology stack requirements for the mobile data initiative.",
+        "owner": "CTO / Product Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a dedicated governance framework for radical platform exploration (IP strategy).",
+        "owner": "Executive Committee Liaison",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Operational complexity stemming from manual workflows in field operations.",
+      "Fragmented digital maturity across different departmental teams (pockets of maturity vs. heavy reliance on spreadsheets).",
+      "High dependency on fluctuating institutional donor funding, limiting long-term R&D stability.",
+      "Limited internal capacity for sustained, radical technical development due to high operational demands."
+    ]
+  }
+}

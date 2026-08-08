@@ -3,7 +3,7 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Mining & Extraction",
     "size": "Medium",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
@@ -11,114 +11,118 @@
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:29:49.036683+00:00",
-    "duration_ms": 22282,
+    "generated_at": "2026-08-03T18:10:04.879203+00:00",
+    "duration_ms": 24001,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "AgriLink SaaS Solutions",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Titan",
+      "sector": "Mining & Extraction",
+      "size": "Medium",
+      "companyName": "Titan"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "AgriLink is a medium-sized B2B SaaS provider offering precision farming analytics and IoT integration tools for commercial farms. The company operates within a highly regulated sector due to data privacy concerns and environmental compliance standards.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "We have successfully launched three major feature upgrades focused on improving existing user retention through targeted AI recommendations. Our last initiative involved pilot testing a blockchain ledger for supply chain transparency, which required significant internal process changes.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to achieve diversification by entering adjacent vertical markets such as controlled environment agriculture and sustainable resource management. We aim to establish AgriLink as a leading player in these new areas within the next three years.",
+      "companyDescription": "Titan is an industrial sand and gravel dredging operation supplying raw materials to glass and concrete manufacturers. The company operates a fleet of 8 large dredging vessels on inland waterways, specializing in high-volume material transport. Key innovation priority is reducing fuel consumption and sediment plume through GPS-guided precision dredging.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models—potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
       "strategicPriority": "diversification",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "A focused team of 15 engineers and 5 sales specialists drives our technical roadmap.",
       "digitalMaturity": "3",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 24,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "process",
         "culture",
-        "strategy"
+        "process",
+        "strategy",
+        "time"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The high regulatory environment demands rigorous compliance, which often slows down the deployment of radical new features but also creates barriers to entry for smaller competitors."
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities—explainability, human oversight, risk classification documentation—into our product roadmap immediately to avoid market access risk when enforcement begins.",
+      "companyName": "Titan",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 5.0,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Vertical Pivot into Controlled Environment Agriculture (CEA)",
-        "rationale": "Leveraging our existing IoT and data processing core, this radical move involves building a completely new SaaS module tailored for high-tech greenhouses. This directly addresses the diversification goal by entering a premium, underserved market.",
-        "execution_plan": {
-          "first_actions": [
-            "Form a cross-functional task force (Tech + Sales) to define MVP requirements.",
-            "Conduct external market validation interviews with CEA farm operators."
-          ],
-          "resources_needed": [
-            "Hiring 2 specialized domain experts in CEA technology.",
-            "Dedicated budget for rapid prototyping and regulatory consultation."
-          ],
-          "success_metric": "Secure 5 paying pilot customers in the CEA sector within 12 months.",
-          "milestones": [
-            "Q3: Finalize technical architecture and compliance roadmap.",
-            "Q4: Launch MVP in private beta with initial CEA partners."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "12-18 months"
-      },
-      {
         "type": "incremental",
-        "title": "Cross-Sell Suite for Sustainable Resource Management",
-        "rationale": "An incremental opportunity is to integrate modules that address water usage and soil health, allowing us to cross-sell these features to existing commercial farms. This lowers the acquisition cost of new customers while strengthening market presence in related areas.",
+        "title": "Optimized GPS Dredging Algorithms for Efficiency",
+        "rationale": "This builds on the existing core priority of reducing fuel consumption and operational costs. Implementing a more advanced predictive analytics layer could yield immediate, measurable ROI by optimizing vessel routes and dredging depth in real-time.",
         "execution_plan": {
           "first_actions": [
-            "Analyze current customer usage data to identify high potential for resource management features.",
-            "Develop a standardized integration API for third-party environmental monitoring tools."
+            "Complete detailed audit of current GPS data streams",
+            "Develop and pilot V2 optimization model on one vessel segment",
+            "Integrate preliminary findings into the Q3 operational budget plan"
           ],
           "resources_needed": [
-            "Dedicated product manager time.",
-            "Minor licensing costs for specialized soil science datasets."
+            "1 Full-time Data Scientist (contract)",
+            "Hardware API licensing for advanced geospatial modeling"
           ],
-          "success_metric": "Increase average customer feature utilization by 20% within one year.",
+          "success_metric": "Achieve 8% reduction in average fuel consumption per ton of material processed within 6 months",
           "milestones": [
-            "Q3: Complete feature development and internal testing.",
-            "Q4: Launch integrated cross-sell module to existing client base."
+            "Algorithm V2 Prototype Completion (Month 3)",
+            "Controlled Pilot Rollout and Data Validation (Month 5)"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
         "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Proprietary Data Monetization Platform (Sand Intelligence)",
+        "rationale": "Leveraging the proprietary data collected on vessel utilization, sediment composition, and operational patterns could create a high-margin service offering. This moves the company from material supplier to data provider, supporting long-term diversification.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a separate legal/financial entity for data monetization",
+            "Define MVP data package (e.g., sediment quality indices) and pricing structure",
+            "Secure partnership with a specialized industrial AI consultancy"
+          ],
+          "resources_needed": [
+            "Seed funding allocation ($150k)",
+            "Legal counsel specializing in data licensing"
+          ],
+          "success_metric": "Generate $250k in recurring revenue from data services within 12 months",
+          "milestones": [
+            "Data Monetization Framework Approval (Month 4)",
+            "Beta launch of 'Sand Intelligence' dashboard for 3 key clients (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a dedicated 'Diversification Task Force' and allocate 20% of the R&D budget to the CEA Vertical Pilot.",
-        "owner": "CEO/CTO",
-        "timeframe": "Within 1 week"
+        "action": "Form a cross-functional 'Diversification Task Force' to define the three highest-potential adjacent business models.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Conduct detailed process audit on regulatory compliance bottlenecks to identify areas for automation (efficiency).",
-        "owner": "COO/Head of Operations",
+        "action": "Initiate a compliance gap analysis workshop focused on AI Explainability requirements per EU AI Act projections.",
+        "owner": "Head of Operations/Legal",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Develop a detailed, phased budget request for the 'Sand Intelligence' MVP seed funding.",
+        "owner": "CFO",
         "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Develop a 12-month talent acquisition strategy focused on hiring specialized domain experts in Controlled Environment Agriculture.",
-        "owner": "Head of HR/Talent",
-        "timeframe": "Within 8 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on a single, established client segment (lack of diversification).",
-      "Slow internal process for integrating new regulatory requirements into the software roadmap.",
-      "Limited in-house expertise outside the core precision farming domain.",
-      "Culture prioritizing stability over high-risk radical experimentation."
+      "Legacy system integration complexity slowing execution velocity across business units.",
+      "Fragmented culture between core operational teams and the exploratory R&D/data science squads.",
+      "High regulatory uncertainty creating a risk of missed market access deadlines for automated systems.",
+      "Limited internal expertise in high-level data monetization strategy."
     ]
   }
 }

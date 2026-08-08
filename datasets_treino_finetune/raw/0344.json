@@ -1,0 +1,148 @@
+{
+  "id": "0344",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:32:34.121735+00:00",
+    "duration_ms": 29686,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.372623+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Strato Corporation",
+      "sector": "Construction",
+      "size": "Small",
+      "companyName": "Strato Corporation"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Specialized facade engineering contractor designing and installing curtain wall systems, structural glazing, and rainscreen cladding for high-rise office towers. Deep expertise in EN 13830 compliance and thermal performance modeling. Strato Corporation operates across three key regional offices, focusing on premium commercial projects. We are leveraging advanced Computational Design tools to streamline complex geometry generation while maintaining strict quality control.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Strato Corporation maintains a structured innovation program with a dedicated R&D lab of 12 engineers and an annual innovation budget equivalent to 5% of revenue. In the past three years, we have successfully launched four new product lines contributing 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top three clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The current market is characterized by rising demands for sustainable building materials and increased complexity in urban environments. Strato Corporation must strategically invest its limited resources to expand into adjacent markets while mitigating the inherent risk associated with maintaining a conservative financial stance.",
+      "companyName": "Strato Corporation",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Sustainable Material Niche Diversification",
+        "rationale": "Given the low regulatory environment and growing market demand for green building certifications (e.g., LEED), Strato can incrementally develop specialized facade systems using recycled or bio-based materials.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a material feasibility study on two new sustainable glazing options within 3 months",
+            "Identify potential certification pathways (LEED) for existing products by Q2"
+          ],
+          "resources_needed": [
+            "Materials testing budget ($10k)",
+            "Consultant fees for LEED strategy mapping"
+          ],
+          "success_metric": "Successful pilot project securing one new green building certification within 9 months",
+          "milestones": [
+            "Material review complete (Month 2)",
+            "Pilot design finalized (Month 4)",
+            "Certification application submitted (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "1 year"
+      },
+      {
+        "type": "incremental",
+        "title": "Modular Component Expansion",
+        "rationale": "Strato should explore the bold concept of shifting from bespoke facade design to standardized, modular curtain wall components that can be prefabricated and shipped. This diversifies revenue streams by targeting smaller contractors and accelerating delivery timelines.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional task force (Design/Ops) to model one core module",
+            "Develop a detailed cost-benefit analysis comparing bespoke vs. modular production cycles"
+          ],
+          "resources_needed": [
+            "CAD/Simulation software upgrade ($20k)",
+            "Small prototyping lab time allocation"
+          ],
+          "success_metric": "Successful fabrication and sale of one standardized module to an outside contractor within 18 months",
+          "milestones": [
+            "Module design finalized (Month 4)",
+            "Vendor sourcing/initial contract signed (Month 7)",
+            "First modular unit delivered (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "2 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Smart Building Integration Service Line",
+        "rationale": "Leveraging the existing expertise in thermal performance, Strato can incrementally introduce high-value consulting services focused on integrating IoT sensors and automated controls into newly installed facade systems.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a service catalogue outlining three core integration packages",
+            "Train senior engineers on basic building automation protocols (IoT/BMS)"
+          ],
+          "resources_needed": [
+            "Training budget ($5k)",
+            "Marketing collateral development"
+          ],
+          "success_metric": "Secure two new service contracts generating $200k in annual recurring revenue within 6 months",
+          "milestones": [
+            "Service catalogue finalized (Month 3)",
+            "Pilot project executed (Month 5)",
+            "First consulting contract signed (Month 7)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, small internal working group to evaluate the feasibility of modular component design.",
+        "owner": "Head of Engineering / R&D Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Create a formal, tiered process for rapid prototyping focused specifically on low-cost material diversification (conservative ops).",
+        "owner": "Operations Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited dedicated innovation budget ($4% revenue) restricts large, long-term radical R&D investments.",
+      "Innovation process bottlenecked by internal culture and resistance to adopting new technologies (talent barrier).",
+      "High concentration risk due to extreme reliance on the top three customers for 55% of revenue.",
+      "Lack of dedicated innovation staff, leaving senior personnel overloaded with operational demands."
+    ]
+  }
+}

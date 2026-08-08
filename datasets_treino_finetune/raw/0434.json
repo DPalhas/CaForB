@@ -1,0 +1,128 @@
+{
+  "id": "0434",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:01:10.860476+00:00",
+    "duration_ms": 30748,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.404620+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Prime Labs",
+      "sector": "Telecommunications",
+      "size": "Micro",
+      "companyName": "Prime Labs"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Prime Labs is a niche telecommunications firm providing core UC services (cloud PBX, video) primarily serving SMBs in emerging markets. The company is undergoing a critical migration from legacy on-premise infrastructure to a scalable cloud platform to reduce operational overhead and increase service reliability.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have implemented a structured stage-gate process supported by dedicated internal R&D resources, allowing us to systematically test and scale new product lines. Over the last three years, we successfully launched four distinct product offerings, with our AI recommendation engine proving particularly effective in driving customer retention.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary goal is to move beyond service provision by establishing a multi-sided ecosystem that leverages our proprietary data assets. We aim to diversify revenue streams through the creation of SaaS layers and third-party marketplace partnerships to capture adjacent market value.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "As a micro-telecom player, Prime Labs faces intense pricing pressure from large incumbents while simultaneously navigating complex local licensing and data privacy regulations that require rigorous compliance.",
+      "companyName": "Prime Labs",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Predictive Support Engine (AI Enhancement)",
+        "rationale": "Leveraging the existing AI call transcription capability to move beyond sentiment analysis toward predictive churn modeling could drastically improve customer lifetime value and operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 30% of R&D budget to develop a validated churn prediction model prototype.",
+            "Implement a weekly feedback loop between the support team and the data science effort.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data scientist contractor hours (6 months)",
+            "Minor integration API development costs"
+          ],
+          "success_metric": "20% reduction in customer churn rate within 12 months.",
+          "milestones": [
+            "Q3: Prototype validation complete",
+            "Q4: Pilot deployment with 50 enterprise customers"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "B2B Communication Marketplace Platform",
+        "rationale": "Developing a third-party marketplace that allows smaller businesses to lease virtual phone numbers, specialized AI transcription services, or integrated contact center tools could create significant high-margin recurring revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive market analysis on competitor marketplace models (e.g., VoIP/SaaS aggregators).",
+            "Design the Minimum Viable Product (MVP) focusing solely on number leasing and basic API integration.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated product manager (part-time)",
+            "Cloud infrastructure scaling costs"
+          ],
+          "success_metric": "Achieve 50 paying third-party marketplace clients within 18 months.",
+          "milestones": [
+            "Q2: Finalized MVP architecture and legal framework",
+            "Q4: Launch of beta marketplace for select partner businesses"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the talent acquisition pipeline for a dedicated full-stack engineering role.",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop and present a detailed business case justifying seed funding for the B2B Marketplace pilot program.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish quarterly KPIs focused on digital maturity uplift (e.g., CRM integration depth).",
+        "owner": "Operations Director",
+        "timeframe": "Ongoing (Start Q3)"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on founder expertise leading to single points of failure in product and technology decision-making.",
+      "Scaling difficulty due to lack of a formal, scalable engineering team.",
+      "High regulatory compliance burden for a micro-company competing against large telecom incumbents.",
+      "Limited internal capacity (10% budget) restricts the ability to pursue radical diversification initiatives simultaneously."
+    ]
+  }
+}

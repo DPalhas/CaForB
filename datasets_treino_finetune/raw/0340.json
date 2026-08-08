@@ -1,0 +1,120 @@
+{
+  "id": "0340",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:30:46.866321+00:00",
+    "duration_ms": 22387,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Prime Analytics",
+      "sector": "Transportation & Logistics",
+      "size": "Medium",
+      "companyName": "Prime Analytics"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Last-mile parcel delivery company handling 15,000 packages per day for e-commerce clients in urban and suburban areas. Fleet of 60 electric vans and 40 cargo bikes for city-center deliveries. Key challenge is dynamic route optimization accounting for real-time traffic and parking availability. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing—only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment.",
+      "companyName": "Prime Analytics",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Route Optimization Engine",
+        "rationale": "Leveraging our existing data infrastructure to move beyond static routing and implement a machine learning model that predicts traffic and parking congestion with 90% accuracy. This directly supports the 'efficiency' priority by reducing fuel consumption and delivery time by an estimated 5%.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot ML model on current operational data for one geographic zone.",
+            "Identify internal data scientists to lead the project."
+          ],
+          "resources_needed": [
+            "Data science consultant retainer ($15k)",
+            "Internal tooling upgrade (API integration)"
+          ],
+          "success_metric": "Reduce average route distance by 8% within six months.",
+          "milestones": [
+            "Q1: Data pipeline readiness complete.",
+            "Q2: Pilot deployment and validation."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Local Micro-Fulfillment Hub Network (Radical)",
+        "rationale": "Given the bold risk appetite, establishing small, automated micro-fulfillment centers in high-density urban cores could radically reduce last-mile delivery times and costs. This requires challenging traditional warehousing models and significantly increases initial capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study for three potential hub locations.",
+            "Secure strategic partnership with a real estate developer."
+          ],
+          "resources_needed": [
+            "Seed investment ($500k dedicated R&D fund)",
+            "External logistics engineering team (contract)."
+          ],
+          "success_metric": "Increase delivery fulfillment rate to 98% in target zones.",
+          "milestones": [
+            "Q1: Feasibility and site acquisition finalized.",
+            "Q3: First micro-hub operational."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 Months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated cross-functional 'Efficiency Task Force' to prioritize operational cost reduction projects.",
+        "owner": "COO / Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct deep dive on external certification standards to identify where technological innovation can preempt compliance requirements.",
+        "owner": "CTO / Legal Counsel",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Low digital maturity (Level 2) resulting in reliance on informal, siloed processes.",
+      "Lack of a unified internal innovation portfolio management system.",
+      "Inconsistent customer validation before investing in technology development.",
+      "Significant talent gap between core operations and necessary advanced data science skills."
+    ]
+  }
+}

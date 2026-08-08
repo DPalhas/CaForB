@@ -1,0 +1,155 @@
+{
+  "id": "0116",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:34:47.987510+00:00",
+    "duration_ms": 26345,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Ember Digital",
+      "sector": "Insurance",
+      "size": "Large",
+      "companyName": "Ember Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Health insurance provider offering individual and group health plans to 50,000 members with a network of 1,200 contracted providers. Key operational priorities are automated pre-authorization processing and provider cost analytics. The company manages complex claims adjudication and relies heavily on data insights to manage actuarial risk across multiple geographies.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to streamline initial customer acquisition.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity.",
+      "companyName": "Ember Digital",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Advanced Claims Automation via RPA",
+        "rationale": "Implementing Robotic Process Automation (RPA) specifically for high-volume manual tasks like pre-authorization checks will reduce processing time and associated operational costs. This directly addresses the strategic priority of efficiency by eliminating costly manual touchpoints in the claims pipeline.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 highest volume, lowest complexity pre-authorization tasks.",
+            "Pilot RPA on one specific sub-task within the current process.",
+            "Develop detailed ROI model focusing on FTE savings."
+          ],
+          "resources_needed": [
+            "External RPA consultant hours (€20k)",
+            "Internal IT engineering allocation (5% budget)"
+          ],
+          "success_metric": "Reduction of pre-authorization cycle time by 15% and $150k annual processing cost reduction.",
+          "milestones": [
+            "Q3: RPA pilot completion",
+            "Q4: Full integration planning",
+            "Q1 (Next Year): Full rollout to core claims team"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Risk Modeling",
+        "rationale": "Develop a machine learning model to predict policyholder risk and potential claims probability with high accuracy. This radical approach moves beyond descriptive analytics into prescriptive decision-making, allowing the company to proactively price risks more accurately and reduce adverse selection, leading to significant cost savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional Data Science task force.",
+            "Procure specialized ML infrastructure (cloud compute services).",
+            "Define success metrics centered on model precision and early claim detection."
+          ],
+          "resources_needed": [
+            "Data Scientist headcount (€150k salary)",
+            "Cloud infrastructure spend (€50k)"
+          ],
+          "success_metric": "Reduction in policy churn rate by 8% and a measurable improvement in claims fraud detection accuracy (90%+).",
+          "milestones": [
+            "Q3: Data pipeline readiness & feature engineering complete",
+            "Q4: Initial predictive model training and validation",
+            "Year 2: Model deployment into underwriting workflow"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Telehealth Service Cost Optimization",
+        "rationale": "Standardize and optimize the integration of telehealth services to ensure that provider utilization is maximized without compromising quality. This leverages existing digital maturity to drive efficiency in a rapidly growing segment.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current provider contracts and service agreements for cost leakage.",
+            "Implement standardized billing protocols across all new telehealth channels.",
+            "Develop internal metrics to track utilization rates vs. revenue per provider."
+          ],
+          "resources_needed": [
+            "Legal/Compliance review (€10k)",
+            "Internal operations staff time (low)"
+          ],
+          "success_metric": "Increase in telehealth service utilization rate by 25% and a 5% reduction in per-claim administrative overhead.",
+          "milestones": [
+            "Q3: Contract renegotiation phase complete",
+            "Q4: Protocol standardization launch",
+            "Year 1: Baseline efficiency metrics established"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9-12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form an immediate cross-functional task force to prioritize the ROI of RPA in pre-authorization.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Initiate a feasibility study and resource allocation plan for the AI Risk Modeling project (Radical).",
+        "owner": "Head of Data Science",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Conduct an internal audit of existing process bottlenecks in the claims department to identify low-hanging fruit for immediate efficiency gains.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed innovation approach leading to variable project adoption across business units.",
+      "High dependence on manual processes and legacy systems, inhibiting efficiency gains.",
+      "Potential talent gap in specialized AI/ML data science required for radical projects.",
+      "Rigid funding gate requiring extremely tight ROI timelines that may stifle long-term strategic investments."
+    ]
+  }
+}

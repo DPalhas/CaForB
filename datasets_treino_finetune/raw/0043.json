@@ -3,144 +3,114 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Public Administration",
+    "size": "Small",
     "regulatory_environment": "medium",
     "risk_appetite": "bold",
     "strategic_priority": "efficiency",
     "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:06:27.436158+00:00",
-    "duration_ms": 21957,
+    "generated_at": "2026-08-03T17:46:17.317914+00:00",
+    "duration_ms": 27472,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "InnovateFlow SaaS",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Catalyst Systems.ai",
+      "sector": "Public Administration",
+      "size": "Small",
+      "companyName": "Catalyst Systems.ai"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "InnovateFlow SaaS is a B2B platform providing AI-driven workflow automation for mid-sized logistics companies. We focus on reducing operational overhead and streamlining supply chain management using predictive analytics.",
+      "companyDescription": "Municipal government administration serving a population of 250,000 residents with services spanning urban planning, waste management, social services, and cultural programming. The company is heavily invested in deploying IoT infrastructure to optimize resource allocation across its service portfolio. While operational scale is large, the central decision-making structure remains lean, relying on expert technical advice for policy implementation.",
       "innovationProcess": "formal",
-      "pastInitiatives": "We recently implemented an automated code review system to improve developer efficiency by 30% and piloted a machine learning model to forecast inventory needs, resulting in a minor cost saving.",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to achieve significant operational efficiency gains across our platform and reduce customer churn through superior automation. We aim to capture market share by offering more integrated solutions than competitors.",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "bold",
-      "teamSize": "The core development team consists of 15 highly specialized engineers and product managers, focused intensely on delivering scalable features.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 20,
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "process",
         "talent",
-        "time",
-        "culture"
+        "time"
       ],
       "competitivePressure": "high",
-      "additionalContext": "We are currently competing against large enterprise solutions and need to rapidly evolve our product offering to maintain a competitive edge in the automation space."
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication—two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real.",
+      "companyName": "Catalyst Systems.ai",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 6.2,
     "opportunities": [
       {
         "type": "radical",
-        "title": "AI-Driven Hyper-Automation Engine",
-        "rationale": "Developing a custom generative AI engine to handle complex multi-step logistics workflows could drastically reduce manual processing time and operational costs, offering a unique value proposition.",
+        "title": "AI-Driven Policy Optimization Engine (Radical)",
+        "rationale": "Leverage the existing data infrastructure and AI expertise to transition from optimizing current processes to radically re-engineering decision pathways. This could allow for automated, real-time policy adjustments based on live sensor data (e.g., traffic flow, energy consumption) rather than static rules.",
         "execution_plan": {
           "first_actions": [
-            "Pilot integration of LLMs for document summarization within the core platform.",
-            "Establish a dedicated 'AI squad' to prototype the engine architecture."
+            "Establish a cross-functional task force dedicated solely to identifying the top three most manual/repetitive decision points in waste management and traffic signaling."
           ],
           "resources_needed": [
-            "Hiring 2 specialized ML engineers",
-            "Cloud compute resources (GPU instances)"
+            "Allocation of 2 full-time Data Scientists focused on predictive modeling.",
+            "Pilot budget for sandbox testing new ML algorithms (approx. $50k)."
           ],
-          "success_metric": "Reduction in average customer processing time by 50% within 18 months.",
+          "success_metric": "Reduction in manual operational decision time by 40% within 18 months.",
           "milestones": [
-            "Q3: Functional prototype of core AI workflow automation.",
-            "Q4: Successful pilot with three anchor customers."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "medium"
-      },
-      {
-        "type": "incremental",
-        "title": "Operational Cost Optimization Tool Suite",
-        "rationale": "Implementing a suite of tools focused purely on optimizing cloud resource allocation and legacy system integration will deliver immediate, measurable efficiency gains without requiring massive R&D overhead.",
-        "execution_plan": {
-          "first_actions": [
-            "Audit all server infrastructure for underutilized assets.",
-            "Implement automated scaling policies across all microservices."
-          ],
-          "resources_needed": [
-            "Cloud financial management software licenses",
-            "Internal DevOps time reallocation"
-          ],
-          "success_metric": "Decrease in average cloud operational cost per seat by 20% within 6 months.",
-          "milestones": [
-            "Month 1: Infrastructure optimization complete and costs baseline established.",
-            "Month 3: Full rollout of automated scaling policies."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "radical",
-        "title": "Vertical Niche Market Expansion via Platform Forking",
-        "rationale": "To combat competitive pressure, we should consider 'forking' our platform to build highly specialized versions tailored for specific verticals (e.g., Cold Chain Logistics or Pharmaceutical Distribution), allowing us to charge premium pricing and gain deeper efficiency expertise.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct market validation study for two high-value vertical niches.",
-            "Form a cross-functional task force (Product, Sales, Engineering) to define MVP requirements."
-          ],
-          "resources_needed": [
-            "Dedicated sales and marketing headcount",
-            "External consultancy support for niche positioning"
-          ],
-          "success_metric": "Achieve $5M in recurring revenue from one new vertical within 2 years.",
-          "milestones": [
-            "Q1: Detailed business case and MVP feature roadmap finalized.",
-            "Q3: Launch of the first 'Vertical Spin-off' product."
+            "Q2: Prototype feasibility study complete.",
+            "Q3: Pilot deployment of the optimization engine on a single waste management zone."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "long"
+        "timeframe": "3-5 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Automation of Citizen Services Portal (Efficiency)",
+        "rationale": "Implement Robotic Process Automation (RPA) and advanced chatbots to handle high-volume, standardized inquiries related to permits and service requests. This addresses immediate time constraints by offloading routine tasks from the small team.",
+        "execution_plan": {
+          "first_actions": [
+            "Inventory all top 10 repetitive citizen service tickets and map current workflow."
+          ],
+          "resources_needed": [
+            "Licensing for RPA platform (approx. $30k).",
+            "Training time for existing product management staff."
+          ],
+          "success_metric": "25% reduction in average ticket resolution time; 10-person team reallocation of 1 FTE.",
+          "milestones": [
+            "Q4: Implementation of chatbot and RPA on the top five service workflows."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a dedicated 'Innovation Task Force' to evaluate the feasibility and resource needs of the AI-Driven Hyper-Automation Engine.",
-        "owner": "Chief Innovation Officer",
+        "action": "Conduct a comprehensive audit of system duplication and define an integration roadmap for merging CRM/HR systems.",
+        "owner": "Chief Information Officer (CIO)",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Conduct an immediate audit of cloud infrastructure costs to identify low-hanging fruit for incremental efficiency gains.",
-        "owner": "Head of DevOps",
-        "timeframe": "Within 30 days"
-      },
-      {
-        "action": "Develop a detailed business case and resource plan for the Vertical Niche Market Expansion strategy.",
-        "owner": "VP of Product Strategy",
-        "timeframe": "End of Q2"
+        "action": "Form a dedicated 'Efficiency Squad' to prioritize the radical policy optimization project over feature development in Q1.",
+        "owner": "VP of Operations",
+        "timeframe": "End of next fiscal quarter"
       }
     ],
     "key_weaknesses": [
-      "High reliance on manual process steps in legacy parts of the platform, hindering true automation scalability.",
-      "Internal talent bottleneck: Key senior engineering roles are highly sought after and expensive to retain.",
-      "Slow internal change management process which limits rapid adoption of radical new features."
+      "Severe talent scarcity within the core technology team hindering the pace of innovation.",
+      "Fragile cultural integration following the recent merger leading to change fatigue and siloed operations.",
+      "Lack of formal, protected time/budget for strategic innovation work, forcing tech teams into reactive mode.",
+      "High operational drag due to significant system duplication that prevents true process re-engineering."
     ]
   }
 }

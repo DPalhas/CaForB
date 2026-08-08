@@ -1,0 +1,149 @@
+{
+  "id": "0228",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:25:26.012647+00:00",
+    "duration_ms": 23776,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.327745+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus Networks",
+      "sector": "Insurance",
+      "size": "Micro",
+      "companyName": "Nexus Networks"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Nexus Networks is a micro property and casualty insurance carrier specializing in underwriting auto, home, and SME liability policies through an agent network. The firm currently manages 90,000 policies with approximately €45M in annual gross written premiums. Operations are concentrated due to its small size, focusing heavily on manual processing and scaling digital tools like quoting interfaces.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 5,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are 3 months into fundraising conversations with growth equity investors who are conducting deep due diligence on our technology and operations. Their feedback indicates concern about our digital maturity relative to peers. We need to quickly identify and launch 2-3 innovation initiatives that will address these concerns and strengthen our fundraising narrative.",
+      "companyName": "Nexus Networks",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Policy Lifecycle Management (PLM) Tool Integration",
+        "rationale": "Implementing a fully integrated PLM system will streamline the existing formal innovation process and reduce manual operational overhead, directly addressing time scarcity. This is a low-risk, high-impact incremental step necessary for scaling.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current core system bottlenecks over 4 weeks",
+            "Identify vendor solutions compatible with existing tech stack"
+          ],
+          "resources_needed": [
+            "Contracting a specialized PLM consultant (estimated €15k)",
+            "Internal developer time allocation (30% of dev cycles)"
+          ],
+          "success_metric": "Reduction in policy onboarding time by 40%",
+          "milestones": [
+            "Pilot PLM integration complete",
+            "Full department rollout within Q3"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Dynamic Pricing Engine for Auto Policies",
+        "rationale": "To achieve aggressive growth targets, we should develop a bold dynamic pricing engine that uses real-time telematics data to offer highly personalized and competitive auto policies. This shifts the company from basic underwriting to sophisticated risk modeling.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish small data science task force",
+            "Develop Minimum Viable Product (MVP) model using existing claims history data"
+          ],
+          "resources_needed": [
+            "Data scientist contract or specialized training (€30k)",
+            "Cloud compute resources for initial modeling (€10k)"
+          ],
+          "success_metric": "Increase in average policy premium by 8%",
+          "milestones": [
+            "MVP model deployed in shadow mode",
+            "Full production rollout within Q4"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Cross-Sell Product Line Development (Home Insurance)",
+        "rationale": "Leveraging existing agent networks to cross-sell home insurance products into the SME/auto customer base represents a conservative path to immediate top-line growth. This requires minimal new technology investment, focusing instead on marketing and sales enablement.",
+        "execution_plan": {
+          "first_actions": [
+            "Analyze current policyholder demographics for upselling opportunities",
+            "Develop targeted agent training modules focused on the 'home' product pitch"
+          ],
+          "resources_needed": [
+            "Marketing budget reallocation (€5k)",
+            "Agent training materials development (internal resource time)"
+          ],
+          "success_metric": "Increase in cross-sell revenue by 10%",
+          "milestones": [
+            "Launch pilot marketing campaign",
+            "Full product line integration within 9 months"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed cost-benefit analysis for the AI Dynamic Pricing Engine MVP.",
+        "owner": "CFO/Head of Innovation",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Formalize the talent acquisition strategy to secure specialized data science expertise, focusing on fractional roles initially.",
+        "owner": "HR/CEO",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Begin planning and securing preliminary funding for Phase 1 (PLM integration) based on success metrics defined in the execution plan.",
+        "owner": "Head of Operations",
+        "timeframe": "End of next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe resource constraints, leading to operational bottlenecks and delayed innovation cycles due to time scarcity.",
+      "Limited in-house specialized technical talent required for complex technology evaluations and development.",
+      "High dependence on a lean leadership team, potentially inhibiting the necessary speed required for radical growth initiatives.",
+      "Low digital maturity (Level 3) puts pressure on fundraising narratives regarding operational scalability."
+    ]
+  }
+}

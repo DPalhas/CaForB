@@ -1,0 +1,123 @@
+{
+  "id": "0374",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:47:11.408364+00:00",
+    "duration_ms": 47159,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.383402+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Prime Innovations",
+      "sector": "Professional & Consulting Services",
+      "size": "Small",
+      "companyName": "Prime Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Prime Innovations is a management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. The team of 40 consultants across three offices typically delivers high-touch projects ranging from 8 to 16 weeks. Currently, the firm uses specialized AI tools for knowledge management to capture past engagement insights, aiming to standardize solution delivery and enhance proposal quality.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past three years we have launched four new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning by either deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The firm is currently facing internal friction between the operational sales team and the R&D lab regarding resource allocation for long-term platform development versus immediate project delivery demands.",
+      "companyName": "Prime Innovations",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Proposal Automation Engine Enhancement",
+        "rationale": "Enhancing the current knowledge management AI to automate the creation of standardized proposals and case studies will improve efficiency without significant capital expenditure. This is a low-risk, incremental move that leverages existing digital maturity.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct internal feasibility study for API integration with existing CRM",
+            "Allocate 10% of the innovation budget to tool licensing/integration trials"
+          ],
+          "resources_needed": [
+            "Integration consultant hours (external)",
+            "Software subscription costs ($5k)"
+          ],
+          "success_metric": "30% reduction in proposal drafting time within 6 months",
+          "milestones": [
+            "Q1: Integration Proof of Concept complete",
+            "Q2: Full operational pilot launched"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Service Platform Development (Vertical SaaS)",
+        "rationale": "To build defensible switching costs, Prime Innovations should develop a proprietary low-code platform offering standardized consulting templates and tools for hyper-specialized niches. This would shift the business model from pure service delivery to recurring platform revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify two high-margin vertical niches (e.g., specific compliance sectors)",
+            "Form a cross-functional 'Platform Core' team (Strategy, Dev Lead)"
+          ],
+          "resources_needed": [
+            "Hiring 1 dedicated platform engineer ($80k - drawing from innovation budget surplus)",
+            "Seed funding for MVP development ($25k)"
+          ],
+          "success_metric": "Secure first paying platform user contract within 12 months",
+          "milestones": [
+            "Q1: Platform blueprint and niche validation complete",
+            "Q3: Minimum Viable Product (MVP) launched for one vertical"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a deep dive into niche market profitability and platform requirements for the radical opportunity.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Finalize budget allocation for the incremental AI enhancement project based on feasibility study results.",
+        "owner": "CTO/Finance",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited dedicated innovation bandwidth due to immediate operational demands.",
+      "High internal complexity in aligning the R&D lab with formalized strategy requirements (culture barrier).",
+      "Reliance on a small, centralized leadership team which may lack expertise in platform economics.",
+      "Difficulty translating creative ideas into scaled product roadmaps without compromising short-term service delivery."
+    ]
+  }
+}

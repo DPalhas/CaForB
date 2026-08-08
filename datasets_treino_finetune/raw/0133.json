@@ -1,0 +1,145 @@
+{
+  "id": "0133",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:42:08.089688+00:00",
+    "duration_ms": 22212,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.298502+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vault Innovations",
+      "sector": "Fintech",
+      "size": "Small",
+      "companyName": "Vault Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense competition from established banks and large robo-advisors. Navigating complex, changing KYC/AML regulations requires constant vigilance.",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "companyName": "Vault Innovations"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Compliance Layer (Incremental)",
+        "rationale": "Given the high regulatory environment and conservative risk appetite, automating compliance checks for new product launches is a crucial incremental step to reduce operational errors and mitigate severe fines. This leverages existing digital maturity.",
+        "execution_plan": {
+          "first_actions": [
+            "Map all critical KYC/AML workflows for the new savings products",
+            "Pilot an AI-driven compliance monitoring tool focused only on transaction flagging"
+          ],
+          "resources_needed": [
+            "Internal legal consultation hours (small allocation)",
+            "Subscription to a niche regulatory technology provider"
+          ],
+          "success_metric": "Reduction in compliance review turnaround time by 30% within six months",
+          "milestones": [
+            "Q1: Regulatory workflow documentation complete",
+            "Q2: Compliance tool pilot live and validated"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Dynamic Portfolio Engine (Bold)",
+        "rationale": "To meet the high growth priority, exploring a bold shift from static robo-advice to an AI model that dynamically reallocates based on real-time ESG scoring and macro market sentiment could unlock significant competitive advantage. This requires substantial R&D but promises massive user engagement.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a small, cross-functional prototype team (engineer + data scientist)",
+            "Conduct feasibility study on integrating third-party ESG scoring APIs",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Budget allocation for external consultant/data science talent",
+            "Initial API integration costs ($20k-$40k)"
+          ],
+          "success_metric": "Achieve a 15% increase in average user portfolio alpha vs. benchmark over 12 months",
+          "milestones": [
+            "Q3: Proof of concept for dynamic allocation algorithm",
+            "Q4: Beta launch with 500 users for A/B testing"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Legacy System API Wrapper for Customer Data (Incremental)",
+        "rationale": "Given the difficulty in integration with legacy systems, creating a secure API wrapper allows non-core staff to access necessary customer data efficiently, improving internal operational speed and decision quality.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing database schemas for core user profiles",
+            "Develop a restricted read-only microservice layer"
+          ],
+          "resources_needed": [
+            "Internal software development hours (1 person)",
+            "Minimal cloud infrastructure costs ($5k)"
+          ],
+          "success_metric": "Decrease time spent by customer support on data retrieval queries by 40%",
+          "milestones": [
+            "Q2: Schema audit complete",
+            "Q3: API wrapper deployed to internal testing environment"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "4-6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a clear, quarterly roadmap for the innovation function focused exclusively on de-risking regulatory initiatives.",
+        "owner": "Chief Product Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Schedule a dedicated 'Innovation Sandbox' budget allocation review with executive leadership to define scope for the Dynamic Portfolio Engine prototype (Bold opportunity).",
+        "owner": "CEO/Owner Alone",
+        "timeframe": "Next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation structure leading to inconsistent prioritization.",
+      "Severe resource constraints, particularly the lack of a dedicated budget and specialized technical talent.",
+      "Decision-making bottleneck due to 'owner_alone' structure, risking misalignment between long-term vision and short-term operational needs.",
+      "High complexity of regulatory processes inhibiting agility."
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "0187",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:04:35.327989+00:00",
+    "duration_ms": 26896,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian Enterprises",
+      "sector": "Hospitality & Tourism",
+      "size": "Small",
+      "companyName": "Meridian Enterprises"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Meridian specializes in premium outdoor adventures, focusing on high-adrenaline activities like canyoning and guided treks within protected national park ecosystems. They manage a robust network of locally certified guides and operate with an emphasis on safety protocols compliant with regional environmental regulations. The core challenge lies in scaling personalized experiences efficiently while maintaining the integrity of their wilderness operations.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Their past initiatives have focused heavily on back-end efficiency, including successful cloud migration of their enterprise resource planning system and implementing an RPA center of excellence for dynamic customer service routing. This has significantly streamlined the operational flow, demonstrating proven success in cost reduction and internal process optimization over the last 24 months.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The current market is highly sensitive to experiential authenticity, meaning competitors are aggressively adopting immersive AR and personalized itinerary management tools. Meridian must rapidly pivot from being a service provider to an experience curator using data insights to identify untapped adjacent markets, such as specialized eco-tourism packages or high-end expedition logistics.",
+      "companyName": "Meridian Enterprises",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 8.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Experience Marketplace Pivot (Diversification)",
+        "rationale": "Given the bold risk appetite and strategic priority for diversification, Meridian should explore leveraging its guide network as a fractional resource provider on an external platform or marketplace. This moves the company from being purely a service consumer to a content/asset creator, allowing them to monetize intellectual property (routes, guides) across multiple tourism verticals.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a market feasibility study for selling guided experience packages to third-party travel operators.",
+            "Pilot the development of a white-label guide management tool interface."
+          ],
+          "resources_needed": [
+            "External business development consultant (pilot phase)",
+            "Legal counsel specializing in licensing/partnerships"
+          ],
+          "success_metric": "Secure 3 external B2B partnership agreements within 6 months.",
+          "milestones": [
+            "Q1: Identify and vet top 5 potential marketplace partners.",
+            "Q2: Finalize pilot contract with one partner."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Itineraries",
+        "rationale": "Utilizing the existing data warehouse and high digital maturity, implement an AI engine to dynamically generate highly personalized hiking/canyoning itineraries based on real-time user input (fitness level, preference for solitude vs. group activities). This enhances the core offering without requiring a full business model overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 10% of senior engineer time to prototype ML recommendation engine.",
+            "Integrate personalized suggestion UI into current booking platform."
+          ],
+          "resources_needed": [
+            "Data science intern/contractor",
+            "API subscription for personalization engine (e.g., customized routing software)"
+          ],
+          "success_metric": "Increase average customer spending by 15% through upselling personalized high-value experiences.",
+          "milestones": [
+            "Q2: MVP launch of the basic recommendation algorithm.",
+            "Q4: Full integration and A/B testing."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      },
+      {
+        "type": "incremental",
+        "title": "Eco-Certification & Revenue Stream Expansion",
+        "rationale": "Formalize the sustainability practices already in place into a recognized certification program that can be marketed as a premium, high-margin tier. This addresses growing consumer demand for ethical tourism and provides a new revenue stream separate from core guided tours.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing operations against international eco-tourism standards (e.g., GSTC).",
+            "Develop pricing model for the 'Meridian Green Pass' premium experience."
+          ],
+          "resources_needed": [
+            "Consultant fees for certification audit preparation",
+            "Marketing budget allocation for sustainability campaigns"
+          ],
+          "success_metric": "Achieve 2 major international eco-tourism certifications within 18 months.",
+          "milestones": [
+            "Q3: Certification audit completion.",
+            "Q4: Launch of 'Meridian Green Pass' product line."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "medium"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated 'Diversification Task Force' to assess the viability of the Experience Marketplace Pivot opportunity.",
+        "owner": "CEO / Business Development Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch the AI-Driven Itinerary prototype by dedicating a pilot team member and allocating allocated development time.",
+        "owner": "Senior Engineer",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Initiate the formal sustainability audit process to identify certification pathways for the Eco-Certification stream.",
+        "owner": "Operations Manager",
+        "timeframe": "End of Q3"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on a single, small leadership team, creating bottlenecks in rapid decision-making and execution.",
+      "Informal structure within the innovation function leading to resource contention between operational demands and strategic exploration.",
+      "Significant talent gap regarding advanced machine learning/AI expertise needed for next-generation personalization.",
+      "Limited financial runway (15% budget) severely restricts the scope of radical, high-risk diversification initiatives."
+    ]
+  }
+}

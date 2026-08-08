@@ -1,0 +1,124 @@
+{
+  "id": "0437",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:02:24.620158+00:00",
+    "duration_ms": 23216,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.406237+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pulse Digital",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small",
+      "companyName": "Pulse Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Pulse Digital is a dynamic fashion and apparel retail chain operating 45 physical stores across key shopping malls in three distinct geographic markets. We operate on an ultra-fast-fashion model characterized by aggressive, 6-week design-to-shelf cycles, making us highly sensitive to supply chain disruptions and inventory obsolescence.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team successfully transitioned from a legacy waterfall methodology to an agile framework involving 2-week sprints with continuous deployment, which significantly reduced our release cycle time by 60%. While this accelerated development, adjacent departments like marketing and customer support are still adapting their workflows to handle the increased velocity of product updates.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within three years through aggressive geographic expansion into two new markets and establishing a seamless direct-to-consumer (DTC) digital channel alongside our existing B2B distribution network. Our primary focus is on identifying scalable customer acquisition channels and building the robust operational capacity necessary to support rapid volume growth without compromising brand quality or margin integrity.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities—specifically explainability frameworks and human oversight documentation—into our product roadmap immediately to proactively mitigate market access risk when enforcement begins.",
+      "companyName": "Pulse Digital",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Advanced RFID-Enabled Inventory Forecasting",
+        "rationale": "Implementing the planned RFID system integration will provide granular, real-time inventory visibility across all 45 stores, reducing stockouts and overstocking in high-demand items. This incremental step directly supports our stated goal of improving replenishment speed.",
+        "execution_plan": {
+          "first_actions": [
+            "Complete vendor selection for RFID hardware/software integration partners.",
+            "Pilot the system implementation in one flagship store location to validate data flow.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Allocation of $40k for pilot program and integration consultation.",
+            "1 dedicated project manager (reassign from current roles)."
+          ],
+          "success_metric": "20% reduction in stockout incidents within 6 months.",
+          "milestones": [
+            "Q3: Final vendor contract signed.",
+            "Q4: Pilot store live and data validated."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Localized Micro-Supply Chain Hubs (Near-Shoring 2.0)",
+        "rationale": "Given margin pressure and regulatory scrutiny, this involves radically shifting our sourcing strategy away from centralized mega-warehouses toward establishing small, automated micro-production hubs near key demographic markets, drastically cutting lead times to under two weeks.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive supply chain simulation modeling the cost/risk trade-off for three potential regional micro-hubs.",
+            "Secure initial lease agreements for one pilot hub focusing on sustainable, local material sourcing.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Investment of $150k in automated, modular machinery and localized logistics software.",
+            "Hiring 2 specialized supply chain risk analysts."
+          ],
+          "success_metric": "Achieve a 30% reduction in average landed cost per unit within 9 months.",
+          "milestones": [
+            "Q1: Detailed business case approval for pilot hub.",
+            "Q3: Pilot hub operational and revenue contribution validated."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal Innovation Governance Council and ring-fence a dedicated, small budget (e.g., $5k/quarter) specifically for high-risk radical projects.",
+        "owner": "CEO / Strategy Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop an AI Compliance Framework roadmap addressing the EU AI Act requirements, integrating explainability modules into the Q1 product development cycle.",
+        "owner": "CTO / Product Manager",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented digital ecosystem leading to ad-hoc system integration and data silos.",
+      "Lack of formal, ring-fenced innovation time or budget for radical exploration.",
+      "Reliance on a small core team without specialized expertise in advanced compliance (e.g., AI/EU regulations).",
+      "Process maturity lag preventing the organization from scaling rapid, high-volume changes efficiently."
+    ]
+  }
+}

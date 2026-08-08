@@ -1,0 +1,123 @@
+{
+  "id": "0367",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:43:49.021361+00:00",
+    "duration_ms": 21663,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.380737+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard Industries",
+      "sector": "Hospitality & Tourism",
+      "size": "Small",
+      "companyName": "Vanguard Industries"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Vanguard Industries operates a mid-scale restaurant chain with 12 locations specializing in Mediterranean cuisine. The central kitchen handles approximately 70% of menu production, necessitating robust systems for inventory management and supply chain coordination across multiple satellite sites. This organizational structure is highly sensitive to labor costs and material waste, making operational efficiency paramount.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company faces intense pressure from local competitors on pricing and service speed. Success hinges entirely on reducing the cost per dish while maintaining quality, making technology a tool for immediate bottom-line impact.",
+      "companyName": "Vanguard Industries",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Standardized Digital SOP Implementation",
+        "rationale": "Transitioning the informal kitchen processes into standardized digital workflow checklists will reduce errors and training time, directly improving operational consistency and efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the top 3 highest-waste menu workflows.",
+            "Select a low-cost cloud form/database solution for SOP tracking."
+          ],
+          "resources_needed": [
+            "Product Manager (0.5 FTE)",
+            "Internal training time"
+          ],
+          "success_metric": "Reduction in ingredient waste by 10% within Q3.",
+          "milestones": [
+            "Draft SOP for High-Waste Items (Week 2)",
+            "Pilot digital tracking on one satellite location (Month 2)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Supply Chain Demand Forecasting Platform",
+        "rationale": "Implementing a centralized system that integrates sales data with central kitchen production schedules will enable predictive ordering, significantly reducing spoilage and inventory holding costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify core ERP/POS API integration points for demand data access.",
+            "Develop a lean Minimum Viable Product (MVP) forecasting module."
+          ],
+          "resources_needed": [
+            "External Cloud Consultant (short-term contract)",
+            "40 hours of dedicated developer time"
+          ],
+          "success_metric": "Reduction in inventory holding costs by 5% within 12 months.",
+          "milestones": [
+            "Finalize vendor/API integration strategy (Month 3)",
+            "Launch MVP forecasting tool for central kitchen use (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Define and document the top 5 operational bottlenecks using a process mapping exercise.",
+        "owner": "Product Manager",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Select and procure a low-cost SaaS solution for initial inventory tracking pilot.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal innovation pipeline leading to siloed, ad-hoc tool adoption.",
+      "High dependency on manual processes and unstructured data entry, preventing scalable efficiency gains.",
+      "Limited digital maturity (Level 1) resulting in difficulty integrating disparate internal systems for holistic analysis.",
+      "Over-reliance on a small team stretched thin between maintenance tasks and strategic innovation exploration."
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "0321",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:18:01.218304+00:00",
+    "duration_ms": 24520,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Strato Holdings",
+      "sector": "Mining & Extraction",
+      "size": "Micro",
+      "companyName": "Strato Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Strato Holdings is a junior mining exploration company specializing in lithium and rare earth mineral prospecting within northern Portugal. The company focuses on geological surveying and deep drilling, managing 15 active concessions to identify high-value deposits. Their current technical focus involves integrating advanced spectrometry with AI to accelerate core sample analysis.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures, successfully achieving a 15% reduction in unplanned downtime. We now have a business case approved for full fleet rollout; however, procurement complexity with legacy maintenance systems is slowing the adoption timeline.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense competition from established international mining giants who possess superior data analytics capabilities and rapid exploration cycles. Maintaining market share requires not just operational efficiency, but a fundamental shift in how we identify and prioritize mineral targets.",
+      "companyName": "Strato Holdings",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Spectrometry Workflow Integration",
+        "rationale": "Integrate the new spectrometry data processing directly into a semi-automated platform to reduce manual sample review time by at least 30%. This leverages existing assets and provides an immediate, measurable efficiency gain while building foundational data infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Finalize vendor contract for spectrometry integration API.",
+            "Allocate remaining budget (5%) for a dedicated data pipeline developer sprint."
+          ],
+          "resources_needed": [
+            "1 Part-time data engineer",
+            "Existing hardware/software licenses"
+          ],
+          "success_metric": "30% reduction in core sample analysis cycle time.",
+          "milestones": [
+            "Month 1: Integration prototype complete.",
+            "Month 3: Pilot validation on 5 active concessions."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Mineral Identification Engine (Project Chimera)",
+        "rationale": "Develop a proprietary machine learning model trained on historical geological data, sensor readings, and spectrometry results to predict the presence of high-value lithium/rare earth deposits with unprecedented accuracy. This moves beyond reactive monitoring into proactive target selection, providing a significant competitive moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Launch a focused 3-month proof-of-concept (PoC) PoC on existing historical data sets.",
+            "Identify and secure a specialized ML consultant via contract."
+          ],
+          "resources_needed": [
+            "Contract specialist (40% FTE)",
+            "Cloud computing resources for model training"
+          ],
+          "success_metric": "90% prediction accuracy in identifying high-value targets within 12 months.",
+          "milestones": [
+            "Month 6: PoC model validated and optimized.",
+            "Month 12: Full integration into exploration decision framework."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Customer Self-Service Portal MVP",
+        "rationale": "Launch a minimal viable product (MVP) for digital self-service, focusing initially on providing standardized reports and historical assay data access. This directly addresses the primary customer churn driver by improving transparency and reducing support load.",
+        "execution_plan": {
+          "first_actions": [
+            "Define core features based on top 3 customer complaints from exit interviews.",
+            "Allocate budget (3%) for a freelance UX/UI designer."
+          ],
+          "resources_needed": [
+            "Freelance UI/UX support",
+            "Internal development team reallocation"
+          ],
+          "success_metric": "15% reduction in customer service tickets related to data requests.",
+          "milestones": [
+            "Month 4: Beta launch for enterprise segment.",
+            "Month 7: Full feature rollout."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, though small, innovation steering committee.",
+        "owner": "CEO/Founder",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a feasibility study and resource audit for 'Project Chimera' (Radical Opportunity).",
+        "owner": "CTO/Lead Developer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Launch the incremental Spectrometry Workflow integration PoC.",
+        "owner": "Operations Manager",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a formal, structured innovation pipeline resulting in opportunistic, rather than strategic, initiatives.",
+      "Over-reliance on owner/founder decision-making which limits scalability and long-term resource allocation.",
+      "Severe talent constraints; generalist developers lack specialized expertise needed for advanced AI or complex software architecture.",
+      "Fragmented operational knowledge across the team, hindering cross-functional innovation."
+    ]
+  }
+}

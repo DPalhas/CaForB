@@ -1,0 +1,121 @@
+{
+  "id": "0301",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:08:57.161350+00:00",
+    "duration_ms": 20082,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.357291+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Helix",
+      "sector": "Information Technology",
+      "size": "Medium",
+      "companyName": "Helix"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Helix is a specialized cybersecurity consultancy focusing on high-stakes services like penetration testing, SOC 2 compliance audits, and rapid incident response for enterprise clients. The team consists of highly certified ethical hackers and auditors who operate at the edge of technical capability.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration across the core development pipeline. However, adjacent teams (marketing, support) are still adapting to the faster cadence but often require significant process handoffs.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers, necessitating a systematic identification and elimination of inefficiencies across procurement, service delivery, and back-office functions.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Helix",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting Dashboard MVP",
+        "rationale": "Productizing the recurring vulnerability scanning service into a low-risk software tool addresses immediate efficiency goals by reducing manual reporting overhead. This incremental step leverages existing engineering talent and provides a clear, measurable ROI quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Define MVP scope for dashboard focusing on top 3 compliance metrics (e.g., SOC 2 readiness).",
+            "Allocate 1 dedicated engineer and the UX designer to rapid prototype wireframes."
+          ],
+          "resources_needed": [
+            "50 hours engineering time",
+            "Software licensing costs ($2,000)"
+          ],
+          "success_metric": "Reduce manual reporting time by 40% for existing retainer clients within Q3.",
+          "milestones": [
+            "Q1: Complete core data ingestion pipeline and basic visualization. (Month 3)",
+            "Q2: Beta launch with 5 pilot compliance audits."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Powered Predictive Threat Intelligence Platform",
+        "rationale": "Developing a proprietary AI layer that predicts the likelihood and vectors of specific attack patterns before they manifest dramatically could create a high barrier to entry. This is bold but focused on maximizing security expertise, addressing competitive pressure.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify internal data sets suitable for training a baseline ML model.",
+            "Form an exploratory task force of 2 engineers and the data scientist."
+          ],
+          "resources_needed": [
+            "Data science consultation fee ($15,000)",
+            "Access to cloud GPU instances"
+          ],
+          "success_metric": "Accuracy improvement in threat prediction confidence score by 15% over current manual methods.",
+          "milestones": [
+            "Q3: Proof-of-concept model trained and validated against historical data.",
+            "Q4: Integrate initial predictive engine into one high-value consulting engagement."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed cost-benefit analysis for the automated reporting dashboard MVP.",
+        "owner": "Product Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Establish clear KPIs and resource allocation for Series A narrative focusing on efficiency gains.",
+        "owner": "Executive Committee",
+        "timeframe": "Next 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budgetary constraints (5% allocation) severely limit investment in long-term R&D and high-risk radical initiatives.",
+      "Partial digital maturity leads to siloed workflows where manual processes in non-engineering departments hinder the efficiency gains promised by agile adoption.",
+      "Innovation process is reactive rather than proactive; current efforts are focused on incremental fixes for existing operational friction rather than systemic overhaul."
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "0160",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:53:15.666564+00:00",
+    "duration_ms": 20423,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Catalyst.tech",
+      "sector": "Legal Services",
+      "size": "Micro",
+      "companyName": "Catalyst.tech"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Boutique litigation firm handling complex commercial disputes, arbitration, and white-collar defense. The team specializes in high-stakes intellectual property and regulatory compliance cases. We are currently focused on leveraging technology to enhance document review efficiency.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We conducted a pilot project implementing a specialized AI tool for initial contract clause extraction, which reduced manual review time by approximately 20% in the testing phase. This initiative proved successful but lacked formal integration into our core workflow due to resource constraints and legacy system incompatibility.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models like SaaS tools or specialized consulting.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Current competitive pressure stems from larger firms adopting proprietary legal tech platforms. The firm needs a rapid pivot toward creating defensible, scalable service offerings to survive.",
+      "companyName": "Catalyst.tech",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Litigation Intelligence Platform",
+        "rationale": "Developing a proprietary AI model that analyzes vast case law and regulatory filings to predict litigation outcomes and suggest optimal defense strategies would be radical. This moves the firm from service provision to a scalable technology provider.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on data sourcing requirements for predictive modeling",
+            "Identify and hire one specialized ML engineer (contract/legal focus)"
+          ],
+          "resources_needed": [
+            "$50,000 for cloud computing resources",
+            "Salaries for 6 months of a specialized developer"
+          ],
+          "success_metric": "Achieve a 15% reduction in initial case research time via AI tool integration within 9 months.",
+          "milestones": [
+            "Q3: Prototype development complete (Proof of Concept)",
+            "Q4: Pilot rollout with one active client",
+            "Q1 Next Year: Full product launch readiness"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "medium"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche IP Subscription Service",
+        "rationale": "Launch a subscription service offering hyper-specific, curated legal databases focused on emerging technologies (e.g., generative AI copyright law). This leverages existing expertise and creates an immediate recurring revenue stream for diversification.",
+        "execution_plan": {
+          "first_actions": [
+            "Create MVP of the specialized database API",
+            "Develop pricing tiers based on document volume/access level"
+          ],
+          "resources_needed": [
+            "Marketing budget ($10,000)",
+            "Time allocation from existing developers (5 hours/week)"
+          ],
+          "success_metric": "Achieve 50 paying subscribers generating $25k MRR within 6 months.",
+          "milestones": [
+            "Month 3: Beta launch to 10 anchor clients",
+            "Month 6: Achieve operational profitability on the service"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "short"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize a dedicated R&D initiative and secure seed funding based on the Predictive Intelligence opportunity.",
+        "owner": "Founder / Owner Alone",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Run a market validation study to confirm pricing viability for the Niche IP Subscription Service.",
+        "owner": "Generalist Developers Lead",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme reliance on owner-alone decision-making, leading to potential strategic stagnation and lack of specialization in innovation cycles.",
+      "Very low digital maturity (Level 2) limits the ability to rapidly scale or integrate sophisticated new technologies required for radical opportunities.",
+      "Dual role of developers splitting time between maintenance and prototyping severely limits dedicated R&D bandwidth needed for complex projects.",
+      "Critical constraint on working capital and budget, making high-cost, long-term innovation investments extremely difficult."
+    ]
+  }
+}

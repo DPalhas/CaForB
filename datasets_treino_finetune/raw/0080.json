@@ -3,69 +3,75 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
+    "sector": "Energy & Utilities",
     "size": "Medium",
     "regulatory_environment": "medium",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:24:56.041385+00:00",
-    "duration_ms": 45375,
-    "attempts": 2
+    "generated_at": "2026-08-03T18:03:59.821045+00:00",
+    "duration_ms": 26720,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.279509+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metal Fabrication Co.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Beacon.ai",
+      "sector": "Energy & Utilities",
+      "size": "Medium",
+      "companyName": "Beacon.ai"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Precision Metal Fabrication Co. specializes in custom industrial components for the aerospace and automotive sectors. The company maintains stringent quality controls due to strict industry standards, requiring regular compliance audits. Operations involve complex supply chain management and specialized machinery.",
+      "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform.",
       "innovationProcess": "formal",
-      "pastInitiatives": "The team has implemented a pilot program for CNC machine optimization over the last year. They also conducted internal workshops focused on streamlining inventory tracking protocols.",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to improve operational efficiency by reducing waste and optimizing throughput in our fabrication processes. We aim to enhance profitability through streamlined production cycles.",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core innovation team consists of 3 specialized engineers and one project manager, reporting directly to the operations director.",
-      "digitalMaturity": 4,
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 6,
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 5,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
+        "budget",
         "process",
-        "talent",
-        "time"
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real.",
+      "companyName": "Beacon.ai",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Process Automation Pilot for Machine Scheduling",
-        "rationale": "Implementing AI-driven scheduling software could reduce machine idle time and optimize workflow sequencing without requiring a full system overhaul. This directly addresses the efficiency priority.",
+        "title": "Smart Contract Integration for Energy Audit Reporting",
+        "rationale": "Given the formal process and focus on efficiency, implementing smart contracts to automate invoicing and validation of energy audit compliance can drastically reduce manual administrative touchpoints. This is a low-risk way to drive operational excellence.",
         "execution_plan": {
           "first_actions": [
-            "Identify three key production bottlenecks suitable for automation testing.",
-            "Select and procure a low-cost, off-the-shelf scheduling module."
+            "Identify current reporting bottlenecks in the ERP/CRM flow.",
+            "Pilot smart contract integration on one specific, high-volume service line (e.g., HVAC optimization).",
+            "Define key performance indicators (KPIs) for reduction in administrative hours."
           ],
           "resources_needed": [
-            "External consultant (20 hours)",
-            "Software licensing fee ($5k)"
+            "Contractor specialist for blockchain/smart contract auditing.",
+            "2 dedicated data engineers for system integration mapping."
           ],
-          "success_metric": "Reduce machine idle time by 15% within 6 months.",
+          "success_metric": "Reduce project overhead cost by 15% within the first quarter of pilot.",
           "milestones": [
-            "Q3: Pilot implementation in one department.",
-            "Q4: Full rollout planning based on pilot success."
+            "Week 4: Finalize scope and technical feasibility.",
+            "Month 3: Successful closed-loop pilot completion.",
+            "Quarter 2: Full rollout plan documented."
           ]
         },
         "impact": "medium",
@@ -74,72 +80,77 @@
       },
       {
         "type": "incremental",
-        "title": "Standardized Digital Inventory Tracking (WMS Lite)",
-        "rationale": "Moving from manual tracking to a lightweight Warehouse Management System (WMS) will improve material flow visibility, reducing time spent searching for parts and lowering inventory shrinkage.",
+        "title": "Automated Data Cleanup and Integration Workflow",
+        "rationale": "The post-merger environment presents a major opportunity to streamline data flow. Developing an automated workflow for cleaning duplicate customer records and consolidating disparate CRM/HRIS data will improve the efficiency of sales and service operations without requiring new technology development.",
         "execution_plan": {
           "first_actions": [
-            "Define core data requirements for the WMS integration.",
-            "Select a cloud-based solution with an affordable subscription model."
+            "Map current data silos between legacy systems.",
+            "Develop a Python-based ETL script focused solely on deduplication.",
+            "Establish governance rules for master data management."
           ],
           "resources_needed": [
-            "Internal IT resource reallocation (50% time)",
-            "WMS platform subscription ($1k/month)"
+            "1 full-time Data Engineer dedicated to integration.",
+            "Internal process documentation team time allocation."
           ],
-          "success_metric": "Decrease material search time by 25% within 4 months.",
+          "success_metric": "Reduction in manual reconciliation time by 25% across sales and service teams.",
           "milestones": [
-            "Month 1: Data migration and system configuration.",
-            "Month 3: Full operational integration."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "9 months"
-      },
-      {
-        "type": "radical",
-        "title": "IoT Sensor Integration for Predictive Maintenance (Feasibility Study)",
-        "rationale": "While conservative, a foundational study into using basic IoT sensors on critical machinery could enable predictive maintenance. This shifts the company from reactive repairs to proactive scheduling, significantly boosting efficiency and reducing costly downtime.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct a vendor RFP for industrial vibration/temp monitoring sensors.",
-            "Define the scope of the feasibility study (focus on one high-impact machine)."
-          ],
-          "resources_needed": [
-            "R&D budget allocation ($15k)",
-            "External sensor technology assessment team"
-          ],
-          "success_metric": "Successful proof-of-concept demonstrating 90% accuracy in predicting component failure.",
-          "milestones": [
-            "Q3: Sensor vendor selection and PoC setup.",
-            "Q1 Next Year: Final cost/benefit analysis for full integration."
+            "Month 1: Complete system mapping and data flow audit.",
+            "Month 3: Automated workflow for cleaning implemented and tested.",
+            "Q4: Full organizational rollout."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance Model for Utility Infrastructure",
+        "rationale": "A bold shift involves leveraging the newly developed IoT monitoring platform to create a predictive maintenance model that forecasts equipment failure before it occurs. This moves beyond reactive auditing into proactive, data-driven cost avoidance, directly supporting the strategic goal of margin improvement.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-risk physical asset class (e.g., industrial pumps/transformers).",
+            "Gather historical operational data and sensor telemetry.",
+            "Train machine learning models using current R&D talent."
+          ],
+          "resources_needed": [
+            "1 Senior ML Engineer dedicated to model development.",
+            "Hardware sensor deployment budget ($50k initial capital expenditure)."
+          ],
+          "success_metric": "Achieve 80% accuracy in predicting equipment failure within a 30-day window.",
+          "milestones": [
+            "Month 1: Data pipeline established and cleaned.",
+            "Month 6: Initial model training complete and validated against historical data.",
+            "Month 9: Pilot deployment on 5 key assets."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
         "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional Task Force to evaluate the feasibility of the IoT Predictive Maintenance study.",
-        "owner": "Operations Director",
-        "timeframe": "Within 3 weeks"
+        "action": "Establish a cross-functional Efficiency Task Force to formally define the top 3 process bottlenecks identified during the merger.",
+        "owner": "COO / Strategy Lead",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Finalize vendor selection and budget approval for the WMS Lite implementation.",
-        "owner": "Finance Lead",
-        "timeframe": "Within 4 weeks"
+        "action": "Allocate $50k from the innovation budget for a proof-of-concept focused on reducing manual data entry using low-code automation tools.",
+        "owner": "Head of Innovation",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Draft detailed project charters for the top two opportunities (Automation Pilot & IoT Study).",
-        "owner": "Innovation Manager",
-        "timeframe": "Within 6 weeks"
+        "action": "Conduct a talent gap analysis focusing specifically on predictive analytics skills to address the key barrier of 'talent'.",
+        "owner": "HR Director / R&D Head",
+        "timeframe": "Within 3 months"
       }
     ],
     "key_weaknesses": [
-      "reliance on manual data entry leading to errors and delays.",
-      "high turnover in specialized technical roles due to limited upskilling programs.",
-      "slow internal bureaucracy hindering rapid process changes."
+      "Fragmented legacy systems leading to significant data duplication and integration challenges post-merger.",
+      "Limited budget (5% of revenue) constrains the ability to pursue large, long-term infrastructure projects.",
+      "High sensitivity to cultural change fatigue hindering the adoption of new processes across integrated teams.",
+      "Potential talent gap in advanced predictive analytics required for achieving aggressive margin goals."
     ]
   }
 }

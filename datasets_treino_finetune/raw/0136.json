@@ -1,0 +1,146 @@
+{
+  "id": "0136",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:43:15.701063+00:00",
+    "duration_ms": 24926,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Anchor Corporation",
+      "sector": "Transportation & Logistics",
+      "size": "Large",
+      "companyName": "Anchor Corporation"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Anchor Corporation is a key player in cold chain logistics, managing temperature-controlled distribution for sensitive pharmaceutical products and fresh food across Iberia. Their operations involve complex intermodal transport planning, handling strict chain-of-custody requirements while maintaining high throughput. The company utilizes sophisticated fleet management systems but lacks integrated enterprise-wide predictive analytics capabilities.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years, relying primarily on established manual processes and legacy ERP systems. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers who demand faster delivery times. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions to maintain competitive pricing.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The current focus is on incremental technology adoption that provides immediate, measurable ROI without requiring a complete overhaul of existing operational infrastructure.",
+      "companyName": "Anchor Corporation",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Route Optimization Software Pilot",
+        "rationale": "Implementing a basic route optimization tool can immediately reduce fuel consumption and driver overtime by minimizing idle time and optimizing delivery sequencing across our regional routes.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 5 high-volume weekly routes for pilot testing",
+            "Select an off-the-shelf, low-cost TMS module",
+            "Run parallel tracking metrics against current performance for 3 months"
+          ],
+          "resources_needed": [
+            "Software license subscription (estimated <€10k)",
+            "Internal data science analyst time (part-time allocation)"
+          ],
+          "success_metric": "5% reduction in average weekly fuel cost per route",
+          "milestones": [
+            "Q3: Pilot implementation and baseline establishment",
+            "Q4: Full regional deployment feasibility study"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance for Cold Storage Fleet",
+        "rationale": "Installing simple IoT sensors on refrigeration units and fleet vehicles can move maintenance from reactive repairs to scheduled, predictive interventions, significantly reducing unexpected downtime and repair costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 10 most critical pieces of equipment",
+            "Integrate low-cost vibration/temperature sensors with existing telemetry systems",
+            "Establish a threshold-based alert system for proactive maintenance scheduling"
+          ],
+          "resources_needed": [
+            "Sensor hardware purchase and installation (<€50k)",
+            "Internal engineering time (1 FTE dedicated to data ingestion)"
+          ],
+          "success_metric": "15% reduction in unscheduled downtime incidents",
+          "milestones": [
+            "Q3: Sensor pilot on 2 key storage units",
+            "Q4: Full fleet sensor rollout plan finalized and funding approved"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "10 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Digital Documentation Workflow (Paperless Transition)",
+        "rationale": "Transitioning critical paperwork, like temperature logs and chain-of-custody documents, from paper to a cloud-based workflow reduces administrative errors and dramatically lowers processing time in the back office.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 most labor-intensive manual documentation tasks",
+            "Implement a simple mobile scanning solution for compliance forms",
+            "Retrain relevant staff on new digital input protocols"
+          ],
+          "resources_needed": [
+            "Subscription to document management software (low cost)",
+            "Internal training budget (<€20k)"
+          ],
+          "success_metric": "30% reduction in documentation processing time",
+          "milestones": [
+            "Q4: Documentation pilot launch and staff feedback session",
+            "Q1 Next Year: Full corporate rollout of digital workflow"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional steering committee to officially approve the pilot for Route Optimization Software.",
+        "owner": "COO/Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Allocate $50,000 from the innovation budget specifically for sensor procurement and pilot testing feasibility study.",
+        "owner": "CFO/Innovation Lead",
+        "timeframe": "Next month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a systematic innovation process resulting in no structured initiatives or project timelines.",
+      "High dependence on legacy manual processes leading to significant operational friction and error rates.",
+      "Limited digital maturity (Level 2) hindering the adoption of advanced, data-driven efficiency tools.",
+      "Resource allocation bottleneck where budget approval requires extensive ROI modeling that is currently too slow for a medium time horizon."
+    ]
+  }
+}

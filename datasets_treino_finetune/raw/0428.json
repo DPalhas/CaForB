@@ -1,0 +1,142 @@
+{
+  "id": "0428",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:11:01.340476+00:00",
+    "duration_ms": 24320,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Beacon Industries",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Small",
+      "companyName": "Beacon Industries"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Beacon Industries is a family-owned mixed-crop farm with 120 hectares of irrigated land. We cultivate cereals, vegetables, and olives for domestic wholesale markets, relying heavily on traditional methods supplemented by early precision agriculture technologies. Our focus is currently shifting toward implementing variable rate irrigation systems and soil moisture sensors to optimize water usage and reduce chemical inputs.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to improve market penetration.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 9,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment.",
+      "companyName": "Beacon Industries",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Variable Rate Irrigation Pilot",
+        "rationale": "Implementing localized irrigation control systems directly addresses the efficiency goal by reducing water waste and optimizing crop yields across different zones of the 120 hectares. This is a practical, high-ROI incremental improvement.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify two representative zones for pilot testing (e.g., vegetable vs. cereal).",
+            "Estimate hardware and sensor costs."
+          ],
+          "resources_needed": [
+            "Budget allocation of 3% to 5% from innovation fund.",
+            "Consultation with agricultural technology providers."
+          ],
+          "success_metric": "Reduction in water usage per hectare by 15%.",
+          "milestones": [
+            "Q2: Finalize vendor selection and procurement plan.",
+            "Q3: Complete pilot installation and data collection."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Agri-IoT Predictive Maintenance Platform",
+        "rationale": "Leveraging low digital maturity to implement a fully autonomous sensor network across the farm could radically change operational efficiency by predicting machinery failure and optimizing input application in real-time, drastically reducing manual oversight and risk. This aligns with the bold risk appetite.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on integrating drone imagery/sensor data streams.",
+            "Identify a single high-impact machinery component for initial sensing."
+          ],
+          "resources_needed": [
+            "Budget allocation of 5% for prototyping and software integration licenses.",
+            "Hiring/Contracting specialized remote sensor technician."
+          ],
+          "success_metric": "Reduction in unplanned equipment downtime by 25%.",
+          "milestones": [
+            "Q4: Proof-of-concept sensor network deployment on a small section of land.",
+            "Year 3: Full autonomous maintenance system integration feasibility review."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Certification Workflow Automation Scripting",
+        "rationale": "To address the critical need for recertification efficiency, developing simple automation scripts to manage documentation and compliance checks can reduce the time-to-recertify by streamlining existing manual data entry tasks. This supports high operational throughput.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current certification documentation flow.",
+            "Identify one bottleneck in the paper/digital submission process."
+          ],
+          "resources_needed": [
+            "Allocate 1% of budget for a freelance automation consultant.",
+            "Internal time allocation from the product manager."
+          ],
+          "success_metric": "Reduction in recertification documentation preparation time by 40%.",
+          "milestones": [
+            "Q3: Develop and test Python/scripting solution for data aggregation.",
+            "Year 2: Successful implementation across one certification type."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a formal workflow mapping exercise for operational processes.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize the scope and budget request for the Variable Rate Irrigation Pilot.",
+        "owner": "Leadership Team Representative",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a formally ring-fenced innovation time or dedicated resources, causing initiatives to compete directly with day-to-day operational demands.",
+      "Partial innovation process maturity leading to siloed technology efforts instead of integrated system improvements.",
+      "Limited budget (9% of revenue) severely restricts the ability to fund large-scale digital transformations or significant bold R&D projects.",
+      "Relatively small team size makes sustaining complex technological developments and managing multiple concurrent initiatives extremely challenging."
+    ]
+  }
+}

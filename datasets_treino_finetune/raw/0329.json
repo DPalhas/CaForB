@@ -1,0 +1,150 @@
+{
+  "id": "0329",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:26:10.131245+00:00",
+    "duration_ms": 27583,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.366692+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Large",
+      "companyName": "Crest"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Crest manages complex, multi-jurisdictional forest assets focusing on long-term sustainable yield and environmental compliance for high-value timber products. The company leverages advanced geospatial analytics to optimize resource allocation, manage biodiversity metrics, and streamline supply chain logistics across diverse regional markets. This operational backbone supports revenue generation through premium certified wood products and carbon sequestration credits.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures in harvesting machinery. The pilot showed a 15% reduction in unplanned downtime on instrumented machines, validating the use of predictive maintenance technology. We are currently facing bottlenecks integrating this data stream with legacy ERP systems required for full operational adoption.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time sales to recurring revenue streams via management services or carbon verification. We need to identify the highest-leverage growth levers without overextending the modest cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "As a large cooperative, Crest faces immense competition from both large industrial forestry firms and smaller niche sustainability consultancies. Our ability to rapidly adapt our management software to meet stringent European environmental regulations is critical for maintaining market share and securing premium pricing.",
+      "companyName": "Crest",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance Optimization",
+        "rationale": "Leveraging existing IoT sensor data and ML models to predict failures in specialized harvesting equipment can further reduce unplanned downtime beyond the current 15% reduction. This is a low-risk, high-ROI opportunity that improves operational efficiency immediately.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on scaling predictive maintenance from 40% to 80% of fleet",
+            "Pilot integration of ML model output into the existing maintenance ticketing system (Phase 1)",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data scientist allocation (part-time)",
+            "Hardware sensor retrofit costs (€50k - €75k)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by an additional 10% across the fleet within 6 months",
+          "milestones": [
+            "Q2: Completion of predictive model training and pilot deployment.",
+            "Q4: Formal business case approval for full operational rollout."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Carbon Credit Verification SaaS",
+        "rationale": "Develop a subscription-based platform that automates the reporting and verification process for Crest's carbon sequestration activities. This creates a new recurring revenue stream aligned with strategic growth goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out current regulatory compliance workflow for carbon credit registration",
+            "Define MVP features: real-time data logging and automated reporting templates"
+          ],
+          "resources_needed": [
+            "UX/UI designer (contract)",
+            "Legal consultation on evolving EU carbon tracking regulations"
+          ],
+          "success_metric": "Secure 3 anchor clients in the first 12 months with a recurring service contract",
+          "milestones": [
+            "Q3: Finalize product specification and secure legal framework.",
+            "Q4: Launch MVP to internal early adopters."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Resource Autonomous Management (ARAM)",
+        "rationale": "Implement a fully autonomous system using satellite imagery and AI to manage resource deployment, optimizing harvesting routes based on real-time forest health, soil conditions, and climate risk. This radical shift promises massive efficiency gains but requires significant cultural change.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional task force (Strategy, IT, Operations) dedicated to ARAM",
+            "Secure partnership or acquisition of specialized geospatial AI talent pool",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Investment in high-resolution satellite data licensing and proprietary ML training infrastructure (€2M+)",
+            "Restructuring the internal ‘talent’ organization for radical project management."
+          ],
+          "success_metric": "Achieve a 15% increase in harvest yield efficiency (volume per hectare) without increasing operational headcount.",
+          "milestones": [
+            "Q1: Proof-of-concept deployment on a single, smaller business unit/hectare.",
+            "Q3: Full system integration and phased rollout plan approved."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Launch a dedicated 'Growth Levers' steering committee meeting to prioritize the Carbon Credit SaaS MVP budget allocation.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a formal talent assessment and targeted upskilling program focused on integrating specialized geospatial AI expertise into existing operations teams.",
+        "owner": "CHRO/VP of Operations",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Develop detailed ROI models for both the Predictive Maintenance and Carbon Credit opportunities to justify allocation within the remaining 90% budget percentage.",
+        "owner": "CFO",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Internal innovation process is partial, leading to inconsistent adoption and slow scaling across varied business units.",
+      "Significant talent gap exists for high-level geospatial AI and complex regulatory compliance expertise required for radical projects.",
+      "Budget allocation (10%) constrains the ability to execute large-scale radical initiatives simultaneously or maintain full digital maturity scale."
+    ]
+  }
+}

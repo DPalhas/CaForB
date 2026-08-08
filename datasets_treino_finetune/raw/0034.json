@@ -3,143 +3,130 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
+    "sector": "Arts, Entertainment & Media",
     "size": "Medium",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
     "competitive_pressure": "medium",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:01:28.756552+00:00",
-    "duration_ms": 22210,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:42:07.321337+00:00",
+    "duration_ms": 24951,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.262863+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Catalyst",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Medium",
+      "companyName": "Catalyst"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Apex Precision Components is a medium-sized manufacturer specializing in high-precision industrial machinery for the aerospace and automotive sectors. The company operates in a highly regulated environment due to strict quality control standards, safety protocols, and environmental compliance mandates.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "Past initiatives have focused primarily on optimizing existing production lines to reduce operational waste and implementing stricter internal quality assurance audits to meet evolving regulatory requirements. These efforts are largely defensive in nature to ensure continued market access.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to maintain a dominant position in the premium industrial component market by ensuring unparalleled product reliability and compliance adherence. We aim to prevent disruption from new competitors or shifting regulatory standards through proactive adaptation.",
+      "companyDescription": "Music rights and publishing company managing a catalog of 5,000 songs across 200 songwriters and composers. Handling royalty collection, sync licensing for TV/film/advertising, and copyright enforcement. The industry is heavily regulated by international performance rights organizations (PROs) and complex anti-piracy laws, requiring meticulous compliance to maintain operational integrity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team is small, consisting of a dedicated engineering lead and three compliance specialists. The team is highly experienced but focused on risk mitigation.",
       "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
+      "revenueRange": "over_50m",
       "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
-        "process",
-        "talent",
-        "culture",
-        "time"
+        "strategy",
+        "talent"
       ],
       "competitivePressure": "medium",
-      "additionalContext": ""
+      "additionalContext": "We are planning an IPO within 24 months and need to demonstrate a track record of innovation-driven growth to public market investors. The CFO has asked for a 3-year innovation investment plan with clear KPIs that can be included in our equity story and analyst presentations. Bonus points for initiatives that improve our ESG metrics, as this is a key focus area for the listing venue.",
+      "companyName": "Catalyst",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 5.0,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Implementing AI-Driven Predictive Compliance System",
-        "rationale": "Given the high regulatory environment, traditional manual compliance tracking is slow and prone to error. A radical system could use AI/ML to proactively monitor global regulations in real-time and flag potential non-compliance issues before they occur.",
-        "execution_plan": {
-          "first_actions": [
-            "Pilot a small module for monitoring one critical regulatory domain (e.g., material sourcing) within 6 weeks.",
-            "Identify and secure external compliance tech consultants."
-          ],
-          "resources_needed": [
-            "Budget allocation for AI licensing/development ($50k)",
-            "Hiring of a specialized data scientist contractor"
-          ],
-          "success_metric": "Reduction in compliance audit findings by 30% within the first year.",
-          "milestones": [
-            "Q1: Vendor selection and proof-of-concept (POC) completion.",
-            "Q2: Integration testing and system validation."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "Medium"
-      },
-      {
         "type": "incremental",
-        "title": "Modular Product Design for Regulatory Agility",
-        "rationale": "To defend market share, we must rapidly pivot to new standards. Transitioning from rigid designs to modular components allows the company to quickly reconfigure parts and certify them for different regulatory regions with minimal downtime.",
+        "title": "Automated Royalty Tracking and Infringement Monitoring System",
+        "rationale": "Implementing AI-assisted music similarity detection directly addresses the company's stated need for automated tracking from streaming platforms. This provides immediate operational efficiency, reduces manual errors in royalty calculation, and strengthens market defense by minimizing intellectual property risk.",
         "execution_plan": {
           "first_actions": [
-            "Establish a cross-functional 'Agility Task Force' (Engineering, Legal, Sales) within 3 weeks.",
-            "Conduct a comprehensive audit of current product design documentation."
+            "Conduct a vendor RFP for music rights management (MRM) software.",
+            "Pilot AI similarity detection on 10% of the catalog.",
+            "Secure legal approval for integrating automated monitoring tools."
           ],
           "resources_needed": [
-            "Training budget for new CAD/simulation software ($15k)",
-            "Dedicated project management hours from existing talent"
+            "Software licensing costs ($50k)",
+            "Data science team allocation (2 FTEs)",
+            "Legal consultation time"
           ],
-          "success_metric": "Time-to-certification reduction by 20% in targeted markets.",
+          "success_metric": "Reduction in royalty calculation error rate by 40% within Q3.",
           "milestones": [
-            "Q1: Design framework finalized and selected pilot product."
+            "Q1: Vendor selection and contract negotiation complete.",
+            "Q2: Pilot program of similarity detection launched successfully.",
+            "Q3: Full system integration for core royalty reporting."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "Short"
+        "timeframe": "18 months"
       },
       {
         "type": "radical",
-        "title": "Vertical Integration of Raw Material Processing",
-        "rationale": "To secure supply chain stability amidst high global pressures, integrating a specific high-risk raw material processing step internally reduces reliance on volatile external suppliers and allows for tighter quality control over critical inputs.",
+        "title": "Hyper-Personalized Music Experience Engine (AI/ML)",
+        "rationale": "To combat customer churn, we must move beyond self-service tools into proactive engagement. A radical personalized engine using generative AI to recommend highly specific, rights-cleared music segments tailored to individual enterprise client needs could redefine the value proposition and drive significant retention.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a feasibility study on in-house chemical/material treatment capacity within 4 weeks.",
-            "Develop initial environmental impact assessment documentation."
+            "Establish a dedicated task force focused purely on UX/AI integration for customer portals.",
+            "Identify key pain points from exit interviews for feature prioritization.",
+            "Run proof-of-concept using existing data to model personalized recommendations.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Significant CAPEX for new processing equipment ($200k+)",
-            "Expert consultation with sustainability engineers"
+            "Hiring 1 Senior ML Engineer",
+            "Increased UX design budget ($150k)",
+            "Cloud infrastructure investment"
           ],
-          "success_metric": "Reduction in raw material procurement lead time by 40%.",
+          "success_metric": "Increase in enterprise customer retention rate by 5 points within 2 years.",
           "milestones": [
-            "Q3: Pilot plant operation and regulatory sign-off for internal processing."
+            "Q3: Define technical specifications and data requirements for the engine.",
+            "Q1 of next year: Launch MVP tailored to mid-tier clients.",
+            "End of Year 2: Full feature rollout integrated into self-service platform."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "Long"
+        "timeframe": "3 years"
       }
     ],
     "next_steps": [
       {
-        "action": "Initiate the feasibility study and define scope for the AI-Driven Predictive Compliance System.",
-        "owner": "Chief Innovation Officer",
-        "timeframe": "Within 2 weeks"
+        "action": "Finalize the RFP and vendor selection for the automated royalty tracking system.",
+        "owner": "Product Manager",
+        "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Form the Agility Task Force to begin modular design process planning and resource allocation assessment.",
-        "owner": "VP of Engineering",
-        "timeframe": "Within 3 weeks"
+        "action": "Conduct a deep-dive analysis of customer churn data to identify three critical digital self-service gaps that require radical redesign.",
+        "owner": "Customer Success Lead",
+        "timeframe": "Within 8 weeks"
       },
       {
-        "action": "Conduct an internal risk/benefit analysis for vertical integration feasibility, including preliminary ROI projection.",
-        "owner": "Finance Director",
-        "timeframe": "Within 1 month"
+        "action": "Develop the preliminary 3-year investment roadmap, prioritizing regulatory compliance automation and retention technology pilots for executive review.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 6 months"
       }
     ],
     "key_weaknesses": [
-      "Legacy production systems that inhibit rapid change required by regulatory shifts.",
-      "High dependency on a few specialized talent pools, increasing recruitment risk.",
-      "Siloed data management leading to slow decision-making during innovation cycles.",
-      "Resistance to adopting radical technology due to cultural comfort with established compliance methods."
+      "High operational reliance on manual workflows and spreadsheets in non-core areas, leading to inefficiency.",
+      "Limited talent pool specialized in the intersection of high-level copyright law and advanced data science (AI).",
+      "Partial innovation process: Lack of standardized framework for scaling successful pilot projects across the organization."
     ]
   }
 }

@@ -1,0 +1,127 @@
+{
+  "id": "0220",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:21:35.269191+00:00",
+    "duration_ms": 24365,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Aether Services",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Micro",
+      "companyName": "Aether Services"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "As a Micro Contract Research Organization (CRO), Aether Services specializes in providing niche clinical trial management and data services, acting as an outsourced backbone for mid-sized biotech firms. We manage complex data pipelines across diverse jurisdictions, focusing heavily on ensuring compliance with evolving FDA and EMA standards while maintaining operational agility.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 14,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Given the micro size and limited budget, Aether Services is highly sensitive to operational overhead. The primary focus remains on maximizing service delivery speed while rigorously maintaining data integrity required for regulatory submissions.",
+      "companyName": "Aether Services",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Standardization and Automation (Efficiency Focus)",
+        "rationale": "Implementing a standardized workflow across all clinical trial phases will reduce manual errors by improving data quality and significantly speeding up processing time. This is a low-risk, high-impact initiative that directly supports the core goal of increasing throughput without requiring major capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current top 3 high-volume trial workflows",
+            "Select and configure low-code automation tool for repetitive data entry tasks (e.g., document ingestion)",
+            "Pilot the new workflow in one standard trial team"
+          ],
+          "resources_needed": [
+            "One dedicated internal Project Manager (part-time or outsourced)",
+            "$5,000 software licensing/integration costs",
+            "100 hours of founder time for process mapping"
+          ],
+          "success_metric": "25% reduction in administrative processing time per trial submission by Q3.",
+          "milestones": [
+            "M1: Workflow audit complete (Month 1)",
+            "M2: Automation tool pilot live and validated (Month 3)",
+            "M3: Full rollout across all active trials (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Predictive Risk Monitoring for Adverse Events",
+        "rationale": "Leveraging existing clinical narrative data, Aether can implement a radical predictive model that flags potential adverse events or regulatory non-compliance risks *before* they become critical issues. This moves the service offering from reactive processing to proactive risk management, creating a unique competitive advantage in the medium-risk regulatory environment.",
+        "execution_plan": {
+          "first_actions": [
+            "Curate and anonymize 2 years of historical adverse event narratives",
+            "Partner with an external AI/ML firm for initial model architecture consultation (paid per project)",
+            "Develop a minimum viable product (MVP) reporting tool focused solely on high-risk signals"
+          ],
+          "resources_needed": [
+            "Contracted Data Science Consultant ($25,000 - $50,000)",
+            "Cloud computing resources for ML processing",
+            "Founder time to define feature requirements"
+          ],
+          "success_metric": "Reduction in critical regulatory exceptions flagged by the system by 40% within 1 year.",
+          "milestones": [
+            "M1: Data preparation and initial model training (Month 3)",
+            "M2: MVP deployed for internal testing with key sponsors (Month 6)",
+            "M3: Full integration into standard service offering (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a formal process audit and select the top three manual bottlenecks for automation.",
+        "owner": "Founder/Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Allocate $5,000 budget to pilot workflow automation software implementation (Opportunity 1).",
+        "owner": "Founder",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Owner-centric decision making creates bottlenecks for scaling technical processes.",
+      "Limited internal technical talent and reliance on expensive, project-based contractors increases operational fragility.",
+      "Low digital maturity requires significant upfront investment in systems that may not provide immediate ROI if strategy shifts.",
+      "Tight cash flow constraints severely restrict the ability to invest in long-term infrastructure or large-scale R&D."
+    ]
+  }
+}

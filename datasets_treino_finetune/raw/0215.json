@@ -1,0 +1,128 @@
+{
+  "id": "0215",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:19:39.702962+00:00",
+    "duration_ms": 20945,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.323135+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum.ai",
+      "sector": "Public Administration",
+      "size": "Micro",
+      "companyName": "Quantum.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Quantum.ai operates the metropolitan bus and light rail network, requiring strict adherence to public transport safety regulations, environmental standards, and labor laws. The company manages complex scheduling, subsidy allocations, and fare policies for 45 million annual passenger journeys across its dense urban corridors.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The current legacy scheduling system is prone to manual error and reactive adjustments, leading to frequent delays during peak hours. We are currently limited by the difficulty of integrating disparate operational systems due to a lack of unified data standards across departments.",
+      "companyName": "Quantum.ai",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Intelligent Process Automation (IPA) for Route Scheduling",
+        "rationale": "Implementing low-code automation to handle the routine tasks involved in dynamic route adjustments and resource allocation will provide immediate efficiency gains. This directly addresses the goal of improving throughput without increasing staff.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three highest frequency manual scheduling tasks (e.g., shift swaps, resource reallocation).",
+            "Develop a prototype workflow using existing low-code tools (e.g., Power Automate or Appian).",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "1 FTE dedicated Business Analyst/Process Lead (part-time)",
+            "License for selected RPA tool subscription (€5k)"
+          ],
+          "success_metric": "Reduction in average scheduling error rate by 30% within Q4.",
+          "milestones": [
+            "Q2: Process mapping and selection of automation scope.",
+            "Q3: Pilot deployment of IPA for one specific sub-route."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Maintenance and Dynamic Resource Allocation",
+        "rationale": "Leveraging advanced machine learning models to predict vehicle failures and dynamically reallocate resources based on real-time demand forecasts will fundamentally optimize operational costs. This shifts the company from reactive maintenance to proactive asset management, potentially unlocking major cost savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a small data science task force (internal developers).",
+            "Clean and standardize historical maintenance logs across all vehicles.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Hiring 1 dedicated Data Scientist or contracting external ML firm (€80k initial budget)",
+            "Cloud compute resources for model training."
+          ],
+          "success_metric": "Reduction in unplanned vehicle downtime by 25% within 12 months.",
+          "milestones": [
+            "Q4: Predictive maintenance model deployed on a pilot fleet of 10 vehicles.",
+            "Q2 (Year 2): Full dynamic resource allocation system integrated into scheduling software."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2-3 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Process Improvement Task Force focused solely on data integrity and system integration mapping.",
+        "owner": "COO / Transformation Office Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Launch the pilot project for Intelligent Process Automation (IPA) targeting high-frequency scheduling tasks.",
+        "owner": "Head of Digital Transformation",
+        "timeframe": "Within 4 months"
+      },
+      {
+        "action": "Begin the foundational data readiness assessment required for future radical AI initiatives, focusing on telemetry and maintenance logs.",
+        "owner": "CTO / Data Governance Lead",
+        "timeframe": "Ongoing (starting next month)"
+      }
+    ],
+    "key_weaknesses": [
+      "High reliance on owner-led decision-making limiting the speed of cross-departmental process adoption.",
+      "Limited specialized technical talent capable of managing high-complexity data science projects.",
+      "Legacy, siloed operational processes that resist standardization and require significant time investment to overhaul."
+    ]
+  }
+}

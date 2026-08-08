@@ -3,120 +3,120 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "E-commerce",
+    "size": "Micro",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "high",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:53:29.819351+00:00",
-    "duration_ms": 38543,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:33:44.208468+00:00",
+    "duration_ms": 22172,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.256413+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metals Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Crest Corporation",
+      "sector": "E-commerce",
+      "size": "Micro",
+      "companyName": "Crest Corporation"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Precision Metals Inc. is a medium-sized manufacturer specializing in high-precision metal components for the aerospace and medical device industries. The company operates under strict quality control standards requiring extensive documentation and compliance with environmental regulations.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company recently implemented a formal R&D pipeline focused on material science improvements and automated production line optimization. They have also completed several regulatory compliance audits successfully over the last two years to ensure operational stability.",
+      "companyDescription": "Crest Corporation operates as a micro multi-brand online marketplace, aggregating over 300 independent Portuguese artisan brands across diverse niches like fashion and gourmet food. We utilize a dropship and centralized logistics model to manage fulfillment for top sellers while maintaining high product variety. This structure is currently constrained by a single operational location and minimal internal management layers.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully implemented a digital customer onboarding flow last quarter, which significantly reduced average onboarding time from 12 days to 5 days through better workflow automation. Early NPS scores for new customers onboarded via this process are 22 points higher than the legacy manual system, demonstrating early success in optimizing customer experience.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to significantly improve operational efficiency by reducing waste and cycle times, thereby lowering production costs while maintaining uncompromising quality standards. We aim to stay competitive in high-compliance markets through smarter processes.",
+      "strategicGoals": "The board has mandated a focus on improving EBITDA margins by 500 basis points within three years through rigorous cost-driver analysis. This requires adopting disciplined, data-driven process improvements to eliminate systemic inefficiencies and reduce operational overhead.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core engineering team is small but highly skilled, collaborating closely with a growing compliance department to manage complex regulatory requirements.",
-      "digitalMaturity": 3,
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 12,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 14,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
-        "talent",
-        "culture"
+        "budget"
       ],
-      "competitivePressure": "high",
-      "additionalContext": "The market is highly competitive, requiring continuous innovation not just in product design but also in operational throughput."
+      "competitivePressure": "low",
+      "additionalContext": "We are six months away from our Series B fundraising round and need a compelling innovation roadmap to show investors. The board requires demonstrable progress on at least one major efficiency initiative before the roadshow begins, making speed and measurable traction critical.",
+      "companyName": "Crest Corporation",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 6.8,
+    "maturity_score": 4.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Implement AI-Driven Predictive Maintenance for Machinery",
-        "rationale": "Given the high regulatory environment and efficiency priority, implementing predictive maintenance can drastically reduce unplanned downtime and material waste. This radical shift requires advanced data integration capabilities to monitor equipment health in real-time.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify three critical production lines for pilot AI installation.",
-            "Select a vendor specializing in industrial IoT sensors."
-          ],
-          "resources_needed": [
-            "Data engineering consultant",
-            "Initial hardware investment ($50,000)"
-          ],
-          "success_metric": "Reduction of unplanned downtime by 30% within 12 months.",
-          "milestones": [
-            "Pilot implementation complete (Month 6)",
-            "Full integration and performance review (Month 10)"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "medium"
-      },
-      {
         "type": "incremental",
-        "title": "Streamline Regulatory Documentation via Digital Twin Modeling",
-        "rationale": "To meet high regulatory demands efficiently, developing a digital twin model of the production process can simulate compliance scenarios and automate documentation generation. This incremental step improves accuracy and speeds up audit readiness.",
+        "title": "Automated Inventory Risk Forecasting Engine",
+        "rationale": "Given the 'efficiency' priority and high regulatory scrutiny, implementing a basic AI engine to forecast inventory needs per artisan category can drastically reduce holding costs and prevent stockouts. This incremental step addresses immediate margin concerns without requiring heavy infrastructure.",
         "execution_plan": {
           "first_actions": [
-            "Define scope for modeling key assembly stages.",
-            "Invest in specialized simulation software licenses."
+            "Identify top 3 cost drivers (storage/inventory waste).",
+            "Pilot a basic predictive model using historical sales data from the last 12 months.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Software licensing fee ($30,000)",
-            "Data scientist hours (part-time)"
+            "Data science consultant retainer ($5k)",
+            "Integration with existing ERP/Inventory system upgrade time (4 weeks)"
           ],
-          "success_metric": "Reduction of manual documentation preparation time by 40%.",
+          "success_metric": "Reduction in inventory carrying costs by 8% within six months.",
           "milestones": [
-            "Model functional prototype (Month 7)",
-            "Integration into Quality Assurance workflow (Month 12)"
+            "Q3: Data pipeline established and model trained.",
+            "Q4: Pilot deployment on 5 high-volume artisan categories."
           ]
         },
         "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "short"
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Localized Dynamic Pricing",
+        "rationale": "Leveraging digital maturity to deploy an AI engine that adjusts product pricing in real-time based on competitor activity, local demand spikes, and current regulatory compliance zones. This radical move aims to maximize margin instantly while minimizing manual intervention.",
+        "execution_plan": {
+          "first_actions": [
+            "Define specific geographic test market for initial deployment (e.g., one region).",
+            "Develop a minimal viable pricing API integration.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Cloud infrastructure costs for AI processing ($20k/year)",
+            "Minimal software development sprint team allocation (internal founder focus)"
+          ],
+          "success_metric": "Achieve 3% higher average gross margin on high-demand artisan products.",
+          "milestones": [
+            "Q1: Alpha testing and model refinement.",
+            "Q2: Full deployment in the pilot region."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-functional task force (Engineering, IT, Compliance) to evaluate the feasibility of AI pilot projects.",
-        "owner": "VP of Operations",
-        "timeframe": "Within 2 weeks"
+        "action": "Formalize a dedicated process mapping and operational bottleneck audit for the supply chain.",
+        "owner": "Founder/Operations Lead",
+        "timeframe": "Within 1 week"
       },
       {
-        "action": "Conduct gap analysis between current operational data infrastructure and requirements for digital twin modeling.",
-        "owner": "IT Director",
-        "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Form a project charter and secure budget approval for the pilot of predictive maintenance (Opportunity 1).",
-        "owner": "CFO / VP of Strategy",
-        "timeframe": "Within 3 weeks"
+        "action": "Develop detailed business case and technical specification for the AI-Driven Dynamic Pricing engine pilot.",
+        "owner": "Owner Alone",
+        "timeframe": "End of next month"
       }
     ],
     "key_weaknesses": [
-      "Outdated legacy production scheduling systems hindering real-time efficiency gains.",
-      "High reliance on key personnel for specialized machinery maintenance, creating talent vulnerability.",
-      "Bureaucratic bottlenecks in the formal approval process slowing down rapid prototyping."
+      "Extreme reliance on single founder knowledge, creating a severe bottleneck for high-level strategic decisions and specialized technical evaluation.",
+      "Lack of formal engineering structure, leading to slow execution speed and inconsistent quality in digital initiatives.",
+      "Budget constraint (14%) severely limits ability to invest in necessary scalable infrastructure or robust regulatory compliance systems.",
+      "Limited technological maturity (Level 2) restricts the organization's ability to leverage advanced automation tools needed for significant efficiency gains."
     ]
   }
 }

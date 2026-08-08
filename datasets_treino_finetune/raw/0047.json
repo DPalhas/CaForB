@@ -3,143 +3,148 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Fintech",
-    "size": "Medium",
+    "sector": "Insurance",
+    "size": "Micro",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "diversification",
-    "competitive_pressure": "high",
-    "reviewed": false,
+    "competitive_pressure": "medium",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:09:11.978924+00:00",
-    "duration_ms": 46896,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:48:08.319991+00:00",
+    "duration_ms": 26450,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.268582+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "GlobalCredit Solutions Ltd.",
-      "sector": "Fintech",
-      "size": "Medium"
+      "name": "Core Technologies",
+      "sector": "Insurance",
+      "size": "Micro",
+      "companyName": "Core Technologies"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "GlobalCredit Solutions is a mid-sized fintech firm specializing in cross-border lending and compliance management for SMEs. Operating across multiple jurisdictions requires strict adherence to evolving financial regulations, making regulatory risk a primary concern.",
+      "companyDescription": "Core Technologies is a micro-scale life insurance and retirement savings provider managing approximately €800M in mathematical provisions. The company primarily offers traditional with-profits and unit-linked products through established bancassurance partnerships, while actively exploring digital onboarding solutions and needs-analysis tools for retail bank advisors.",
       "innovationProcess": "formal",
-      "pastInitiatives": "The company recently launched an internal working group dedicated to exploring blockchain applications for supply chain finance. They also completed a 3-year overhaul of their KYC/AML infrastructure to ensure compliance with new global standards.",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, having successfully graduated one project into a separate business unit focused on micro-pension schemes.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is market penetration in untapped emerging markets while establishing a robust, scalable compliance framework. We aim to diversify our revenue streams away from single-product lending.",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist three years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models, prioritizing strategic acquisitions over purely organic growth.",
       "strategicPriority": "diversification",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "balanced",
-      "teamSize": "The innovation team consists of 5 core specialists, including compliance officers and software engineers. They are highly skilled but require focused resources to manage complex regulatory demands.",
-      "digitalMaturity": 4,
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 10,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
+        "culture",
+        "strategy",
         "talent",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "high",
-      "additionalContext": ""
+      "competitivePressure": "medium",
+      "additionalContext": "The company relies heavily on complex regulatory compliance, which limits rapid scaling but provides a moat against larger competitors. Operational costs are tightly controlled due to the micro-size and limited working capital.",
+      "companyName": "Core Technologies",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Develop a Decentralized Compliance Ledger (DLCL)",
-        "rationale": "Given the high regulatory environment and formal process, implementing blockchain technology could radically streamline KYC/AML and cross-border transaction verification. This moves beyond incremental tech upgrades to fundamentally change operational compliance.",
+        "type": "incremental",
+        "title": "Operational Efficiency Optimization via AI Chatbots",
+        "rationale": "Implementing generative AI for handling routine customer inquiries and compliance document summarization can immediately reduce operational costs and improve the efficiency of the existing bancassurance channels.",
         "execution_plan": {
           "first_actions": [
-            "Pilot a private permissioned blockchain for internal trade documentation.",
-            "Conduct a feasibility study on regulatory acceptance of distributed ledgers."
+            "Identify 3 high-volume support queries for pilot bot training.",
+            "Allocate $15k from budget for a low-code chatbot implementation sprint.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Dedicated Blockchain Developer (contract/hiring)",
-            "Regulatory Consulting Expert retainer"
+            "Contracted AI development resource (part-time)",
+            "$20,000 dedicated software/platform cost",
+            "Internal project lead time reallocation"
           ],
-          "success_metric": "Reduce compliance review time by 40% within 18 months.",
+          "success_metric": "Reduce customer service handling time by 15% within Q3.",
           "milestones": [
-            "Q2: Infrastructure PoC completed.",
-            "Q3: Regulatory framework alignment secured."
+            "Prototype complete (Month 2)",
+            "Pilot launch in one bank partnership (Month 4)"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Direct Digital Wealth Management Platform Launch",
+        "rationale": "Developing a proprietary, fully digital wealth management tool that bypasses traditional high-cost distribution channels allows the company to capture new, digitally native segments and create a true diversification platform.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 'Digital Future' task force.",
+            "Conduct feasibility study on regulatory framework for direct-to-consumer sales."
+          ],
+          "resources_needed": [
+            "Specialized legal counsel (budget allocation)",
+            "$100,000 seed funding request (external or internal reallocation)",
+            "Hire one full-time product manager with FinTech experience"
+          ],
+          "success_metric": "Achieve 5% of total new revenue from direct digital channels within 3 years.",
+          "milestones": [
+            "Regulatory sandbox entry application (Month 6)",
+            "MVP launch for advisory services (Month 12)"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "medium"
+        "timeframe": "3 years"
       },
       {
         "type": "incremental",
-        "title": "Expand B2B Advisory Services into Adjacent Sectors",
-        "rationale": "To achieve diversification, the company should leverage its core financial expertise to introduce consulting services in highly regulated adjacent fields (e.g., specialized insurance underwriting or ESG financing). This builds new revenue streams without requiring a total overhaul of the technology stack.",
+        "title": "Acquisition of Niche InsurTech Startup",
+        "rationale": "Acquiring a small, innovative insurtech firm focused on cyber risk insurance or specialized retirement products provides immediate market diversification and access to new customer niches without the time commitment of organic development.",
         "execution_plan": {
           "first_actions": [
-            "Identify three high-potential vertical markets for advisory.",
-            "Create standardized service packages and pricing models."
+            "Develop a target list of 5 companies in adjacent sectors.",
+            "Establish valuation benchmarks and legal due diligence process."
           ],
           "resources_needed": [
-            "Marketing specialist",
-            "Legal review team time"
+            "$50,000 acquisition capital",
+            "Internal M&A team bandwidth (part-time)",
+            "Legal fees for due diligence"
           ],
-          "success_metric": "Generate $5M in new recurring consultancy revenue by Year 3.",
+          "success_metric": "Successful integration and revenue contribution from acquired entity within 18 months.",
           "milestones": [
-            "Q1: Define service scope and legal framework.",
-            "Q4: Secure first three retainer clients."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "incremental",
-        "title": "Implement AI-Driven Regulatory Watchdog",
-        "rationale": "Leveraging the high digital maturity (4) and formal process, deploying machine learning to monitor global regulatory changes allows for proactive risk mitigation. This is a crucial step in efficiency and maintaining competitive advantage.",
-        "execution_plan": {
-          "first_actions": [
-            "Select an ML platform for real-time document parsing.",
-            "Train the model on historical compliance failures."
-          ],
-          "resources_needed": [
-            "Data Scientist",
-            "Cloud compute budget increase (2%)"
-          ],
-          "success_metric": "Achieve 95% automated flag rate for new regulatory changes.",
-          "milestones": [
-            "Q3: MVP deployment in a sandbox environment.",
-            "Q4: Full integration with compliance workflows."
+            "Acquisition target identified (Month 3)",
+            "Deal finalized and closed (Month 10)"
           ]
         },
         "impact": "medium",
         "difficulty": "medium",
-        "timeframe": "medium"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-functional steering committee to define the roadmap for diversification.",
-        "owner": "CEO / COO",
-        "timeframe": "Within 1 week"
-      },
-      {
-        "action": "Initiate deep technical due diligence on blockchain feasibility as a compliance tool.",
-        "owner": "CTO / Innovation Lead",
-        "timeframe": "Within 3 weeks"
-      },
-      {
-        "action": "Conduct market research and competitive analysis for adjacent B2B advisory services.",
-        "owner": "Head of Business Development",
+        "action": "Finalize and fund the feasibility study for the Direct Digital Wealth Management Platform.",
+        "owner": "Founder/Innovation Committee",
         "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate due diligence on target InsurTech acquisition candidates to explore diversification platforms.",
+        "owner": "Strategy Lead (Owner)",
+        "timeframe": "Within 8 weeks"
       }
     ],
     "key_weaknesses": [
-      "Siloed knowledge transfer between compliance and product teams.",
-      "Slow internal innovation pipeline due to formal approval processes.",
-      "High dependency on key technical talent for specialized fintech knowledge."
+      "Lack of dedicated, in-house engineering talent leading to reliance on founder bandwidth.",
+      "High regulatory burden creating significant time constraints for innovation and product iteration.",
+      "Formal innovation process is constrained by the 'owner_alone' decision-making structure, potentially stifling cross-departmental radical ideas.",
+      "Limited working capital (8% budget) makes high-cost, large-scale radical projects financially risky."
     ]
   }
 }

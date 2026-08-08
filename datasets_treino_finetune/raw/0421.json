@@ -1,0 +1,145 @@
+{
+  "id": "0421",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:08:00.650680+00:00",
+    "duration_ms": 29730,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.399708+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vault",
+      "sector": "Financial Services",
+      "size": "Large",
+      "companyName": "Vault"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Vault is a major retail bank operating 45 branches across northern Portugal, serving 180,000 individual and 12,000 business customers. Its core product portfolio includes mortgages, consumer loans, current accounts, and SME lending services. The organization maintains complex multi-layer governance with dedicated innovation departments focused on scaling digital adoption.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The company has spent the last few years executing a significant digital transformation roadmap led by a centralized transformation office. Key achievements include migrating to a cloud-based ERP system and deploying a data warehouse, which resulted in €2.4M in annualized cost savings through optimized operations. A center of excellence for RPA and low-code automation is also operational.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Vault aims to move beyond incremental improvements by identifying new value propositions that leverage its existing brand equity or operational capabilities. The primary goal is diversification into adjacent, high-growth market niches where customer demand is expanding rather than declining.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "teamSize": "The digital and innovation organization includes over 80 professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. They maintain an internal incubator that has successfully launched six new digital products in the last two years.",
+      "additionalContext": "Vault is currently exploring partnerships with fintech providers to enter the wealth management advisory space, seeking low-risk entry points into high-margin services. This exploration is heavily weighted towards incremental product enhancements rather than market disruption.",
+      "companyName": "Vault"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Hyper-Personalized Customer Banking Dashboards",
+        "rationale": "Leveraging the existing data warehouse and digital maturity (4), implementing small, incremental features like personalized budgeting tools or tailored loan prepayment advice will immediately increase customer engagement without major system overhauls. This leverages current core tech capabilities.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on mobile-first dashboard feature prioritization.",
+            "Allocate 1 FTE from the UX design team to define user requirements."
+          ],
+          "resources_needed": [
+            "Internal UI/UX design hours",
+            "Minor backfill for a dedicated product manager"
+          ],
+          "success_metric": "Increase in daily active users (DAU) by 5% within Q3.",
+          "milestones": [
+            "MVP Definition completed: End of Month 1",
+            "Beta testing with 10,000 customers initiated: End of Quarter 2"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche B2B SME Lending Product Line Expansion",
+        "rationale": "Vault can incrementally diversify by focusing on a specific, underserved niche within SME lending (e.g., sustainable tech startups) using existing credit risk models. This offers low-risk diversification into a growing adjacent market without requiring entirely new regulatory frameworks.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three high-potential B2B niches aligned with current portfolio.",
+            "Develop internal compliance documentation for the chosen niche."
+          ],
+          "resources_needed": [
+            "Small legal/compliance consultation fee",
+            "Credit risk modeling refinement budget (low spend)"
+          ],
+          "success_metric": "Conversion rate of new B2B loan products exceeding 15% in Year 1.",
+          "milestones": [
+            "Niche selection and business case approval: End of Month 3",
+            "Product launch of first niche product: End of Quarter 4"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "**AI-Driven Automated Advisory Chatbot Integration**",
+        "rationale": "Building upon the existing AI/ML center of excellence, this bold initiative would involve deploying an advanced conversational AI chatbot integrated across all client channels for complex advisory support. This transforms customer interaction from reactive support to proactive guidance, potentially opening new cross-selling opportunities.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot the LLM integration on a low-volume customer service channel (e.g., FAQ).",
+            "Establish strict governance protocols for data privacy and personalization."
+          ],
+          "resources_needed": [
+            "Increased investment in specialized NLP talent",
+            "Cloud compute costs for AI model training/inference"
+          ],
+          "success_metric": "Reduction in customer service call volume by 10% and positive sentiment score of 4.5/5.",
+          "milestones": [
+            "Proof-of-Concept (POC) successful: End of Month 6",
+            "Full pilot rollout across key customer segments: End of Year 2"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated cross-functional task force to assess market entry viability for the B2B niche diversification plan.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct a deep dive audit of current talent pipeline against anticipated needs for specialized AI/ML roles required by the radical chatbot initiative.",
+        "owner": "VP of HR & Innovation",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and slow alignment across business units during complex projects.",
+      "High dependency on senior executive sponsorship, leading to bottlenecks in project initiation.",
+      "Potential talent gap in highly specialized areas (e.g., advanced NLP/Machine Learning engineering) required for radical initiatives.",
+      "Risk of incremental improvements not sufficiently addressing the strategic imperative for market diversification."
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "0320",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:17:36.683014+00:00",
+    "duration_ms": 21658,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard Systems",
+      "sector": "Professional & Consulting Services",
+      "size": "Micro",
+      "companyName": "Vanguard Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices, typical engagements span 8-16 weeks. We are currently evaluating knowledge management AI solutions to capture and surface past engagement insights for proposal development.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring to improve initial client acquisition quality.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount rather we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 18,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The firm operates in a niche where deep domain expertise is paramount, giving it a competitive moat against large firms. However, scaling proprietary knowledge efficiently remains the central challenge.",
+      "companyName": "Vanguard Systems",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Advanced AI-Driven Proposal Generation Engine",
+        "rationale": "Leveraging existing knowledge management efforts to build a generative AI tool that instantly drafts high-quality proposals based on past successful engagement data. This directly addresses the need for efficiency by reducing consultant writing time and improving win rates.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a specific LLM integration platform (e.g., internal fine-tuning or API usage).",
+            "Define required input data structure from past projects."
+          ],
+          "resources_needed": [
+            "1 dedicated Data Scientist/Freelance AI engineer hours",
+            "Subscription fees for specialized LLM APIs ($500-$2k)"
+          ],
+          "success_metric": "Reduce proposal drafting time by 40% and increase proposal conversion rate by 5%.",
+          "milestones": [
+            "Month 1: Pilot prototype with one service line.",
+            "Month 3: Full integration into the sales workflow."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Niche Compliance Micro-SaaS Productization",
+        "rationale": "Instead of selling generalized consulting, package proprietary operational excellence frameworks into a lean, automated SaaS tool specifically for mid-market firms in one vertical (e.g., FinTech compliance checklists). This allows Vanguard to capture efficiency gains through recurring revenue with minimal headcount.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the single most complex/repetitive operational bottleneck identified in past 5 engagements.",
+            "Develop a Minimum Viable Product (MVP) focused purely on automation of that bottleneck."
+          ],
+          "resources_needed": [
+            "1 dedicated Full-Stack Developer contract ($30k)",
+            "Marketing budget for niche vertical ads ($10k)"
+          ],
+          "success_metric": "Achieve 5 paying recurring subscriptions within 9 months.",
+          "milestones": [
+            "Month 2: MVP development complete and user testing initiated.",
+            "Month 6: Launch V1.0 on targeted niche platform."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed process audit focusing on manual workflows in invoicing and order processing.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Form a small, focused cross-functional team (Founder + 1 contractor) to build the MVP of the compliance micro-SaaS concept.",
+        "owner": "Founder",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on sole founder knowledge and decision-making authority, creating single point of failure risk.",
+      "Limited technical depth; reliance on external contractors for development limits rapid iteration cycles.",
+      "Partial innovation process leads to inconsistent application of new tools across engagements without standardized frameworks."
+    ]
+  }
+}

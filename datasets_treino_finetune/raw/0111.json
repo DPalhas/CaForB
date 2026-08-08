@@ -1,0 +1,130 @@
+{
+  "id": "0111",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:32:42.511074+00:00",
+    "duration_ms": 23445,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.290850+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Corporation.ai",
+      "sector": "Professional & Consulting Services",
+      "size": "Large",
+      "companyName": "Lumina Corporation.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Lumina Corporation.ai is a leading management consulting firm specializing in complex digital transformation and AI-driven strategy for mid-market enterprises across regulated industries like finance and healthcare. The team of 40 consultants leverages proprietary data models to deliver outsourced operational excellence and market entry strategies, requiring strict adherence to compliance frameworks.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Lumina currently struggles with standardizing high-value project methodologies across offices and integrating nascent AI capabilities into core service offerings.",
+      "companyName": "Lumina Corporation.ai",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Advisory Platform",
+        "rationale": "Develop a proprietary generative AI engine that moves beyond simple knowledge management (KM) to create 'living' consulting assets—dynamic strategy models and automated compliance checks tailored for specific client regulatory environments. This would radically redefine service delivery, allowing us to compete on deep insight rather than hours of consultant time.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a small cross-functional tiger team (AI/Legal/Strategy) dedicated to defining the minimum viable 'Personalized Advisory' module.",
+            "Conduct a feasibility study on integrating LLMs with existing KM databases, focusing strictly on proprietary data security protocols."
+          ],
+          "resources_needed": [
+            "Investment in specialized legal counsel for AI compliance risk assessment",
+            "Hiring 1 senior ML engineer focused on NLP/fine-tuning"
+          ],
+          "success_metric": "Achieve a measurable lift of 15% in proposal win rate among new clients utilizing the personalized advisory module within 9 months.",
+          "milestones": [
+            "Q3: Define core data requirements and compliance guardrails.",
+            "Q4: Develop MVP prototype for internal use with pilot consulting team.",
+            "Q1 (Next Year): Launch closed beta program with 5 high-value clients."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2-3 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Service Package Recurrence Model",
+        "rationale": "Shift the high-value consulting engagement structure from one-time projects to subscription-based 'Strategic Health' packages. This addresses the strategic goal of recurring revenue and helps alleviate budget pressure by stabilizing cash flow, despite the informal process.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a tiered retainer system for top 10% clients (e.g., quarterly strategy check-ins).",
+            "Develop standardized service level agreements (SLAs) to define recurring deliverables clearly.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Training for sales team on subscription models and value-based pricing",
+            "Minor overhaul of existing billing infrastructure."
+          ],
+          "success_metric": "Convert 20% of current project revenue into recurring retainer income within the next fiscal year.",
+          "milestones": [
+            "Q3: Formalize three tiered subscription packages.",
+            "Q4: Pilot program with 5 key anchor clients.",
+            "Q1: Full rollout across all relevant service lines."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish an innovation governance framework (even if minimal) to formalize idea capture and risk assessment.",
+        "owner": "Executive Committee Chair",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate the discovery phase for the AI-driven personalized advisory platform, including securing initial funding/seed allocation.",
+        "owner": "Head of R&D / Strategy Lead",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Audit existing project management and proposal processes to identify key bottlenecks affecting speed and quality.",
+        "owner": "COO",
+        "timeframe": "Ongoing, starting immediately"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation process leading to inconsistent idea execution and high risk tolerance conflicts with regulatory requirements.",
+      "Low digital maturity (Level 2) limiting the ability to scale AI or data-driven services effectively.",
+      "Organizational inertia and informal structure making cross-functional alignment difficult for radical, high-risk initiatives.",
+      "High reliance on senior executive sponsorship, creating bottlenecks during rapid growth phases."
+    ]
+  }
+}

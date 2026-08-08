@@ -1,0 +1,148 @@
+{
+  "id": "0474",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:18:48.686983+00:00",
+    "duration_ms": 25842,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.419343+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Beacon Innovations.ai",
+      "sector": "Healthtech",
+      "size": "Small",
+      "companyName": "Beacon Innovations.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Beacon Innovations provides a B2C digital health platform for chronic disease management, specifically targeting diabetes and hypertension using predictive AI. The company integrates real-time connected glucometer data with medication adherence coaching to deliver personalized care plans. Operationally, the team manages patient data flow through established clinic networks, necessitating strict compliance with HIPAA and evolving medical device regulations.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization into specific chronic conditions or broaden horizontally into related product categories like mental health monitoring.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company is currently struggling to transition from a maintenance mode operation to a proactive innovation model. Key market entrants are deploying sophisticated ML models, forcing Beacon to define its differentiation strategy quickly.",
+      "companyName": "Beacon Innovations.ai",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimized Adherence Micro-Features",
+        "rationale": "Implement low-cost UI/UX changes based on aggregated patient interaction data to improve medication adherence rates.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct A/B testing on the existing reminder notification system in 4 weeks.",
+            "Map patient journey and identify three friction points within the app interface.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Internal product manager time (low cost)",
+            "Basic analytics tool subscription ($500)"
+          ],
+          "success_metric": "Increase in medication adherence rate by 3%",
+          "milestones": [
+            "Feature identification complete (Month 1).",
+            "A/B test initiated and analyzed (Month 2)."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Data Enrichment Partnership",
+        "rationale": "Establish a small, strategic partnership with a specialized lab or wearable manufacturer to integrate supplementary biomarker data (e.g., advanced lipid panels) into the existing AI model.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify two potential partners in Q1.",
+            "Draft a pilot API integration proposal.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Legal consultation for data sharing agreements",
+            "Pilot testing fee (estimated $20k)"
+          ],
+          "success_metric": "Successful ingestion and model performance improvement on new biomarker data.",
+          "milestones": [
+            "Partner contract signed (Month 3).",
+            "Data pipeline fully operational (Month 5)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Personalized Predictive Deterioration Suite (PoC)",
+        "rationale": "Conduct a highly focused, low-cost proof-of-concept using existing internal data to build an early, highly personalized predictive alert system for acute events like sepsis or severe hypoglycemia.",
+        "execution_plan": {
+          "first_actions": [
+            "Assign 1 developer and the PM dedicated time (Sprint 1).",
+            "Define minimum viable features (MVP) for a single high-risk cohort.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Internal development resources ($40k in allocated budget)",
+            "Consultant review for initial regulatory feasibility assessment."
+          ],
+          "success_metric": "Achieve 75% sensitivity in predicting acute events within the PoC cohort.",
+          "milestones": [
+            "PoC model prototype completion (Month 4).",
+            "Initial internal risk/regulatory review complete (Month 6)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a minimum viable process for capturing customer feedback and translating it into actionable product requirements.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Define the scope and regulatory pathway for the 'Data Enrichment Partnership' (Opportunity 2) as a defined short-term project.",
+        "owner": "Leadership Team Lead",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation process leading to reactive, rather than proactive, development.",
+      "Low digital maturity hindering the ability to rapidly scale AI models or integrate new data streams.",
+      "Severely constrained budget (3% allocation) making large-scale R&D or radical initiatives financially unfeasible.",
+      "High regulatory risk due to operating in a high-compliance Healthtech environment with no dedicated compliance pipeline."
+    ]
+  }
+}

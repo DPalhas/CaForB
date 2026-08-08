@@ -1,0 +1,158 @@
+{
+  "id": "0449",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:07:30.102543+00:00",
+    "duration_ms": 31471,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.409270+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Pioneer Enterprises",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small",
+      "companyName": "Pioneer Enterprises"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Pioneer Enterprises is a regional supermarket chain with 28 locations across central and northern Portugal, specializing in fresh produce and private-label goods. The company faces significant operational challenges related to managing perishable inventory lifecycles and optimizing last-mile delivery logistics within its specific geographic footprint. They are currently balancing legacy ERP systems with emerging technologies while striving for leaner operations.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team successfully adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment of minor feature updates. This approach significantly reduced our release cycle time by 60% and improved internal cross-functional collaboration on back-end systems. However, adoption across adjacent operational teams like marketing and customer support is still progressing slowly.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are 3 months into fundraising conversations with growth equity investors who are conducting deep due diligence on our technology and operations. Their feedback indicates concern about our digital maturity relative to peers. We need to quickly identify and launch 2-3 innovation initiatives that will address these concerns and strengthen our fundraising narrative.",
+      "companyName": "Pioneer Enterprises",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Inventory Optimization Pilot",
+        "rationale": "Leveraging existing data warehouse capabilities to implement a basic AI model for predicting seasonal demand and minimizing overstock/waste in high-turnover produce sections. This is highly efficient as it directly addresses cost reduction goals with minimal initial capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional team (Ops, IT) to map data sources for the pilot.",
+            "Define baseline waste metrics and establish target ROI (e.g., 5% reduction in spoilage).",
+            "Select a low-code tool or existing BI platform to build the initial predictive model."
+          ],
+          "resources_needed": [
+            "Internal data scientist time allocation (10 hours/week)",
+            "License for current BI platform upgrade",
+            "Consultant review of baseline metrics"
+          ],
+          "success_metric": "Achieve a verifiable 3% reduction in fresh produce spoilage within Q2.",
+          "milestones": [
+            "Month 1: Data pipeline established and validated.",
+            "Month 2: Initial predictive model deployed in one store cohort.",
+            "Month 3: Post-pilot review of efficiency gains vs. baseline."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Short (6 months)"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Local Micro-Fulfillment Test",
+        "rationale": "Conduct a low-risk proof-of-concept in one underutilized location to test the feasibility of dark store concepts for high-demand, fast-turnaround items. This addresses logistical efficiency by reducing transportation time and associated costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a high-profit/high-waste product category suitable for testing (e.g., bakery or specialized chilled goods).",
+            "Design the operational workflow and technology stack required for a small micro-fulfillment center.",
+            "Run a controlled 30-day pilot in a single store location."
+          ],
+          "resources_needed": [
+            "Small capital expenditure for racking/software setup (€5k estimated)",
+            "Dedicated logistics staff training",
+            "IT infrastructure assessment"
+          ],
+          "success_metric": "Reduce average delivery time for pilot items by 40% while maintaining product quality scores >95%.",
+          "milestones": [
+            "Month 1: Site selection and feasibility study complete.",
+            "Month 2: Pilot operational readiness achieved.",
+            "Month 3: Data analysis of cost savings versus traditional fulfillment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium (1 year)"
+      },
+      {
+        "type": "incremental",
+        "title": "Automation of Procurement Reporting",
+        "rationale": "Automate manual reporting and data entry for procurement metrics, moving away from static spreadsheets. This is a pure efficiency gain that requires minimal technical risk but offers immediate visibility to the small leadership team.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current manual reporting processes across three key departments (Procurement, Logistics).",
+            "Identify three high-volume reports suitable for automation using existing ERP tools.",
+            "Allocate one developer/engineer to build initial ETL scripts."
+          ],
+          "resources_needed": [
+            "Internal software development time (€10k estimated)",
+            "Licensing fees for advanced reporting module",
+            "Training materials creation"
+          ],
+          "success_metric": "Reduce procurement report generation time from 3 days to under 2 hours.",
+          "milestones": [
+            "Month 1: Automation script developed and tested on one report.",
+            "Month 2: Integration of two key reports into the operational dashboard.",
+            "Month 4: Full automation rollout for targeted departments."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "Short (3 months)"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated Efficiency Task Force to prioritize the Predictive Inventory Pilot.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Finalize the technical requirements and budget for the Hyper-Local Micro-Fulfillment Test PoC.",
+        "owner": "Senior Engineer / Finance Liaison",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Conduct a skills gap analysis to define necessary talent acquisition/training paths to support future efficiency goals.",
+        "owner": "HR / Leadership Team",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation strategy, leading to ad-hoc initiative execution rather than structured portfolio management.",
+      "Critical talent constraints: reliance on a single senior engineer limits the capacity for proactive strategic exploration and scaling of technical initiatives.",
+      "Limited budget allocation (3% operational) restricts investment primarily to immediate maintenance and incremental efficiency tasks, hindering radical concept testing.",
+      "Partial innovation process maturity prevents seamless integration between engineering sprints and operational feedback loops across the entire organization."
+    ]
+  }
+}

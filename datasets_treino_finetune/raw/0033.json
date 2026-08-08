@@ -3,121 +3,120 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Small",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:01:06.489656+00:00",
-    "duration_ms": 19934,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:41:42.333400+00:00",
+    "duration_ms": 22342,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.261416+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "ReguFlow Analytics",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Catalyst",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Small",
+      "companyName": "Catalyst"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "ReguFlow Analytics is a B2B SaaS provider specializing in compliance reporting and regulatory data management software for financial institutions. The company operates in an extremely regulated sector, requiring constant updates to internal processes to meet evolving global standards.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The firm has recently launched a major upgrade to its core platform focusing on automated data ingestion. They have also piloted several proof-of-concept integrations with new industry compliance frameworks to maintain relevance.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Maintain market share in the high-compliance segment by ensuring regulatory readiness and adopting next-generation compliance technology. The goal is to solidify trust through superior data integrity and proactive risk mitigation strategies.",
+      "companyDescription": "Organic vineyard and winery producing 60,000 bottles per year. Direct-to-consumer sales through wine clubs account for 45% of revenue. The company faces increasing scrutiny regarding organic certification standards and water usage regulations across various jurisdictions. They operate from centralized production facilities with seasonal distribution points, making logistics and compliance a constant focus.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. This experience highlighted a significant gap between technical capability and structured innovation management.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning—either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core engineering team consists of 15 highly specialized developers and analysts, supported by a small compliance advisory group.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
       "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "process",
-        "culture",
+        "budget",
+        "strategy",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is saturated with legacy solutions, making differentiation through technical superiority and regulatory speed crucial for survival."
+      "competitivePressure": "high",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Catalyst",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 5.0,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "AI-Driven Predictive Compliance Engine",
-        "rationale": "Develop a radical predictive engine that uses machine learning to anticipate future regulatory changes and automatically adjust client configurations in real-time. This moves the company from reactive reporting to proactive risk management, offering clients a decisive competitive edge.",
-        "execution_plan": {
-          "first_actions": [
-            "Form cross-functional AI/Compliance task force.",
-            "Identify 3 high-impact predictive compliance use cases."
-          ],
-          "resources_needed": [
-            "Data Scientist (contract)",
-            "Cloud compute infrastructure upgrade ($20k)"
-          ],
-          "success_metric": "Reduction in manual regulatory review time by 40% within 18 months.",
-          "milestones": [
-            "Pilot project completion (Month 6)",
-            "MVP launch of Predictive Engine (Month 12)"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "high",
-        "timeframe": "medium"
-      },
-      {
         "type": "incremental",
-        "title": "Hyper-Specialized Regulatory Automation Module",
-        "rationale": "Focus on incrementally automating compliance procedures for a specific, high-volume regulatory sub-sector. This will allow ReguFlow to capture niche market defense opportunities and improve operational efficiency without requiring a full platform overhaul.",
+        "title": "Automated Compliance Monitoring Tool (Incremental)",
+        "rationale": "Develop a low-cost software module that automates the collection and reporting of organic certification data required by high regulatory standards. This addresses immediate operational risk while utilizing existing digital assets.",
         "execution_plan": {
           "first_actions": [
-            "Conduct gap analysis against the top 5 most common compliance rules.",
-            "Allocate dedicated development sprint for module build."
+            "Define minimum viable compliance data set",
+            "Select off-the-shelf SaaS platform for tracking documentation"
           ],
           "resources_needed": [
-            "Additional Senior Developer hours ($15k)",
-            "Compliance consultant consultation ($5k)"
+            "0.5 FTE dedicated project time",
+            "$5,000 for software subscription and implementation consultation"
           ],
-          "success_metric": "Increase in client retention rate by 5% among the target sub-sector.",
+          "success_metric": "Reduction in manual compliance reporting hours by 30%",
           "milestones": [
-            "Module Beta launch (Month 4)",
-            "Full commercial deployment (Month 9)"
+            "Q1: Tool MVP completed and tested",
+            "Q2: Full integration into existing operational workflow"
           ]
         },
         "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Precision Climate Risk Modeling (Radical)",
+        "rationale": "Invest in a proprietary AI model that integrates local microclimate data with vineyard management practices to predict specific disease outbreaks or frost risks weeks in advance. This creates a defensible specialization, allowing the company to command premium pricing based on risk mitigation.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify key data partners for localized weather feeds",
+            "Hire external AI specialist consultant",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "$20,000 for specialized sensor hardware and model development staff salary (short-term contract)"
+          ],
+          "success_metric": "Successful prediction accuracy of frost events >85% within 14 days",
+          "milestones": [
+            "Q3: Data acquisition pipeline established",
+            "Q4: Pilot deployment in one high-risk vineyard plot"
+          ]
+        },
+        "impact": "high",
         "difficulty": "medium",
-        "timeframe": "short"
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Finalize the roadmap and resource allocation for the AI Predictive Engine pilot.",
-        "owner": "CEO/CTO",
-        "timeframe": "Within 1 week"
+        "action": "Formalize the Innovation Pipeline and Budget Allocation Committee (BPC)",
+        "owner": "CTO/Executive Sponsor",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Initiate a formal talent search strategy targeting specialized ML engineers with regulatory domain knowledge.",
-        "owner": "Head of HR",
-        "timeframe": "Within 30 days"
-      },
-      {
-        "action": "Schedule quarterly deep-dive reviews with the leadership team to assess progress against market defense KPIs.",
-        "owner": "COO",
-        "timeframe": "Every quarter"
+        "action": "Initiate a rapid assessment of supply chain vulnerability using external data partners",
+        "owner": "Operations Lead",
+        "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "High turnover rate of specialized compliance talent in the software sector.",
-      "Legacy codebase hindering rapid adoption of radical, AI-driven features.",
-      "Slow internal process for integrating third-party regulatory updates into the platform."
+      "Lack of institutionalized innovation process (informal)",
+      "Low digital maturity hindering scalable product development",
+      "High dependence on informal knowledge and key personnel",
+      "Fragmented cross-departmental communication regarding technology needs"
     ]
   }
 }

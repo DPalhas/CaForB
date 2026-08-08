@@ -1,0 +1,145 @@
+{
+  "id": "0333",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:27:55.987395+00:00",
+    "duration_ms": 27155,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Fusion Labs",
+      "sector": "Telecommunications",
+      "size": "Small",
+      "companyName": "Fusion Labs"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment. Evaluating XGS-PON upgrade and IPTV service launch.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes. This sporadic approach has led to inconsistent adoption and difficulty scaling successful ideas.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "teamSize": "The innovation function is informal—one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment.",
+      "companyName": "Fusion Labs"
+    }
+  },
+  "output": {
+    "maturity_score": 3.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Network Configuration Optimization",
+        "rationale": "Implementing low-code automation scripts for routine network provisioning and resource allocation will directly address the strategic priority of efficiency by reducing manual operational errors. This is a low-risk, incremental approach that maximizes current infrastructure utilization.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 5 high-volume configuration tasks.",
+            "Pilot Ansible/Python scripting for automated deployment in the XGS-PON segment."
+          ],
+          "resources_needed": [
+            "Existing senior engineer time (reallocated)",
+            "License for automation tooling (e.g., Ansible or similar)."
+          ],
+          "success_metric": "15% reduction in manual configuration hours within 6 months.",
+          "milestones": [
+            "Q2: Automation pilot complete and validated.",
+            "Q3: Rollout to 10 active network segments."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6-9 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Regulatory Compliance Accelerator (Recertification Workflow)",
+        "rationale": "To tackle the upcoming recertification challenge, developing an AI tool to auto-audit configuration against evolving regulatory standards offers a radical potential leap. This would drastically reduce manual compliance costs and time, providing significant competitive advantage.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct gap analysis of current network configs against anticipated 2025 safety standards.",
+            "Invest in a lightweight ML platform to parse regulatory documents."
+          ],
+          "resources_needed": [
+            "External legal/regulatory consultant retainer (partial)",
+            "Cloud computing resources for model training."
+          ],
+          "success_metric": "30% reduction in estimated recertification labor costs.",
+          "milestones": [
+            "Q1: Regulatory requirement mapping complete.",
+            "Q4: MVP AI compliance checker deployed and tested on one product line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Supplier Consolidation and Negotiation Engine",
+        "rationale": "Focusing on optimizing procurement processes by implementing a simple data dashboard to monitor supplier performance metrics will help lower input costs, directly supporting the efficiency goal. This is a manageable process improvement that doesn't require major tech investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish baseline performance metrics for top 5 suppliers (latency/downtime).",
+            "Implement a simple shared spreadsheet or low-cost BI tool dashboard."
+          ],
+          "resources_needed": [
+            "Time from procurement lead.",
+            "Subscription to basic analytics software."
+          ],
+          "success_metric": "5% reduction in average cost per gigabit of leased equipment within 12 months.",
+          "milestones": [
+            "Q3: Supplier data dashboard operationalized.",
+            "Q4: Formal renegotiation based on performance metrics initiated."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize an Innovation Intake Process",
+        "owner": "Small Leadership Team",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Allocate specific resources for the XGS-PON upgrade feasibility study and link it to efficiency metrics",
+        "owner": "Senior Engineer / CTO Proxy",
+        "timeframe": "Within 30 days"
+      },
+      {
+        "action": "Initiate pilot project for the Automated Network Configuration Optimization (Incremental Opportunity 1)",
+        "owner": "Senior Engineer",
+        "timeframe": "Start Q2"
+      }
+    ],
+    "key_weaknesses": [
+      "Complete lack of a formalized innovation process, leading to inconsistent and unmeasured efforts.",
+      "Extremely low digital maturity (Maturity Level 1), limiting the feasibility of more complex radical innovations.",
+      "Strategy is currently too vague as a barrier, lacking specific metrics or KPIs tied directly to operational efficiency gains."
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "0216",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:20:02.727005+00:00",
+    "duration_ms": 23006,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Holdings",
+      "sector": "Hospitality & Tourism",
+      "size": "Micro",
+      "companyName": "Apex Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Apex Holdings manages a portfolio of four premium boutique hotels across key metropolitan locations, specializing in highly curated guest experiences. The company integrates bespoke culinary programming and cultural immersion services to justify a luxury price point. Currently, the focus is shifting toward leveraging technology to personalize the stay experience and optimize operational workflows.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, successfully launching a standalone experiential travel product line. Our current portfolio includes four active projects across new business models, digital products, and operational AI use cases.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating five business units into three and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience.",
+      "companyName": "Apex Holdings",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "CRM Workflow Optimization for Mid-Tier Retention",
+        "rationale": "Improving the efficiency of existing CRM workflows and self-service tools directly addresses customer churn drivers identified in exit interviews. This provides a low-risk, quick win that enhances operational quality without requiring massive R&D investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct comprehensive audit of current booking/self-service pain points (Q1)",
+            "Pilot automated personalized email sequences based on past stay data (Q2)"
+          ],
+          "resources_needed": [
+            "External CRM consultant for 4 weeks",
+            "Internal developer time allocation (5 hours/week)"
+          ],
+          "success_metric": "Reduce self-service support tickets related to booking by 15% within six months.",
+          "milestones": [
+            "CRM pain point analysis complete",
+            "Pilot launch and feedback incorporation"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6-9 Months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Guest Journey Engine",
+        "rationale": "Implementing a sophisticated AI engine to predict guest preferences and dynamically adjust service offerings (like culinary suggestions or room amenities) in real-time offers a high potential for radical competitive differentiation. This requires significant upfront investment but is essential for long-term market defense against larger competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a Minimum Viable Product (MVP) focusing on one property's culinary recommendation engine",
+            "Secure targeted seed funding or strategic partnership to access specialized AI talent."
+          ],
+          "resources_needed": [
+            "Seed capital ($50k-$100k)",
+            "Contracted AI/ML specialist for 9 months (part-time)"
+          ],
+          "success_metric": "Achieve a 10% increase in average guest spend per stay year-over-year post-implementation.",
+          "milestones": [
+            "MVP development completed",
+            "Full system integration across all four properties"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 Months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate a cross-functional sprint team focused solely on automating the current customer self-service pain points.",
+        "owner": "Head of Operations",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a detailed technology roadmap prioritizing low-cost digital enhancements for Q3/Q4 to stabilize retention metrics.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budget constraint (10%) limiting large-scale R&D and talent acquisition.",
+      "High operational bandwidth due to recent restructuring, leading to resource depletion for proactive innovation.",
+      "Lack of dedicated technical leadership or specialized roles needed to drive complex digital transformations.",
+      "Process rigidity potentially stifling the opportunistic, organic nature of 'bottleneck' innovations."
+    ]
+  }
+}

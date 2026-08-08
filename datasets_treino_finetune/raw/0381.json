@@ -1,0 +1,146 @@
+{
+  "id": "0381",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:50:10.041554+00:00",
+    "duration_ms": 27215,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.385755+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Fusion",
+      "sector": "Hospitality & Tourism",
+      "size": "Medium",
+      "companyName": "Fusion"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Fusion is a leading adventure tourism operator specializing in high-adventure activities like guided hiking, canyoning, and rock climbing across three distinct national parks. The company currently employs 25 certified guides who service an annual clientele of 4,000 visitors, operating within strict environmental protection regulations. They are actively seeking to streamline booking logistics and safety waiver management using a mobile-first platform.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The company piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. This experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Fusion operates in a highly regulated sector where operational compliance and safety certifications are paramount. While they have strong core assets, scaling their unique offerings requires significant investment in new experiential products to mitigate market saturation risks.",
+      "companyName": "Fusion",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Mobile Booking and CRM Integration",
+        "rationale": "Implementing a robust mobile-first platform would significantly enhance the customer experience by allowing real-time booking changes and streamlined access to safety documents. This incremental improvement directly addresses current pain points in operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and procure MVP for mobile booking/waiver system",
+            "Run a 3-month pilot with one business unit",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Software licensing fees ($50k)",
+            "One dedicated project manager (internal allocation)"
+          ],
+          "success_metric": "Reduction in manual waiver processing time by 40%",
+          "milestones": [
+            "Platform MVP launch within 6 months",
+            "Full enterprise rollout within 12 months"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "Within 1 year"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Product Line Development (e.g., Specialized Urban Expeditions)",
+        "rationale": "Leveraging the R&D function's exploratory work, developing small-scale niche experiences in urban or specialized environments allows for immediate diversification without massive capital expenditure. This builds new revenue streams incrementally.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market feasibility study for 3 potential niche activities",
+            "Hire one freelance activity specialist",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Market research budget ($20k)",
+            "Consultant fees ($15k)"
+          ],
+          "success_metric": "Achieve 10% revenue contribution from new niche products by end of year",
+          "milestones": [
+            "Feasibility report complete within 4 months",
+            "Launch first niche product line within 9 months"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Virtual Guided Experience & Membership Ecosystem (Bold)",
+        "rationale": "To aggressively diversify revenue and mitigate dependence on physical guide capacity, Fusion should explore creating a high-quality virtual guided experience platform. This radical shift transforms the core asset into scalable IP, opening entirely new customer segments globally.",
+        "execution_plan": {
+          "first_actions": [
+            "Finalize technology stack for VR/live streaming guides",
+            "Develop a minimum viable 'virtual tour' prototype",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Significant software development budget ($150k+)",
+            "Marketing campaign budget ($75k)"
+          ],
+          "success_metric": "Achieve 20% of total revenue from virtual/membership services within 3 years",
+          "milestones": [
+            "Technical proof-of-concept completion within 8 months",
+            "Beta launch and initial subscription sign-ups within 18 months"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3-5 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional 'Diversification Task Force' to audit all existing assets and identify three high-potential, low-risk niche market entry points.",
+        "owner": "Strategy Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Begin detailed technical scoping and budget analysis for the Virtual Guided Experience prototype, focusing on scalability and safety compliance requirements.",
+        "owner": "CTO/R&D Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leads to inconsistent execution velocity across business units.",
+      "Over-reliance on a single product category and top three clients creates significant revenue concentration risk.",
+      "Low digital maturity (Level 2) hinders the ability to capitalize quickly on scalable, high-tech diversification opportunities.",
+      "High perceived time barrier prevents rapid iteration and testing of radical new business models."
+    ]
+  }
+}

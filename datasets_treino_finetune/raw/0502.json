@@ -1,0 +1,121 @@
+{
+  "id": "0502",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:34:19.322880+00:00",
+    "duration_ms": 21142,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.430740+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Technologies.ai",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Micro",
+      "companyName": "Nova Technologies.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Nova Technologies is a micro video game development studio specializing in narrative-driven indie titles built primarily on the Unity engine. With an initial Steam success of 120,000 copies, the company operates with extremely limited capital and high operational leverage. The current focus is leveraging AI tools to streamline core production pipelines, such as procedural content generation for level design and automated QA playtesting.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through structured quarterly hackathons and a formal patent portfolio management strategy. A dedicated 'innovation fellow' program provides deep exploratory work, recently yielding a computer vision prototype that significantly reduced defect escape rates by 35% in previous projects.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We aim to defend our niche against larger competitors by deepening specialization in high-margin narrative IPs while simultaneously exploring platform integration features. The goal is to increase customer retention through proprietary content experiences that create higher switching costs, compensating for the lack of scale.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming, necessitating innovation focused on workflow optimization rather than large feature builds.",
+      "companyName": "Nova Technologies.ai",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Procedural Content Generation Integration for Level Design",
+        "rationale": "Utilizing advanced generative AI tools can significantly speed up the tedious manual task of level design iteration and asset creation, directly improving development efficiency without requiring a complete overhaul of the core game experience. This supports market defense by allowing smaller teams to scale content volume more effectively.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot AI tool integration in one core project pipeline.",
+            "Identify and onboard one specialized generative art/level design consultant."
+          ],
+          "resources_needed": [
+            "AI licensing subscription (low cost)",
+            "Contractor services for prompt engineering time",
+            "Dedicated 5% of the tech budget allocation"
+          ],
+          "success_metric": "Reduction in average level-design iteration time by 20%",
+          "milestones": [
+            "Q1: Tool selection and proof-of-concept.",
+            "Q3: Integration into production pipeline for one major title."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Recertification Workflow Acceleration Platform (Bold)",
+        "rationale": "Since regulatory hurdles are high-cost and time-consuming, building a proprietary middleware platform to automate the submission of compliance data across all titles could boldly reduce operational costs. This investment shifts focus from reactive compliance to proactive process innovation.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a deep audit of current regulatory documentation needs for 3 key certifications.",
+            "Engage external legal/compliance expertise for platform architecture design."
+          ],
+          "resources_needed": [
+            "Consultant fees for compliance automation framework",
+            "Internal developer time reallocation (high risk)",
+            "Capital injection review (requires justification based on potential savings)"
+          ],
+          "success_metric": "Reduction in manual recertification preparation hours by 50%",
+          "milestones": [
+            "Q2: Finalize platform MVP scope and compliance requirements.",
+            "Q4: Successful deployment of workflow acceleration tool."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive cost-benefit analysis on the automated recertification platform feasibility.",
+        "owner": "Founder/Owner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Secure seed funding or strategic partnership specifically allocated for external talent acquisition to address the 'talent' barrier.",
+        "owner": "Founder/Owner",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme budget constraint (4% allocation) severely limits large-scale R&D and talent hiring.",
+      "High reliance on the founder for all critical decision-making, creating a single point of failure in innovation direction.",
+      "Lack of formalized engineering team prevents scaling beyond the founder's personal bandwidth."
+    ]
+  }
+}

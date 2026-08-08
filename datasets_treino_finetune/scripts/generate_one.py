@@ -3,15 +3,14 @@
 generate_one.py — One-shot JSON generation with classical heuristic validation.
 
 Each invocation generates exactly one training example:
-  1. LLM produces a complete survey JSON (input + output) in one prompt
-  2. Non-free-text fields are validated with classical heuristics
-  3. Violations are fed back to the LLM for correction (up to N retries)
+  1. Pre-determined structured fields are LOCKED (from raw_inputs.json)
+  2. LLM enriches free-text fields and generates the output (innovation analysis)
+  3. Locked fields are validated for tampering; violators fed back for correction
   4. Valid output is saved to raw/XXXX.json
 
 Usage:
-    python scripts/generate_one.py 42                    # Generate example at index 42
-    python scripts/generate_one.py 42 --model gemma4:e2b-it-qat
-    python scripts/generate_one.py 42 --retries 5 --gpu-layers -1
+    python scripts/generate_one.py 42
+    python scripts/generate_one.py 42 --model gemma4:e2b-it-qat --gpu-layers -1
 """
 
 import json
@@ -30,7 +29,7 @@ INPUT_PATH = BASE_DIR / "raw_inputs.json"
 OUTPUT_DIR = BASE_DIR / "raw"
 
 # ──────────────────────────────────────────────────────────────────────
-# Field domains for validation
+# Field domains
 # ──────────────────────────────────────────────────────────────────────
 
 SECTORS = [
@@ -46,17 +45,30 @@ SECTORS = [
 
 SIZES = ["Micro", "Small", "Medium", "Large"]
 RISK_LEVELS = ["low", "medium", "high"]
-RISK_APPETITES = ["conservative", "balanced", "bold"]
-STRATEGIC_PRIORITIES = ["growth", "efficiency", "market_defense", "diversification"]
 INNOVATION_PROCESSES = ["none", "informal", "partial", "formal"]
 CUSTOMER_FEEDBACKS = ["no_formal_process", "informal_conversations", "surveys_nps", "dedicated_research"]
+STRATEGIC_PRIORITIES = ["growth", "efficiency", "market_defense", "diversification"]
+RISK_APPETITES = ["conservative", "balanced", "bold"]
 TIME_HORIZONS = ["short", "medium", "long"]
 DECISION_MAKINGS = ["owner_alone", "small_leadership_team", "formal_committee", "varies_by_project"]
 DIGITAL_MATURITIES = ["1", "2", "3", "4"]
 REVENUE_RANGES = ["under_1m", "1m_to_10m", "10m_to_50m", "over_50m"]
 ALL_BARRIERS = ["budget", "talent", "process", "culture", "time", "strategy"]
 
-USED_IDS_FILE = BASE_DIR / "used_ids.txt"
+# Fields that the LLM MUST return exactly as provided (locked)
+LOCKED_FIELDS = [
+    "sector", "size", "regulatoryEnvironment", "innovationProcess",
+    "customerFeedback", "strategicPriority", "timeHorizon", "riskAppetite",
+    "digitalMaturity", "revenueRange", "budgetPercentage", "decisionMaking",
+    "mainBarrier", "competitivePressure",
+]
+
+# Fields the LLM can expand/enrich (free-text)
+FREE_TEXT_FIELDS = [
+    "companyName", "companyDescription", "pastInitiatives",
+    "strategicGoals", "teamSize", "additionalContext",
+]
+
 
 # ──────────────────────────────────────────────────────────────────────
 # Load survey input
@@ -71,38 +83,44 @@ def load_survey(index: int) -> dict:
 
 
 # ──────────────────────────────────────────────────────────────────────
-# One-shot prompt
+# Prompt — locked fields + free-text enrichment + output generation
 # ──────────────────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT = """You are a data generator for fine-tuning a corporate innovation assessment AI.
 
-Produce ONE JSON with a corporate survey AND its corresponding innovation analysis.
+You will receive a pre-determined corporate survey (locked fields + template text).
+Your job: enrich the template text fields with realistic industry-specific detail, then
+generate a complete innovation analysis.
 
-EXACT OUTPUT STRUCTURE:
+LOCKED FIELDS: Do NOT change these values. Return them exactly as provided.
+FREE-TEXT FIELDS: Expand these with 2-3 sentences of realistic, industry-specific detail.
+OUTPUT: Generate a complete innovation analysis (score, opportunities, next steps, weaknesses).
+
+Output MUST be this exact structure:
 {
   "company": {
-    "companyName": "string",
-    "sector": "EXACT match from provided list",
-    "size": "Micro | Small | Medium | Large"
+    "companyName": "<enriched from template>",
+    "sector": "<LOCKED — dont change>",
+    "size": "<LOCKED — dont change>"
   },
   "answers": {
-    "regulatoryEnvironment": "low | medium | high",
-    "companyDescription": "3-4 sentences, industry-specific",
-    "innovationProcess": "none | informal | partial | formal",
-    "pastInitiatives": "2-3 sentences, realistic",
-    "customerFeedback": "no_formal_process | informal_conversations | surveys_nps | dedicated_research",
-    "strategicGoals": "2-3 sentences matching the strategic priority",
-    "strategicPriority": "growth | efficiency | market_defense | diversification",
-    "timeHorizon": "short | medium | long",
-    "riskAppetite": "conservative | balanced | bold",
-    "teamSize": "1-2 sentences about team",
-    "digitalMaturity": "1 | 2 | 3 | 4",
-    "revenueRange": "under_1m | 1m_to_10m | 10m_to_50m | over_50m",
-    "budgetPercentage": "integer 0-30",
-    "decisionMaking": "owner_alone | small_leadership_team | formal_committee | varies_by_project",
-    "mainBarrier": ["array of 1-4 from: budget | talent | process | culture | time | strategy"],
-    "competitivePressure": "low | medium | high",
-    "additionalContext": "0-2 sentences or empty string"
+    "regulatoryEnvironment": "<LOCKED>",
+    "companyDescription": "<2-3 sentences, sector-specific>",
+    "innovationProcess": "<LOCKED>",
+    "pastInitiatives": "<2-3 sentences, realistic>",
+    "customerFeedback": "<LOCKED>",
+    "strategicGoals": "<2-3 sentences aligned with priority>",
+    "strategicPriority": "<LOCKED>",
+    "timeHorizon": "<LOCKED>",
+    "riskAppetite": "<LOCKED>",
+    "teamSize": "<1-2 sentences>",
+    "digitalMaturity": "<LOCKED>",
+    "revenueRange": "<LOCKED>",
+    "budgetPercentage": "<LOCKED — number>",
+    "decisionMaking": "<LOCKED>",
+    "mainBarrier": ["<LOCKED — array>"],
+    "competitivePressure": "<LOCKED>",
+    "additionalContext": "<0-2 sentences or empty>"
   },
   "output": {
     "maturity_score": <float 0-10>,
@@ -110,7 +128,7 @@ EXACT OUTPUT STRUCTURE:
       {
         "type": "incremental | radical",
         "title": "<string>",
-        "rationale": "<2-3 sentences linking to company context>",
+        "rationale": "<2-3 sentences>",
         "execution_plan": {
           "first_actions": ["<2-3 specific steps>"],
           "resources_needed": ["<2-3 resources/costs>"],
@@ -133,178 +151,79 @@ EXACT OUTPUT STRUCTURE:
   }
 }
 
-CRITICAL RULES:
-- Generate 2-4 opportunities (NOT just 1). Balanced risk = mix of types. Bold = at least one radical. Conservative = all incremental.
-- MUST include key_weaknesses array (2-4 items). Never omit this field.
-- MUST include 2-3 next_steps.
-- budgetPercentage: conservative 2-6%, balanced 5-15%, bold 12-25%
-- revenueRange must match size: Micro->under_1m, Small->1m_to_10m, Medium->10m_to_50m, Large->over_50m
-- decisionMaking must match size: Micro->owner_alone, Large->formal_committee or varies_by_project
-- digitalMaturity consistent with innovationProcess + size
-- Opportunities must align with strategic priority and risk appetite
-- Execution plan resources must stay within estimated budget
-
-RESPOND WITH ONLY THE RAW JSON. No markdown backticks. No explanation text."""
+RULES:
+- Generate 2-4 opportunities (Conservative=all incremental, Bold=at least one radical)
+- MUST include key_weaknesses (2-4 items) and next_steps (2-3 items)
+- Execution plans must stay within the company's estimated budget
+- All locked fields MUST be returned unchanged
+- RESPOND WITH ONLY THE RAW JSON. No markdown. No explanation. No backticks."""
 
 
-def build_prompt(combo_id: str, feedback: str = "") -> str:
-    sectors_str = ", ".join(SECTORS)
-    risk, prio, reg = combo_id.split("|")
-    base = (
-        f"Generate a complete training example for innovation assessment.\n"
-        f"Constraint: riskAppetite={risk}, strategicPriority={prio}, regulatoryEnvironment={reg}.\n"
-        f"IMPORTANT: Use only these sectors: {sectors_str}\n"
-        f"decisionMaking: {', '.join(DECISION_MAKINGS)}\n"
-        f"Generate 2-4 opportunities. Include key_weaknesses. Vary the company realistically."
+def build_prompt(fields: dict, feedback: str = "") -> str:
+    locked_block = "\n".join(
+        f"  {k}: {json.dumps(fields.get(k, ''))}"
+        for k in LOCKED_FIELDS
     )
+    templates_block = "\n".join(
+        f"  {k}: {json.dumps(fields.get(k, '')) if fields.get(k) else '(empty — invent)'}"
+        for k in FREE_TEXT_FIELDS
+    )
+
+    combo = (
+        f"{fields.get('riskAppetite','')}|{fields.get('strategicPriority','')}"
+        f"|{fields.get('regulatoryEnvironment','')}"
+    )
+
+    base = (
+        f"Generate a training example for innovation assessment.\n\n"
+        f"Constraint combo: {combo}\n\n"
+        f"--- LOCKED FIELDS (do NOT change) ---\n{locked_block}\n\n"
+        f"--- TEMPLATE TEXT (enrich with 2-3 realistic sentences) ---\n{templates_block}\n\n"
+        f"Enrich free-text fields with sector-appropriate realism. "
+        f"Generate a full innovation analysis. "
+        f"Conservative risk = all incremental ops. Bold = at least one radical."
+    )
+
     if feedback:
-        base += f"\n\nPREVIOUS ATTEMPT FAILED VALIDATION:\n{feedback}\n\nPlease fix ALL violations and regenerate."
+        base += f"\n\nPREVIOUS ATTEMPT FAILED:\n{feedback}\n\nFix ALL violations and regenerate."
+
     return base
 
 
 # ──────────────────────────────────────────────────────────────────────
-# Field validators
+# Validation — checks only that locked fields weren't altered
 # ──────────────────────────────────────────────────────────────────────
 
-class ValidationError(Exception):
-    pass
-
-
-def validate_enum(value: Any, domain: list[str], field: str) -> None:
-    if value not in domain:
-        raise ValidationError(f"{field}='{value}' is not in {domain}")
-
-
-def validate_int_range(value: Any, lo: int, hi: int, field: str) -> None:
-    if not isinstance(value, (int, float)) or value < lo or value > hi:
-        raise ValidationError(f"{field}={value} must be integer {lo}-{hi}")
-    if isinstance(value, float) and not value.is_integer():
-        raise ValidationError(f"{field}={value} must be integer, got float")
-
-
-def validate_barriers(value: Any) -> None:
-    if not isinstance(value, list):
-        raise ValidationError(f"mainBarrier must be an array, got {type(value)}")
-    for b in value:
-        if b not in ALL_BARRIERS:
-            raise ValidationError(f"mainBarrier contains invalid value '{b}'")
-
-
-def validate_fields(fields: dict) -> list[str]:
-    """Run all field-level validations. Returns list of violation messages (empty = valid)."""
+def validate_locked(expected: dict, llm_company: dict, llm_answers: dict) -> list[str]:
+    """Verify LLM didn't change any locked fields. Returns violation messages."""
     violations = []
 
-    checks = [
-        ("regulatoryEnvironment", RISK_LEVELS),
-        ("innovationProcess", INNOVATION_PROCESSES),
-        ("customerFeedback", CUSTOMER_FEEDBACKS),
-        ("strategicPriority", STRATEGIC_PRIORITIES),
-        ("timeHorizon", TIME_HORIZONS),
-        ("riskAppetite", RISK_APPETITES),
-        ("revenueRange", REVENUE_RANGES),
-        ("decisionMaking", DECISION_MAKINGS),
-        ("competitivePressure", RISK_LEVELS),
-    ]
+    for field in LOCKED_FIELDS:
+        expected_val = expected.get(field)
+        if field in ("sector", "size"):
+            actual = llm_company.get(field)
+        else:
+            actual = llm_answers.get(field)
 
-    for field, domain in checks:
-        try:
-            validate_enum(fields.get(field), domain, field)
-        except ValidationError as e:
-            violations.append(str(e))
+        if actual is None:
+            violations.append(f"LOCKED field '{field}' is missing from LLM output")
+            continue
 
-    dm = fields.get("digitalMaturity")
-    try:
-        validate_enum(str(dm) if dm is not None else None, DIGITAL_MATURITIES, "digitalMaturity")
-    except ValidationError as e:
-        violations.append(str(e))
-
-    bp = fields.get("budgetPercentage")
-    try:
-        validate_int_range(int(bp) if bp is not None else -1, 0, 30, "budgetPercentage")
-    except (ValueError, TypeError, ValidationError) as e:
-        violations.append(f"budgetPercentage={bp}: {e}")
-
-    try:
-        validate_barriers(fields.get("mainBarrier"))
-    except ValidationError as e:
-        violations.append(str(e))
-
-    return violations
-
-
-# ──────────────────────────────────────────────────────────────────────
-# Cross-field heuristic validators
-# ──────────────────────────────────────────────────────────────────────
-
-def validate_correlations(fields: dict) -> list[str]:
-    """Run cross-field consistency checks. Returns list of violation messages."""
-    violations = []
-    ra = fields.get("riskAppetite", "")
-    sp = fields.get("strategicPriority", "")
-    reg = fields.get("regulatoryEnvironment", "")
-    size = fields.get("size", "")
-    process = fields.get("innovationProcess", "")
-    feedback = fields.get("customerFeedback", "")
-    digital = fields.get("digitalMaturity", "")
-    revenue = fields.get("revenueRange", "")
-    budget = fields.get("budgetPercentage", -1)
-    decision = fields.get("decisionMaking", "")
-    barriers = fields.get("mainBarrier", [])
-    comp = fields.get("competitivePressure", "")
-
-    # 1. budgetPercentage ↔ riskAppetite
-    if ra == "conservative" and isinstance(budget, (int, float)) and budget > 8:
-        violations.append(f"budgetPercentage={budget}% too high for conservative risk appetite (expect 2-6%)")
-    if ra == "balanced" and isinstance(budget, (int, float)) and budget > 18:
-        violations.append(f"budgetPercentage={budget}% too high for balanced risk appetite (expect 5-15%)")
-    if ra == "bold" and isinstance(budget, (int, float)) and budget < 8:
-        violations.append(f"budgetPercentage={budget}% too low for bold risk appetite (expect 12-25%)")
-
-    # 2. revenueRange ↔ size
-    if size == "Micro" and revenue in ("10m_to_50m", "over_50m"):
-        violations.append(f"Micro company with {revenue} revenue is unrealistic")
-    if size == "Small" and revenue == "over_50m":
-        violations.append(f"Small company with over_50m revenue is unrealistic")
-    if size == "Large" and revenue in ("under_1m", "1m_to_10m"):
-        violations.append(f"Large company with {revenue} revenue is unrealistic")
-
-    # 3. decisionMaking ↔ size
-    if size == "Micro" and decision not in ("owner_alone", "small_leadership_team"):
-        violations.append(f"Micro company with {decision} governance is unrealistic")
-    if size == "Small" and decision == "formal_committee":
-        violations.append(f"Small company with formal_committee governance is unrealistic")
-    if size == "Large" and decision in ("owner_alone",):
-        violations.append(f"Large company with owner_alone governance is unrealistic")
-
-    # 4. customerFeedback ↔ innovationProcess
-    feedback_maturity = {"no_formal_process": 0, "informal_conversations": 1, "surveys_nps": 2, "dedicated_research": 3}
-    process_maturity = {"none": 0, "informal": 1, "partial": 2, "formal": 3}
-    fb_mat = feedback_maturity.get(feedback, -1)
-    pr_mat = process_maturity.get(process, -1)
-    if fb_mat >= 0 and pr_mat >= 0 and abs(fb_mat - pr_mat) > 1:
-        violations.append(f"customerFeedback maturity ({feedback}) too far from innovationProcess ({process})")
-
-    # 5. digitalMaturity ↔ innovationProcess + size
-    try:
-        dig_int = int(digital)
-        pr_int = process_maturity.get(process, 0) + 1
-        size_bonus = {"Micro": 0, "Small": 0, "Medium": 1, "Large": 1}.get(size, 0)
-        expected_floor = max(1, pr_int - 2 + size_bonus)
-        expected_ceil = min(4, pr_int + 2 + size_bonus)
-        if dig_int < expected_floor:
-            violations.append(f"digitalMaturity={digital} too low for {process} process + {size} size (expect {expected_floor}-{expected_ceil})")
-        if dig_int > expected_ceil:
-            violations.append(f"digitalMaturity={digital} too high for {process} process + {size} size (expect {expected_floor}-{expected_ceil})")
-    except (ValueError, TypeError):
-        pass
-
-    # 6. High regulation → process barrier
-    if reg == "high" and "process" not in barriers:
-        violations.append(f"high regulatory environment should include 'process' in mainBarrier")
-
-    # 7. Conservative risk → no radical expectations (informational, not blocking)
-    if ra == "conservative" and process == "formal":
-        pass  # conservative can have formal process, it's about the output not the input
+        if isinstance(expected_val, list):
+            if sorted(actual) != sorted(expected_val):
+                violations.append(
+                    f"LOCKED field '{field}' was altered: expected {expected_val}, got {actual}"
+                )
+        elif isinstance(expected_val, (int, float)):
+            if int(actual) != int(expected_val):
+                violations.append(
+                    f"LOCKED field '{field}' was altered: expected {expected_val}, got {actual}"
+                )
+        else:
+            if str(actual) != str(expected_val):
+                violations.append(
+                    f"LOCKED field '{field}' was altered: expected '{expected_val}', got '{actual}'"
+                )
 
     return violations
 
@@ -333,8 +252,8 @@ def extract_json(text: str) -> dict:
 # LLM call
 # ──────────────────────────────────────────────────────────────────────
 
-def call_llm(combo_id: str, feedback: str, model: str, gpu_layers: int, num_predict: int) -> str:
-    prompt = build_prompt(combo_id, feedback)
+def call_llm(fields: dict, feedback: str, model: str, gpu_layers: int, num_predict: int) -> str:
+    prompt = build_prompt(fields, feedback)
     response = ollama.chat(
         model=model,
         messages=[
@@ -344,7 +263,7 @@ def call_llm(combo_id: str, feedback: str, model: str, gpu_layers: int, num_pred
         options={
             "num_predict": num_predict,
             "num_gpu": gpu_layers,
-            "temperature": 0.8,  # diversity for different survey variants
+            "temperature": 0.8,
         },
     )
     return response.message.content
@@ -354,15 +273,17 @@ def call_llm(combo_id: str, feedback: str, model: str, gpu_layers: int, num_pred
 # Main one-shot generator
 # ──────────────────────────────────────────────────────────────────────
 
-def generate_one(index: int, model: str, gpu_layers: int, num_predict: int = 12288, max_retries: int = 5) -> str | None:
+def generate_one(
+    index: int,
+    model: str,
+    gpu_layers: int,
+    num_predict: int = 12288,
+    max_retries: int = 5,
+) -> str | None:
     survey = load_survey(index)
     ex_id = survey["id"]
+    fields = survey["fields"]
     combo_id = survey["combo_id"]
-    expected = {
-        "riskAppetite": survey["fields"]["riskAppetite"],
-        "strategicPriority": survey["fields"]["strategicPriority"],
-        "regulatoryEnvironment": survey["fields"]["regulatoryEnvironment"],
-    }
 
     out_path = OUTPUT_DIR / f"{ex_id}.json"
     if out_path.exists():
@@ -374,51 +295,27 @@ def generate_one(index: int, model: str, gpu_layers: int, num_predict: int = 122
     start = time.time()
 
     for attempt in range(1, max_retries + 1):
-        raw_text = call_llm(combo_id, feedback, model, gpu_layers, num_predict)
+        raw_text = call_llm(fields, feedback, model, gpu_layers, num_predict)
         parsed = extract_json(raw_text)
 
         if not parsed or "company" not in parsed or "answers" not in parsed:
-            feedback = "ERROR: Output was not valid JSON or missing 'company'/'answers' keys. Respond with ONLY the JSON object, no markdown, no backticks, no explanation."
+            feedback = (
+                "ERROR: Output was not valid JSON or missing 'company'/'answers' keys. "
+                "Respond with ONLY the JSON object, no markdown, no backticks, no explanation."
+            )
             print(f"    Attempt {attempt}: unparseable JSON")
             continue
 
-        company = parsed.get("company", {})
-        answers = parsed.get("answers", {})
+        llm_company = parsed.get("company", {})
+        llm_answers = parsed.get("answers", {})
         llm_output = parsed.get("output", {})
 
-        violations = validate_fields(answers)
-
-        if not violations:
-            c_violations = []
-            try:
-                validate_enum(company.get("sector"), SECTORS, "sector")
-            except ValidationError as e:
-                c_violations.append(str(e))
-            try:
-                validate_enum(company.get("size"), SIZES, "size")
-            except ValidationError as e:
-                c_violations.append(str(e))
-            violations.extend(c_violations)
-
-            if not violations:
-                merged = {**answers, "sector": company.get("sector", ""), "size": company.get("size", "")}
-                violations = validate_correlations(merged)
-
-        if not violations:
-            combo_ok = (
-                answers.get("riskAppetite") == expected["riskAppetite"]
-                and answers.get("strategicPriority") == expected["strategicPriority"]
-                and answers.get("regulatoryEnvironment") == expected["regulatoryEnvironment"]
-            )
-            if not combo_ok:
-                violations.append(
-                    f"Output combo ({answers.get('riskAppetite')}|{answers.get('strategicPriority')}|"
-                    f"{answers.get('regulatoryEnvironment')}) does not match expected ({combo_id})"
-                )
+        violations = validate_locked(fields, llm_company, llm_answers)
 
         if violations:
-            feedback = "VALIDATION ERRORS:\n" + "\n".join(f"  - {v}" for v in violations)
-            print(f"    Attempt {attempt}: {len(violations)} violation(s)")
+            feedback = "LOCKED FIELDS WERE ALTERED:\n" + "\n".join(f"  - {v}" for v in violations)
+            feedback += "\n\nAll locked fields from the input MUST be returned unchanged."
+            print(f"    Attempt {attempt}: {len(violations)} locked-field violation(s)")
             for v in violations[:3]:
                 print(f"      - {v}")
             if len(violations) > 3:
@@ -432,12 +329,12 @@ def generate_one(index: int, model: str, gpu_layers: int, num_predict: int = 122
             "version": 1,
             "split": "train",
             "metadata": {
-                "sector": company.get("sector", ""),
-                "size": company.get("size", ""),
-                "regulatory_environment": answers.get("regulatoryEnvironment", ""),
-                "risk_appetite": answers.get("riskAppetite", ""),
-                "strategic_priority": answers.get("strategicPriority", ""),
-                "competitive_pressure": answers.get("competitivePressure", ""),
+                "sector": fields["sector"],
+                "size": fields["size"],
+                "regulatory_environment": fields["regulatoryEnvironment"],
+                "risk_appetite": fields["riskAppetite"],
+                "strategic_priority": fields["strategicPriority"],
+                "competitive_pressure": fields["competitivePressure"],
                 "reviewed": False,
                 "source": f"{model}_synthetic",
                 "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -452,11 +349,18 @@ def generate_one(index: int, model: str, gpu_layers: int, num_predict: int = 122
             ),
             "input": {
                 "company": {
-                    "name": company.get("companyName", ""),
-                    "sector": company.get("sector", ""),
-                    "size": company.get("size", ""),
+                    "name": llm_company.get("companyName", fields.get("companyName", "")),
+                    "sector": fields["sector"],
+                    "size": fields["size"],
                 },
-                "answers": answers,
+                "answers": {
+                    # Start with ALL original fields as defaults
+                    **{k: v for k, v in fields.items() if k not in ("companyName", "sector", "size")},
+                    # Override with LLM's enriched free-text fields
+                    **{k: v for k, v in llm_answers.items() if k not in LOCKED_FIELDS and k not in ("sector", "size")},
+                    # Ensure locked fields are correct (belt-and-suspenders)
+                    **{k: fields[k] for k in LOCKED_FIELDS},
+                },
             },
             "output": llm_output,
         }
@@ -476,12 +380,12 @@ def generate_one(index: int, model: str, gpu_layers: int, num_predict: int = 122
 # ──────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="One-shot survey JSON generation with validation.")
+    parser = argparse.ArgumentParser(description="One-shot training example generation.")
     parser.add_argument("index", type=int, help="Index into raw_inputs.json (0-based)")
     parser.add_argument("--model", default="gemma4:e2b-it-qat", help="Ollama model name")
     parser.add_argument("--gpu-layers", type=int, default=-1, help="GPU layers (-1=all, 0=CPU)")
     parser.add_argument("--num-predict", type=int, default=12288, help="Max output tokens")
-    parser.add_argument("--retries", type=int, default=5, help="Max retry attempts on validation failure")
+    parser.add_argument("--retries", type=int, default=5, help="Max retry attempts")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

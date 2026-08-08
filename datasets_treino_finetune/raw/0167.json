@@ -1,0 +1,125 @@
+{
+  "id": "0167",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:56:11.509225+00:00",
+    "duration_ms": 27214,
+    "attempts": 1,
+    "auto_fixed": true
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Healthcare & Medical",
+      "size": "Large",
+      "companyName": "Crest"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Private hospital group operating 3 general hospitals and 8 outpatient clinics with 450 beds and 1,800 staff including 350 physicians. Performing 22,000 surgeries annually. Currently implementing an integrated hospital information system (HIS) and evaluating AI-assisted radiology image triage for chest X-rays and CT scans. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for. It also showed that deep integration with existing clinical workflows is the primary friction point rather than purely technological capability.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches like complex cardiac care or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Recent regulatory changes regarding interoperability demand significant investment, while physician burnout is high due to administrative overhead in manual processes. This dual pressure necessitates innovation that simultaneously improves clinical outcomes and operational efficiency without compromising patient safety standards.",
+      "companyName": "Crest",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Intelligent Workflow Automation (RPA)",
+        "rationale": "Implementing Robotic Process Automation in administrative tasks like patient intake and referral management can significantly increase operational velocity without requiring massive system overhauls. This addresses the organizational friction point identified in past initiatives.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-friction manual processes (e.g., insurance verification, scheduling)",
+            "Select and pilot an RPA tool for process automation",
+            "Establish a dedicated small change management sub-team."
+          ],
+          "resources_needed": [
+            "Budget allocation for software licensing ($50k)",
+            "1 FTE Business Process Analyst (temp contract)"
+          ],
+          "success_metric": "Reduce administrative time spent on patient intake by 25% within 6 months.",
+          "milestones": [
+            "Process mapping complete (Month 1)",
+            "Pilot deployment and validation (Month 3)",
+            "Full departmental rollout planning (Month 5)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "bold",
+        "title": "Decentralized Clinical Decision Support Network (CDSN)",
+        "rationale": "Developing a proprietary AI-driven CDSN tailored to Crest's specific high-margin niches allows for independent, scalable clinical decision support, providing strong switching costs and defensive capabilities against larger competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated internal 'AI spin-off' team focused solely on the CDSN algorithm architecture",
+            "Secure seed funding ($1M) from the group innovation fund for core R&D hires",
+            "Conduct rigorous legal and ethical compliance review upfront."
+          ],
+          "resources_needed": [
+            "High-caliber Data Scientist talent (3 FTE)",
+            "Significant compute infrastructure investment"
+          ],
+          "success_metric": "Achieve 10% reduction in clinical error rates for targeted high-margin procedures.",
+          "milestones": [
+            "Algorithm MVP developed and validated (Month 9)",
+            "Pilot integration within one specialized hospital unit (Month 15)",
+            "Scale readiness assessment (Month 24)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3 Years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the roadmap for AI integration by establishing a cross-functional steering committee with mandated quarterly innovation reviews.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct an immediate audit of existing core clinical workflows to identify the top three bottlenecks suitable for incremental automation pilots.",
+        "owner": "Operations VP",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "informal innovation process leads to inconsistent project adoption and failure to scale successful initiatives.",
+      "High reliance on existing, slow manual processes which hinder organizational velocity and responsiveness.",
+      "Lack of a standardized change management framework for new technology integration into clinical settings.",
+      "Fragmented knowledge across decentralized business units limits the ability to leverage internal talent effectively."
+    ]
+  }
+}

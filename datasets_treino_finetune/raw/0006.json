@@ -3,122 +3,144 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Healthcare & Medical",
     "size": "Medium",
     "regulatory_environment": "medium",
     "risk_appetite": "bold",
     "strategic_priority": "growth",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:50:08.063997+00:00",
-    "duration_ms": 20689,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:29:46.127302+00:00",
+    "duration_ms": 71467,
+    "attempts": 3
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "InnovateFlow SaaS",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Meridian Consulting.io",
+      "sector": "Healthcare & Medical",
+      "size": "Medium",
+      "companyName": "Meridian Consulting.io"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "InnovateFlow SaaS develops B2B workflow automation software tailored for logistics companies. We leverage AI to optimize supply chain routes and inventory management, targeting mid-sized enterprises globally.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "In the last year, we successfully launched three core product modules and completed a major platform migration to a cloud infrastructure provider. These initiatives were driven by internal roadmap planning.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is aggressive market share expansion in emerging international logistics markets over the next five years. We aim to increase Annual Recurring Revenue (ARR) by 150% through strategic product diversification and rapid scaling.",
+      "companyDescription": "Private hospital group operating 3 general hospitals and 8 outpatient clinics with 450 beds and 1,800 staff including 350 physicians. Performing 22,000 surgeries annually. Currently implementing an integrated hospital information system (HIS) and evaluating AI-assisted radiology image triage for chest X-rays and CT scans. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
       "strategicPriority": "growth",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The core engineering team consists of 20 highly skilled developers, supported by a small dedicated product management unit that collaborates cross-functionally on new feature development.",
       "digitalMaturity": "3",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 18,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 15,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "time",
-        "strategy",
-        "process"
+        "process",
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is rapidly evolving with entrants focusing on hyper-specialized AI tools, requiring constant innovation to maintain a competitive edge."
+      "competitivePressure": "high",
+      "additionalContext": "We are planning an IPO within 24 months and need to demonstrate a track record of innovation-driven growth to public market investors. The CFO has asked for a 3-year innovation investment plan with clear KPIs that can be included in our equity story and analyst presentations. Bonus points for initiatives that improve our ESG metrics, as this is a key focus area for the listing venue.",
+      "companyName": "Meridian Consulting.io",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
     }
   },
   "output": {
     "maturity_score": 6.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Launch Hyper-Personalized Predictive Maintenance Module (AI Overlay)",
-        "rationale": "Implementing a radical AI overlay that integrates real-time IoT data from logistics partners will move us beyond simple route optimization into proactive, predictive maintenance planning. This is necessary to capture premium enterprise contracts and justify aggressive growth.",
+        "type": "incremental",
+        "title": "AI-Driven Clinical Workflow Automation",
+        "rationale": "Implementing machine learning for administrative tasks (e.g., scheduling optimization and prior authorization) can immediately improve operational efficiency and reduce staff burnout. This leverages the existing digital maturity to stabilize core processes.",
         "execution_plan": {
           "first_actions": [
-            "Pilot the Predictive Maintenance algorithm on 5 anchor clients in Q3",
-            "Establish a dedicated data science sprint team focused solely on this feature"
+            "Pilot NLP tool integration into medical records for automated documentation summaries",
+            "Establish dedicated data governance task force with legal and IT departments"
           ],
           "resources_needed": [
-            "Hire 2 senior AI/ML engineers (Salary: $180k+ annually)",
-            "Cloud computing credits for high-volume simulation testing ($50k)"
+            "€150,000 for software licensing and integration services",
+            "2 full-time Data Scientist headcount (contract/internal transition)"
           ],
-          "success_metric": "Achieve a 30% reduction in client downtime reported by pilot users within six months.",
+          "success_metric": "30% reduction in administrative staff time spent on documentation within 12 months.",
           "milestones": [
-            "Algorithm prototype completion (Month 2)",
-            "Closed Beta with 10 clients (Month 4)",
-            "Full commercial rollout (Month 6)"
+            "Q2: Tool selection and PoC completion for scheduling",
+            "Q4: Full system integration rollout in one hospital wing"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12-18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Precision Diagnostics Platform (AI Radiology)",
+        "rationale": "Developing proprietary AI models for specific high-value scans like chest X-rays and CTs allows Meridian to offer specialized, faster diagnostic services. This addresses the competitive pressure by creating a unique value proposition in speed and accuracy.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure initial funding from 15% budget allocation for R&D",
+            "Hire specialist medical AI engineers focusing on computer vision"
+          ],
+          "resources_needed": [
+            "€400,000 for specialized ML infrastructure and clinical validation studies",
+            "Partnerships with academic medical centers for data access"
+          ],
+          "success_metric": "Achieve 95% diagnostic accuracy in triage/detection compared to human specialists.",
+          "milestones": [
+            "Year 1: Model training and internal validation",
+            "Year 2: Regulatory clearance pathway initiation (FDA focus)"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "long"
+        "timeframe": "3-5 years"
       },
       {
         "type": "incremental",
-        "title": "Expand API Ecosystem for Third-Party Integrations",
-        "rationale": "To drive rapid growth, we must broaden our integration capabilities beyond existing enterprise partners. This incremental move ensures platform stickiness and opens new revenue streams through marketplace integrations.",
+        "title": "Recurring Revenue Service Model Implementation",
+        "rationale": "Transitioning high-margin services (e.g., chronic disease management programs) into subscription models provides predictable, recurring revenue streams necessary for achieving the growth targets.",
         "execution_plan": {
           "first_actions": [
-            "Audit current API documentation for gaps in common industry workflows",
-            "Launch a dedicated Partner Onboarding Program (M1-M3)"
+            "Map existing service offerings to potential tiered SaaS/subscription packages",
+            "Develop internal sales training curriculum focused on value-based contracting metrics"
           ],
           "resources_needed": [
-            "Contract with an external integration specialist firm ($40k)",
-            "Allocate 50 hours/week from existing development team"
+            "€50,000 for CRM and subscription management software (SaaS)",
+            "Internal Sales team retraining workshops"
           ],
-          "success_metric": "Increase the number of unique third-party integrations by 50% in one year.",
+          "success_metric": "Achieve 20% of total revenue from recurring service contracts by end of Year 3.",
           "milestones": [
-            "API documentation overhaul completion (Month 1)",
-            "Onboarding program scaled to 25 partners (Month 3)"
+            "Q1-Q2: Define three core subscription tiers",
+            "Year 2: Full rollout of new revenue stream across all clinics"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "medium"
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct detailed feasibility study and resource allocation plan for the Predictive Maintenance Module.",
-        "owner": "Chief Innovation Officer",
-        "timeframe": "Within 3 weeks"
-      },
-      {
-        "action": "Formalize the KPI framework and establish governance structure for high-risk projects.",
-        "owner": "VP of Strategy",
+        "action": "Establish a dedicated Innovation Steering Committee with board representation to prioritize R&D spending.",
+        "owner": "CEO/COO",
         "timeframe": "Within 1 month"
       },
       {
-        "action": "Initiate Q3 Data Science Sprint to build initial MVP prototype foundation.",
-        "owner": "Head of Engineering",
-        "timeframe": "Within 6 weeks"
+        "action": "Initiate feasibility study and technical white paper for the Precision Diagnostics Platform (Radical Opportunity).",
+        "owner": "CTO/VP of Technology",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Finalize metrics and KPIs tied directly to IPO requirements to ensure innovation investments are clearly justifiable.",
+        "owner": "CFO/Head of Strategy",
+        "timeframe": "End of Q1"
       }
     ],
     "key_weaknesses": [
-      "Reliance on a small, highly specialized engineering team leading to potential single-point-of-failure risk.",
-      "Scaling infrastructure costs quickly as user load increases (cost inefficiency).",
-      "Slow internal communication channels between product development and sales teams causing feature misalignment."
+      "Heavy reliance on manual workflows in non-core operational areas, creating bottlenecks for scaling innovation initiatives.",
+      "Slower than industry peers time-to-market due to the 'partial' process maturity and formal committee decision structure.",
+      "Lack of deep internal expertise in advanced AI/ML deployment necessary to execute high-impact radical opportunities."
     ]
   }
 }

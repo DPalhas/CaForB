@@ -1,0 +1,145 @@
+{
+  "id": "0486",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:27:00.415987+00:00",
+    "duration_ms": 52134,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.423070+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Industries.co",
+      "sector": "Public Administration",
+      "size": "Micro",
+      "companyName": "Nova Industries.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Nova Industries is a micro-firm providing essential municipal services including urban planning, waste management logistics, and social support. Operating within a low regulatory environment allows for agile service delivery, though it exposes the company to risk from rapid shifts in public policy.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The firm attempted to implement a customer self-service portal two years ago using an external agency, which resulted in very low adoption rates. This failure highlighted a lack of upfront market validation regarding user needs and led the company to prioritize internal process optimization over large-scale digital initiatives.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next two years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 5,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The firm operates primarily on a lean budget with limited technical expertise, meaning innovation efforts must be heavily focused on maximizing existing operational workflows before considering new technology investments.",
+      "companyName": "Nova Industries.co",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 3.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation via RPA",
+        "rationale": "Automating repetitive tasks in order processing and invoicing directly addresses the goal of reducing manual labor costs and improving operational efficiency immediately. This is a low-risk, high-ROI initiative that aligns perfectly with the conservative risk appetite.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct an internal audit mapping all top 5 most time-consuming administrative tasks.",
+            "Identify one high-volume administrative task suitable for Robotic Process Automation (RPA) pilot testing."
+          ],
+          "resources_needed": [
+            "One external RPA consultant retainer (budget allocation: 3%)",
+            "Internal time allocated by the founder (5 hours/week)."
+          ],
+          "success_metric": "10% reduction in administrative processing time within Q2.",
+          "milestones": [
+            "Pilot project scope defined and approved (Month 1)",
+            "RPA pilot implementation successful (Month 3)",
+            "Full workflow integration by Month 5"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Data Consolidation for Predictive Maintenance Alerts",
+        "rationale": "Leveraging existing sensor data (waste bins/traffic) to create simple, automated alerts can move the company from reactive maintenance to predictive efficiency. This requires minimal new tech investment and leverages current digital maturity.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate all existing sensor feeds into a centralized database.",
+            "Develop a dashboard showing threshold breaches for proactive scheduling."
+          ],
+          "resources_needed": [
+            "Internal data analyst time (part-time)",
+            "Subscription cost for basic cloud data warehousing service (budget allocation: 2%)"
+          ],
+          "success_metric": "90% accuracy in predicting bin overflow events before they occur.",
+          "milestones": [
+            "Centralized database operational by Month 2",
+            "Alert system implemented and validated (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Low-Code Citizen Service Agent Interface",
+        "rationale": "Developing a highly streamlined, low-code interface for citizens to request specific services (e.g., permit applications) could boldize the service delivery experience, moving beyond simple self-service into guided digital interaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one core high-friction administrative process (e.g., small business permitting).",
+            "Explore using a no-code platform (e.g., Bubble) to prototype the interface."
+          ],
+          "resources_needed": [
+            "Dedicated external UI/UX designer consultation (budget allocation: 5%)",
+            "Founder time dedicated solely to UX flow definition."
+          ],
+          "success_metric": "Achieve 40% digital intake of core service requests within the year.",
+          "milestones": [
+            "Prototype completion and stakeholder review (Month 6)",
+            "Beta testing with a small municipal department (Month 8)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Hold a cross-departmental workshop focused on identifying the top three manual bottlenecks and prioritizing them for RPA.",
+        "owner": "Founder",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Allocate 3% of operating budget immediately to secure initial consulting hours for the RPA pilot project scope definition.",
+        "owner": "Owner Alone",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme reliance on a single founder leading all technical and strategic decisions, creating a bottleneck.",
+      "Minimal digital maturity (Level 1) resulting in high reliance on manual, error-prone processes.",
+      "Severe budget constraints limiting investment flexibility and making radical shifts unfeasible without external funding.",
+      "Lack of dedicated, formal engineering or process management staff to scale efficiency gains."
+    ]
+  }
+}

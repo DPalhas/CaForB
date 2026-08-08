@@ -3,121 +3,158 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Telecommunications",
+    "size": "Small",
     "regulatory_environment": "high",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:05:15.029240+00:00",
-    "duration_ms": 44135,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:44:52.066045+00:00",
+    "duration_ms": 27383,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.265585+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Machining Systems",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Nova Holdings.ai",
+      "sector": "Telecommunications",
+      "size": "Small",
+      "companyName": "Nova Holdings.ai"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Precision Machining Systems operates a medium-sized facility specializing in high-tolerance components for the aerospace sector. The company is heavily regulated due to strict quality control standards and safety mandates inherent in their supply chain.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The last three years have focused primarily on incremental improvements, such as optimizing machine throughput using lean manufacturing principles and updating obsolete software interfaces for compliance reporting. No major radical technological leaps have been attempted.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to improve operational efficiency by 15% through process streamlining and reducing waste, ensuring strict adherence to regulatory standards across all production lines.",
+      "companyDescription": "Nova Holdings provides essential cloud-based unified communications, including scalable PBX infrastructure and contact center solutions tailored for enterprise clients. The company is currently executing a high-stakes migration of legacy on-premise assets to its proprietary cloud platform to improve scalability and maintain service quality. Development efforts are focused on integrating emerging AI capabilities like real-time sentiment analysis to enhance agent performance.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The organization has historically maintained a stable operational model, focusing primarily on maintenance rather than proactive innovation or transformation initiatives. While leadership recognizes the need for modernization in response to market pressure, no formal budget allocations or structured programs have been established for systematic innovation over the past several years.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities as we navigate severe margin compression in the telecom sector. We must systematically identify and eliminate inefficiencies across procurement, platform management, and operational back-office functions to ensure sustainable profitability.",
       "strategicPriority": "efficiency",
       "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core innovation team consists of five engineers and two operations specialists.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 6,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
-        "talent",
+        "budget",
+        "culture",
+        "strategy",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "high",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. The team is highly effective at iterative feature delivery but currently lacks dedicated bandwidth for exploratory R&D due to immediate operational demands.",
+      "additionalContext": "The immediate threat comes from larger competitors offering bundled, cheaper legacy solutions and the increasing regulatory complexity in cross-border data handling.",
+      "companyName": "Nova Holdings.ai"
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 2.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Implement Predictive Maintenance for CNC Machinery",
-        "rationale": "By integrating sensor data into existing maintenance schedules, the company can reduce unplanned downtime and optimize machine utilization, directly improving operational efficiency.",
+        "title": "Legacy Infrastructure Cost Optimization",
+        "rationale": "Conduct a focused audit of existing cloud infrastructure utilization and service contracts to identify immediate underutilized resources or redundant legacy components.",
         "execution_plan": {
           "first_actions": [
-            "Select pilot equipment with embedded IoT sensors.",
-            "Develop a baseline KPI for unplanned downtime reduction."
+            "Perform monthly resource utilization reports for the last quarter.",
+            "Identify three low-hanging fruit contract renegotiations.",
+            "Establish a baseline cost per customer metric.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "$50,000 for sensor hardware and integration software.",
-            "1 dedicated data analyst (part-time)."
+            "30 hours of CTO/Dev time",
+            "Software licensing audit tool (low cost)",
+            "Vendor contact list access"
           ],
-          "success_metric": "Reduction in unplanned machine downtime by 10% within 6 months.",
+          "success_metric": "Achieve 5% reduction in cloud operational expenditure within Q2.",
           "milestones": [
-            "Q3: Pilot program completion and data collection.",
-            "Q4: Full system integration into the maintenance workflow."
+            "Q1 Baseline Audit Complete (Month 1)",
+            "Pilot Renegotiation of Service A (Month 3)"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "Within 6 weeks"
       },
       {
-        "type": "radical",
-        "title": "Automated Quality Assurance via Computer Vision",
-        "rationale": "Implementing a computer vision system could automate critical visual inspection tasks, significantly reducing human error and processing time while meeting high regulatory standards.",
+        "type": "incremental",
+        "title": "AI Transcription Error Reduction",
+        "rationale": "Implement targeted model fine-tuning on the existing AI call transcription feature to improve accuracy, thereby reducing manual agent review time and lowering operational labor costs.",
         "execution_plan": {
           "first_actions": [
-            "Conduct feasibility study on camera placement and AI model training data requirements.",
-            "Identify potential software partnerships."
+            "Define 50 high-error transcripts for retraining data.",
+            "Allocate 1 person (QA/Dev) 5 hours per week for model tuning.",
+            "Measure reduction in average manual review time.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Estimated $150,000 for hardware (cameras) and initial AI development licensing.",
-            "Hiring a specialized ML engineer for 3 months."
+            "Access to specialized ML training platform",
+            "Internal QA time allocation",
+            "Model fine-tuning software subscription"
           ],
-          "success_metric": "Increase in defect detection accuracy by 25% compared to manual inspection.",
+          "success_metric": "Reduce average manual transcription review hours by 15% within one month.",
           "milestones": [
-            "Month 1-2: Data acquisition and model training pipeline setup.",
-            "Month 4: Internal pilot testing on a single production line."
+            "Data preparation and labeling (Month 1)",
+            "Pilot Fine-Tuning Deployment (Month 2)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Customer Onboarding Flow Redesign",
+        "rationale": "Develop a bold, end-to-end automated workflow for new customer provisioning that eliminates human intervention in the initial setup phase, significantly improving efficiency and reducing service delivery costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out current manual onboarding bottlenecks (Shadowing).",
+            "Define a Minimum Viable Automated Onboarding (MVAO) scope.",
+            "Develop a prototype using existing low-code tools.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "External consultant consultation for process mapping",
+            "1 full sprint dedicated solely to automation design",
+            "Internal IT infrastructure access"
+          ],
+          "success_metric": "Reduce customer onboarding time from 48 hours to under 2 hours.",
+          "milestones": [
+            "Process Mapping & Stakeholder Sign-off (Month 1)",
+            "MVAO Prototype Launch (Month 3)"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "long"
+        "timeframe": "Within 6 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to evaluate the feasibility and ROI of Predictive Maintenance.",
-        "owner": "Head of Operations",
+        "action": "Initiate the Legacy Infrastructure Cost Audit.",
+        "owner": "CTO/Finance Lead",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Define and scope the AI Transcription Error Reduction pilot project.",
+        "owner": "Product Owner",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Begin preliminary R&D scouting for computer vision software vendors.",
-        "owner": "CTO/Innovation Lead",
+        "action": "Draft a formal, high-level efficiency roadmap prioritizing short-term wins.",
+        "owner": "CTO",
         "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Update the current internal process documentation to identify all potential bottlenecks causing efficiency loss.",
-        "owner": "Process Manager",
-        "timeframe": "Within 3 weeks"
       }
     ],
     "key_weaknesses": [
-      "Resistance to change due to conservative risk culture",
-      "Outdated legacy machinery requiring high maintenance costs",
-      "Limited internal expertise in advanced data analytics for efficiency gains",
-      "Slow documentation and knowledge transfer processes"
+      "Lack of structured innovation process leading to zero proactive initiative allocation.",
+      "Very low digital maturity (Level 1) causing friction in system integration and reliance on ad-hoc solutions.",
+      "High dependency on single decision-maker (CTO/Owner alone) which limits diversified idea testing.",
+      "Extreme constraint on budget (4%) severely limiting the scope of any non-essential R&D."
     ]
   }
 }

@@ -1,0 +1,150 @@
+{
+  "id": "0353",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:36:59.457502+00:00",
+    "duration_ms": 25647,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan Dynamics.co",
+      "sector": "Manufacturing",
+      "size": "Micro",
+      "companyName": "Titan Dynamics.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts, focusing on extremely tight tolerances required by defense and high-end auto clients. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation to improve throughput and reduce scrap rates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This project involved developing custom CAD templates integrated with our ERP system, which streamlined the quoting process for complex components. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The primary competition comes from larger, established Tier-2 suppliers who offer consolidated solutions. Our immediate challenge is maintaining quality consistency while scaling production capacity to meet the demands of high-growth aerospace contracts.",
+      "companyName": "Titan Dynamics.co",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Quality Assurance (AQA) Integration",
+        "rationale": "Given the focus on precision and medium regulatory requirements, integrating machine vision/AI for in-line quality checks can immediately reduce scrap rates and improve compliance efficiency. This is a low-risk, high-impact incremental step that leverages existing hardware.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot computer vision system on one key machining cell",
+            "Identify necessary sensor upgrades (budget focus)",
+            "Consult with local regulatory experts regarding new component inspection standards"
+          ],
+          "resources_needed": [
+            "€15,000 for hardware/software licenses",
+            "2 person consulting rate (time constraint management)"
+          ],
+          "success_metric": "Reduce material scrap rate by 8% within Q3",
+          "milestones": [
+            "Q1: System selection and proof-of-concept completion",
+            "Q2: Full integration testing on primary product line",
+            "Q3: Operational rollout of AQA pilot"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Digital Twin for Design Optimization",
+        "rationale": "To hit growth targets in a capital-intensive sector, we should pivot from purely physical fabrication to offering 'Design-to-Fabrication' as a service. A lightweight digital twin allows us to simulate material stresses and optimize manufacturing paths before cutting metal, potentially finding efficiencies or new product niches that competitors overlook.",
+        "execution_plan": {
+          "first_actions": [
+            "Hire/contract one specialized mechanical engineering consultant",
+            "Invest in basic simulation software licenses (low cost)",
+            "Define a single high-value component for initial 'Digital Twin' testing."
+          ],
+          "resources_needed": [
+            "€30,000 for specialized software and consulting fees",
+            "Dedicated 1 person (part-time contractor)"
+          ],
+          "success_metric": "Increase design optimization cycle time by 30% while maintaining tolerance accuracy",
+          "milestones": [
+            "Q1: Design of the first optimized component model",
+            "Q2: Validation against physical prototype results",
+            "Q4: Market introduction of 'Design-to-Fabricate' service offering"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Subscription-Based Component Stock Management",
+        "rationale": "To address cash flow constraints and move toward recurring revenue, we can introduce a component stocking service for common aerospace fasteners or brackets. This shifts the business model from pure transactional sales to predictable subscription/inventory management.",
+        "execution_plan": {
+          "first_actions": [
+            "Analyze top 10 components by volume and lead time",
+            "Develop a simple inventory tracking module in existing ERP",
+            "Create tiered 'Just-in-Time' vs. 'Stock-and-Hold' service packages."
+          ],
+          "resources_needed": [
+            "€5,000 for ERP module development/integration",
+            "Internal project team reallocation (time focus)"
+          ],
+          "success_metric": "Achieve 15% of total component sales via recurring inventory contracts by year end",
+          "milestones": [
+            "Q1: Implementation of tracking module and service catalog definition",
+            "Q2: Pilot rollout with one major customer segment",
+            "Q3: Formal pricing structure for subscription services finalized"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate feasibility study and resource allocation for the Digital Twin project.",
+        "owner": "Founder / Small Leadership Team",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Implement immediate process bottlenecks identified by the AQA pilot results.",
+        "owner": "Operations Manager (or designated lead)",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on founder's personal technical expertise, limiting scalable R&D capacity.",
+      "Extreme sensitivity to cash flow due to under €500k revenue ceiling and constrained budget allocation.",
+      "Limited formal talent pipeline; high reliance on external contractors for specialized engineering tasks.",
+      "Inconsistent customer feedback loop management due to informal communication channels."
+    ]
+  }
+}

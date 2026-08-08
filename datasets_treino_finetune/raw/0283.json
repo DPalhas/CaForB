@@ -1,0 +1,157 @@
+{
+  "id": "0283",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:00:43.372289+00:00",
+    "duration_ms": 95450,
+    "attempts": 4,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.348999+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Orbit Innovations",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Large",
+      "companyName": "Orbit Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Music rights and publishing company managing a catalog of 5,000 songs across 200 songwriters and composers. We manage complex sync licensing for TV/film/advertising globally and enforce international copyright standards. Our growth is increasingly dependent on navigating evolving global streaming royalty regulations.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models—potentially a marketplace for independent artists to license their catalogs directly, a subscription-based service layer offering premium data analytics, or a data monetization play built on the proprietary rights data we already collect.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 15,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The industry is rapidly shifting toward generative AI in music and decentralized rights management, demanding continuous technological adaptation.",
+      "companyName": "Orbit Innovations",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Global Content Curation & Discovery Platform",
+        "rationale": "Leveraging proprietary rights data and machine learning to create a hyper-personalized discovery engine for both artists and licensees. This addresses the need for new revenue streams outside traditional sync licensing by facilitating direct fan engagement.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional 'Discovery Lab' team (15 staff) focused on ML pipeline feasibility.",
+            "Secure seed funding for a Minimum Viable Product (MVP) focusing on one niche genre.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Science headcount hire",
+            "Cloud infrastructure spend ($300k)",
+            "External AI consulting firm retainer"
+          ],
+          "success_metric": "Achieve 50,000 monthly active users (MAU) within the first 12 months.",
+          "milestones": [
+            "Q2: MVP development completion and internal testing.",
+            "Q3: Beta launch with select industry partners.",
+            "Q4: Commercial pilot rollout."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "bold",
+        "title": "Blockchain-Based Royalty Transparency System (Pilot)",
+        "rationale": "Invest in pilot programs using blockchain technology to track fractional royalty payments across the 200 songwriters and composers. This radically improves trust and reduces administrative friction, which is a major pain point for stakeholders.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a small, manageable subgroup of rights holders willing to participate in a pilot.",
+            "Partner with two specialized blockchain tech vendors.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Legal compliance review ($100k)",
+            "Blockchain development team contract",
+            "Limited proof-of-concept infrastructure budget"
+          ],
+          "success_metric": "Reduce royalty dispute resolution time by 40% during the pilot phase.",
+          "milestones": [
+            "Q3: Legal framework finalized and vendor selection complete.",
+            "Q4: Pilot implementation with initial rights group."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "B2B Data Monetization Analytics Suite",
+        "rationale": "Develop and market a SaaS layer offering high-level, anonymized trend data on music consumption patterns to major media companies. This incrementally diversifies revenue by turning existing assets into data products.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the core data schema required for B2B analytics (e.g., sync trends vs. streaming behavior).",
+            "Develop a dedicated sales and marketing unit focused on enterprise accounts.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Data Analytics team expansion ($150k)",
+            "Marketing and Sales software licenses ($200k)"
+          ],
+          "success_metric": "Secure 3 paying enterprise clients generating $2M ARR within 18 months.",
+          "milestones": [
+            "Q2: Data product prototype finalized.",
+            "Q3: Go-to-market strategy and initial client acquisition begins."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-departmental steering committee for the AI Discovery Platform initiative.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct vendor selection and legal scoping review for Blockchain pilot project.",
+        "owner": "Director of R&D",
+        "timeframe": "End of Q3"
+      },
+      {
+        "action": "Develop a detailed 5-year diversification roadmap prioritizing the high-growth potential areas identified by the innovation committee.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and slow alignment across divisions required for large projects.",
+      "Limited current investment in emerging technologies (AI/Blockchain) relative to competitive needs.",
+      "High dependence on legacy systems which complicates rapid integration and scaling of new digital initiatives.",
+      "Talent gap in specialized data science and decentralized ledger technology expertise."
+    ]
+  }
+}

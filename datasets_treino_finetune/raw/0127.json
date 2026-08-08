@@ -1,0 +1,145 @@
+{
+  "id": "0127",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:39:26.106566+00:00",
+    "duration_ms": 25228,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vertex Labs",
+      "sector": "Education",
+      "size": "Large",
+      "companyName": "Vertex Labs"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vertex Labs is an EdTech startup providing an AI-powered math tutoring platform for middle and high school students. It utilizes proprietary algorithms to generate adaptive problem sets tailored to individual knowledge gaps in real-time. The company manages 30,000 active student users across 200 schools, focusing heavily on natural language step-by-step solution explanations and automated curriculum alignment to meet evolving state standards.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Vertex Labs recently piloted an ML model that personalized lesson pacing for high school algebra students, resulting in a measurable increase in engagement metrics compared to static curriculum delivery. They also integrated a basic LMS API for seamless data syncing with district systems, which streamlined administrative reporting but highlighted the complexity of achieving full interoperability across disparate enterprise platforms.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities as we navigate rising operational costs in cloud computing and specialized AI development talent. Our industry is currently experiencing severe margin compression due to increasing competition from global platforms and the need for hyper-personalized learning solutions. We must systematically identify and eliminate inefficiencies across content creation pipelines, operational support, and student onboarding processes to maintain profitability.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 16,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Despite the heavy focus on efficiency, there is a growing internal desire to explore disruptive B2B revenue streams, such as selling aggregated learning data insights to educational institutions for strategic planning. This tension between short-term cost savings and long-term radical innovation creates a challenging environment for project prioritization.",
+      "companyName": "Vertex Labs",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI Content Generation Pipeline Automation",
+        "rationale": "Implementing generative AI to rapidly produce diverse math problem sets and customized solution explanations could significantly reduce manual content creation time and operational costs. This directly addresses the 'efficiency' priority by scaling production while maintaining quality control.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot GenAI tools for 5 core subject areas",
+            "Define clear input/output standards for automated curriculum alignment"
+          ],
+          "resources_needed": [
+            "Subscription to specialized LLM APIs (e.g., GPT-4)",
+            "1 dedicated ML prompt engineering resource"
+          ],
+          "success_metric": "30% reduction in content creation time per module",
+          "milestones": [
+            "Q1: Prototype GenAI workflow for Algebra and Geometry",
+            "Q2: Integrate with 50% of curriculum team",
+            "Q3: Full integration into automated testing suite"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Enterprise Data Monetization Platform (B2B SaaS)",
+        "rationale": "Moving beyond core tutoring to creating a premium B2B data service that aggregates anonymized performance metrics and predictive analytics for district-level strategic planning. This taps into the 'bold' risk appetite and could create a new, high-margin revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on aggregated student data sales models",
+            "Establish a dedicated B2B strategy task force"
+          ],
+          "resources_needed": [
+            "1 Data Scientist specializing in predictive modeling",
+            "External legal counsel for data privacy (FERPA/GDPR)"
+          ],
+          "success_metric": "Secure 3 pilot agreements with medium-sized school districts by Year End",
+          "milestones": [
+            "Q1: Market validation and MVP feature definition",
+            "Q3: Secure first paying B2B client contract",
+            "Q4: Launch scaled data reporting dashboard"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Legacy System Integration Optimization",
+        "rationale": "Focusing on streamlining the integration of the new adaptive platform with existing, complex legacy district management systems. This addresses a key internal 'process' barrier by reducing friction and time spent on manual data mapping.",
+        "execution_plan": {
+          "first_actions": [
+            "Map all necessary API endpoints for primary LMS/SIS",
+            "Develop a standardized middleware layer protocol"
+          ],
+          "resources_needed": [
+            "1 Backend Integration Engineer",
+            "Cloud infrastructure resources for staging environments"
+          ],
+          "success_metric": "Reduce average data mapping time from 4 weeks to under 1 week",
+          "milestones": [
+            "Month 1: Complete API documentation audit",
+            "Month 3: Deploy middleware MVP for one district client",
+            "Month 6: Full workflow implementation across all major systems"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to evaluate the feasibility of 'Enterprise Data Monetization Platform' (Radical Opportunity)",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate pilot project for GenAI content automation to test immediate efficiency gains in curriculum development.",
+        "owner": "Head of Product/R&D",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and slow cross-divisional alignment required for large projects.",
+      "High dependency on a small leadership team, limiting decentralized decision-making speed.",
+      "Internal tension between prioritizing short-term cost efficiency goals versus long-term radical market disruption.",
+      "Partial innovation process structure hinders rapid scaling of successful pilot initiatives."
+    ]
+  }
+}

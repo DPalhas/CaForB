@@ -3,146 +3,128 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Transportation & Logistics",
-    "size": "Medium",
+    "sector": "Fintech",
+    "size": "Small",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:32:59.180817+00:00",
-    "duration_ms": 48027,
-    "attempts": 2
+    "generated_at": "2026-08-03T18:12:37.014194+00:00",
+    "duration_ms": 25581,
+    "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "AuraFlow Logistics Solutions",
-      "sector": "Transportation & Logistics",
-      "size": "Medium"
+      "name": "Core Partners",
+      "sector": "Fintech",
+      "size": "Small",
+      "companyName": "Core Partners"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "AuraFlow Logistics is a medium-sized provider specializing in last-mile delivery optimization for e-commerce businesses. The company operates primarily across regional hubs, focusing on minimizing operational costs through route planning and fleet utilization.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "They recently implemented an AI-driven dynamic routing system to reduce fuel consumption by 15% and successfully piloted a subscription-based tracking module for key enterprise clients. These initiatives focused heavily on process improvement and resource optimization.",
+      "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. The company leverages streamlined APIs for market data, while recently expanding into regulated savings plans for users in developing markets. It is a growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This project was cross-functional involving product, compliance, and customer success teams, demonstrating early gains in operational efficiency. Early NPS scores for new customers onboarded through this streamlined flow are 22 points higher than the legacy process.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to significantly improve operational efficiency across the supply chain while maintaining high customer retention rates through superior service reliability.",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount—we want to do more with our existing team.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "A mid-sized, cross-functional team of 35 people including dedicated data scientists and operations managers. The team is structured to support both maintaining current service quality and driving technological improvements.",
-      "digitalMaturity": 4,
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 12,
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 10,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "process",
-        "talent",
-        "time"
+        "budget",
+        "strategy",
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is increasingly demanding faster and more transparent delivery options, requiring continuous technological adaptation to stay competitive."
+      "competitivePressure": "low",
+      "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect.",
+      "companyName": "Core Partners",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
     }
   },
   "output": {
-    "maturity_score": 8.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Autonomous Predictive Scheduling Platform (APSP)",
-        "rationale": "Developing a fully autonomous system that predicts traffic, weather, and demand fluctuations in real-time across the entire regional fleet could radically optimize routing beyond current static models. This addresses efficiency goals by eliminating manual decision latency.",
+        "type": "incremental",
+        "title": "Automated Compliance & Reporting Workflow",
+        "rationale": "Implementing workflow automation for compliance checks and regulatory reporting can significantly reduce manual intervention costs and the risk of human error in a low-regulatory environment. This is a high-ROI efficiency win that directly supports the strategic goal of expense reduction.",
         "execution_plan": {
           "first_actions": [
-            "Conduct feasibility study for ML model training on existing historical logistics data.",
-            "Allocate dedicated time (2 months) and budget for a pilot API integration."
+            "Audit current manual reporting processes across order processing and compliance",
+            "Select off-the-shelf automation tool for basic report generation (e.g., Zapier integration or low-code platform)",
+            "Pilot the automated flow for one key product line."
           ],
           "resources_needed": [
-            "Data science consultant fee ($50k)",
-            "Cloud computing resources for simulation ($20k)"
+            "50 hours of engineering time for process mapping",
+            "$5,000 budget for automation licensing/setup",
+            "Internal compliance team consultation (part-time)"
           ],
-          "success_metric": "Reduction in average route completion time by 30% within 18 months.",
+          "success_metric": "Reduction in manual reporting FTE hours by 30% within 6 months.",
           "milestones": [
-            "Q1: Data pipeline validation and model architecture finalization",
-            "Q2: Pilot deployment on a single regional lane",
-            "Q4: Scalability assessment for full fleet integration"
+            "Month 1: Process Mapping Complete",
+            "Month 3: Pilot Automation Deployed",
+            "Month 6: Full Deployment & ROI Calculation"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Automated Trading Strategy Engine",
+        "rationale": "Developing a proprietary robo-advisory engine using machine learning to generate dynamic, personalized investment recommendations. This is a radical step that leverages our data advantage to create scalable value and differentiate the platform from pure commission-free traders.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify core user data points suitable for initial ML modeling (e.g., risk profile, ESG preferences)",
+            "Allocate 15% of senior engineer time to proof-of-concept prototype development",
+            "Source external machine learning consultant for initial architecture advice."
+          ],
+          "resources_needed": [
+            "Contract fee for specialized ML architect (capped at $8k)",
+            "Cloud compute costs ($2k/month for prototyping environment)",
+            "Focus on leveraging existing data pipelines."
+          ],
+          "success_metric": "Successful deployment of a personalized portfolio recommendation feature with 50 active users and an average retention rate improvement of 10%.",
+          "milestones": [
+            "Month 2: Data Pipeline Readiness Check",
+            "Month 5: MVP Strategy Engine Prototype Complete",
+            "Month 9: Beta Launch for Internal Users"
           ]
         },
         "impact": "high",
-        "difficulty": "high",
-        "timeframe": "medium"
-      },
-      {
-        "type": "incremental",
-        "title": "Warehouse Automation Integration (WAI)",
-        "rationale": "Integrating low-cost robotic sorting and inventory tracking systems in the central distribution hub will incrementally improve throughput and accuracy, directly addressing internal process inefficiencies.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify three high-volume handling tasks for initial automation testing.",
-            "Conduct a cost-benefit analysis comparing CapEx vs. OpEx savings."
-          ],
-          "resources_needed": [
-            "Hardware procurement and installation ($80k)",
-            "Internal project team hours (10% staff allocation)"
-          ],
-          "success_metric": "Reduction in manual picking errors by 40%.",
-          "milestones": [
-            "Month 3: Vendor selection and contract finalization",
-            "Month 6: Pilot installation in one warehouse module",
-            "Month 9: Full operational rollout across two modules"
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "incremental",
-        "title": "Dynamic Pricing Model for Small Vendors",
-        "rationale": "Implementing a simple dynamic pricing model that optimizes the cost structure for smaller, localized service providers will incrementally improve margin efficiency and vendor satisfaction.",
-        "execution_plan": {
-          "first_actions": [
-            "Develop MVP algorithm based on supply/demand elasticity.",
-            "Conduct internal training for sales team on new pricing structures."
-          ],
-          "resources_needed": [
-            "Software development resources (internal allocation)",
-            "Marketing materials budget ($15k)"
-          ],
-          "success_metric": "Increase in average vendor contract renewal rate by 10%.",
-          "milestones": [
-            "Month 2: Algorithm completion and internal testing",
-            "Month 4: Soft launch with a select group of vendors",
-            "Month 6: Full integration into primary sales pipeline"
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
+        "difficulty": "medium",
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional steering committee to oversee the APSP feasibility study.",
-        "owner": "Chief Operations Officer (COO)",
+        "action": "Establish a formal 'Efficiency Task Force' to map all manual workflows and prioritize the top three ROI opportunities.",
+        "owner": "CEO / Operations Lead",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Conduct a low-cost market analysis on adjacent fintech automation tools to assess external talent acquisition needs for process improvement.",
+        "owner": "Head of Engineering",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Define clear, measurable KPIs tied directly to the strategic goal (15% OpEx reduction) and communicate them clearly to the team.",
+        "owner": "Finance Lead",
         "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Initiate vendor RFPs for Warehouse Automation hardware and software solutions.",
-        "owner": "Director of IT/Procurement",
-        "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Launch a rapid internal workshop on data literacy to upskill the operational team.",
-        "owner": "Head of Talent Development",
-        "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "Reliance on legacy planning software requiring significant manual intervention.",
-      "Limited in-house data science talent specializing in predictive logistics modeling.",
-      "Siloed communication between the sales, operations, and IT departments hindering rapid change adoption."
+      "High reliance on manual processes leading to operational bottlenecks.",
+      "Extremely limited budget (10%) severely restricting investment in new technology and talent acquisition.",
+      "Partial innovation process resulting in inconsistent project execution and governance."
     ]
   }
 }

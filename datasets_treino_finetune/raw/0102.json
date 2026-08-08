@@ -1,0 +1,120 @@
+{
+  "id": "0102",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:29:10.067380+00:00",
+    "duration_ms": 21548,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Orbit Networks",
+      "sector": "Public Administration",
+      "size": "Medium",
+      "companyName": "Orbit Networks"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Orbit Networks is a large metropolitan public transportation authority managing a complex bus and light rail network with 200 vehicles, 60 routes, and servicing approximately 45 million annual passenger journeys. The core mission involves maintaining operational efficiency while simultaneously navigating evolving urban mobility demands.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures across the fleet, successfully demonstrating a 15% reduction in unplanned downtime. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated due to proprietary hardware interfaces.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering two new geographic markets through expansion of light rail services and launching a direct-to-consumer MaaS (Mobility as a Service) channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The authority operates within a highly competitive urban mobility landscape, facing pressure from private ride-sharing and emerging micro-mobility solutions that threaten traditional transit ridership. Regulatory hurdles are generally stable but require proactive engagement for new service expansions.",
+      "companyName": "Orbit Networks",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Maintenance Scaling",
+        "rationale": "Orbit already has a proven track record of using IoT sensors to reduce downtime; scaling this intelligence across the entire network will yield immediate operational cost savings and improve service reliability.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop an integration roadmap for existing sensor data streams into a centralized ML model",
+            "Pilot AI scheduling optimization in one high-frequency metro line segment"
+          ],
+          "resources_needed": [
+            "Data Scientist contract (short term)",
+            "Cloud compute resources allocation ($50k)"
+          ],
+          "success_metric": "Achieve 8% reduction in unplanned vehicle downtime within 6 months",
+          "milestones": [
+            "Q1: Model training completion and validation",
+            "Q2: Operational integration into maintenance workflow"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "MaaS Platform Integration and Direct Consumer Service Launch",
+        "rationale": "To meet the strategic goal of customer acquisition, Orbit should explore a radical shift toward a MaaS platform that integrates transit ticketing with third-party services (e.g., bike sharing, on-demand shuttles), creating a unified digital product.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study for API partnerships with local mobility providers",
+            "Establish a dedicated cross-functional 'MaaS Incubation' team (4 people)"
+          ],
+          "resources_needed": [
+            "UX/UI design consultancy retainer ($100k)",
+            "Strategic partnership development budget ($250k)"
+          ],
+          "success_metric": "Onboard 50,000 active direct-to-consumer users within 18 months",
+          "milestones": [
+            "Q3: Final MaaS feature set definition and MVP scope",
+            "Q4: Launch beta program in one pilot geographic zone"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct detailed competitive analysis for MaaS platform integration feasibility.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Allocate specific budget tranche ($150k) to the 'MaaS Incubation' team and define core technical requirements for API partnerships.",
+        "owner": "Director of Technology",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budgetary constraints (5% allocation) which severely limits funding for radical growth initiatives.",
+      "Cultural inertia regarding adopting new, non-legacy technologies required for MaaS integration.",
+      "High dependency on specialized talent retention within the R&D function due to intense competition in the tech sector."
+    ]
+  }
+}

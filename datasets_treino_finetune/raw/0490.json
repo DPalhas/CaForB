@@ -1,0 +1,148 @@
+{
+  "id": "0490",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:28:35.733176+00:00",
+    "duration_ms": 27301,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vault Analytics",
+      "sector": "Healthcare & Medical",
+      "size": "Large",
+      "companyName": "Vault Analytics"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vault Analytics is a provider of comprehensive home healthcare services, managing complex logistics for nursing, physiotherapy, and palliative care across diverse regions. They currently manage a highly skilled workforce of 180 professionals with strict compliance requirements related to patient data privacy and state licensing.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base – our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization.",
+      "additionalContext": "The industry is seeing rapid adoption of remote patient monitoring (RPM) and telehealth services, presenting a massive opportunity for diversification beyond traditional in-home care. However, regulatory hurdles regarding interstate licensing and data security currently slow down aggressive market expansion efforts.",
+      "companyName": "Vault Analytics"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Care Pathway Optimization",
+        "rationale": "Leveraging the existing data warehouse and RPA capabilities to implement AI models that predict patient needs proactively can improve operational efficiency and personalize service delivery. This incremental step strengthens core offerings while preparing for future scaling.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a machine learning model for dynamic scheduling optimization in one geographic region.",
+            "Establish an internal task force to define data governance standards for predictive analytics."
+          ],
+          "resources_needed": [
+            "2 Data Scientists (3 months)",
+            "Software licensing for ML platform integration (€50k)"
+          ],
+          "success_metric": "15% reduction in average patient response time within the pilot region.",
+          "milestones": [
+            "Model prototype completion (Q2)",
+            "Full rollout to 3 business units (Q4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12-18 months"
+      },
+      {
+        "type": "radical",
+        "title": "Subscription Telehealth Platform Launch (RPM Focus)",
+        "rationale": "Develop a wholly new revenue stream by packaging home care services with continuous remote monitoring technology. This diversification addresses the customer concentration risk and taps into the high-growth telehealth market, requiring significant investment in hardware integration.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market viability study for RPM subscription models.",
+            "Secure initial partnerships with third-party medical device providers."
+          ],
+          "resources_needed": [
+            "Dedicated product development team (€200k)",
+            "Partnership integration costs (€150k)"
+          ],
+          "success_metric": "Achieve 5% recurring revenue from new subscription services within three years.",
+          "milestones": [
+            "Proof of Concept (PoC) for RPM service in one state (Year 1)",
+            "Launch minimum viable product (MVP) platform (€400k budget allocation)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3-5 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Specialized Niche Service Line Development (Palliative/Chronic Care)",
+        "rationale": "Target underserved patient segments, such as those requiring specialized chronic disease management or advanced palliative care, which are currently under-served. This leverages existing nursing expertise to create premium service packages and new client acquisition channels.",
+        "execution_plan": {
+          "first_actions": [
+            "Map unmet needs based on customer NPS feedback analysis.",
+            "Develop a standardized clinical protocol for the targeted niche."
+          ],
+          "resources_needed": [
+            "Clinical training budget (€50k)",
+            "Marketing materials development (€20k)"
+          ],
+          "success_metric": "Increase revenue share from new niche clients by 10% within 3 years.",
+          "milestones": [
+            "Pilot service launch in one state (Year 2)",
+            "Establish a national brand presence for the specialized unit (Year 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "1-3 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated 'Diversification Task Force' to evaluate the feasibility of the RPM subscription model.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate a cross-functional audit (Legal, Tech, Operations) to map regulatory hurdles for remote patient monitoring expansion.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Identify and secure initial data requirements/pilot partners for the AI-driven care pathway optimization project.",
+        "owner": "Head of Digital Transformation Office",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on a concentrated customer base (top 3 clients represent 55% revenue).",
+      "Cultural resistance to radical change due to existing formal process inertia.",
+      "Slow strategic agility in pivoting away from the core product category toward new business models.",
+      "Over-reliance on manual, decentralized decision-making despite having a formal corporate structure."
+    ]
+  }
+}

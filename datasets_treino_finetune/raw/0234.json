@@ -1,0 +1,149 @@
+{
+  "id": "0234",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:28:05.918648+00:00",
+    "duration_ms": 24188,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina",
+      "sector": "SaaS / Software",
+      "size": "Medium",
+      "companyName": "Lumina"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Vertical SaaS providing compliance management software for the pharmaceutical industry covering GxP training, deviation tracking, and audit readiness. The company serves 85 enterprise customers, including three of the top ten global pharma companies, maintaining SOC 2 Type II certification to ensure high data integrity.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through quarterly hackathons, a formal patent portfolio strategy, and an 'innovation fellow' program. Their last successful initiative involved developing a prototype for automated quality inspection using computer vision which significantly reduced defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. The goal is to build robust competitive moats, focusing on deep process differentiation and exclusive partnerships that are too costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 14,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company recently completed a merger with a similarly-sized competitor, leading to significant operational duplication across CRMs and HR systems. This creates an urgent window to redesign core processes from scratch while simultaneously managing fragile cultural integration and mitigating change fatigue.",
+      "companyName": "Lumina",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Compliance Scoring",
+        "rationale": "Integrate machine learning models into the current deviation tracking system to proactively flag potential regulatory risks before they become critical errors. This builds a proprietary predictive capability that competitors lack.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot ML model integration on 10 key client datasets.",
+            "Allocate dedicated data science sprint team resources."
+          ],
+          "resources_needed": [
+            "Data Scientist (Contract)",
+            "Cloud Computing Credits ($5k)",
+            "API Integration Engineering Time"
+          ],
+          "success_metric": "Reduction in 'critical deviation' incidents by 20% within Q3.",
+          "milestones": [
+            "Prototype completion: End of Month 1",
+            "Pilot deployment feedback incorporated: End of Month 4"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Low-Code Workflow Builder MVP",
+        "rationale": "Accelerate client customization by launching the no-code workflow builder mentioned. This improves time-to-value and strengthens customer lock-in through highly tailored operational flows.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and integrate a specific low-code platform vendor.",
+            "Define core compliance use cases for MVP."
+          ],
+          "resources_needed": [
+            "Low-Code Platform Licensing ($20k)",
+            "Product Designer Time",
+            "Customer Success Support Scaling"
+          ],
+          "success_metric": "Increase in client custom workflow adoption rate by 30% within the year.",
+          "milestones": [
+            "MVP Launch: End of Quarter 1",
+            "Feature set expansion based on NPS feedback: End of Month 6"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Compliance Risk Intelligence Platform (Moat)",
+        "rationale": "Move beyond reactive tracking to a radical shift in product offering: creating an external data feed and analytics platform that synthesizes industry-wide regulatory changes and competitor activity. This creates an information moat that makes Lumina indispensable as the trusted source for proactive risk management.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish partnerships with industry trade organizations.",
+            "Launch a dedicated 'Intelligence Team' focused solely on external data aggregation."
+          ],
+          "resources_needed": [
+            "External Data Licensing/Partnership Fees ($50k)",
+            "Dedicated Risk Analyst Role",
+            "Sales Enablement Training"
+          ],
+          "success_metric": "Securing 3 major industry partnership contracts within 12 months.",
+          "milestones": [
+            "Intelligence platform beta launch: End of Month 9",
+            "Monetization pilot based on intelligence reports: End of Year 1"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Finalize the internal process redesign roadmap to eliminate duplication between merged teams.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Secure seed funding and executive buy-in for the 'Strategic Risk Intelligence Platform' project.",
+        "owner": "VP of Product",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Establish a cross-functional 'Agile Integration Task Force' to manage cultural change fatigue.",
+        "owner": "HR Lead / Project Sponsor",
+        "timeframe": "Ongoing (Monthly check-ins)"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragile cultural integration following the merger presents a significant risk of project stagnation and talent attrition.",
+      "The formal innovation process is too rigid, potentially stifling the rapid iteration required by a 'bold' risk appetite.",
+      "Reliance on internal staff for specialized AI/ML capabilities limits deep technical customization needed to defend against highly agile competitors."
+    ]
+  }
+}

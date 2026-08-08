@@ -1,0 +1,147 @@
+{
+  "id": "0247",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T23:06:12.365919+00:00",
+    "duration_ms": 44383,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus.tech",
+      "sector": "Telecommunications",
+      "size": "Small",
+      "companyName": "Nexus.tech"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment, Nexus.tech is focused on stabilizing its core network while exploring next-generation service offerings like XGS-PON upgrades and integrated IPTV solutions.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs for several years. Our operational model has remained largely unchanged due to resource constraints, meaning we lack formal processes, documented ideation pipelines, or committed timelines for future technology adoption.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market through strategic geographical expansion, potentially pivot pricing models from one-time installation fees to recurring subscription services (including enterprise SLAs), and build a repeatable enterprise sales motion that moves beyond simple residential service contracts.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense competition from established national players and emerging fixed wireless providers. While regulatory hurdles are low, competitive pressure is high regarding service quality and bundling options.",
+      "companyName": "Nexus.tech",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Fixed Wireless Access (FWA) Hybrid Offering",
+        "rationale": "Given the high competitive pressure and limited fiber build-out costs in rural areas, developing a hybrid fixed wireless service could rapidly expand addressable market share. This would allow Nexus.tech to capture non-fiber customers quickly while maintaining its current low capital expenditure profile.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on three target municipalities for FWA deployment.",
+            "Identify core operational assets suitable for rapid leasing and integration."
+          ],
+          "resources_needed": [
+            "Pilot partnership budget (€15,000)",
+            "Internal engineering time reallocation (2 FTE equivalent)"
+          ],
+          "success_metric": "Acquire 50 new subscribers via hybrid service within 6 months.",
+          "milestones": [
+            "Q3: Finalize business case and secure equipment quotes.",
+            "Q4: Launch pilot FWA service in one target municipality."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "XGS-PON Network Upgrade & Service Tiering",
+        "rationale": "Upgrading the existing fiber infrastructure to XGS-PON will increase bandwidth capacity by 10x, allowing for premium service tiers and better support for growing enterprise customers. This is a necessary technical step to secure recurring revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Engage equipment vendor for detailed upgrade cost analysis.",
+            "Develop a phased deployment plan targeting the highest density areas."
+          ],
+          "resources_needed": [
+            "Capital expenditure (€150,000)",
+            "Network engineering consultation"
+          ],
+          "success_metric": "Achieve 80% network coverage in core municipalities by EOY.",
+          "milestones": [
+            "Q2: Finalize vendor selection and budget.",
+            "Q4: Complete pilot XGS-PON deployment."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Simplified B2B Managed Service Tier 1",
+        "rationale": "To build the required enterprise sales motion, Nexus.tech can launch a basic managed service tier focusing on network stability and simplified billing for local businesses. This leverages existing core expertise to open up new revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Document current technical capabilities for B2B use cases.",
+            "Develop a standardized, low-cost service contract template."
+          ],
+          "resources_needed": [
+            "Legal consultation (low cost)",
+            "Marketing time allocation (€50k)"
+          ],
+          "success_metric": "Secure 3 pilot B2B contracts within the medium term.",
+          "milestones": [
+            "Q1: Complete service definition and pricing matrix.",
+            "Q3: Launch introductory B2B sales outreach."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, albeit informal, 'Innovation Steering Group' (3-4 key stakeholders) to begin identifying and prioritizing the XGS-PON upgrade scope.",
+        "owner": "Senior Engineer / Operations Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a detailed cost/benefit analysis for the Fixed Wireless Access (FWA) pilot, defining required technical standards and securing preliminary vendor interest.",
+        "owner": "Business Development Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Formalize a 'Time Allocation Policy' to ensure that senior engineering time is protected for strategic exploration initiatives, shielding them from urgent operational interruptions.",
+        "owner": "Owner / CEO",
+        "timeframe": "End of Q1"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal innovation process and systematic idea capture mechanisms.",
+      "Extreme resource constraint, leading to constant prioritization of immediate operational demands over strategic exploration.",
+      "Low digital maturity preventing automated or scalable service offerings.",
+      "Reliance on owner-alone decision-making, risking tunnel vision in the face of high competitive pressure."
+    ]
+  }
+}

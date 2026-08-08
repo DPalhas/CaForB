@@ -3,70 +3,76 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
     "regulatory_environment": "high",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:07:36.827758+00:00",
-    "duration_ms": 46391,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:47:10.234698+00:00",
+    "duration_ms": 25140,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.267583+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metals Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Forge Analytics",
+      "sector": "Professional & Consulting Services",
+      "size": "Large",
+      "companyName": "Forge Analytics"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Precision Metals specializes in the production of high-grade aerospace components. The company operates within a highly regulated environment due to stringent quality and environmental standards required for defense contracts. It employs specialized labor and utilizes advanced CNC machinery.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "Over the last three years, the company has focused on incremental improvements in material usage and workflow optimization. They successfully implemented a partial digital upgrade to their inventory tracking system but have not yet adopted fully integrated AI-driven process automation.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goals are to reduce operational overhead by 15% through process streamlining and enhance product quality consistency. The company aims to maintain compliance while simultaneously lowering the cost per unit produced for key contracts.",
+      "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. The firm employs a team of 12 organizational psychologists and facilitators to deliver high-stakes solutions across various industries. Seeking a digital learning platform and operational tools to complement in-person workshops.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. This experience highlighted a critical gap in institutionalizing successful small-scale initiatives.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The core innovation team consists of 5 dedicated engineering and operations specialists who work closely with management to implement change.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
+        "budget",
         "process",
-        "talent",
-        "culture",
-        "time"
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "The firm operates in a highly regulated space where client data security and compliance are paramount. Innovation must proceed through rigorous internal gate reviews to ensure zero legal or ethical liabilities.",
+      "companyName": "Forge Analytics",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Lean Manufacturing Workflow Redesign",
-        "rationale": "Implementing standard Lean principles for material flow can reduce waste and operational cycle times without risking regulatory non-compliance. This directly targets the efficiency priority.",
+        "title": "Workflow Automation for Internal Reporting",
+        "rationale": "Implementing low-code automation tools to handle repetitive internal reporting tasks directly addresses the strategic goal of increasing operational throughput while minimizing risk. This is a high-ROI, low-risk initiative that uses existing infrastructure.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a 30-day process mapping exercise in the machining department",
-            "Pilot Kanban system implementation for raw material inventory tracking"
+            "Identify three most time-consuming manual reports.",
+            "Pilot a simple RPA (Robotic Process Automation) tool on one report.",
+            "Develop a compliance and security review checklist for the pilot."
           ],
           "resources_needed": [
-            "1 Operations Analyst FTE (part-time)",
-            "Software for process visualization tools ($5,000)"
+            "Contract for low-code platform license",
+            "10 hours of internal analyst time",
+            "Internal legal/compliance sign-off (minimal cost)"
           ],
-          "success_metric": "Reduce machine idle time by 12% within Q3",
+          "success_metric": "Reduction in manual reporting time by 30% within Q3.",
           "milestones": [
-            "Q2: Complete process mapping and resource allocation",
-            "Q3: Full pilot of Kanban system in one production line"
+            "Q2: Vendor selection and security vetting complete",
+            "Q3: Pilot launch and initial performance metrics established",
+            "Q4: Full department rollout planning based on pilot success"
           ]
         },
         "impact": "medium",
@@ -75,49 +81,48 @@
       },
       {
         "type": "incremental",
-        "title": "Regulatory Compliance Automation (Tier 1)",
-        "rationale": "Automating the data collection and reporting for standard compliance checks will reduce manual entry errors and ensure faster regulatory sign-offs, improving efficiency.",
+        "title": "AI-Driven Competency Mapping Platform",
+        "rationale": "Developing a proprietary AI model to analyze existing client data and automatically map skill gaps against desired leadership competencies could revolutionize how Forge Analytics delivers custom programs. While technically demanding, it offers high potential for creating a new service offering.",
         "execution_plan": {
           "first_actions": [
-            "Identify three repetitive documentation tasks requiring manual review",
-            "Evaluate low-code automation tools (e.g., RPA) feasibility for data extraction"
+            "Form a small cross-functional 'Tiger Team' (Strategy, Tech, Psych).",
+            "Conduct a comprehensive data audit of existing program outcomes.",
+            "Define the minimum viable product (MVP) using off-the-shelf ML tools."
           ],
           "resources_needed": [
-            "Consultant specializing in industry compliance ($10,000)",
-            "Licensing fees for RPA software ($2,000)"
+            "Hiring 1 specialized Data Scientist (stipend/contract)",
+            "Cloud computing resources for model training",
+            "3 months dedicated project time from senior staff"
           ],
-          "success_metric": "Reduce documentation review time by 40% and eliminate manual data entry errors",
+          "success_metric": "Successful development of a functional MVP capable of generating competency reports, achieving 50% feature utilization by Q4.",
           "milestones": [
-            "Q3: Final selection of automation tool",
-            "Q4: Successful deployment on one compliance reporting module"
+            "Q1: Project charter approved and team assembled",
+            "Q2: Core data pipeline built and initial model training complete",
+            "Q3: Internal soft launch to select corporate clients"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "9 months"
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to define the scope and success metrics for the Lean Manufacturing Workflow Redesign.",
+        "action": "Establish a structured, lightweight innovation pipeline (Idea Submission -> Screening -> Portfolio Review) to address the 'informal process' barrier.",
+        "owner": "Head of Innovation/Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Allocate and secure funding for the Q3 workflow automation pilot, ensuring it aligns with the conservative budget constraints.",
         "owner": "VP of Operations",
-        "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Conduct an internal audit of current documentation processes against key regulatory standards (e.g., ISO, specific defense standards).",
-        "owner": "Compliance Officer",
-        "timeframe": "Within 3 weeks"
-      },
-      {
-        "action": "Schedule a meeting with the small leadership team to review and approve the initial budget request for the process mapping phase.",
-        "owner": "CEO",
-        "timeframe": "Within 1 week"
+        "timeframe": "Within 8 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on manual data entry, leading to potential errors and time waste.",
-      "Siloed knowledge among senior engineering staff hindering cross-departmental efficiency gains.",
-      "Conservative adoption of AI/ML technologies due to perceived high initial integration cost."
+      "Lack of institutionalized innovation process leading to wasted side projects (process weakness).",
+      "Low digital maturity requiring foundational investment in infrastructure and skill development.",
+      "Decision-making bottleneck due to reliance on a slow, formal committee structure.",
+      "Limited budget allocation for proactive, non-essential exploratory innovation."
     ]
   }
 }

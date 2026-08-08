@@ -1,0 +1,121 @@
+{
+  "id": "0290",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:04:39.292555+00:00",
+    "duration_ms": 51226,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.352631+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Synapse",
+      "sector": "Legal Services",
+      "size": "Medium",
+      "companyName": "Synapse"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Synapse is a boutique litigation firm specializing in complex commercial disputes and white-collar defense, managing a high volume of intricate documentation. The team leverages proprietary document collections to provide deep expertise across multiple international jurisdictions. While highly specialized, the firm operates with distinct functional leadership that supports rapid adaptation.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models, specifically a subscription-based service layer for data monetization and launching an automated marketplace connecting legal experts with specialized tech tools.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture"
+      ],
+      "competitivePressure": "low",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget.",
+      "additionalContext": "The firm currently relies heavily on manual processes for document review and lacks a dedicated venture capital pipeline, making external validation of diversification ideas difficult.",
+      "companyName": "Synapse"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Coding Integration for E-Discovery Platform",
+        "rationale": "Integrating predictive coding algorithms directly into the existing e-discovery platform addresses an immediate operational need and leverages current data assets. This is a low-risk, high-impact way to improve billable hours.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot integration with 2 key partners using existing document review workflows",
+            "Allocate dedicated time for the data scientist to refine coding models"
+          ],
+          "resources_needed": [
+            "Internal engineering sprint allocation (50 hours)",
+            "Minimal external consulting fee for model refinement"
+          ],
+          "success_metric": "Reduction in average document review time by 15% within Q3",
+          "milestones": [
+            "Q2: MVP integration completed and tested internally.",
+            "Q3: Successful deployment to a closed partner pilot."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Data Monetization Micro-SaaS Layer (Subscription)",
+        "rationale": "Developing a subscription layer that packages Synapse's proprietary legal data insights and predictive analytics into a micro-SaaS product allows for revenue diversification away from pure litigation service delivery. This tests the market appetite for a recurring revenue model.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed market research on subscription models in the legal tech space",
+            "Assemble a cross-functional team focused solely on MVP scoping (Product, Data Science)"
+          ],
+          "resources_needed": [
+            "Dedicated 1.5 FTE for 12 months (new hire)",
+            "Seed funding allocation from budget percentage (4%)"
+          ],
+          "success_metric": "Secure commitments for 5 paying subscribers generating $X recurring revenue by year end",
+          "milestones": [
+            "Month 3: Complete detailed product roadmap and financial model.",
+            "Month 6: Launch of Beta subscription offering with initial user feedback."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the business case and secure approval for the Predictive Coding Pilot.",
+        "owner": "Product Manager/Business Analyst",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate deep-dive market research on subscription service viability and define initial user personas.",
+        "owner": "Innovation Squad Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leading to lack of clear execution paths.",
+      "High reliance on manual document review processes, limiting scalability and efficiency.",
+      "Lack of formal IP management strategy for data products being developed.",
+      "Limited internal talent pool expertise in building a scalable recurring revenue (SaaS) business model."
+    ]
+  }
+}

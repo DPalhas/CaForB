@@ -1,0 +1,152 @@
+{
+  "id": "0221",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:22:19.095851+00:00",
+    "duration_ms": 43785,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.324697+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Innovations",
+      "sector": "Energy & Utilities",
+      "size": "Large",
+      "companyName": "Lumina Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. They focus on reducing operational costs for large facilities in sectors like healthcare and manufacturing through data-driven insights. The company is currently pivoting its core business to leverage advanced IoT sensor technology to provide predictive maintenance solutions.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month because ideas lacked defined technical feasibility and ROI projections. Participants felt the sessions generated interesting concepts but had no clear path to execution or budget allocation. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base—our top 3 clients represent 55% of revenue. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The company is currently facing pressure to integrate proprietary AI models into existing service contracts while simultaneously exploring non-traditional revenue streams in the cleantech adjacent space.",
+      "companyName": "Lumina Innovations",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Service Diversification into Predictive Maintenance Contracts",
+        "rationale": "Leveraging the existing installed base and data collection capabilities to offer a high-margin subscription service focused purely on predictive maintenance for critical HVAC systems. This is a conservative expansion that builds revenue stability.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current operational data requirements for new contracts.",
+            "Draft three tiered service packages (Bronze, Silver, Gold) with defined pricing."
+          ],
+          "resources_needed": [
+            "Data analyst time",
+            "Marketing material development budget ($10k)"
+          ],
+          "success_metric": "Secure 3 signed pilot contracts for the new maintenance service within Q3.",
+          "milestones": [
+            "Define Service Tiers (Month 1)",
+            "Launch Pilot Program (Month 2)",
+            "Scale to 5 initial clients (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Subscription-Based IoT Hardware for Residential Energy Management (Radical)",
+        "rationale": "Develop a low-cost, standardized IoT sensor package aimed at the rapidly growing residential market segment. This bold move diversifies customer acquisition away from large commercial clients and establishes a scalable product line.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct rapid feasibility study on component sourcing and compliance (FCC/CE).",
+            "Define Minimum Viable Product (MVP) feature set focusing only on energy monitoring."
+          ],
+          "resources_needed": [
+            "Product engineering consultant fees ($50k)",
+            "Initial inventory purchase for pilot units ($20k)"
+          ],
+          "success_metric": "Achieve 1,000 pre-orders within the first six months.",
+          "milestones": [
+            "Component Procurement & Prototyping (Month 4)",
+            "Launch Beta Program (Month 7)",
+            "Full Market Launch Readiness Assessment (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Powered Optimization Suite for Existing Commercial Clients",
+        "rationale": "Integrate the existing AI/ML capabilities more deeply into current enterprise service contracts to offer hyper-personalized optimization recommendations, justifying premium pricing and increasing client stickiness.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify high-value data sets for ML model retraining.",
+            "Develop a simplified UI dashboard demonstrating quantifiable ROI (e.g., projected % energy savings)."
+          ],
+          "resources_needed": [
+            "ML engineering team reallocation",
+            "UX/UI design sprint ($30k)"
+          ],
+          "success_metric": "Increase average contract value by 15% YoY.",
+          "milestones": [
+            "Model Integration Phase (Month 3)",
+            "Internal Beta Testing with Top 5 Clients (Month 5)",
+            "Full Sales Training Rollout (Month 7)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional 'Diversification Task Force' to vet market entry models.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Finalize technical requirements and cost estimates for the IoT Residential MVP (Radical Opportunity).",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Mandate process improvement workshops to streamline project approval stages.",
+        "owner": "Head of Operations",
+        "timeframe": "By end of Q1"
+      }
+    ],
+    "key_weaknesses": [
+      "High organizational inertia and resistance to cross-departmental collaboration needed for innovation.",
+      "Informal processes leading to a lack of clear execution plans and inadequate budget allocation visibility.",
+      "Over-reliance on a concentrated customer base, creating significant revenue diversification risk.",
+      "Underutilized digital maturity (Level 3) due to a failure to transition from internal projects to scalable commercial products."
+    ]
+  }
+}

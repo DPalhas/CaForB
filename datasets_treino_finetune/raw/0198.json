@@ -1,0 +1,132 @@
+{
+  "id": "0198",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:11:50.670166+00:00",
+    "duration_ms": 99150,
+    "attempts": 4
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Ember",
+      "sector": "Financial Services",
+      "size": "Large",
+      "companyName": "Ember"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Ember is a large asset management firm managing over €2.5B in Assets Under Management across six mutual funds and discretionary mandates for institutional investors and family offices. Investment strategies span European equities, fixed income, and multi-asset classes. The organization is actively evaluating machine learning overlays for real-time portfolio risk monitoring and alternative data integration to enhance alpha generation.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The firm's successful ERP migration and data warehouse deployment established a robust foundation for scalable operations. These initiatives demonstrated strong execution capability but highlighted internal friction between legacy infrastructure requirements and modern agile delivery needs, which is why the current focus shifts to maximizing automation ROI rather than broad system replacement.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next two years while maintaining current output levels through aggressive process optimization. The focus is squarely on identifying high-ROI automation opportunities across order processing, invoicing, and customer support workflows, prioritizing velocity over traditional scaling methods.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 14,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are three months into fundraising conversations with growth equity investors who are conducting deep due diligence on our technology and operations. Their feedback indicates concern about our digital maturity relative to peers, emphasizing the urgency of launching high-impact innovation initiatives.",
+      "teamSize": "The digital and innovation organization comprises 80+ professionals across specialized centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery methods. We maintain an internal incubator program that has successfully graduated six new digital products to market in the past two years, alongside a corporate venture capital arm making strategic minority investments in relevant startups.",
+      "companyName": "Ember"
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Hyper-Automated Risk Signal Detection via Generative AI PoC",
+        "rationale": "Leveraging the firm's existing data warehouse and ML talent to deploy a generative AI model specifically trained on alternative unstructured data (e.g., central bank notes, legal filings) for real-time risk signal detection. This radical approach bypasses traditional manual research bottlenecks.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 5% of the budget to a focused PoC team",
+            "Identify three high-cost, low-complexity manual research workflows for immediate automation targets",
+            "Secure legal sign-off for non-core data ingestion protocols"
+          ],
+          "resources_needed": [
+            "Data scientist time (0.5 FTE)",
+            "Cloud compute credits for ML training",
+            "Legal counsel for novel data usage"
+          ],
+          "success_metric": "Reduction of manual research hours by 30% in the pilot area.",
+          "milestones": [
+            "Month 1: PoC completion and validation of signal accuracy (85%+)",
+            "Month 2: Formal proposal presented to Board for strategic integration",
+            "Month 4: Decision on funding next stage implementation"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Intelligent Low-Code Workflow Optimization",
+        "rationale": "Apply low-code tools across the order processing and support workflows to rapidly eliminate 'waste' in current manual processes, directly addressing the OpEx reduction goal. This leverages existing RPA/low-code expertise.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit top 5 highest-friction operational tasks",
+            "Develop a prioritized backlog of automation scripts targeting repetitive data entry",
+            "Establish cross-functional sprint teams for workflow redesign"
+          ],
+          "resources_needed": [
+            "Low-code platform licenses expansion",
+            "Dedicated process analyst time (0.2 FTE)",
+            "Internal training budget for rapid upskilling"
+          ],
+          "success_metric": "Achieve 10% reduction in operational processing costs within 9 months.",
+          "milestones": [
+            "Month 1-3: Identify and map top three low-hanging fruit processes",
+            "Month 4-6: Implement and validate first two automated workflows",
+            "Month 7-12: Full process rollout across relevant departments"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Immediately launch a focused 3-month PoC for the Generative AI Risk Signal Detection initiative.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a deep dive cost audit across all manual workflows to precisely map potential OpEx reduction points for Q3 planning.",
+        "owner": "COO/Process Transformation Lead",
+        "timeframe": "End of Month 1"
+      },
+      {
+        "action": "Develop a concise 'Digital Velocity' narrative and associated KPI dashboard tailored specifically for the growth equity diligence team to address maturity concerns.",
+        "owner": "Head of Digital Strategy",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Process rigidity limiting rapid adoption of radical tech solutions.",
+      "Internal culture prioritizing stability and risk mitigation over necessary speed/velocity initiatives.",
+      "Potential talent silo effects between the data science team and operational execution teams.",
+      "Formal decision-making structure slowing down agile, high-ROI automation pilots."
+    ]
+  }
+}

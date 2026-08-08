@@ -1,0 +1,119 @@
+{
+  "id": "0196",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:09:47.040891+00:00",
+    "duration_ms": 24746,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Core Ventures",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Large",
+      "companyName": "Core Ventures"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Core Ventures operates a sophisticated inland aquaculture facility focusing on high-value species like tilapia and seabass. They manage complex biologics and environmental control systems in dense tanks, facing critical issues with sustainable feed sourcing and managing outbreaks of sea lice. The organization possesses deep operational expertise and strong capital reserves but needs to rapidly modernize its supply chain and integrate advanced biotech solutions to maintain market share.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources and mentorship from external industry experts. Our current portfolio includes 4 active projects across new business models, including proprietary feed formulation software and automated biosecurity protocols that have shown promising pilot results.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "While maintaining stability in core farming operations is paramount, the strategy focuses on aggressively pursuing adjacent business models to mitigate market saturation risks. We aim to leverage our proprietary data and operational insights to build a scalable marketplace connecting sustainable aquaculture suppliers and processors. This involves testing ventures into data monetization platforms or developing specialized subscription services for high-end farmed fish supply chains.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company is currently piloting blockchain solutions for supply chain traceability among European retailers and is heavily invested in developing predictive analytics models to optimize tank environment control, which requires significant R&D focus.",
+      "companyName": "Core Ventures",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Feed Cost Optimization Platform",
+        "rationale": "Implementing machine learning models to dynamically adjust feed formulations based on real-time water quality and growth metrics can immediately reduce input costs by 5-10%. This incremental win builds foundational data assets needed for larger ventures.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top three most resource-intensive feed types.",
+            "Engage external ML consultancy to define feature set."
+          ],
+          "resources_needed": [
+            "1 Data Scientist (contract)",
+            "Software licensing for existing sensor data integration"
+          ],
+          "success_metric": "Achieve 7% reduction in feed cost per kg of biomass within the next 6 months.",
+          "milestones": [
+            "Q3: Pilot program completion",
+            "Q4: Integration into core operations"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Aquaculture Data Marketplace Subscription Layer",
+        "rationale": "Leveraging proprietary environmental and biological data to create a B2B marketplace for supply chain transparency. This addresses the strategic goal of diversification by creating an entirely new revenue stream outside traditional farming operations.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop MVP focusing on traceability metrics (e.g., water quality logs).",
+            "Establish legal framework for data sharing agreements with third-party processors."
+          ],
+          "resources_needed": [
+            "Dedicated Product Manager and Legal Counsel",
+            "Cloud infrastructure scaling budget"
+          ],
+          "success_metric": "Secure 5 paying B2B subscriptions within the first year.",
+          "milestones": [
+            "Q1: Beta launch with internal stakeholders",
+            "Q3: Public marketplace launch"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated cross-functional task force to evaluate the feasibility of building the Data Marketplace MVP.",
+        "owner": "CTO/COO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Secure seed funding commitment for the 'Aquaculture Data Marketplace' venture studio incubation.",
+        "owner": "CVC Arm Lead",
+        "timeframe": "Next Quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependency on specialized technical talent in AI/ML and bio-engineering, leading to high churn risk.",
+      "Formal innovation process is slowed by rigid procurement and legal compliance review cycles.",
+      "Short time horizon forces radical diversification ideas into overly complex scope or neglect of necessary R&D groundwork."
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "0452",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:08:48.467500+00:00",
+    "duration_ms": 27843,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.411925+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum Systems.io",
+      "sector": "Manufacturing",
+      "size": "Large",
+      "companyName": "Quantum Systems.io"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Quantum Systems is a custom furniture manufacturer specializing in solid wood pieces for high-end hospitality and residential markets, utilizing advanced CNC routing alongside traditional joinery. The company is currently focusing on optimizing assembly workflows and exploring digital twin technology to drastically reduce project lead times from 12 weeks to 7 weeks.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. Initiatives have historically consisted of isolated, grassroots efforts where individual employees propose new tools or workflows without mandated executive sponsorship or structured budget allocation. Consequently, successful projects are often dependent on specific team members and lack scalable standardization.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "The primary focus is achieving a 20% improvement in operational throughput by optimizing existing processes rather than increasing headcount. The immediate goal is to standardize workflows, implement basic automation where feasible, and integrate core data systems to unlock significant productivity gains within the current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "teamSize": "Our digital and innovation organization includes over 80 professionals across specialized centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We maintain an internal incubator program that has recently graduated six new digital products to market and supports a corporate venture capital arm making strategic minority investments.",
+      "additionalContext": "Despite the low regulatory environment, managing supply chain volatility for rare hardwood materials remains a persistent operational challenge impacting efficiency metrics.",
+      "companyName": "Quantum Systems.io"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "CNC Program Standardization and Optimization",
+        "rationale": "Standardizing CNC programming scripts across product lines will eliminate redundant setup time and reduce manual error rates. This incremental change directly supports the efficiency goal by reducing machine downtime during repetitive tasks.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit top 10 most common projects for unique code variations.",
+            "Develop a master library of optimized CNC paths using current software tools."
+          ],
+          "resources_needed": [
+            "Internal engineering time (5 hours/week)",
+            "Software subscription upgrade ($2,000)"
+          ],
+          "success_metric": "Reduction in average cycle time by 10% across the top 10 product lines.",
+          "milestones": [
+            "Month 1: Complete standardization audit.",
+            "Month 2: Pilot new standardized programs on three low-risk components."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Basic ERP Integration for Material Tracking",
+        "rationale": "Implementing a lightweight Enterprise Resource Planning (ERP) module focused solely on material procurement and inventory will provide better data integration between purchasing and production, improving short-term planning accuracy.",
+        "execution_plan": {
+          "first_actions": [
+            "Select an off-the-shelf, low-cost ERP integration tool.",
+            "Map current raw material flow (wood sourcing to component assembly)."
+          ],
+          "resources_needed": [
+            "Integration consultant services ($5k)",
+            "Staff training budget"
+          ],
+          "success_metric": "Reduction in lead time variability for custom projects by 5%.",
+          "milestones": [
+            "Month 1: Vendor selection and integration scope finalization.",
+            "Month 3: Full material tracking live across the assembly department."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Digital Twin-Assisted Assembly Planning Pilot",
+        "rationale": "Developing a simplified digital twin visualization tool for complex joinery steps will allow the team to simulate assembly sequences, identify bottlenecks, and rapidly iterate design changes before physical production, significantly shortening the planning phase.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one high-complexity product line as a pilot case.",
+            "Engage an external UX designer for wireframe creation."
+          ],
+          "resources_needed": [
+            "External UI/UX contractor ($15k)",
+            "Dedicated project team allocation (6 weeks)"
+          ],
+          "success_metric": "Reduction in physical prototyping iteration cycles by 30%.",
+          "milestones": [
+            "Month 4: Prototype digital twin tool MVP deployed.",
+            "Month 6: Successful run of pilot assembly using the new planning system."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional 'Efficiency Task Force' to champion and track the CNC Standardization project.",
+        "owner": "Operations VP",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Begin feasibility study and vendor selection for basic ERP integration tools.",
+        "owner": "IT Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define clear, measurable efficiency KPIs (e.g., throughput per labor hour) for the next fiscal year.",
+        "owner": "Strategy Lead",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation pipeline leads to fragmented, uncoordinated effort.",
+      "Low digital maturity (Level 2) prevents effective leveraging of data for process improvement.",
+      "Operational culture resists change due to a decentralized decision-making structure.",
+      "Absence of standardized processes makes scaling successful initiatives extremely difficult."
+    ]
+  }
+}

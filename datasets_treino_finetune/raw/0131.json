@@ -1,0 +1,121 @@
+{
+  "id": "0131",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:41:00.311932+00:00",
+    "duration_ms": 21291,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.297550+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Ember Innovations.ai",
+      "sector": "Nonprofit / NGO",
+      "size": "Large",
+      "companyName": "Ember Innovations.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Ember Innovations.ai is a large community health foundation dedicated to scaling maternal and child health programs through integrated tech solutions like mobile patient tracking. The organization employs a hybrid structure combining 60 community health workers with 12 program managers, focusing on optimizing outreach and adherence to complex vaccination schedules across underserved urban areas.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, resulting in a robust portfolio that spans new business models and operational AI use cases.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount by focusing heavily on process standardization. Our primary goal is to leverage workflow digitization, basic automation, and better data integration between core systems to maximize productivity within our existing cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "As a large NGO, Ember Innovations.ai operates in a resource-constrained environment where impact metrics are paramount but funding cycles require short-term, measurable efficiency wins.",
+      "companyName": "Ember Innovations.ai",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Operational Workflow Automation Pilot",
+        "rationale": "Implementing basic AI-driven automation for routine administrative tasks can significantly reduce manual overhead and labor costs, directly supporting the efficiency mandate.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-friction operational area (e.g., appointment scheduling or reporting) for a 3-month pilot.",
+            "Identify low-code/no-code solutions to minimize development time and budget impact."
+          ],
+          "resources_needed": [
+            "Allocation of $50k from the innovation budget",
+            "Assignment of one existing data analyst for process mapping"
+          ],
+          "success_metric": "Reduction in manual processing hours by 15% within the pilot period.",
+          "milestones": [
+            "Pilot scope defined and approved (Month 1)",
+            "Automation tool proof-of-concept completed (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Integrated Predictive Resource Allocation System (Bold)",
+        "rationale": "Developing a more sophisticated predictive model that anticipates regional demand for specific health interventions will allow the organization to dynamically allocate limited resources (staff, supplies) proactively.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study for integrating existing operational data streams with ML models.",
+            "Establish a small squad of 3 cross-functional talent (data scientist, operations lead, UX designer)."
+          ],
+          "resources_needed": [
+            "Hiring support for one specialized AI/ML engineer",
+            "Seed funding ($150k) for R&D phase."
+          ],
+          "success_metric": "Improvement in resource utilization efficiency (e.g., supply waste reduction or staff deployment optimization).",
+          "milestones": [
+            "MVP model trained on historical data (Month 6)",
+            "Integration into core operational dashboard (Month 10)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate a detailed feasibility study and resource gap analysis for the 'Operational Workflow Automation Pilot'.",
+        "owner": "Head of Operations / Internal Strategy Team Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Develop a targeted talent acquisition strategy focused on specialized community health data engineers.",
+        "owner": "HR Director / Head of Digital Innovation",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependency on senior executive sponsorship, leading to slow cross-divisional alignment.",
+      "Over-reliance on 'formal' processes which can stifle the agility required for rapid iterative improvements.",
+      "Significant constraint in budget (4%) limiting large-scale infrastructure investments and long R&D cycles.",
+      "Talent scarcity in specialized AI/ML applications needed to move beyond basic descriptive analytics."
+    ]
+  }
+}

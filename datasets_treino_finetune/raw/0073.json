@@ -3,119 +3,123 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Pharmaceuticals & Biotech",
-    "size": "Large",
+    "sector": "Nonprofit / NGO",
+    "size": "Medium",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "efficiency",
     "competitive_pressure": "high",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:21:26.591669+00:00",
-    "duration_ms": 20382,
-    "attempts": 1
+    "generated_at": "2026-08-03T18:00:58.291377+00:00",
+    "duration_ms": 21694,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.276265+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Global Pharma Solutions Inc.",
-      "sector": "Pharmaceuticals & Biotech",
-      "size": "Large"
+      "name": "Element Dynamics",
+      "sector": "Nonprofit / NGO",
+      "size": "Medium",
+      "companyName": "Element Dynamics"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "A multinational pharmaceutical company specializing in large-molecule drug development and manufacturing. They operate heavily regulated supply chains across multiple continents, focusing on complex R&D and compliance.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company has implemented several incremental improvements focused on optimizing clinical trial documentation workflows and automating lab scheduling. Recently, they initiated a pilot project exploring AI for early drug candidate toxicity prediction.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "To significantly reduce operational costs by 15% through process re-engineering while maintaining stringent regulatory compliance standards. The goal is also to accelerate time-to-market for new therapies.",
+      "companyDescription": "Element Dynamics is a social enterprise providing comprehensive employment training and job placement services for refugees and marginalized communities globally. It operates three physical centers and a commercial catering business, having successfully placed 800 individuals into employment in the past year. The organization manages complex compliance requirements related to labor standards and international aid regulations across multiple operational geographies.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We recently launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days, demonstrating significant gains in efficiency. This project was cross-functional involving product, compliance, and customer success teams, successfully showing early NPS scores 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks across training and placement services. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "A cross-functional team of 15 highly specialized scientists and process engineers works closely on innovation projects.",
+      "teamSize": "We have a dedicated innovation squad of 8 people—4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and reports progress quarterly to the executive committee.",
       "digitalMaturity": "3",
-      "revenueRange": "over_50m",
-      "budgetPercentage": 18,
-      "decisionMaking": "small_leadership_team",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
-        "process",
-        "time",
-        "culture",
-        "talent"
+        "strategy",
+        "time"
       ],
       "competitivePressure": "high",
-      "additionalContext": "The company faces intense competition in the generic drug space and constantly adapting to rapidly changing global regulatory requirements."
+      "additionalContext": "Currently facing intense competition from large international development NGOs and localized digital job matching platforms. We need to rapidly scale our service delivery while maintaining the high quality required by international funding bodies.",
+      "companyName": "Element Dynamics"
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
         "type": "radical",
-        "title": "End-to-End Autonomous Compliance System (E2ECS)",
-        "rationale": "Given the high regulatory environment and efficiency priority, implementing a radical AI-driven system could automate regulatory submission preparation, real-time compliance monitoring, and risk assessment across all stages of drug development. This would fundamentally transform current slow manual processes into an automated feedback loop.",
+        "title": "AI-Driven Placement Matching and Curriculum Personalization",
+        "rationale": "Implementing a radical AI algorithm to dynamically match specific refugee skills with real-time market demands would eliminate the current manual, time-consuming matching process. This shift moves beyond incremental efficiency by fundamentally changing how we allocate resources and measure success.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a feasibility study on integrating GenAI with existing regulatory documentation repositories."
+            "Pilot a machine learning model to predict job placement success rates based on training completion metrics.",
+            "Establish data pipelines for real-time market data ingestion from key employment hubs.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Dedicated AI/ML engineering team (3 FTEs)",
-            "Seed funding for pilot program infrastructure"
+            "Data Scientist (Full-time focus)",
+            "Cloud computing resources",
+            "External legal counsel review of data usage policies"
           ],
-          "success_metric": "Reduction in compliance review cycle time by 60% within 18 months.",
+          "success_metric": "Reduce average job placement cycle time by 30% within 12 months.",
           "milestones": [
-            "Q2: Successful deployment of predictive modeling tool on one minor regulatory filing.",
-            "Q4: Full integration into the core R&D pipeline."
+            "M1: Model training complete (Month 4).",
+            "M2: Pilot deployment in one geographic region (Month 7).",
+            "M3: Full integration of AI into the core placement platform (Month 10)."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "medium"
+        "timeframe": "18 months"
       },
       {
         "type": "incremental",
-        "title": "Lean Manufacturing 4.0 Implementation",
-        "rationale": "Focusing on incremental efficiency, this involves implementing IoT sensors and predictive maintenance across the manufacturing floor to reduce equipment downtime and optimize resource allocation.",
+        "title": "Automated Operational Resource Allocation System",
+        "rationale": "Develop a predictive system to optimize the use of physical resources (training center capacity, instructor scheduling, material inventory) across all three sites. This targets immediate EBITDA improvements by minimizing waste and over-utilization.",
         "execution_plan": {
           "first_actions": [
-            "Install sensor network on three critical production lines."
+            "Implement IoT sensors in training facilities to track real-time utilization rates.",
+            "Develop a rules engine for automated scheduling that optimizes staff deployment based on demand forecasts.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Hardware investment for 50 sensors",
-            "Internal process change management training"
+            "Budget allocation for IoT hardware installation",
+            "Business Analyst (for process mapping)",
+            "Software licensing for predictive analytics platform"
           ],
-          "success_metric": "Reduction in unplanned equipment downtime by 20% annually.",
+          "success_metric": "Reduce operational overhead costs by 8% within 6 months.",
           "milestones": [
-            "Q3: Sensor network deployment and baseline data collection.",
-            "Q1 next year: Achieve target uptime metrics."
+            "M1: Resource tracking system live in one center (Month 3).",
+            "M2: Full system deployment across all three centers (Month 9)."
           ]
         },
         "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
+        "difficulty": "medium",
+        "timeframe": "6 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a dedicated task force to evaluate the technical viability and regulatory hurdles of the Autonomous Compliance System.",
-        "owner": "Chief Innovation Officer",
-        "timeframe": "Within 3 weeks"
+        "action": "Conduct a deep dive feasibility study on the AI placement algorithm's legal and data compliance implications.",
+        "owner": "Product Manager & Legal Counsel liaison",
+        "timeframe": "Within 1 week"
       },
       {
-        "action": "Finalize the budget request for the Lean Manufacturing 4.0 pilot project.",
-        "owner": "VP of Operations",
-        "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Launch internal workshops to identify cultural barriers preventing cross-departmental process adoption.",
-        "owner": "Head of HR/Change Management",
+        "action": "Finalize the MVP scope and secure funding for the Predictive Resource Allocation Pilot (Incremental Opportunity).",
+        "owner": "Innovation Squad Lead",
         "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "Siloed data between R&D and Manufacturing teams leading to redundant testing efforts.",
-      "Legacy IT infrastructure that hinders rapid deployment of new process automation technologies.",
-      "High turnover rate among specialized regulatory compliance talent due to intense industry pressure."
+      "Rigid, multi-stakeholder budget approval process slowing mid-cycle innovation funding.",
+      "Underdeveloped cross-functional digital literacy within the core operations teams.",
+      "High reliance on manual data collection leading to latency and inefficiency in service delivery metrics."
     ]
   }
 }

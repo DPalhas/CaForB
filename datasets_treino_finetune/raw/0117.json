@@ -1,0 +1,147 @@
+{
+  "id": "0117",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:35:11.853942+00:00",
+    "duration_ms": 23848,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.291843+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Atlas Enterprises.ai",
+      "sector": "Construction",
+      "size": "Medium",
+      "companyName": "Atlas Enterprises.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors. Current focus is on BIM adoption and drone-based site progress monitoring. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats—whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Atlas operates in a highly regulated environment where compliance and safety mandates are non-negotiable. While technology integration exists, the challenge lies in scaling these gains across diverse project types without disrupting the complex supply chain dynamics inherent to general contracting.",
+      "companyName": "Atlas Enterprises.ai",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance for Equipment & Assets",
+        "rationale": "Implementing sensor-based monitoring on heavy machinery and site infrastructure can proactively identify failures, drastically reducing costly downtime and maintenance surprises.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 high-cost fleet assets for pilot program installation.",
+            "Develop a simple data aggregation framework using existing drone/BIM data streams.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "IoT sensor procurement and integration costs ($15k)",
+            "Data scientist consultation (part-time, 3 months)"
+          ],
+          "success_metric": "Reduction in unplanned downtime by 20% within 12 months",
+          "milestones": [
+            "Q3: Pilot program completion and data validation.",
+            "Q4: Full rollout proposal for 5 major sites."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Modular Construction Standardization Platform",
+        "rationale": "Developing standardized, modular project components and prefabrication blueprints can significantly reduce on-site variability, speeding up construction cycles, lowering labor costs, and creating a distinct competitive moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a working group to map high-frequency/low-variability component types.",
+            "Invest in specialized 3D modeling software for rapid modular design.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Software licensing for advanced parametric BIM tools ($50k)",
+            "Hire one specialist project manager focused on prefabrication standards"
+          ],
+          "success_metric": "Decrease in average project timeline by 15% using modular components",
+          "milestones": [
+            "Q6: Finalize and validate the first standardized module.",
+            "Q9: Launch pilot project utilizing the new framework."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18-24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Regulatory Compliance Automation (Focus Area)",
+        "rationale": "Automating the compilation and submission of complex, high-stakes regulatory documentation will mitigate risks associated with the 'high' regulatory environment while ensuring operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current compliance paperwork workflows across 3 key regulatory areas (e.g., safety permits).",
+            "Implement a workflow automation tool for data collection and initial document drafting."
+          ],
+          "resources_needed": [
+            "Subscription to specialized legal/regulatory tech software ($10k)",
+            "Internal training budget for staff in new compliance systems"
+          ],
+          "success_metric": "Reduction in regulatory filing errors by 90%",
+          "milestones": [
+            "Q3: Compliance automation pilot with one major permit type.",
+            "Q4: Full deployment across all site management processes."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Complete a formal feasibility study for the Modular Construction Standardization Platform (Radical Opportunity).",
+        "owner": "Innovation Squad Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Implement the Predictive Maintenance pilot program using existing BIM/Drone data to demonstrate cost savings.",
+        "owner": "Engineering & Data Science Team",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Heavy reliance on manual workflows and spreadsheets across non-core operational areas, leading to high error rates.",
+      "Risk appetite is overly conservative, potentially stifling the necessary speed required to counter high competitive pressure.",
+      "High regulatory complexity creates a significant process bottleneck that slows down both innovation adoption and decision making.",
+      "Limited capital allocated to R&D (3% budget) restricts the ability to pursue ambitious or radical innovations."
+    ]
+  }
+}

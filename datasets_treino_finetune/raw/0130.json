@@ -1,0 +1,128 @@
+{
+  "id": "0130",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:40:39.003425+00:00",
+    "duration_ms": 23983,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.296505+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Orbit",
+      "sector": "E-commerce",
+      "size": "Micro",
+      "companyName": "Orbit"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Orbit operates in the highly competitive home goods vertical, focusing specifically on premium organization solutions like modular shelving and ergonomic storage accessories. The company currently leverages Shopify for direct sales and Amazon FBA for volume, navigating complex logistics and consumer data privacy regulations pertinent to personal goods. Their current model relies heavily on rapid seasonal inventory shifts driven by influencer trends.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "Prior attempts to streamline operations have included manual spreadsheets and ad hoc communication channels used by the fulfillment team. For instance, a pilot project aimed at predicting inventory stock-outs using past sales data was never fully implemented due to a lack of standardized data infrastructure and clear ownership protocols. This history demonstrates that without formal process definitions, valuable operational insights quickly dissipate.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Given the increasing market saturation and potential acquisition by larger players like Target or Amazon, Orbit's primary goal is to secure its niche as a trusted brand known for superior quality and design within the organization segment. This requires building proprietary customer data loops that create high switching costs through personalized product ecosystems rather than engaging in broad price competition.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 15,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company currently spends significant time on compliance documentation for international shipping and GDPR adherence, which is a major non-revenue drain under the current informal structure.",
+      "companyName": "Orbit",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "Implement AI-Driven Hyper-Personalized Recommendation Engine",
+        "rationale": "To build high switching costs and defend against platform competition, Orbit must move beyond basic collaborative filtering to use machine learning that deeply understands customer usage patterns. This radical shift will create a unique ecosystem where product discovery is driven by predictive intent rather than simple browsing.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and purchase a lightweight third-party recommendation API (e.g., leveraging specialized ML services).",
+            "Define the minimum viable data set required for personalization (customer interaction history, purchase velocity).",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "API subscription costs ($500/month estimated)",
+            "Fractional time from one generalist developer to integrate."
+          ],
+          "success_metric": "Increase average order value (AOV) by 12% within Q3.",
+          "milestones": [
+            "Pilot API integration complete (4 weeks)",
+            "Launch MVP personalized widget on Shopify (8 weeks)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardize Regulatory Compliance Workflow Automation",
+        "rationale": "Given the high regulatory environment, automating documentation and compliance checks will reduce operational risk. This incremental step addresses the 'process' barrier by formalizing procedures currently managed informally.",
+        "execution_plan": {
+          "first_actions": [
+            "Document all necessary regulatory checkpoints for top 3 shipping zones (EU, US).",
+            "Select and configure a simple compliance tracking tool."
+          ],
+          "resources_needed": [
+            "Consultant time for initial documentation review ($10k total project cost)",
+            "Internal software license fee."
+          ],
+          "success_metric": "Reduce compliance audit preparation time by 40%.",
+          "milestones": [
+            "Compliance mapping complete (3 weeks)",
+            "Automated trigger for necessary documentation alerts implemented (10 weeks)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize data ownership and process documentation for the personalization engine.",
+        "owner": "Generalist Developer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a feasibility study on third-party ML APIs to determine cost/benefit of radical opportunity.",
+        "owner": "Owner Alone",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Establish a small 'Innovation Task Force' focused solely on process standardization and risk mitigation.",
+        "owner": "Generalist Developer",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal, scalable operational processes leading to inconsistent data usage.",
+      "High reliance on informal decision-making resulting in slow adoption and resource waste.",
+      "Critical talent gap: Absence of dedicated R&D or specialized ML expertise.",
+      "Fragile budget structure (15%) making large, necessary platform shifts difficult to sustain."
+    ]
+  }
+}

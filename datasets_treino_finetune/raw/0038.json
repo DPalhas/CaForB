@@ -3,48 +3,51 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Energy & Utilities",
-    "size": "Medium",
+    "sector": "Nonprofit / NGO",
+    "size": "Small",
     "regulatory_environment": "high",
     "risk_appetite": "balanced",
     "strategic_priority": "diversification",
     "competitive_pressure": "medium",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:04:07.815275+00:00",
-    "duration_ms": 44379,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:43:53.580714+00:00",
+    "duration_ms": 27279,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.264571+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Global Power Solutions Inc.",
-      "sector": "Energy & Utilities",
-      "size": "Medium"
+      "name": "Lumina",
+      "sector": "Nonprofit / NGO",
+      "size": "Small",
+      "companyName": "Lumina"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Global Power Solutions is a mid-sized utility company specializing in regional power distribution and grid maintenance. The business operates under strict federal and state regulatory oversight regarding environmental compliance and pricing structures. They manage significant infrastructure assets across several states.",
+      "companyDescription": "Lumina is an environmental conservation foundation dedicated to protecting critical ecosystems through scientific research and on-the-ground habitat restoration. The organization manages a significant portfolio of protected areas, relying heavily on complex grant funding and public donations for operations. They leverage data science initiatives to enhance monitoring capabilities but operate with lean middle management, which strains existing resources.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company recently launched an internal software upgrade for asset management, but major strategic R&D projects have been stalled due to lengthy approval cycles. They have piloted a small solar integration project in one state.",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This project successfully utilized existing compliance infrastructure and resulted in a significant increase in new client retention rates, demonstrating successful incremental process innovation.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to secure new, high-growth revenue streams by entering adjacent markets like distributed energy storage and smart grid technology. This requires developing non-core assets.",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base—our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
       "strategicPriority": "diversification",
-      "timeHorizon": "long",
+      "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 5 subject matter experts supported by a small IT unit.",
-      "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 10,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "process",
-        "talent",
         "culture",
-        "time"
+        "process",
+        "strategy"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "Government mandates are rapidly increasing the complexity of infrastructure upgrades, forcing proactive strategic pivots."
+      "additionalContext": "Lumina has recently secured a major grant which requires reporting capabilities far exceeding current internal infrastructure, highlighting the immediate need for scalable technical solutions.",
+      "companyName": "Lumina",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
     }
   },
   "output": {
@@ -52,73 +55,98 @@
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Smart Grid Optimization Software Integration",
-        "rationale": "Implementing an incremental software solution to manage existing infrastructure more efficiently allows for immediate ROI and compliance improvements without major capital expenditure.",
+        "title": "AI-Driven Predictive Analytics for Habitat Health",
+        "rationale": "Leveraging the existing camera trap data and biodiversity identification tools to predict habitat stress or poaching hotspots allows for proactive resource allocation. This improves operational efficiency without requiring a full system overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a needs assessment survey across three regional hubs.",
-            "Pilot the existing asset management software with predictive maintenance features."
+            "Integrate machine learning model training into current quarterly reporting cycles.",
+            "Pilot predictive analytics on one high-risk protected area.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Internal IT specialist time (100 hours)",
-            "Software licensing for pilot upgrade ($5k)"
+            "Training for existing data scientists",
+            "Minor cloud computing credits"
           ],
-          "success_metric": "Reduction in operational downtime by 12% within one fiscal year",
+          "success_metric": "15% reduction in field response time to predicted threats.",
           "milestones": [
-            "Month 1: Pilot completion.",
-            "Month 6: Full regional rollout planning."
+            "Q3: Model training completion",
+            "Q4: Pilot deployment and validation"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "Diversification into Micro-Grid Storage Services",
-        "rationale": "Developing proprietary battery storage solutions allows the company to pivot from being purely a distribution utility provider into a technology service provider, capitalizing on the growing demand for renewable energy integration.",
+        "title": "Corporate ESG Certification Platform (Service Line)",
+        "rationale": "Develop a premium, subscription-based service that packages Lumina's monitoring data and conservation impact metrics into standardized reports for corporate clients. This moves the foundation beyond grants toward scalable diversified revenue.",
         "execution_plan": {
           "first_actions": [
-            "Establish a small external R&D partnership with a specialized tech startup.",
-            "Allocate seed funding ($50k) to a dedicated proof-of-concept lab."
+            "Define the core metrics required by large corporations (e.g., TCFD alignment).",
+            "Develop a Minimum Viable Product (MVP) for data visualization dashboards.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "External consulting fees ($30k)",
-            "Initial prototype hardware development ($60k)"
+            "Freelance UX/UI designer",
+            "Legal counsel consultation on data privacy and liability"
           ],
-          "success_metric": "Secure two major private sector contracts for storage services within 18 months",
+          "success_metric": "Secure two corporate pilot contracts within 1 year.",
           "milestones": [
-            "Month 4: Proof-of-concept validation.",
-            "Month 12: First commercial service contract."
+            "Q2: MVP feature set finalized",
+            "Q4: Launch beta program with target clients"
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "long"
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting Engine",
+        "rationale": "Streamlining the high regulatory burden by automating data collection and reporting for mandatory governmental or grant requirements. This reduces manual labor costs and minimizes compliance risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current reporting workflows to identify automation opportunities.",
+            "Implement workflow automation tools (e.g., Zapier, internal script)."
+          ],
+          "resources_needed": [
+            "Internal project management hours",
+            "Subscription to an enterprise integration platform"
+          ],
+          "success_metric": "20% reduction in time spent on manual compliance reporting.",
+          "milestones": [
+            "Q3: Workflow mapping and tool selection complete",
+            "Q4: Automated reporting for one major grant completed"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "4 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force between Operations and R&D to define the requirements for smart grid software integration.",
-        "owner": "VP of Technology",
+        "action": "Form a dedicated 'Diversification Task Force' to validate the Corporate ESG Platform concept.",
+        "owner": "CEO / Board Chair",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Initiate due diligence and partnership discussions with specialized battery storage technology providers.",
-        "owner": "Chief Innovation Officer",
-        "timeframe": "Within 3 months"
+        "action": "Conduct a full process audit of current grant reporting and operational bottlenecks.",
+        "owner": "Program Director",
+        "timeframe": "End of Q3"
       },
       {
-        "action": "Review the organizational structure to streamline the internal approval process for non-core strategic projects.",
-        "owner": "Executive Management Team",
+        "action": "Allocate 5% budget for initial R&D/pilot phase of the AI-Driven Predictive Analytics project.",
+        "owner": "CTO / Finance Lead",
         "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "Slow decision-making due to complex regulatory compliance requirements",
-      "High reliance on legacy infrastructure that limits agility for new service offerings",
-      "Lack of specialized talent in emerging areas like energy storage technology",
-      "Internal risk aversion slowing down high-potential diversification projects"
+      "Limited dedicated innovation time and budget allocation, forcing initiatives into a reactive 'margin' mode.",
+      "High dependency on specialized, scarce technical talent (4-6 people) who are fully allocated to maintenance.",
+      "Fragmented operational processes across research, compliance, and field teams hindering scalable technology adoption.",
+      "Overwhelming regulatory complexity which creates significant risk regarding data handling and reporting accuracy."
     ]
   }
 }

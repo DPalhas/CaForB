@@ -1,0 +1,153 @@
+{
+  "id": "0399",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:58:11.665235+00:00",
+    "duration_ms": 28179,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Crest Capital.co",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro",
+      "companyName": "Crest Capital.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Regional supermarket chain operating 28 stores across central and northern Portugal, specializing in high-quality private-label groceries. The company manages a complex supply chain involving perishable goods sourced both locally and internationally, requiring meticulous inventory control and rapid response to market shifts. As a micro-retailer, efficiency is paramount due to extremely thin margins and the need for localized sourcing compliance.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. Building on this success, we are now actively exploring marketing automation integration and AI-assisted demand forecasting. Furthermore, initial pilot programs have tested basic digital self-checkout kiosks to improve in-store transaction speed.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 27,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The competitive landscape includes large national chains leveraging economies of scale and emerging quick-commerce solutions, requiring Crest Capital to innovate quickly on service and logistics.",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role—innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "companyName": "Crest Capital.co"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhance Self-Service Experience via AI Chatbots",
+        "rationale": "Addressing customer feedback regarding poor digital self-service is a direct defense mechanism against churn. Implementing an AI chatbot can provide instant, 24/7 answers to common product and ordering questions, reducing the burden on limited staff.",
+        "execution_plan": {
+          "first_actions": [
+            "Define top 10 high-volume customer queries.",
+            "Select and integrate a low-cost NLP service (e.g., Dialogflow).",
+            "Pilot deployment on the main website."
+          ],
+          "resources_needed": [
+            "Contract for basic AI/NLP service ($5k)",
+            "10 hours of developer time",
+            "Training materials budget ($2k)"
+          ],
+          "success_metric": "Reduce customer support ticket volume related to FAQs by 15% within 3 months.",
+          "milestones": [
+            "Q1: Pilot launch and feature testing complete (Month 1)",
+            "Q2: Full rollout across all key channels (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Hyper-Local Micro-Fulfillment Network (Market Defense)",
+        "rationale": "Given the high competitive pressure, investing in a proprietary micro-fulfillment network allows Crest Capital to bypass the long lead times and high overhead of large competitors. This radical shift focuses on maximizing 'freshness' and speed within a tight geographic radius, creating an insurmountable local moat.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market analysis on competitor delivery zones.",
+            "Secure partnerships with 3 local third-party logistics (3PL) providers.",
+            "Develop a lean operational model for decentralized inventory stocking."
+          ],
+          "resources_needed": [
+            "Initial capital investment ($50k)",
+            "Legal consultation for partnership frameworks",
+            "Dedicated project manager"
+          ],
+          "success_metric": "Increase local customer retention rate by 5 percentage points within the pilot zone.",
+          "milestones": [
+            "Q1: Finalize 3PL contracts and operational blueprint (Month 2)",
+            "Q3: Launch first hyper-local delivery pilot program (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Waste Reduction Engine Refinement",
+        "rationale": "Since the company is already evaluating AI for demand forecasting, this incremental step focuses on refining that model to specifically target high-value perishables. Improving waste reduction directly impacts the 35% private-label revenue share and operational costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate real-time inventory data with weather patterns and local event schedules.",
+            "Fine-tune ML models using historical sales data for perishable goods.",
+            "Establish a monthly 'waste reduction' KPI review cycle."
+          ],
+          "resources_needed": [
+            "Data scientist consultation retainer ($10k)",
+            "Increased internal developer allocation (20 hours/month)",
+            "Cloud computing resources upgrade"
+          ],
+          "success_metric": "Reduce fresh produce waste by an additional 8% within 12 months.",
+          "milestones": [
+            "Q2: Model refinement and integration complete (Month 4)",
+            "Q3: Operational review of waste metrics vs. baseline (Month 7)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, albeit part-time, Innovation Steering Committee.",
+        "owner": "Founder/CEO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Begin detailed feasibility study for the Hyper-Local Micro-Fulfillment Network (Radical Opportunity #2).",
+        "owner": "Operations Lead",
+        "timeframe": "End of Q1"
+      },
+      {
+        "action": "Implement the AI Chatbot pilot to address immediate customer pain points.",
+        "owner": "Generalist Developers",
+        "timeframe": "Within 4 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized R&D process, leading to ad-hoc prototyping and inconsistent innovation output.",
+      "High operational dependency on a very small team, resulting in chronic resource scarcity for non-essential strategic initiatives.",
+      "Partial digital maturity (Level 2) which creates immediate vulnerability against digitally native competitors."
+    ]
+  }
+}

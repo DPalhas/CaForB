@@ -1,0 +1,125 @@
+{
+  "id": "0231",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:26:57.811443+00:00",
+    "duration_ms": 23531,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge Systems",
+      "sector": "Transportation & Logistics",
+      "size": "Medium",
+      "companyName": "Forge Systems"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Last-mile parcel delivery company handling 15,000 packages per day for e-commerce clients in urban and suburban areas. Forge Systems operates a fleet of 60 electric vans and 40 cargo bikes, focusing heavily on dense city center deliveries. The core operational challenge revolves around dynamic route optimization, minimizing carbon footprint while maximizing delivery speed.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The digital transformation program is in its third year with a dedicated transformation office reporting to the CEO, driving significant efficiency gains. Key initiatives include an ERP migration to the cloud and establishing a center of excellence for process automation using RPA and low-code tools, which has delivered €2.4M in annualized cost savings.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board is focused on achieving €50M ARR within 5 years by expanding the addressable market significantly. This requires pivoting pricing models from one-time delivery fees to recurring subscription services and building a robust, repeatable enterprise sales motion.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 15,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The new CEO has signaled a decisive shift towards high-velocity innovation and digital transformation, replacing the previous conservative cost-cutting focus. This creates internal urgency but introduces uncertainty regarding organizational change management speed.",
+      "companyName": "Forge Systems",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Local Micro-Hub Optimization",
+        "rationale": "Leveraging existing data warehouse capabilities to integrate real-time parking and micro-fulfillment center availability could reduce last-mile transit time by 10%. This is an incremental growth lever that improves operational efficiency without requiring massive new infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot AI routing algorithm integration on a single urban zone delivery route",
+            "Identify necessary data science talent reallocation within the existing product squads"
+          ],
+          "resources_needed": [
+            "1 Full-time Data Scientist (6 months contract)",
+            "Software license upgrade for advanced geospatial analytics tool"
+          ],
+          "success_metric": "Average route completion time reduction of 8% in pilot zone",
+          "milestones": [
+            "Month 2: Finalize algorithm selection and data pipeline mapping.",
+            "Month 4: Complete successful pilot and measure efficiency gains."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Subscription-Based Cold Chain Logistics Service",
+        "rationale": "Given the low competitive pressure, forging a radical new revenue stream by launching a specialized, subscription-based service for temperature-sensitive goods (e.g., pharmaceuticals or high-end groceries) offers high margin potential and market differentiation.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated R&D task force to define the product-market fit for cold chain services",
+            "Allocate €50k seed budget for proof-of-concept pilot in one target vertical."
+          ],
+          "resources_needed": [
+            "3 specialized logistics engineers",
+            "Minimal new capital expenditure (€50,000)"
+          ],
+          "success_metric": "Secure 5 anchor enterprise clients paying recurring subscription fees within 12 months.",
+          "milestones": [
+            "Month 4: Finalize service specification and pricing model.",
+            "Month 8: Launch paid pilot program with secured contracts."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive talent audit focused on acquiring or upskilling data science and AI engineering capabilities to address the 'talent' barrier.",
+        "owner": "Head of Technology",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Formalize the strategy for diversifying revenue through subscription models, moving away from purely transactional delivery fees.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a cross-functional Innovation Steering Committee to manage and prioritize high-risk radical projects effectively despite varying project decision-making processes.",
+        "owner": "CEO/Transformation Office Lead",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented system integration across core platforms hindering rapid innovation deployment.",
+      "Siloed decision-making structure leading to inconsistent execution velocity between business units.",
+      "High reliance on existing operational expertise may impede the adoption of radical, untested technological solutions.",
+      "Centralized budget allocation (15%) presents a risk when high-potential radical projects require higher initial investment."
+    ]
+  }
+}

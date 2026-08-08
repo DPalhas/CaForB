@@ -8,31 +8,31 @@
 @custom-variant disabled (&[data-disabled]);
 
 :root {
-  /* Deep Obsidian Purple/Navy Background & Silver Foreground */
-  --background: oklch(0.12 0.025 260);
-  --foreground: oklch(0.98 0.005 260);
-  
-  /* Glassmorphic card styling variables */
-  --card: oklch(0.15 0.03 260 / 85%);
-  --card-foreground: oklch(0.98 0.005 260);
-  --popover: oklch(0.15 0.03 260);
-  --popover-foreground: oklch(0.98 0.005 260);
-  
-  /* Core brand color accents - Velvet Orchid / Royal Purple */
-  --primary: oklch(0.58 0.22 280);
+  /* Deep warm charcoal background */
+  --background: oklch(0.16 0.01 60);
+  --foreground: oklch(0.95 0.01 80);
+
+  /* Glassmorphic card styling */
+  --card: oklch(0.18 0.01 60 / 85%);
+  --card-foreground: oklch(0.95 0.01 80);
+  --popover: oklch(0.18 0.01 60);
+  --popover-foreground: oklch(0.95 0.01 80);
+
+  /* Soft terracotta / warm clay primary */
+  --primary: oklch(0.52 0.12 40);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.18 0.03 260);
-  --secondary-foreground: oklch(0.85 0.01 260);
-  --muted: oklch(0.18 0.03 260);
-  --muted-foreground: oklch(0.65 0.02 260);
-  
-  /* Interaction highlights */
-  --accent: oklch(0.52 0.21 260);             /* Electric Indigo */
+  --secondary: oklch(0.20 0.01 60);
+  --secondary-foreground: oklch(0.85 0.01 80);
+  --muted: oklch(0.20 0.01 60);
+  --muted-foreground: oklch(0.65 0.01 80);
+
+  /* Soft sage / moss green accent */
+  --accent: oklch(0.48 0.07 160);
   --accent-foreground: oklch(0.99 0 0);
-  --destructive: oklch(0.58 0.22 25);
-  --border: oklch(0.22 0.03 260 / 60%);
-  --input: oklch(0.16 0.03 260);
-  --ring: oklch(0.62 0.16 280);               /* Cyber Lavender */
+  --destructive: oklch(0.52 0.18 15);
+  --border: oklch(0.24 0.01 60 / 60%);
+  --input: oklch(0.18 0.01 60);
+  --ring: oklch(0.52 0.12 40);
   --radius: 1rem;
 }
 
@@ -41,36 +41,36 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.08) 0px, transparent 50%);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(251, 146, 60, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.06) 0px, transparent 50%);
   background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #f8fafc;
+  color: #fafaf9;
   letter-spacing: -0.02em;
 }
 
-p, span, label, li {
-  color: #cbd5e1;
+p, label, li {
+  color: #d6d3d1;
 }
 
 input, textarea, select {
-  color: #f8fafc;
-  background-color: oklch(0.15 0.02 260 / 80%);
-  border: 1px solid oklch(0.22 0.03 260 / 60%);
+  color: #fafaf9;
+  background-color: oklch(0.19 0.01 60 / 80%);
+  border: 1px solid oklch(0.24 0.01 60 / 60%);
   transition: all 0.2s ease-in-out;
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: oklch(0.58 0.22 280);
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.15);
+  border-color: oklch(0.52 0.12 40);
+  box-shadow: 0 0 10px rgba(251, 146, 60, 0.15);
   outline: none;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #64748b;
+  color: #78716c;
 }
 
 .step-fade {
@@ -90,10 +90,10 @@ input::placeholder, textarea::placeholder {
 
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2), 0 0 30px rgba(168, 85, 247, 0.1);
+    box-shadow: 0 0 15px rgba(251, 146, 60, 0.2), 0 0 30px rgba(251, 146, 60, 0.1);
   }
   50% {
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4), 0 0 50px rgba(168, 85, 247, 0.2);
+    box-shadow: 0 0 25px rgba(251, 146, 60, 0.4), 0 0 50px rgba(251, 146, 60, 0.2);
   }
 }
 
@@ -102,7 +102,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .glass-card {
-  background: rgba(15, 23, 42, 0.65);
+  background: rgba(28, 25, 23, 0.65);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -115,22 +115,20 @@ input::placeholder, textarea::placeholder {
 
 .glass-card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 35px -5px rgba(168, 85, 247, 0.12), 0 6px 16px -2px rgba(0, 0, 0, 0.3);
-  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 14px 35px -5px rgba(251, 146, 60, 0.12), 0 6px 16px -2px rgba(0, 0, 0, 0.3);
+  border-color: rgba(251, 146, 60, 0.4);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #6366f1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f59e0b;
 }
 
 .gradient-bg-subtle {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);
+  background: rgba(251, 146, 60, 0.12);
 }
 
 .badge-glow {
-  box-shadow: 0 0 12px rgba(168, 85, 247, 0.25);
+  box-shadow: 0 0 12px rgba(251, 146, 60, 0.25);
 }
 
 * {
@@ -144,4 +142,3 @@ html {
 button {
   cursor: pointer;
 }
-

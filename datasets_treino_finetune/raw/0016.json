@@ -3,47 +3,50 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Education",
     "size": "Medium",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "diversification",
     "competitive_pressure": "medium",
-    "reviewed": false,
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:54:14.688110+00:00",
-    "duration_ms": 23080,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:34:32.602015+00:00",
+    "duration_ms": 26684,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.256413+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "NovaSolutions Inc.",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Meridian Group",
+      "sector": "Education",
+      "size": "Medium",
+      "companyName": "Meridian Group"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "NovaSolutions is a B2B SaaS provider specializing in project management and data analytics tools for mid-sized enterprises. They operate primarily online, handling scalable cloud infrastructure with minimal direct regulatory oversight.",
+      "companyDescription": "EdTech startup providing an AI-powered math tutoring platform for middle and high school students. Adaptive problem generation based on individual knowledge gaps. The company currently serves 30,000 active student users across over 200 schools with a strong focus on personalized learning paths. They are currently evaluating the integration of natural language step-by-step solution explanations and automated curriculum alignment tools.",
       "innovationProcess": "informal",
-      "pastInitiatives": "The company has recently launched two minor feature updates based on user feedback but does not have a structured pipeline for major new product development or market entry strategies.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to reduce reliance on the existing domestic enterprise market by successfully entering two adjacent geographical regions and identifying three completely new vertical industries.",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality, but the initial MVP launch failed to achieve sufficient traction. We built an MVP with an external agency in three months, which resulted in only 8% of customers creating accounts, indicating a misalignment between feature development and genuine user needs.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market penetration. We are actively exploring adjacent business models, including developing a subscription-based service layer for premium content access and potentially launching a B2B marketplace connecting specialized tutors with institutional users or independent creators.",
       "strategicPriority": "diversification",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The core R&D team consists of 15 engineers and product managers, working collaboratively but lacking dedicated cross-functional innovation roles.",
       "digitalMaturity": "2",
       "revenueRange": "10m_to_50m",
       "budgetPercentage": 4,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "process",
-        "time"
+        "budget",
+        "process"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The company is currently prioritizing stability and predictable growth over aggressive market disruption."
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Meridian Group",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
@@ -51,21 +54,23 @@
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Vertical Feature Expansion (Adjacent Market Entry)",
-        "rationale": "Leveraging existing core competency to target a completely new industry vertical, such as logistics or professional services, provides low-risk diversification. This uses current technical skills and minimizes brand risk.",
+        "title": "Tiered Subscription Service Layer (Incremental Diversification)",
+        "rationale": "Introduce a tiered subscription model offering advanced features like personalized curriculum mapping or deeper analytics for schools and individual students. This leverages existing data assets to create immediate recurring revenue streams.",
         "execution_plan": {
           "first_actions": [
-            "Identify three potential adjacent verticals (e.g., HR Tech, Field Service Management).",
-            "Develop a Minimum Viable Product (MVP) framework for one identified vertical."
+            "Define three distinct pricing tiers (Basic, Premium AI Support, Institutional)",
+            "Pilot the 'Premium Support' tier with 50 power users",
+            "Integrate subscription payment gateway testing within Q3"
           ],
           "resources_needed": [
-            "Consultant hours (low-cost initial market validation)",
-            "Engineering time reallocation (part-time)"
+            "UI/UX design sprint for new feature presentation",
+            "Marketing materials focused on ROI of premium features"
           ],
-          "success_metric": "Achieve 5 paying pilot customers in the new vertical within Q3.",
+          "success_metric": "Achieve 5% conversion rate from free users to paid subscribers in six months",
           "milestones": [
-            "Market validation report completed by end of Month 1.",
-            "MVP feature set launch and feedback loop established."
+            "Q3: Finalize pricing structure and integration plan",
+            "Q4: Launch pilot program with measurable engagement metrics",
+            "End of Year: Achieve first $100k in recurring subscription revenue"
           ]
         },
         "impact": "medium",
@@ -74,73 +79,77 @@
       },
       {
         "type": "incremental",
-        "title": "Strategic Partnership for Market Access",
-        "rationale": "Instead of internal expansion, NovaSolutions can diversify by forming strategic alliances with established players who already dominate new geographic or vertical markets. This lowers competitive pressure and speeds up entry.",
+        "title": "B2B Specialized Tutoring Marketplace (Radical Diversification)",
+        "rationale": "Develop a secure marketplace connecting vetted, specialized human tutors or content experts with institutional clients. This moves Meridian beyond a pure SaaS model into a platform/transactional business, capitalizing on the proprietary student and tutor matching data.",
         "execution_plan": {
           "first_actions": [
-            "Audit top 5 potential partnership targets based on revenue/market share.",
-            "Develop a tailored pitch package focusing on complementary technology."
+            "Conduct feasibility study on necessary regulatory compliance (data privacy)",
+            "Develop core backend infrastructure for secure marketplace listing",
+            "Identify 10 high-value niche tutoring categories for initial launch"
           ],
           "resources_needed": [
-            "Legal consultation (for contract review)",
-            "Executive time allocation for relationship building"
+            "Legal consultation for platform liability and contract structure",
+            "Dedicated development squad allocation (reassigning a portion of R&D budget)"
           ],
-          "success_metric": "Secure one formal strategic partnership agreement within 9 months.",
+          "success_metric": "Onboard 5 institutional clients utilizing the marketplace within 12 months",
           "milestones": [
-            "Finalize MoU with a target partner.",
-            "Execute joint pilot program."
-          ]
-        },
-        "impact": "low",
-        "difficulty": "medium",
-        "timeframe": "12 months"
-      },
-      {
-        "type": "radical",
-        "title": "Core Platform Re-architecture for Scalability",
-        "rationale": "To support future diversification goals, the current monolithic architecture needs a radical overhaul to allow rapid deployment of new vertical features. This is high risk but necessary if they wish to pursue high-growth markets.",
-        "execution_plan": {
-          "first_actions": [
-            "Conduct technical feasibility study for microservices transition.",
-            "Establish a dedicated internal 'Innovation Task Force'."
-          ],
-          "resources_needed": [
-            "Increased budget allocation (requires 10% temporary dip in operational spend)",
-            "Hiring of one senior architect."
-          ],
-          "success_metric": "Reduction in average feature deployment time by 40%.",
-          "milestones": [
-            "Phase 1 architecture blueprint finalized.",
-            "Successful migration of core services to cloud-native microservices framework."
+            "Q3: Complete regulatory audit and define platform scope",
+            "Q4: Soft launch pilot with a limited network of tutors/clients",
+            "Year 2: Achieve operational profitability on transaction fees"
           ]
         },
         "impact": "high",
-        "difficulty": "high",
-        "timeframe": "24 months"
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Curriculum Optimization Data Insights (Incremental Growth)",
+        "rationale": "Leverage the accumulated AI performance data to create anonymized, high-level reports for school administrators. This positions Meridian as a strategic partner rather than just a tool provider, supporting B2B sales cycles.",
+        "execution_plan": {
+          "first_actions": [
+            "Automate generation of monthly institutional performance dashboards",
+            "Create 3 case studies demonstrating curriculum improvement based on data insights",
+            "Train the Account Management team to utilize these reports in sales pitches"
+          ],
+          "resources_needed": [
+            "BI/Data Visualization tool subscription or development time",
+            "Sales enablement training materials"
+          ],
+          "success_metric": "Increase institutional contract renewal rate by 10% through data-driven insights.",
+          "milestones": [
+            "Q3: Finalize data visualization product and sales pitch decks",
+            "Q4: Integrate reports into the CRM system for automated delivery",
+            "Year 2: Secure two major district partnerships based on these insights"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Launch a formal cross-departmental 'Adjacent Market Feasibility Study' led by the leadership team.",
-        "owner": "VP of Strategy",
+        "action": "Establish a cross-functional task force (Product, Sales, Finance) to map out the required technology stack and cost projections for the Tiered Subscription pilot.",
+        "owner": "Head of Strategy/COO",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Identify and initiate contact with three potential strategic partnership targets in new verticals.",
-        "owner": "Head of Business Development",
-        "timeframe": "Within 4 weeks"
+        "action": "Conduct a deep dive into the regulatory requirements and potential liability structures associated with launching the B2B Tutoring Marketplace model.",
+        "owner": "Legal Counsel / CTO",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Complete the technical feasibility assessment for microservices transition to support radical opportunities.",
-        "owner": "CTO",
-        "timeframe": "End of Q3"
+        "action": "Implement mandatory bi-weekly process checkpoints between engineering squads to improve execution velocity and cross-departmental alignment.",
+        "owner": "VP of Operations",
+        "timeframe": "Ongoing"
       }
     ],
     "key_weaknesses": [
-      "Informal process lacks structured pipeline visibility.",
-      "High reliance on current core product, limiting diversification potential.",
-      "Talent gap in dedicated innovation and cross-functional roles.",
-      "Lack of formalized market validation methodology."
+      "Lack of end-to-end integration across core systems (ERP, CRM) hindering efficient data utilization.",
+      "Inconsistent innovation execution velocity, leading to a cycle of MVP failure and underperformance.",
+      "Insufficient focus on deeply validating customer needs before committing development resources (e.g., self-service portal experience).",
+      "High dependency on informal processes which limits scalability and creates bottlenecks during strategic pivots."
     ]
   }
 }

@@ -1,0 +1,125 @@
+{
+  "id": "0482",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:24:45.319722+00:00",
+    "duration_ms": 25118,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Cipher Dynamics.co",
+      "sector": "Insurance",
+      "size": "Small",
+      "companyName": "Cipher Dynamics.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Cipher Dynamics.co is a boutique insurance brokerage firm serving mid-sized corporate clients across property, casualty, cyber, D&O, and employee benefits lines. They manage approximately €60M in placed premiums and rely heavily on manual processes for risk assessment. The core business focuses on providing tailored risk management programs rather than high-volume transactional policies.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 14,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The firm is currently positioned in a niche where bespoke advisory services are valued, but they lack scalable technology to defend against larger competitors entering the space with standardized risk platforms.",
+      "companyName": "Cipher Dynamics.co",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Risk Exposure Modeling Platform",
+        "rationale": "Developing the proposed platform for client exposure modeling addresses a direct customer pain point and aligns with strategic goals of modernizing technology.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed requirements workshop with key enterprise clients",
+            "Prototype a minimum viable product (MVP) using existing data pipelines",
+            "Allocate 60% of the budget to cloud infrastructure and initial software development sprints"
+          ],
+          "resources_needed": [
+            "Contract specialized risk analytics consultant (part-time)",
+            "Dedicated internal developer hours reallocation",
+            "Small subscription/licensing costs for core data services"
+          ],
+          "success_metric": "Achieve a 20% reduction in client onboarding time via platform integration within 6 months.",
+          "milestones": [
+            "Q1: Finalize MVP scope and architecture",
+            "Q2: Beta launch with 3 anchor clients",
+            "Q3: Full production rollout preparation"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Niche Market Disruption (Defensive)",
+        "rationale": "Given the low competitive pressure, Cipher Dynamics could leverage its small size and specialized knowledge to become the definitive 'cyber risk response' boutique for mid-market firms.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a specific high-value cyber sub-sector (e.g., FinTech compliance)",
+            "Develop proprietary predictive modeling using AI/ML on industry data",
+            "Pilot a subscription-based 'Cyber Defense Advisory' service offering"
+          ],
+          "resources_needed": [
+            "Investment in specialized ML tooling or talent acquisition",
+            "Marketing budget dedicated to thought leadership content creation",
+            "Seed funding for targeted tech integration (10% of remaining budget)"
+          ],
+          "success_metric": "Secure 5 new recurring advisory contracts with a minimum average contract value of €30k within 12 months.",
+          "milestones": [
+            "Q1: Define and validate the proprietary risk model",
+            "Q2: Launch targeted marketing campaign for niche service",
+            "Q4: Achieve operational profitability in new advisory segment"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, dedicated 'Innovation Sandbox' within the Q3 planning cycle.",
+        "owner": "CTO/Product Manager",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct comprehensive process audit to identify and eliminate top three operational bottlenecks blocking innovation flow.",
+        "owner": "COO",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Process fragmentation: Lack of formal, ring-fenced time or budget for dedicated innovation projects.",
+      "Digital Maturity Gap: Current tech stack is sufficient for maintenance but lacks the robust data infrastructure required for advanced predictive analytics.",
+      "Culture/Resource Constraint: High team utilization means product and operational demands constantly stifle exploratory innovation work."
+    ]
+  }
+}

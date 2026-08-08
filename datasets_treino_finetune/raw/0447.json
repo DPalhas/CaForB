@@ -1,0 +1,147 @@
+{
+  "id": "0447",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:06:33.151767+00:00",
+    "duration_ms": 27872,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Apex Networks.co",
+      "sector": "Hospitality & Tourism",
+      "size": "Large",
+      "companyName": "Apex Networks.co"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Apex Networks operates a boutique hotel group across historic European city centers, emphasizing high-touch experiential luxury and locally curated culinary programs. The company is currently scaling operations by integrating sophisticated CRM systems to drive personalized guest experiences across all properties. While maintaining strong operational standards, the organization lacks standardized cross-property digital workflows necessary for rapid scalability.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "Apex Networks recently piloted a customer self-service portal and an MVP for localized augmented reality tours. The self-service effort failed because it prioritized technology adoption over deep qualitative user research, resulting in low conversion. Conversely, the VR tour MVP attracted limited engagement, highlighting a gap between technical capability and genuine luxury service demand.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist three years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models outside of traditional room rentals. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The market is characterized by intense competition for high-end experiential offerings, requiring rapid adaptation to emerging wellness and sustainable tourism trends. While operational costs are stable, the need for scalable revenue streams outside core lodging remains paramount.",
+      "companyName": "Apex Networks.co",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Experience Engine",
+        "rationale": "Implement a lightweight AI layer focused solely on real-time guest preference tracking (via informal conversation data and direct booking history) to suggest personalized local experiences, effectively diversifying the offering without massive infrastructure overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study for integration with existing CRM systems.",
+            "Pilot AI personalization in one key property's concierge service (Phase 1 MVP)."
+          ],
+          "resources_needed": [
+            "Data scientist consultation (contract)",
+            "Cloud compute resources ($5k)"
+          ],
+          "success_metric": "Increase average ancillary spend per guest by 8% in the pilot property within 6 months.",
+          "milestones": [
+            "Q1: Tech stack selection and data pipeline definition",
+            "Q2: Pilot launch and performance review"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Vertical SaaS for Luxury Experience Modules",
+        "rationale": "Develop a B2B platform that allows other boutique hotels to license proprietary, high-margin experiential packages (e.g., bespoke culinary workshops or cultural immersion itineraries). This addresses the diversification goal by creating an entirely new revenue stream independent of core property occupancy.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and vet 3 potential acquisition targets/partners with relevant operational tech.",
+            "Define Minimum Viable Product (MVP) feature set focused on 'module licensing'."
+          ],
+          "resources_needed": [
+            "Small dedicated product team ($10k)",
+            "Legal counsel for licensing agreements"
+          ],
+          "success_metric": "Secure 2 pilot licenses with independent properties within 9 months.",
+          "milestones": [
+            "Q2: Market validation and partnership agreement",
+            "Q4: Beta platform launch and revenue run-rate projection"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Sustainable Wellness Subscription Box",
+        "rationale": "Launch a high-margin subscription service targeting affluent, eco-conscious travelers offering curated wellness goods and local artisanal products. This leverages the existing culinary expertise and positions the company in the growing sustainable tourism niche.",
+        "execution_plan": {
+          "first_actions": [
+            "Source initial product inventory (local artisans/organic suppliers).",
+            "Develop a lean digital marketing strategy focused on social proof."
+          ],
+          "resources_needed": [
+            "Inventory sourcing budget ($7k)",
+            "Digital marketing retainer ($3k)"
+          ],
+          "success_metric": "Achieve 500 recurring subscribers within the first year.",
+          "milestones": [
+            "Q1: Product finalization and supplier contracts",
+            "Q3: Full subscription service launch across properties"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force to define the technical and operational requirements for the AI Personalization Engine.",
+        "owner": "Head of Digital Transformation",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate due diligence on potential acquisition targets aligned with the 'Vertical SaaS' radical opportunity to address diversification needs.",
+        "owner": "CEO/Strategy Committee",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Conduct a detailed cost-benefit analysis and resource allocation plan for the three proposed opportunities, prioritizing low-budget incremental wins first.",
+        "owner": "CFO",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia stemming from an informal innovation process leading to slow execution and inconsistent project governance.",
+      "Limited budget percentage (10%) restricts the ability to fund large, multi-year radical initiatives without significant external capital or acquisition support.",
+      "Reliance on manual data gathering and informal feedback loops makes truly scalable customer insights difficult to capture and translate into actionable product development."
+    ]
+  }
+}

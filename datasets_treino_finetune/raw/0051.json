@@ -3,144 +3,147 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Nonprofit / NGO",
+    "size": "Micro",
     "regulatory_environment": "high",
     "risk_appetite": "conservative",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:11:04.480067+00:00",
-    "duration_ms": 45193,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:50:02.292822+00:00",
+    "duration_ms": 29674,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.270586+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metals Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Forge.com",
+      "sector": "Nonprofit / NGO",
+      "size": "Micro",
+      "companyName": "Forge.com"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "A medium-sized manufacturer specializing in high-precision steel components used primarily in aerospace and specialized industrial machinery. The company operates under strict international safety and environmental compliance standards due to the nature of its output.",
+      "companyDescription": "Social enterprise providing employment training and job placement services for refugees and marginalized communities. Operates 3 training centers and a social enterprise catering business that provides work experience, successfully placing over 800 individuals into sustainable employment in the past year. The organization maintains high standards of compliance required by government funding bodies and international aid agencies.",
       "innovationProcess": "formal",
-      "pastInitiatives": "The company has conducted periodic design reviews but relies heavily on established engineering protocols for product development. They have implemented standardized quality control procedures, though major capital expenditures are infrequent due to conservative financial planning.",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly, focusing on operational efficiency rather than market disruption. Approved projects receive 6 months of funded incubation with dedicated resources, resulting in the successful rollout of three small process automation tools this year.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to maintain a dominant market share in high-specification components by ensuring zero critical failures and meeting stringent regulatory compliance requirements. We aim to solidify our existing customer base through reliability.",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base by reducing churn, strengthening switching costs through tailored programs, and matching the digital experience our competitors offer without triggering a destructive price war.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "long",
       "riskAppetite": "conservative",
-      "teamSize": "The innovation team is small, consisting of five highly experienced engineers and one project manager who works closely with senior leadership.",
-      "digitalMaturity": 4,
-      "revenueRange": "10m_to_50m",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
       "budgetPercentage": 3,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
-        "talent",
         "culture",
-        "time"
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "Competitors are aggressively pursuing automation, which poses a threat to our current operational efficiency and component lead times."
+      "competitivePressure": "low",
+      "additionalContext": "As a micro NGO operating in a high-compliance environment, Forge.com must prioritize stability and client retention over aggressive growth or expensive market disruption.",
+      "companyName": "Forge.com",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Automated Quality Assurance Integration (Incremental)",
-        "rationale": "Implementing low-cost IoT sensors across key production lines can provide real-time data monitoring, reducing material waste and improving consistency without requiring a complete overhaul of the existing formal process. This is a conservative step to enhance existing reliability.",
+        "title": "Client Retention & Loyalty Program Optimization",
+        "rationale": "Given the conservative risk appetite and market defense priority, optimizing existing client relationships is low-risk and high-impact. Implementing a tiered loyalty program based on training completion or job placement success can increase switching costs without requiring major infrastructure changes.",
         "execution_plan": {
           "first_actions": [
-            "Pilot sensor deployment on one critical component line",
-            "Develop basic dashboard for data visualization"
+            "Analyze current client churn data to identify friction points",
+            "Design a simple, low-cost loyalty structure (points/badges)",
+            "Pilot the program with 50 existing clients",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "50k budget for hardware and installation",
-            "10 hours of engineering time allocated"
+            "Time from owner (4 hours/week)",
+            "Minimal freelance design fee ($1k)"
           ],
-          "success_metric": "Reduction in material scrap rate by 8% within the first quarter.",
+          "success_metric": "Reduce client churn by 2% within 6 months",
           "milestones": [
-            "Q1: Pilot completion and data validation",
-            "Q2: Full line integration planning"
+            "Q3: Finalize loyalty structure and marketing copy",
+            "Q4: Soft launch the program to existing base"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "radical",
-        "title": "Near-Term Additive Manufacturing Partnership (Radical)",
-        "rationale": "Exploring a strategic partnership with an advanced additive manufacturing firm could allow us to rapidly prototype new geometries for specialized components, giving us a defensive capability against competitors who might use novel designs. This is high-risk but necessary for future resilience.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify three potential add-tech partners",
-            "Define required material standards (high regulatory focus)"
-          ],
-          "resources_needed": [
-            "30k budget for prototype materials and consulting fees",
-            "Dedicated project management support"
-          ],
-          "success_metric": "Successful production run of a novel component within 9 months.",
-          "milestones": [
-            "Month 1-2: Partner selection and feasibility study",
-            "Month 6: First functional prototype delivered"
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "medium"
+        "timeframe": "Within 6 months"
       },
       {
         "type": "incremental",
-        "title": "Process Streamlining via Digital Documentation (Incremental)",
-        "rationale": "Digitizing and standardizing all compliance documentation will reduce the time spent on manual regulatory submissions, protecting us from fines or delays. This supports our conservative nature by reducing exposure through better process control.",
+        "title": "Compliance-Driven Digital Onboarding Streamlining",
+        "rationale": "Improving the digital experience for new participants ensures adherence to high regulatory standards while enhancing the user journey. This incremental update minimizes compliance risk and improves initial NPS scores.",
         "execution_plan": {
           "first_actions": [
-            "Select a formal QMS software solution",
-            "Map and digitize the top five most frequent compliance documents"
+            "Audit current training enrollment workflow against compliance checklists",
+            "Implement a single-page streamlined digital intake form",
+            "Integrate basic automated email sequences for status updates"
           ],
           "resources_needed": [
-            "15k budget for software subscription",
-            "2 months of internal staff training"
+            "Time from owner (6 hours/week)",
+            "Subscription to low-cost CRM tool ($50/mo)"
           ],
-          "success_metric": "Reduction in regulatory submission cycle time by 30%.",
+          "success_metric": "Reduce onboarding time by 30% and maintain compliance audit score at 100%",
           "milestones": [
-            "Q1: Software selection and documentation mapping complete",
-            "Q3: Full organizational transition to digital forms"
+            "Month 1: Complete workflow mapping",
+            "Month 2: Launch streamlined intake form"
           ]
         },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "short"
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Job Matching Engine (Pilot)",
+        "rationale": "To defend against modern entrants, a bold approach involves using low-code AI to offer hyper-personalized job matching recommendations. While risky due to budget constraints, successful pilot results could create a significant competitive differentiator in talent acquisition.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a small dataset of 100 past client skill profiles",
+            "Investigate and select a no-code AI/ML tool (e.g., utilizing off-the-shelf NLP APIs)",
+            "Define MVP scope: matching training modules to specific job descriptions.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Seed funding allocation ($5k for specialized consultant)",
+            "Subscription to API services ($200/month)"
+          ],
+          "success_metric": "Achieve 15% higher placement conversion rate than baseline within the pilot group",
+          "milestones": [
+            "Q3: Tool selection and data preparation complete",
+            "Q4: Full pilot launch (Job matching feature live)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a comprehensive audit of current engineering process bottlenecks.",
-        "owner": "Head of Engineering",
+        "action": "Establish a formal technical advisory board or contract for specialized HR/Tech expertise.",
+        "owner": "Owner",
         "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Finalize and secure funding for the Automated Quality Assurance Pilot project.",
-        "owner": "CFO/Innovation Lead",
-        "timeframe": "Within 6 weeks"
-      },
-      {
-        "action": "Establish a formal 'Regulatory Compliance Task Force' to oversee digital documentation transition.",
-        "owner": "Operations Manager",
-        "timeframe": "Within 4 weeks"
+        "action": "Finalize the scope and resource allocation for the 'Client Retention' loyalty pilot.",
+        "owner": "Operational Lead",
+        "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "High dependency on manual quality checks, leading to human error risk.",
-      "Slower than competitors in design iteration due to rigid formal processes.",
-      "Limited internal expertise in advanced automation technologies."
+      "Lack of specialized technical talent, limiting complex digital solution deployment.",
+      "Over-reliance on the owner for critical product and technology decisions, creating single point of failure risk.",
+      "Limited operational bandwidth due to a decentralized management structure that lacks defined process standards.",
+      "Low initial budget percentage (3%) severely restricts investment in high-impact, long-term radical innovation."
     ]
   }
 }

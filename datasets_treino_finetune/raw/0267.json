@@ -1,0 +1,129 @@
+{
+  "id": "0267",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:52:43.651879+00:00",
+    "duration_ms": 21954,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.342327+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Ventures",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Large",
+      "companyName": "Nova Ventures"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Nova Ventures is a large wholesale distributor specializing in plumbing, heating, and electrical supplies, supporting over 500 independent contractors and hardware retailers nationwide. The company manages a significant physical footprint including a 12,000 m² central warehouse and a fleet of 15 delivery vehicles. The organization operates within highly regulated supply chains requiring strict compliance with safety standards and inventory management protocols.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The company has not undertaken any systematic innovation or transformation programs, maintaining an operational model that remains largely unchanged for several years. While senior leadership acknowledges the need to modernize infrastructure and logistics, there has been no formal commitment to defining ownership, allocating resources, or establishing a timeline for specific initiatives.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our core business is stable and cash-generative, but management recognizes limited growth potential within the traditional distribution model. We are actively exploring adjacent business models, focusing heavily on diversification into marketplace platforms, recurring subscription services for contractor supply chain needs, or proprietary data monetization strategies derived from our existing customer interactions.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 21,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The current market is highly competitive with aggressive pricing from national chains, demanding that Nova Ventures either radically disrupt the supply chain or rapidly pivot into value-added services to maintain margins.",
+      "companyName": "Nova Ventures",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Route Optimization and WMS Integration (Conservative)",
+        "rationale": "Implementing a modern Warehouse Management System (WMS) upgrade and route optimization software will immediately improve operational efficiency, reducing fuel costs by an estimated 10-15% and minimizing inventory discrepancies within the existing distribution network. This incremental gain stabilizes core operations.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a vendor selection process for WMS solutions",
+            "Pilot route optimization software in one regional division",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated IT project management resources",
+            "€150,000 initial capital expenditure"
+          ],
+          "success_metric": "Achieve 12% reduction in delivery mileage within Q3",
+          "milestones": [
+            "Q2: Vendor selection and contract signing",
+            "Q3: Pilot deployment completed"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Contractor Supply Marketplace Platform (Bold/Diversification)",
+        "rationale": "Instead of just selling supplies, Nova Ventures could leverage its proprietary data to build a B2B marketplace connecting contractors directly with specialized suppliers and vendors. This radical shift moves the company from a transactional distributor to a platform owner, creating significant new revenue streams through commission fees and subscription services.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 'Project Phoenix' venture team",
+            "Develop MVP (Minimum Viable Product) specifications for the marketplace app/portal",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "€800,000 seed funding allocation",
+            "Hiring 3 specialized tech talent"
+          ],
+          "success_metric": "Onboard 50 active contractor users and generate €200k in platform transaction fees by Year 1 end",
+          "milestones": [
+            "Q4: Finalize legal framework and technical architecture",
+            "Year 1: Launch MVP and achieve first 25 active users"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish an internal 'Innovation Incubator' task force to define 3 high-potential diversification concepts.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Define and prioritize the roadmap for the WMS upgrade, securing initial budget approval.",
+        "owner": "VP of Operations",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Conduct a 'Culture & Process Audit' to identify specific bottlenecks hindering decentralized innovation initiatives.",
+        "owner": "Internal Audit/HR Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Complete lack of formalized innovation process and stage-gate methodology, leading to inconsistent experimentation.",
+      "Significant organizational inertia and cultural resistance to decentralized risk-taking in a highly regulated environment.",
+      "Low digital maturity (Level 2) which limits the ability to leverage data monetization or build sophisticated adjacent service layers.",
+      "Budget constraints (€21% allocation) potentially stifling necessary high-risk, high-reward radical diversification efforts."
+    ]
+  }
+}

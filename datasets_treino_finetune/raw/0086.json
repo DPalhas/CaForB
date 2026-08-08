@@ -3,143 +3,124 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Fintech",
+    "sector": "Healthcare & Medical",
     "size": "Medium",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "growth",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:27:07.820704+00:00",
-    "duration_ms": 23117,
+    "generated_at": "2026-08-03T18:06:20.702067+00:00",
+    "duration_ms": 21747,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "FinTech Solutions Inc.",
-      "sector": "Fintech",
-      "size": "Medium"
+      "name": "Pulse",
+      "sector": "Healthcare & Medical",
+      "size": "Medium",
+      "companyName": "Pulse"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "FinTech Solutions Inc. is a medium-sized firm specializing in providing cloud-based accounting and payment processing software for small to medium enterprises (SMEs). The company focuses on streamlining financial operations through automation, aiming to capture market share from legacy providers.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The team has successfully launched several iterative feature updates and developed a new API integration layer within the past year. However, large-scale platform overhauls remain largely conceptual due to resource constraints.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is aggressive market penetration and user acquisition by expanding our product suite. We aim to become the leading financial operating system for SME businesses in the next three years.",
+      "companyDescription": "As a mid-sized clinical laboratory, Pulse performs high-volume hematology and molecular diagnostics, serving physicians requiring rapid turnaround times for critical patient data. The company is currently focused on optimizing existing workflows and leveraging current technology to maintain service quality while exploring opportunities in molecular profiling and next-generation assay development.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The company has not undertaken any systematic innovation or transformation programs; operational model changes have been minimal over the past three years. While leadership recognizes the necessity of modernization to secure future growth, there is no defined framework for identifying, scoping, or funding new projects.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets—potentially including M&A, new product lines, or geographic expansion—provided they have a credible path to meaningful revenue contribution within 18 months.",
       "strategicPriority": "growth",
       "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core team consists of 8 developers, product managers, and a small operations group. The culture is collaborative but focused on execution rather than radical experimentation.",
-      "digitalMaturity": "3",
+      "digitalMaturity": "1",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
+        "budget",
+        "culture",
         "process",
-        "time"
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "Internal resistance to change is high due to the lean resources and lack of a structured innovation pipeline. The company lacks standardized metrics to measure the success or failure of nascent ideas.",
+      "companyName": "Pulse",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 2.0,
     "opportunities": [
       {
         "type": "radical",
-        "title": "AI-Driven Hyper-Personalized Financial Advisory Engine",
-        "rationale": "Integrating advanced generative AI to move beyond basic reporting and offer prescriptive, predictive financial modeling tailored specifically to each SME's unique cash flow patterns. This would create a strong competitive moat.",
+        "title": "AI-Driven Diagnostic Stream Optimization",
+        "rationale": "Developing a proprietary AI algorithm to analyze peripheral blood smears and identify subtle hematological patterns could significantly reduce manual interpretation time while improving diagnostic accuracy. This would create a defensible, high-value service that differentiates the lab.",
         "execution_plan": {
           "first_actions": [
-            "Allocate 1 dedicated R&D sprint for core ML model feasibility.",
-            "Pilot the AI engine with 20 high-value clients."
+            "Conduct feasibility study on existing data infrastructure for AI training.",
+            "Assign 2 engineers to build a minimum viable product (MVP) model focused on differential cell counting."
           ],
           "resources_needed": [
-            "Senior Data Scientist salary",
-            "Cloud compute budget increase"
+            "Training/licensing costs for specialized ML models",
+            "Overtime for dedicated engineering team"
           ],
-          "success_metric": "Increase in average customer retention by 15% within 9 months.",
+          "success_metric": "Achieve 15% reduction in sample interpretation time within 6 months.",
           "milestones": [
-            "Q3: Successful proof-of-concept deployment.",
-            "Q4: Beta launch with early adopters."
+            "Month 1: Data pipeline established and initial model training begins.",
+            "Month 3: Internal validation of MVP accuracy against expert reviews."
           ]
         },
         "impact": "high",
-        "difficulty": "high",
-        "timeframe": "long"
+        "difficulty": "medium",
+        "timeframe": "6 months"
       },
       {
         "type": "incremental",
-        "title": "Automated Regulatory Compliance Module (Modular Update)",
-        "rationale": "Develop a modular, automated compliance update system that allows for rapid adaptation to changing financial regulations without needing full-scale platform rewrites.",
+        "title": "Core Workflow Automation Pilot",
+        "rationale": "Implementing targeted automation for sample tracking and basic data entry in high-volume areas will improve operational efficiency. This is a low-risk, incremental step that frees up staff time without requiring major capital expenditure.",
         "execution_plan": {
           "first_actions": [
-            "Audit existing API structure for modularity requirements.",
-            "Assign 1 dedicated engineering lead."
+            "Identify the top 3 most time-consuming manual tasks.",
+            "Procure and integrate off-the-shelf workflow management software."
           ],
           "resources_needed": [
-            "Internal tool training budget",
-            "Engineering time reallocation (50% effort)"
+            "Software licensing fees",
+            "Internal IT support hours"
           ],
-          "success_metric": "Reduction in manual compliance audit time by 30%.",
+          "success_metric": "Decrease average sample processing time by 10%.",
           "milestones": [
-            "Next 6 weeks: Compliance module MVP.",
-            "Next quarter: Integration into core product."
+            "Month 2: Pilot implementation in one specific department.",
+            "Month 4: Full rollout planning based on pilot results."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
-      },
-      {
-        "type": "incremental",
-        "title": "Strategic Expansion into Cross-Border Payment Infrastructure (API Focus)",
-        "rationale": "Focus on building robust, standardized APIs to facilitate seamless payments between our existing SME clients and international partners, opening up significant untapped market segments.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify 3 key international banking partners for API sync.",
-            "Conduct feasibility study on cross-border security protocols."
-          ],
-          "resources_needed": [
-            "Legal consultation fee",
-            "Marketing budget for partner outreach"
-          ],
-          "success_metric": "Onboard 5 new international payment partners by end of fiscal year.",
-          "milestones": [
-            "Month 1-2: Partner selection and contract negotiation.",
-            "Month 3: API integration testing completion."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "medium"
+        "timeframe": "3 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Launch feasibility study for the AI-Driven Advisory Engine.",
-        "owner": "Chief Product Officer (CPO)",
-        "timeframe": "Within 4 weeks"
+        "action": "Establish a minimal, formal innovation pipeline (Idea submission -> Screening -> Resource allocation).",
+        "owner": "CEO/Strategy Lead",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Initiate internal audit of existing platform modularity to support compliance updates.",
-        "owner": "VP of Engineering",
-        "timeframe": "Within 6 weeks"
+        "action": "Allocate a dedicated $50k seed budget specifically for the AI diagnostic pilot project.",
+        "owner": "VP of R&D",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Identify and qualify three potential cross-border API integration partners.",
-        "owner": "Head of Business Development",
-        "timeframe": "Within 8 weeks"
+        "action": "Conduct quarterly performance reviews tied to innovation KPIs (not just operational ones).",
+        "owner": "Board Committee Chair",
+        "timeframe": "Ongoing"
       }
     ],
     "key_weaknesses": [
-      "Scaling the current technical infrastructure to support exponential user growth.",
-      "High reliance on a few key senior engineers leading to single points of failure in innovation.",
-      "Slow internal process for moving from conceptual idea to MVP development due to operational bottlenecks."
+      "Lack of a formal innovation process, leading to zero systematic R&D.",
+      "Critical constraints on budget (5%) preventing significant capital expenditures or staffing changes.",
+      "Low digital maturity (Level 1) resulting in heavy reliance on manual workflows and spreadsheets.",
+      "Internal culture prioritizing maintenance over proactive growth/innovation."
     ]
   }
 }

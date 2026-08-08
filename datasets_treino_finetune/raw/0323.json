@@ -1,0 +1,149 @@
+{
+  "id": "0323",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:18:49.506477+00:00",
+    "duration_ms": 24428,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vertex Labs",
+      "sector": "Construction",
+      "size": "Large",
+      "companyName": "Vertex Labs"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Specialized facade engineering contractor designing and installing curtain wall systems, structural glazing, and rainscreen cladding for high-rise office towers. Deep expertise in EN 13830 compliance and thermal performance modeling. Exploring parametric design tools to accelerate shop drawing generation.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine focused on optimizing material usage and reducing construction waste.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets, potentially including M&A in adjacent smart building tech or geographic expansion into emerging markets, provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 21,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Vertex Labs is currently focused on integrating Building Information Modeling (BIM) workflows across the entire design-build lifecycle to streamline collaboration with clients and subcontractors. The firm aims to transition from a service provider mindset to an integrated technology platform provider.",
+      "companyName": "Vertex Labs"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Parametric Design Integration for Shop Drawing Automation",
+        "rationale": "Leveraging existing expertise in thermal modeling and geometry to create a parametric engine that rapidly generates complex curtain wall shop drawings from initial design inputs. This addresses the current inertia by lowering the time-to-market for bespoke designs.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot integration of Rhino/Grasshopper module into existing CAD environment.",
+            "Allocate $30k for specialized parametric software licensing and training."
+          ],
+          "resources_needed": [
+            "2 dedicated BIM/Parametric engineers (full-time)",
+            "$50,000 equipment & training budget"
+          ],
+          "success_metric": "Reduction in shop drawing generation time by 30% within 9 months.",
+          "milestones": [
+            "Q1: Proof of concept complete for a standard facade system.",
+            "Q2: Internal workflow pilot with key design team."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Modular Off-Site Structural Cladding System (Construction 4.0)",
+        "rationale": "Developing a fully modular, prefabricated facade component system optimized for rapid on-site assembly and reduced labor costs. This radical move fundamentally changes the value proposition from installation service to integrated product manufacturing.",
+        "execution_plan": {
+          "first_actions": [
+            "Secure partnership with local prefabrication fabricator.",
+            "Establish a dedicated cross-functional task force (Design, Manufacturing, Logistics)."
+          ],
+          "resources_needed": [
+            "$500k for prototype tooling and simulation software",
+            "Hiring 3 specialized supply chain/logistics experts"
+          ],
+          "success_metric": "Achieve a $1.5M contribution from modular products within 24 months.",
+          "milestones": [
+            "Q2: Finalize design specifications and material sourcing.",
+            "Q4: Launch pilot project using the new system."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Maintenance Platform for Installed Assets",
+        "rationale": "Implementing sensor-based IoT integration into installed systems to predict material fatigue or thermal inefficiencies, moving beyond standard post-installation inspections. This builds customer loyalty and opens a recurring revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 5 key high-value projects for initial sensor deployment.",
+            "Allocate $100k for IoT hardware integration trials."
+          ],
+          "resources_needed": [
+            "$150k in IoT sensors and data platform development",
+            "1 Data Science specialist (contract)"
+          ],
+          "success_metric": "Achieve a 25% adoption rate of the predictive maintenance module among installed clients.",
+          "milestones": [
+            "Q3: Complete sensor integration framework.",
+            "Q4: Launch paid pilot program."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed feasibility study for the Modular Off-Site System (Radical opportunity).",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Establish a cross-divisional working group focused on digital workflow integration.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Review and restructure the internal budget allocation for the innovation portfolio to prioritize high-impact/low-risk projects.",
+        "owner": "Finance Committee Chair",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia stemming from formal, stage-gate decision-making which stifles rapid prototyping and pivot culture.",
+      "Underinvestment in foundational digital infrastructure necessary to support a Digital Maturity score of 4; current tools are siloed.",
+      "High dependency on senior executive sponsorship for strategic initiatives, creating bottlenecks during budget allocation.",
+      "Cultural resistance to radical innovation due to the historical success based on incremental service delivery."
+    ]
+  }
+}

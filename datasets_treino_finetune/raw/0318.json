@@ -1,0 +1,128 @@
+{
+  "id": "0318",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:16:52.744494+00:00",
+    "duration_ms": 88504,
+    "attempts": 4,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.362014+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Forge Consulting",
+      "sector": "Financial Services",
+      "size": "Micro",
+      "companyName": "Forge Consulting"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Asset management firm managing $2.5B AUM across 6 mutual funds and discretionary mandates for institutional investors and family offices. Investment strategies span European equities, fixed income, and multi-asset classes. We are evaluating machine learning overlays for portfolio risk monitoring and alternative data integration for equity research to maintain alpha generation.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures, reducing unplanned downtime by 15%. This required significant coordination with our legacy ERP system for data ingestion. Now we are piloting a low-cost cloud-based analytics tool specifically designed to identify correlation risks across disparate asset classes.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments who are sensitive to valuation shifts. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address these specific pain points driving churn before the trend becomes irreversible in this competitive micro-market.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The firm operates under stringent MiFID II guidelines, necessitating careful review of any new client onboarding workflows or data handling capabilities.",
+      "companyName": "Forge Consulting",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting RPA",
+        "rationale": "Implementing Robotic Process Automation (RPA) to automate the data extraction for quarterly regulatory filings will reduce manual error risk and free up developer time.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 compliance reports requiring manual data entry.",
+            "Select a low-code RPA tool pilot (e.g., UiPath Community Edition).",
+            "Map the existing data pipeline to identify automation opportunities."
+          ],
+          "resources_needed": [
+            "10 hours of developer time for mapping",
+            "Subscription/licensing cost for basic RPA tool",
+            "External consultant (optional, short term)"
+          ],
+          "success_metric": "Reduce manual compliance data entry hours by 40% within Q3.",
+          "milestones": [
+            "Month 1: Tool selection and proof of concept completion.",
+            "Month 2: Integration into a single reporting workflow.",
+            "Month 3: Full deployment for one key regulatory report."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Risk Alerts",
+        "rationale": "Leveraging the existing ML infrastructure to move beyond standard risk monitoring and create dynamic, predictive alerts tailored specifically to individual client portfolio volatility.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear parameters for 'hyper-personalization' based on client segmentation data.",
+            "Allocate 50% of developer time for model fine-tuning and UI prototype design.",
+            "Establish a dedicated Slack channel for rapid feedback from portfolio managers."
+          ],
+          "resources_needed": [
+            "Increased GPU access or specialized cloud compute cost",
+            "Data science consultation (short term)",
+            "UI/UX redesign time"
+          ],
+          "success_metric": "Increase client engagement score related to proactive alerts by 20% within 6 months.",
+          "milestones": [
+            "Month 1-2: Prototype and backtesting of the new alert engine.",
+            "Month 3: Internal pilot program with 5 key clients.",
+            "Month 4: Full integration into the self-service portal."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 weeks"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a deep dive feasibility study on RPA adoption for compliance reporting.",
+        "owner": "Head of Technology/Lead Developer",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Launch an immediate 'Customer Experience Quick Win' project focused solely on the most cited self-service pain points.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe resource constraints resulting in no dedicated innovation budget or R&D headcount, forcing reliance on opportunistic side projects.",
+      "Partial and fragmented innovation process that lacks clear governance or scaling mechanisms for successful pilots.",
+      "High dependency on owner-led decision-making which can lead to 'strategy drift' during short time horizons as market conditions shift.",
+      "Low digital maturity (Level 2) limiting the firm's ability to leverage advanced automation and self-service tools effectively."
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "0107",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:31:09.277081+00:00",
+    "duration_ms": 25848,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan Holdings",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small",
+      "companyName": "Titan Holdings"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Titan Holdings is a regional supermarket chain with 28 stores, focusing on fresh produce and private-label goods across central Portugal. Its core strength lies in localized supply chain management and operational efficiency within its small network. The company is currently experimenting with self-checkout technology and exploring AI to combat significant losses from spoilage.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "The digital customer onboarding flow successfully reduced average new customer setup time by 50%, significantly improving initial user satisfaction metrics. This project demonstrated the viability of leveraging tech for operational efficiency, setting a positive baseline for future scaling initiatives. While cross-functional collaboration was strong, deployment timelines sometimes lagged due to necessary infrastructure adjustments.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The primary goal is aggressive top-line growth by 30% annually through targeted market penetration in adjacent segments. The company must decide whether to deepen its vertical specialization or pursue a horizontal expansion strategy into related categories like packaged goods. Success hinges on identifying underserved customer niches quickly.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities—explainability, human oversight, risk classification documentation—into our product roadmap immediately to avoid market access risk when enforcement begins.",
+      "companyName": "Titan Holdings",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Local Demand Prediction Engine",
+        "rationale": "Current forecasting tools are basic; implementing a proprietary AI model could dramatically reduce waste and optimize inventory placement across the 28 stores. This radical shift directly addresses core operational inefficiency and provides a competitive edge in cost management.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional 'Waste Reduction Task Force' within 4 weeks.",
+            "Select three high-waste departments for initial pilot implementation of the forecasting tool."
+          ],
+          "resources_needed": [
+            "1 Senior Data Scientist (part-time contract)",
+            "Cloud infrastructure spend ($50k initial allocation)"
+          ],
+          "success_metric": "Achieve a 15% reduction in fresh produce waste within the first quarter.",
+          "milestones": [
+            "Q2: Proof of concept model deployed and validated.",
+            "Q3: Pilot results demonstrate ROI exceeding 40% improvement over baseline."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Self-Checkout Ecosystem Integration (Phase 2)",
+        "rationale": "Expanding the self-checkout rollout beyond basic scanning to include augmented reality guidance for complex product assembly could increase customer satisfaction and throughput. This builds on existing digital maturity while leveraging current tech investments.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current kiosk performance bottlenecks across all 28 stores.",
+            "Develop a phased rollout plan prioritizing high-volume store locations."
+          ],
+          "resources_needed": [
+            "Internal IT training resources",
+            "Hardware upgrade budget ($30k)"
+          ],
+          "success_metric": "Increase in average transaction throughput by 12% across pilot stores.",
+          "milestones": [
+            "Q4: Successful deployment in 5 key high-traffic locations.",
+            "Q1 next year: Full network integration planning."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      },
+      {
+        "type": "radical",
+        "title": "Agile Partnership Acquisition for Adjacent Market Access",
+        "rationale": "Instead of internal development, acquiring a smaller, highly specialized regional producer or distributor allows Titan to immediately enter an adjacent customer segment. This avoids lengthy R&D cycles and accelerates market share capture.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three potential acquisition targets in the adjacent 'Specialty Goods' category.",
+            "Engage legal counsel for rapid due diligence on target viability."
+          ],
+          "resources_needed": [
+            "M&A advisory retainer",
+            "Initial capital allocation ($10k reservation)"
+          ],
+          "success_metric": "Successful acquisition of a partner within the first 9 months.",
+          "milestones": [
+            "Q3: Target identification and initial valuation complete.",
+            "Q4: Acquisition finalization and integration plan drafted."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate a dedicated, 6-month R&D sprint focused solely on the AI Demand Prediction Engine.",
+        "owner": "Senior Engineer",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Develop detailed financial models and compliance documentation outlining the EU AI Act requirements for core automated decision-making systems.",
+        "owner": "Compliance Officer/Leadership Team",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct cross-functional workshops to map out digital process bottlenecks hindering innovation speed.",
+        "owner": "Innovation Function",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented innovation workflow leading to slow time-to-market (Process weakness).",
+      "High dependency on single senior technical resource, creating a single point of failure.",
+      "Limited dedicated budget for high-risk/high-reward radical experimentation ($12% constraint).",
+      "Informal feedback loop resulting in reliance on anecdotal evidence rather than structured market research."
+    ]
+  }
+}

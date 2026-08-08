@@ -1,0 +1,128 @@
+{
+  "id": "0366",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:43:27.341671+00:00",
+    "duration_ms": 47168,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova",
+      "sector": "Public Administration",
+      "size": "Medium",
+      "companyName": "Nova"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Regional public health authority responsible for epidemiological surveillance, health promotion programs, and healthcare resource planning for a region of 1.2 million inhabitants. Managing 15 public health programs across diverse services, Nova focuses heavily on real-time disease surveillance using integrated syndromic data from primary care clinics and hospital networks to proactively manage outbreaks.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team successfully transitioned to an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This shift significantly reduced our release cycle time by 60% and improved cross-functional collaboration between the data science and operations departments. However, adjacent teams like policy and public outreach are still adapting their workflows to accommodate this faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors in health tech and need to reignite our growth trajectory through innovative service delivery models. We are willing to make significant strategic bets, potentially including M&A or geographic expansion of our surveillance platforms, provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Our industry is facing a pending regulatory shift that will require mandatory carbon emissions reporting and supply chain due diligence starting next fiscal year. Innovation efforts must account for compliance infrastructure investment as a non-negotiable prerequisite to growth initiatives.",
+      "companyName": "Nova"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Outbreak Modeling Optimization",
+        "rationale": "Leveraging existing data pipelines to implement advanced machine learning models for highly accurate, localized disease prediction will reduce response times and improve resource allocation efficiency without requiring a full system overhaul. This is an immediate win that addresses operational bottlenecks.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a feasibility study on integrating deep learning into the current syndromic data analysis platform.",
+            "Pilot a predictive model targeting influenza and respiratory illness spikes in one high-density district."
+          ],
+          "resources_needed": [
+            "Data Scientist (contract)",
+            "Cloud computing credits ($5k)",
+            "Internal IT infrastructure access"
+          ],
+          "success_metric": "Reduction in average outbreak response time by 20% within Q3.",
+          "milestones": [
+            "Model feasibility report completed (Month 1)",
+            "Pilot deployment and performance validation complete (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Strategic Acquisition of a Specialized Health Data Platform (M&A)",
+        "rationale": "To rapidly gain market share and capabilities in advanced analytics, Nova should pursue an acquisition of a smaller health tech firm that specializes in proprietary genomic or complex behavioral data analysis. This radical move immediately solves the technological gap but requires significant cultural integration.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a detailed target company profile based on required analytical capabilities (e.g., NLP for patient notes).",
+            "Engage legal and financial advisors to establish preliminary valuation benchmarks."
+          ],
+          "resources_needed": [
+            "M&A advisory fees ($100k)",
+            "Integration team headcount ($50k/year salary)",
+            "Initial capital allocation for acquisition ($2m)"
+          ],
+          "success_metric": "Successful integration and measurable increase in proprietary data processing capacity by 40%.",
+          "milestones": [
+            "Target identification and preliminary due diligence (Month 3)",
+            "Acquisition agreement signed and closing initiated (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated Cross-Functional Innovation Task Force focused on regulatory compliance infrastructure mapping.",
+        "owner": "Head of Technology",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Finalize the business case and resource allocation for the AI Predictive Modeling Pilot project.",
+        "owner": "Director of R&D",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate discreet M&A due diligence on two potential health data platform targets to inform future growth strategy.",
+        "owner": "CEO / Strategy Lead",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Rigid internal process stifles rapid pivoting and scaling of successful pilot programs.",
+      "High dependency on a small leadership team limits the bandwidth for proactive, long-term radical innovation sourcing.",
+      "Significant cultural resistance to adopting new agile methodologies among legacy operational staff.",
+      "Inconsistent systematic data collection infrastructure prevents timely compliance reporting and future AI model training."
+    ]
+  }
+}

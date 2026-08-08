@@ -1,0 +1,158 @@
+{
+  "id": "0401",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:59:05.096700+00:00",
+    "duration_ms": 28977,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Synapse Group",
+      "sector": "Real Estate",
+      "size": "Small",
+      "companyName": "Synapse Group"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Commercial property management firm operating 12 office buildings, 3 retail centers, and 2 logistics parks totaling 120,000 m² of leasable area. Managing 400+ tenant relationships. Seeking to implement IoT-based building energy management and a tenant experience mobile app.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The existing operational infrastructure relies heavily on legacy systems that limit seamless third-party integration, creating friction for rapid service delivery improvements.",
+      "companyName": "Synapse Group",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "IoT Energy Management Integration (Quick Win)",
+        "rationale": "Implementing IoT-based building energy management offers immediate operational efficiency gains and provides a tangible value proposition for tenants, aligning perfectly with the short time horizon.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three pilot buildings for smart thermostat installation",
+            "Select and procure necessary sensor hardware within Q2",
+            "Conduct feasibility study on data integration requirements"
+          ],
+          "resources_needed": [
+            "€50k initial capital expenditure",
+            "1 dedicated project manager allocation",
+            "External IoT consulting support (limited)"
+          ],
+          "success_metric": "Achieve 15% reduction in energy consumption across pilot buildings within 6 months.",
+          "milestones": [
+            "Pilot setup completion (Month 3)",
+            "Energy savings validated and quantified (Month 5)",
+            "Decision on scaling or abandoning tech"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "B2B PropTech SaaS Platform Development (Diversification)",
+        "rationale": "Developing a specialized B2B platform for facility management reporting allows Synapse Group to pivot from service dependency toward creating scalable, recurring software revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the minimum viable product (MVP) features for facilities reporting",
+            "Conduct market validation interviews with 5 prospective corporate clients",
+            "Identify and hire a specialized part-time development contract"
+          ],
+          "resources_needed": [
+            "Investment of €100k from innovation budget",
+            "Hiring/contracting of one senior developer (part-time)",
+            "UX/UI design tools subscription"
+          ],
+          "success_metric": "Secure 3 paying B2B SaaS pilot customers within the first year.",
+          "milestones": [
+            "MVP feature set finalized (Month 4)",
+            "Beta launch with initial corporate clients (Month 7)",
+            "Post-beta revenue projection model validated"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Tenant Experience App Feature Expansion (Optimization)",
+        "rationale": "Leveraging the existing digital app base, focusing on high-margin feature enhancements can improve tenant satisfaction and reduce churn among key corporate clients.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct targeted user surveys on current app pain points",
+            "Prioritize top 3 requested features for Q3 development cycle",
+            "Allocate existing product manager time to sprint planning"
+          ],
+          "resources_needed": [
+            "Internal allocation of existing staff time (no new headcount)",
+            "€20k for specialized feature development sprints",
+            "A/B testing tools subscription"
+          ],
+          "success_metric": "Increase tenant engagement metrics (login frequency) by 20% within 4 months.",
+          "milestones": [
+            "Feature wireframes approved (Month 1)",
+            "Beta launch of optimized features (Month 5)",
+            "Post-launch retention rate improvement tracked"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated Innovation Steering Committee and define 3 strategic diversification targets for the next 18 months.",
+        "owner": "CEO / Head of Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Conduct detailed scoping workshops with IT and Finance to model the capital requirements and operational risks for the B2B SaaS platform idea.",
+        "owner": "Innovation Manager",
+        "timeframe": "Within 8 weeks"
+      },
+      {
+        "action": "Launch a pilot project focused solely on IoT energy management in one building to demonstrate quick ROI capability.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 10 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe reliance on concentrated revenue streams (top 3 clients) creating high diversification risk.",
+      "Limited budget allocation for formal innovation activities (€5% constraint makes radical projects challenging).",
+      "Resource bottleneck: The small technology team is fully allocated to maintenance, leaving no capacity for exploratory or radical innovation work.",
+      "Cultural inertia against rapid experimentation and scaling new business models."
+    ]
+  }
+}

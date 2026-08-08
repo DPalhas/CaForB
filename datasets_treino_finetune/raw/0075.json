@@ -3,144 +3,121 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Retail & Wholesale Trade",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:22:10.133613+00:00",
-    "duration_ms": 22905,
+    "generated_at": "2026-08-03T18:01:52.775573+00:00",
+    "duration_ms": 25445,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "SecureCloud Solutions Inc.",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Vanguard.io",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Large",
+      "companyName": "Vanguard.io"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "SecureCloud Solutions provides enterprise-grade cloud security and compliance software tailored for mid-sized businesses. We focus on regulatory adherence in the finance and healthcare sectors where data sensitivity is high. Our core product suite includes AI-driven threat detection platforms.",
+      "companyDescription": "Wholesale distributor of plumbing, heating, and electrical supplies serving 500+ independent contractors and hardware retailers. Operate a 12,000 m² central warehouse with 15 delivery vehicles. Evaluating warehouse management system upgrade and route optimization software. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
       "innovationProcess": "partial",
-      "pastInitiatives": "We recently launched a suite of automated compliance tools, which was driven by customer needs identified through dedicated research interviews. We are currently piloting an internal framework for rapid feature iteration based on early user feedback.",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to maintain our strong market position and secure high-value enterprise contracts against larger competitors. We aim to expand into adjacent security verticals through strategic acquisition or product expansion.",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 5 engineers and 2 product managers. We prioritize cross-functional collaboration to ensure rapid deployment cycles.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
-        "talent",
-        "process",
         "culture"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "The market is seeing a gradual shift toward specialized green building materials and increased demand for hyper-localized, rapid fulfillment options. While direct competitive pressure on pricing is low, the need for high operational efficiency and tailored service delivery is increasing.",
+      "companyName": "Vanguard.io",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 4.0,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Hyper-Personalized Security Dashboards",
-        "rationale": "By leveraging existing data analytics capabilities and focusing on user experience improvements, we can enhance customer retention within the enterprise sector.",
+        "title": "AI-Driven Demand Forecasting Optimization",
+        "rationale": "Leveraging existing IoT data and internal ML capabilities to move beyond simple predictive maintenance into highly accurate demand forecasting for specific contractor segments. This incremental gain improves inventory turnover efficiency, directly supporting market defense by ensuring optimal supply availability.",
         "execution_plan": {
           "first_actions": [
-            "Conduct A/B testing on three key dashboard layouts.",
-            "Integrate real-time threat alerts directly into a personalized notification system."
+            "Finalize integration roadmap with existing ERP system",
+            "Pilot AI model focused solely on high-velocity SKU demand"
           ],
           "resources_needed": [
-            "2 Senior UX designers",
-            "1 Dedicated DevOps engineer (part-time)"
+            "Data Scientist (0.5 FTE)",
+            "Cloud Infrastructure Upgrade ($150k)"
           ],
-          "success_metric": "Increase 6-month customer retention by 5%",
+          "success_metric": "Achieve 95% forecast accuracy for core plumbing supplies",
           "milestones": [
-            "Q3: Beta launch of personalized dashboard pilot.",
-            "Q4: Full integration and KPI measurement."
+            "Q3: Integrate primary sensor data streams",
+            "Q4: Roll out initial demand prediction model to pilot region"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "9 months"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "Predictive Compliance Engine (Quantum AI)",
-        "rationale": "To defend against emerging regulatory shifts and competitive threats, we should develop a proprietary predictive engine that anticipates compliance requirements before they become mandatory.",
+        "title": "Contractor Workflow SaaS Platform (VanguardPro)",
+        "rationale": "Develop a proprietary, subscription-based software platform that integrates inventory management, quoting tools, and compliance documentation specifically tailored for independent contractors. This creates a powerful switching cost moat by embedding Vanguard's operational data deeply into the contractor's daily business process.",
         "execution_plan": {
           "first_actions": [
-            "Establish a dedicated cross-functional R&D squad focused solely on advanced ML/AI.",
-            "Secure partnership with 1 leading academic institution for specialized data modeling expertise."
+            "Form dedicated cross-functional squad (Sales/Tech/Product)",
+            "Conduct deep user interviews with 50 key contractors"
           ],
           "resources_needed": [
-            "Hiring of 2 specialized AI researchers",
-            "Investment in high-performance computing infrastructure ($300k)"
+            "2 Senior Product Managers",
+            "Dedicated UX/UI team allocation ($300k)"
           ],
-          "success_metric": "Reduced compliance error rate by 40% within the first year.",
+          "success_metric": "Secure 10 paying contractor clients within the first year",
           "milestones": [
-            "Year 1: Prototype development and internal validation.",
-            "Year 2: Pilot launch with 5 major enterprise clients."
+            "Q1: Minimum Viable Product (MVP) feature set defined",
+            "Q2: Launch Beta with pilot group of 50 contractors"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "18-24 months"
-      },
-      {
-        "type": "incremental",
-        "title": "Vertical Expansion: Healthcare Data Module",
-        "rationale": "Expanding into the healthcare vertical leverages our existing core security technology and taps into a high-growth, defensible market segment.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify 3 key needs of mid-sized hospital IT departments regarding HIPAA compliance.",
-            "Develop MVP focusing only on data encryption and access controls."
-          ],
-          "resources_needed": [
-            "1 Compliance expert (consultant)",
-            "Development time allocation (5 engineers)"
-          ],
-          "success_metric": "Acquire 10 new healthcare clients within the first year.",
-          "milestones": [
-            "Q3: MVP launch and pilot program enrollment.",
-            "Q4: Full feature parity with existing core products."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "12 months"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Formalize the dedicated R&D squad structure and secure initial funding for the Predictive Compliance Engine.",
-        "owner": "CTO / Head of Product",
+        "action": "Establish a dedicated 'Defense Innovation Fund' with executive oversight.",
+        "owner": "Chief Strategy Officer",
         "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Complete detailed market analysis on potential adjacent vertical expansion (e.g., Financial Services) to inform Q4 planning.",
-        "owner": "Head of Strategy",
-        "timeframe": "Within 6 weeks"
+        "action": "Initiate cross-functional workshops focused on breaking down the cultural barriers to rapid pilot testing (e.g., 'fail fast' mindset).",
+        "owner": "Head of Innovation",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Run internal workshops focused on improving cross-functional process efficiency for faster feature iteration.",
-        "owner": "VP of Operations",
-        "timeframe": "Next month"
+        "action": "Complete detailed feasibility study for the Contractor Workflow SaaS Platform MVP.",
+        "owner": "Product Steering Committee",
+        "timeframe": "End of Q3"
       }
     ],
     "key_weaknesses": [
-      "Reliance on legacy development processes leading to slow feature adoption cycles.",
-      "High dependency on a small pool of specialized engineering talent, creating retention risk.",
-      "Lack of formalized strategic roadmap beyond immediate product feature updates.",
-      "Limited external market presence outside of the core enterprise security segment."
+      "Organizational inertia and slow adoption rate within existing divisions, hindering rapid pivoting.",
+      "Partial innovation process that lacks consistent scaling mechanisms or clear metrics for radical project success.",
+      "High dependency on legacy maintenance systems which complicates digital integration efforts.",
+      "Cultural resistance to risk-taking and experimentation required for true market differentiation."
     ]
   }
 }

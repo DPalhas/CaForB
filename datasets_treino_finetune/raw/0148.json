@@ -1,0 +1,129 @@
+{
+  "id": "0148",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:48:30.065474+00:00",
+    "duration_ms": 45835,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus",
+      "sector": "Real Estate",
+      "size": "Micro",
+      "companyName": "Nexus"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Nexus is a boutique real estate developer specializing in high-density urban residential projects, focusing on mid-rise apartment buildings and efficient townhouse communities. They are currently managing a pipeline of 350 units across four active sites, leveraging modular construction methods and BIM for initial cost estimation. The firm operates as a tight-knit team where operational agility is critical but formalized innovation processes are absent.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation has been purely reactive; improvements are implemented ad-hoc when specific bottlenecks, such as unexpected supply chain delays in specialty materials or inefficient on-site workflow, arise. This approach relies heavily on the founder's intuition and immediate solutions rather than structured R&D or formal pilot programs.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our board aims for substantial revenue growth by reaching €50M ARR within five years, necessitating a shift from single-transaction sales to recurring income streams like property management contracts. We also need to aggressively expand our addressable market through strategic partnerships and scaling our repeatable enterprise sales motion.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 14,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The local zoning laws in our primary market are shifting rapidly toward increased density, posing both a risk and an opportunity for innovative mixed-use development approaches.",
+      "companyName": "Nexus",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhanced BIM Integration for Predictive Costing",
+        "rationale": "Implementing advanced Building Information Modeling (BIM) workflows will allow the team to simulate construction scenarios much earlier in the design phase. This incremental improvement directly addresses the core pain point of cost overruns and timeline delays identified by the board.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a focused 1-week pilot project using BIM for one townhouse build.",
+            "Identify and license a cloud-based parametric design tool (low initial cost).",
+            "Train the founder on basic simulation tools."
+          ],
+          "resources_needed": [
+            "€5,000 software subscription",
+            "Founder time allocation (10 hours/week)",
+            "Contractor consultation for BIM setup"
+          ],
+          "success_metric": "Reduce average cost estimation variance by 15% within the pilot project.",
+          "milestones": [
+            "Pilot completion and validation (Month 3).",
+            "Full integration into standard operating procedure (Month 6)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Recurring Revenue Model via Property Management SaaS Lite",
+        "rationale": "To meet the long-term growth goals, Nexus should pilot a simplified, subscription-based property management service integrated directly into their sales motion. This would transition them from one-time project revenue to predictable recurring income.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a minimum viable product (MVP) defining core leasing/maintenance reporting features.",
+            "Create a pricing tier focused on small landlords or investors in the micro market.",
+            "Secure initial three pilot clients willing to pay monthly."
+          ],
+          "resources_needed": [
+            "Freelance developer contract (€8,000)",
+            "Minimal marketing budget (€2,000 for digital presence)",
+            "Owner time allocation (full-time focus)"
+          ],
+          "success_metric": "Achieve 5 recurring monthly management contracts by the end of Year 1.",
+          "milestones": [
+            "MVP launch and customer feedback loop (Month 4).",
+            "Conversion to paying recurring customers (Month 8)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "24 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, lightweight quarterly review process for all operational bottlenecks.",
+        "owner": "Founder",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Define clear KPIs and resource allocation specifically for the BIM integration pilot.",
+        "owner": "Operations Lead (Founder)",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Draft a preliminary business case outlining the market viability of a recurring revenue model.",
+        "owner": "Founder/Strategic Advisor",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation process leading to reactive, non-scalable solutions.",
+      "Single point of failure in decision-making (owner_alone), limiting bandwidth for technical and strategic exploration.",
+      "Extremely low digital maturity (Level 1) which prevents leveraging modern data analytics or automated operational tools.",
+      "Constrained budget and reliance on opportunistic innovation rather than planned investment."
+    ]
+  }
+}

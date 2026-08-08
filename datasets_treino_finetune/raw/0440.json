@@ -1,0 +1,150 @@
+{
+  "id": "0440",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:03:33.968672+00:00",
+    "duration_ms": 26238,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus",
+      "sector": "Construction",
+      "size": "Medium",
+      "companyName": "Nexus"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models such as a marketplace for specialized construction equipment or a subscription-based service layer built on proprietary data we already collect.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Recent legislative pushes for carbon neutrality in infrastructure are creating a niche opportunity for specialized green technology integration. Additionally, the supply chain volatility has highlighted the need for localized, tech-enabled logistics solutions.",
+      "companyName": "Nexus",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Optimization of Telematics Data Services",
+        "rationale": "Leveraging existing telematics data to offer premium 'Asset Health Monitoring' subscriptions for smaller contractors or third parties who lack internal tech teams. This builds a direct, high-margin service revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Define MVP feature set based on highest equipment downtime correlation.",
+            "Create a pricing model structure (e.g., tiered subscription).",
+            "Pilot offering to 5 key clients."
+          ],
+          "resources_needed": [
+            "Data analytics consulting hours",
+            "Sales enablement materials"
+          ],
+          "success_metric": "Achieve 10 paying pilot subscriptions within 6 months.",
+          "milestones": [
+            "Q1: Finalize service package and marketing collateral.",
+            "Q2: Launch pilot program with initial target clients."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Construction Digital Marketplace (Project Matching)",
+        "rationale": "Develop a platform that connects construction firms with specialized, underutilized machinery or niche service providers in real-time. This diversifies revenue entirely away from core project execution and captures transaction fees.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market sizing analysis for equipment/service marketplaces.",
+            "Select a low-code platform provider for initial build.",
+            "Identify 3 high-demand niche service providers for onboarding."
+          ],
+          "resources_needed": [
+            "Dedicated external software development contractor",
+            "Legal counsel for marketplace liability"
+          ],
+          "success_metric": "Listings of 50 specialized assets/services on the platform by end of Year 1.",
+          "milestones": [
+            "Q1: Platform Wireframing and Business Case approval.",
+            "Q3: Beta launch with initial user group."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "24 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Risk & Compliance Platform",
+        "rationale": "Utilize the collected operational and regulatory data to create an AI tool that predicts material specification risks or safety violations proactively, offering this as a high-value advisory service.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish internal data governance framework for sensitive project data.",
+            "Identify key compliance pain points (e.g., environmental regulations).",
+            "Create a proof-of-concept model using historical failure data."
+          ],
+          "resources_needed": [
+            "Data science talent hire or contract",
+            "Cloud computing resources for ML training"
+          ],
+          "success_metric": "Successful internal validation of AI risk prediction accuracy > 85% within the first project cycle.",
+          "milestones": [
+            "Q1: Data readiness assessment and team formation.",
+            "Q4: MVP deployment integrated into one major project."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "30 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a dedicated, time-boxed 'Diversification Task Force' to vet the three opportunities.",
+        "owner": "COO / Head of Strategy",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Develop a lean financial model for the Construction Digital Marketplace (Opportunity #2) focusing on transaction costs and commission structures.",
+        "owner": "Finance Director",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Formalize an internal process roadmap, transitioning innovation from 'informal' brainstorming to structured, cross-functional prototypes.",
+        "owner": "Head of Technology / Innovation Lead",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leads to lack of clear execution pathways and accountability.",
+      "Low digital maturity limits the firm's ability to leverage proprietary data effectively for new revenue streams.",
+      "Culture resistance to high-risk, radical ventures despite stated bold risk appetite."
+    ]
+  }
+}

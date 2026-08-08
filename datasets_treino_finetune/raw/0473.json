@@ -1,0 +1,154 @@
+{
+  "id": "0473",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:18:22.811186+00:00",
+    "duration_ms": 25689,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.419343+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Helix",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small",
+      "companyName": "Helix"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Helix is a key regional wholesale distributor specializing in plumbing, heating, and electrical supplies, maintaining robust relationships with over 500 independent contractors. The company manages a large central distribution hub and operates a fleet of delivery vehicles across the region to serve local hardware retailers and specialized contractors.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats through operational excellence and exclusive partnerships that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition.",
+      "companyName": "Helix",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Implement Warehouse Management System (WMS) Optimization",
+        "rationale": "Migrating the current warehouse management system to a more efficient solution will reduce operational bottlenecks and improve inventory accuracy, directly addressing process friction.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a vendor RFP focused solely on integration ease and cost per user.",
+            "Pilot the proposed WMS functionality in one department (e.g., electrical supplies) over 3 months."
+          ],
+          "resources_needed": [
+            "Software licensing fees ($5k-$10k)",
+            "Internal IT staff time for migration/training",
+            "External consulting support for initial setup"
+          ],
+          "success_metric": "Reduction in inventory discrepancy rate by 15% within 6 months.",
+          "milestones": [
+            "Vendor selection finalized (Month 1)",
+            "Pilot implementation complete (Month 4)",
+            "Full system rollout planned (Month 7)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Enhanced Customer Loyalty Tiering Program",
+        "rationale": "Leveraging existing NPS data to create a targeted loyalty program for the top 10% of contractor customers will build strong retention moats that are difficult for competitors to replicate.",
+        "execution_plan": {
+          "first_actions": [
+            "Analyze current customer transaction history and frequency metrics.",
+            "Design three tiered reward levels based on purchasing volume and service responsiveness."
+          ],
+          "resources_needed": [
+            "Marketing budget for campaign materials ($2k)",
+            "Customer Success team hours",
+            "Minimal system update to CRM functionality"
+          ],
+          "success_metric": "Increase in repeat customer purchases from the top tier by 10% within 9 months.",
+          "milestones": [
+            "Tier structure design complete (Month 2)",
+            "Program launch and marketing campaign start (Month 4)",
+            "First tier-level uptake review (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Localized Predictive Maintenance Dashboard",
+        "rationale": "Developing a simple, localized predictive analytics dashboard for key distributor clients could offer exclusive service improvements that provide a high-value defense against new market entrants.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 20 strategic accounts willing to participate in a pilot program.",
+            "Develop a simple data visualization prototype using existing operational data."
+          ],
+          "resources_needed": [
+            "Contracting a small, specialized data science consultant ($8k)",
+            "Internal data scientist time allocation (40% of sprint capacity)"
+          ],
+          "success_metric": "Client adoption rate of the predictive dashboard among pilot accounts exceeding 50%.",
+          "milestones": [
+            "Pilot project definition and scope lock (Month 3)",
+            "MVP development complete (Month 6)",
+            "Full operational integration and scaling plan (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Launch the vendor RFP for WMS upgrades to identify immediate operational process improvements.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a detailed customer segmentation strategy based on NPS data to define the Loyalty Program structure.",
+        "owner": "Customer Success Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Identify and secure internal 'talent' development roadmap for key technical skills required by the potential acquirer.",
+        "owner": "CTO",
+        "timeframe": "Ongoing (Quarterly Review)"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on owner-alone decision-making, leading to potential bottlenecks in cross-functional alignment.",
+      "Limited digital maturity and partial innovation process are hindering scalable, rapid experimentation with high-risk bets.",
+      "Resource constraints (low budget allocation) limit the ability to pursue ambitious radical innovations without external funding or acquisition."
+    ]
+  }
+}

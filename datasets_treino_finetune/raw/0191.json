@@ -1,0 +1,122 @@
+{
+  "id": "0191",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:06:10.088621+00:00",
+    "duration_ms": 25486,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum Innovations",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Micro",
+      "companyName": "Quantum Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Quantum Innovations is a specialized aquaculture operation focused on producing high-quality tilapia and seabass for export to competitive Southern European markets. The company currently manages complex, high-density rearing systems where operational efficiency and biosecurity are paramount concerns due to volatile feed costs.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration on system maintenance. However, adjacent teams (marketing, support) are still adapting to the faster cadence, causing bottlenecks in adopting new operational tech.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering two new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Current operations rely heavily on manual processes for water quality monitoring and feed inventory management. There is an urgent need to implement IoT sensor technology to provide the real-time data necessary to manage high-density tanks and mitigate environmental risks.",
+      "companyName": "Quantum Innovations",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Feed Optimization Module (Incremental)",
+        "rationale": "Implementing AI-driven algorithms to analyze feed conversion ratios based on real-time water chemistry and fish growth data can reduce operational costs by 10-15% immediately. This addresses the immediate pressure from high feed costs while requiring minimal changes to existing infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a suitable open-source machine learning library (e.g., Python/Scikit-learn).",
+            "Pilot the module on one specific tank system for 4 weeks.",
+            "Develop integration API hooks with existing ERP inventory data."
+          ],
+          "resources_needed": [
+            "Contract specialized data scientist hours (approx $10k over 3 months)",
+            "Software licensing/cloud compute costs ($2k)"
+          ],
+          "success_metric": "Achieve a verifiable reduction of 8% in feed cost per kilogram of output within six months.",
+          "milestones": [
+            "Q1: Data pipeline established and validation complete.",
+            "Q2: Module integrated into pilot system.",
+            "End Q3: Full operational rollout planning."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Predictive Biosecurity & Disease Modeling (Radical)",
+        "rationale": "Develop a fully integrated IoT sensor network coupled with predictive analytics to monitor water quality and fish behavior in real-time. This radical shift moves the company from reactive disease management to proactive intervention, significantly reducing mortality rates and increasing operational resilience.",
+        "execution_plan": {
+          "first_actions": [
+            "Source and install multi-parameter IoT sensors across key tanks.",
+            "Establish a central data dashboard for real-time monitoring.",
+            "Build initial machine learning model trained on historical disease outbreak data."
+          ],
+          "resources_needed": [
+            "Purchase of 50 new industrial IoT sensors ($8k)",
+            "Consultant fees for sensor integration and ML development ($15k)"
+          ],
+          "success_metric": "Reduce stock loss due to disease incidents by 40% within the first year.",
+          "milestones": [
+            "Q1: Sensor network deployed in pilot zone and data streaming verified.",
+            "Q2: Predictive model achieving >85% accuracy in flagging early infection symptoms.",
+            "End Q3: Full system integration across all operational tanks."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Allocate a dedicated 0.5 FTE for R&D/Innovation to build the foundational data infrastructure.",
+        "owner": "CEO / Operations Lead",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Initiate a vendor RFP process for industrial aquaculture IoT sensors and ML development expertise.",
+        "owner": "Engineering Manager",
+        "timeframe": "Within 3 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of specialized in-house scientific/data talent required for advanced modeling.",
+      "Over-reliance on single owner decision-making, leading to slow adoption of complex tech.",
+      "Limited operational budget ($15% allocation) restricts large capital expenditures necessary for scaling."
+    ]
+  }
+}

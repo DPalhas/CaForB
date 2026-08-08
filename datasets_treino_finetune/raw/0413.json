@@ -1,0 +1,148 @@
+{
+  "id": "0413",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:03:56.556681+00:00",
+    "duration_ms": 25751,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.396621+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan",
+      "sector": "SaaS / Software",
+      "size": "Medium",
+      "companyName": "Titan"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vertical SaaS providing compliance management software for the pharmaceutical industry covering GxP training, deviation tracking, and audit readiness. Titan serves complex regulated markets where precision is paramount, maintaining a strong foothold through deep technical expertise.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins.",
+      "companyName": "Titan",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation Module (Conservative)",
+        "rationale": "Introduce a modular no-code workflow builder focusing on optimizing internal compliance documentation and audit preparation steps, which aligns with existing customer needs and reduces immediate development risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis of current system integration points (ERP/CRM).",
+            "Prototype a 'low-code' workflow builder targeting internal training management tasks."
+          ],
+          "resources_needed": [
+            "1 dedicated UX designer contract (part-time)",
+            "20% allocation from the innovation budget for tool licensing"
+          ],
+          "success_metric": "5,000 automated compliance steps implemented within Q3",
+          "milestones": [
+            "Month 1: Define MVP scope and wireframes.",
+            "Month 3: Complete internal pilot with one department."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Compliance-as-a-Service (Diversification)",
+        "rationale": "Explore pivoting the core GxP compliance engine into a subscription service where smaller biotech firms can access our specialized regulatory templates and training modules, creating a new B2B revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 5 target smaller pharma firms for pilot partnership.",
+            "Develop pricing models based on usage/module subscriptions."
+          ],
+          "resources_needed": [
+            "1 Business Analyst (temporary)",
+            "Consultant fees for regulatory model validation"
+          ],
+          "success_metric": "Secure 3 paying pilot customers in the new market within 9 months",
+          "milestones": [
+            "Month 2-4: Finalize pricing structure and legal framework.",
+            "Month 6: Launch initial sales outreach campaign for new segment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Strategic Partnership Program (Conservative)",
+        "rationale": "Formalize co-development agreements with complementary software providers (e.g., specialized lab equipment management) to offer bundled solutions, immediately diversifying revenue without deep internal tech risk.",
+        "execution_plan": {
+          "first_actions": [
+            "Create a partnership framework checklist.",
+            "Identify 5 potential non-competitor integration partners."
+          ],
+          "resources_needed": [
+            "Time allocation for the existing product management team",
+            "Legal consultation fees"
+          ],
+          "success_metric": "Establish 2 active co-development pilots by year-end",
+          "milestones": [
+            "Q1: Finalize partnership criteria.",
+            "Q3: Launch first co-developed solution."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the innovation pipeline and transition from informal brainstorming to a structured idea intake and prioritization framework.",
+        "owner": "Product Manager",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a detailed audit of all legacy systems and identify three immediate, high-impact 'quick win' integration opportunities for the post-acquisition phase.",
+        "owner": "Engineering Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop a formal business case outlining the revenue potential and risk profile of the Compliance-as-a-Service (radical) diversification opportunity for executive review.",
+        "owner": "Strategy Function",
+        "timeframe": "Within 6 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leading to inconsistent execution and lack of clear prioritization.",
+      "Low digital maturity (Level 2) limiting the ability to leverage advanced data analytics for proactive compliance recommendations.",
+      "High concentration risk due to heavy reliance on a single, niche customer base (top 3 clients).",
+      "Weak internal organizational culture regarding cross-functional collaboration necessary for successful radical experimentation."
+    ]
+  }
+}

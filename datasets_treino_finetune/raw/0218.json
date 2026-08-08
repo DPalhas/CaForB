@@ -1,0 +1,121 @@
+{
+  "id": "0218",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:20:48.403196+00:00",
+    "duration_ms": 23111,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Fusion",
+      "sector": "Education",
+      "size": "Large",
+      "companyName": "Fusion"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Fusion is a large higher education institution with 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. They are heavily invested in developing scalable hybrid learning capabilities and micro-credential programs aimed at executive upskilling. Key challenges include utilizing student retention analytics to proactively identify at-risk learners and designing truly personalized career pathways.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets—potentially including M&A, new product lines, or geographic expansion—provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively—business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 24,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The institution faces intense competition not just from other universities but also from specialized EdTech startups offering superior, niche professional training. Recent enrollment dips have intensified pressure to rapidly innovate and monetize digital offerings.",
+      "companyName": "Fusion"
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "opportunities": [
+      {
+        "type": "radical",
+        "title": "AI-Driven Hyper-Personalized Learning Ecosystem (Adaptive Curriculum)",
+        "rationale": "Implement an AI engine that continuously analyzes student performance and career goals to dynamically adjust the curriculum and delivery format in real-time. This moves beyond static micro-credentials into a truly adaptive learning experience, which can radically differentiate Fusion from competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated AI pilot team targeting one high-demand program.",
+            "Run a feasibility study on necessary data infrastructure and talent acquisition for specialized AI roles."
+          ],
+          "resources_needed": [
+            "€1.5M in specialized ML/AI tooling and cloud infrastructure",
+            "Hiring of 3 senior data scientists with EdTech experience"
+          ],
+          "success_metric": "Increase enrollment in personalized pathways by 20% within 12 months.",
+          "milestones": [
+            "Q3: Finalize platform architecture and secure seed funding.",
+            "Q4: Launch pilot program with measurable learning outcome improvement."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18-24 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Scaling Hybrid Course Delivery Infrastructure",
+        "rationale": "Optimize the current hybrid delivery model by investing in a centralized Learning Experience Platform (LXP) that seamlessly integrates synchronous and asynchronous content. This incremental step improves operational efficiency without requiring wholesale platform replacement.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a full audit of existing LMS compatibility and API integration needs across business units.",
+            "Implement tiered subscription for premium LXP features to manage budget constraints."
+          ],
+          "resources_needed": [
+            "€500k for LXP licensing and integration services",
+            "Internal reallocation of 2 FTE from legacy systems maintenance"
+          ],
+          "success_metric": "Reduce operational cost per student by 10% within 9 months.",
+          "milestones": [
+            "Q3: Complete platform selection and vendor negotiation.",
+            "Q4: Roll out pilot across three major business units."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a comprehensive needs assessment for the AI pilot and secure initial funding from the group innovation fund.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate exploratory M&A or strategic partnership scouting focused on acquiring specialized EdTech companies with proprietary retention analytics capabilities.",
+        "owner": "Head of Corporate Development",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent innovation adoption due to decentralized business unit autonomy and varying local resource allocation.",
+      "High dependency on a single, often rigid, ROI modeling process which may stifle truly radical or long-term strategic bets.",
+      "Talent scarcity in specialized areas (AI/Data Science) necessary to execute high-growth digital initiatives.",
+      "Potential for slow decision-making cycles due to the need for rigorous steering committee approval across multiple projects."
+    ]
+  }
+}

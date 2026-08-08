@@ -1,0 +1,156 @@
+{
+  "id": "0369",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:44:40.343924+00:00",
+    "duration_ms": 27512,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Orbit",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Medium",
+      "companyName": "Orbit"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Orbit is a clinical-stage biotech company specializing in developing next-generation monoclonal antibody therapies targeting complex autoimmune diseases. They are currently leading Phase II trials for rheumatoid arthritis, focusing heavily on optimizing patient stratification using novel biomarker panels and personalized medicine approaches. The organization employs a lean R&D structure focused intensely on translational science.",
+      "innovationProcess": "none",
+      "pastInitiatives": "The company has historically relied on ad-hoc solutions where immediate scientific roadblocks were solved by the most senior engineers, bypassing any formal ideation or experimentation framework. There is no dedicated budget allocated for exploratory projects; innovation is treated as a reactive response to critical milestones rather than a structured pipeline.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication—two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real.",
+      "companyName": "Orbit",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Accelerated Target Validation Pipeline Implementation",
+        "rationale": "Leveraging in-silico protein folding and binding affinity prediction (the identified innovation need) will significantly accelerate lead compound identification. This incremental step directly addresses scientific efficiency, reducing time spent on expensive wet lab screening.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated AI task force with existing data engineers",
+            "Pilot integration of 3 key computational chemistry models into the current R&D workflow",
+            "Define clear KPIs for 'Time to Candidate Identification' reduction"
+          ],
+          "resources_needed": [
+            "Upgraded cloud computing resources (GPU clusters)",
+            "Contract specialized ML/Bioinformatics consultants",
+            "Minor software licensing upgrades"
+          ],
+          "success_metric": "Reduce candidate screening cycle time by 30% within Q3.",
+          "milestones": [
+            "Model selection and initial validation complete (Month 2)",
+            "Integration of Model 1 into core R&D pipeline (Month 4)",
+            "Full operational deployment of AI prediction tool (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Omnichannel Patient Engagement Platform Redesign",
+        "rationale": "Addressing the critical customer churn points by implementing a unified, self-service digital platform integrated with clinical data. This radical shift moves Orbit from reactive troubleshooting to proactive patient journey management, fundamentally changing how enterprise customers interact with their therapeutics.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct rapid user research across mid-tier and enterprise customer segments",
+            "Define minimal viable product (MVP) scope for the self-service portal focusing on data access and support ticketing",
+            "Allocate budget specifically to UX/UI overhaul of existing CRM interface"
+          ],
+          "resources_needed": [
+            "Dedicated UX/Product team hire or contractor",
+            "Investment in a modern SaaS platform (e.g., Salesforce integration)",
+            "Training for sales and support staff on new tools"
+          ],
+          "success_metric": "Increase customer retention rate by 5% within 12 months.",
+          "milestones": [
+            "Completion of UX wireframes and requirement gathering (Month 3)",
+            "MVP launch for mid-tier customers (Month 7)",
+            "Full platform rollout across enterprise segment (Month 10)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "M&A Integration and Process Standardization Task Force",
+        "rationale": "Formalizing the integration of systems (CRM, HRIS) to eliminate duplication and improve operational velocity. This ensures that the combined entity can execute strategic goals efficiently without sacrificing the fragile cultural environment.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional task force focused solely on system mapping and data migration prioritization",
+            "Select and implement a unified CRM/HRIS backbone within 6 months",
+            "Document standardized operating procedures (SOPs) for the top 5 critical business processes."
+          ],
+          "resources_needed": [
+            "Fractional consulting services specializing in ERP integration",
+            "Internal project management time from existing leadership staff",
+            "Software licensing fees for unified systems"
+          ],
+          "success_metric": "Reduce system-related operational friction (e.g., data entry errors) by 40%.",
+          "milestones": [
+            "System audit and gap analysis complete (Month 1)",
+            "Unified HR/CRM instance provisioned (Month 3)",
+            "SOPs documented for core workflows (Month 6)"
+          ]
+        },
+        "impact": "low",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate rapid customer journey mapping and define MVP requirements for the new self-service platform.",
+        "owner": "VP of Customer Success / Product Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Form a dedicated, cross-functional task force to audit current CRM/HRIS redundancies and define system migration roadmap.",
+        "owner": "COO / IT Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Finalize the selection of external ML consultants for the initial AI target validation pilot phase.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal innovation process leading to ad-hoc, unfocused problem solving.",
+      "Low digital maturity (Level 2) hindering the necessary modernization of customer self-service tools.",
+      "Fragile cultural integration following the recent merger and high risk of change fatigue.",
+      "Weak strategic foundation due to a lack of formalized processes for prioritizing long-term R&D investments."
+    ]
+  }
+}

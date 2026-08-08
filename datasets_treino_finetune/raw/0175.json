@@ -1,0 +1,126 @@
+{
+  "id": "0175",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:59:48.201314+00:00",
+    "duration_ms": 47068,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard Labs",
+      "sector": "Information Technology",
+      "size": "Large",
+      "companyName": "Vanguard Labs"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "additionalContext": "",
+      "companyName": "Vanguard Labs"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Low-Code Platform Acceleration for Standard Workflows",
+        "rationale": "Adopting low-code platforms will allow Vanguard Labs to rapidly prototype and deliver standard ERP/CRM features without diverting high-cost custom development resources. This directly supports market defense by reducing time-to-market for essential updates.",
+        "execution_plan": {
+          "first_actions": [
+            "Select 2 low-code vendors suitable for logistics workflows (e.g., integration with existing SAP/Oracle)",
+            "Establish a pilot team dedicated to building 3 core standard modules on the chosen platform"
+          ],
+          "resources_needed": [
+            "Licensing fees for selected platforms ($150k)",
+            "Dedicated internal developer time (2 FTEs)"
+          ],
+          "success_metric": "Reduction in average feature development cycle by 30%",
+          "milestones": [
+            "Q3: Pilot launch and validation",
+            "Q4: Rollout of 5 standard modules across the business unit"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Generative AI for Custom Code Synthesis and Hyper-Personalization",
+        "rationale": "Leveraging large language models (LLMs) to automate the initial scaffolding of bespoke solutions will drastically increase the speed at which the development team can handle unique customer requirements. This allows Vanguard Labs to match competitor feature parity much faster than traditional methods.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a secure internal sandbox environment for LLM integration",
+            "Identify 1 high-impact custom module (e.g., complex logistics routing engine) for AI synthesis testing"
+          ],
+          "resources_needed": [
+            "Subscription costs for enterprise LLMs and specialized tooling ($200k)",
+            "Data science headcount expansion to build internal fine-tuning models"
+          ],
+          "success_metric": "3x increase in initial code generation speed; 15% reduction in bespoke development hours",
+          "milestones": [
+            "Q4: Internal LLM pipeline MVP complete",
+            "Q2 next year: AI synthesis integrated into the standard custom project intake process"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the cross-departmental initiative for low-code platform adoption and assign a dedicated steering committee to oversee ROI modeling.",
+        "owner": "Head of Digital Transformation Office",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Launch an exploratory R&D project focused on LLM application for code synthesis, establishing a small proof-of-concept team and budget.",
+        "owner": "VP of Innovation / CTO",
+        "timeframe": "Within 2 months"
+      },
+      {
+        "action": "Conduct targeted talent assessment to identify skill gaps in prompt engineering and AI integration within the existing development pipeline.",
+        "owner": "HR Director / Head of Engineering",
+        "timeframe": "Ongoing (Initial review Q1)"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent adoption across business units due to matrix structure.",
+      "Process bottlenecks in the formal decision-making pathway slowing down agile experimentation.",
+      "Talent gap in cutting-edge areas like prompt engineering and advanced AI/ML integration.",
+      "Reliance on bespoke, high-cost custom development which is vulnerable to lower-priced competitors."
+    ]
+  }
+}

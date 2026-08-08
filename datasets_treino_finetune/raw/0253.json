@@ -1,0 +1,153 @@
+{
+  "id": "0253",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:46:00.984810+00:00",
+    "duration_ms": 34397,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.336422+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Quantum Consulting",
+      "sector": "Legal Services",
+      "size": "Small",
+      "companyName": "Quantum Consulting"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "LegalTech startup providing an AI-powered contract lifecycle management platform for SME legal departments. Automating contract review, clause extraction, obligation tracking, and renewal management across common jurisdictions in Europe. The firm focuses heavily on rapid iteration within a medium regulatory landscape.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality but failed to achieve critical mass due to poor initial user experience and insufficient market validation. We built an MVP with an external agency in three months, demonstrating technical capability but failing because we did not invest enough time understanding whether our specific SME clientele actually required that level of automation or self-service.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization, making workflow digitization, basic process automation, and better data integration between our core systems key drivers to unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Market demand for contract management tools is increasing steadily across the SME segment, but competition from larger established players means differentiation must come through superior operational efficiency and niche automation capabilities.",
+      "companyName": "Quantum Consulting",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Standardization & Automation Layer Implementation",
+        "rationale": "Given the current informal process structure and priority on efficiency, implementing a standardized workflow engine will allow for immediate, low-cost gains in operational throughput. This focuses resources where they can be measured quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the top 3 most inefficient contract lifecycle stages.",
+            "Pilot integration of existing automation tools (e.g., basic RPA) to handle manual data entry between core systems."
+          ],
+          "resources_needed": [
+            "1 FTE Business Analyst/Process Owner (part-time allocation)",
+            "Licensing for a low-code workflow tool",
+            "Internal training materials development"
+          ],
+          "success_metric": "25% reduction in average contract review time within Q3.",
+          "milestones": [
+            "Month 1: Process mapping complete and standardized SOPs drafted.",
+            "Month 3: Automated data routing pilot successfully deployed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Enhanced Data Integration via API Strategy",
+        "rationale": "Improving data integration between core systems is a foundational efficiency play. By establishing robust APIs, the company can better leverage existing automation capabilities without requiring massive custom development efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current system dependencies and identify key data silos.",
+            "Develop an internal API roadmap prioritizing integration points with the top 2 client systems."
+          ],
+          "resources_needed": [
+            "Dedicated DevOps time (part-time)",
+            "Consultant hours for complex integration architecture review",
+            "Documentation resources"
+          ],
+          "success_metric": "Reduction in data reconciliation errors by 40%.",
+          "milestones": [
+            "Month 2: API specification finalized for core system interaction.",
+            "Month 5: Successful deployment of first cross-system automated reporting pipeline."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Predictive Contract Risk Scoring Engine (Pilot)",
+        "rationale": "To differentiate in the low-pressure market, developing a lightweight predictive risk scoring model could be bold. This moves the company from reactive processing to proactive advice, though it requires significant talent and culture change.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the most critical 'risk' clauses that trigger client action (e.g., high renewal risk).",
+            "Allocate a small pool of engineering resources for 6 weeks to build a Minimum Viable Risk Score feature."
+          ],
+          "resources_needed": [
+            "1 Senior Data Scientist/ML Engineer (contract basis)",
+            "Cloud compute budget increase (minor)",
+            "Time allocation agreement from leadership team"
+          ],
+          "success_metric": "Successful scoring and visualization of contract risk for 5 pilot clients.",
+          "milestones": [
+            "Month 4: Risk model MVP validated internally.",
+            "Month 9: Pilot launch with measurable accuracy metrics."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, small-scale 'Innovation Hour' weekly to prevent operational demands from completely blocking innovation efforts.",
+        "owner": "Product Manager",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Conduct a comprehensive process audit focused on identifying the top three workflow bottlenecks and initiate the standardization project immediately.",
+        "owner": "Head of Operations/Process Owner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Begin recruitment strategy for specialized talent (e.g., dedicated Data Scientist) to address current 'talent' barriers required for the radical opportunity.",
+        "owner": "Leadership Team/HR Liaison",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation pipeline resulting in reactive, low-impact experiments.",
+      "Weak internal process documentation and inconsistent workflows hindering scalability and efficiency gains.",
+      "Limited technical talent pool and high reliance on a few highly allocated team members (talent constraint).",
+      "Informal decision-making structure which slows down necessary strategic pivots and scaling."
+    ]
+  }
+}

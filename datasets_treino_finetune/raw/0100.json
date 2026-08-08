@@ -3,149 +3,143 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Education",
     "size": "Medium",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:33:23.268798+00:00",
-    "duration_ms": 24038,
+    "generated_at": "2026-08-03T18:13:03.990836+00:00",
+    "duration_ms": 26938,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "AgriTech Solutions Inc.",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Lumina Consulting",
+      "sector": "Education",
+      "size": "Medium",
+      "companyName": "Lumina Consulting"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "AgriTech Solutions provides cloud-based predictive analytics and resource management software tailored for mid-sized commercial farms. We focus on optimizing crop yield, water usage, and input costs through data integration.",
+      "companyDescription": "Corporate training provider designing and delivering technical skills bootcamps in data science, cybersecurity, and cloud computing. Lumina Consulting focuses on providing accredited certifications for professional development, leveraging a blended online-live delivery model that emphasizes practical application over theory. The company serves enterprises looking to upskill their workforce rapidly.",
       "innovationProcess": "formal",
-      "pastInitiatives": "We recently launched a significant upgrade to our core AI prediction engine and initiated several cross-departmental feature sprints focused on improving user retention metrics across key agricultural verticals.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to solidify our dominant position in the regional market by increasing customer lifetime value (CLV) through platform specialization and proactive defense against emerging competitors. We aim to achieve steady, predictable recurring revenue growth.",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past three years we have launched four new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The team consists of 15 engineers and product managers working in cross-functional pods, maintaining a lean structure focused on execution.",
       "digitalMaturity": "4",
       "revenueRange": "10m_to_50m",
       "budgetPercentage": 8,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "talent",
+        "budget",
         "process",
-        "culture"
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "low",
+      "additionalContext": "Lumina has recently partnered with a specialized cybersecurity firm to offer joint certifications, expanding our reach into critical infrastructure training sectors.",
+      "companyName": "Lumina Consulting",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Vertical Deep-Dive Modular Expansion",
-        "rationale": "To defend market share against larger competitors, we should incrementally develop specialized software modules for high-value agricultural niches (e.g., organic farming or vertical farming). This leverages our existing data infrastructure without requiring a complete platform overhaul.",
+        "title": "AI-Driven Dynamic Curriculum Generation",
+        "rationale": "Implement a generative AI module to dynamically adjust training modules based on real-time performance data and evolving industry trends. This enhances personalization significantly without requiring a complete overhaul of the formal process, aligning with existing digital maturity.",
         "execution_plan": {
           "first_actions": [
-            "Identify top 3 underserved verticals based on current customer churn data.",
-            "Allocate dedicated engineering resource team for MVP development of specialized modules.",
-            "Pilot the module with 5 existing high-value clients."
+            "Pilot AI curriculum generation tool for one core product line",
+            "Conduct feasibility study on integrating ML models into current L&D platform"
           ],
           "resources_needed": [
-            "1 full-time specialist (domain expert)",
-            "Software licensing for new analytics tools",
-            "Product management time reallocation"
+            "2 Data Scientists (6 months contract)",
+            "Platform integration engineering hours ($15k)"
           ],
-          "success_metric": "Increase in Customer Lifetime Value (CLV) by 20% within 18 months.",
+          "success_metric": "Increase in student engagement score by 10% within Q3",
           "milestones": [
-            "Q3: Completion of Vertical 1 MVP.",
-            "Q4: Successful rollout and stabilization of Module 1."
+            "AI pilot launch complete: Month 3",
+            "Full module integration feasibility signed off: Month 6",
+            "Phase 1 rollout to existing clients: Month 9"
           ]
         },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "Medium"
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "0-12 months"
       },
       {
         "type": "radical",
-        "title": "Predictive Autonomous Farm Operations (Pilot)",
-        "rationale": "A radical venture into autonomous operational decision-making using reinforcement learning. While risky, this could create a significant moat by offering hyper-personalized, fully automated resource management plans that far exceed current market offerings.",
+        "title": "Niche Market Acquisition via Strategic Partnership",
+        "rationale": "Instead of competing head-on for large general markets, explore acquiring or partnering with a small, highly specialized tech niche player. This creates immediate market defense by securing high-margin, low-volume segments and establishes a unique proprietary offering.",
         "execution_plan": {
           "first_actions": [
-            "Form a dedicated 'Horizon 3' innovation squad with AI/ML specialists.",
-            "Identify one geographically isolated client willing to serve as a controlled testbed.",
-            "Conduct comprehensive risk assessment regarding data security and operational failure."
+            "Identify three potential acquisition targets in the quantum computing training space",
+            "Develop a joint venture proposal outline"
           ],
           "resources_needed": [
-            "Hiring of 2 senior ML engineers",
-            "Cloud computing costs for intensive training models ($50k)",
-            "Dedicated R&D budget allocation (15%)"
+            "Legal and M&A advisory retainer ($30k)",
+            "Dedicated business development lead reallocation"
           ],
-          "success_metric": "Achieve a successful, quantified reduction in operational input costs by 30% for the pilot client.",
+          "success_metric": "Secure contract with one niche partner within 12 months",
           "milestones": [
-            "Q2: Proof of Concept (PoC) validation.",
-            "Q4: Controlled pilot deployment and performance metric review."
+            "Target identification complete: Month 4",
+            "Due diligence phase initiated: Month 7",
+            "Partnership agreement signed: Month 10"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "Long"
+        "timeframe": "6-18 months"
       },
       {
         "type": "incremental",
-        "title": "Hyper-Personalized Customer Success Automation",
-        "rationale": "Implement an automated feedback loop that proactively identifies potential churn risks and triggers personalized intervention campaigns (e.g., tailored training content or feature highlights) based on usage patterns, thereby strengthening retention.",
+        "title": "Certification Marketplace Platform Enhancement",
+        "rationale": "Improve the existing platform to include a dynamic marketplace where accredited third-party providers can offer specialized certifications. This leverages our 4 level digital maturity by improving ecosystem connectivity and defensive moat.",
         "execution_plan": {
           "first_actions": [
-            "Integrate existing usage data with a CRM/Marketing automation tool.",
-            "Define trigger rules for 'at-risk' customers.",
-            "Develop and test 3 personalized outreach sequences."
+            "Auditing current platform API for extensibility",
+            "Developing vendor onboarding framework documentation"
           ],
           "resources_needed": [
-            "Integration licensing costs ($10k)",
-            "Time from Customer Success team (2 FTEs focused on automation setup)"
+            "1 UX/UI designer (6 months)",
+            "Platform development sprint funding ($20k)"
           ],
-          "success_metric": "Reduce customer churn rate by 5% year-over-year.",
+          "success_metric": "Increase in third-party certification offerings by 50% within year",
           "milestones": [
-            "Q3: Automated risk scoring implementation.",
-            "Q4: Full rollout and performance monitoring."
+            "Platform API audit complete: Month 2",
+            "MVP marketplace feature launch: Month 7",
+            "First external vendor signed: Month 11"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "Short"
+        "timeframe": "0-9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a detailed feasibility study for the Vertical Deep-Dive expansion.",
-        "owner": "Head of Product",
+        "action": "Formalize the business case and secure budget for the AI Curriculum Pilot.",
+        "owner": "Head of R&D",
         "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Form an exploratory committee to begin scoping the Autonomous Operations PoC (Horizon 3).",
-        "owner": "CTO / Head of R&D",
+        "action": "Initiate due diligence on two identified niche market acquisition targets.",
+        "owner": "CEO/Strategy Lead",
         "timeframe": "Within 6 weeks"
-      },
-      {
-        "action": "Audit current Customer Success automation setup and identify immediate low-hanging fruit for retention gains.",
-        "owner": "VP of Operations",
-        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on a single core software platform (risk concentration)",
-      "Siloed R&D and Sales teams leading to slow feature adoption",
-      "Limited internal talent pool specializing in advanced AI/ML deployment",
-      "Process bottlenecks in moving from idea conception to market launch"
+      "Rigid formal process limits speed to market for high-value, short-cycle innovations.",
+      "Reliance on a small leadership team creates potential bottlenecks in diverse cross-functional decision-making.",
+      "Current digital maturity level (4) is sufficient but lacks the deep integration required to be truly platform-like."
     ]
   }
 }

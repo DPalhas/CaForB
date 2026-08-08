@@ -1,0 +1,122 @@
+{
+  "id": "0338",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:29:55.785139+00:00",
+    "duration_ms": 22703,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.369680+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan Solutions.tech",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Small",
+      "companyName": "Titan Solutions.tech"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Forestry management cooperative overseeing 5,000 hectares of sustainable pine and eucalyptus plantation. Supplies pulp and timber to paper mills. We are aggressively evaluating satellite-based forest health monitoring and complex carbon credit certification programs which demand high regulatory compliance.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The company faces intense pressure from larger competitors to modernize operations and automate yield prediction using advanced geospatial data.",
+      "companyName": "Titan Solutions.tech",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "IoT Data Optimization for Yield Prediction",
+        "rationale": "Leveraging the existing sensor data to develop localized predictive models that optimize planting density and harvesting schedules. This is a low-risk, immediate path to incremental efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current IoT data streams for quality and latency.",
+            "Develop a proof-of-concept model correlating soil moisture/growth metrics with yield forecasts."
+          ],
+          "resources_needed": [
+            "Data scientist consultation (part-time)",
+            "Existing sensor hardware integration time"
+          ],
+          "success_metric": "Achieve 5% improvement in forecast accuracy within Q3.",
+          "milestones": [
+            "Q2: Model MVP validated against historical data.",
+            "Q3: Pilot implementation on one section of the plantation."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Carbon Credit Compliance Engine",
+        "rationale": "Develop a proprietary, automated system that integrates satellite imagery and operational data to automatically generate high-accuracy carbon credit reports. This addresses the high regulatory burden while drastically reducing manual compliance errors.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify key data inputs required for certification standards (e.g., canopy cover, species count).",
+            "Define API requirements for necessary external satellite and environmental datasets."
+          ],
+          "resources_needed": [
+            "Specialized legal/compliance consultant retainer",
+            "Subscription costs for high-resolution geospatial APIs"
+          ],
+          "success_metric": "Reduction in manual compliance documentation time by 75%.",
+          "milestones": [
+            "Q3: Build core data ingestion pipeline and reporting engine prototype.",
+            "Q4: Internal pilot run for certification generation."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Innovation Task Force focused solely on efficiency process mapping.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Develop a detailed 12-month strategy roadmap balancing mandated regulatory compliance and operational throughput improvements.",
+        "owner": "Management Team",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Strong internal culture resistant to significant process digitization and automation changes.",
+      "Limited budget allocation (3%) makes scaling radical initiatives difficult without external funding.",
+      "Fragmented innovation process leading to inconsistent prioritization and execution speed.",
+      "High complexity of integrating new technology with legacy maintenance and operational systems."
+    ]
+  }
+}

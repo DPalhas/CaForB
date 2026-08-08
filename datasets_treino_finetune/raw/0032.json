@@ -3,145 +3,126 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Energy & Utilities",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "bold",
     "strategic_priority": "diversification",
-    "competitive_pressure": "high",
+    "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:00:46.501700+00:00",
-    "duration_ms": 22502,
+    "generated_at": "2026-08-03T17:41:19.954190+00:00",
+    "duration_ms": 26088,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "SynergySoft Solutions",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Apex",
+      "sector": "Energy & Utilities",
+      "size": "Micro",
+      "companyName": "Apex"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "This medium-sized firm develops subscription-based AI tools for supply chain optimization. They operate in a high-growth but highly regulated sector, requiring constant updates to data privacy and industry compliance standards.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company recently launched three minor feature upgrades based on user feedback. A larger strategic initiative involved piloting an integration with a new logistics platform last year.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "To establish market leadership in the core optimization space while aggressively diversifying revenue streams into adjacent industry verticals like healthcare and specialized consulting.",
+      "companyDescription": "Apex is a micro-scale energy services company specializing in providing energy efficiency audits, HVAC optimization consulting, and building management system integration for commercial and industrial clients. They have completed over 200 projects focusing on optimizing operational expenditures (OpEx) for sectors like healthcare and manufacturing. They are currently developing an IoT-based real-time energy monitoring platform designed to provide predictive maintenance insights.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization; initiatives are sporadic, such as trialing new API integrations for smart meter data or experimenting with AI tools like machine learning for anomaly detection. These attempts remain isolated and grassroots, lacking formal documentation or executive alignment.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Apex aims to move beyond its core service business by exploring adjacent markets, specifically a subscription-based SaaS layer for utility clients and developing a marketplace connecting energy data providers with industrial consumers. The company is committed to incubating 2-3 experimental business lines using seed funding to aggressively test non-core revenue streams.",
       "strategicPriority": "diversification",
-      "timeHorizon": "long",
+      "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The team consists of 25 dedicated software engineers, product managers, and a lean executive group focused on rapid iteration.",
-      "digitalMaturity": "4",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 18,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
+        "budget",
+        "process",
         "talent",
-        "strategy",
-        "time",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "high",
-      "additionalContext": "The market is saturated with similar tools, demanding continuous innovation and rapid pivots to maintain relevance."
+      "competitivePressure": "medium",
+      "additionalContext": "Apex operates with extremely high operating leverage due to its micro-size, meaning resource allocation for innovation must be ruthlessly targeted toward activities promising immediate market entry or significant competitive advantage.",
+      "companyName": "Apex",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 2.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Vertical Spin-off Platform Development",
-        "rationale": "Given the bold risk appetite and diversification goal, developing a completely new SaaS product line targeting Healthcare or FinTech will allow the company to enter high-margin, less saturated markets.",
+        "type": "incremental",
+        "title": "Enhanced Predictive Maintenance Module",
+        "rationale": "Leveraging the existing IoT data collection capabilities to build a sophisticated machine learning model that moves beyond simple monitoring to provide highly accurate predictive maintenance alerts for critical HVAC and electrical assets. This builds defensible IP around operational uptime.",
         "execution_plan": {
           "first_actions": [
-            "Conduct comprehensive market gap analysis in two target verticals (Healthcare/Fintech).",
-            "Establish a dedicated cross-functional task force and hire 2 key domain experts."
+            "Procure specialized ML training course/consultancy (under 10% budget)",
+            "Allocate spare developer time to data pipeline refinement",
+            "Develop a Minimum Viable Predictive Alert Dashboard"
           ],
           "resources_needed": [
-            "Seed funding allocation ($500k)",
-            "Hiring budget for 3 specialized staff"
+            "Cloud compute credits ($500)",
+            "Part-time ML consultant engagement ($3k)"
           ],
-          "success_metric": "Achieve $1M ARR from the new vertical within 18 months.",
+          "success_metric": "Reduction in reported equipment downtime by 15% within 6 months",
           "milestones": [
-            "Q2: MVP launch of Vertical X platform.",
-            "Q4: Secure first five anchor enterprise clients."
+            "Q3: Core anomaly detection model MVP launch",
+            "Q4: Pilot integration with five key manufacturing clients"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Data Monetization Marketplace (Energy Exchange)",
+        "rationale": "Develop a radical, open-API driven marketplace where Apex monetizes anonymized, aggregated energy consumption data from its existing assets. This allows third-party developers to build complementary services like dynamic load balancing or carbon offset verification tools without requiring heavy upfront R&D investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Define API schema and legal framework for data sharing",
+            "Identify three high-value industry partners (e.g., ESG firms)",
+            "Create a lean internal 'data sales' pilot service scope"
+          ],
+          "resources_needed": [
+            "Legal counsel retainer ($7k)",
+            "Dedicated project management time (owner focus)"
+          ],
+          "success_metric": "Secure 1 paying data partner within the first year",
+          "milestones": [
+            "Q3: Data marketplace platform wireframe and legal review complete",
+            "Q4: Launch pilot program with initial industry partners"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "long"
-      },
-      {
-        "type": "incremental",
-        "title": "API Marketplace Expansion",
-        "rationale": "Leveraging the existing core technology, creating a structured marketplace for third-party integrations will increase platform stickiness and diversify revenue beyond direct subscriptions.",
-        "execution_plan": {
-          "first_actions": [
-            "Define monetization model (commission/tier structure) for marketplace access.",
-            "Develop technical documentation and onboarding workflow."
-          ],
-          "resources_needed": [
-            "Marketing budget ($50k)",
-            "Engineering hours allocation (1 full-time)"
-          ],
-          "success_metric": "Increase average customer revenue by 20% through new marketplace fees.",
-          "milestones": [
-            "Q3: Launch MVP of the API Marketplace.",
-            "Q1 Next Year: Achieve 50 active third-party developers."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "short"
-      },
-      {
-        "type": "radical",
-        "title": "Acquisition of Niche Compliance Firm",
-        "rationale": "To rapidly diversify into the regulated space (e.g., specialized compliance consulting or data security), acquiring a smaller, established firm is faster than building an internal capability.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify 3-5 small boutique firms specializing in specific industry regulations.",
-            "Develop preliminary valuation and due diligence framework."
-          ],
-          "resources_needed": [
-            "Due diligence legal costs",
-            "Initial acquisition capital ($1M target)"
-          ],
-          "success_metric": "Successful integration and revenue contribution from acquired entity within 9 months.",
-          "milestones": [
-            "Q3: Finalize Target List and Initiate Outreach.",
-            "Q4: Complete Acquisition and integrate systems."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "long"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a dedicated 'Diversification Task Force' meeting bi-weekly to prioritize the Radical Spin-off Platform.",
-        "owner": "CEO / Head of Strategy",
+        "action": "Formalize a small, defined innovation pipeline (even if manual) and allocate 5 hours weekly to idea scouting.",
+        "owner": "Founder",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Develop technical specifications and business model for the API Marketplace expansion and assign engineering lead.",
-        "owner": "CTO",
-        "timeframe": "Within 1 month"
+        "action": "Conduct market validation interviews for the subscription service layer concept with at least ten industrial clients.",
+        "owner": "Business Development Lead (if hired) / Founder",
+        "timeframe": "Next 1 month"
       },
       {
-        "action": "Initiate confidential scouting of small compliance firms suitable for acquisition target profiles.",
-        "owner": "Head of Acquisitions / CFO",
-        "timeframe": "Within 3 months"
+        "action": "Select one low-risk, high-leverage initiative (like the Predictive Maintenance module) and define a clear budget boundary for execution.",
+        "owner": "Owner",
+        "timeframe": "Within 3 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on a single core technology stack, limiting external market entry speed.",
-      "Insufficient expertise in complex regulatory environments outside the immediate core industry.",
-      "Slow internal process for testing and scaling radical new product concepts.",
-      "Talent retention risk due to competitive poaching from larger tech giants."
+      "Lack of formal innovation process leading to uncoordinated, isolated efforts.",
+      "Severe reliance on the owner for all strategic decisions, creating single points of failure and decision bottlenecks.",
+      "High dependency on generalist developers who lack specialized R&D focus, limiting technical depth for radical projects.",
+      "Limited capital runway (13% budget) severely restricts the ability to fund long-term, high-risk diversification initiatives."
     ]
   }
 }

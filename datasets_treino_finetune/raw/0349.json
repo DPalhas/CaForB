@@ -1,0 +1,156 @@
+{
+  "id": "0349",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:34:46.902658+00:00",
+    "duration_ms": 29304,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vertex Networks",
+      "sector": "Energy & Utilities",
+      "size": "Medium",
+      "companyName": "Vertex Networks"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Vertex Networks is a B2B energy services company specializing in conducting comprehensive energy efficiency audits, HVAC optimization, and building management system integration for large commercial and industrial clients. They manage complex portfolios involving residential retrofits, manufacturing facilities, and corporate headquarters across various geographies. The firm leverages IoT to provide granular data insights that drive measurable operational savings and compliance reporting.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Vertex Networks successfully installed IoT sensors on 40% of its industrial production equipment, which led to a validated 15% reduction in unplanned downtime. Currently, the primary technical challenge involves integrating this real-time data stream with legacy maintenance scheduling systems and developing scalable APIs for third-party vendor consumption.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Our primary competitors are large utility conglomerates and nimble tech startups. We must defend our position by improving the value proposition of our data services, moving beyond simple audit reporting toward prescriptive optimization tools.",
+      "companyName": "Vertex Networks",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhance Digital Self-Service Portals",
+        "rationale": "Modernizing the customer interface will directly address churn feedback regarding poor digital tools and improve perceived value for enterprise clients. This is a low-risk, high-impact move to increase retention.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct UX/UI audit of current portal",
+            "Allocate 1 engineering sprint dedicated to self-service feature prototyping",
+            "Develop MVP for 'Energy Consumption Dashboard' integration"
+          ],
+          "resources_needed": [
+            "UX designer contract ($15k)",
+            "2 engineers for one sprint allocation (internal cost)",
+            "Cloud hosting upgrade budget ($5k)"
+          ],
+          "success_metric": "Increase enterprise customer self-service usage by 20% within Q3",
+          "milestones": [
+            "Prototype complete by end of Month 1",
+            "Launch Beta program by end of Month 2",
+            "Full portal V2 launch by end of Month 4"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months"
+      },
+      {
+        "type": "radical",
+        "title": "Transition to Prescriptive Optimization SaaS",
+        "rationale": "Moving from merely reporting data (audit) to providing actionable, prescriptive recommendations will differentiate Vertex Networks significantly. This radical shift addresses the competitive pressure by creating a unique value proposition.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional 'Optimization Squad' focusing on model training",
+            "Identify and secure partnership with a specialized AI/ML consultancy",
+            "Develop a proof-of-concept optimization engine for one industrial vertical (e.g., manufacturing cooling) using existing sensor data"
+          ],
+          "resources_needed": [
+            "Consultancy contract for ML architecture ($50k)",
+            "Data science tooling subscription ($20k)",
+            "Dedicated internal project manager allocation (part-time)"
+          ],
+          "success_metric": "Secure 1 pilot contract demonstrating a 5% operational cost reduction based on optimization recommendations",
+          "milestones": [
+            "Define optimal ML model architecture by end of Month 3",
+            "Pilot PoC implementation and performance validation by end of Month 6",
+            "Go/No-Go decision for full SaaS feature development by Q4"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 Months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automate IoT Data Pipeline Integration",
+        "rationale": "Focus on mitigating the current technical barrier of legacy system integration by investing in a robust middleware layer (data lake) to handle data complexity efficiently. This supports future scaling.",
+        "execution_plan": {
+          "first_actions": [
+            "Investigate and select an industrial-grade IoT data ingestion platform",
+            "Assign dedicated platform engineers to build ETL pipelines for legacy systems",
+            "Document API standards for all new sensor integrations"
+          ],
+          "resources_needed": [
+            "Cloud data lake migration services ($10k)",
+            "Platform engineering headcount allocation (internal shift)",
+            "License for middleware software ($5k)"
+          ],
+          "success_metric": "Reduce time required to ingest and process new sensor data from 7 days to 24 hours",
+          "milestones": [
+            "Data ingestion pipeline established by end of Month 3",
+            "Successful integration with three critical legacy systems by end of Month 5",
+            "Platform readiness assessment complete by Q1"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 Months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated 'Digital Experience Task Force' to prioritize and scope the self-service portal modernization project.",
+        "owner": "VP of Customer Success",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate a feasibility study for the Prescriptive Optimization SaaS model, including initial competitor landscape analysis.",
+        "owner": "Chief Strategy Officer",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Implement weekly cross-functional syncs (Engineering/Product/Sales) to map current bottlenecks between IoT data and maintenance scheduling systems.",
+        "owner": "Head of Technology Operations",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent execution velocity across business units, hindering innovation speed.",
+      "High dependency on legacy systems which creates significant technical debt and integration friction.",
+      "Low maturity in leveraging digital tools for proactive customer engagement, leading to churn.",
+      "Budget constraints limiting the scale of ambitious projects despite high competitive pressure."
+    ]
+  }
+}

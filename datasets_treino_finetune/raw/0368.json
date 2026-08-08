@@ -1,0 +1,130 @@
+{
+  "id": "0368",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:44:12.815116+00:00",
+    "duration_ms": 23770,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.380737+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nova Solutions",
+      "sector": "Education",
+      "size": "Micro",
+      "companyName": "Nova Solutions"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "EdTech startup providing an AI-powered math tutoring platform for middle and high school students. Adaptive problem generation based on individual knowledge gaps. We are currently navigating complex state licensing requirements and compliance standards (like privacy laws), which significantly dictates feature development velocity.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget, leading to idea stagnation and resource depletion.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The competition includes established EdTech giants with deep pockets and extensive compliance departments, making Nova Solutions' agility highly dependent on rapid process optimization.",
+      "companyName": "Nova Solutions",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Support Ticketing and Response Templates",
+        "rationale": "Implementing basic AI chatbots or sophisticated template libraries for customer support can immediately reduce the manual workload on the small team handling inquiries. This directly addresses operational efficiency without requiring major platform re-engineering.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current support workflows to identify top 5 repetitive queries",
+            "Implement a low-cost SaaS ticketing system with basic automation features (e.g., auto-response)",
+            "Pilot template creation for common compliance questions"
+          ],
+          "resources_needed": [
+            "Subscription to a Tier 2 customer support tool ($100-$300/month)",
+            "Founder time allocation (5 hours per week)"
+          ],
+          "success_metric": "Reduction of Tier 1 manual support tickets by 20% within Q3",
+          "milestones": [
+            "Week 4: Tool selection and setup complete",
+            "Month 2: Successful pilot run with 50 support tickets",
+            "Month 4: Full integration into daily operations"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Curriculum Personalization Engine V1 (Efficiency Focus)",
+        "rationale": "Instead of focusing on complex content creation, leverage existing data to build a hyper-efficient recommendation engine that dynamically adjusts problem difficulty and topic sequencing based solely on student performance metrics. This shifts the core value proposition from manual explanation to optimized algorithmic delivery.",
+        "execution_plan": {
+          "first_actions": [
+            "Define minimal viable personalization feature (e.g., auto-adjust next 3 problems)",
+            "Utilize existing machine learning libraries/APIs for rapid prototyping",
+            "Focus initial development entirely on the core mathematical logic, deferring UI polish.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Contractor hours for ML integration (approx. $5k - $10k)",
+            "Focus internal time strictly on defining requirements and data pipelines."
+          ],
+          "success_metric": "Increase in average student problem-solving confidence score by 10% within a test group",
+          "milestones": [
+            "Month 3: Functional core personalization logic deployed",
+            "Month 5: Integration testing with compliance checks finalized",
+            "Month 6: Beta launch for 20 schools"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a detailed cost-benefit analysis for the automated support tool and present to the owner.",
+        "owner": "Founder",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Define the data requirements and scope for the V1 AI personalization engine, partnering with a freelance developer contract.",
+        "owner": "Owner/Freelance Partner",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish clear KPIs for efficiency gains (OpEx reduction) tied directly to these two initiatives.",
+        "owner": "Founder",
+        "timeframe": "Within 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budget constraint (8% allocation) limits capacity for paid talent and extensive testing.",
+      "High operational risk due to reliance on informal decision-making and single point of failure in the founder's technical role.",
+      "Low digital maturity prevents scalable, automated customer experience solutions required by the high competitive pressure.",
+      "Lack of formal process makes measuring ROI and scaling innovation efforts highly subjective."
+    ]
+  }
+}

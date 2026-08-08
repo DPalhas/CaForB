@@ -3,118 +3,122 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Hospitality & Tourism",
+    "size": "Micro",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:15:55.463046+00:00",
-    "duration_ms": 19550,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:54:55.276266+00:00",
+    "duration_ms": 24987,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.272581+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Nova Corporation",
+      "sector": "Hospitality & Tourism",
+      "size": "Micro",
+      "companyName": "Nova Corporation"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "Apex Precision Components manufactures high-tolerance metal parts used primarily in specialized medical devices and aerospace sub-assemblies. The company operates under strict environmental, quality control, and safety regulations due to the sensitive nature of its end products.",
+      "companyDescription": "Nova Corporation is a boutique hotel group operating 4 properties in historic city centers with a combined 180 rooms. They focus on experiential luxury with in-house curated culinary programs and cultural immersion packages. The company faces stringent local zoning laws regarding expansion and labor, requiring high compliance management to maintain its premium operational standards.",
       "innovationProcess": "formal",
-      "pastInitiatives": "The company recently invested heavily in upgrading CNC machinery and implemented a new lean manufacturing system aimed at reducing waste. Historically, innovation has been incremental, focusing on process optimization rather than radical product redesign.",
+      "pastInitiatives": "They have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to maintain market dominance in high-specification components by ensuring unparalleled quality and operational compliance. We aim to solidify our position against emerging competitors through continuous technological refinement.",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats—whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
       "strategicPriority": "market_defense",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "bold",
-      "teamSize": "The R&D team consists of 15 highly specialized engineers and a small operations group, focused intensely on technical excellence.",
       "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 18,
-      "decisionMaking": "small_leadership_team",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 19,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "process",
+        "culture",
         "talent",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The industry is undergoing rapid shifts toward automated assembly and stricter ESG reporting requirements, demanding agility in both production methods and material sourcing."
+      "competitivePressure": "high",
+      "additionalContext": "Nova operates in a highly sensitive market where reputation is paramount. They are currently under pressure to demonstrate technological agility while navigating complex local permitting processes associated with hospitality development.",
+      "companyName": "Nova Corporation",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 7.5,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Establish a fully automated, AI-driven quality assurance system.",
-        "rationale": "Given the high regulatory environment and market defense priority, automating quality checks reduces human error and provides an unassailable compliance record. This radical shift can drastically lower defect rates and allow us to undercut competitors on reliability.",
+        "type": "incremental",
+        "title": "Hyper-Personalized Dynamic Pricing Engine",
+        "rationale": "Utilizing the existing AI recommendation engine to predict guest demand patterns in real-time allows for optimized pricing and package bundling tailored to specific micro-segments. This directly addresses competitive pressure by maximizing revenue from every available booking without requiring massive infrastructure overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Procure specialized vision systems for real-time inspection of critical components."
+            "Integrate predictive analytics module into current CRM platform",
+            "Conduct A/B testing on dynamic pricing models for one property cluster",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "R&D equipment acquisition ($1.5M)",
-            "Data science talent hiring (6 months)"
+            "Data scientist consultation (contract basis)",
+            "Software license upgrade (€5k)"
           ],
-          "success_metric": "Reduction in manufacturing defect rate by 30% within 18 months.",
+          "success_metric": "Increase in RevPAR by 8% within Q3",
           "milestones": [
-            "Phase 1: Pilot system integration and data pipeline setup (6 months)",
-            "Phase 2: Full production deployment and validation (15 months)"
+            "Prototype completion and internal validation: Month 1-2",
+            "Pilot launch in one property: Month 3"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Exclusive 'Experience-as-a-Product' Subscription Model",
+        "rationale": "Given the high regulatory environment and micro size, Nova can create a radical moat by packaging their unique cultural immersion and culinary programs into an ultra-exclusive digital subscription service. This creates recurring revenue streams and locks in premium clientele through scarcity.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop MVP for 'Nova Immersion' digital content platform",
+            "Establish partnerships with 3 key local cultural providers",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "UX/UI Design team (freelancer)",
+            "Legal counsel specializing in subscription services (€10k)"
+          ],
+          "success_metric": "Achieve a 20% conversion rate from physical stay to digital subscription within 6 months",
+          "milestones": [
+            "Subscription platform MVP launch: Month 1-4",
+            "First paid subscriber cohort (Beta): Month 5"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "medium"
-      },
-      {
-        "type": "incremental",
-        "title": "Implement blockchain-based supply chain traceability.",
-        "rationale": "To address high regulatory scrutiny regarding material sourcing and ethical compliance, a formal blockchain system will provide immutable proof of origin for all components. This defensive move enhances brand trust significantly.",
-        "execution_plan": {
-          "first_actions": [
-            "Select a suitable private blockchain platform (e.g., Hyperledger)."
-          ],
-          "resources_needed": [
-            "Legal consultation ($50k)",
-            "Integration development team allocation (2 full-time FTEs)"
-          ],
-          "success_metric": "100% traceability compliance for all Tier 1 suppliers.",
-          "milestones": [
-            "Prototype integration with key raw material partners (4 months)",
-            "Full system rollout across critical supply chain nodes (9 months)"
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "short"
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a feasibility study for AI-driven quality assurance, identifying potential vendor partners.",
-        "owner": "Head of R&D",
-        "timeframe": "Within 3 weeks"
+        "action": "Form a temporary 'Defense Task Force' to map competitor service gaps and identify immediate operational fixes.",
+        "owner": "CEO/COO",
+        "timeframe": "Within 1 week"
       },
       {
-        "action": "Finalize the technical scope and secure funding for the blockchain traceability pilot project.",
-        "owner": "COO / CFO",
+        "action": "Commission a feasibility study for the radical subscription model, focusing on regulatory hurdles and consumer willingness to pay.",
+        "owner": "Head of Strategy",
         "timeframe": "Within 4 weeks"
-      },
-      {
-        "action": "Establish a cross-functional steering committee to oversee innovation roadmap alignment with market defense strategy.",
-        "owner": "CEO",
-        "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "Over-reliance on legacy manufacturing processes that limit radical output flexibility.",
-      "Limited internal expertise in advanced data science needed for predictive quality control.",
-      "High operational costs associated with maintaining stringent, manual compliance documentation."
+      "Innovation pipeline dependency on sporadic developer availability (high time risk).",
+      "Lack of dedicated, specialized R&D talent required to navigate complex hospitality tech.",
+      "High operational complexity due to stringent local regulatory compliance requirements across multiple micro-properties.",
+      "Over-reliance on owner-alone decision-making leading to potential strategic inertia."
     ]
   }
 }

@@ -1,0 +1,131 @@
+{
+  "id": "0475",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:19:12.561908+00:00",
+    "duration_ms": 23851,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.420409+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Digital",
+      "sector": "Telecommunications",
+      "size": "Large",
+      "companyName": "Lumina Digital"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "MVNO (Mobile Virtual Network Operator) reselling mobile voice and data plans targeting the youth and digital-native segment. Lumina Digital currently manages 80,000 active subscribers acquired primarily through aggressive digital channels and a strong brand presence in emerging markets. The company is seeking to differentiate its offering by implementing sophisticated app-based plan customization and leveraging AI-driven usage optimization recommendations.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to the investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources, demonstrating a structured approach to idea generation and validation. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases; one incubated project has already successfully graduated to become a standalone business unit.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models beyond traditional subscription plans. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The sector is rapidly shifting towards network-as-a-service models and personalized digital monetization, demanding agility even within a formal structure.",
+      "companyName": "Lumina Digital",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI Usage Optimization Engine (Internal Scale)",
+        "rationale": "Focusing on incremental efficiency gains in plan customization and AI recommendations will immediately improve customer retention and provide a clear ROI path. This leverages existing digital maturity and aligns with current internal R&D efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 key high-usage segments for pilot optimization",
+            "Allocate $50k from the innovation fund for prototype development",
+            "Establish a dedicated cross-functional team (Product + AI)",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data scientist contractor ($100k)",
+            "Cloud computing resources",
+            "Internal engineering bandwidth reallocation"
+          ],
+          "success_metric": "Achieve 5% reduction in churn rate for targeted segments within Q3.",
+          "milestones": [
+            "Q2: Pilot launch and KPI baseline established",
+            "Q4: Full rollout across all youth data plans"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "B2B Connectivity as a Service (Diversification)",
+        "rationale": "To satisfy the diversification mandate, Lumina should explore offering anonymized or aggregated network capacity services to local SMEs. This opens a new revenue stream outside of direct B2C competition while utilizing existing network infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct regulatory feasibility study on network sharing",
+            "Form a small strategic partnership team with 5 target local businesses",
+            "Develop legal framework for anonymized data use"
+          ],
+          "resources_needed": [
+            "Legal counsel retainer ($75k)",
+            "Market research budget",
+            "Pilot infrastructure setup cost ($150k)"
+          ],
+          "success_metric": "Secure 2 signed B2B pilot contracts generating $2M in recurring monthly revenue.",
+          "milestones": [
+            "Q3: Feasibility report and legal framework approved",
+            "Q4: Launch of initial pilot program with 5 partners"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize the funding and staffing plan for the B2B Connectivity pilot project.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a cross-functional working group to address cultural inertia related to new revenue stream exploration.",
+        "owner": "VP of Strategy",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Schedule Q3 review session with the Board Committee on formal diversification progress metrics.",
+        "owner": "CEO",
+        "timeframe": "End of Q2"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia and slow alignment across business units for complex, cross-divisional projects.",
+      "Limited deep expertise in B2B monetization strategies required for successful diversification initiatives.",
+      "High cost and time constraints imposed by the formal stage-gate approval process which may stifle rapid testing."
+    ]
+  }
+}

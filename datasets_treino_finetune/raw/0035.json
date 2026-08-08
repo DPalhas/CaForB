@@ -3,145 +3,133 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Pharmaceuticals & Biotech",
-    "size": "Medium",
+    "sector": "Public Administration",
+    "size": "Small",
     "regulatory_environment": "high",
     "risk_appetite": "bold",
     "strategic_priority": "market_defense",
-    "competitive_pressure": "high",
-    "reviewed": false,
+    "competitive_pressure": "medium",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:02:15.393858+00:00",
-    "duration_ms": 46590,
-    "attempts": 2
+    "generated_at": "2026-08-03T17:42:32.747025+00:00",
+    "duration_ms": 25404,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.262863+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "BioGuard Therapeutics Inc.",
-      "sector": "Pharmaceuticals & Biotech",
-      "size": "Medium"
+      "name": "Forge",
+      "sector": "Public Administration",
+      "size": "Small",
+      "companyName": "Forge"
     },
     "answers": {
       "regulatoryEnvironment": "high",
-      "companyDescription": "A mid-sized biotech firm specializing in novel oncology treatments and gene therapies. The company operates under stringent FDA/EMA regulations, requiring extensive clinical trials and complex compliance procedures for drug approval.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company successfully launched two Phase II clinical trials focused on personalized cancer therapy and has established a formal internal R&D pipeline. They have also implemented rigorous quality control protocols to ensure regulatory adherence.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "To secure and maintain market share in the specialized oncology segment by developing proprietary, highly defensible intellectual property. The company aims to minimize dependency on single-source therapeutic platforms.",
+      "companyDescription": "National regulatory agency overseeing the telecommunications and energy sectors, responsible for market competition enforcement, tariff regulation, and spectrum allocation. The agency manages complex compliance standards across multiple jurisdictions to ensure fair competition while protecting public interest in critical infrastructure.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
       "strategicPriority": "market_defense",
       "timeHorizon": "medium",
       "riskAppetite": "bold",
-      "teamSize": "The core R&D team consists of 12 highly specialized scientists and regulatory affairs experts, managed by a small leadership team focused on aggressive milestones.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 18,
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 12,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
-        "talent",
-        "process",
-        "time",
-        "strategy"
+        "budget",
+        "culture",
+        "time"
       ],
-      "competitivePressure": "high",
-      "additionalContext": "The global competition in targeted oncology is intense, requiring continuous innovation to maintain relevance and protect premium pricing."
+      "competitivePressure": "medium",
+      "additionalContext": "The agency faces significant political headwinds regarding its perceived bureaucratic inertia and the need to demonstrate measurable efficiency gains in a highly scrutinized sector.",
+      "companyName": "Forge",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 4.0,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "AI-Driven Predictive Toxicology Platform",
-        "rationale": "Given the high regulatory scrutiny and competitive pressure, developing an AI platform to predict potential toxicity in early-stage compounds can dramatically speed up development time and reduce clinical trial failure rates.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify and acquire 3 top-tier data scientists specializing in cheminformatics.",
-            "Allocate a dedicated R&D sprint team to build the initial proof of concept (POC) model."
-          ],
-          "resources_needed": [
-            "Hiring budget for AI/ML specialists ($150k)",
-            "Cloud computing resources for high-performance computing ($40k)"
-          ],
-          "success_metric": "Reduce preclinical compound failure rate by 25% within 18 months.",
-          "milestones": [
-            "Q3: POC model validated against internal historical data.",
-            "Q1 Year 2: Model integrated into the formal R&D workflow."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "long"
-      },
-      {
         "type": "incremental",
-        "title": "Regulatory Digital Twin Simulation Tool",
-        "rationale": "To manage the high regulatory environment, implementing a digital twin simulation tool can allow for rapid stress-testing of submission documents and compliance scenarios, reducing costly delays.",
+        "title": "AI-Assisted Compliance Monitoring Pilot",
+        "rationale": "Leveraging existing internal data and low-code tools to automate the analysis of new regulatory filings could significantly reduce manual review time. This incremental step aligns with immediate efficiency goals and leverages existing staff skills.",
         "execution_plan": {
           "first_actions": [
-            "Partner with an external software vendor specializing in regulatory documentation automation.",
-            "Pilot the tool on one specific regulatory pathway."
+            "Select a specific high-volume filing type for automation.",
+            "Define success metrics based on reduced human processing hours.",
+            "Prototype using low-code integration tools.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Software licensing and integration costs ($60k)",
-            "Internal training for compliance staff ($15k)"
+            "Internal data science time allocation (0.5 FTE)",
+            "Licensing for specialized NLP/ML APIs",
+            "Training workshop budget"
           ],
-          "success_metric": "Decrease average time spent in regulatory review cycle by 30 days.",
+          "success_metric": "Reduce manual review time for filing X by 30% within 4 months.",
           "milestones": [
-            "Q4: Tool fully deployed for internal use.",
-            "Q2 Year 2: Successful deployment in one major FDA submission."
+            "Month 1: Data pipeline setup and pilot scope defined.",
+            "Month 2: MVP deployed and initial performance validation.",
+            "Month 4: Full integration into the operations workflow."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "medium"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "Strategic Platform Licensing/Acquisition Target Identification",
-        "rationale": "Instead of solely building internal defense, acquiring a small, niche competitor with emerging technology provides immediate defensive capability and fills critical skill gaps.",
+        "title": "Regulatory Intelligence Platform (RegIntel)",
+        "rationale": "To defend market position against larger entities, Forge should explore developing a proprietary platform that aggregates fragmented market data and predictive modeling. This radical step creates high switching costs by making the agency's insights indispensable to industry players.",
         "execution_plan": {
           "first_actions": [
-            "Form a dedicated M&A task force to screen 15 biotech startups matching specific IP targets.",
-            "Develop preliminary valuation models for potential acquisition candidates."
+            "Conduct feasibility study on cloud-native architecture.",
+            "Identify key data partnerships for external feeds.",
+            "Form a dedicated cross-functional task force (Innovation Spike).",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
           ],
           "resources_needed": [
-            "Legal advisory fees ($30k)",
-            "Initial capital reserves for due diligence/acquisition fund ($200k)"
+            "Initial seed funding ($50k) for 6 months R&D",
+            "External consulting fees (platform design)",
+            "Talent recruitment budget for specialized data engineers."
           ],
-          "success_metric": "Identify and secure one strategic acquisition target with >40% IP synergy.",
+          "success_metric": "Secure letters of intent from three major industry players to pilot the RegIntel platform.",
           "milestones": [
-            "Q4: Completion of initial screening and shortlist creation.",
-            "Q2 Year 3: Successful negotiation phase initiated."
+            "Month 3: Completion of core architecture and threat modeling.",
+            "Month 6: Internal Beta release with key stakeholders.",
+            "Month 12: Go/No-Go decision on full market launch."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "long"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-functional task force (R&D, IT, Legal) to define the scope and feasibility of the AI Predictive Toxicology Platform.",
-        "owner": "Chief Innovation Officer",
+        "action": "Establish a formal, lightweight Innovation Steering Committee.",
+        "owner": "Executive Leadership Team (ELT)",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Conduct detailed market mapping and competitive analysis on potential acquisition targets for strategic defense.",
-        "owner": "VP of Business Development",
-        "timeframe": "Within 30 days"
+        "action": "Launch the AI-Assisted Compliance Monitoring Pilot (Incremental).",
+        "owner": "Senior Engineer / Operations Lead",
+        "timeframe": "Within 3 months"
       },
       {
-        "action": "Develop a phased implementation plan for the Regulatory Digital Twin Simulation Tool, focusing first on compliance reporting automation.",
-        "owner": "Head of Operations",
+        "action": "Conduct a 1-day external feasibility study for the Regulatory Intelligence Platform (Radical) and secure seed funding.",
+        "owner": "Innovation Steering Committee / Finance",
         "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "High dependency on single-source suppliers for specialized reagents",
-      "Slow internal process for pivoting R&D based on early clinical feedback",
-      "Limited expertise in advanced regulatory technology implementation",
-      "Talent retention risk due to intense competition from larger pharma companies"
+      "Reliance on informal processes leading to knowledge loss and project abandonment.",
+      "Low digital maturity (Maturity Level 1) hindering adoption of modern data solutions necessary for market defense.",
+      "Severe constraint in budget and time, preventing sustained R&D efforts outside immediate operational needs.",
+      "Informal team structure makes it difficult to allocate dedicated resources toward strategic, long-term innovation."
     ]
   }
 }

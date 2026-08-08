@@ -3,70 +3,71 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
+    "sector": "Transportation & Logistics",
     "size": "Medium",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "growth",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "low",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:49:00.780173+00:00",
-    "duration_ms": 18691,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:25:40.147875+00:00",
+    "duration_ms": 24600,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.252896+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "InnovateFlow SaaS",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Ember",
+      "sector": "Transportation & Logistics",
+      "size": "Medium",
+      "companyName": "Ember"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "InnovateFlow is a medium-sized B2B software company specializing in project management tools for the construction industry. They focus on optimizing workflow efficiency and resource allocation through cloud-based solutions.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company recently implemented a minor feature update based on internal user feedback to improve reporting speed. They have also experimented with integrating basic AI components into their project scheduling module, but these efforts remain small scale and exploratory.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is aggressive revenue growth through expanding market penetration in new geographic territories. The company aims to increase customer lifetime value by offering premium service tiers based on their established product stability.",
+      "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly, Ember navigates complex international compliance requirements across various trade routes. The company leverages a mix of legacy systems and modern cloud tools to maintain operational efficiency in a fast-paced global supply chain.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes. Past attempts have included minor software tool pilots for internal reporting and manual process re-engineering of the customs declaration flow.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments like cold chain logistics and e-commerce fulfillment services, and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization in customs compliance or broaden horizontally into related product categories.",
       "strategicPriority": "growth",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core development team consists of 15 engineers and a small dedicated marketing unit.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
       "budgetPercentage": 4,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "talent",
-        "process",
-        "time"
+        "budget"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "Market competition is intense in the project management niche. The company relies heavily on maintaining technical excellence to justify premium pricing."
+      "competitivePressure": "low",
+      "additionalContext": "The primary competitive advantage currently lies in localized expertise and strong personal client relationships rather than scalable proprietary technology. Operational bottlenecks often stem from the lack of seamless data flow between legacy systems like ERP and CRM.",
+      "companyName": "Ember",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 4.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Automated Customer Onboarding Workflow",
-        "rationale": "By streamlining the onboarding process with automated documentation and guided setup modules, we can reduce friction for new clients, leading to higher retention rates without major architectural changes. This is a low-risk way to improve customer experience.",
+        "title": "Automated Customs Document Classification Pilot",
+        "rationale": "Implementing a controlled pilot program for AI/ML-driven document classification will immediately reduce manual processing time and error rates in customs declarations. This is an incremental step that addresses current operational friction without requiring massive structural change.",
         "execution_plan": {
           "first_actions": [
-            "Map current onboarding steps",
-            "Develop a simplified automated checklist",
-            "Pilot the workflow with 10 new trial users"
+            "Identify 5 high-volume trade corridors for pilot testing",
+            "Select a low-cost, off-the-shelf document recognition API or tool"
           ],
           "resources_needed": [
-            "Internal project management tool subscription (low cost)",
-            "2 dedicated developer hours"
+            "40 hours dedicated engineering time (from '20% time' pool)",
+            "$15k in licensing/api costs"
           ],
-          "success_metric": "Reduce onboarding completion time by 30% within Q3.",
+          "success_metric": "Reduction of 15% processing time per declaration within Q3",
           "milestones": [
-            "Finalize automated checklist (Month 1)",
-            "Launch pilot program for new feature (Month 2)"
+            "Q1: API integration and data mapping complete",
+            "Q2: Pilot run validation with positive error rate metrics"
           ]
         },
         "impact": "medium",
@@ -75,50 +76,73 @@
       },
       {
         "type": "incremental",
-        "title": "Tiered Feature Expansion Strategy",
-        "rationale": "Instead of a radical overhaul, we will focus on incremental growth by developing high-value add-ons for our existing user base. This leverages current technical capabilities and directly supports the goal of increasing customer lifetime value.",
+        "title": "Vertical Expansion via Cold Chain Logistics Integration",
+        "rationale": "To meet growth targets, Ember should consider a bold pivot by acquiring or deeply integrating cold chain logistics capabilities. This move shifts the company from a pure brokerage service into an end-to-end supply chain partner, unlocking high-margin adjacent segments.",
         "execution_plan": {
           "first_actions": [
-            "Identify three most requested feature enhancements from NPS feedback",
-            "Create a phased roadmap linking features to premium pricing tiers",
-            "Run A/B testing on pricing structure changes for one tier"
+            "Conduct market analysis on regional cold chain gaps",
+            "Identify 2 potential small acquisition targets in specialized trucking/storage"
           ],
           "resources_needed": [
-            "UX/UI consultation (small fee)",
-            "Internal marketing resources"
+            "$50k for M&A due diligence and legal fees",
+            "Executive time allocation (10% from strategy function)"
           ],
-          "success_metric": "Increase average revenue per user (ARPU) by 10% in the premium tier.",
+          "success_metric": "Establish a pipeline generating 10 qualified cold chain partnership leads within 6 months",
           "milestones": [
-            "Define feature roadmap for next 6 months (Month 2)",
-            "Launch premium pricing pilot (Month 5)"
+            "Q2: Preliminary financial modeling of acquisition/partnership scenarios",
+            "Q4: Final investment decision or exit from vertical expansion track"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "ERP-CRM Data Synchronization Layer",
+        "rationale": "To improve data integrity and efficiency, a low-cost middleware solution can be implemented to synchronize key data points between the legacy ERP and CRM systems. This ensures that sales reps have accurate operational data, improving service quality.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current data entry points across sales and operations",
+            "Select a low-code integration platform vendor"
+          ],
+          "resources_needed": [
+            "$25k for software licensing/implementation fees",
+            "Internal IT support (30% of dedicated team time)"
+          ],
+          "success_metric": "Reduction in reported data discrepancy errors by 20%",
+          "milestones": [
+            "Q1: Data mapping and sync prototype completed",
+            "Q3: Full rollout to the SME client base"
           ]
         },
         "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "12 months"
+        "difficulty": "low",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a detailed analysis of current customer onboarding friction points and prioritize the most impactful incremental improvement.",
-        "owner": "Head of Product",
-        "timeframe": "Within 3 weeks"
+        "action": "Form a cross-functional 'Growth Acceleration Task Force'",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Develop a lean project plan for the automated onboarding pilot and secure necessary internal resources.",
-        "owner": "CTO / Operations Lead",
+        "action": "Define detailed technical requirements and budget for the Customs Classification Pilot (Opportunity 1)",
+        "owner": "VP of Technology",
         "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Establish quarterly metrics tracking key growth indicators (e.g., churn reduction, ARPU) related to strategic goals.",
+        "action": "Establish baseline operational KPIs for customer service quality to inform future growth strategy discussions",
         "owner": "COO",
         "timeframe": "Within 1 month"
       }
     ],
     "key_weaknesses": [
-      "Slow internal process for feature request prioritization leads to missed opportunities.",
-      "Talent scarcity in specialized cloud infrastructure engineering.",
-      "High reliance on manual data entry points, which increases operational risk."
+      "Lack of a formalized, repeatable innovation process leading to inconsistent execution velocity.",
+      "High dependency on informal 'grassroots' efforts which lack executive alignment and structured funding.",
+      "Inadequate integration between core systems (ERP/CRM), leading to operational data silos.",
+      "Limited budget allocation (4%) severely restricting the ability to execute large-scale or radical initiatives."
     ]
   }
 }

@@ -1,0 +1,132 @@
+{
+  "id": "0140",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:44:53.069736+00:00",
+    "duration_ms": 24626,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Titan Innovations",
+      "sector": "Professional & Consulting Services",
+      "size": "Large",
+      "companyName": "Titan Innovations"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Titan Innovations is a global management consulting firm specializing in high-level strategy and operational transformation for mid-market enterprises. The firm leverages deep domain expertise to help clients navigate complex digital shifts and achieve significant cost reductions. The organization relies heavily on intellectual capital and proprietary methodologies rather than heavy physical infrastructure.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. This incident highlighted a critical need for formalized idea capture and structured governance before capital is invested.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products.",
+      "additionalContext": "The firm is currently undergoing rapid scaling in the digital transformation space, requiring quick adaptation but struggling to formalize its internal knowledge economy. Internal resistance to change stemming from established consulting norms poses a significant hurdle to adopting faster innovation cycles.",
+      "companyName": "Titan Innovations"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation Pilot (RPA/Low-Code)",
+        "rationale": "Implementing Robotic Process Automation (RPA) for repetitive consulting tasks directly addresses the strategic goal of increasing operational throughput. This is a low-risk, incremental step that can yield measurable efficiency gains quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify three high-volume, manual administrative tasks in project lifecycle management.",
+            "Select and license a low-code RPA platform pilot tool.",
+            "Establish a dedicated cross-functional task force (Ops + IT) for the 30-day proof of concept."
+          ],
+          "resources_needed": [
+            "Software licensing costs ($15k)",
+            "2 FTE internal resource time",
+            "External consultant consultation ($5k)"
+          ],
+          "success_metric": "Reduce manual processing time for target tasks by 30% within Q3.",
+          "milestones": [
+            "Month 1: Define scope and secure vendor.",
+            "Month 2: Pilot implementation with defined metrics.",
+            "Month 3: Review ROI and recommend full rollout."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "AI-Driven Knowledge Synthesis Engine for Proposals",
+        "rationale": "Developing a proprietary AI model that analyzes past engagement documents, white papers, and client feedback to autonomously generate tailored proposal drafts. This radical initiative would significantly accelerate the sales cycle and leverage existing intellectual capital.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated 'Innovation Sandbox' team focusing solely on AI/ML.",
+            "Partner with a specialized boutique AI firm for initial concept scoping (PoC).",
+            "Allocate 1 FTE and $50k for the core research phase."
+          ],
+          "resources_needed": [
+            "AI/ML model training services ($50k)",
+            "Data engineering support (internal hire or contractor)",
+            "Dedicated 'Sandbox' team time allocation"
+          ],
+          "success_metric": "Proposal generation time reduced from 4 days to <1 day, achieving a 2x increase in proposal volume.",
+          "milestones": [
+            "Month 1-3: Data pipeline construction and initial model training (MVP).",
+            "Month 4-6: Internal user testing and refinement of output quality.",
+            "Month 7+: Integration into the core CRM system."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize an Idea Funnel and Governance Model.",
+        "owner": "Head of Innovation",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate the Feasibility Study for the AI Knowledge Synthesis Engine PoC.",
+        "owner": "Innovation Sandbox Lead",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Mandate 'Process Standardization' training for all mid-level managers.",
+        "owner": "HR & Operations VP",
+        "timeframe": "Ongoing starting next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leading to poor idea retention and lack of accountability.",
+      "High dependency on project-specific decision-making, slowing down systemic change initiatives.",
+      "Cultural resistance to adopting new technologies or standardized workflows needed for efficiency.",
+      "Lack of formal knowledge management infrastructure necessary to scale intellectual capital across the 50+ staff."
+    ]
+  }
+}

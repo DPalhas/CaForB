@@ -1,0 +1,150 @@
+{
+  "id": "0443",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:04:47.692103+00:00",
+    "duration_ms": 26076,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.408265+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vertex Consulting",
+      "sector": "Professional & Consulting Services",
+      "size": "Small",
+      "companyName": "Vertex Consulting"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vertex Consulting is a boutique management consulting firm specializing in strategy, operational excellence, and digital transformation for mid-market clients across sectors like finance and healthcare. The firm employs 40 consultants across three regional offices, typically delivering high-impact engagements lasting 8 to 16 weeks.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through quarterly hackathons aimed at rapid prototyping and a formal patent portfolio review. We successfully piloted an automated quality inspection tool using computer vision, which has since been operational, resulting in a documented 35% reduction in defect escape rates for clients.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base, represented by our top three clients accounting for 55% of annual revenue. We must identify and develop new, high-margin revenue streams, potentially through specialized service lines or entirely new business models that leverage our core strategic capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The current market demands rapid service scaling and demonstrable digital innovation, pressuring Vertex to transition from a service provider model to an integrated solution partner.",
+      "companyName": "Vertex Consulting",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Proposal & Insight Engine Implementation",
+        "rationale": "Expanding the knowledge management AI initiative beyond simple insight surfacing into a full proposal generation tool would significantly increase efficiency and allow for faster service delivery. This is a low-risk, immediate win that leverages existing internal data.",
+        "execution_plan": {
+          "first_actions": [
+            "Finalize scope definition for the Q3 AI knowledge base integration.",
+            "Allocate 1 FTE (Developer) full-time for 4 months."
+          ],
+          "resources_needed": [
+            "Internal developer time",
+            "Minor SaaS licensing for specialized NLP features ($5k)"
+          ],
+          "success_metric": "Increase proposal generation cycle speed by 20% and reduce consultant manual data entry hours by 15%.",
+          "milestones": [
+            "MVP launched (Month 3)",
+            "Client pilot completion (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Vertical Service Line Development",
+        "rationale": "To achieve diversification, Vertex should identify a high-growth niche (e.g., Supply Chain Resilience Consulting for mid-market manufacturing) and package proprietary methodologies into specialized, repeatable service offerings. This minimizes market competition while capitalizing on existing domain expertise.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis of current skill sets against three potential niche verticals.",
+            "Develop core white-paper content for two target niches."
+          ],
+          "resources_needed": [
+            "Consultant training budget ($10k)",
+            "Market research subscription ($2k)"
+          ],
+          "success_metric": "Secure 3 new recurring contracts within the first year in the chosen niche.",
+          "milestones": [
+            "Niche certification completed (Month 4)",
+            "First contract secured (Month 8)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Proprietary Methodology SaaS Productization",
+        "rationale": "This bold approach involves packaging Vertex's successful operational excellence framework into a modular, subscription-based SaaS tool sold to other consulting firms or internal divisions. This fundamentally shifts revenue from time/labor to scalable product sales.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the minimum viable feature set for the SaaS core module.",
+            "Engage a fractional CEO/Product Lead to define the go-to-market strategy."
+          ],
+          "resources_needed": [
+            "Fractional leadership retainer ($20k)",
+            "UI/UX design contract (as needed)"
+          ],
+          "success_metric": "Achieve $50k MRR from SaaS subscription revenue within 18 months.",
+          "milestones": [
+            "Functional Beta v1.0 launched (Month 6)",
+            "First paying customer onboarded (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Within 3 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Initiate scoping and resource allocation for the AI Proposal Engine MVP.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct a comprehensive market assessment identifying two high-potential niche verticals for service line diversification.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Draft the initial business case and technical roadmap for the radical SaaS productization effort, securing executive buy-in.",
+        "owner": "Small Leadership Team",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Tight budget constraint limiting investment in large R&D or infrastructure projects.",
+      "High reliance on a single product category and concentrated revenue base, posing significant diversification risk.",
+      "Limited middle management layers leading to potential bottlenecks in scaling innovation efforts.",
+      "Potential difficulty carving out dedicated time for complex innovation bets amidst high operational demands."
+    ]
+  }
+}

@@ -3,121 +3,142 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Legal Services",
+    "size": "Large",
     "regulatory_environment": "medium",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:21:06.191998+00:00",
-    "duration_ms": 44104,
-    "attempts": 2
+    "generated_at": "2026-08-03T18:00:36.576235+00:00",
+    "duration_ms": 28111,
+    "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "InnovateSoft Solutions",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Pioneer Ventures",
+      "sector": "Legal Services",
+      "size": "Large",
+      "companyName": "Pioneer Ventures"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "A medium-sized B2B SaaS provider specializing in project management and workflow automation tools for mid-market enterprises. The company operates in a regulated industry requiring stringent data security compliance.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The firm has successfully implemented several incremental UI/UX upgrades to existing modules and automated basic customer onboarding flows via scripting last year. They have also piloted an API integration project to link their platform with a major CRM system.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "To reduce operational costs by 20% through automation and maximize user retention by offering superior, streamlined workflows. The primary goal is achieving industry-leading efficiency metrics while maintaining customer satisfaction.",
+      "companyDescription": "Pioneer Ventures is a boutique litigation firm handling complex commercial disputes, arbitration, and white-collar defense. The team of 18 litigators manages over 60 active cases involving thousands of documents per matter. They are actively seeking advanced e-discovery platforms with predictive coding capabilities to handle the massive data volume efficiently.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. This cross-functional project involved product, compliance, and customer success teams, resulting in early NPS scores for new customers onboarded through this flow being 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next two years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount but aim to increase case throughput via superior process engineering.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core product development and engineering team consists of 10 specialized members, supported by a small operations unit.",
-      "digitalMaturity": 4,
-      "revenueRange": "10m_to_50m",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. This division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
       "budgetPercentage": 10,
-      "decisionMaking": "small_leadership_team",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "process",
+        "culture",
+        "strategy",
         "talent",
-        "time",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "high",
+      "additionalContext": "The firm struggles with integrating disparate legacy systems that prevent seamless data flow, creating manual bottlenecks in the review process. This technical debt is a significant drag on efficiency gains and competitive positioning against larger, more tech-native litigation boutiques.",
+      "companyName": "Pioneer Ventures"
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 5.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Workflow Automation Engine Overhaul",
-        "rationale": "This initiative targets the core strategic priority of efficiency by automating repetitive internal tasks and complex customer onboarding steps that currently consume significant manual time and resources. It has a balanced risk profile as it relies on existing platform architecture.",
+        "title": "Intelligent Document Review Automation (IDRA) Integration",
+        "rationale": "Implementing a workflow automation layer across existing e-discovery tools can immediately reduce billable hours spent on document sorting and triage. This is a low-risk, high-impact incremental step directly supporting the efficiency goal.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a full process mapping audit for the top 5 most time-consuming workflows.",
-            "Identify low-hanging fruit tasks suitable for RPA (Robotic Process Automation) implementation."
+            "Conduct a gap analysis of current data ingestion vs. desired automation level.",
+            "Pilot an RPA solution for initial document metadata extraction."
           ],
           "resources_needed": [
-            "1 dedicated automation engineer",
-            "Licensing fee for an RPA tool (e.g., UiPath/Automation Anywhere)"
+            "$50k software licensing/implementation",
+            "2 Senior Analysts (internal reallocation)"
           ],
-          "success_metric": "Reduction of 30% in time spent on manual onboarding tasks within Q3.",
+          "success_metric": "30% reduction in average document review time within 6 months.",
           "milestones": [
-            "Month 1: Audit completion and process selection finalized.",
-            "Month 3: MVP automation deployed for key workflow."
+            "Q1: Tool selection and proof of concept (POC).",
+            "Q2: Full pilot deployment on one major case type."
           ]
         },
         "impact": "high",
         "difficulty": "medium",
-        "timeframe": "9 months"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "AI-Driven Predictive Maintenance/Optimization Module",
-        "rationale": "Leveraging machine learning to predict system bottlenecks before they occur allows for proactive resource allocation and dynamic pricing adjustments. This is a medium-risk, high-impact project that requires significant cultural shift but promises substantial long-term efficiency gains.",
+        "title": "Predictive Litigation Risk Modeling Platform",
+        "rationale": "Developing a proprietary machine learning model that analyzes historical case data, client portfolios, and jurisdictional trends to proactively identify high-risk legal strategies. This would be a radical move but offers massive competitive differentiation.",
         "execution_plan": {
           "first_actions": [
-            "Establish a cross-functional ML task force (Product, Tech, Data Science).",
-            "Define data requirements and privacy compliance standards for the model."
+            "Establish an internal data science task force focused solely on risk modeling.",
+            "Secure seed funding specifically for the AI research phase."
           ],
           "resources_needed": [
-            "Data Scientist headcount (contract)",
-            "Cloud compute resources for training models"
+            "Internal Data Scientist salary/consulting",
+            "$250k R&D budget allocation"
           ],
-          "success_metric": "Achieve a 15% reduction in system downtime/bottleneck frequency.",
+          "success_metric": "Successful integration and beta testing of a model achieving 80% accuracy in forecasting litigation outcome trends.",
           "milestones": [
-            "Month 4: Data pipeline infrastructure setup complete.",
-            "Month 9: Pilot deployment of the predictive module."
+            "Q3: Model architecture finalized and trained on pilot data set.",
+            "Q4: Internal deployment and strategic recommendation phase."
           ]
         },
         "impact": "high",
         "difficulty": "high",
         "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Reporting Engine",
+        "rationale": "Automating the compilation of required regulatory compliance reports across multiple jurisdictions eliminates manual data aggregation errors and significantly reduces administrative overhead. This leverages existing internal process knowledge.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current reporting requirements to system capabilities.",
+            "Identify low-hanging fruit for API integration with case management software."
+          ],
+          "resources_needed": [
+            "$80k specialized consulting/integration fees",
+            "1 FTE dedicated to project coordination"
+          ],
+          "success_metric": "95% accuracy rate in generating mandatory quarterly compliance reports.",
+          "milestones": [
+            "Q2: MVP (Minimum Viable Product) reporting engine deployed for internal use.",
+            "Q3: Full integration and sign-off by the formal committee."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a dedicated Efficiency Task Force and secure initial budget approval.",
-        "owner": "VP of Operations",
+        "action": "Establish a dedicated, cross-functional task force focused on identifying the top three automation candidates (e.g., e-discovery vs. contract review).",
+        "owner": "Head of Operations/Innovation Division Lead",
         "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Complete the full process mapping audit for high-impact workflows.",
-        "owner": "Head of Product",
-        "timeframe": "Next 60 days"
-      },
-      {
-        "action": "Develop a detailed cost/benefit analysis comparing incremental vs. radical efficiency initiatives.",
-        "owner": "CFO/Strategy Lead",
-        "timeframe": "End of Q1"
+        "action": "Initiate a formal project charter for the Intelligent Document Review Automation pilot, securing the necessary $50k budget allocation.",
+        "owner": "Project Sponsor / Finance Director",
+        "timeframe": "Within 6 weeks"
       }
     ],
     "key_weaknesses": [
-      "High dependency on specialized engineering talent leading to potential bottlenecks and high recruitment costs.",
-      "Operational process documentation is decentralized, hindering rapid standardization needed for large-scale automation.",
-      "Resistance to radical technological change due to a risk-averse culture focused heavily on incremental stability."
+      "Organizational inertia slowing cross-departmental adoption of new technology.",
+      "Fragmented process mapping making it difficult to identify true automation ROI.",
+      "Critical talent gap in advanced data science and AI specialists required for radical initiatives.",
+      "Tight budget (10%) severely limiting the scope and speed of large innovation projects."
     ]
   }
 }

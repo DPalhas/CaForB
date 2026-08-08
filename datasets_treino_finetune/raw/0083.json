@@ -3,143 +3,127 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "SaaS / Software",
-    "size": "Medium",
+    "sector": "Transportation & Logistics",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "growth",
     "competitive_pressure": "medium",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:26:03.120631+00:00",
-    "duration_ms": 23102,
+    "generated_at": "2026-08-03T18:05:11.406994+00:00",
+    "duration_ms": 23490,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "SaaS Metrics Pro",
-      "sector": "SaaS / Software",
-      "size": "Medium"
+      "name": "Catalyst Digital",
+      "sector": "Transportation & Logistics",
+      "size": "Large",
+      "companyName": "Catalyst Digital"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "SaaS Metrics Pro develops B2B analytics software that helps mid-sized companies optimize resource allocation and predict future operational bottlenecks. The company operates in a relatively mature digital space with minimal direct regulatory hurdles.",
+      "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly, the company operates across multiple complex global trade corridors requiring nuanced compliance knowledge. The matrix organizational structure allows for rapid deployment of localized solutions while maintaining centralized governance.",
       "innovationProcess": "formal",
-      "pastInitiatives": "The company recently implemented an Agile methodology for feature development, which significantly reduced time-to-market by 20%. They also launched a successful upsell strategy targeting enterprise clients.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is aggressive user acquisition and market share expansion in the SMB analytics space over the next three years. We aim to increase recurring revenue by 150%.",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm through structured R&D processes and agile sprints focused on operational efficiency. We have successfully deployed a predictive maintenance module for their fleet partners, which reduced vehicle downtime by 15% and informed dynamic pricing strategies across key routes.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory by aggressively capturing high-value segments. We are willing to make significant strategic bets, potentially including M&A or geographic expansion into emerging markets, provided they have a credible path to meaningful revenue contribution within 18 months.",
       "strategicPriority": "growth",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The team consists of 12 highly skilled engineers and product managers, fostering a collaborative and results-driven culture.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 12,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
         "talent",
-        "time",
-        "strategy"
+        "time"
       ],
       "competitivePressure": "medium",
-      "additionalContext": "The market is becoming saturated with similar tools, requiring a focus on niche differentiation and rapid scaling."
+      "additionalContext": "The company is currently experiencing a surge in cross-border e-commerce shipments, presenting both massive growth opportunities and increasing complexity in customs documentation. There are internal discussions regarding the potential acquisition of a specialized SaaS firm to immediately enhance their last-mile visibility capabilities.",
+      "companyName": "Catalyst Digital",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
     }
   },
   "output": {
-    "maturity_score": 7.5,
+    "maturity_score": 7.8,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Tiered Subscription Model Implementation",
-        "rationale": "Moving from a flat subscription to a tiered model allows us to capture different customer segments (SMB vs. Mid-Market) and increase Average Revenue Per User (ARPU) without requiring massive infrastructure changes.",
+        "title": "AI-Driven Dynamic Route Optimization (TMS Enhancement)",
+        "rationale": "Leveraging our existing digital maturity allows us to implement advanced machine learning models that predict optimal shipping routes based on real-time fuel costs, congestion data, and regulatory changes. This incremental improvement offers immediate operational cost savings and competitive pricing advantages.",
         "execution_plan": {
           "first_actions": [
-            "Define three distinct pricing tiers based on feature depth and usage limits.",
-            "Develop marketing collateral explaining the value proposition of each tier."
+            "Hire/Upskill 2 ML engineers dedicated to route prediction",
+            "Integrate existing telematics data pipeline into the predictive model",
+            "Run a pilot program on three high-volume trade corridors"
           ],
           "resources_needed": [
-            "Product Marketing budget ($8k)",
-            "Sales enablement training (internal time)"
+            "50k USD for specialized ML talent contract",
+            "Software licensing for advanced geospatial analytics (3k USD)",
+            "1 FTE reallocation from general IT team"
           ],
-          "success_metric": "Increase ARPU by 12% within Q3.",
+          "success_metric": "Achieve a 7% reduction in average per-shipment operational cost within Q4.",
           "milestones": [
-            "Tier structure finalized (Month 1).",
-            "Pilot tier launch and feedback loop established (Month 4)."
+            "Model V1 completion and internal validation by Week 8",
+            "Pilot deployment successful in Corridor A (Month 3)",
+            "Full rollout plan approved by Steering Committee (Month 6)"
           ]
         },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "Within 6 months"
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "9 months"
       },
       {
         "type": "radical",
-        "title": "AI-Powered Predictive Bottleneck Engine",
-        "rationale": "Integrating a proprietary machine learning model to provide predictive maintenance and bottleneck alerts will differentiate us significantly from competitors who rely on simple descriptive analytics, enabling premium pricing.",
+        "title": "Autonomous Trade Corridor Compliance Platform",
+        "rationale": "Given the low regulatory environment and our strong digital foundation, we can develop a platform utilizing NLP to automatically classify customs documents and proactively flag potential non-compliance risks across all 15 trade corridors simultaneously. This would automate core administrative tasks currently managed by manual review.",
         "execution_plan": {
           "first_actions": [
-            "Allocate dedicated R&D team for ML model training pipeline setup.",
-            "Identify key data sources required for the new predictive algorithm."
+            "Form a dedicated cross-functional task force (Legal, Tech, Operations)",
+            "Develop an MVP focusing solely on document classification for one high-volume corridor",
+            "Identify and secure necessary third-party data feeds (customs feeds)"
           ],
           "resources_needed": [
-            "Data science consultant contract ($20k)",
-            "High-performance computing resources (cloud compute)"
+            "600k USD for specialized NLP development team",
+            "Cloud infrastructure scaling for real-time processing",
+            "Legal consultation retainer for cross-border compliance mapping"
           ],
-          "success_metric": "Reduce customer churn by 8% through enhanced predictive features.",
+          "success_metric": "Achieve 85% automated classification accuracy and reduce average customs declaration processing time by 60%.",
           "milestones": [
-            "MVP of the prediction engine built (Month 9).",
-            "Beta testing with top 10 growth customers (Month 12)."
+            "MVP prototype functional end-to-end (Month 4)",
+            "Steering Committee approval for expansion funding (Month 7)",
+            "Beta launch in one regional market (Month 12)"
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "Within 18 months"
-      },
-      {
-        "type": "incremental",
-        "title": "Strategic Partnerships with Industry Vertical Leaders",
-        "rationale": "Forming exclusive integration partnerships with industry-specific software (e.g., CRM or ERP providers) will immediately open up new, high-value distribution channels and validate our platform's ecosystem fit.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify five potential strategic partnership targets.",
-            "Draft detailed integration proposal outlining mutual benefit."
-          ],
-          "resources_needed": [
-            "Legal consultation for partnership agreements ($5k)",
-            "Executive time for relationship building"
-          ],
-          "success_metric": "Secure 3 new high-volume distribution partners within the fiscal year.",
-          "milestones": [
-            "Partnership negotiation and agreement signing (Month 6).",
-            "Joint marketing campaign launch (Month 8)."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "Within 12 months"
+        "timeframe": "18 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a feasibility study for the AI-Powered Predictive Engine (Opportunity 2).",
-        "owner": "CTO / R&D Head",
-        "timeframe": "Within 3 weeks"
+        "action": "Initiate discovery phase and resource allocation for the Autonomous Trade Corridor platform MVP.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Establish and pilot the new Tiered Subscription Model (Opportunity 1).",
-        "owner": "Head of Product/Growth",
-        "timeframe": "Within 45 days"
+        "action": "Launch a formal initiative to restructure 'talent' acquisition strategy to secure specialized AI/ML domain expertise.",
+        "owner": "Head of HR & Digital Transformation Office",
+        "timeframe": "Within 1 month"
       },
       {
-        "action": "Identify three strategic industry verticals for partnership exploration.",
-        "owner": "Business Development Manager",
-        "timeframe": "Within 30 days"
+        "action": "Finalize ROI and budget modeling for the Dynamic Route Optimization pilot project.",
+        "owner": "CFO/Innovation Steering Committee",
+        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on key technical personnel (talent bottleneck).",
-      "Slow feature velocity due to internal process friction during rapid growth phases.",
-      "Inconsistent adoption rates across different customer segments."
+      "High reliance on key domain talent, creating bottlenecks in project velocity and hiring difficulty.",
+      "Budget constraint (7%) limiting the ability to pursue large-scale capital expenditures necessary for radical platforms.",
+      "Risk of internal adoption resistance due to existing business unit autonomy versus centralized innovation efforts."
     ]
   }
 }

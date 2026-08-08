@@ -1,0 +1,151 @@
+{
+  "id": "0226",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:24:16.156641+00:00",
+    "duration_ms": 23084,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.327745+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Grid Digital.ai",
+      "sector": "Nonprofit / NGO",
+      "size": "Small",
+      "companyName": "Grid Digital.ai"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Grid Digital.ai is a community health foundation focused on bridging the gap in maternal and child health access through targeted mobile interventions and preventative nutrition programs. They operate primarily within defined public health frameworks, giving them relatively low regulatory hurdles compared to commercial tech giants.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The organization relies heavily on existing grants and donor funding, making reliance on revenue-generating innovation risky. Internal morale around adopting new technology remains moderate as staff are focused on core service delivery.",
+      "companyName": "Grid Digital.ai",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs."
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Mobile App Feature Parity Enhancement",
+        "rationale": "Enhancing the existing mobile patient tracking and appointment reminder systems with modern UX features (e.g., personalized nudges, secure messaging) will improve user retention and increase switching costs without major infrastructure overhaul.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct user journey mapping for key patient touchpoints.",
+            "Pilot a phased rollout of two high-impact UX improvements in the primary app."
+          ],
+          "resources_needed": [
+            "Contract with freelance UI/UX designer (budget allocation: 10%)",
+            "Internal project management time reallocation"
+          ],
+          "success_metric": "Increase patient retention rate by 5% over 6 months.",
+          "milestones": [
+            "Finalize UX wireframes (Month 1)",
+            "Beta launch of feature set V2.0 (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Community Engagement Platform (Radical)",
+        "rationale": "Develop a bold, closed-loop platform that connects patient tracking data with hyper-local community resource mapping. This moves beyond simple reminders to creating dynamic, personalized community pathways for health interventions, differentiating the organization from competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on necessary data integration APIs.",
+            "Form a small cross-functional task force (engineering/program management)."
+          ],
+          "resources_needed": [
+            "Allocate dedicated time for the senior engineer (20% commitment)",
+            "Invest in low-code platform prototyping tools"
+          ],
+          "success_metric": "Launch of the pilot community pathway tool within 1 year.",
+          "milestones": [
+            "Data integration proof of concept (Month 3)",
+            "Full feature prototype deployed and tested (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Donor/Advocate Retention Analytics Tool",
+        "rationale": "Implement an automated system that analyzes existing donor engagement metrics against program outcomes to identify at-risk donors, allowing the team to intervene proactively and strengthen long-term commitment.",
+        "execution_plan": {
+          "first_actions": [
+            "Define key performance indicators (KPIs) for donor sentiment tracking.",
+            "Integrate existing CRM data with a basic visualization tool."
+          ],
+          "resources_needed": [
+            "Subscription fee for a lightweight analytics platform",
+            "Training for the small leadership team"
+          ],
+          "success_metric": "Reduce key donor churn rate by 10% annually.",
+          "milestones": [
+            "Data pipeline setup (Month 2)",
+            "Rollout to top-tier sponsors (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a formal, small innovation steering committee.",
+        "owner": "CEO/Leadership Team",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct detailed cost-benefit analysis for the Mobile App Feature Parity Enhancement (Incremental Opportunity).",
+        "owner": "Program Manager",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Define core data requirements and feasibility scope for the Community Engagement Platform (Radical Opportunity).",
+        "owner": "Senior Engineer",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized, scalable innovation governance structure.",
+      "High reliance on individual technical expertise rather than standardized processes (process bottleneck).",
+      "Limited operational budget (<3%) restricting investment in high-risk R&D projects.",
+      "Culture where formal process adherence is secondary to urgent service delivery needs."
+    ]
+  }
+}

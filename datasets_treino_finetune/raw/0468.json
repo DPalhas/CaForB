@@ -1,0 +1,143 @@
+{
+  "id": "0468",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T22:16:19.316544+00:00",
+    "duration_ms": 25388,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Core Technologies.com",
+      "sector": "E-commerce",
+      "size": "Large",
+      "companyName": "Core Technologies.com"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Online pet supplies retailer with a robust subscription-based recurring delivery model, servicing 12,000 active subscribers. We manage an extensive catalog of 800 SKUs and operate a self-operated 2,000 m² fulfillment center. Key innovation focus is leveraging machine learning for churn prediction and hyper-personalized box curation to increase customer lifetime value.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures, resulting in a 15% reduction in unplanned downtime. We are currently piloting an AI-driven recommendation engine that utilizes purchase history and environmental data to suggest new product bundles, which is showing promising early metrics.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business; we must aggressively identify entirely new value propositions by leveraging our brand equity, customer relationships, or operational capabilities in adjacent spaces where demand for premium health solutions is growing.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Core Technologies.com",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Powered Hyper-Personalization at Scale",
+        "rationale": "Expanding the existing churn prediction model to include dynamic pricing and real-time inventory adjustments across all subscription tiers will maximize immediate ROI on existing assets. This leverages our current digital maturity (3) effectively.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate ML engine with ERP system for demand forecasting",
+            "Pilot tiered pricing model in 15% of active subscribers"
+          ],
+          "resources_needed": [
+            "Data science headcount (contract)",
+            "Cloud computing resources upgrade ($20k)"
+          ],
+          "success_metric": "Increase in customer retention rate by 5%",
+          "milestones": [
+            "Q3: Model validation and integration",
+            "Q4: Full rollout of tiered pricing pilot"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Adjacent Wellness Vertical Entry (Pet Health Tech)",
+        "rationale": "Entering the adjacent high-growth pet health and wellness market by launching proprietary supplements or smart monitoring devices offers maximum diversification. This moves Core Technologies.com beyond pure retail into a specialized service provider.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a JV with a certified veterinary nutritionist",
+            "Identify and secure patents for two core product concepts"
+          ],
+          "resources_needed": [
+            "R&D lab setup (initial investment $150k)",
+            "Specialized regulatory consulting fees"
+          ],
+          "success_metric": "Launch of one pilot health product line generating $2M in secondary revenue.",
+          "milestones": [
+            "Q3: Regulatory approval pathway defined",
+            "Q4: Product prototype market launch"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "18 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Micro-Fulfillment and Local Delivery Expansion",
+        "rationale": "Developing localized fulfillment centers in key metropolitan areas allows us to reduce last-mile delivery times, improve customer satisfaction, and open up new geographic revenue streams without massive capital expenditure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study for two regional micro-fulfillment locations",
+            "Implement a centralized logistics software integration upgrade"
+          ],
+          "resources_needed": [
+            "Logistics software licensing ($50k)",
+            "Operational setup costs (lease/equipment)"
+          ],
+          "success_metric": "Reduction in average last-mile delivery time by 2 days.",
+          "milestones": [
+            "Q3: Feasibility study completion",
+            "Q4: Launch of first regional micro-fulfillment center"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional 'Adjacent Markets' task force to define the initial scope and regulatory pathway for Pet Health Tech.",
+        "owner": "Strategy Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Finalize the detailed roadmap and budget allocation for Phase 1 (AI Personalization) to secure seed funding narrative with VCs.",
+        "owner": "CFO/Innovation Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Slow organizational velocity preventing rapid prototyping and iteration of new ideas.",
+      "Insufficient internal capacity for specialized talent in adjacent fields (e.g., veterinary science, advanced biotech).",
+      "Process rigidity in the partial innovation process creates bottlenecks during procurement and legal review.",
+      "Culture prioritizing stability over calculated risk required for radical diversification."
+    ]
+  }
+}

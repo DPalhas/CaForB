@@ -1,0 +1,155 @@
+{
+  "id": "0269",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:53:28.737328+00:00",
+    "duration_ms": 24942,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.343773+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Fusion",
+      "sector": "Energy & Utilities",
+      "size": "Medium",
+      "companyName": "Fusion"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Independent power producer operating a portfolio of 12 solar photovoltaic plants and 3 onshore wind farms across Iberia with a combined capacity of 180 MW. Selling electricity through Power Purchase Agreements (PPAs) and spot market sales, Fusion focuses on asset uptime and cost control in a volatile renewable energy landscape.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration on hardware integration projects. However, adjacent teams (marketing, support) are still adapting to the faster cadence, creating bottlenecks in the end-to-end delivery pipeline.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization, focusing heavily on asset maintenance scheduling and energy yield optimization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "The company is currently navigating fluctuating European energy prices and increasing demands for grid stability, necessitating continuous process refinement to maintain competitive pricing and operational reliability.",
+      "companyName": "Fusion",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 2.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Production Forecasting Pilot",
+        "rationale": "Implementing basic machine learning models to improve short-term solar and wind generation predictions can reduce operational waste and optimize energy procurement strategies.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify a specific 5 MW asset for pilot testing.",
+            "Define data requirements (weather, historical output).",
+            "Select off-the-shelf forecasting tool."
+          ],
+          "resources_needed": [
+            "Data scientist time allocation (part-time)",
+            "Subscription cost for basic ML platform",
+            "Internal engineering hours"
+          ],
+          "success_metric": "Reduction in forecast error by 10% within Q4.",
+          "milestones": [
+            "Q3: Data pipeline established and model baseline trained.",
+            "Q4: Pilot deployment and performance review."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Decentralized Microgrid Management Sandbox",
+        "rationale": "Invest a small, contained budget to simulate and test the feasibility of integrating localized energy storage solutions across our solar/wind assets to enhance grid resilience.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one suitable wind farm location for simulation.",
+            "Partner with a specialized third-party firm for modeling tools.",
+            "Establish strict safety and regulatory sandbox parameters."
+          ],
+          "resources_needed": [
+            "Small consulting fee for modeling",
+            "Prototype hardware simulation costs ($50k max)",
+            "Internal project manager bandwidth"
+          ],
+          "success_metric": "Successful completion of a resilience simulation proving 1-hour autonomous operation.",
+          "milestones": [
+            "Q2: Sandbox definition and vendor selection.",
+            "Q4: Final feasibility report and risk assessment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Core System Data Integration Layer (ERP/CRM)",
+        "rationale": "Focus efforts on creating a standardized API layer to connect core systems, addressing the current integration gaps between ERP and CRM for better operational visibility.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive gap analysis of data flow requirements.",
+            "Develop an MVP (Minimum Viable Product) integration module.",
+            "Form cross-functional working group (IT, Operations)."
+          ],
+          "resources_needed": [
+            "Internal IT resource time",
+            "Minor licensing for integration middleware"
+          ],
+          "success_metric": "Reduction in manual data reconciliation hours by 15%.",
+          "milestones": [
+            "Q3: Data mapping finalized and MVP built.",
+            "Q4: Limited rollout to one business unit."
+          ]
+        },
+        "impact": "low",
+        "difficulty": "medium",
+        "timeframe": "Within 9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a detailed cost-benefit analysis for the AI forecasting pilot.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 1 week"
+      },
+      {
+        "action": "Formalize cross-departmental process documentation to address 'process' barrier.",
+        "owner": "Operations Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Initiate feasibility study for the microgrid sandbox, leveraging minimal budget.",
+        "owner": "Innovation Squad Lead",
+        "timeframe": "Within 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of unified data standards across core systems (ERP/CRM integration)",
+      "Slow adoption and adaptation of new agile methodologies by adjacent business units.",
+      "High dependency on manual processes leading to operational inefficiency and increased time-to-market for process changes.",
+      "Limited internal budget allocation (<3%) restricts scope, making large-scale systemic change difficult."
+    ]
+  }
+}

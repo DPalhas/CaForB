@@ -1,0 +1,151 @@
+{
+  "id": "0190",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:05:44.582067+00:00",
+    "duration_ms": 23254,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.316474+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Lumina Industries",
+      "sector": "Education",
+      "size": "Medium",
+      "companyName": "Lumina Industries"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Lumina is a medium-sized higher education institution serving 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. We specialize in developing hybrid learning capabilities and micro-credential programs designed for rapid skill acquisition by working professionals. Key challenge is student retention analytics and personalized learning pathway design.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "The institution operates in a competitive landscape dominated by large online learning platforms and specialized vocational schools, requiring continuous modernization of both curriculum delivery and administrative overhead.",
+      "companyName": "Lumina Industries",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Curriculum Mapping for Cost Reduction",
+        "rationale": "Implementing an incremental system to automate the mapping of course content to specific certification requirements can significantly reduce administrative overhead and ensure regulatory compliance is met automatically. This provides a quick ROI by reducing manual preparation time for accreditation.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current curriculum management workflow",
+            "Pilot a low-cost automated content tagging system in one department"
+          ],
+          "resources_needed": [
+            "2 dedicated data analysts (part-time)",
+            "Software license for educational L&D tracking tool ($15k estimate)"
+          ],
+          "success_metric": "Reduction of 15% in administrative hours spent on curriculum mapping within Q3",
+          "milestones": [
+            "Q2: System requirements defined and vendor selection complete",
+            "Q3: Pilot system successfully deployed and validated by accreditation team"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Process Bottleneck Elimination via Workflow Automation",
+        "rationale": "Focusing on high-volume, repetitive back-office tasks (e.g., student enrollment verification or scholarship application processing) allows for immediate process efficiency gains. This is a low-risk path to achieving the 500 basis point EBITDA goal.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end workflow for one major administrative bottleneck",
+            "Implement Robotic Process Automation (RPA) tool for data transfer between ERP and CRM systems",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "1 external RPA consultant ($25k initial setup)",
+            "Internal process documentation resources"
+          ],
+          "success_metric": "Reduction of processing time by 40% in the targeted workflow within six months",
+          "milestones": [
+            "Q2: Bottleneck identified and automation scope defined",
+            "Q3: RPA implementation completed and monitored for stability"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Micro-Credential Generation",
+        "rationale": "Leveraging advanced AI to dynamically generate bespoke, modular learning pathways based on real-time market demand and individual student performance. This is a high-risk but potentially high-reward strategy that could redefine the institution's value proposition.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop proof-of-concept using existing recommendation engine data",
+            "Establish a dedicated cross-functional 'Future Learning Lab'",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data scientist dedicated allocation ($50k)",
+            "UX/UI redesign resources for personalized interface"
+          ],
+          "success_metric": "Increase in completion rates and student satisfaction scores by 25% within the pilot group",
+          "milestones": [
+            "Q3: MVP of the AI pathway engine functional and tested internally",
+            "Q4: Phased rollout to a specific executive education program"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a full workflow audit of the administrative back-office processes related to student lifecycle management.",
+        "owner": "COO/Head of Operations",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Establish a cross-functional task force focused on identifying and prioritizing efficiency gains with an expected ROI under 12 months.",
+        "owner": "Innovation Squad Lead",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop detailed feasibility reports for the two low-risk incremental opportunities identified (Curriculum Mapping and RPA).",
+        "owner": "Product Manager",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent execution velocity across business units, leading to fragmented innovation output.",
+      "Under-integration of core legacy systems (ERP, CRM, HRIS), hindering true data-driven efficiency gains.",
+      "High regulatory burden which slows down the adoption and scale of new digital technologies.",
+      "Resource constraints within the dedicated innovation squad limiting deep R&D capabilities outside immediate needs."
+    ]
+  }
+}

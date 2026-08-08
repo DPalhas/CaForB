@@ -1,0 +1,129 @@
+{
+  "id": "0373",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:46:24.228100+00:00",
+    "duration_ms": 24158,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.383402+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Large",
+      "companyName": "Vanguard"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Vanguard is a digital marketing agency specializing in high-touch social media strategy and influencer campaign management for premium lifestyle and beauty brands. The firm manages complex, multi-platform client ecosystems across TikTok, Instagram, and specialized niche communities, requiring deep understanding of shifting platform algorithms. With a team focused on data-driven creative execution, the company currently operates at a sophisticated level within its specific vertical.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "The agency successfully launched an internal venture studio model where cross-functional teams pitched innovative media experiences quarterly to secure funding from an investment committee. Approved projects receive dedicated resources for six months of funded incubation, resulting in four active initiatives including a new subscription box co-branded with a major luxury label.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The industry is facing structural decline due to technological disruption and changing consumer behavior toward immersive content. We cannot rely on incremental improvements to traditional digital marketing tactics; we need to identify entirely new value propositions by leveraging our established brand equity, customer relationships, or operational capabilities in adjacent high-growth media spaces.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization, ensuring specialized focus for high-priority ventures.",
+      "digitalMaturity_score": 4,
+      "additionalContext": "Vanguard operates in a niche where brand loyalty is high but content saturation is increasing rapidly, making creative differentiation paramount.",
+      "companyName": "Vanguard"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalized Content Engine for Reels/TikTok",
+        "rationale": "By expanding the current AI content prediction tool to dynamically generate micro-segments of creative assets tailored in real-time to individual user demographics, Vanguard can significantly increase engagement rates across high-volume platforms. This leverages existing operational strengths (data analysis) with targeted personalization.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 10% of the innovation budget for ML engineering sprint planning.",
+            "Pilot AI engine on one major beauty client account targeting personalized ad creative.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Scientist (Part-time)",
+            "Cloud GPU resources (AWS/Azure)"
+          ],
+          "success_metric": "Increase average engagement rate by 15% on pilot assets within Q3.",
+          "milestones": [
+            "Q2: Define ML model architecture and data pipeline.",
+            "Q3: Launch A/B testing with personalized creatives across two accounts."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Proprietary Interactive AR 'Try-On' Experience Platform",
+        "rationale": "To address the structural decline, Vanguard should move beyond simple content creation into developing a proprietary interactive Augmented Reality (AR) experience for clients to 'try on' digital products or fashion items in their own spaces. This positions the agency as a technology leader rather than just a service provider.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 5-person cross-functional team (Design, Dev, Brand Strategy).",
+            "Secure initial partnership or licensing agreement with an AR hardware provider.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Lead UX/UI Designer salary ($120k baseline)",
+            "External AR Development consultancy fees ($50k)"
+          ],
+          "success_metric": "Secure two anchor clients for the MVP platform within 4 months.",
+          "milestones": [
+            "Q1: Complete technical feasibility study and partnership selection.",
+            "Q3: Launch MVP of the interactive AR experience."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "2 years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a formal needs assessment session with the executive committee to define specific diversification entry points (e.g., IP development vs. adjacent platform tech).",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Initiate a focused feasibility study for the AR 'Try-On' experience, including budget allocation request and risk assessment from the formal committee.",
+        "owner": "R&D Director",
+        "timeframe": "End of Q2"
+      },
+      {
+        "action": "Streamline internal project approval workflow to reduce the time taken for low-to-medium risk incremental projects (like AI pilots) by 30%.",
+        "owner": "Process Lead",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and slow alignment across decentralized business units hinder rapid resource mobilization for radical ideas.",
+      "High internal budget constraint (4%) limits the capacity to fund high-cost, long-term R&D projects without severe external debt.",
+      "The formal decision-making process is too lengthy for reacting effectively to fast-moving digital platform changes."
+    ]
+  }
+}

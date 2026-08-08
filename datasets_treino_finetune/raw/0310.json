@@ -1,0 +1,120 @@
+{
+  "id": "0310",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:12:50.579782+00:00",
+    "duration_ms": 21320,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Atlas",
+      "sector": "Transportation & Logistics",
+      "size": "Medium",
+      "companyName": "Atlas"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "As a freight forwarding and customs brokerage firm, Atlas manages complex sea, air, and road shipments for over 200 SME importers and exporters. By processing approximately 300 customs declarations monthly across diverse trade corridors, the company relies heavily on speed and compliance accuracy to maintain trust with its client base.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully installed IoT sensors on 40% of our fleet for real-time utilization tracking, which resulted in a quantifiable 15% reduction in unplanned maintenance downtime. We are currently exploring integrating these operational data streams with our existing ERP system to provide predictive maintenance alerts and optimized routing suggestions.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth, the company is aggressively seeking opportunities in high-growth niche markets. This involves determining whether resources should be concentrated on deepening expertise within existing vertical specialization or expanding horizontally into new service lines like temperature-controlled logistics.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline.",
+      "companyName": "Atlas",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Regulatory Change Management System (RCM)",
+        "rationale": "Developing an AI-driven RCM tool that continuously scans global trade regulations and automatically flags required updates in customs documentation. This would significantly reduce human error and processing time, directly improving operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot NLP model to ingest 5 key regulatory jurisdictions' update feeds.",
+            "Allocate $40k for API integration with external legal data providers."
+          ],
+          "resources_needed": [
+            "1 Data Scientist (part-time)",
+            "Cloud infrastructure spend ($25k)"
+          ],
+          "success_metric": "Reduction in declaration error rate by 8% within Q3.",
+          "milestones": [
+            "Q2: MVP functionality live for pilot.",
+            "Q3: Full integration into core customs workflow."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Proprietary Predictive Demand Forecasting Engine",
+        "rationale": "Invest in a machine learning platform that moves beyond simple historical data to predict future demand surges and supply chain bottlenecks across multiple trade lanes. This radical shift would enable Atlas to proactively secure capacity, fundamentally changing how they approach growth strategy.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2 high-volume corridor partnerships for initial data ingestion.",
+            "Allocate $150k for hiring a specialized ML team member."
+          ],
+          "resources_needed": [
+            "3 Data Engineers ($80k)",
+            "Specialized software licensing ($70k)"
+          ],
+          "success_metric": "Increase in accurate demand forecasting by 25% compared to current method.",
+          "milestones": [
+            "Q1: Core model architecture defined and training set finalized.",
+            "Q3: Beta rollout to one primary trade corridor."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a cross-functional task force (Strategy, IT, Operations) to define the technical requirements and ROI for the RCM tool.",
+        "owner": "COO/CTO",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Initiate an external competitive analysis focusing on adjacent logistics firms' digital footprint in predictive analytics to validate radical opportunity.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Legacy system integration complexity hindering rapid deployment of new initiatives.",
+      "Inconsistent execution velocity across different business units, creating a 'bottleneck' in innovation scaling.",
+      "Reliance on informal customer feedback which may lead to missed opportunities in service line diversification."
+    ]
+  }
+}

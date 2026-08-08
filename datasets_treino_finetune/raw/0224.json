@@ -1,0 +1,149 @@
+{
+  "id": "0224",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:23:31.560751+00:00",
+    "duration_ms": 24035,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.326769+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard.io",
+      "sector": "Information Technology",
+      "size": "Micro",
+      "companyName": "Vanguard.io"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Managed IT services provider offering helpdesk, network management, cybersecurity monitoring, and cloud migration services to 150+ SME clients. Vanguard.io operates within regulated environments (e.g., GDPR compliance) due to handling client data, requiring adherence to industry standards like ISO certifications.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "The team has limited bandwidth, meaning innovation must be highly focused on immediate operational impact rather than long-term R&D cycles.",
+      "companyName": "Vanguard.io",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Service Offering Packaging",
+        "rationale": "Implement standardized service packages based on client size or vertical industry (e.g., 'SMB Security Baseline'). This leverages existing technical resources to create a repeatable, high-margin product line that diversifies revenue without massive upfront R&D costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current service delivery bottlenecks for packaging opportunities",
+            "Define three distinct tier packages (Bronze, Silver, Gold)",
+            "Develop a standardized pricing structure model"
+          ],
+          "resources_needed": [
+            "Time from existing developer cycles (20% allocation)",
+            "Marketing time for new package documentation"
+          ],
+          "success_metric": "Launch three new service tiers with 15% uptake in Q3",
+          "milestones": [
+            "End of Month 1: Packaging definition complete",
+            "End of Month 2: Beta testing of Bronze tier begins"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Niche Managed Security Consulting Arm (Diversification)",
+        "rationale": "Given the 24/7 NOC capabilities, pivot a small portion of technical expertise into high-value, specialized security consulting for specific regulated niches. This moves Vanguard.io away from purely transactional service delivery and establishes a new, higher-margin revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify one high-demand regulatory niche (e.g., FinTech or Healthcare)",
+            "Develop a foundational security compliance checklist",
+            "Create marketing collateral for the consulting service"
+          ],
+          "resources_needed": [
+            "External specialized compliance consultant consultation fee ($5k budget allocation)",
+            "Marketing materials development time"
+          ],
+          "success_metric": "Secure two retainer contracts in the targeted niche by year-end",
+          "milestones": [
+            "End of Month 3: Niche market validation complete",
+            "End of Q4: Secure first consulting contract"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Assisted Health Reporting Integration",
+        "rationale": "Expand the existing self-service portal feature by integrating basic AI/ML to proactively identify performance degradation in client systems, moving beyond passive reporting toward active operational alerts. This improves customer experience (NPS) and builds brand loyalty.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a machine learning model for anomaly detection on NOC logs",
+            "Integrate output directly into the client portal dashboard",
+            "Collect user feedback via NPS surveys specifically on reporting utility"
+          ],
+          "resources_needed": [
+            "Subscription cost for basic cloud ML services",
+            "Time from generalist developers to build API integration"
+          ],
+          "success_metric": "Reduce customer support tickets related to 'system health' by 10%",
+          "milestones": [
+            "End of Month 4: Pilot completed and feedback collected",
+            "End of Q2: Full feature rollout to core SME clients"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a full market analysis for the 'Niche Managed Security Consulting Arm' to validate feasibility and budget requirements.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Define and document the MVP scope for the Automated Service Offering Packaging initiative, prioritizing maximum leverage of existing development talent.",
+        "owner": "Lead Developer",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of dedicated innovation bandwidth due to small team size and operational demands.",
+      "Fragile revenue model highly susceptible to single-product category concentration (top 3 clients).",
+      "Partial innovation process means a lack of formal experimentation or long-term R&D planning.",
+      "Limited digital maturity preventing seamless, automated service delivery at scale."
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "0173",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:58:41.517851+00:00",
+    "duration_ms": 24843,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.311806+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Meridian",
+      "sector": "Financial Services",
+      "size": "Medium",
+      "companyName": "Meridian"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Wealth management advisory serving 400+ high-net-worth families with holistic financial planning, tax optimization, and estate structuring. Blending in-person advisory with a client portal for portfolio tracking. Seeking to enhance client reporting with interactive scenario modeling tools.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections.",
+      "companyName": "Meridian"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Automated Compliance Workflow Optimization",
+        "rationale": "Given the high regulatory environment and conservative risk appetite, automating routine compliance reporting and documentation will reduce operational costs without introducing significant structural or legal risks. This builds process efficiency directly into the core advisory function.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current manual compliance tasks",
+            "Pilot automation solution for tax reporting generation"
+          ],
+          "resources_needed": [
+            "1 FTE Compliance Analyst support",
+            "Subscription to low-code workflow tool"
+          ],
+          "success_metric": "Reduction in monthly compliance processing time by 30%",
+          "milestones": [
+            "Q2: Complete internal pilot and cost analysis",
+            "Q3: Full deployment of automated reporting module"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Client Reporting Dashboard Enhancement",
+        "rationale": "Leveraging existing digital maturity by enhancing the client portal with more sophisticated, automated reporting features will improve operational efficiency and satisfy customer needs for transparency. This is a low-risk way to add value where NPS feedback indicates demand.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct user interviews on desired scenario modeling inputs",
+            "Develop MVP of interactive portfolio visualization module",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "2 Backend Developers (shared platform team)",
+            "UX/UI design consultation"
+          ],
+          "success_metric": "Increase in client portal engagement time by 15%",
+          "milestones": [
+            "Q3: Beta launch with top 50 clients",
+            "Q4: Full feature integration and cost-benefit analysis"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Risk Modeling for Portfolio Stress Testing",
+        "rationale": "To gain a competitive edge and address the 'strategy' barrier, implementing an AI tool to predict client portfolio stress points and automatically suggest optimized asset reallocations could revolutionize service delivery. This is high-risk but offers massive long-term differentiation.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated task force for GenAI integration",
+            "Identify proprietary data sets suitable for model training (anonymized)",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Science expertise (external consultant)",
+            "Cloud computing costs for ML infrastructure"
+          ],
+          "success_metric": "Reduction in client portfolio risk exposure variance by 10% over 2 years",
+          "milestones": [
+            "Q4: Model architecture finalized and training data secured",
+            "Q1 (+1 year): Pilot integration into a small advisory segment"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3+ years"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Conduct a full process mapping exercise focused on the top 3 margin-impacting back-office functions.",
+        "owner": "Operations Director",
+        "timeframe": "Within 4 weeks"
+      },
+      {
+        "action": "Develop and present the high-level innovation strategy narrative linking efficiency gains to Series A requirements.",
+        "owner": "Strategy/Finance Leadership",
+        "timeframe": "Within 3 months"
+      },
+      {
+        "action": "Allocate seed funding ($50k) for the 'Automated Compliance Workflow' pilot project.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed digital systems resulting in lack of seamless integration across core platforms (ERP, CRM).",
+      "Slow and sporadic innovation execution velocity driven by inconsistent cross-departmental prioritization.",
+      "High compliance burden creating friction with aggressive efficiency goals.",
+      "Limited deep domain expertise within the technology team to build truly radical, data-intensive solutions."
+    ]
+  }
+}

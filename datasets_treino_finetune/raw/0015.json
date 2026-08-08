@@ -3,145 +3,116 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Mining & Extraction",
+    "size": "Micro",
     "regulatory_environment": "medium",
     "risk_appetite": "conservative",
     "strategic_priority": "diversification",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T15:53:51.589970+00:00",
-    "duration_ms": 21752,
+    "generated_at": "2026-08-03T17:34:05.898675+00:00",
+    "duration_ms": 21673,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Components Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Grid Systems",
+      "sector": "Mining & Extraction",
+      "size": "Micro",
+      "companyName": "Grid Systems"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Precision Components Inc. is a medium-sized manufacturer specializing in high-tolerance metal components for the automotive and industrial machinery sectors. We operate primarily within North America, focusing on established supply chains and maintaining high quality standards.",
+      "companyDescription": "Salt extraction and refining facility producing 25,000 tons of industrial and food-grade salt annually from marine evaporation pans. Weather-dependent production cycles create significant forecasting challenges that impact logistics and operational scheduling. Evaluating brine concentration sensors and automated crystallization monitoring are key areas for efficiency improvement.",
       "innovationProcess": "partial",
-      "pastInitiatives": "We have recently invested in upgrading our CNC machinery to reduce production time by 15%. Previously, R&D efforts were limited mainly to incremental material science improvements rather than market expansion projects.",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures, resulting in a documented 15% reduction in unplanned downtime on instrumented machines. This initiative successfully validated predictive maintenance capabilities; however, the current bottleneck lies in integrating this data stream with our legacy operational software for actionable insights.",
       "customerFeedback": "surveys_nps",
-      "strategicGoals": "The company's primary goal is strategic diversification into adjacent industrial sectors while maintaining profitability in our core components business. We aim to establish a secondary product line within the next three years.",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market saturation. We are actively exploring adjacent business models such as developing a localized salt quality data marketplace, implementing a simple subscription service for bulk clients, or building a proprietary data monetization play.",
       "strategicPriority": "diversification",
       "timeHorizon": "medium",
       "riskAppetite": "conservative",
-      "teamSize": "The R&D and strategy team is small, consisting of five key personnel dedicated to process optimization and market analysis.",
       "digitalMaturity": "2",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
       "mainBarrier": [
-        "talent",
-        "process",
-        "time",
-        "strategy"
+        "culture",
+        "process"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "Competition is fierce in the component sector, requiring us to continually innovate on cost efficiency and niche specialization."
+      "competitivePressure": "low",
+      "additionalContext": "Operational scaling is currently constrained by the founder's personal bandwidth and reliance on manual forecasting methods which limit proactive decision-making.",
+      "companyName": "Grid Systems",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations."
     }
   },
   "output": {
-    "maturity_score": 5.5,
+    "maturity_score": 3.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Automation of Low-Tolerance Processes",
-        "rationale": "Implementing targeted automation in specific component finishing stages will reduce operational costs and improve quality consistency without requiring massive capital expenditure or major structural change.",
+        "title": "Predictive Maintenance Automation (Incremental)",
+        "rationale": "Leveraging existing IoT data to move beyond simple monitoring into automated alerts for equipment failure allows for optimized maintenance scheduling and further reduces unplanned downtime. This is a low-risk, high-impact incremental win that directly addresses current process inefficiencies.",
         "execution_plan": {
           "first_actions": [
-            "Identify the three highest-volume, lowest-margin processes for automation review.",
-            "Pilot a robotic handling system on one non-critical component line."
+            "Develop a standardized dashboard view of sensor data insights",
+            "Pilot automated SMS/email alerts for critical brine pump monitoring thresholds"
           ],
           "resources_needed": [
-            "Automation consulting services",
-            "Hardware acquisition budget ($150k)"
+            "10 hours founder time (data interpretation)",
+            "Existing cloud storage capacity review"
           ],
-          "success_metric": "Reduction in direct labor costs by 12% within 6 months.",
+          "success_metric": "Reduction in unplanned downtime by 5% within Q3",
           "milestones": [
-            "Q1: Feasibility study complete.",
-            "Q3: Pilot system operational and ROI calculated."
+            "Q2: Dashboard MVP completion.",
+            "Q3: Full automated alert rollout."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "6 months"
       },
       {
-        "type": "incremental",
-        "title": "Niche Market Penetration (Specialty Alloys)",
-        "rationale": "Diversification can be achieved by focusing on a highly specialized material niche where our precision capabilities offer a competitive edge, minimizing the risk associated with entering entirely new markets.",
+        "type": "diversification",
+        "title": "Salt Quality Data Monetization Pilot (Bold)",
+        "rationale": "Since we collect proprietary data on brine concentration and crystallization rates, packaging this anonymized or aggregated information into a basic subscription service for research or quality control firms represents a low-capital entry into an adjacent market. This aligns directly with the strategic goal of diversification.",
         "execution_plan": {
           "first_actions": [
-            "Conduct market analysis for three high-growth specialty alloys.",
-            "Develop targeted marketing materials for potential partners."
+            "Define the minimum viable data package (e.g., quarterly concentration reports)",
+            "Identify 3 target niche buyers (e.g., agricultural researchers, food processing QC firms)"
           ],
           "resources_needed": [
-            "Targeted sales personnel training",
-            "Market research budget ($50k)"
+            "Contracting a freelance data analyst for 1 month ($2k est.)",
+            "Minimal marketing spend via industry networking"
           ],
-          "success_metric": "Secure two new contracts in the specialized alloy market by year-end.",
+          "success_metric": "Secure 1 paying pilot customer by year-end",
           "milestones": [
-            "Q2: Market validation report finalized.",
-            "Q4: First pilot order secured."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "low",
-        "timeframe": "medium"
-      },
-      {
-        "type": "radical",
-        "title": "Strategic Partnership/Acquisition in Adjacent Tech",
-        "rationale": "To achieve true diversification, a conservative approach to M&A or strategic alliances can provide immediate access to new technologies (like advanced AI-driven design) that fundamentally change our production capabilities.",
-        "execution_plan": {
-          "first_actions": [
-            "Establish an internal M&A screening criteria matrix for synergistic tech.",
-            "Identify three potential small, agile software startups specializing in design optimization."
-          ],
-          "resources_needed": [
-            "Legal counsel retainer",
-            "Due diligence budget ($300k)"
-          ],
-          "success_metric": "Finalize a binding strategic partnership agreement within 12 months.",
-          "milestones": [
-            "Q1: Partnership pipeline established (5 candidates).",
-            "Q4: Definitive deal structure approved."
+            "Q3: Data package finalized and validated.",
+            "Q4: Launch pilot subscription offering."
           ]
         },
         "impact": "high",
-        "difficulty": "high",
-        "timeframe": "long"
+        "difficulty": "medium",
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Conduct a full audit of current operational bottlenecks and prioritize the top three candidates for automation.",
-        "owner": "Chief Operations Officer",
-        "timeframe": "Within 2 weeks"
-      },
-      {
-        "action": "Begin formal market research on specialty alloys to validate diversification potential and build an initial business case.",
-        "owner": "VP of Business Development",
+        "action": "Formalize the predictive maintenance data pipeline and establish a small, defined process for data utilization.",
+        "owner": "Founder/Operations Manager",
         "timeframe": "Within 4 weeks"
       },
       {
-        "action": "Develop a detailed, phased implementation plan for the selected incremental automation project.",
-        "owner": "Director of Engineering",
-        "timeframe": "End of Q1"
+        "action": "Engage with potential niche markets to validate the concept of selling aggregated brine concentration data as a subscription service.",
+        "owner": "Owner_Alone",
+        "timeframe": "Within 8 weeks"
       }
     ],
     "key_weaknesses": [
-      "Reliance on outdated manufacturing processes",
-      "Limited internal expertise in digital transformation",
-      "High employee turnover within the R&D team",
-      "Lack of formal strategy linking current operations to long-term diversification goals"
+      "Over-reliance on owner decision-making, creating single points of failure and limiting innovation speed.",
+      "Fragmented operational data systems hindering scalable process optimization.",
+      "Low digital maturity preventing the effective utilization and analysis of existing sensor investments."
     ]
   }
 }

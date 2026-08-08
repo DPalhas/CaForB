@@ -1,0 +1,153 @@
+{
+  "id": "0382",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:50:37.523330+00:00",
+    "duration_ms": 27464,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Helix",
+      "sector": "Professional & Consulting Services",
+      "size": "Large",
+      "companyName": "Helix"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Helix is an engineering design consultancy specializing in complex structural, MEP, and sustainability consulting for massive commercial and infrastructure projects. The team leverages cutting-edge tools like Revit and IES VE to perform advanced building performance simulations, positioning itself at the intersection of traditional engineering rigor and modern computational design.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Last year, our engineering team successfully adopted an agile methodology for project delivery, moving from waterfall-style quarterly releases to 2-week sprints. This shift accelerated release cycles by 60% and significantly improved cross-functional communication within the core design teams.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We aim to double revenue within three years primarily through aggressive geographic expansion into high-growth markets like APAC and launching a scalable digital service channel. Our immediate focus is on identifying proprietary, tech-enabled customer acquisition channels and establishing the operational capacity needed for rapid volume scaling.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Helix is currently exploring how AI can revolutionize optimization workflows and needs to decide whether to build core simulation IP internally or through strategic partnerships.",
+      "companyName": "Helix",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Design Optimization Suite (Incremental)",
+        "rationale": "Implementing AI tools for preliminary structural and MEP optimization offers immediate efficiency gains and a quick return on investment without massive R&D overhead. This leverages existing cloud engineering talent to enhance service delivery speed.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot an internal generative design tool integration with one mid-sized project.",
+            "Conduct a vendor assessment and select three promising AI optimization software providers.",
+            "Establish cross-functional task force (Eng, IT, R&D) to define MVP metrics."
+          ],
+          "resources_needed": [
+            "3 dedicated data scientists/AI engineers (contract or FTE)",
+            "Annual software licensing budget allocation ($150k max)"
+          ],
+          "success_metric": "Reduction in preliminary design iteration time by 25% on pilot projects.",
+          "milestones": [
+            "Q1: Tool selection and contract negotiation complete.",
+            "Q3: Internal optimization proof-of-concept successful.",
+            "Q4: Pilot results documented and scalability plan approved."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "radical",
+        "title": "Proprietary B2B Simulation SaaS Platform (Radical)",
+        "rationale": "Developing a proprietary, cloud-based software platform that integrates structural and MEP simulation data allows Helix to move beyond service delivery into product monetization. This addresses the core barrier of talent by creating internal IP and scalable revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and secure 2 senior engineering architects for a dedicated 'Productization' team.",
+            "Define the minimum viable feature set (core optimization module).",
+            "Allocate remaining budget to initial concept validation and MVP development."
+          ],
+          "resources_needed": [
+            "1 VP of Engineering/CTO hire focused on product strategy",
+            "Cloud infrastructure scaling budget ($400k over 2 years)",
+            "Small team of specialized software developers."
+          ],
+          "success_metric": "Launch of a paying B2B subscription tier capturing $500k ARR within 3 years.",
+          "milestones": [
+            "Year 1: Core simulation engine architecture complete and validated.",
+            "Year 2: Beta launch with three anchor clients (revenue target).",
+            "Year 3: Operational platform scaling for international market."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "3-5 years"
+      },
+      {
+        "type": "incremental",
+        "title": "Digital Service Channel Launch (Incremental)",
+        "rationale": "Utilizing the existing agile framework and digital maturity to launch a highly digitized B2B support/design channel for smaller clients, tapping into new geographic markets effectively. This builds immediate capacity while testing scalable acquisition methods.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate CRM data with automated quoting engine.",
+            "Develop standardized 'Digital Blueprint' package templates.",
+            "Hire a dedicated digital marketing specialist focused solely on new geographic lead generation."
+          ],
+          "resources_needed": [
+            "Marketing spend allocation ($100k initial push)",
+            "Training for existing consultants on the new D2B sales workflow."
+          ],
+          "success_metric": "Achieve 50 qualified leads from the new digital channel in the first 6 months.",
+          "milestones": [
+            "Q1: Digital platform integration live and training completed.",
+            "Q3: Lead generation targets met, revenue contribution tracked."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Form a dedicated 'Productization' steering committee to evaluate the feasibility of the proprietary B2B SaaS platform.",
+        "owner": "CTO/VP Engineering",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Execute the pilot program for AI-driven design optimization (Opportunity 1) and finalize vendor selection by Q1 end.",
+        "owner": "Head of R&D",
+        "timeframe": "End of Q1"
+      },
+      {
+        "action": "Develop a detailed talent acquisition roadmap focused on securing specialized AI/ML architects necessary for the radical growth initiative.",
+        "owner": "HR Director",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe budget constraints (7%) limit exploratory R&D and scaling capacity for high-cost, long-term projects.",
+      "Critical talent scarcity in specialized AI/ML and cloud engineering roles creates a significant bottleneck to radical innovation execution.",
+      "Partial innovation process leads to misalignment between fast agile project delivery and the slower required governance for true product development.",
+      "Organizational inertia regarding cross-divisional alignment slows down rapid decision-making necessary for short-term growth."
+    ]
+  }
+}

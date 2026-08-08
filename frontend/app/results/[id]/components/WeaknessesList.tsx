@@ -23,7 +23,7 @@ export default function WeaknessesList({ weaknesses }: WeaknessesListProps) {
 
       <ul className="space-y-2.5">
         {weaknesses.map((weakness, index) => (
-          <li key={index} className="flex items-start gap-3 bg-slate-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs">
+          <li key={index} className="flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
             <p className="text-sm font-medium text-amber-100 leading-relaxed">{weakness}</p>
           </li>

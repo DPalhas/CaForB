@@ -3,116 +3,152 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
+    "sector": "Construction",
     "size": "Medium",
     "regulatory_environment": "medium",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:11:27.618832+00:00",
-    "duration_ms": 23122,
+    "generated_at": "2026-08-03T17:50:30.942008+00:00",
+    "duration_ms": 28626,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Component Manufacturing",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Ember Technologies",
+      "sector": "Construction",
+      "size": "Medium",
+      "companyName": "Ember Technologies"
     },
     "answers": {
       "regulatoryEnvironment": "medium",
-      "companyDescription": "Precision Component Manufacturing produces high-tolerance mechanical parts used in the automotive and aerospace sectors. The company operates globally with strict quality control requirements (ISO standards). They maintain a strong reputation for reliability but face increasing pressure to reduce operational overhead.",
-      "innovationProcess": "formal",
-      "pastInitiatives": "The company recently implemented a comprehensive lean manufacturing audit, resulting in a 12% reduction in inventory waste. They have also piloted minor automation upgrades on their assembly line to improve throughput.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Primary goals include achieving operational excellence by streamlining production workflows and significantly reducing unit cost per component. The company aims to become the most efficient supplier in its niche within three years.",
+      "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors, relying heavily on traditional methods supplemented by nascent BIM adoption and drone-based site progress monitoring. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs; operational model changes are typically project-specific rather than systemic. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative, leading to sporadic, opportunistic tech adoption.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization; we suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 4 dedicated engineers and a project manager, operating as a small leadership team focused on cross-functional process optimization.",
-      "digitalMaturity": "3",
+      "teamSize": "The innovation squad is small and highly specialized, relying heavily on internal expertise rather than external consultants.",
+      "digitalMaturity": "1",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "budgetPercentage": 9,
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
+        "culture",
         "process",
-        "talent",
-        "time",
-        "culture"
+        "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is highly competitive, requiring continuous incremental improvements in manufacturing quality and speed."
+      "competitivePressure": "high",
+      "additionalContext": "Ember Technologies is currently competing against larger regional firms that have invested heavily in integrated construction tech. They are aggressively poaching skilled operational talent, making efficiency gains critical for survival.",
+      "companyName": "Ember Technologies"
     }
   },
   "output": {
-    "maturity_score": 6.5,
+    "maturity_score": 2.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Workflow Automation Pilot (RPA)",
-        "rationale": "Implementing Robotic Process Automation (RPA) for repetitive administrative tasks in quality assurance and inventory management can immediately boost efficiency without requiring a massive capital outlay. This addresses the 'process' barrier directly.",
+        "title": "BIM Integration for Automated Scheduling",
+        "rationale": "Leveraging existing BIM data to create automated scheduling and resource allocation modules can directly address the strategic goal of increasing throughput efficiency. This focuses on a low-hanging fruit by digitizing current manual planning steps.",
         "execution_plan": {
           "first_actions": [
-            "Identify 3 high-volume, low-complexity manual processes (e.g., data entry, reporting).",
-            "Select and trial RPA software for a 30-day pilot phase."
+            "Select one pilot project for full BIM integration testing.",
+            "Identify 3 key bottlenecks in the scheduling process.",
+            "Map data flow requirements for software integration."
           ],
           "resources_needed": [
-            "Software license subscription ($5k)",
-            "1 FTE dedicated to process mapping"
+            "Contract specialized BIM integration consultant (10% of budget)",
+            "Internal IT team time allocation",
+            "Subscription to low-code workflow automation tool."
           ],
-          "success_metric": "Reduction in manual data entry time by 40% during the pilot.",
+          "success_metric": "Achieve 15% reduction in scheduling rework hours on pilot projects.",
           "milestones": [
-            "Month 1: Process identification and scope definition",
-            "Month 2: Pilot execution and performance review"
+            "Q1: Integration prototype completed and tested.",
+            "Q2: Pilot project rollout and performance review."
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "Within 4 months"
+        "timeframe": "6 months"
       },
       {
         "type": "radical",
-        "title": "Predictive Maintenance using IoT",
-        "rationale": "Deploying Industrial Internet of Things (IoT) sensors on key production machinery allows for predictive maintenance, drastically reducing unplanned downtime and optimizing maintenance schedules. This is a high-impact efficiency move that requires strategic investment.",
+        "title": "AI-Driven Predictive Site Logistics Optimization",
+        "rationale": "Implementing an AI model that predicts supply chain delays, material waste hotspots, and site logistics needs in real-time could fundamentally change how subcontractors are managed. This radical shift moves the company from reactive management to proactive optimization.",
         "execution_plan": {
           "first_actions": [
-            "Select two critical pieces of equipment for sensor installation.",
-            "Develop a proof-of-concept model using existing operational data."
+            "Establish a dedicated data pipeline for historical project performance and supply chain data.",
+            "Secure partnership with 1 key logistics software vendor.",
+            "Define ethical parameters for autonomous scheduling decisions."
           ],
           "resources_needed": [
-            "Initial hardware and sensor deployment ($30k)",
-            "Data science consulting hours (internal or external)"
+            "Data scientist bandwidth expansion (full-time hire focus)",
+            "Investment in cloud computing infrastructure",
+            "Legal review for AI decision frameworks."
           ],
-          "success_metric": "Reduction in unplanned downtime by 25% within the first year.",
+          "success_metric": "Reduce material waste by 10% across managed sites.",
           "milestones": [
-            "Month 1-3: Sensor installation and data collection",
-            "Month 4-6: Predictive model validation and integration into maintenance schedule"
+            "Q3: Data model MVP validated.",
+            "Q4: Controlled pilot deployment on one medium-sized project."
           ]
         },
         "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "Within 9 months"
+        "difficulty": "high",
+        "timeframe": "12 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Standardized Subcontractor Onboarding Portal",
+        "rationale": "Creating a standardized digital portal for subcontractor onboarding and compliance reduces administrative time and improves data quality, directly supporting the efficiency goal. This is an incremental process improvement that capitalizes on existing digital pockets.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit all current manual subcontractor intake steps.",
+            "Design a minimalist SaaS template for the onboarding portal.",
+            "Define key compliance and documentation requirements."
+          ],
+          "resources_needed": [
+            "UX designer time allocation",
+            "Low-code development tool licensing fee",
+            "Internal process mapping specialists (part-time)."
+          ],
+          "success_metric": "Reduce average subcontractor onboarding time from 14 days to 5 days.",
+          "milestones": [
+            "Q2: Portal built and tested by internal teams.",
+            "Q3: Full rollout across all new projects."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Establish a cross-departmental steering committee (Operations, IT, Finance) to prioritize the RPA pilot.",
-        "owner": "Director of Operations",
-        "timeframe": "Within 1 week"
+        "action": "Form a cross-functional steering committee to define the specific KPIs and success metrics for the BIM Integration project.",
+        "owner": "Product Manager",
+        "timeframe": "Within 3 weeks"
       },
       {
-        "action": "Form a focused working group to conduct a feasibility study and budget proposal for the IoT Predictive Maintenance project.",
-        "owner": "Head of Engineering",
-        "timeframe": "Within 3 weeks"
+        "action": "Initiate a feasibility study and vendor selection process for the AI Logistics Optimization model, securing initial seed funding from the innovation budget.",
+        "owner": "Head of Engineering/Data Scientist",
+        "timeframe": "Within 6 weeks"
+      },
+      {
+        "action": "Conduct a culture assessment survey to identify specific roadblocks related to process and change management that inhibit adoption.",
+        "owner": "UX Designer/Business Analyst",
+        "timeframe": "Ongoing (Q1)"
       }
     ],
     "key_weaknesses": [
-      "Legacy manufacturing systems hindering real-time data flow.",
-      "High staff turnover in specialized technical roles affecting knowledge retention.",
-      "Siloed departmental processes preventing end-to-end workflow optimization."
+      "Low digital maturity (Maturity Level 1) hinders scaling of any new technology initiative.",
+      "Lack of formalized innovation process leads to fragmented, project-specific efforts rather than systemic transformation.",
+      "Heavy reliance on manual workflows and spreadsheets creates significant risk during high-pressure project execution.",
+      "Tight operational control conflicts with the exploratory nature required for radical innovation."
     ]
   }
 }

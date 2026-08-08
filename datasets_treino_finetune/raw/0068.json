@@ -3,47 +3,49 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Information Technology",
-    "size": "Medium",
+    "sector": "SaaS / Software",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "low",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:19:17.207766+00:00",
-    "duration_ms": 21407,
+    "generated_at": "2026-08-03T17:58:06.117816+00:00",
+    "duration_ms": 26444,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "CloudScale Solutions Inc.",
-      "sector": "Information Technology",
-      "size": "Medium"
+      "name": "Vault",
+      "sector": "SaaS / Software",
+      "size": "Large",
+      "companyName": "Vault"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "CloudScale Solutions is a medium-sized provider of SaaS platforms focused on optimizing logistics and supply chain management for mid-market retailers. They operate in a relatively low regulatory environment, allowing for agile software development cycles. The company relies heavily on scalable cloud infrastructure to serve its diverse client base.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company recently implemented an automated customer onboarding flow and updated their core database architecture to handle increased transaction volumes. They have also piloted a few AI-driven features in their analytics module.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to significantly improve operational efficiency by automating manual workflows across all product lines. We aim to reduce customer acquisition costs while maintaining high service quality and expanding market share through technological superiority.",
+      "companyDescription": "Vault operates as a B2B SaaS provider offering critical API-first infrastructure for payment processing, recurring billing, and reconciliation. They manage high transaction volumes across key EU markets, focusing on operational excellence rather than heavy regulatory burdens like PSD3.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 5 dedicated engineers and a product manager. The culture is collaborative but focused on delivering measurable results.",
-      "digitalMaturity": "3",
-      "revenueRange": "10m_to_50m",
-      "budgetPercentage": 8,
-      "decisionMaking": "small_leadership_team",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "varies_by_project",
       "mainBarrier": [
-        "talent",
+        "culture",
         "process",
-        "time"
+        "talent"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "The market is increasingly saturated with similar SaaS offerings, requiring continuous investment in process automation to stay competitive."
+      "competitivePressure": "low",
+      "additionalContext": "Vault maintains a strong competitive moat through deep integration and operational reliability, but their decentralized innovation model risks siloed improvements rather than systemic efficiency gains.",
+      "companyName": "Vault",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains."
     }
   },
   "output": {
@@ -51,21 +53,23 @@
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Workflow Automation Engine Integration",
-        "rationale": "Implementing a comprehensive workflow automation engine across the product suite will directly target efficiency goals by eliminating manual data entry and reducing operational overhead. This is a high-ROI project that aligns perfectly with the current strategic priority.",
+        "title": "Automated Cost Optimization Engine (COE)",
+        "rationale": "Implement AI/ML to analyze transactional data and identify recurring inefficiencies in payment routing and reconciliation processes. This is a high-impact, low-risk initiative that directly aligns with the core strategic goal of cost reduction.",
         "execution_plan": {
           "first_actions": [
-            "Audit three primary customer onboarding workflows for bottlenecks.",
-            "Select and procure an off-the-shelf integration tool (e.g., Zapier or internal RPA script)."
+            "Define KPI for reconciliation error reduction by 15%",
+            "Select vendor/tool for initial data ingestion pipeline",
+            "Pilot COE on a single payment stream"
           ],
           "resources_needed": [
-            "1 Full-time developer allocation",
-            "Budget for $5,000 in automation software licenses"
+            "3 FTE Data Scientists (6 months)",
+            "€50k dedicated tool licensing budget",
+            "Internal IT engineering team time allocation"
           ],
-          "success_metric": "Reduce average customer onboarding time from 48 hours to under 6 hours by Q3.",
+          "success_metric": "Reduction in operational processing cost by 8% within Q2.",
           "milestones": [
-            "Q2: Pilot successful integration with one core workflow.",
-            "Q3: Full rollout of the engine across all three product lines."
+            "Month 1: Data pipeline established and validated.",
+            "Month 3: COE piloted successfully on Tier 1 product line."
           ]
         },
         "impact": "high",
@@ -73,22 +77,49 @@
         "timeframe": "6 months"
       },
       {
-        "type": "radical",
-        "title": "Predictive Maintenance AI Module",
-        "rationale": "Developing a predictive maintenance model using machine learning could revolutionize efficiency by moving the company from reactive support to proactive service. This requires significant investment but offers the potential for massive cost savings and differentiation in the market.",
+        "type": "incremental",
+        "title": "Standardized Idea-to-Execution Framework (PIEF)",
+        "rationale": "Develop a lightweight, mandatory internal framework for evaluating and funding informal ideas. This addresses the existing process barrier by creating a structured path for decentralized innovation without requiring massive cultural overhaul.",
         "execution_plan": {
           "first_actions": [
-            "Identify high-volume operational data sources (sensor logs, transaction history).",
-            "Form a cross-functional team including Data Science and Ops."
+            "Draft 1-page PIEF mandate",
+            "Train Innovation Leads on rapid prototyping methods (e.g., Kanban)",
+            "Integrate PIEF scoring into existing budget allocation process"
           ],
           "resources_needed": [
-            "Contracted Data Science consultant ($30k)",
-            "Cloud compute resources for ML training"
+            "1 FTE Program Manager (part-time)",
+            "Training materials and workshop costs (€15k)",
+            "Internal project management software integration"
           ],
-          "success_metric": "Achieve 90% prediction accuracy in equipment failure warnings within the pilot segment.",
+          "success_metric": "Average time from idea submission to pilot launch reduced by 30%.",
           "milestones": [
-            "Q1: Proof of concept model built and validated.",
-            "Q4: Integration into the core SaaS platform with live operational data."
+            "Month 2: Framework fully documented and approved.",
+            "Month 4: First formal pipeline review completed."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "9 months"
+      },
+      {
+        "type": "radical",
+        "title": "Real-Time Dispute Resolution Bot (RDRB)",
+        "rationale": "Develop a radical, AI-driven solution to preempt payment disputes before they escalate. While high risk due to technology complexity, solving this creates significant efficiency gains by reducing manual intervention and improving customer satisfaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional task force (Legal, Tech, CS)",
+            "Identify specific high-frequency dispute types",
+            "Allocate €100k for external consultation/MVP build team"
+          ],
+          "resources_needed": [
+            "2 Senior Software Engineers specialized in NLP (€250k estimated cost)",
+            "Legal review budget",
+            "Marketing resources for early access customers"
+          ],
+          "success_metric": "Reduce manual dispute handling time by 40% within the first year.",
+          "milestones": [
+            "Month 3: MVP technical spike completed and validated against key disputes.",
+            "Month 9: Integration into live platform for controlled rollout."
           ]
         },
         "impact": "high",
@@ -98,25 +129,26 @@
     ],
     "next_steps": [
       {
-        "action": "Finalize the scope and resource allocation for the Workflow Automation Engine project.",
-        "owner": "Product Manager",
+        "action": "Conduct a 3-week audit of all existing informal innovation inputs to map current success/failure points.",
+        "owner": "Chief Innovation Officer",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Initiate a formal feasibility study and vendor evaluation for the Predictive Maintenance AI module.",
-        "owner": "CTO/Engineering Lead",
-        "timeframe": "Within 4 weeks"
+        "action": "Approve and resource the 'Standardized Idea-to-Execution Framework (PIEF)' pilot project.",
+        "owner": "Head of Operations",
+        "timeframe": "End of Q1"
       },
       {
-        "action": "Conduct an organizational training session on agile process improvement methodologies to enhance internal efficiency.",
-        "owner": "Operations Manager",
-        "timeframe": "End of next month"
+        "action": "Initiate a technical scoping phase for the Automated Cost Optimization Engine (COE).",
+        "owner": "VP of Engineering",
+        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "High reliance on legacy code which slows down the development of new features.",
-      "Fragmented data silos between operational and customer service teams, hindering holistic process optimization.",
-      "Limited internal expertise in advanced predictive analytics."
+      "Lack of formal, scalable innovation pipeline despite having decentralized resources.",
+      "Innovation process is heavily dependent on individual 'talent' rather than systemic standards or processes.",
+      "Current informal approach lacks clear ROI tracking and standardized metrics for idea prioritization.",
+      "Culture struggles to bridge the gap between high-level strategic goals (efficiency) and localized, fast execution."
     ]
   }
 }

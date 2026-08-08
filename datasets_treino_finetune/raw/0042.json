@@ -3,69 +3,71 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
+    "sector": "Education",
     "size": "Medium",
     "regulatory_environment": "low",
     "risk_appetite": "balanced",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
+    "competitive_pressure": "high",
     "reviewed": false,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:06:05.445002+00:00",
-    "duration_ms": 23814,
+    "generated_at": "2026-08-03T17:45:49.815204+00:00",
+    "duration_ms": 29304,
     "attempts": 1
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Precision Metal Fabrication Inc.",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Atlas Dynamics",
+      "sector": "Education",
+      "size": "Medium",
+      "companyName": "Atlas Dynamics"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "This medium-sized manufacturer specializes in custom industrial components for the automotive sector. The company maintains relatively low regulatory burdens due to its stable operational compliance and localized supply chain presence.",
-      "innovationProcess": "partial",
-      "pastInitiatives": "The company has previously piloted small software upgrades for inventory tracking, showing modest efficiency gains. However, large-scale process automation remains largely under consideration rather than fully implemented.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "The primary goal is to significantly reduce operational overhead and improve output consistency across all production lines. We aim to become a leaner, more agile manufacturer within three years.",
+      "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. This internal friction often leads to siloed tech adoption where successful pilots in one school are not scaled across the network.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
       "strategicPriority": "efficiency",
       "timeHorizon": "medium",
       "riskAppetite": "balanced",
-      "teamSize": "The core innovation team consists of 5 engineers and 2 operations specialists who work closely with the owners to drive change.",
-      "digitalMaturity": "3",
+      "digitalMaturity": "4",
       "revenueRange": "10m_to_50m",
       "budgetPercentage": 8,
-      "decisionMaking": "owner_alone",
+      "decisionMaking": "formal_committee",
       "mainBarrier": [
-        "process",
-        "talent",
-        "time"
+        "culture",
+        "strategy"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": ""
+      "competitivePressure": "high",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "additionalContext": "Atlas Dynamics competes with both large national school chains and agile local private institutions. While technology adoption is high, successful implementation across diverse campus infrastructures remains a key challenge for centralized efficiency gains.",
+      "companyName": "Atlas Dynamics"
     }
   },
   "output": {
-    "maturity_score": 4.5,
+    "maturity_score": 6.5,
     "opportunities": [
       {
         "type": "incremental",
-        "title": "Legacy System Integration for Predictive Maintenance",
-        "rationale": "Implementing AI-driven predictive maintenance software on key machinery will reduce unplanned downtime and maintenance costs by optimizing scheduled interventions based on real-time operational data. This aligns directly with the efficiency priority.",
+        "title": "Workflow Automation Pilot (Invoice/Admin)",
+        "rationale": "By automating repetitive administrative tasks like invoicing and scheduling across the five campuses, we can immediately capture process efficiency gains aligned with the core 'efficiency' strategic priority. This is a low-risk project that offers quick measurable ROI.",
         "execution_plan": {
           "first_actions": [
-            "Conduct a needs assessment for IoT sensor installation on three critical machines.",
-            "Select an off-the-shelf predictive maintenance platform (e.g., specialized industrial software)."
+            "Identify top 3 most manual administrative bottlenecks",
+            "Select and integrate low-code automation tool (e.g., Zapier/internal script)",
+            "Define metrics for time saved per administrator"
           ],
           "resources_needed": [
-            "$30,000 for initial sensor hardware and integration consulting",
-            "40 hours of internal engineering time"
+            "Internal IT support time (50 hours)",
+            "Software subscription costs ($3,000)"
           ],
-          "success_metric": "Reduction in unplanned downtime by 15% within the first 6 months.",
+          "success_metric": "12% reduction in administrative overhead cost within 6 months",
           "milestones": [
-            "Q1: Pilot installation on one assembly line.",
-            "Q2: Full system deployment and baseline efficiency metrics."
+            "Q1: Bottleneck mapping complete and tool selection finalized.",
+            "Q2: Pilot implementation deployed across two campuses."
           ]
         },
         "impact": "medium",
@@ -74,73 +76,45 @@
       },
       {
         "type": "radical",
-        "title": "Full Autonomous Material Flow Optimization",
-        "rationale": "Develop and pilot a fully automated material handling system (using robotics/advanced logistics software) to eliminate human error and drastically reduce the physical cycle time between raw material intake and finished component output.",
+        "title": "AI-Driven Personalized Learning Pathway Engine",
+        "rationale": "Developing a radical, AI-driven engine that dynamically adjusts curriculum difficulty and content delivery for 3,200 students simultaneously would fundamentally change our operational model. This requires significant investment but offers the highest potential return in terms of efficiency gains through hyper-personalization.",
         "execution_plan": {
           "first_actions": [
-            "Form a dedicated cross-functional task force with external automation consultants.",
-            "Identify one non-core production line for initial robotic piloting."
+            "Establish a dedicated cross-functional AI squad (Core Product + Data Engineers)",
+            "Conduct feasibility study on data ingestion and model training requirements",
+            "Secure seed funding for initial proof-of-concept dataset purchase"
           ],
           "resources_needed": [
-            "$150,000 for hardware prototypes and specialized robotics",
-            "6 months of high-level consulting fees"
+            "Data Science hiring budget ($150k)",
+            "Cloud compute resources (GPU time)"
           ],
-          "success_metric": "Achieve a 30% reduction in total manufacturing cycle time.",
+          "success_metric": "Achieve 20% student engagement increase and 10% reduction in learning gap scores",
           "milestones": [
-            "Q1: Final selection and procurement of automation vendor.",
-            "Q4: Successful pilot operation on the selected line."
+            "Q3: Model architecture finalized.",
+            "Q4: Beta launch for one pilot campus with full system integration."
           ]
         },
         "impact": "high",
         "difficulty": "high",
-        "timeframe": "2 years"
-      },
-      {
-        "type": "incremental",
-        "title": "Standardized Lean Inventory Management Tool",
-        "rationale": "Transition from manual inventory tracking to an integrated, cloud-based ERP module designed specifically for lean manufacturing principles. This will improve stock turnover and reduce holding costs.",
-        "execution_plan": {
-          "first_actions": [
-            "Audit current manual inventory processes and identify bottlenecks.",
-            "Integrate a moderate-tier ERP inventory module into the existing system."
-          ],
-          "resources_needed": [
-            "$25,000 for software licensing and training",
-            "3 months of internal process re-engineering time"
-          ],
-          "success_metric": "Reduction in average inventory holding costs by 10% within the first year.",
-          "milestones": [
-            "Q1: ERP module selection and data migration plan finalized.",
-            "Q2: Full system rollout across all fabrication units."
-          ]
-        },
-        "impact": "medium",
-        "difficulty": "medium",
-        "timeframe": "9 months"
+        "timeframe": "12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Finalize the project scope and budget for the Predictive Maintenance Pilot.",
-        "owner": "Operations Manager",
-        "timeframe": "Within 3 weeks"
+        "action": "Form a formal efficiency task force to map all manual workflows and identify the top three candidates for immediate low-code automation.",
+        "owner": "COO/Operations Lead",
+        "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Initiate RFP process for the autonomous material flow optimization vendor.",
-        "owner": "CEO/Project Lead",
-        "timeframe": "End of Q1"
-      },
-      {
-        "action": "Schedule quarterly review meetings to track efficiency KPIs against initial targets.",
-        "owner": "Finance Department",
-        "timeframe": "Monthly, starting next month"
+        "action": "Initiate an internal workshop with department heads to define clear, measurable KPIs for resource allocation and efficiency improvements in the next fiscal year.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "Reliance on legacy operational systems that lack real-time data capabilities",
-      "High staff turnover in specialized maintenance and engineering roles",
-      "Inconsistent cross-departmental communication hindering end-to-end process optimization",
-      "Siloed decision-making structure limiting rapid implementation of large initiatives"
+      "Siloed technology adoption leading to inconsistent operational standards across campuses.",
+      "Strategy often prioritized short-term tactical needs over long-term, scalable infrastructure investments.",
+      "Potential cultural resistance to adopting new, standardized digital tools among veteran staff."
     ]
   }
 }

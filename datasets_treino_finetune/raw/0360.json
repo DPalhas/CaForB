@@ -1,0 +1,123 @@
+{
+  "id": "0360",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T20:40:20.688209+00:00",
+    "duration_ms": 25994,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.379173+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Synapse Consulting",
+      "sector": "Professional & Consulting Services",
+      "size": "Medium",
+      "companyName": "Synapse Consulting"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Synapse Consulting is an HR and organizational development consultancy specializing in leadership programs and culture transformation. The team consists of 12 organizational psychologists focused on high-level, bespoke client solutions. While core business processes are mature, the reliance on manual workflows for order processing, invoicing, and internal reporting creates significant operational drag that threatens efficiency gains.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The company attempted to introduce a customer self-service portal but failed due to insufficient validation of user needs, leading to low adoption rates. This taught the leadership team a valuable lesson about prioritizing deep customer understanding over technology deployment, reinforcing a cautious, learning-by-doing approach.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "The primary objective is aggressive operational efficiency, specifically aiming for a 15% reduction in operating expenses within two years. This focus requires identifying high-ROI automation opportunities across all administrative functions without increasing headcount or compromising the quality of human psychological expertise.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Synapse Consulting is currently facing increased scrutiny regarding data handling and reporting compliance in the high-regulatory consulting sector, which necessitates careful, incremental technological adoption over risky platform changes.",
+      "companyName": "Synapse Consulting",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Workflow Automation Pilot (Order Processing)",
+        "rationale": "Implementing targeted RPA or low-code automation for repetitive tasks like invoicing and basic data entry directly addresses the core efficiency goal with minimal risk. This leverages existing systems where manual bottlenecks are most pronounced, providing rapid ROI.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive audit of the top 5 most time-consuming administrative tasks.",
+            "Identify one high-volume process for RPA pilot testing."
+          ],
+          "resources_needed": [
+            "Small external automation consulting retainer",
+            "Internal data engineer time allocation (0.5 FTE)"
+          ],
+          "success_metric": "10% reduction in administrative processing time within Q3.",
+          "milestones": [
+            "Process mapping complete (Month 1)",
+            "MVP automated for one process live (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Driven Compliance & Risk Monitoring Tool",
+        "rationale": "Given the high regulatory environment, adopting an AI tool specifically designed to monitor compliance documentation and flag potential risks in real-time could boldly reduce human error. While expensive, this represents a necessary shift from manual reactive checking to proactive intelligent governance.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the top 3 regulatory reporting pain points requiring immediate automation.",
+            "Identify two low-code platforms (e.g., specialized SaaS) for compliance data ingestion."
+          ],
+          "resources_needed": [
+            "Dedicated internal project lead",
+            "Budget allocation of 15% contingency from the existing tech budget."
+          ],
+          "success_metric": "Reduction in regulatory query response time by 40%.",
+          "milestones": [
+            "Vendor selection and proof-of-concept (Month 3)",
+            "Full integration into primary reporting pipeline (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional Efficiency Task Force focused solely on process mapping and waste identification.",
+        "owner": "Operations Lead",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Launch a low-cost PoC for workflow automation (Opportunity 1) using existing internal data engineering capacity to prove efficiency gains.",
+        "owner": "R&D Squad Lead",
+        "timeframe": "Within 4 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Low digital maturity (Level 2): Over-reliance on spreadsheets and manual processes severely limits scalability and efficiency gains.",
+      "Weak strategic alignment between operational cost reduction and R&D goals: The current focus is too narrowly defined around OpEx, potentially starving essential exploratory innovation.",
+      "Informal innovation process: Lack of structured validation or metrics for new ideas means that experimentation often lacks clear ROI justification in a highly regulated environment.",
+      "Limited budget constraints (4%): Inability to fund comprehensive digital transformation requires strict prioritization of high-impact, low-cost incremental changes."
+    ]
+  }
+}

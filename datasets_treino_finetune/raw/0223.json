@@ -1,0 +1,122 @@
+{
+  "id": "0223",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T19:23:07.509815+00:00",
+    "duration_ms": 21869,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.325745+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Vanguard",
+      "sector": "Healthtech",
+      "size": "Medium",
+      "companyName": "Vanguard"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vanguard is a mid-sized healthtech provider focused on delivering mental wellness solutions through an integrated mobile application, supported by HIPAA compliance for patient data. With 18,000 active users and strong clinical validation from published Randomized Controlled Trials (RCTs), the company is strategically expanding its corporate offerings to enterprise clients seeking preventative care models. They are currently piloting AI-supported tools aimed at enhancing therapist efficiency.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer developed an internal dashboard for order backlog visualization, which provided quick operational value but lacked formal requirements gathering and maintenance protocols. This project was quickly abandoned when key personnel left, highlighting a critical gap in institutionalizing successful side projects within the existing informal structure.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Vanguard's primary goal is to solidify its position as the market incumbent by aggressively reducing customer churn and increasing switching costs through enhanced feature bundling. The strategy involves delivering a superior, modern digital experience that justifies premium pricing while avoiding destructive price wars with well-funded new competitors.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Vanguard is closely monitoring regulatory shifts in digital therapeutics and is preparing its organizational structure to support the scaling demands of corporate wellness contracts.",
+      "companyName": "Vanguard",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "Enhanced Churn Reduction Feature Set",
+        "rationale": "Implementing targeted feature updates based on informal customer feedback can directly improve user retention and strengthen switching costs within the current budget constraints.",
+        "execution_plan": {
+          "first_actions": [
+            "Prioritize UX improvements for high-churn indicators identified in informal conversations.",
+            "Allocate 50% of R&D budget to a dedicated sprint focused solely on retention features."
+          ],
+          "resources_needed": [
+            "1 Senior Product Manager (part-time)",
+            "Internal development hours reallocation"
+          ],
+          "success_metric": "Reduce monthly churn rate by 5% within six months.",
+          "milestones": [
+            "Q3 Feature Prioritization Complete",
+            "Beta launch of retention feature set."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "AI-Assisted Therapist Productivity Suite Pilot",
+        "rationale": "Leveraging the existing interest in AI tools, a low-cost pilot could validate a bold new service offering that significantly boosts therapist efficiency and creates a defensible premium niche.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-value corporate clients for a controlled pilot program.",
+            "Allocate $25,000 of the innovation budget specifically for external AI tool integration testing."
+          ],
+          "resources_needed": [
+            "1 Data Engineer (temp contract)",
+            "External AI API consultation fees"
+          ],
+          "success_metric": "Therapist session completion time reduced by 20%.",
+          "milestones": [
+            "Pilot program launch and data collection.",
+            "Formal feasibility study for enterprise rollout."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a structured 'Innovation Pipeline' framework and assign ownership to formalized idea vetting.",
+        "owner": "Head of R&D",
+        "timeframe": "Within 3 weeks"
+      },
+      {
+        "action": "Conduct a full audit of current core systems (ERP/CRM) to identify high-ROI integration points for incremental efficiency gains.",
+        "owner": "IT Director",
+        "timeframe": "Within 1 month"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a formal, scalable innovation process leading to inconsistent execution velocity.",
+      "High dependency on informal knowledge and key personnel, increasing operational risk.",
+      "Insufficient budget allocation (3%) limits scope for necessary infrastructure modernization or large talent acquisition.",
+      "Low digital maturity (Level 2) poses a threat to competitive parity against modern entrants."
+    ]
+  }
+}

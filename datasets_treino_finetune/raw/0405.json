@@ -1,0 +1,119 @@
+{
+  "id": "0405",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T21:00:44.417343+00:00",
+    "duration_ms": 22431,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Nexus Services",
+      "sector": "Telecommunications",
+      "size": "Medium",
+      "companyName": "Nexus Services"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Nexus Services is a Multi-Virtual Network Operator (MVNO) specializing in reselling mobile voice and data plans, focusing heavily on the digitally native youth segment. They currently manage 80,000 active subscribers by offering highly granular plan customization and utilizing AI algorithms to recommend usage optimization strategies. The company operates across several regional hubs with specialized operational teams covering commercial sales, network engineering, finance, and customer support.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "The attempt to introduce a weekly innovation brainstorming session failed because it lacked clear ownership and defined KPIs, resulting in 'idea dumping' rather than actionable projects. This confirmed that while idea generation is present, there is no structured mechanism connecting informal conversations directly to prioritized execution or budget allocation.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to aggressively expand the addressable market through targeted influencer partnerships and pivot pricing models toward high-retention, recurring value propositions. We must build a repeatable enterprise sales motion that leverages our digital footprint without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 22,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We completed a merger with a similarly-sized competitor four months ago and are currently navigating complex integration challenges involving overlapping CRMs, redundant HR systems, and conflicting operational processes. This creates significant organizational friction but also presents an opportunity to establish unified, leaner infrastructure if the cultural silos can be successfully bridged.",
+      "companyName": "Nexus Services",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Hyper-Personalization Engine",
+        "rationale": "Leveraging the existing AI capability to move beyond simple usage recommendations toward prescriptive plan bundling and real-time offer personalization. This provides immediate, measurable value to the youth segment.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a closed beta of the predictive churn model within one regional market",
+            "Allocate 3 full-time engineers for Q3 feature development sprint cycle"
+          ],
+          "resources_needed": [
+            "2 new AI/ML data scientists",
+            "€50,000 dedicated R&D budget increase"
+          ],
+          "success_metric": "Reduce 6-month churn rate by 1.5% within the pilot market",
+          "milestones": [
+            "Month 1: Finalize model training data set and architecture.",
+            "Month 3: Launch A/B test of prescriptive plan recommendations."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Next-Generation B2B IoT Service Bundling",
+        "rationale": "Develop a radically different revenue stream by integrating Nexus's subscriber base with hardware/IoT services. This shifts the company from pure connectivity to becoming an ecosystem provider, creating high switching costs for enterprise clients.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional 'Ecosystem Task Force' (Ops, Product, Commercial)",
+            "Conduct feasibility study on licensing potential with 3 major IoT platforms"
+          ],
+          "resources_needed": [
+            "Consultant for industry ecosystem modeling",
+            "€100,000 seed funding allocation"
+          ],
+          "success_metric": "Secure LOIs for three enterprise partnerships worth €2M+ ARR within 18 months",
+          "milestones": [
+            "Month 2: Complete technical specification and financial modeling.",
+            "Month 6: Execute first pilot partnership with a mid-sized manufacturing client."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Formalize and initiate a structured, quarterly innovation pipeline process (Idea Submission -> Vetting -> Budget Allocation)",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Conduct an immediate post-merger operational audit focused on CRM/HR system consolidation to unlock hidden efficiencies.",
+        "owner": "Operations VP",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process lacks accountability and measurable outcomes, leading to idea stagnation.",
+      "High cultural friction resulting from the recent merger is causing significant change fatigue and slowing cross-functional alignment.",
+      "Reliance on an informal decision-making structure that cannot scale with aggressive growth targets.",
+      "Talent gaps in specialized AI/ML capabilities required for advanced usage optimization."
+    ]
+  }
+}

@@ -3,119 +3,149 @@
   "version": 1,
   "split": "train",
   "metadata": {
-    "sector": "Manufacturing",
-    "size": "Medium",
+    "sector": "Hospitality & Tourism",
+    "size": "Large",
     "regulatory_environment": "low",
     "risk_appetite": "conservative",
     "strategic_priority": "efficiency",
-    "competitive_pressure": "medium",
-    "reviewed": false,
+    "competitive_pressure": "high",
+    "reviewed": true,
     "source": "gemma4:e2b-it-qat_synthetic",
-    "generated_at": "2026-08-03T16:04:30.855870+00:00",
-    "duration_ms": 23024,
-    "attempts": 1
+    "generated_at": "2026-08-03T17:44:24.662528+00:00",
+    "duration_ms": 31061,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.265585+00:00"
   },
   "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
   "input": {
     "company": {
-      "name": "Apex Industrial Components",
-      "sector": "Manufacturing",
-      "size": "Medium"
+      "name": "Vault",
+      "sector": "Hospitality & Tourism",
+      "size": "Large",
+      "companyName": "Vault"
     },
     "answers": {
       "regulatoryEnvironment": "low",
-      "companyDescription": "Apex Industrial Components is a medium-sized manufacturer specializing in custom metal components for the automotive and aerospace industries. The company focuses on high-precision tooling and operates primarily domestically, benefiting from relatively stable local regulations.",
+      "companyDescription": "Vault is a mid-scale restaurant chain operating 12 locations specializing in Mediterranean cuisine. The central kitchen manages over 70% of menu production, supporting satellite locations through optimized logistics and supply chains. We are currently evaluating kitchen display systems (KDS), AI-driven prep quantity forecasting models, and centralized procurement optimization tools to enhance operational speed.",
       "innovationProcess": "partial",
-      "pastInitiatives": "The company has implemented minor process automation across its assembly line to reduce manual error. They also conducted a pilot study on optimizing inventory management based on historical demand data.",
-      "customerFeedback": "surveys_nps",
-      "strategicGoals": "Our primary goal is to achieve significant operational efficiency by streamlining production workflows and reducing waste in material usage. We aim to lower our unit costs while maintaining high quality standards for key clients.",
+      "pastInitiatives": "We successfully launched a digital customer onboarding flow last quarter that reduced average time from 12 days to 5 days. This cross-functional project involved product development, compliance review, and customer success teams. Early Net Promoter Score (NPS) results for customers onboarded through the new flow showed an improvement of 22 points over the legacy manual process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next two years while maintaining current output levels. We have identified significant waste in manual processes and seek to implement high-ROI automation opportunities across order processing, invoicing, and customer support workflows. The goal is operational excellence without increasing headcount.",
       "strategicPriority": "efficiency",
-      "timeHorizon": "medium",
+      "timeHorizon": "short",
       "riskAppetite": "conservative",
-      "teamSize": "The core innovation team consists of a small leadership team of four dedicated operational experts and two software specialists.",
-      "digitalMaturity": 2,
+      "digitalMaturity": "3",
       "revenueRange": "10m_to_50m",
-      "budgetPercentage": 4,
+      "budgetPercentage": 5,
       "decisionMaking": "small_leadership_team",
       "mainBarrier": [
+        "culture",
         "process",
-        "talent",
         "time"
       ],
-      "competitivePressure": "medium",
-      "additionalContext": "We are currently focused on internal cost-saving measures rather than aggressive market expansion."
+      "competitivePressure": "high",
+      "additionalContext": "",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past two years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "companyName": "Vault"
     }
   },
   "output": {
-    "maturity_score": 3.5,
+    "maturity_score": 5.8,
     "opportunities": [
       {
-        "type": "radical",
-        "title": "Full Digital Twin Implementation for Predictive Maintenance",
-        "rationale": "Implementing a digital twin can radically transform maintenance scheduling and yield efficiency by predicting machine failures before they occur, moving the company from reactive to proactive maintenance.",
-        "execution_plan": {
-          "first_actions": [
-            "Identify one critical bottleneck machine for pilot testing.",
-            "Select and purchase basic IoT sensors compatible with existing PLC systems."
-          ],
-          "resources_needed": [
-            "Hardware budget ($25k)",
-            "Contract specialized data analytics consultant ($30k)"
-          ],
-          "success_metric": "Reduction in unplanned downtime by 15% within 12 months.",
-          "milestones": [
-            "Month 1-2: Pilot setup and baseline data collection.",
-            "Month 4: Full system integration into the ERP."
-          ]
-        },
-        "impact": "high",
-        "difficulty": "medium",
-        "timeframe": "long"
-      },
-      {
         "type": "incremental",
-        "title": "Workflow Automation and Standardization (Lean 4.0)",
-        "rationale": "Focusing on incremental changes to standardize production steps based on Lean principles can deliver immediate, measurable efficiency gains without requiring major capital investment or cultural overhaul.",
+        "title": "Inventory Reconciliation Automation Pilot",
+        "rationale": "Implement a low-risk AI script to automate the reconciliation of central kitchen inventory against satellite location usage data.",
         "execution_plan": {
           "first_actions": [
-            "Map the current end-to-end manufacturing process flow.",
-            "Identify 3 high-waste manual processes for digitization."
+            "Identify a pilot region with high discrepancy rates.",
+            "Select an off-the-shelf, low-cost integration tool (budget < $50k).",
+            "Run a 3-month controlled pilot program."
           ],
           "resources_needed": [
-            "Internal training budget ($5k)",
-            "Process mapping software license ($1k)"
+            "1 Data Scientist consultant retainer",
+            "Integration software licensing ($20k)",
+            "Internal project management time"
           ],
-          "success_metric": "20% reduction in cycle time for the targeted production line.",
+          "success_metric": "Achieve 85% inventory accuracy in the pilot region within 6 months.",
           "milestones": [
-            "Month 1-3: Implement standardized SOPs and basic digital checklist."
+            "Month 1: System integration complete",
+            "Month 3: Pilot operation stable and data validated"
           ]
         },
         "impact": "medium",
         "difficulty": "low",
-        "timeframe": "short"
+        "timeframe": "Within 4 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Automated Procurement Workflow for Low-Value Goods",
+        "rationale": "Focus on automating repetitive, low-risk procurement tasks (e.g., standardized raw material ordering) to reduce human error and processing time.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current top 10 manual purchasing steps.",
+            "Implement a basic ERP module workflow enhancement.",
+            "Train key buyers on the new system."
+          ],
+          "resources_needed": [
+            "Internal IT development hours",
+            "Minimal software licensing fee ($5k)",
+            "Training materials budget"
+          ],
+          "success_metric": "Reduce procurement cycle time by 10% and decrease processing errors by 20%.",
+          "milestones": [
+            "Month 2: Workflow design sign-off",
+            "Month 4: Full deployment in one satellite location"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Within 6 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Hyper-Localized Dynamic Menu Optimization AI",
+        "rationale": "Develop a predictive model that adjusts ingredient orders and prep quantities not just based on historical sales, but also real-time local factors (e.g., weather, local events) to minimize food waste.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated cross-functional 'waste reduction' task force.",
+            "Define KPIs for ingredient cost variance and spoilage rates.",
+            "Select and prototype basic predictive ML framework."
+          ],
+          "resources_needed": [
+            "Data engineering expertise ($10k)",
+            "Cloud compute costs (initial testing) ($25k)",
+            "3 Dedicated data analysts (part-time)"
+          ],
+          "success_metric": "Reduce food spoilage and ingredient cost variance by 8% within the first year.",
+          "milestones": [
+            "Month 3: Model training complete on historical data",
+            "Month 6: Full integration pilot in two locations"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Within 12 months"
       }
     ],
     "next_steps": [
       {
-        "action": "Form a cross-functional task force to assess the feasibility and ROI of the Digital Twin pilot.",
-        "owner": "Head of Operations",
+        "action": "Launch a formal scoping phase for the Inventory Reconciliation Automation Pilot.",
+        "owner": "Operations Director",
         "timeframe": "Within 2 weeks"
       },
       {
-        "action": "Develop detailed SOPs for the Lean Automation project based on initial process mapping.",
-        "owner": "Production Manager",
-        "timeframe": "Within 1 month"
-      },
-      {
-        "action": "Finalize budget request and vendor selection for the pilot phase.",
-        "owner": "Finance Lead",
-        "timeframe": "Within 3 weeks"
+        "action": "Establish a dedicated cross-functional team and define success metrics for the Hyper-Localized Dynamic Menu Optimization AI feasibility study.",
+        "owner": "Chief Innovation Officer",
+        "timeframe": "Within 4 weeks"
       }
     ],
     "key_weaknesses": [
-      "Reliance on legacy production software leading to data silos.",
-      "Limited internal expertise in advanced data analytics and IoT integration.",
-      "Resistance to process change from long-term operational staff."
+      "Slow internal decision-making process constrained by risk aversion and small leadership team communication channels.",
+      "Legacy manual procurement workflows that create significant operational friction and waste time for managers.",
+      "Cultural resistance to adopting new technology, stemming from a focus on stability over necessary velocity improvements.",
+      "Insufficient data governance structure needed to feed advanced AI/ML models reliably into operational decision-making."
     ]
   }
 }

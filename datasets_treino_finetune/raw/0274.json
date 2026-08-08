@@ -1,0 +1,118 @@
+{
+  "id": "0274",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-04T19:55:32.635969+00:00",
+    "duration_ms": 26364,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Aether Industries",
+      "sector": "Nonprofit / NGO",
+      "size": "Medium",
+      "companyName": "Aether Industries"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Environmental conservation foundation managing 15 protected area and habitat restoration projects covering 25,000 hectares. The organization relies heavily on scientific rigor to secure multi-year government grants and major individual donations while engaging local communities for project success. Aether Industries is actively seeking to leverage cutting-edge technology, such as satellite imagery and machine learning, to enhance its monitoring capabilities and maximize the efficiency of resource allocation.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in critical habitat restoration work.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 13,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Innovation is heavily constrained by the need for demonstrable grant alignment and slow internal bureaucratic processes, which often clash with fast-paced technical needs. Furthermore, staff are highly mission-driven and resistant to purely commercial or 'disruptive' ideas that do not immediately serve conservation outcomes.",
+      "companyName": "Aether Industries",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee."
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Predictive Conservation Modeling",
+        "rationale": "Leveraging the existing investment in camera trap images and environmental data to build a predictive model that forecasts species migration patterns or disease outbreaks. This incremental step will improve resource deployment accuracy while staying within current technology capabilities.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot integration of Machine Learning (ML) models for anomaly detection in camera trap data streams.",
+            "Conduct a 3-month feasibility study on scaling the existing data pipeline to cover an additional 5% of protected area."
+          ],
+          "resources_needed": [
+            "Data Scientist reallocation time",
+            "Cloud computing resources (API access)"
+          ],
+          "success_metric": "Reduction in false positive alerts by 15% within Q3.",
+          "milestones": [
+            "Model prototype completion (Month 2)",
+            "Pilot deployment on one specific habitat zone (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Decentralized, Real-Time Grant Matching Platform",
+        "rationale": "Develop a blockchain-enabled platform that allows for dynamic, real-time matching between specific project needs (e.g., urgent land restoration) and available micro-grants or donor funds globally. This radical approach bypasses the current 3-4 stakeholder approval bottleneck by creating an automated ecosystem.",
+        "execution_plan": {
+          "first_actions": [
+            "Assemble a small cross-functional team (tech, finance, program management) to define MVP requirements.",
+            "Secure seed funding from a targeted sustainability grant focused on digital transparency."
+          ],
+          "resources_needed": [
+            "Contract for blockchain development services",
+            "Dedicated UX/UI designer support"
+          ],
+          "success_metric": "Establish successful matching of 5 urgent projects with donor funds within the first year.",
+          "milestones": [
+            "Phase 1: MVP design and internal testing (Month 3)",
+            "Phase 2: Beta launch with partner organizations (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Define clear, outcome-focused 'success metrics' for the next two pilot projects to link innovation directly to efficiency KPIs.",
+        "owner": "Product Manager",
+        "timeframe": "Within 1 month"
+      },
+      {
+        "action": "Establish a structured internal advocacy channel (e.g., 'Innovation Incubator') specifically designed to filter ideas against existing strategic goals and streamline the informal process.",
+        "owner": "Head of Strategy",
+        "timeframe": "Within 3 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal innovation process leads to idea abandonment without clear pathways for resource allocation or execution.",
+      "High dependency on grant cycles and donor funding, creating structural rigidity that stifles continuous process optimization.",
+      "Lack of formalized metrics linking small technological improvements directly to measurable cost savings or conservation impact."
+    ]
+  }
+}

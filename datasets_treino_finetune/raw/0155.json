@@ -1,0 +1,145 @@
+{
+  "id": "0155",
+  "version": 1,
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-03T18:51:29.013355+00:00",
+    "duration_ms": 24103,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-07T15:19:33.306147+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor. Analyse the company profile and survey responses, then respond ONLY with a valid JSON object containing maturity_score, opportunities, next_steps, and key_weaknesses.",
+  "input": {
+    "company": {
+      "name": "Synapse Enterprises",
+      "sector": "Education",
+      "size": "Medium",
+      "companyName": "Synapse Enterprises"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Synapse operates five K-12 campuses offering the International Baccalaureate curriculum to 3,200 students. The organization is currently leveraging adaptive learning platforms and AI analytics to provide early intervention for at-risk learners and optimizing teacher workload through data insights.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. Building on this success, we are now piloting an AI-assisted feedback tool for secondary teachers to streamline grading processes. We are also exploring integration of existing student data systems via open APIs to create holistic progress dashboards.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities, driven by margin compression from rising operational costs. The goal is to achieve a 5% operational efficiency gain within the short term by automating repetitive administrative tasks and optimizing resource allocation across all three campuses.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Synapse needs rapid scaling of data-driven tools to remain competitive in the growing ed-tech space while navigating stringent student privacy regulations.",
+      "companyName": "Synapse Enterprises",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints."
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "opportunities": [
+      {
+        "type": "incremental",
+        "title": "AI-Driven Personalized Learning Path (ALP)",
+        "rationale": "Implement a short-term AI module that automatically adjusts learning modules based on student performance data in real-time. This addresses the customer feedback need for adaptive learning and directly supports efficiency goals by reducing teacher time spent customizing curriculum.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot ALP integration in one secondary school (3 months)",
+            "Develop MVP using existing analytics infrastructure",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Science contractor",
+            "License for generative AI platform"
+          ],
+          "success_metric": "15% reduction in teacher customization time per student cohort.",
+          "milestones": [
+            "Month 1: Data pipeline validation and model training setup",
+            "Month 3: Pilot deployment and initial performance review"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months"
+      },
+      {
+        "type": "radical",
+        "title": "Automated Compliance & Reporting Engine (ACRE)",
+        "rationale": "Develop a radical, low-cost platform leveraging NLP and predictive analytics to automatically generate regulatory compliance reports for state/federal mandates. This would dramatically reduce the workload of the small leadership team and mitigate high regulatory risk associated with education.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify top 3 high-volume compliance reporting requirements",
+            "Engage external legal consultant to map data needs"
+          ],
+          "resources_needed": [
+            "Senior NLP engineer (part-time)",
+            "Cloud computing resources for predictive modeling"
+          ],
+          "success_metric": "80% automation rate of manual compliance report generation.",
+          "milestones": [
+            "Month 2: Requirements gathering and tool scoping",
+            "Month 5: Beta launch of ACRE with internal audit simulation"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "10 months"
+      },
+      {
+        "type": "incremental",
+        "title": "Vendor Consolidation & API Strategy",
+        "rationale": "Conduct a full audit of all existing SaaS tools and prioritize the decommissioning of redundant platforms. Creating standardized internal APIs will allow for cheaper, more flexible integration with specialized third-party services.",
+        "execution_plan": {
+          "first_actions": [
+            "Complete quarterly spend analysis across non-core systems",
+            "Define a 3-year platform consolidation roadmap",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "IT infrastructure team time",
+            "Consultant for vendor negotiation strategy"
+          ],
+          "success_metric": "12% reduction in annual software licensing costs.",
+          "milestones": [
+            "Month 1: Audit completion and prioritization framework defined",
+            "Month 3: Execute first two major vendor contract terminations/integrations"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months"
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Establish a cross-functional task force dedicated to identifying the highest ROI efficiency gains across procurement and back-office functions.",
+        "owner": "COO/Strategy Lead",
+        "timeframe": "Within 2 weeks"
+      },
+      {
+        "action": "Begin detailed feasibility study for the Automated Compliance & Reporting Engine (ACRE) and secure initial budget allocation from the leadership team.",
+        "owner": "CTO/Innovation Director",
+        "timeframe": "Within 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited capital for large-scale, high-risk radical projects within the tight 20% budget allocation.",
+      "Fragmented and non-integrated core IT systems hindering data utilization for efficiency gains.",
+      "Internal culture favoring established processes over rapid prototyping of AI/radical solutions."
+    ]
+  }
+}
