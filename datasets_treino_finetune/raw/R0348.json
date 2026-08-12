@@ -1,0 +1,201 @@
+{
+  "id": "R0348",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0020",
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:13:15.580899+00:00",
+    "duration_ms": 88894,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum",
+      "sector": "Legal Services",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 17,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0020",
+      "fields": {
+        "companyName": "Quantum",
+        "sector": "Legal Services",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 12,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 5 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "step_1": "completed",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Institutionalizing Knowledge Capture for Due Diligence (AI-Assisted)",
+        "rationale": "The firm has proven success in M&A and due diligence, but its processes rely on tribal knowledge. By formalizing how insights from client work are captured and connected to the internal dashboard structure, Quantum can prevent knowledge loss and reduce cycle time for new deals.",
+        "execution_plan": {
+          "first_actions": [
+            "Map 3 core M&A phases (e.g., NDA review, diligence checklist, negotiation points) into standardized templates.",
+            "Pilot an AI document analysis tool against these templates to extract key data fields automatically.",
+            "Establish a mandatory post-engagement knowledge transfer session for all senior associates."
+          ],
+          "resources_needed": [
+            "Operations Lead (Owner)",
+            "1 Backend Developer (Integration)",
+            "AI Vendor Contract/Trial Budget"
+          ],
+          "success_metric": "Reduction of 15% in manual data extraction time for the top 3 deal types.",
+          "milestones": [
+            "Knowledge template completion by Quarter End.",
+            "Successful integration pilot with AI tool on dummy data set.",
+            "Formal acceptance and adoption by 75% of M&A team."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Build a Scalable B2C/B2B Platform for New Markets",
+        "rationale": "The goal of doubling revenue requires moving beyond traditional referral networks. Building a dedicated platform allows Quantum to service direct-to-consumer needs (e.g., initial contract review) and standardize services for rapid entry into new geographic markets, fundamentally changing the sales funnel.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the Minimum Viable Service Offering (MVSO) for a non-legal core product feature (e.g., 'Initial Compliance Check').",
+            "Conduct deep competitive analysis of digital legal service providers in target new markets.",
+            "Develop initial wireframes and user journey maps for the platform, focusing on seamless client onboarding."
+          ],
+          "resources_needed": [
+            "Product Owner/CTO (Lead)",
+            "External UX/UI Agency",
+            "Legal Counsel (Regulatory Guidance)"
+          ],
+          "success_metric": "Successful beta launch and acquisition of 5 paying pilot clients in a new market.",
+          "milestones": [
+            "Functional MVSO scope locked down within 3 months.",
+            "Wireframe sign-off by leadership team.",
+            "Beta deployment and initial feedback loop established."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize an Innovation Steering Committee (ISC) to govern process changes and allocate dedicated 'innovation sprint' time, protecting it from immediate client demands.",
+        "owner": "Leadership Team/CTO",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Run a feasibility study and cost analysis comparing internal development vs. purchasing off-the-shelf governance tools (e.g., dedicated KMS or workflow automation suite) to manage institutional knowledge.",
+        "owner": "Operations Lead",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a phased market entry roadmap for the top target geographic market, defining regulatory milestones and required local partnerships before platform development begins.",
+        "owner": "Business Development/Partnerships",
+        "timeframe": "Next 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized process governance, leading to knowledge dependency on key individuals (tribal knowledge).",
+      "System integration is ad-hoc and brittle, hindering scalable automation efforts.",
+      "Limited dedicated time capacity for large innovation bets due to current operational demands."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful acquisition of 5 new enterprise clients in adjacent markets, validating growth strategy.",
+        "Increased understanding of direct client pain points through informal conversations (strategic input).",
+        "Recognition that internal side projects must be formalized into institutional processes."
+      ],
+      "persistent_gaps": [
+        "The core technology infrastructure remains siloed and lacks integrated governance layers.",
+        "Ability to transition from service-based delivery to productized, scalable services (B2C/Digital).",
+        "Formal decision-making speed is constrained by the need to protect current operational sprint commitments."
+      ],
+      "achieved_milestones": [
+        "The initial dashboard concept proven useful and provided a foundational understanding of client data visualization needs.",
+        "Leadership alignment on 'Growth' as the primary strategic priority for market expansion."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The firm has significantly grown its client base and achieved adjacent market expansion, demonstrating clear growth momentum despite foundational process and system gaps."
+    }
+  }
+}

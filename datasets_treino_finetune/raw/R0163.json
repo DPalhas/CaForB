@@ -1,0 +1,199 @@
+{
+  "id": "R0163",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0189",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:28:53.263088+00:00",
+    "duration_ms": 48679,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Ember Corporation",
+      "sector": "Information Technology",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0189",
+      "fields": {
+        "companyName": "Ember Corporation",
+        "sector": "Information Technology",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 10,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 5 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "completed",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establish a Structured Product Strategy Framework (Build vs. Buy vs. Partner)",
+        "rationale": "Ember's core challenge is deciding whether to deepen vertical specialization or expand horizontally, which requires a disciplined strategic decision framework. The current high level of resources and multiple R&D arms necessitate formal gating to prevent resource dilution across competing visions.",
+        "execution_plan": {
+          "first_actions": [
+            "Mandate an executive working group to define 3-5 core market segments where horizontal growth will provide the highest ROI, ensuring alignment with top-tier customers.",
+            "Formalize a 'Build/Buy/Partner' analysis matrix that requires quantitative input (cost, time, risk) before any major initiative moves past concept stage.",
+            "Integrate regulatory compliance checkpoints into the strategic planning process for all new market segments to ensure early identification of hurdles."
+          ],
+          "resources_needed": [
+            "C-level sponsorship",
+            "Dedicated Strategy Consultant (external)",
+            "Historical financial data mapping segment profitability"
+          ],
+          "success_metric": "Formalized, Board-approved 3-year strategic roadmap with defined resource allocation per pillar.",
+          "milestones": [
+            "Strategy workshop completed (Month 1)",
+            "Market opportunity selection finalized and weighted (Month 2)",
+            "Cross-departmental OKRs mapped to the new strategy (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 Months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Create a Low-Code Governance Model for Rapid Prototyping",
+        "rationale": "The firm is evaluating low-code platforms to accelerate delivery, but the lack of clear path from idea generation (the failed brainstorming session) suggests that adopting new tools without process governance will create shadow IT debt. This opportunity connects tool adoption with disciplined execution.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a central 'Low-Code Center of Excellence' responsible for standardizing platform usage and vetting templates.",
+            "Define clear scope boundaries: low-code is limited to non-mission-critical workflows or standardized internal processes, while bespoke development handles core IP/integration points.",
+            "Implement mandatory security and regulatory review gates (HiReg) before any low-code prototype enters UAT."
+          ],
+          "resources_needed": [
+            "Cloud Engineering Team bandwidth",
+            "Legal/Compliance Subject Matter Experts",
+            "Dedicated Low-Code Platform license budget"
+          ],
+          "success_metric": "Reduction in time-to-prototype for standardized use cases by 40% without increasing security vulnerabilities.",
+          "milestones": [
+            "Governance model draft completed (Month 2)",
+            "Pilot program launched with 3 defined, low-risk departmental workflows (Month 4)",
+            "Center of Excellence charter approved and staffed (Month 5)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 Months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Conduct a formal organizational process mapping exercise (Value Stream Mapping) focusing specifically on the journey from 'Idea Concept' to 'Revenue Deployment' to identify systemic handoff friction points.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "step_2",
+        "action": "Formalize the roles and responsibilities within the internal incubator/CVC arm relative to core business units. Define clear exit criteria for external investments or spun-out products.",
+        "owner": "Executive Leadership Team (ELT)",
+        "timeframe": "Within 6 Weeks"
+      },
+      {
+        "id": "step_3",
+        "action": "Develop a standardized, cross-functional training module on strategic goal alignment, mandatory for all functional managers and senior leaders.",
+        "owner": "Human Resources / Strategy Office",
+        "timeframe": "Ongoing (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of structural governance linking innovation ideas to defined market strategies (The 'Execution Gap').",
+      "Potential for organizational inertia and resource conflict between high-capability R&D groups and the need for disciplined commercialization.",
+      "Over-reliance on formal committee decision-making, which risks slow reaction time when rapid market pivots are required."
+    ],
+    "progress": {
+      "improvements": [
+        "The transition to professional management (hiring 5 senior leaders) has significantly strengthened the organizational backbone and governance structure.",
+        "Strategic planning is being formalized, moving beyond ad-hoc discussions towards structured objectives."
+      ],
+      "persistent_gaps": [
+        "Structural alignment remains challenging; resources are plentiful but struggle to focus on singular, high-impact strategic bets.",
+        "The organizational process for filtering and validating novel ideas into commercial products (Idea-to-Market pipeline) is still undefined or weak."
+      ],
+      "achieved_milestones": [
+        "Formalizing of the corporate governance structure through senior leadership hires.",
+        "Active evaluation/scoping of low-code platform adoption to accelerate non-core workflows."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant organizational maturation observed (professional management structure established). The company has moved from an informal state to one where formalized processes and complex governance mechanisms are actively being implemented, increasing maturity despite persistent process roadblocks."
+    }
+  }
+}

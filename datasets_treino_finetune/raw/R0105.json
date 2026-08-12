@@ -1,0 +1,203 @@
+{
+  "id": "R0105",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0119",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:30:12.706913+00:00",
+    "duration_ms": 49531,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.971255+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Systems",
+      "sector": "Manufacturing",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0119",
+      "fields": {
+        "companyName": "Apex Systems",
+        "sector": "Manufacturing",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 5 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "completed",
+      "step_2": "completed",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Implement a Dedicated Innovation Fast-Track Funnel",
+        "rationale": "The previous attempt at brainstorming failed due to lack of clear execution paths. This opportunity formalizes the transition from 'idea' to 'pilot,' building internal momentum and demonstrating quick wins. It directly addresses the organizational velocity challenge.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional charter committee (including Legal, Procurement, IT) for rapid vetting of pilot ideas.",
+            "Develop standardized 'Minimum Viable Process' documentation that bypasses full legacy compliance reviews initially.",
+            "Mandate quarterly ‘Funnel Readiness’ reports linked to the group innovation fund KPIs."
+          ],
+          "resources_needed": [
+            "Dedicated Operational Excellence Lead",
+            "Executive sponsorship (C-suite) for mandate",
+            "Pilot Budget Allocation (€50k per project)"
+          ],
+          "success_metric": "Average time reduction from Idea Submission to Pilot Approval (Target: 4 weeks)",
+          "milestones": [
+            "Charter committee formed and trained.",
+            "First three pilot projects selected and scoped.",
+            "Funnel governance process documented and socialized."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_5",
+        "type": "incremental",
+        "title": "Develop a Diversified Specialty Chemical Service Portfolio",
+        "rationale": "The core business faces structural decline. To achieve true diversification, Apex must leverage its specialized formulation knowledge into adjacent growing markets (e.g., sustainable construction/energy transition). This requires new customer acquisition and product lines outside the current automotive repair focus.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-growth adjacent sectors matching existing chemical expertise profiles.",
+            "Conduct deep market analysis of these sectors, focusing on unmet process/performance needs (not just products).",
+            "Establish a 'New Markets' beachhead team with full autonomy from legacy profit centers."
+          ],
+          "resources_needed": [
+            "External industry consultants (Market mapping)",
+            "Dedicated senior technical staff for market immersion",
+            "Seed capital allocation ($2M) outside of core operational budget"
+          ],
+          "success_metric": "Generation of 3 qualified Letters of Intent (LOIs) from non-traditional customers.",
+          "milestones": [
+            "Market opportunity selection and prioritization.",
+            "Initial technical feasibility study completed for top prospect.",
+            "Executive presentation identifying the first targeted vertical market."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_4",
+        "action": "Mandate the creation of a 'Process Flow Owner' role within each business unit to map and identify critical non-compliance process bottlenecks.",
+        "owner": "COO / Department Heads",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "step_5",
+        "action": "Formalize the criteria for 'Adjacent Market' viability studies, requiring input from Legal and Compliance to manage risk.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Next 4 months"
+      },
+      {
+        "id": "step_6",
+        "action": "Run a targeted workshop focused on 'Translating Chemistry Expertise into Service Value' to help siloed teams think beyond product sales.",
+        "owner": "HR / Innovation Leads",
+        "timeframe": "Next 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational velocity: The formal approval structure (Legal, Procurement, IT Security) acts as a persistent speed constraint on innovation.",
+      "Idea-to-Execution Gap: While ideas are generated, the transition to funded, controlled pilots remains highly complex and prone to stalling due to process gatekeeping.",
+      "Structural dependence: Reliance on legacy product streams makes true strategic diversification challenging without executive mandate overriding established business unit priorities."
+    ],
+    "progress": {
+      "improvements": [
+        "Leadership structure formalized (transitioning from founder-led to professional management).",
+        "Strategic planning processes are now being actively documented and followed.",
+        "Increased depth of internal resources and talent availability across multiple business units."
+      ],
+      "persistent_gaps": [
+        "The core organizational process barriers have not been structurally mitigated; the issue remains bureaucratic review layers, not resource scarcity.",
+        "Innovation efforts remain decentralized, leading to fragmented resource allocation and difficulty in creating a single, cohesive pipeline of new value propositions.",
+        "Lack of clear accountability for driving cross-functional 'process change' vs. just developing 'new products'."
+      ],
+      "achieved_milestones": [
+        "Completed the initial governance steps (Step 1 & 2) required to begin formalizing pilot projects.",
+        "Secured departmental buy-in on the need for structured, outcome-focused innovation planning."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has significantly professionalized its management and formalized planning governance (major positive shift). However, the core challenge of organizational velocity and navigating internal compliance gates remains unresolved, limiting tangible progress on truly disruptive diversification opportunities."
+    }
+  }
+}

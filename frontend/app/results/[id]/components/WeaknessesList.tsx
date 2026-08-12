@@ -1,14 +1,33 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
 
 interface WeaknessesListProps {
   weaknesses: string[];
 }
 
+const containerReveal = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.06, delayChildren: 0.1 } },
+};
+
+const itemReveal = {
+  hidden: { opacity: 0, x: -12 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] as const } },
+};
+
 export default function WeaknessesList({ weaknesses }: WeaknessesListProps) {
   if (!weaknesses.length) return null;
 
   return (
-    <div className="bg-amber-950/30 rounded-3xl border border-amber-800/40 p-6 sm:p-7">
+    <motion.div
+      className="bg-amber-950/30 rounded-3xl border border-amber-800/40 p-6 sm:p-7"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
+    >
       <div className="flex items-center gap-3 mb-4">
         <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-600/40 flex items-center justify-center text-amber-400">
           <AlertTriangle className="w-5 h-5" />
@@ -21,14 +40,18 @@ export default function WeaknessesList({ weaknesses }: WeaknessesListProps) {
         </div>
       </div>
 
-      <ul className="space-y-2.5">
+      <motion.ul className="space-y-2.5" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerReveal}>
         {weaknesses.map((weakness, index) => (
-          <li key={index} className="flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs">
+          <motion.li
+            key={index}
+            className="flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs"
+            variants={itemReveal}
+          >
             <span className="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
             <p className="text-sm font-medium text-amber-100 leading-relaxed">{weakness}</p>
-          </li>
+          </motion.li>
         ))}
-      </ul>
-    </div>
+      </motion.ul>
+    </motion.div>
   );
 }

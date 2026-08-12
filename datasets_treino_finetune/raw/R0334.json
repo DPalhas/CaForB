@@ -1,0 +1,200 @@
+{
+  "id": "R0334",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0133",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:00:15.305135+00:00",
+    "duration_ms": 42164,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault Innovations",
+      "sector": "Fintech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 1,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0133",
+      "fields": {
+        "companyName": "Vault Innovations",
+        "sector": "Fintech",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "completed",
+      "step_1": "not_done",
+      "step_2": "superseded",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O_001_IoT_Scale",
+        "type": "incremental",
+        "title": "Full Fleet Digitalization and Integration of Operational Assets (Carry-Forward)",
+        "rationale": "The success of the IoT pilot proves clear value in predictive maintenance, offering a path to operational efficiency improvements. This opportunity focuses on scaling this proven technology across the full fleet while mitigating complex legacy system integration risks.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated regulatory compliance review checklist for hardware deployment and data sovereignty (GDPR/sector specific).",
+            "Finalize procurement contracts, focusing on modular integration points rather than monolithic replacements.",
+            "Form a cross-functional task force including IT, Operations, and Compliance to manage the legacy system interface layer."
+          ],
+          "resources_needed": [
+            "Dedicated Integration Architect (Consultant)",
+            "Operational Expenditure Buffer for unexpected hardware/software conflicts",
+            "Executive sponsorship agreement committing time from multiple departments"
+          ],
+          "success_metric": "Reduction in unplanned downtime across 80% of monitored assets by Q3.",
+          "milestones": [
+            "Pilot completion and business case approval (Achieved)",
+            "Successful integration with core maintenance systems (M1)",
+            "Full fleet rollout commencement (M2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "O_001_IoT_Scale",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "O_002_Advisory_Expansion",
+        "type": "incremental",
+        "title": "Structured Advisory Services and ESG Product Line Expansion",
+        "rationale": "The market demand for specialized, compliant investment advice (ESG, robo-advisory) is high. By formalizing these adjacent services, Vault can leverage existing user trust while deepening vertical specialization, meeting the core growth goal.",
+        "execution_plan": {
+          "first_actions": [
+            "Consult with legal counsel to ensure compliance adherence for automated advisory recommendations and fiduciary duties.",
+            "Conduct a thorough competitive analysis on specific ESG scoring methodologies used by top competitors.",
+            "Define MVP scope (e.g., focusing initially only on US equities/ESG pairing) to manage initial complexity."
+          ],
+          "resources_needed": [
+            "Quant/Data Scientist dedicated to algorithm development",
+            "Compliance Officer time allocation",
+            "External market research funding"
+          ],
+          "success_metric": "Launch of a minimum viable advisory product targeting 5% of existing AUM within 12 months.",
+          "milestones": [
+            "Regulatory framework defined and approved (M1)",
+            "Algorithm prototype built and back-tested (M2)",
+            "Soft launch to select customer segment (M3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "10-14 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS_001",
+        "action": "Implement a formal process mapping and documentation effort for the top 3 revenue-generating workflows to reduce time barriers.",
+        "owner": "Head of Operations / Management Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "NS_002",
+        "action": "Mandate a bi-weekly 'Innovation Deep Dive' meeting, protected from operational interruptions, to maintain momentum on O_001 and O_002.",
+        "owner": "CEO / Executive Management",
+        "timeframe": "Immediate"
+      },
+      {
+        "id": "NS_003",
+        "action": "Create a formal business case template that quantifies the return on investment (ROI) and required resource allocation for *all* new feature requests, not just innovation projects.",
+        "owner": "Finance / Product Management",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Structural bottleneck: Innovation initiatives compete heavily with day-to-day operational demands, lacking dedicated protected time/budget.",
+      "Process dependency: Over-reliance on informal processes and tribal knowledge, increasing risk during rapid scale (IoT rollout).",
+      "Decision latency: Significant reliance on single individuals ('owner_alone') for major strategic shifts, inhibiting agility required in a competitive market."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully proved the value and business case of predictive maintenance via IoT sensors (Pilot success).",
+        "Increased product breadth by launching new savings plans and pension products.",
+        "Defined clear strategic intent to address untapped adjacent customer segments."
+      ],
+      "persistent_gaps": [
+        "Lack of scalable internal process documentation, slowing down the full rollout of proven technologies.",
+        "The time barrier remains critical; operational urgency consistently eclipses planned innovation time.",
+        "The structural capacity for managing complex, multi-disciplinary projects (like full fleet integration) is still thin."
+      ],
+      "achieved_milestones": [
+        "Completion and approval of the IoT predictive maintenance business case.",
+        "Initial market entry into savings and pension products."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant acceleration on physical asset digitalization and product line expansion has been observed (IoT pilot success). However, increasing competitive pressure and resource constraints (time/process) represent major risks that need structural mitigation."
+    }
+  }
+}

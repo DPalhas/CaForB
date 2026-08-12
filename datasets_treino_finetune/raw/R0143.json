@@ -1,0 +1,198 @@
+{
+  "id": "R0143",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0384",
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:08:58.785293+00:00",
+    "duration_ms": 55593,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Pioneer Services.co",
+      "sector": "E-commerce",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Multi-brand online marketplace aggregating 300+ independent Portuguese artisan brands across fashion, home decor, and gourmet food categories. Dropship and marketplace model with centralized logistics for top sellers. Seeking to implement AI-powered visual search and dynamic pricing. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0384",
+      "fields": {
+        "companyName": "Pioneer Services.co",
+        "sector": "E-commerce",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Multi-brand online marketplace aggregating 300+ independent Portuguese artisan brands across fashion, home decor, and gourmet food categories. Dropship and marketplace model with centralized logistics for top sellers. Seeking to implement AI-powered visual search and dynamic pricing. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 7 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "superseded",
+      "step_1": "superseded",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 0.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establish a Formalized Process Improvement Loop (Carry-Forward)",
+        "rationale": "The previous initiative to build an internal dashboard proved valuable but lacked institutional backing. To capitalize on this learning, Pioneer must formalize the idea generation and validation lifecycle into a repeatable process owner model. This prevents good ideas from being abandoned when personnel change.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 1-2 high-friction operational bottlenecks (e.g., inventory reconciliation, data transfer).",
+            "Assign a temporary 'Process Champion' (non-developer staff) to map the current state process.",
+            "Define required outputs and success metrics before any tech build begins."
+          ],
+          "resources_needed": [
+            "Operational Subject Matter Experts (SMEs)",
+            "Design thinking workshop time",
+            "Temporary Process Champion role designation"
+          ],
+          "success_metric": "Documentation of 3 fully mapped and reviewed core business processes.",
+          "milestones": [
+            "Process mapping completed for the top bottleneck.",
+            "Drafted improvement recommendation presented to board/owner.",
+            "Pilot scope defined (MVP)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Targeted Automation Pilots for Cost Reduction",
+        "rationale": "The core strategic goal is increasing EBITDA margins by 500 bps. Instead of broad tech investments, Pioneer should focus on identifying manual data transfer or calculation points between the marketplace and logistics/finance systems. Small, contained automation pilots provide measurable ROI within the required 12-month timeline.",
+        "execution_plan": {
+          "first_actions": [
+            "Map top 5 non-core processes involving manual spreadsheet manipulation (e.g., supplier data aggregation).",
+            "Calculate current cost per transaction/manual touchpoint for these processes.",
+            "Build a proof-of-concept script or workflow automation tool using low-code/no-code solutions."
+          ],
+          "resources_needed": [
+            "Financial Data Analysis (SME)",
+            "Limited developer time (2 devs)",
+            "Low-code automation platform access"
+          ],
+          "success_metric": "Demonstrated reduction in man-hours or error rate for one specific, repeatable process.",
+          "milestones": [
+            "Process selection and scope sign-off.",
+            "Pilot build completion (MVP).",
+            "ROI calculation vs. manual method."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the post-merger roles and responsibilities matrix to prevent overlap between legacy and new teams, minimizing 'wear multiple hats' conflict.",
+        "owner": "Owner/Management Team",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Host a dedicated 1-day working session involving operations and IT to conduct initial process mapping on the top 3 stated manual pain points.",
+        "owner": "Process Champion (New Role)",
+        "timeframe": "6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Allocate a mandatory 'Innovation Time' block (e.g., 10 hours/week) for the generalist developers, ring-fenced from urgent operational maintenance tasks.",
+        "owner": "Owner/Tech Lead",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal process ownership and institutional memory (demonstrated by abandoned dashboard).",
+      "Technical resources are over-allocated, preventing dedicated, strategic innovation time.",
+      "Reliance on opportunistic improvements rather than a structured, ROI-driven portfolio approach."
+    ],
+    "progress": {
+      "improvements": [
+        "Team size has increased to 7 members, providing greater overall operational capacity.",
+        "Explicit understanding of the need for institutionalizing ideas and processes (post-merger learning)."
+      ],
+      "persistent_gaps": [
+        "The core barriers of budget allocation, strategic prioritization, and dedicated talent time remain unaddressed at a systemic level.",
+        "Processes are still being treated as 'firefighting' rather than systematically engineered for efficiency gains."
+      ],
+      "achieved_milestones": [
+        "A clear articulation of the mandatory ROI timeline (< 12 months) guiding future project scoping, which is an improvement over previous vague goals."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The team has expanded and gained operational experience in post-merger integration. While this increases potential capacity, the fundamental process maturity and strategic resource allocation remain critically underdeveloped."
+    }
+  }
+}

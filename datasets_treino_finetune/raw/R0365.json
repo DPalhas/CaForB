@@ -1,0 +1,198 @@
+{
+  "id": "R0365",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0459",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:27:23.859121+00:00",
+    "duration_ms": 39054,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus Digital",
+      "sector": "Healthtech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Digital health platform for chronic disease management focusing on diabetes and hypertension. Combining connected glucometer and blood pressure monitor data with AI-driven care coaching and medication adherence reminders. 25,000 active patients managed through partnerships with 40 clinics. Evaluating predictive health deterioration alerts. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 13,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0459",
+      "fields": {
+        "companyName": "Nexus Digital",
+        "sector": "Healthtech",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Digital health platform for chronic disease management focusing on diabetes and hypertension. Combining connected glucometer and blood pressure monitor data with AI-driven care coaching and medication adherence reminders. 25,000 active patients managed through partnerships with 40 clinics. Evaluating predictive health deterioration alerts. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 13,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 2 strategic partnerships. Revenue growth 25% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "step_1": "not_done",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 3.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "radical",
+        "title": "Establish a Structured Innovation Funnel (Idea-to-ROI)",
+        "rationale": "The failure of the ad hoc brainstorming sessions highlights a critical process gap: ideas lack an execution path. A structured funnel, mandatory for all new initiatives, will link ideation directly to required resources and measurable ROI timelines (<12 months), addressing current leadership debates.",
+        "execution_plan": {
+          "first_actions": [
+            "Mandate the creation of a 'Pre-Mortem' document for all proposed features/ideas detailing failure points and resource estimates.",
+            "Implement a quarterly, cross-functional 'Value Stream Mapping Workshop' focusing solely on cost bottlenecks (EBITDA focus).",
+            "Form an Innovation Working Group (IWG) with clear authority to approve pilot scope (Proof of Value - PoV)."
+          ],
+          "resources_needed": [
+            "Dedicated Business Analyst time (part-time)",
+            "Updated process documentation templates",
+            "Executive sponsorship for IWG charter"
+          ],
+          "success_metric": "3 successfully completed PoVs initiated through the structured funnel within 6 months.",
+          "milestones": [
+            "Define and socialize the Funnel Charter (Month 1)",
+            "Complete first Value Stream Mapping Workshop (Month 2)",
+            "Pilot selection and charter approval (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Predictive Deterioration Alert System (PDAS) Integration",
+        "rationale": "Leveraging the accumulated data from glucometer and BP monitors, building a predictive alert system is highly efficient. This moves beyond simple tracking to proactive intervention, dramatically reducing manual touchpoints and directly addressing the 500 bps EBITDA goal.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify key data inputs (e.g., rate of change in glucose/BP) for predictive modeling from existing data pools.",
+            "Develop a Minimum Viable Product (MVP) alert logic prototype using outsourced ML expertise, focusing on the highest-risk patient cohort first.",
+            "Design and test the alert workflow with clinical partners to ensure integration feasibility."
+          ],
+          "resources_needed": [
+            "Data Science/ML Consulting budget (short-term)",
+            "Backend developer focused bandwidth",
+            "Clinical subject matter expert validation time"
+          ],
+          "success_metric": "Deployment of MVP that successfully alerts on 10% of simulated high-risk patient events, reducing mean response time by X hours.",
+          "milestones": [
+            "Data readiness assessment and feature engineering (Month 2)",
+            "MVP prototype completion and internal testing (Month 4)",
+            "Pilot deployment with select clinics/partners (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_3",
+        "action": "Define and charter the Innovation Working Group (IWG) with clear authority to vet PoV scope and dedicated time allocation.",
+        "owner": "CTO / Leadership Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_4",
+        "action": "Conduct a targeted cost-driver analysis workshop (Value Stream Mapping) focused on manual data handling and reporting processes to quantify potential efficiency gains.",
+        "owner": "Product Owner / Business Analyst",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_5",
+        "action": "Isolate a small, manageable segment of patient data for the PDAS prototype and prepare the required access permissions.",
+        "owner": "Backend Developers / QA Engineer",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Process Discipline: Lack of structured process to convert ideas into funded, tracked execution plans (evident in past initiative failure).",
+      "Talent/Capacity Constraint: Team bandwidth is highly fragmented, making focused, long-term innovation bets difficult without protecting current product commitments.",
+      "Strategic Governance: While the leadership is aligned on needing modernization, internal debate over 'where to start' slows decision momentum."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully established 2 strategic partnerships, enhancing market reach and patient data volume.",
+        "Demonstrated revenue growth of 25% YoY, validating core market fit.",
+        "Active exploration of AI/ML capabilities shifts the focus from pure product build to predictive intelligence."
+      ],
+      "persistent_gaps": [
+        "Translating conceptual ideas into defined workflows and resource estimates remains a major bottleneck.",
+        "The dependency on external resources (freelance design, consulting) indicates an internal capacity gap in process management and advanced data modeling.",
+        "Sustaining cross-departmental engagement for innovation initiatives requires institutionalizing the process, not just scheduling meetings."
+      ],
+      "achieved_milestones": [
+        "Validated growth trajectory through successful partnerships.",
+        "Defined clear financial objective (500 bps EBITDA improvement) guiding future technical choices."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant increase in market validation and revenue (25% YoY growth) due to strategic partnerships, improving external credibility. However, internal processes remain immature, and the leadership struggle with execution framework has not been resolved."
+    }
+  }
+}

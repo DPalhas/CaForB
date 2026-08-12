@@ -1,0 +1,200 @@
+{
+  "id": "R0205",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0462",
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:45:11.872156+00:00",
+    "duration_ms": 44425,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst Systems.io",
+      "sector": "Energy & Utilities",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Independent power producer operating a portfolio of 12 solar photovoltaic plants and 3 onshore wind farms across Iberia with a combined capacity of 180 MW. Selling electricity through PPAs and spot market. Evaluating battery storage co-location and AI-driven production forecasting. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 25,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0462",
+      "fields": {
+        "companyName": "Catalyst Systems.io",
+        "sector": "Energy & Utilities",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Independent power producer operating a portfolio of 12 solar photovoltaic plants and 3 onshore wind farms across Iberia with a combined capacity of 180 MW. Selling electricity through PPAs and spot market. Evaluating battery storage co-location and AI-driven production forecasting. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 22,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 6 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "completed",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_e2e",
+        "type": "radical",
+        "title": "End-to-End Operational Workflow Digitalization and Standardization",
+        "rationale": "To achieve the 20% throughput goal, the company must move beyond automating discrete processes. This opportunity requires mapping core operational value chains (e.g., generation to billing) and standardizing them across all 15+ assets, addressing cultural resistance head-on.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the complete 'Idea to Revenue' workflow chain, identifying data exchange gaps between core systems (ERP, SCADA, CRM).",
+            "Establish mandatory compliance checkpoints and regulatory sign-offs within the digitized flow for all critical processes.",
+            "Pilot process mining tools on one standardized location cluster (e.g., 3 nearby solar plants) to define 'to-be' state models."
+          ],
+          "resources_needed": [
+            "Dedicated Process Architect",
+            "Data Governance Lead",
+            "Domain Experts from Operations/Compliance"
+          ],
+          "success_metric": "Reduction in process cycle time by 20% for the pilot cluster, coupled with zero compliance exceptions.",
+          "milestones": [
+            "Phase 1: Cross-departmental workflow mapping complete (3 months).",
+            "Phase 2: Digital twin simulation of core processes launched (6 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_funding",
+        "type": "incremental",
+        "title": "Decentralized Innovation Funding Mechanism and Governance",
+        "rationale": "The current reliance on formal business case approval chains creates friction and slows mid-cycle innovation funding. Introducing a 'Micro-Grant' system allows the innovation squad to test hypotheses rapidly, improving speed without sacrificing executive oversight.",
+        "execution_plan": {
+          "first_actions": [
+            "Define three standardized levels of micro-funding (e.g., $5k/month for testing, $20k/quarter for pilots).",
+            "Formalize a 'Review Council' composed of non-executive senior leads to approve funding releases quarterly.",
+            "Integrate the micro-grant proposal process into existing annual planning software."
+          ],
+          "resources_needed": [
+            "Finance Lead",
+            "Product Manager (Process focus)",
+            "Executive Sponsor Buy-in"
+          ],
+          "success_metric": "Increase in approved innovation projects by 30% within the next fiscal year.",
+          "milestones": [
+            "Council charter established and communicated to all departments (2 months).",
+            "Micro-grant application portal functional and tested."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "medium",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Conduct a formal data lineage audit focusing on the transfer points between SCADA/OT systems and core ERP/Finance systems to identify immediate integration gaps.",
+        "owner": "Data Scientist / Tech Lead",
+        "timeframe": "Q3 End"
+      },
+      {
+        "id": "ns2",
+        "action": "Draft the charter and rules for the proposed 'Review Council' and micro-grant funding model, targeting executive sign-off.",
+        "owner": "Product Manager / Business Analyst",
+        "timeframe": "Q3 Start"
+      },
+      {
+        "id": "ns3",
+        "action": "Launch a cross-functional working group to document the standardized 'ideal' operational procedure for new asset onboarding, integrating compliance and technical steps from day one.",
+        "owner": "Operations Lead / Compliance Officer",
+        "timeframe": "Ongoing (Start immediately)"
+      }
+    ],
+    "key_weaknesses": [
+      "Cultural inertia leading to resistance against radical process standardization across multiple legacy sites.",
+      "Underutilized data assets and poor integration between siloed OT/IT systems, limiting predictive capability.",
+      "Governance bottlenecks in the annual planning cycle which stifle mid-cycle innovation velocity."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful demonstration of digital customer onboarding flow significantly boosting NPS and efficiency (12 days to 5 days).",
+        "Dedicated, well-staffed innovation squad operating with its own clear cadence.",
+        "Automation efforts successfully completed for at least six legacy internal processes."
+      ],
+      "persistent_gaps": [
+        "Standardization of operational workflows across the entire asset portfolio remains manual or partially digitized.",
+        "Difficulty translating process improvements into sustained, integrated data models for predictive analytics.",
+        "The annual planning rigidity continues to pose a threat to agile experimentation."
+      ],
+      "achieved_milestones": [
+        "Cross-functional launch and adoption of the new digital onboarding experience.",
+        "Successful internal deployment and testing of automated operational subprocesses."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has successfully transitioned from initial exploratory automation to structured digital execution (onboarding flow) and established dedicated internal capacity (innovation squad). The focus is now shifting from 'Can we automate?' to 'How do we integrate and standardize everything to scale?'"
+    }
+  }
+}

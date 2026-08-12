@@ -1,0 +1,203 @@
+{
+  "id": "R0183",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0102",
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:25:14.595434+00:00",
+    "duration_ms": 45747,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Orbit Networks",
+      "sector": "Public Administration",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Public transportation authority managing a metropolitan bus and light rail network with 200 vehicles, 60 routes, and 45 million annual passenger journeys. Currently deploying a contactless fare collection system and real-time passenger information displays. Next priority is AI-driven schedule optimization and predictive maintenance. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "6 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0102",
+      "fields": {
+        "companyName": "Orbit Networks",
+        "sector": "Public Administration",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Public transportation authority managing a metropolitan bus and light rail network with 200 vehicles, 60 routes, and 45 million annual passenger journeys. Currently deploying a contactless fare collection system and real-time passenger information displays. Next priority is AI-driven schedule optimization and predictive maintenance. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 5 new team members. Launched customer feedback pilot. Budget for innovation increased 25%.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A",
+        "type": "incremental",
+        "title": "Full Fleet Predictive Maintenance Integration",
+        "rationale": "The successful IoT sensor pilot demonstrated a clear ROI (15% reduction in downtime). The next logical step is to scale this operationally critical capability across the entire fleet and fully integrate it with legacy maintenance systems. This addresses operational efficiency and risk management directly.",
+        "execution_plan": {
+          "first_actions": [
+            "Formalize the cross-departmental team (Operations, IT, Maintenance) responsible for data integration governance.",
+            "Develop a phased rollout schedule that prioritizes high-failure-rate assets first.",
+            "Build robust APIs/middleware to ensure seamless two-way communication between sensor data and existing CMMS."
+          ],
+          "resources_needed": [
+            "Dedicated IT Integration Architect",
+            "Increased QA Testing Budget",
+            "Senior Maintenance Subject Matter Experts (SMEs)"
+          ],
+          "success_metric": "Reduce unplanned downtime across the entire fleet by 20% within 18 months.",
+          "milestones": [
+            "Integration proof-of-concept with legacy system completed.",
+            "Rollout to 50% of critical assets achieved.",
+            "Formal performance review showing sustained uptime improvement."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_B",
+        "type": "radical",
+        "title": "Direct-to-Consumer (D2C) Digital Channel Launch",
+        "rationale": "To achieve the goal of doubling revenue and entering new markets, Orbit Networks must shift beyond a purely B2B model. This requires establishing a scalable D2C platform that captures consumer data, optimizes pricing for individual transactions, and builds direct brand loyalty, fundamentally changing market interaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct granular competitive analysis of successful public transport/utility D2C models in target markets.",
+            "Develop a scalable Minimum Viable Product (MVP) for the customer digital journey (booking, payment, information).",
+            "Establish data governance frameworks specifically for PII/consumer sales data."
+          ],
+          "resources_needed": [
+            "Digital Experience Designer",
+            "Legal/Compliance counsel specializing in consumer data law.",
+            "Dedicated Growth Marketing Budget"
+          ],
+          "success_metric": "Achieve X number of direct transactions (tickets/passes) through the new D2C channel within 1 year.",
+          "milestones": [
+            "Market feasibility study and business case approved for D2C.",
+            "MVP launch in a controlled pilot area.",
+            "Operational model validated for scaling to second market."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Establish a formal 'Innovation Accelerator' function to bypass rigid annual planning cycles and provide mid-cycle funding pathways for high-potential projects.",
+        "owner": "Executive Leadership/Finance",
+        "timeframe": "Next Quarter (3 months)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Finalize the data architecture blueprint required to fully integrate IoT sensor feeds with legacy maintenance systems, addressing API gaps and data ownership.",
+        "owner": "Technology Department Lead",
+        "timeframe": "Next 4 Months"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a detailed go-to-market plan for the first target geographic market, including required local partnerships and regulatory checkpoints.",
+        "owner": "Commercial/Strategy Team",
+        "timeframe": "Next 6 Months"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational rigidity in annual planning processes hinders rapid mid-cycle innovation funding.",
+      "The complexity of integrating advanced digital systems (IoT) with existing legacy infrastructure remains a significant technical and process bottleneck.",
+      "Current focus on operational efficiency does not yet translate into a scalable, customer-facing revenue generation model required for aggressive growth targets."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful launch of the customer feedback pilot (NPS data collection).",
+        "Tangible success with IoT sensors showing 15% reduction in unplanned downtime on instrumented machines.",
+        "Increased financial commitment to innovation via a 25% budget increase."
+      ],
+      "persistent_gaps": [
+        "The formal business case approval chain for mid-cycle funding remains a major cultural and process barrier.",
+        "System integration between new digital tools (IoT) and established backend systems is technically complex and incomplete.",
+        "Strategic focus needs to shift from optimizing current operations to designing scalable, exponential revenue channels."
+      ],
+      "achieved_milestones": [
+        "Confirmation of full fleet rollout business case approval for predictive maintenance.",
+        "Deployment of contactless fare collection system in multiple routes."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant positive progress was made in operationalizing technology (IoT sensor pilot success), improving resources (budget/team size), and defining aggressive growth targets. However, deep structural process barriers and legacy system integration complexity persist."
+    }
+  }
+}

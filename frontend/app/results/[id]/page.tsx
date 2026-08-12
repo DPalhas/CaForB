@@ -3,13 +3,29 @@
 import { useQuery } from "@apollo/client/react";
 import { useParams, useRouter } from "next/navigation";
 import { GET_INSIGHT } from "@/lib/graphql/queries";
-import { RefreshCw, Printer, Sparkles, AlertCircle } from "lucide-react";
+import { RefreshCw, Printer, Sparkles, AlertCircle, TrendingUp, TrendingDown, Minus, ChevronRight, ArrowRight } from "lucide-react";
 import NavHeader from "@/components/NavHeader";
+import PageBackground from "@/components/PageBackground";
+import { motion } from "framer-motion";
 import ScoreCard from "./components/ScoreCard";
 import OpportunitiesList from "./components/OpportunitiesList";
 import NextStepsList from "./components/NextStepsList";
 import WeaknessesList from "./components/WeaknessesList";
 import ResultsSkeleton from "./components/ResultsSkeleton";
+
+const dedupeKey = (item: Record<string, any>) =>
+  `${item.type ?? ""}|${item.title ?? ""}|${item.rationale ?? ""}|${item.action ?? ""}`;
+
+function dedupe<T extends Record<string, any>>(arr: T[] | undefined | null): T[] {
+  if (!arr) return [];
+  const seen = new Set<string>();
+  return arr.filter((item) => {
+    const key = dedupeKey(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
 
 export default function ResultsPage() {
   const params = useParams();
@@ -18,9 +34,16 @@ export default function ResultsPage() {
 
   const { data, loading, error } = useQuery(GET_INSIGHT, {
     variables: { id },
+    fetchPolicy: "no-cache",
   });
 
-  const insight = (data as any)?.getInsight;
+  const insightRaw = (data as any)?.getInsight;
+  const insight = insightRaw ? {
+    ...insightRaw,
+    opportunities: dedupe(insightRaw.opportunities),
+    nextSteps: dedupe(insightRaw.nextSteps),
+    keyWeaknesses: [...new Set(insightRaw.keyWeaknesses ?? [])],
+  } : null;
 
   const handlePrint = () => {
     window.print();
@@ -29,12 +52,7 @@ export default function ResultsPage() {
   return (
     <div className="min-h-screen bg-stone-950 flex flex-col selection:bg-amber-500 selection:text-white">
       
-      {/* Radial gradient overlays (matching landing page) */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl opacity-60" />
-        <div className="absolute top-1/3 -right-40 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl opacity-60" />
-        <div className="absolute -bottom-40 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl opacity-50" />
-      </div>
+      <PageBackground variant="results" />
 
       <div className="print:hidden">
         <NavHeader />
@@ -56,6 +74,11 @@ export default function ResultsPage() {
             <p className="text-sm text-stone-400">
               {loading ? "Generating strategic insights..." : `Analysis Reference #${id}`}
             </p>
+            {insight?.companyName && (
+              <p className="text-sm font-semibold text-amber-400">
+                {insight.companyName} &middot; {insight.sector}
+              </p>
+            )}
           </div>
 
           {/* Loading Skeleton */}
@@ -86,7 +109,12 @@ export default function ResultsPage() {
 
           {/* Report Data */}
           {insight && (
-            <div className="space-y-8 step-fade">
+            <motion.div
+              className="space-y-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4 }}
+            >
               
               {/* Score Card */}
               {insight.innovationScore !== null && (
@@ -101,6 +129,103 @@ export default function ResultsPage() {
 
               {/* Identified Weaknesses */}
               <WeaknessesList weaknesses={insight.keyWeaknesses} />
+
+              {/* Comparison to Previous Assessment */}
+              {insight.comparisonToPrevious && (
+                <div className="glass-card rounded-3xl border border-stone-800/80 p-6 space-y-4">
+                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
+                    {insight.scoreDelta !== null && insight.scoreDelta > 0 ? (
+                      <TrendingUp className="w-5 h-5 text-emerald-400" />
+                    ) : insight.scoreDelta !== null && insight.scoreDelta < 0 ? (
+                      <TrendingDown className="w-5 h-5 text-rose-400" />
+                    ) : (
+                      <Minus className="w-5 h-5 text-amber-400" />
+                    )}
+                    vs. Previous Assessment #{insight.comparisonToPrevious.assessmentNumber}
+                  </h2>
+
+                  <div className="flex items-center justify-center gap-4 p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
+                    <div className="text-center">
+                      <div className="text-xs text-stone-500 mb-1">Previous</div>
+                      <div className="text-xl font-bold text-stone-400">
+                        {insight.comparisonToPrevious.previousScore?.toFixed(1) ?? "—"}
+                      </div>
+                      <div className="text-[10px] text-stone-600">
+                        {insight.comparisonToPrevious.previousDate}
+                      </div>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-stone-600" />
+                    <div className="text-center">
+                      <div className="text-xs text-stone-500 mb-1">Current</div>
+                      <div className="text-xl font-bold text-white">
+                        {insight.innovationScore?.toFixed(1) ?? "—"}
+                      </div>
+                      {insight.scoreDelta !== null && (
+                        <div className={`text-xs font-bold ${
+                          insight.scoreDelta > 0 ? "text-emerald-400" : insight.scoreDelta < 0 ? "text-rose-400" : "text-amber-400"
+                        }`}>
+                          {insight.scoreDelta > 0 ? "+" : ""}{insight.scoreDelta.toFixed(1)}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {insight.comparisonToPrevious.keyChanges && (
+                    <p className="text-sm text-stone-400 leading-relaxed">
+                      {insight.comparisonToPrevious.keyChanges}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* Progress Report */}
+              {insight.progress && (
+                <div className="glass-card rounded-3xl border border-stone-800/80 p-6 space-y-4">
+                  <h2 className="text-lg font-bold text-white">Progress Report</h2>
+
+                  {(insight.progress.improvements ?? []).length > 0 && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-emerald-400 mb-2">Improvements</h3>
+                      <ul className="space-y-1">
+                        {insight.progress.improvements.map((item: string, i: number) => (
+                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
+                            <span className="text-emerald-500 mt-1">+</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {(insight.progress.persistentGaps ?? []).length > 0 && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-amber-400 mb-2">Persistent Gaps</h3>
+                      <ul className="space-y-1">
+                        {insight.progress.persistentGaps.map((item: string, i: number) => (
+                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
+                            <span className="text-amber-500 mt-1">~</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {(insight.progress.achievedMilestones ?? []).length > 0 && (
+                    <div>
+                      <h3 className="text-sm font-semibold text-blue-400 mb-2">Achieved Milestones</h3>
+                      <ul className="space-y-1">
+                        {insight.progress.achievedMilestones.map((item: string, i: number) => (
+                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
+                            <span className="text-blue-500 mt-1">&#10003;</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Bottom Actions */}
               <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-center print:hidden">
@@ -121,7 +246,7 @@ export default function ResultsPage() {
                 </button>
               </div>
 
-            </div>
+            </motion.div>
           )}
 
         </div>

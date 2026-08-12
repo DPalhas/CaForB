@@ -1,22 +1,17 @@
 #!/usr/bin/env python3
 """
-train_caforb.py — Phase 5: LoRA fine-tuning of google/gemma-4-12B-it-qat-w4a16-ct
-on the CaForB dataset.
+train_caforb.py — LoRA fine-tuning of Gemma 4 12B on the CaForB dataset.
 
-The base model is pre-quantized (QAT w4a16) — weights are already 4-bit and frozen.
-Only LoRA adapters are trained, keeping VRAM usage under 8 GB on RTX 4070.
-
-Requirements:
-    python scripts/setup_ml.py   # one-time install
+For cloud GPUs (RTX 4090 24GB) with 4-bit QLoRA.
+~6-8 hours training, ~$3-5 on RunPod.
 
 Usage:
-    python scripts/train_caforb.py                    # Full training (3 epochs)
+    python scripts/train_caforb.py                    # Full training
     python scripts/train_caforb.py --test             # Quick test (50 steps)
-    python scripts/train_caforb.py --epochs 1         # 1 epoch only
-    python scripts/train_caforb.py --resume checkpoints/checkpoint-100
+    python scripts/train_caforb.py --model MODEL_ID   # Custom model
 
 Output:
-    caforb-lora/               — LoRA adapter weights (ready for merge)
+    caforb-lora/               — LoRA adapter weights
     caforb-lora/training.log   — Loss curve
 """
 
@@ -36,6 +31,7 @@ from transformers import (
     TrainingArguments,
     TrainerCallback,
     DataCollatorForLanguageModeling,
+    BitsAndBytesConfig,
 )
 from peft import (
     LoraConfig,
@@ -53,17 +49,17 @@ VAL_PATH = BASE_DIR / "final" / "validation.jsonl"
 OUTPUT_DIR = BASE_DIR / "caforb-lora"
 
 # Gemma 4 E2B (2.3B effective, 5.1B total) — instruction-tuned
-MODEL_NAME = "google/gemma-4-E2B-it"
+MODEL_NAME = "google/gemma-4-12b-it"  # Full 12B Gemma 4 — change if needed
 
 # ──────────────────────────────────────────────────────────────────────
 # Configuration
 # ──────────────────────────────────────────────────────────────────────
 
-LORA_R = 16                 # LoRA rank
-LORA_ALPHA = 16             # Scaling factor
+LORA_R = 8                  # Lower rank for 12B model
+LORA_ALPHA = 8              # Standard alpha=r
 LORA_DROPOUT = 0.05         # Regularization
-MAX_SEQ_LENGTH = 2048       # Fits comfortably in 8GB with 2.3B E2B model
-BATCH_SIZE = 1              # Per-device (keep at 1 for 8GB)
+MAX_SEQ_LENGTH = 4096       # 24GB GPU handles this comfortably
+BATCH_SIZE = 1              # Per-device (keep at 1)
 GRAD_ACCUM = 4              # Effective batch = 4
 NUM_EPOCHS = 3              # Full passes over dataset
 LEARNING_RATE = 2e-4        # Standard LoRA LR
@@ -98,47 +94,37 @@ def check_gpu():
 # ──────────────────────────────────────────────────────────────────────
 
 def load_model_and_tokenizer(args):
-    print(f"\n  Loading base model: {MODEL_NAME}")
-    print("  (FP16 LoRA — 2.3B effective Gemma 4)")
+    model_id = args.model_name or MODEL_NAME
+    print(f"\n  Loading base model: {model_id}")
+    print("  (4-bit QLoRA — 12B model, ~8 GB VRAM)")
 
     print("  Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(
-        MODEL_NAME, trust_remote_code=True
+        model_id, trust_remote_code=True
     )
     tokenizer.padding_side = "right"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    print("  Loading model (FP16, auto device mapping)...")
-    print("  (2.3B effective + PLE embeddings — auto GPU/CPU split)")
-    model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME,
-        device_map={"": "cuda:0"},
-        trust_remote_code=True,
-        torch_dtype=torch.float16,
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16,
+        bnb_4bit_use_double_quant=True,
     )
 
-    model.eval()
+    print("  Loading model (4-bit, auto device map)...")
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        quantization_config=bnb_config,
+        device_map="auto",
+        trust_remote_code=True,
+    )
+
     model.config.use_cache = False
 
-    # Gradient checkpointing
     if hasattr(model, "gradient_checkpointing_enable"):
         model.gradient_checkpointing_enable()
-
-    # Unwrap Gemma4ClippableLinear -> torch.nn.Linear for PEFT compatibility
-    try:
-        from transformers.models.gemma4.modeling_gemma4 import Gemma4ClippableLinear
-        unwrapped = 0
-        for name, module in list(model.named_modules()):
-            if isinstance(module, Gemma4ClippableLinear) and hasattr(module, "linear"):
-                # Replace wrapper with its inner linear layer
-                parent = model.get_submodule(".".join(name.split(".")[:-1]) if "." in name else "")
-                child_name = name.split(".")[-1]
-                setattr(parent if parent else model, child_name, module.linear)
-                unwrapped += 1
-        print(f"  Unwrapped {unwrapped} x Gemma4ClippableLinear -> Linear")
-    except ImportError:
-        pass
 
     # LoRA config
     lora_config = LoraConfig(
@@ -154,12 +140,14 @@ def load_model_and_tokenizer(args):
     )
 
     model = get_peft_model(model, lora_config)
-
-    model = get_peft_model(model, lora_config)
     trainable, total = model.get_nb_trainable_parameters()
     print(f"  Trainable: {trainable:,} / {total:,} ({100*trainable/total:.2f}%)")
 
     # VRAM log
+    allocated = torch.cuda.memory_allocated() / 1e9
+    reserved = torch.cuda.memory_reserved() / 1e9
+    free = reserved - allocated
+    print(f"  VRAM: allocated={allocated:.1f} GB  reserved={reserved:.1f} GB  free~{free:.1f} GB")
     allocated = torch.cuda.memory_allocated() / 1e9
     reserved = torch.cuda.memory_reserved() / 1e9
     free = (torch.cuda.get_device_properties(0).total_memory / 1e9) - reserved
@@ -282,7 +270,7 @@ def train(model, tokenizer, dataset, args):
         training_args.save_strategy = "no"
         training_args.load_best_model_at_end = False
         training_args.eval_steps = 25
-        training_args.logging_steps = 5
+        training_args.logging_steps = 1
 
     if args.resume:
         training_args.resume_from_checkpoint = args.resume
@@ -368,12 +356,15 @@ def main():
     parser.add_argument("--grad-accum", type=int, default=GRAD_ACCUM)
     parser.add_argument("--resume", type=str, default=None, help="Resume from checkpoint path")
     parser.add_argument("--lora-r", type=int, default=LORA_R)
+    parser.add_argument("--model", type=str, default=None, dest="model_name",
+                        help=f"HF model ID (default: {MODEL_NAME})")
     args = parser.parse_args()
 
+    model_id = args.model_name or MODEL_NAME
     print("=" * 60)
     print("  CaForB: LoRA Fine-Tuning")
     print("=" * 60)
-    print(f"  Base model: {MODEL_NAME}")
+    print(f"  Base model: {model_id}")
 
     check_gpu()
 

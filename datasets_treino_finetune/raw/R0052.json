@@ -1,0 +1,198 @@
+{
+  "id": "R0052",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0417",
+  "split": "train",
+  "metadata": {
+    "sector": "Other",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:27:37.727130+00:00",
+    "duration_ms": 33170,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum",
+      "sector": "Other",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "10 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 8,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0417",
+      "fields": {
+        "companyName": "Quantum",
+        "sector": "Other",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 8,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 5 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 0.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Formalizing Digital Transformation Roadmap and Shared Services Model",
+        "rationale": "The company is actively pursuing digitalization and shared services, indicating momentum. Formalizing this into a structured roadmap will consolidate efforts across the diverse portfolio (packaging, chemicals, food) and mitigate current operational chaos.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an internal working group comprising representatives from the top 3 business units to define shared service needs.",
+            "Conduct a gap analysis between current digital processes and desired future state capabilities (e.g., centralized ERP/CRM layer).",
+            "Pilot a standardized process across one non-core function (e.g., expense reporting or HR onboarding) to prove the value of centralization."
+          ],
+          "resources_needed": [
+            "Dedicated Project Manager (0.5 FTE)",
+            "Initial budget allocation for consultancy/tools",
+            "Executive sponsorship from central corporate team"
+          ],
+          "success_metric": "Completion and sign-off on a 12-month shared services roadmap with defined ROI metrics.",
+          "milestones": [
+            "Group charter and mandate finalized (Month 1)",
+            "Target processes prioritized and scoped (Month 2)",
+            "Pilot implementation launched (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Developing a Structured Customer Acquisition and Growth Playbook",
+        "rationale": "The strategic goal of doubling revenue requires structured growth, moving beyond opportunistic efforts. This opportunity focuses on formalizing the B2C channel entry and identifying scalable market approaches.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the customer journey for both existing B2B segments and the planned direct-to-consumer (DTC) channels.",
+            "Identify 3 core value propositions that are highly differentiated across the portfolio and suitable for rapid scaling.",
+            "Develop a preliminary market entry playbook detailing target geographic niches, required operational infrastructure, and initial marketing spend estimates."
+          ],
+          "resources_needed": [
+            "Marketing/Sales expertise (potentially external consultant)",
+            "Financial modeling capacity",
+            "Cross-functional team time for mapping current capabilities"
+          ],
+          "success_metric": "A validated 3-year go-to-market plan with identified initial target markets and required resource allocation.",
+          "milestones": [
+            "Customer journey map completed (Month 1)",
+            "Target market selection and prioritization (Month 2)",
+            "Draft Go-To-Market strategy approved (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Schedule a formal leadership workshop to align on the core value proposition and shared goals across all operating units.",
+        "owner": "Central Corporate Team Lead",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Engage an external consultant specializing in portfolio management to conduct a structured review of cross-segment synergies.",
+        "owner": "CEO/Leadership Committee",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop clear, measurable KPIs for the agile methodology adoption to ensure adjacent teams (Marketing/Support) fully transition and leverage continuous deployment benefits.",
+        "owner": "Engineering/Operations Head",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of dedicated innovation budget leading to reactive, opportunistic improvements.",
+      "Siloed knowledge and operations across the diverse portfolio (making central coordination challenging).",
+      "High dependency on single decision-makers ('owner_alone') which constrains scalability for rapid growth."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully adopted agile methodology, significantly reducing release cycle time by 60% in engineering.",
+        "The central corporate team is actively exploring cross-portfolio digital transformation and shared services implementation."
+      ],
+      "persistent_gaps": [
+        "Adoption of faster operational cadences (e.g., Marketing/Support) remains uneven, creating friction points.",
+        "Strategic growth plans are not yet translated into specific, resourced action items beyond initial concept stages.",
+        "Operational scaling capacity is limited by centralized decision-making processes."
+      ],
+      "achieved_milestones": [
+        "Successful transition to agile development practices within the engineering team (Process maturity improvement)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved operational speed and strategic focus on growth/digitalization (Agile adoption, shared services exploration). However, the underlying organizational barriers (budget, siloed decision-making) remain major constraints."
+    }
+  }
+}

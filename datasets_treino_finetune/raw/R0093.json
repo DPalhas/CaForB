@@ -1,0 +1,204 @@
+{
+  "id": "R0093",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0111",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:17:16.722763+00:00",
+    "duration_ms": 65149,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.965305+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina Corporation.ai",
+      "sector": "Professional & Consulting Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "teamSize": "10 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 25,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0111",
+      "fields": {
+        "companyName": "Lumina Corporation.ai",
+        "sector": "Professional & Consulting Services",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 20,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 5 strategic partnerships. Revenue growth 15% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "superseded",
+      "opp_3": "superseded",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_knowledge_assetization",
+        "type": "incremental",
+        "title": "Institutionalizing Knowledge Capture for IP Asset Development",
+        "rationale": "The firm's primary vulnerability is 'tribal knowledge' loss, as evidenced by the abandoned dashboard. To scale efficiently and manage high regulatory requirements, Lumina must build a formal system (KM platform) that mandates structured capture of insights from every engagement, turning past efforts into marketable intellectual property.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish mandatory 'Lessons Learned' sign-off at the conclusion of every engagement.",
+            "Integrate KM data fields into the existing project management stage-gate process (Compliance Step).",
+            "Pilot a centralized taxonomy and search framework for captured insights, requiring R&D department leadership."
+          ],
+          "resources_needed": [
+            "Dedicated Data Architect/Librarian (0.5 FTE)",
+            "KM Technology Platform Investment",
+            "Process owner sign-off from multiple operational departments"
+          ],
+          "success_metric": "Percentage of completed engagements with fully documented and categorized IP insights.",
+          "milestones": [
+            "Draft KM process policy and stakeholder approval (Q3).",
+            "Pilot platform deployment in one service line (Q4).",
+            "Achieve 75% utilization rate of KM data for proposal drafting."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_repeatable_sales_motion",
+        "type": "radical",
+        "title": "Designing and Testing a Productized, Recurring Revenue Offering",
+        "rationale": "Achieving €50M ARR requires moving beyond bespoke consulting engagements. This opportunity focuses on productizing Lumina's top 2-3 service lines into repeatable, high-margin offerings (e.g., 'Operational Excellence Audit Package'). This shifts the sales model from time-for-money to value-based subscription/retainer contracts.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and quantify the top 3 most profitable, repeatable service components used across partnerships (Requires cross-functional input).",
+            "Develop a tiered pricing model that emphasizes recurring licensing or retainer fees over pure project scope billing.",
+            "Run an internal 'Sales Playbook' workshop with senior leadership to define ideal customer profiles (ICPs) for the new offering.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Executive Sponsor (C-suite level)",
+            "Sales Operations support",
+            "Finance modeling expertise"
+          ],
+          "success_metric": "Number of qualified leads accepting a retainer model contract.",
+          "milestones": [
+            "Finalized pricing and scope for 3 core product offerings (Q2).",
+            "Training the sales team on the new value proposition and pipeline creation (Q3).",
+            "Secure first pilot client using the productized offering."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the governance body responsible for cross-departmental process standardization and resource allocation (addressing structural inertia).",
+        "owner": "Executive Leadership/COO",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Mandate the creation of a centralized 'Proposal Library' by synthesizing successful past engagement insights into reusable content blocks.",
+        "owner": "R&D Department Lead/Innovation Team",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Conduct a deep dive competitive analysis on firms successfully transitioning from project-based to subscription/recurring revenue models in professional services.",
+        "owner": "Business Development/Strategy Team",
+        "timeframe": "Next 45 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia and complex governance layers slow down structural change adoption.",
+      "Lack of institutionalized process for capturing and monetizing knowledge gained during engagements (Knowledge Loss Risk).",
+      "Current revenue model is overly dependent on bespoke, high-effort, project-based consulting rather than scalable recurring streams."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully established 5 strategic partnerships, broadening market reach and credibility.",
+        "Increased digital maturity from Level 2 to 3 through internal tooling investment and exploration of AI/ML capabilities.",
+        "Clearer definition of ambitious growth targets (€50M ARR) providing focused direction for the organization."
+      ],
+      "persistent_gaps": [
+        "The underlying process remains 'informal,' risking knowledge loss when key personnel depart (evidenced by abandoned dashboard).",
+        "Governance and stakeholder alignment across divisions remain complex, requiring persistent senior sponsorship to break down silos.",
+        "No formal mechanism for capturing customer feedback or operationalizing lessons learned into standardized product offerings."
+      ],
+      "achieved_milestones": [
+        "Securing significant top-line revenue growth (15% YoY) validating market demand and strategic focus.",
+        "Formal commitment to expanding the addressable market through new partnerships."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Demonstrated significant momentum (partnerships, revenue growth) and increased digital capability (L2 -> L3). The focus has sharpened on concrete, scalable growth levers necessary to hit the €50M ARR target, moving from general improvement efforts to specific structural recommendations."
+    }
+  }
+}

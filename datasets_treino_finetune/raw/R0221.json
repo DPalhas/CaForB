@@ -1,0 +1,198 @@
+{
+  "id": "R0221",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0387",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:56:44.764140+00:00",
+    "duration_ms": 48067,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Forge Digital",
+      "sector": "Mining & Extraction",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "6 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 16,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0387",
+      "fields": {
+        "companyName": "Forge Digital",
+        "sector": "Mining & Extraction",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 11,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 3 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O_2024_DIGI_INTEG",
+        "type": "incremental",
+        "title": "Full Fleet Digital Integration & Predictive Maintenance Maturity",
+        "rationale": "The initial IoT rollout achieved a measurable 15% reduction in downtime, proving the concept. The next phase must transition from mere data collection (monitoring) to actionable business intelligence and full integration with legacy ERP/CMMS systems for automated work order generation.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis between IoT data streams and current maintenance system APIs.",
+            "Design and prototype automated trigger workflows (e.g., 'Failure predicted > 7 days' automatically creates a high-priority work order).",
+            "Develop standardized operational protocols for field technicians using integrated mobile platforms."
+          ],
+          "resources_needed": [
+            "External systems integration consultant",
+            "Dedicated IT resource for API development",
+            "Field operations team time"
+          ],
+          "success_metric": "Reduction in manual work order generation time by 80% and increased utilization of predictive insights.",
+          "milestones": [
+            "API connection established between IoT platform and CMMS within Q3.",
+            "Pilot run of automated workflow on one equipment class (e.g., crushers).",
+            "Full adoption rate of digital work order process across all sites."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O_LIT_DATA_FLOW",
+        "type": "radical",
+        "title": "Standardized, AI-Enhanced Workflow for Core Sample Data Analysis",
+        "rationale": "To achieve the 20% throughput goal and capitalize on new spectrometry/AI technology, the company needs a structured, digitized process flow. This involves standardizing data input from multiple sources (physical samples, lab analysis, geological reports) into a central platform that AI can interpret for predictive mineral identification.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the end-to-end sample processing journey, identifying all manual handoffs and decision points.",
+            "Select pilot software solution for specialized spectrometry data ingestion (AI component).",
+            "Establish a formalized Data Governance framework defining ownership and quality standards for mineralogical data."
+          ],
+          "resources_needed": [
+            "Data Scientist/AI consultant",
+            "Geological SME time (for validation)",
+            "Cloud computing resources"
+          ],
+          "success_metric": "Reduction in sample-to-report cycle time by 30% and quantifiable increase in successful AI predictive identification accuracy.",
+          "milestones": [
+            "Completion of the standardized data workflow map.",
+            "Successful ingestion and initial model training using historical sample data (Pilot phase).",
+            "Formalized training for lab personnel on new digital tools."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Conduct a comprehensive data architecture review spanning the IoT platform, CMMS, and core LIMS/Spectrometry tools to identify necessary middleware/API development.",
+        "owner": "Senior Leaders (IT Focus)",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "NS2",
+        "action": "Facilitate cross-functional workshops with Operations and Geological teams to formally standardize key processes, particularly data handoffs and decision gates.",
+        "owner": "Operations Manager/Consultant",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "NS3",
+        "action": "Develop a structured training curriculum focused on digital tools and new protocols for both field staff (IoT usage) and technical staff (new data standards).",
+        "owner": "HR/Training Lead",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "The organizational structure is still heavily dependent on informal, founder-level decision-making despite the hiring of senior staff.",
+      "Lack of specialized in-house expertise to manage and evaluate complex AI/Spectrometry technology investments independently.",
+      "Significant bottlenecks exist in integrating newly installed digital assets (IoT) with decades-old legacy operational systems."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful transition toward professional management with formalized strategic planning.",
+        "Tangible proof of concept for digitization and efficiency gains through the IoT pilot (15% downtime reduction).",
+        "Increased budget allocation/commitment to digital transformation (16%)."
+      ],
+      "persistent_gaps": [
+        "System integration complexity remains high, requiring significant custom development effort.",
+        "The underlying core business processes lack formal standardization across all operational areas.",
+        "Decision-making authority needs to transition from owner-alone to a structured committee model to support growth."
+      ],
+      "achieved_milestones": [
+        "Successful deployment and data collection validation on 40% of the production fleet.",
+        "Formal approval secured for full fleet digital rollout, providing necessary business justification."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant organizational maturation (founder-led to professional management) and strong commercial success in the IoT pilot have been achieved. The focus has shifted from merely identifying opportunities to executing complex system integration and process standardization."
+    }
+  }
+}

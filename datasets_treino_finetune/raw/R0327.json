@@ -1,0 +1,200 @@
+{
+  "id": "R0327",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0219",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:54:27.021376+00:00",
+    "duration_ms": 45179,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Beacon Consulting",
+      "sector": "Education",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Higher education institution with 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. Developing hybrid learning capabilities and micro-credential programs for executive education. Key challenge is student retention analytics and personalized learning pathway design. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 17,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0219",
+      "fields": {
+        "companyName": "Beacon Consulting",
+        "sector": "Education",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Higher education institution with 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. Developing hybrid learning capabilities and micro-credential programs for executive education. Key challenge is student retention analytics and personalized learning pathway design. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 17,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 4 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "superseded",
+      "opp_4": "completed",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": -0.5,
+    "score_change": "declined",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "radical",
+        "title": "Establish a Diversified Product Ecosystem and Client Portfolio",
+        "rationale": "The current heavy reliance on the top three clients poses an unacceptable systemic risk. This opportunity requires moving beyond incremental product tweaks to developing entirely new service lines or market verticals that decouple revenue from existing client concentration.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a deep analysis of non-core educational needs (e.g., corporate training, advanced professional certifications) for potential adjacent markets.",
+            "Develop 2-3 Minimum Viable Product (MVP) concepts targeting new customer segments identified during the gap analysis.",
+            "Create a dedicated business case demonstrating viable exit strategies or partnership models to de-risk core client reliance."
+          ],
+          "resources_needed": [
+            "Dedicated market research budget (outside of founder time)",
+            "Cross-functional team involvement (sales, curriculum design)",
+            "Executive sponsorship for strategic pivot decision-making"
+          ],
+          "success_metric": "Revenue contribution from the top 5 clients growing by an average of 15% year-over-year.",
+          "milestones": [
+            "Completion of market segmentation analysis (Q3)",
+            "Pilot launch of first non-core offering with a new client group (Q4)",
+            "Securing initial funding/resource allocation for two fully defined product lines by the next assessment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5",
+        "type": "radical",
+        "title": "Formalize and Scale Operational Bandwidth Beyond the Founder",
+        "rationale": "The entire innovation capacity is currently limited to the founder's personal time, creating a critical single point of failure. Scaling requires establishing formal engineering/program management roles and processes that allow for concurrent project execution.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear process documentation (SOPs) for core technical functions currently handled solely by the founder.",
+            "Develop a structured hiring plan focusing on non-executive technical leads or program managers who can take ownership of specific product lines.",
+            "Implement departmental OKRs that reward shared knowledge and cross-training, reducing reliance on any single individual."
+          ],
+          "resources_needed": [
+            "HR/Recruiting support",
+            "Process mapping tools (e.g., Miro, dedicated documentation wiki)",
+            "Foundational training budget for new hires"
+          ],
+          "success_metric": "Reduction in founder involvement time on technical execution by 30% within six months.",
+          "milestones": [
+            "Documentation of the top three most complex operational workflows (Q2)",
+            "Successful onboarding and independent contribution from at least two new technical team members (Q3)",
+            "Formal handover of decision-making power for specific product SKUs to non-founder leads."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Hold a dedicated resource capacity workshop to map all current tasks and identify bottlenecks that prevent the founder from delegating.",
+        "owner": "Founder & Management Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Draft a formal organizational chart defining roles for 3-5 key technical and operational positions needed to support diversification efforts.",
+        "owner": "Founder & HR Consultant (if possible)",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Initiate a formal review of the current 'structured stage-gate process' to ensure it can accommodate non-core, high-risk diversification initiatives.",
+        "owner": "Innovation Lead / Consultant",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Critical dependence on the founder for all strategic and technical decision-making (bottleneck risk).",
+      "Extreme revenue concentration risk linked to a limited client base.",
+      "Lack of formal, scaled operational workflows means success depends heavily on individual memory and effort."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation of new standard procedures following regulatory reviews.",
+        "Team morale is reported as improving.",
+        "Existing innovation engine (AI-powered recommendation engine) has proven ability to scale revenue contribution."
+      ],
+      "persistent_gaps": [
+        "Structural inability to scale technical and strategic bandwidth due to founder dependency.",
+        "Lack of formalized risk mitigation strategies for the top 3 clients/product lines.",
+        "The core business model remains tied to single-source customer segments, hindering diversification."
+      ],
+      "achieved_milestones": [
+        "Successful development and launch of a new AI-powered SKU.",
+        "Formalization of process improvements in response to regulatory changes (4 new procedures)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Regulatory compliance increased procedural rigor; however, significant internal contradictions between stated process maturity and actual founder bandwidth severely limited potential for scale."
+    }
+  }
+}

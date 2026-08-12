@@ -1,0 +1,201 @@
+{
+  "id": "R0291",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0042",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:15:47.470247+00:00",
+    "duration_ms": 42444,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Atlas Dynamics",
+      "sector": "Education",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "5 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0042",
+      "fields": {
+        "companyName": "Atlas Dynamics",
+        "sector": "Education",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "4",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 8,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 8 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "OP_A",
+        "type": "incremental",
+        "title": "Back-Office Process Automation & Digital Workflow Mapping",
+        "rationale": "The strategic goal of reducing OpEx by 15% directly points to automating manual workflows in finance, order processing, and customer support. Initial progress with inventory digitalization proves the organization's capacity for digital process improvement. This opportunity focuses on systematically mapping and automating identified 'waste' areas.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional Process Excellence Team (Finance, Operations, IT) responsible for workflow documentation.",
+            "Conduct deep dive workshops with end-users in invoicing/order processing to identify pain points and process handoffs.",
+            "Pilot RPA (Robotic Process Automation) on the single highest volume manual task (e.g., invoice reconciliation).",
+            "Establish clear KPI owners for automated processes."
+          ],
+          "resources_needed": [
+            "Process Mapping/BPM Software License",
+            "Dedicated IT Analyst Time",
+            "Subject Matter Experts (SMEs) from Finance/Operations"
+          ],
+          "success_metric": "Reduction in man-hours required per invoice cycle by 40%.",
+          "milestones": [
+            "Completed process map for Order-to-Cash cycle.",
+            "Successful RPA pilot deployment on reconciliation task.",
+            "Executive sign-off on standardized digital workflow."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "OP_A",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "OP_B",
+        "type": "incremental",
+        "title": "AI-Powered Adaptive Learning Pathway Recommendation Engine",
+        "rationale": "Leveraging the existing interest in adaptive learning and AI analytics, this opportunity moves beyond simple reporting to proactive intervention. By integrating student progress data (grades, time spent on modules) with historical performance patterns, the system can recommend individualized resource pathways for teachers or students.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the scope: Start by modeling early intervention risk detection using current data sets only.",
+            "Collaborate with curriculum designers to define 'optimal' learning paths based on outcomes, not just content completion.",
+            "Run a proof-of-concept (POC) model using anonymized student data and existing LMS APIs.",
+            "Identify key data gaps necessary for predictive modeling."
+          ],
+          "resources_needed": [
+            "Data Scientist/AI Consultant",
+            "LMS System Access & API Keys",
+            "Curriculum SME Oversight"
+          ],
+          "success_metric": "Increase in early intervention identification rate (measured by timely alerts) by 25%.",
+          "milestones": [
+            "Baseline model established and validated against historical 'at-risk' cohorts.",
+            "Successful integration of the recommendation engine into a test cohort area.",
+            "Training program developed for educators to interpret AI insights."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS_1",
+        "action": "Establish the Process Excellence Team (PET) and secure executive sponsorship for its mandate.",
+        "owner": "COO/Executive Leadership",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "NS_2",
+        "action": "Conduct a detailed process audit workshop focusing on the top three manual workflows (Invoicing, Order Fulfillment, Student Intake) to gather scope for OP_A.",
+        "owner": "Process Improvement Leads/Department Heads",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "NS_3",
+        "action": "Define and secure access to clean, centralized student data sets required for the AI model POC (OP_B).",
+        "owner": "IT Director/Data Stewards",
+        "timeframe": "Next 45 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Deep-seated reliance on manual, spreadsheet-based workflows that create points of failure and waste.",
+      "Lack of formalized process ownership outside of immediate departmental heads (process gaps).",
+      "Strategic friction between operational efficiency mandates and the time required for exploratory innovation."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful launch of inventory digitalization, reducing reliance on manual tracking in supply chain.",
+        "High utilization of existing formal structures (hackathons/fellows) demonstrates a proactive internal culture toward problem-solving.",
+        "Increased budget allocation percentage (13%) suggests enhanced commitment to growth and technology."
+      ],
+      "persistent_gaps": [
+        "The systemic cultural inertia preventing end-to-end adoption of automated processes remains the biggest barrier.",
+        "Scope creep risk in process mapping due to resistance or inability to define single, standardized workflows across departments.",
+        "Lack of defined 'Process Owner' accountable for maintaining and optimizing digitized workflows post-implementation."
+      ],
+      "achieved_milestones": [
+        "Inventory tracking is now digitally integrated into core systems.",
+        "The company successfully executed a hackathon producing a deployed, value-generating prototype (computer vision inspection)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The organization showed tangible progress in core operations (inventory digitalization) and increased its budget commitment percentage. The focus has sharpened from general innovation exploration to concrete efficiency gains through automation, suggesting a greater readiness to tackle internal process friction."
+    }
+  }
+}

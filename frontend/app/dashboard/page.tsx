@@ -3,13 +3,17 @@
 import { useQuery } from "@apollo/client/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { MY_INSIGHTS } from "@/lib/graphql/queries";
+import { MY_COMPANIES } from "@/lib/graphql/queries";
 import { useAuth } from "@/lib/auth-context";
 import NavHeader from "@/components/NavHeader";
+import PageBackground from "@/components/PageBackground";
 import {
   ChevronRight,
   Plus,
   TrendingUp,
+  ArrowUpRight,
+  ArrowDownRight,
+  Minus,
   AlertCircle,
   Loader2,
   Building2,
@@ -48,17 +52,13 @@ function formatDate(iso: string): string {
 export default function DashboardPage() {
   const router = useRouter();
   const { loading: authLoading } = useAuth();
-  const { data, loading, error } = useQuery(MY_INSIGHTS);
+  const { data, loading, error } = useQuery(MY_COMPANIES);
 
-  const assessments = (data as any)?.myInsights ?? [];
+  const companies = (data as any)?.myCompanies ?? [];
 
   return (
     <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col selection:bg-amber-500 selection:text-white">
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -right-40 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 left-1/3 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl" />
-      </div>
+      <PageBackground variant="default" />
 
       <NavHeader />
 
@@ -66,9 +66,9 @@ export default function DashboardPage() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-3xl font-bold text-white">My Assessments</h1>
+              <h1 className="text-3xl font-bold text-white">Companies</h1>
               <p className="text-sm text-stone-400 mt-1">
-                Your corporate innovation assessment history
+                Your corporate innovation assessment history, grouped by company
               </p>
             </div>
             <Link
@@ -83,23 +83,23 @@ export default function DashboardPage() {
           {loading && (
             <div className="flex flex-col items-center justify-center py-20 gap-3">
               <Loader2 className="w-8 h-8 animate-spin text-amber-400" />
-              <p className="text-sm text-stone-400">Loading assessments...</p>
+              <p className="text-sm text-stone-400">Loading companies...</p>
             </div>
           )}
 
           {error && (
             <div className="flex items-center gap-3 text-sm text-rose-300 bg-rose-950/40 border border-rose-800/60 rounded-xl p-5">
               <AlertCircle className="w-5 h-5 flex-shrink-0 text-rose-400" />
-              <span>Failed to load assessments. Please try again.</span>
+              <span>Failed to load companies. Please try again.</span>
             </div>
           )}
 
-          {!loading && !error && assessments.length === 0 && (
+          {!loading && !error && companies.length === 0 && (
             <div className="flex flex-col items-center justify-center py-20 gap-4 text-center">
               <div className="w-16 h-16 rounded-2xl bg-stone-900 border border-stone-800 flex items-center justify-center">
                 <TrendingUp className="w-7 h-7 text-amber-400" />
               </div>
-              <h2 className="text-xl font-bold text-white">No assessments yet</h2>
+              <h2 className="text-xl font-bold text-white">No companies yet</h2>
               <p className="text-sm text-stone-400 max-w-sm">
                 Run your first corporate innovation assessment to receive an
                 AI-powered strategic roadmap.
@@ -113,41 +113,50 @@ export default function DashboardPage() {
             </div>
           )}
 
-          {!loading && !error && assessments.length > 0 && (
-            <div className="flex flex-col gap-3">
-              {assessments.map((a: any) => (
+          {!loading && !error && companies.length > 0 && (
+            <div className="flex flex-col gap-4">
+              {companies.map((c: any) => (
                 <button
-                  key={a.id}
-                  onClick={() => router.push(`/results/${a.id}`)}
+                  key={c.id}
+                  onClick={() => router.push(`/company/${c.id}`)}
                   className="w-full text-left p-5 rounded-2xl bg-stone-900/60 border border-stone-800/80 hover:border-amber-500/50 transition-all group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-stone-950 border border-stone-800 flex items-center justify-center flex-shrink-0">
-                      <Building2 className="w-5 h-5 text-amber-400" />
+                    <div className="w-12 h-12 rounded-xl bg-stone-950 border border-stone-800 flex items-center justify-center flex-shrink-0">
+                      <Building2 className="w-6 h-6 text-amber-400" />
                     </div>
 
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base font-semibold text-white truncate group-hover:text-amber-300 transition">
-                        {a.companyName}
+                        {c.name}
                       </h3>
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="text-xs text-stone-500">{a.sector}</span>
-                        <span className="flex items-center gap-1 text-xs text-stone-600">
+                        <span className="text-xs text-stone-500">{c.sector}</span>
+                        <span className="text-xs text-stone-600 flex items-center gap-1">
                           <Calendar className="w-3 h-3" />
-                          {formatDate(a.submittedAt)}
+                          {formatDate(c.createdAt)}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3 mt-2">
+                        <span className="text-xs text-stone-500">
+                          {c.assessmentCount} assessment{c.assessmentCount !== 1 ? "s" : ""}
                         </span>
                       </div>
                     </div>
 
-                    <div
-                      className={`flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-semibold ${scoreBg(a.innovationScore)} ${scoreColor(a.innovationScore)}`}
-                    >
-                      <span>{scoreLabel(a.innovationScore)}</span>
-                      <span className="font-mono">
-                        {a.innovationScore !== null
-                          ? a.innovationScore.toFixed(1)
-                          : "—"}
-                      </span>
+                    <div className="text-right flex flex-col items-end gap-1">
+                      <div
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold ${scoreBg(c.latestScore)} ${scoreColor(c.latestScore)}`}
+                      >
+                        {c.latestScore !== null ? (
+                          <>
+                            <span>{scoreLabel(c.latestScore)}</span>
+                            <span className="font-mono">{c.latestScore.toFixed(1)}</span>
+                          </>
+                        ) : (
+                          <span>No assessments</span>
+                        )}
+                      </div>
                     </div>
 
                     <ChevronRight className="w-5 h-5 text-stone-600 group-hover:text-amber-400 transition flex-shrink-0" />

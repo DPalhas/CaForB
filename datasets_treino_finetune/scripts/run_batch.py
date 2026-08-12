@@ -22,7 +22,11 @@ from pathlib import Path
 
 # Import directly from generate_one — no subprocess overhead
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from generate_one import generate_one, load_survey, OUTPUT_DIR, INPUT_PATH
+from generate_one import (
+    generate_one, generate_reassessment_one,
+    load_survey, load_reassessment_survey,
+    OUTPUT_DIR, INPUT_PATH, REASSESS_INPUT_PATH,
+)
 
 
 def count_existing(indices: list[int]) -> int:
@@ -45,15 +49,36 @@ def find_missing_indices(total: int = 504) -> list[int]:
     return missing
 
 
+def count_reassessment_existing(indices: list[int]) -> int:
+    count = 0
+    for i in indices:
+        survey = load_reassessment_survey(i)
+        out_path = OUTPUT_DIR / f"{survey['reassess_id']}.json"
+        if out_path.exists():
+            count += 1
+    return count
+
+
+def find_reassessment_missing(total: int) -> list[int]:
+    missing = []
+    for i in range(total):
+        survey = load_reassessment_survey(i)
+        out_path = OUTPUT_DIR / f"{survey['reassess_id']}.json"
+        if not out_path.exists():
+            missing.append(i)
+    return missing
+
+
 def run_batch(
     indices: list[int],
     model: str,
     gpu_layers: int,
     num_predict: int,
     max_retries: int,
+    reassessment: bool = False,
 ) -> dict:
     total = len(indices)
-    already = count_existing(indices)
+    already = count_reassessment_existing(indices) if reassessment else count_existing(indices)
     todo = total - already
 
     if already:
@@ -70,27 +95,36 @@ def run_batch(
     start_time = time.time()
 
     for seq, i in enumerate(indices, 1):
-        survey = load_survey(i)
-        ex_id = survey["id"]
-        out_path = OUTPUT_DIR / f"{ex_id}.json"
+        if reassessment:
+            survey = load_reassessment_survey(i)
+            ex_id = survey["reassess_id"]
+        else:
+            survey = load_survey(i)
+            ex_id = survey["id"]
 
+        out_path = OUTPUT_DIR / f"{ex_id}.json"
         if out_path.exists():
             continue
 
-        combo = survey["combo_id"]
         elapsed = time.time() - start_time
         rate_ok = results["success"] / elapsed * 60 if elapsed > 0 and results["success"] > 0 else 0
         remaining = todo - results["success"] - results["fail"]
         eta = remaining / max(rate_ok, 0.1) if rate_ok > 0 else 0
 
+        combo = survey.get("combo_id", "?")
+        base_id = survey.get("base_id", "") if reassessment else ""
+        extra = f"(base: {base_id})" if base_id else ""
         print(
-            f"  [{seq}/{total}] {ex_id}  {combo}  "
+            f"  [{seq}/{total}] {ex_id}  {extra} {combo}  "
             f"OK:{results['success']:>3}  FAIL:{results['fail']:>2}  "
             f"ETA:{eta:>4.0f}m",
             flush=True,
         )
 
-        result_id = generate_one(i, model, gpu_layers, num_predict, max_retries)
+        if reassessment:
+            result_id = generate_reassessment_one(i, model, gpu_layers, num_predict, max_retries)
+        else:
+            result_id = generate_one(i, model, gpu_layers, num_predict, max_retries)
 
         if result_id:
             results["success"] += 1
@@ -99,7 +133,7 @@ def run_batch(
         else:
             results["fail"] += 1
 
-        print()  # newline after generate_one's output
+        print()
 
     elapsed = time.time() - start_time
     rate = results["success"] / elapsed * 60 if elapsed > 0 else 0
@@ -126,19 +160,24 @@ def main():
     parser.add_argument("--retries", type=int, default=5, help="Max retry attempts")
     parser.add_argument("--dry-run", action="store_true", help="Preview only, don't generate")
     parser.add_argument("--retry-failed", action="store_true", help="Retry all missing indices")
+    parser.add_argument("--reassessment", action="store_true", help="Generate reassessment examples")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    with open(INPUT_PATH, "r", encoding="utf-8") as f:
+    input_path = REASSESS_INPUT_PATH if args.reassessment else INPUT_PATH
+    with open(input_path, "r", encoding="utf-8") as f:
         import json
         data = json.load(f)
     total_available = len(data)
 
     if args.retry_failed:
-        indices = find_missing_indices(total_available)
+        if args.reassessment:
+            indices = find_reassessment_missing(total_available)
+        else:
+            indices = find_missing_indices(total_available)
         if not indices:
-            print("All 504 examples present. Nothing to retry.")
+            print(f"All {total_available} examples present. Nothing to retry.")
             return
         print(f"Retry mode: {len(indices)} missing example(s)")
     elif args.start > args.end:
@@ -147,22 +186,23 @@ def main():
     else:
         indices = list(range(args.start, min(args.end, total_available - 1) + 1))
 
+    mode = "reassessment" if args.reassessment else "first-assessment"
     if args.dry_run:
-        existing = count_existing(indices)
+        existing = count_reassessment_existing(indices) if args.reassessment else count_existing(indices)
         todo = len(indices) - existing
-        print(f"Dry run: {len(indices)} total, {existing} exist, {todo} would be generated")
+        print(f"Dry run ({mode}): {len(indices)} total, {existing} exist, {todo} would be generated")
         return
 
     if args.retry_failed and len(indices) <= 10:
         print(f"\nMissing indices: {indices}\n")
 
-    print(f"Model: {args.model}")
+    print(f"Model: {args.model}  |  Mode: {mode}")
     print(f"Device: {'GPU' if args.gpu_layers != 0 else 'CPU'}")
     print(f"Tokens: {args.num_predict}  |  Max retries: {args.retries}")
     print(f"Indices: {args.start}–{min(args.end, total_available - 1)} ({len(indices)} examples)")
     print()
 
-    run_batch(indices, args.model, args.gpu_layers, args.num_predict, args.retries)
+    run_batch(indices, args.model, args.gpu_layers, args.num_predict, args.retries, args.reassessment)
 
 
 if __name__ == "__main__":

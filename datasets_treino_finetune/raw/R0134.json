@@ -1,0 +1,202 @@
+{
+  "id": "R0134",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0414",
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:59:59.951619+00:00",
+    "duration_ms": 55509,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Cipher Partners",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Organic vineyard and winery producing 60,000 bottles per year. Direct-to-consumer sales through wine clubs account for 45% of revenue. Seeking to modernize fermentation monitoring and explore biodynamic certification. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 16,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0414",
+      "fields": {
+        "companyName": "Cipher Partners",
+        "sector": "Agriculture, Forestry & Fishing",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Organic vineyard and winery producing 60,000 bottles per year. Direct-to-consumer sales through wine clubs account for 45% of revenue. Seeking to modernize fermentation monitoring and explore biodynamic certification. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 11,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 2 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "superseded",
+      "step_1": "not_done",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Customer Data Platform (CDP) Implementation and CX Journey Mapping",
+        "rationale": "The failure of the self-service portal indicated a lack of foundational understanding, not technical capability. To defend market share, Cipher must shift focus from building features to gathering robust customer data across all touchpoints. A CDP will unify this view, allowing targeted digital improvements that increase switching costs and reduce churn.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current end-to-end wine club/customer lifecycle journey (digital and physical).",
+            "Identify key data silos (POS, Wine Club CRM, Website) required for customer view unification.",
+            "Define baseline KPIs for churn reduction attributable to digital engagement.",
+            "Pilot basic integration of existing systems into a centralized data repository."
+          ],
+          "resources_needed": [
+            "Marketing/Sales Data Lead",
+            "Basic CDP tool license (or equivalent database structure)",
+            "10-20 hours dedicated Developer time per month"
+          ],
+          "success_metric": "Reduction in high-value customer churn rate by 5% within 12 months.",
+          "milestones": [
+            "Complete detailed journey map and data gap analysis (Month 3).",
+            "Establish initial unified customer view prototype (Month 6).",
+            "Implement first targeted digital intervention based on insights (Month 12)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium Term",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Establish Protected Innovation Capacity and Process",
+        "rationale": "The current reliance on 'spare cycles' is unsustainable for a market leader facing structured competition. The winery needs to formalize protected time (e.g., 10% developer capacity) dedicated solely to innovation sprints, insulated from urgent operational demands. This requires owner buy-in and cultural change.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement a lightweight 'Innovation Charter' defining scope, goals, and success metrics for R&D time.",
+            "Establish a quarterly internal hackathon/sprint focused on solving top 3 customer friction points identified via the CDP (opp_1).",
+            "Assign a designated operational manager to shield developer time from non-critical urgent requests."
+          ],
+          "resources_needed": [
+            "Owner/Leadership Sponsor Time",
+            "Operational Manager accountability",
+            "Small allocated budget for proof-of-concept tools"
+          ],
+          "success_metric": "Successful completion and demonstrable value of at least two 'protected' prototypes per quarter.",
+          "milestones": [
+            "Innovation Charter signed and communicated across the team (Month 1).",
+            "First successful quarterly innovation sprint completed (Month 3)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Short Term",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Lead a workshop with key stakeholders (Sales/Marketing/Operations) to formally map the complete customer journey and define data ownership for CDP integration.",
+        "owner": "Owner / Marketing Lead",
+        "timeframe": "Next 4 Weeks"
+      },
+      {
+        "id": "step_2",
+        "action": "Draft a formal 'Innovation Charter' defining the protected percentage of developer time and mandatory quarterly review process.",
+        "owner": "Owner / Leadership Team",
+        "timeframe": "Next 6 Weeks"
+      },
+      {
+        "id": "step_3",
+        "action": "Audit existing core systems (CRM, POS) against competitor digital features to quantify immediate technological gaps that impact customer experience.",
+        "owner": "Generalist Developers / IT Point Person",
+        "timeframe": "Next 8 Weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of structured process for translating competitive threats into prioritized, executable innovation backlogs.",
+      "Insufficient capacity protection: Innovation efforts are perpetually reactive and competing with urgent day-to-day operational needs.",
+      "Over-reliance on the Owner's bandwidth for setting strategic direction and removing organizational roadblocks."
+    ],
+    "progress": {
+      "improvements": [
+        "Implementation of new standard procedures following regulatory changes (showing improved adherence).",
+        "Improved team morale contributing to greater willingness to participate in process improvements.",
+        "Increased available budget percentage (from 11% to 16%) providing more resources for initiatives."
+      ],
+      "persistent_gaps": [
+        "The core structural weakness remains the lack of dedicated, protected time and formalized roles for innovation/R&D.",
+        "Failure to transition from MVP building to deep customer insight gathering (evidenced by self-service portal failure).",
+        "Decision making is still heavily reliant on the owner alone, slowing down iterative experimentation."
+      ],
+      "achieved_milestones": [
+        "Completion of previous recommendation 'opp_2' confirms ability to execute a defined project scope.",
+        "In-progress work on 'step_2' shows commitment to process improvement and internal resource management."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company successfully implemented standard procedures due to regulatory changes and increased its allocated budget percentage (from 11% to 16%). The focus has shifted from basic capacity building to strategic market defense against well-funded competitors by prioritizing customer experience over feature parity."
+    }
+  }
+}

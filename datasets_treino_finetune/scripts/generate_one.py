@@ -26,6 +26,7 @@ import ollama
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_PATH = BASE_DIR / "raw_inputs.json"
+REASSESS_INPUT_PATH = BASE_DIR / "raw_inputs_reassessment.json"
 OUTPUT_DIR = BASE_DIR / "raw"
 
 # ──────────────────────────────────────────────────────────────────────
@@ -376,25 +377,316 @@ def generate_one(
 
 
 # ──────────────────────────────────────────────────────────────────────
+# Reassessment generation
+# ──────────────────────────────────────────────────────────────────────
+
+SYSTEM_PROMPT_REASSESSMENT = """You are a data generator for fine-tuning a corporate innovation reassessment AI.
+
+You will receive a prior assessment summary, a description of changes since that assessment,
+progress on previous recommendations, and an updated corporate survey.
+Your job: generate a complete REASSESSMENT analysis with delta tracking, carry-forward of
+previous opportunities, progress report, and comparison to the prior assessment.
+
+RULES:
+- Generate 1-2 opportunities with carry_forward tracking
+- 2-3 next_steps, 2-3 key_weaknesses
+- Score delta must match maturity_score change vs previous_score
+- Conservative risk = all incremental; Bold = at least one radical
+- High regulation = compliance steps in first_actions
+- RESPOND WITH ONLY THE RAW JSON. No markdown. No explanation. No backticks."""
+
+
+_REASSESSMENT_OUTPUT_TEMPLATE = """{
+  "maturity_score": <float 0-10>,
+  "score_delta": <float>,
+  "score_change": "improved|stable|declined",
+  "opportunities": [
+    {
+      "id": "<unique id>",
+      "type": "incremental|radical",
+      "title": "<string>",
+      "rationale": "<2-3 sentences>",
+      "execution_plan": {
+        "first_actions": ["<3-4 steps>"],
+        "resources_needed": ["<2-3 resources>"],
+        "success_metric": "<measurable KPI>",
+        "milestones": ["<2-3 milestones>"]
+      },
+      "impact": "low|medium|high",
+      "difficulty": "low|medium|high",
+      "timeframe": "<string>",
+      "carry_forward_from": "<previous opp id or null>",
+      "carry_forward_status": "continues|evolved_to|retired|new"
+    }
+  ],
+  "next_steps": [
+    {
+      "id": "<unique id>",
+      "action": "<specific action>",
+      "owner": "<role>",
+      "timeframe": "<string>"
+    }
+  ],
+  "key_weaknesses": ["<2-3 items>"],
+  "progress": {
+    "improvements": ["<string>"],
+    "persistent_gaps": ["<string>"],
+    "achieved_milestones": ["<string>"]
+  },
+  "comparison_to_previous": {
+    "previous_score": <float>,
+    "previous_date": "<YYYY-MM-DD or unknown>",
+    "assessment_number": <int>,
+    "key_changes": "<brief summary>"
+  }
+}"""
+
+
+def load_reassessment_survey(index: int) -> dict:
+    with open(REASSESS_INPUT_PATH, "r", encoding="utf-8") as f:
+        all_reassess = json.load(f)
+    if index < 0 or index >= len(all_reassess):
+        raise IndexError(f"Index {index} out of range (0..{len(all_reassess)-1})")
+    return all_reassess[index]
+
+
+def _format_prior_summary(prev: dict) -> str:
+    """Format the previous assessment data into a compact summary block."""
+    pf = prev.get("fields", prev)
+    lines = ["--- PRIOR ASSESSMENT ---"]
+    lines.append(f"Company: {pf.get('companyName', '?')}")
+    lines.append(f"Sector: {pf.get('sector', '?')} | Size: {pf.get('size', '?')}")
+    lines.append(f"Risk: {pf.get('riskAppetite', '?')} | Priority: {pf.get('strategicPriority', '?')}")
+    if pf.get("innovationProcess"):
+        lines.append(f"Innovation maturity: {pf.get('innovationProcess')}")
+    lines.append(f"Regulatory: {pf.get('regulatoryEnvironment', '?')} | Competition: {pf.get('competitivePressure', '?')}")
+    lines.append(f"Digital maturity: {pf.get('digitalMaturity', '?')}")
+    lines.append(f"Budget: {pf.get('budgetPercentage', '?')}% of {pf.get('revenueRange', '?')}")
+    if pf.get("mainBarrier"):
+        lines.append(f"Barriers: {', '.join(pf.get('mainBarrier', []))}")
+    return "\n".join(lines)
+
+
+def build_reassessment_prompt(data: dict, feedback: str = "") -> str:
+    fields = data["fields"]
+    prev = data.get("previous_assessment", {})
+
+    base = (
+        f"Generate a REASSESSMENT training example.\n\n"
+        f"Combo: {data.get('combo_id', '?')}\n\n"
+        f"{_format_prior_summary(prev)}\n\n"
+        f"--- CHANGES SINCE LAST ASSESSMENT ---\n"
+        f"{data.get('changes_since_last', 'N/A')}\n\n"
+        f"--- PROGRESS ON RECOMMENDATIONS ---\n"
+        f"{json.dumps(data.get('recommendation_status', {}), indent=2)}\n\n"
+        f"--- UPDATED SURVEY ---\n"
+    )
+
+    for key, val in fields.items():
+        base += f"  {key}: {json.dumps(val)}\n"
+
+    base += (
+        f"\nConsider the prior assessment context. Determine the updated maturity score, "
+        f"score delta vs the prior score, and carry-forward status for each opportunity. "
+        f"Produce progress, next_steps, weaknesses, and comparison_to_previous.\n"
+    )
+
+    base += f"\nOutput MUST match this JSON structure:\n{_REASSESSMENT_OUTPUT_TEMPLATE}\n"
+
+    if feedback:
+        base += f"\n\nPREVIOUS ATTEMPT FAILED:\n{feedback}\n\nFix ALL violations and regenerate."
+
+    return base
+
+
+def extract_reassessment_json(text: str) -> dict:
+    """Extract JSON without requiring 'company' key (reassessment has different format)."""
+    for attempt in [
+        lambda t: json.loads(t),
+        lambda t: json.loads(re.search(r'\{.*\}', t, re.DOTALL).group()) if re.search(r'\{.*\}', t, re.DOTALL) else {},
+        lambda t: json.loads(re.sub(r'\}\s*$', ']}', t.rstrip())),
+        lambda t: json.loads(re.sub(r'(\s*\]?\s*)\}$', '\n  ]\n}', t.rstrip())),
+    ]:
+        try:
+            result = attempt(text)
+            if result and "maturity_score" in result:
+                return result
+        except (json.JSONDecodeError, AttributeError):
+            continue
+    return {}
+
+
+def generate_reassessment_one(
+    index: int,
+    model: str,
+    gpu_layers: int,
+    num_predict: int = 12288,
+    max_retries: int = 5,
+) -> str | None:
+    survey = load_reassessment_survey(index)
+    reassess_id = survey["reassess_id"]
+    fields = survey["fields"]
+    base_id = survey["base_id"]
+
+    out_path = OUTPUT_DIR / f"{reassess_id}.json"
+    if out_path.exists():
+        print(f"  {reassess_id} already exists, skipping")
+        return None
+
+    print(f"  [{index}] {reassess_id} (base: {base_id})")
+
+    feedback = ""
+    start = time.time()
+
+    for attempt in range(1, max_retries + 1):
+        prompt = build_reassessment_prompt(survey, feedback)
+        response = ollama.chat(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT_REASSESSMENT},
+                {"role": "user", "content": prompt},
+            ],
+            options={
+                "num_predict": num_predict,
+                "num_gpu": gpu_layers,
+                "temperature": 0.8,
+            },
+        )
+        raw_text = response.message.content
+        parsed = extract_reassessment_json(raw_text)
+
+        if not parsed or "maturity_score" not in parsed:
+            feedback = (
+                "ERROR: Output was not valid JSON or missing maturity_score. "
+                "Respond with ONLY the JSON object, no markdown, no backticks."
+            )
+            print(f"    Attempt {attempt}: unparseable JSON")
+            continue
+
+        violations = _validate_reassessment(parsed)
+        if violations:
+            feedback = "VALIDATION ERRORS:\n" + "\n".join(f"  - {v}" for v in violations)
+            feedback += "\n\nFix ALL violations and regenerate."
+            print(f"    Attempt {attempt}: {len(violations)} validation error(s)")
+            for v in violations[:3]:
+                print(f"      - {v}")
+            continue
+
+        duration_ms = int((time.time() - start) * 1000)
+
+        result = {
+            "id": reassess_id,
+            "version": 1,
+            "assessment_type": "reassessment",
+            "base_id": base_id,
+            "split": "train",
+            "metadata": {
+                "sector": fields["sector"],
+                "size": fields["size"],
+                "regulatory_environment": fields["regulatoryEnvironment"],
+                "risk_appetite": fields["riskAppetite"],
+                "strategic_priority": fields["strategicPriority"],
+                "competitive_pressure": fields["competitivePressure"],
+                "assessment_type": "reassessment",
+                "reviewed": False,
+                "source": f"{model}_synthetic",
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "duration_ms": duration_ms,
+                "attempts": attempt,
+            },
+            "instruction": (
+                "You are a strategic corporate innovation advisor conducting a "
+                "reassessment. Analyse the prior assessment summary, changes since "
+                "last assessment, and updated survey, then respond with a complete "
+                "reassessment JSON including score_delta, carry_forward, progress, "
+                "and comparison_to_previous."
+            ),
+            "input": {
+                "company": {
+                    "name": fields.get("companyName", ""),
+                    "sector": fields["sector"],
+                    "size": fields["size"],
+                },
+                "answers": {k: v for k, v in fields.items()
+                           if k not in ("companyName", "sector", "size")},
+                "previous_assessment": survey.get("previous_assessment", {}),
+                "changes_since_last": survey.get("changes_since_last", ""),
+                "recommendation_status": survey.get("recommendation_status", {}),
+            },
+            "output": parsed,
+        }
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+
+        print(f"    OK ({duration_ms}ms, {attempt} attempt(s))")
+        return reassess_id
+
+    print(f"    FAILED after {max_retries} attempts")
+    return None
+
+
+def _validate_reassessment(output: dict) -> list[str]:
+    violations = []
+    if "maturity_score" not in output:
+        violations.append("missing maturity_score")
+    if "opportunities" not in output or not isinstance(output["opportunities"], list):
+        violations.append("missing or invalid opportunities")
+    if "next_steps" not in output:
+        violations.append("missing next_steps")
+    if "key_weaknesses" not in output:
+        violations.append("missing key_weaknesses")
+    if "progress" not in output:
+        violations.append("missing progress")
+    if "comparison_to_previous" not in output:
+        violations.append("missing comparison_to_previous")
+
+    ms = output.get("maturity_score")
+    if ms is not None and (not isinstance(ms, (int, float)) or ms < 0 or ms > 10):
+        violations.append(f"maturity_score out of range: {ms}")
+
+    for opp in output.get("opportunities", []):
+        cfs = opp.get("carry_forward_status")
+        if cfs and cfs not in ("continues", "evolved_to", "retired", "new"):
+            violations.append(f"invalid carry_forward_status: {cfs} in {opp.get('id', '?')}")
+        if opp.get("carry_forward_status") == "new" and opp.get("carry_forward_from"):
+            violations.append(f"new opportunity should not have carry_forward_from: {opp.get('id', '?')}")
+
+    cp = output.get("comparison_to_previous", {})
+    if cp and "previous_score" not in cp:
+        violations.append("comparison_to_previous missing previous_score")
+
+    return violations
+
+
+# ──────────────────────────────────────────────────────────────────────
 # CLI
 # ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(description="One-shot training example generation.")
-    parser.add_argument("index", type=int, help="Index into raw_inputs.json (0-based)")
+    parser.add_argument("index", type=int, help="Index into input JSON (0-based)")
     parser.add_argument("--model", default="gemma4:e2b-it-qat", help="Ollama model name")
     parser.add_argument("--gpu-layers", type=int, default=-1, help="GPU layers (-1=all, 0=CPU)")
     parser.add_argument("--num-predict", type=int, default=12288, help="Max output tokens")
     parser.add_argument("--retries", type=int, default=5, help="Max retry attempts")
+    parser.add_argument("--reassessment", action="store_true", help="Generate reassessment example")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
     print(f"Model: {args.model}")
     print(f"Device: {'GPU' if args.gpu_layers != 0 else 'CPU'}")
     print(f"Max retries: {args.retries}")
+    print(f"Mode: {'reassessment' if args.reassessment else 'first-assessment'}")
 
-    result = generate_one(args.index, args.model, args.gpu_layers, args.num_predict, args.retries)
+    if args.reassessment:
+        result = generate_reassessment_one(
+            args.index, args.model, args.gpu_layers, args.num_predict, args.retries
+        )
+    else:
+        result = generate_one(
+            args.index, args.model, args.gpu_layers, args.num_predict, args.retries
+        )
 
     if result:
         print(f"\nGenerated: raw/{result}.json")

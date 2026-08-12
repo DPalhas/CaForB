@@ -1,0 +1,86 @@
+{
+  "train_count": 733,
+  "validation_count": 184,
+  "train": {
+    "sectors": {
+      "Arts, Entertainment & Media": 32,
+      "E-commerce": 27,
+      "Other": 31,
+      "Professional & Consulting Services": 23,
+      "Agriculture, Forestry & Fishing": 29,
+      "Energy & Utilities": 26,
+      "Real Estate": 26,
+      "Healthcare & Medical": 29,
+      "Insurance": 32,
+      "Fintech": 30,
+      "Telecommunications": 28,
+      "Information Technology": 27,
+      "Nonprofit / NGO": 28,
+      "Construction": 29,
+      "Education": 27,
+      "Hospitality & Tourism": 26,
+      "Public Administration": 30,
+      "Mining & Extraction": 27,
+      "Legal Services": 30,
+      "Manufacturing": 28,
+      "SaaS / Software": 27,
+      "Transportation & Logistics": 28,
+      "Healthtech": 27,
+      "Pharmaceuticals & Biotech": 28,
+      "Retail & Wholesale Trade": 32,
+      "Financial Services": 26
+    },
+    "sizes": {
+      "Medium": 193,
+      "Large": 186,
+      "Small": 176,
+      "Micro": 178
+    },
+    "risks": {
+      "conservative": 241,
+      "balanced": 250,
+      "bold": 242
+    }
+  },
+  "validation": {
+    "sectors": {
+      "Public Administration": 5,
+      "Professional & Consulting Services": 11,
+      "Education": 9,
+      "E-commerce": 9,
+      "Pharmaceuticals & Biotech": 7,
+      "Hospitality & Tourism": 8,
+      "Legal Services": 7,
+      "Transportation & Logistics": 5,
+      "Retail & Wholesale Trade": 3,
+      "Real Estate": 9,
+      "Healthtech": 12,
+      "Agriculture, Forestry & Fishing": 5,
+      "Fintech": 5,
+      "Other": 6,
+      "Mining & Extraction": 9,
+      "Energy & Utilities": 7,
+      "Manufacturing": 8,
+      "Information Technology": 13,
+      "Insurance": 5,
+      "Financial Services": 7,
+      "Arts, Entertainment & Media": 3,
+      "Nonprofit / NGO": 9,
+      "Healthcare & Medical": 5,
+      "Construction": 6,
+      "SaaS / Software": 6,
+      "Telecommunications": 5
+    },
+    "sizes": {
+      "Micro": 50,
+      "Small": 56,
+      "Large": 38,
+      "Medium": 40
+    },
+    "risks": {
+      "conservative": 66,
+      "balanced": 60,
+      "bold": 58
+    }
+  }
+}

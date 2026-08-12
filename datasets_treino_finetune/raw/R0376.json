@@ -1,0 +1,205 @@
+{
+  "id": "R0376",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0374",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:38:09.974427+00:00",
+    "duration_ms": 46728,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Prime Innovations",
+      "sector": "Professional & Consulting Services",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0374",
+      "fields": {
+        "companyName": "Prime Innovations",
+        "sector": "Professional & Consulting Services",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 2 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "superseded",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 0.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_4",
+        "type": "incremental",
+        "title": "Deepen Niche Specialization via Platformization of AI Assets",
+        "rationale": "To counter market consolidation, Prime must build deep switching costs. Leveraging the successful AI recommendation engine to hyper-specialize its application within 1-2 high-margin niches will create a defensible platform offering. This moves the firm beyond general consulting services.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 top-performing, highest-margin niche areas from past engagements.",
+            "Develop detailed product requirements for 'Niche X' modules built on the AI engine.",
+            "Establish a dedicated internal Product Council involving R&D and senior consultants to guide specialization efforts."
+          ],
+          "resources_needed": [
+            "Dedicated 1-2 FTE developer time (ring-fenced from operational sprints)",
+            "Subject Matter Experts (SMEs) in target niches",
+            "Proposal development templates for specialized services"
+          ],
+          "success_metric": "Increase average revenue per client engagement by X% within 12 months due to platform upsell.",
+          "milestones": [
+            "Niche selection and feasibility assessment completed (Q+1)",
+            "MVP prototype for the first niche launched internally (Q+2)",
+            "Pilot sale of specialized service in target niche (Q+3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_5",
+        "type": "incremental",
+        "title": "Standardize Knowledge Capture Post-Merger Integration",
+        "rationale": "The merger and resultant cultural clashes threaten knowledge coherence. Implementing a standardized, mandatory cross-functional review process will harmonize best practices and prevent valuable institutional knowledge from being lost or siloed between legacy teams.",
+        "execution_plan": {
+          "first_actions": [
+            "Draft a 'Knowledge Transfer Protocol' outlining required documentation for key project phases.",
+            "Conduct initial workshops with both legacy and new team members to identify process gaps.",
+            "Implement mandatory knowledge contribution points into the existing stage-gate process."
+          ],
+          "resources_needed": [
+            "Project Management Office (PMO) oversight",
+            "Cross-functional SME time allocation (non-billable)",
+            "Updated internal wiki/knowledge base platform access"
+          ],
+          "success_metric": "Reduction in documented knowledge gaps cited during project handoffs by 30%.",
+          "milestones": [
+            "Protocol drafted and approved by senior leadership.",
+            "Pilot run of the protocol on one active engagement.",
+            "Integration into core operational workflows."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_6",
+        "action": "Formalize cross-departmental roles (RACI matrix) to clarify ownership following the merger integration.",
+        "owner": "CTO / Management Team",
+        "timeframe": "Immediate (Next 4 weeks)"
+      },
+      {
+        "id": "step_7",
+        "action": "Implement a mandatory 'Protected Innovation Block' of 1 day per team member/week, ring-fenced from billable operational demands.",
+        "owner": "Leadership Team",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "step_8",
+        "action": "Host a series of internal 'Niche Deep Dive' sessions, pairing R&D engineers with senior consultants to identify high-value platformization opportunities.",
+        "owner": "R&D Lab / Dedicated SME",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Cultural friction and integration misalignment between merged teams, hindering optimal collaboration.",
+      "Difficulty protecting dedicated time for strategic innovation due to high operational demands and immediate billing pressures.",
+      "Over-reliance on the specialized expertise of senior consultants rather than scalable, standardized platform assets."
+    ],
+    "progress": {
+      "improvements": [
+        "The structured stage-gate process is maturing into a formal asset, evidenced by the successful launch of AI products contributing 18% revenue.",
+        "Execution capabilities were demonstrated with the successful completion and scaling of prior opportunities (Opp_2).",
+        "Management attention has shifted toward leveraging technology for market positioning rather than general service delivery."
+      ],
+      "persistent_gaps": [
+        "The cultural integration and internal process harmonization remain significant soft barriers that require dedicated effort.",
+        "Lack of defined, protected time resources prevents the full realization of larger strategic innovation bets.",
+        "Strategic focus is still heavily tied to existing client needs rather than proactive market creation."
+      ],
+      "achieved_milestones": [
+        "Successful deployment and scaling of AI-powered recommendation engine SKU.",
+        "Completion of defined objectives for prior initiatives (Opp_2).",
+        "Formal establishment of an innovation budget structure (5% revenue equivalent)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has matured its formal innovation processes and successfully monetized new assets (AI engine), significantly increasing operational maturity compared to the prior assessment. However, internal friction (merger/culture) and resource allocation remain primary limiting factors."
+    }
+  }
+}

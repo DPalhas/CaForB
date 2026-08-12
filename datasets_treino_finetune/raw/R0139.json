@@ -1,0 +1,198 @@
+{
+  "id": "R0139",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0275",
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:04:17.404960+00:00",
+    "duration_ms": 53549,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Industries.tech",
+      "sector": "Financial Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Wealth management advisory serving 400+ high-net-worth families with holistic financial planning, tax optimization, and estate structuring. Blending in-person advisory with a client portal for portfolio tracking. Seeking to enhance client reporting with interactive scenario modeling tools. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "9 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0275",
+      "fields": {
+        "companyName": "Quantum Industries.tech",
+        "sector": "Financial Services",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Wealth management advisory serving 400+ high-net-worth families with holistic financial planning, tax optimization, and estate structuring. Blending in-person advisory with a client portal for portfolio tracking. Seeking to enhance client reporting with interactive scenario modeling tools. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "long",
+        "riskAppetite": "balanced",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "completed",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O_A1",
+        "type": "radical",
+        "title": "Establish an Adaptive Innovation Funnel (IIF)",
+        "rationale": "The current formal committee structure is too slow to capitalize on market disruption. We need a dedicated, semi-autonomous innovation team with predefined gates and accelerated funding pathways for high-potential, diversified ventures. This shifts focus from continuous improvement within existing lines of business to structured experimentation in adjacent value spaces.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an 'Innovation Steering Council' (ISC) comprising senior leaders from commercial and technology domains.",
+            "Develop a tiered funding model (e.g., Seed/Proof-of-Concept, Pilot, Scale) with clear exit criteria for the ISC to enforce decision velocity.",
+            "Map current resource bottlenecks against potential cross-functional needs to identify immediate staffing gaps."
+          ],
+          "resources_needed": [
+            "Executive sponsorship from CEO level",
+            "Dedicated Budget Allocation (Innovation War Chest)",
+            "Process mapping tools and SME time"
+          ],
+          "success_metric": "Time elapsed from idea inception to resource allocation approval (target: < 60 days).",
+          "milestones": [
+            "Formal charter agreement for the ISC.",
+            "Successful triage of three external/internal concept pitches through the new funnel.",
+            "Implementation of initial spending gates."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "O_A1_previous",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O_B2",
+        "type": "incremental",
+        "title": "Develop Predictive Client Risk Modeling and Advisory Services",
+        "rationale": "Given the structural decline facing financial services, we must transition from reactive wealth management to predictive advisory. By leveraging existing client data (portfolio, behavioral patterns) and external economic indicators, we can identify potential churn points or emerging needs for adjacent products (e.g., tax-advantaged investments, specialized insurance).",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 core datasets related to client behavior/spending habits that are currently underutilized.",
+            "Pilot a predictive model linking asset allocation shifts to historical high-NPS segments.",
+            "Train advisory staff on interpreting and presenting risk scores, not just recommendations."
+          ],
+          "resources_needed": [
+            "Data Science expertise (internal or contract)",
+            "CRM/Client Data access",
+            "Training budget for client-facing teams"
+          ],
+          "success_metric": "Increase in cross-sell rate of complementary services to high-risk clients by 15% within 12 months.",
+          "milestones": [
+            "MVP model built and validated on historical data.",
+            "Integration into the existing client reporting portal.",
+            "Successful pilot rollout with a dedicated advisory team."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Hold a workshop with executive stakeholders to define the scope and governance structure of the Innovation Steering Council (ISC).",
+        "owner": "COO/Strategic Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "NS2",
+        "action": "Initiate a formal market assessment project to map three adjacent, high-growth sectors that intersect with wealth management (e.g., sustainable finance, fintech infrastructure).",
+        "owner": "Commercial/Business Development",
+        "timeframe": "Q3 Planning Cycle"
+      },
+      {
+        "id": "NS3",
+        "action": "Document and standardize the playbooks from the successful digital onboarding flow to ensure rapid repeatability across all future customer-facing deployments.",
+        "owner": "Technology/Process Owner",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Bureaucratic process bottlenecks inhibit speed of investment, particularly for disruptive ideas.",
+      "The organization remains highly reliant on existing products and client relationships, limiting exploration in truly new markets.",
+      "Lack of a dedicated, semi-autonomous structure to challenge internal assumptions and drive rapid experimentation."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully optimized the digital customer onboarding experience, dramatically improving time-to-service.",
+        "Demonstrated cross-functional capability by successfully launching a digitally transformed process (product, compliance, CS collaboration).",
+        "Established a foundation for data utilization through enhanced client reporting tools."
+      ],
+      "persistent_gaps": [
+        "Governance structure remains the primary inhibitor to rapid funding and initiative approval.",
+        "The strategic shift required to address industry decline needs to transition from conceptual understanding (strategic goals) to tangible execution models.",
+        "Current resources are heavily allocated to optimizing existing processes rather than building new revenue streams."
+      ],
+      "achieved_milestones": [
+        "Successful launch and adoption of the digital client onboarding flow.",
+        "Formal collection of NPS data providing direct quantitative feedback loop from customers."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased digital maturity (3 to 4) and proven ability to execute cross-functional process improvements. However, the increased competitive pressure and acknowledged structural decline mandate a pivot from efficiency gains to radical diversification."
+    }
+  }
+}

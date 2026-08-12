@@ -1,0 +1,203 @@
+{
+  "id": "R0043",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0437",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:21:15.410143+00:00",
+    "duration_ms": 57009,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.952085+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Pulse Digital",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "9 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities — explainability, human oversight, risk classification documentation — into our product roadmap immediately to avoid market access risk when enforcement begins."
+    },
+    "previous_assessment": {
+      "id": "0437",
+      "fields": {
+        "companyName": "Pulse Digital",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 19,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities — explainability, human oversight, risk classification documentation — into our product roadmap immediately to avoid market access risk when enforcement begins."
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 2 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_gvrnance_ai",
+        "type": "radical",
+        "title": "Establish Regulatory Governance and AI Compliance Framework",
+        "rationale": "The upcoming EU AI Act represents a critical market barrier that must be addressed proactively. This opportunity moves beyond simple process improvement to requiring fundamental changes in product design, documentation, and human oversight protocols. Establishing this framework is necessary for scaling into regulated European markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an internal AI Ethics/Compliance task force (cross-functional: legal, engineering, product).",
+            "Conduct a comprehensive 'AI Risk Audit' on all core automated decision points in the current product offering.",
+            "Define and document mandatory explainability (XAI) protocols for high-risk algorithmic output."
+          ],
+          "resources_needed": [
+            "External Regulatory Counsel (specializing in EU Tech Law)",
+            "Dedicated Compliance/Governance Lead",
+            "Time allocation from core engineering team for audit work"
+          ],
+          "success_metric": "Completion and approval of a documented AI Impact Assessment report for 100% of critical product features.",
+          "milestones": [
+            "Task force established (Month 1)",
+            "Initial risk classification complete (Month 2)",
+            "Compliance roadmap integrated into Q3 sprint plan (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_scale_dtc",
+        "type": "incremental",
+        "title": "Build Scalable DTC Operations and Market Entry Model",
+        "rationale": "Entering new geographic markets and launching a direct-to-consumer (DTC) channel requires formalizing operational processes that currently rely on ad-hoc systems. This opportunity focuses on building the scalable back-end capabilities needed to support rapid, high-volume growth without sacrificing margin integrity.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end DTC customer journey (from click to delivery) and identify system integration gaps.",
+            "Select a centralized ERP/OMS layer capable of handling multi-market inventory visibility.",
+            "Develop key performance indicators (KPIs) for CAC and LTV specific to the new DTC channel.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "E-commerce platform expertise",
+            "Finance modeling support for market entry costs",
+            "Supply Chain Operations team time"
+          ],
+          "success_metric": "Pilot launch in one new geographical area with automated inventory and fulfillment processes.",
+          "milestones": [
+            "System requirement gap analysis complete (Month 2)",
+            "Vendor selection/POC for OMS complete (Month 4)",
+            "New market MVP live (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_compliance_training",
+        "action": "Implement mandatory compliance training for all non-technical roles regarding AI Act implications and data handling.",
+        "owner": "HR/Compliance Lead",
+        "timeframe": "Immediate (Q1)"
+      },
+      {
+        "id": "step_process_mapping",
+        "action": "Conduct detailed process mapping workshops involving Marketing, Support, and Engineering to formalize cross-functional handoffs post-agile adoption.",
+        "owner": "COO/Process Owner",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_tech_integration_scoping",
+        "action": "Finalize scoping document for the Enterprise Resource Planning (ERP) layer required to connect existing disparate systems (inventory, POS, e-commerce).",
+        "owner": "CTO/IT Lead",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent system integration across business units, leading to manual workarounds.",
+      "Governance structure is still immature, preventing proactive risk mitigation against complex regulations (e.g., EU AI Act).",
+      "Organizational capability needs to mature from technical process agility (Agile) to holistic organizational governance and scaling processes."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful adoption of Agile methodology, greatly reducing the product release cycle time by 60%.",
+        "Inventory digitalization project is progressing, improving real-time visibility for key product lines.",
+        "Operational maturity has advanced past basic founder-led processes toward structured team execution."
+      ],
+      "persistent_gaps": [
+        "System integration remains ad-hoc; the 'last mile' connectivity between core business systems (POS, inventory, e-commerce) is a major bottleneck.",
+        "Formal governance structures have not yet been built to manage regulatory compliance or complex cross-market scaling risks."
+      ],
+      "achieved_milestones": [
+        "Successful shift from Waterfall to 2-week sprint cycles in engineering.",
+        "Initial visibility into supply chain inventory status achieved for select products."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The company has significantly improved its technical process maturity (Agile adoption, digitalization) and identified a clear strategic growth path (DTC/New Markets). However, the emergent high-stakes regulatory threat (EU AI Act) and inherent governance gaps now pose a more critical risk than previously assessed."
+    }
+  }
+}

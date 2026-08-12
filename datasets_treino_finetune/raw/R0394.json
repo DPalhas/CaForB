@@ -1,0 +1,201 @@
+{
+  "id": "R0394",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0068",
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:54:36.929478+00:00",
+    "duration_ms": 92657,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault",
+      "sector": "SaaS / Software",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "API-first payments infrastructure SaaS providing white-label payment gateway, recurring billing engine, and reconciliation automation for marketplace and subscription businesses. Processing €400M in annual transaction volume across 8 EU countries. Seeking PSD3 compliance preparation and real-time fraud detection enhancements. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "7 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 17,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0068",
+      "fields": {
+        "companyName": "Vault",
+        "sector": "SaaS / Software",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "API-first payments infrastructure SaaS providing white-label payment gateway, recurring billing engine, and reconciliation automation for marketplace and subscription businesses. Processing €400M in annual transaction volume across 8 EU countries. Seeking PSD3 compliance preparation and real-time fraud detection enhancements. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 12,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 2 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Systematic Process Mapping for Margin Recovery",
+        "rationale": "The primary strategic goal is efficiency and cost reduction. This opportunity leverages current digitalization efforts (supply chain, inventory) to systematically map and eliminate bottlenecks across back-office functions like procurement and reconciliation. Success requires moving beyond ad-hoc ideas toward structured process re-engineering.",
+        "execution_plan": {
+          "first_actions": [
+            "Charter a cross-functional Process Improvement Task Force (PITF) with executive sponsorship.",
+            "Conduct deep-dive value stream mapping workshops focusing on the top three cost centers (Procurement, Reconciliation, Fulfillment).",
+            "Identify and prototype 3 key manual handoffs for immediate automation/digitization review."
+          ],
+          "resources_needed": [
+            "Business Process Management (BPM) tooling license.",
+            "Internal Subject Matter Experts (SMEs) from Operations/Finance.",
+            "Dedicated time allocation (20% capacity) from key department leads."
+          ],
+          "success_metric": "Reduction in cycle time for target processes by 15%.",
+          "milestones": [
+            "PITF Charter Approved and staffed.",
+            "Completion of VSM workshops for core processes.",
+            "Selection and pilot launch of first automation prototype."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Compliance and Risk Automation Framework (PSD3 Readiness)",
+        "rationale": "Given the payments infrastructure role and stated goal of PSD3 preparation, formalizing compliance processes is critical. This opportunity integrates regulatory requirements directly into development pipelines, ensuring that new features are compliant by design rather than retrofitted.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated Regulatory Change Management workflow within the CI/CD pipeline.",
+            "Map existing fraud detection rules against anticipated PSD3 SCA requirements.",
+            "Design and implement automated data validation checks for all new transaction flows."
+          ],
+          "resources_needed": [
+            "Dedicated Compliance Officer time (part-time assignment).",
+            "Security Architecture review cycles.",
+            "Updated payment gateway API documentation."
+          ],
+          "success_metric": "Achieving 90% automated adherence checks for core payment processes.",
+          "milestones": [
+            "Gap analysis report detailing PSD3 deficiencies vs current state.",
+            "Proof-of-concept implemented for enhanced real-time fraud scoring.",
+            "Integration of compliance gates into the development roadmap."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the Process Improvement Task Force (PITF) structure and obtain executive mandate/funding.",
+        "owner": "COO/VP of Operations",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Host a structured 'Process Pain Point' workshop, mandatory for key department heads (Finance, Procurement, IT), moving beyond informal brainstorming.",
+        "owner": "Innovation Lead/PMO",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Prioritize and schedule the initial legal/compliance review for the top three identified manual processes.",
+        "owner": "General Counsel/Compliance Lead",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational velocity bottlenecked by slow, siloed internal governance (Procurement, Legal, IT Security).",
+      "Failure to translate valuable ideation sessions into dedicated, funded execution paths.",
+      "Process documentation is reactive and fragmented, inhibiting systematic efficiency gains."
+    ],
+    "progress": {
+      "improvements": [
+        "Inventory digitalization project launched, providing initial data visibility improvements.",
+        "The company has increased its allocated budget percentage from 12% to 17%, demonstrating higher commitment to growth/innovation."
+      ],
+      "persistent_gaps": [
+        "Lack of formalized change management processes that guide ideas through legal and compliance reviews.",
+        "Difficulty in gaining sustained cross-departmental engagement beyond initial project phases.",
+        "The struggle to systematically document 'as-is' state processes before optimizing them."
+      ],
+      "achieved_milestones": [
+        "Initial digitization of supply chain data is underway.",
+        "Operational steps 1 and 2 are progressing, providing foundational knowledge for process improvement."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased focus from general idea generation to explicit efficiency gains and digital process execution. The company is now recognizing systemic process gaps rather than just resource gaps."
+    }
+  }
+}

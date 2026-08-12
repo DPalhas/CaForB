@@ -1,0 +1,196 @@
+{
+  "id": "R0135",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0408",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:00:31.355372+00:00",
+    "duration_ms": 31368,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Beacon Consulting.com",
+      "sector": "Education",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0408",
+      "fields": {
+        "companyName": "Beacon Consulting.com",
+        "sector": "Education",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 5 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "superseded",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Build an Adaptive Learning Content Marketplace (Diversification)",
+        "rationale": "Given the mandate to derive 25% of revenue from new sources, leveraging existing educational content is a key diversification play. This incremental approach uses current core strengths while expanding market reach through platformization.",
+        "execution_plan": {
+          "first_actions": [
+            "Inventory and categorize all proprietary curriculum units (K-12) for potential modular sale.",
+            "Identify 3-5 initial anchor partners (e.g., smaller edtech startups or specialized content creators) to populate the marketplace.",
+            "Develop core API standards and user authentication flows for platform integration."
+          ],
+          "resources_needed": [
+            "Product squad reallocation (1/2 FTE)",
+            "Legal counsel review of IP rights for syndication",
+            "Design thinking workshop with content experts"
+          ],
+          "success_metric": "Number of unique, transactable modules listed on the platform by Q3.",
+          "milestones": [
+            "Marketplace MVP feature set defined and prototyped (2 months).",
+            "Secure 5 external content providers for initial launch cohort (4 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2_adv",
+        "type": "incremental",
+        "title": "Develop AI Student Progress Analytics for Predictive Intervention (Core Enhancement)",
+        "rationale": "Building on the evaluation of adaptive and AI platforms, integrating predictive analytics directly into student workflows is a natural fit. This enhances core value while generating new data-driven insights that can fuel future revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current data points (grades, attendance, behavioral markers) to potential predictive failure indicators.",
+            "Prototype the AI model using historical student data and secure internal buy-in from academic department leads.",
+            "Define the user experience for actionable alerts/reports for teachers and parents."
+          ],
+          "resources_needed": [
+            "Data Science expertise (dedicated contractor)",
+            "Integration time with Student Information System (SIS) APIs",
+            "Key clinical/educational subject matter expert time"
+          ],
+          "success_metric": "Reduction in the average time taken to identify an at-risk student by 30%.",
+          "milestones": [
+            "Data pipeline established and validated with clean data (3 months).",
+            "Pilot launch with one campus/grade level (6 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the revenue generation model for 'Adaptive Content Marketplace,' including pricing tiers and royalty structures.",
+        "owner": "Product Leadership / Finance",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Establish a cross-functional working group (Academics, Tech, Strategy) to vet potential strategic acquisition targets that fit the 'diversification' mandate.",
+        "owner": "Executive Leadership / Strategy Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Conduct a deep-dive assessment of existing data governance frameworks to ensure readiness for AI model training and SIS integration.",
+        "owner": "IT / Compliance Officer",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Reliance on manual workflows outside core engineering teams (Marketing, Support) hindering scalable growth.",
+      "Talent bandwidth limits: The technical team's capacity is high, but the necessary domain expertise in pedagogical AI/curriculum management is a bottleneck.",
+      "Varying decision-making processes across departments slow down cross-functional initiative adoption."
+    ],
+    "progress": {
+      "improvements": [
+        "Improved agility and speed of delivery within core product squads (60% reduction in release cycle time).",
+        "Establishment of a structured innovation mechanism ('20% time' policy, internal pitch competition) boosting grassroots ideation."
+      ],
+      "persistent_gaps": [
+        "Lack of systematic adoption of agile/modern processes across non-technical departments (Marketing, Support).",
+        "The strategic shift toward diversification and external revenue streams requires more formalized planning beyond ad-hoc projects.",
+        "Supply chain disruptions have placed ongoing pressure on margins."
+      ],
+      "achieved_milestones": [
+        "Successfully transitioned engineering from Waterfall to Agile methodology in core product lines.",
+        "Increased internal capacity for self-directed innovation through dedicated '20% time' policy."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased internal process maturity (Agile adoption) and clearer strategic direction towards diversification has raised the overall score. The shift from general problem statement to specific mandate (25% new revenue) provides better focus for next steps."
+    }
+  }
+}

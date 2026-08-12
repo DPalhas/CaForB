@@ -1,0 +1,200 @@
+{
+  "id": "R0204",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0288",
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:44:27.430908+00:00",
+    "duration_ms": 44263,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Orbit Industries.co",
+      "sector": "Construction",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors. Current focus is on BIM adoption and drone-based site progress monitoring. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections."
+    },
+    "previous_assessment": {
+      "id": "0288",
+      "fields": {
+        "companyName": "Orbit Industries.co",
+        "sector": "Construction",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors. Current focus is on BIM adoption and drone-based site progress monitoring. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections."
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 3 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "completed",
+      "step_1": "superseded",
+      "step_2": "superseded",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_4",
+        "type": "incremental",
+        "title": "Develop Scalable Growth Playbook for Series A Readiness",
+        "rationale": "The company needs a codified, replicable strategy to support doubling revenue and entering new markets. This playbook must translate informal decision-making into defensible processes required by VCs. It moves the focus from project execution to systemic business scaling.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current sales/acquisition funnel stages, identifying process gaps for repeatability.",
+            "Develop a 'new market entry' checklist including regulatory checks and local partnership requirements.",
+            "Draft the financial model narrative that ties innovation spending directly to projected revenue growth (VC focus)."
+          ],
+          "resources_needed": [
+            "External Strategy Consultant (Interim)",
+            "Founder Time Allocation (Dedicated 20 hours/week)",
+            "Finance Lead Support"
+          ],
+          "success_metric": "Completed, approved playbook document and presentation framework.",
+          "milestones": [
+            "Phase 1: Core Process Mapping Complete (Month 1)",
+            "Phase 2: New Market Pilot Protocol Defined (Month 2)",
+            "Phase 3: Full Board/Advisory Review Ready (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_5",
+        "type": "incremental",
+        "title": "Standardize Cross-Functional Compliance and Quality Assurance (QA)",
+        "rationale": "As the company scales and enters new markets, inconsistent processes across different teams and sites become a major risk. This initiative formalizes compliance checkpoints to mitigate regulatory exposure while integrating lessons from the recent merger.",
+        "execution_plan": {
+          "first_actions": [
+            "Create standardized QA checklists for site progress monitoring (integrating drone/BIM reports).",
+            "Formalize mandatory compliance sign-offs at key project milestones, especially concerning jurisdictional differences in new markets.",
+            "Implement a centralized knowledge repository to document best practices across the merger teams."
+          ],
+          "resources_needed": [
+            "Operations Manager (Dedicated)",
+            "Legal/Compliance Advisor",
+            "Project Lead Network Training"
+          ],
+          "success_metric": "Reduction in compliance-related delays or rework by 15% within 6 months.",
+          "milestones": [
+            "Identify and document top 5 high-risk procedural areas (Month 1)",
+            "Pilot standardized checklists on two active sites/markets (Month 2)",
+            "Train all site managers on new QA protocols (Month 3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_6",
+        "action": "Formalize and delegate specific operational decision-making areas from the founder to named direct reports (e.g., Marketing Strategy, Technical Oversight).",
+        "owner": "Founder/Executive Team",
+        "timeframe": "Immediate (Next 4 weeks)"
+      },
+      {
+        "id": "step_7",
+        "action": "Conduct a structured post-merger workshop focused on identifying shared 'North Star' operational values and standardized communication protocols.",
+        "owner": "HR/Project Management",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "step_8",
+        "action": "Develop a formal, measurable pipeline qualification process for the Direct-to-Consumer (D2C) channel to test market viability before significant investment.",
+        "owner": "Sales/Marketing Lead",
+        "timeframe": "Ongoing (Quarterly review)"
+      }
+    ],
+    "key_weaknesses": [
+      "Founder dependency remains the primary bottleneck; scaling is limited by single point of failure decision-making.",
+      "Lack of standardized, institutionalized processes hindering predictable growth and multi-market replication.",
+      "Cultural friction from post-merger integration threatens stability and slows cross-functional adoption."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully adopted Agile methodologies, significantly improving the engineering release cycle time (60% reduction).",
+        "Increased team capacity through hiring/doubling of staff, indicating commitment to growth.",
+        "Advanced knowledge of modern construction tech (BIM, drones) shows increased digital curiosity."
+      ],
+      "persistent_gaps": [
+        "Strategic planning remains ad-hoc and lacks the formal framework needed for VC articulation.",
+        "Process standardization is absent across different operational units or geographic locations.",
+        "Cultural alignment across merged teams requires sustained management attention."
+      ],
+      "achieved_milestones": [
+        "Successful transition to 2-week sprint cycles in engineering.",
+        "Completion of foundational process steps (opp_3)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant operational improvements were noted (Agile adoption), and team size increased. However, the core structural weaknesses—owner dependency and process formalization—persist despite merger activity."
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "id": "R0156",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0185",
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:21:27.404897+00:00",
+    "duration_ms": 58923,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core",
+      "sector": "Legal Services",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 0,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0185",
+      "fields": {
+        "companyName": "Core",
+        "sector": "Legal Services",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 6 strategic partnerships. Revenue growth 20% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Niche AI Tools for Specialized Legal Review (M&A/Tax)",
+        "rationale": "To deepen competitive positioning in high-margin niches, the focus must shift from general digital tools to proprietary AI models that handle specific, complex legal document analysis. This leverages existing partnerships and accelerates value demonstration within key verticals like cross-border tax structuring.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one target niche (e.g., Singapore M&A compliance) to define the initial scope for AI review enhancement.",
+            "Dedicate 20% of the small tech team's time solely to this PoC, ring-fenced from maintenance tasks.",
+            "Establish success criteria with 1-2 key client partners that will co-validate the tool output."
+          ],
+          "resources_needed": [
+            "Dedicated internal developer time (4 weeks)",
+            "Targeted budget for API access/data scrubbing",
+            "Legal SME input (part-time advisory)"
+          ],
+          "success_metric": "Reduction in average man-hours required for specified document review tasks by 30% within 6 months.",
+          "milestones": [
+            "Scope definition and data acquisition completion (Month 1)",
+            "Minimum Viable Model (MVM) proof of concept complete (Month 3)",
+            "Beta testing with key client (Month 5)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Formalize and Optimize Innovation Idea Intake Funnel",
+        "rationale": "With multiple projects running, the primary bottleneck is time/resource allocation. Implementing a standardized triage funnel (beyond the current committee review) will improve project selection efficiency, protecting existing resources from scope creep on marginal ideas.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a simple scoring matrix for potential innovation pitches (e.g., ROI vs. Effort/Time).",
+            "Integrate the scoring mechanism into the quarterly pitch review process.",
+            "Train cross-functional teams on the new intake standards and expected level of detail."
+          ],
+          "resources_needed": [
+            "Product Manager time (part-time lead)",
+            "Leadership buy-in for strict adherence to the funnel",
+            "Simple tracking spreadsheet/dashboard update"
+          ],
+          "success_metric": "Reduce average time from 'idea pitch' to 'formal project charter sign-off' by 25%.",
+          "milestones": [
+            "Funnel criteria and matrix drafted (Month 1)",
+            "Pilot run with current portfolio projects (Quarterly review cycle)",
+            "Adoption across all newly submitted ideas (Next quarter)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Allocate dedicated 'Innovation Guard Time' (e.g., 5 hours/week) for the tech team solely dedicated to Opp_1 PoC, insulating it from maintenance requests.",
+        "owner": "Department Head / Leadership Team",
+        "timeframe": "Immediate (Next 2 Weeks)"
+      },
+      {
+        "id": "step_3",
+        "action": "Formalize the commitment to pilot the new Innovation Idea Funnel (Opp_3) with all internal venture studio teams.",
+        "owner": "Product Manager / Committee Chair",
+        "timeframe": "Month 1"
+      },
+      {
+        "id": "step_4",
+        "action": "Identify and secure a small, dedicated 'sandbox budget' (even if symbolic) to demonstrate commitment to experimentation, addressing the zeroed percentage allocation.",
+        "owner": "CFO / Leadership Team",
+        "timeframe": "Next Quarter Planning"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited dedicated internal resources: Innovation work is still treated as 'marginal' rather than core priority time.",
+      "Process gaps in idea selection: Despite having a venture studio, the lack of formalized intake prioritization risks resource exhaustion on low-impact ideas.",
+      "Financial commitment visibility: The budget percentage remains critical, limiting scalability and risk appetite for larger programs."
+    ],
+    "progress": {
+      "improvements": [
+        "Market validation achieved through 6 strategic partnerships (strengthening market defense).",
+        "Demonstrated successful operationalization of the internal venture studio model.",
+        "Revenue growth (20% YoY) provides tangible financial momentum and justifies increased investment in tech/AI."
+      ],
+      "persistent_gaps": [
+        "Time constraint: The core development team remains fully allocated to maintaining current products, limiting deep innovation capacity.",
+        "Budget commitment: Lack of a ring-fenced experimental budget restricts the ability to scale PoCs beyond initial proof points.",
+        "Leadership consensus on resource reallocation needs formal process enforcement."
+      ],
+      "achieved_milestones": [
+        "Successful establishment and growth of 6 strategic partnerships.",
+        "Continued operation and graduation of projects through the venture studio model."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The company has moved from merely establishing an innovation model to achieving concrete market validation (partnerships) and generating measurable revenue growth. The focus is now shifting from 'can we innovate?' to 'how do we scale successful innovation efficiently?'"
+    }
+  }
+}

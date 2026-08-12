@@ -1,0 +1,198 @@
+{
+  "id": "R0404",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0331",
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:02:45.064663+00:00",
+    "duration_ms": 41531,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova.tech",
+      "sector": "Transportation & Logistics",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0331",
+      "fields": {
+        "companyName": "Nova.tech",
+        "sector": "Transportation & Logistics",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 8,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 5 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_auto_compliance",
+        "type": "incremental",
+        "title": "Implement Automated Customs Classification and Regulatory Change Monitoring",
+        "rationale": "This directly addresses the company's core bottleneck (manual document handling) and primary goal (cost reduction/ROI). Automating classification minimizes human error, reduces unit cost per declaration, and provides immediate tangible ROI necessary for a bootstrapped firm. This builds upon prior interest in process automation.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current 15 trade corridor document flow (AS-IS Process Mapping).",
+            "Define clear classification rules and data points required for automated tagging.",
+            "Select a minimum viable tool/API integration partner for initial proof of concept (PoC) testing."
+          ],
+          "resources_needed": [
+            "Dedicated developer bandwidth (minimum 50% time commitment)",
+            "SME subject matter expert (Customs Brokerage Lead)",
+            "Budget allocation for API/Software licensing (Proof of Concept stage)"
+          ],
+          "success_metric": "Reduction in manual review hours per customs declaration by 30%",
+          "milestones": [
+            "Completion of AS-IS process map and gap analysis.",
+            "Successful PoC implementation on a single, high-volume trade corridor.",
+            "Demonstrated reduction in required man-hours for the top 5 transaction types."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_initial_automation",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_process_mining",
+        "type": "incremental",
+        "title": "Establish Lean Process Mining for Bottleneck Identification",
+        "rationale": "The previous innovation session failed due to lack of execution path. Instead, the focus must shift from generating ideas (brainstorming) to identifying quantifiable, high-impact process bottlenecks using data science techniques like process mining. This provides a structured approach that aligns with the need for clear ROI timelines.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2-3 operational processes generating sufficient digital logs (e.g., customer support tickets, order tracking).",
+            "Engage developer bandwidth to extract and sanitize log data relevant to cycle times and failure points.",
+            "Host a focused 'Data Review' workshop with operations staff instead of general brainstorming."
+          ],
+          "resources_needed": [
+            "Developer time for data extraction/cleanup.",
+            "Operations leadership (Process owner)",
+            "Basic Process Mining visualization tool access"
+          ],
+          "success_metric": "Identification and quantification of the top 3 most expensive non-value-added steps in the current workflow.",
+          "milestones": [
+            "Successful data extraction/mapping for target process.",
+            "Presentation of 'As-Is' bottleneck map to leadership.",
+            "Prioritization of one high-impact, low-cost fix (quick win)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize the Scope and Success Criteria for the Customs Automation PoC (opp_auto_compliance).",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Dedicate developer bandwidth to data extraction and mapping for the top 3 high-volume processes (supporting opp_process_mining).",
+        "owner": "Generalist Developers",
+        "timeframe": "Ongoing, starting immediately"
+      },
+      {
+        "id": "ns3",
+        "action": "Conduct a deep dive session with the SME team to map all regulatory touchpoints and associated risks (compliance first).",
+        "owner": "Subject Matter Expert/Operations Lead",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "R&D capacity is heavily diverted into urgent operational firefighting, limiting bandwidth for innovation.",
+      "The internal process mechanism for converting ideas into funded projects remains weak (needs structured funneling).",
+      "Reliance on owner-alone decision making may slow down iterative development cycles."
+    ],
+    "progress": {
+      "improvements": [
+        "Leadership structure has been refreshed, potentially improving cross-departmental focus.",
+        "Automation efforts have begun with the successful automation of 5 legacy processes (structural progress).",
+        "Goals are now highly specific and tied to financial metrics (EBITDA improvement)."
+      ],
+      "persistent_gaps": [
+        "Zero tangible execution on previous recommendations; foundational steps must precede advanced initiatives.",
+        "The team still lacks dedicated capacity for innovation/R&D roles.",
+        "Difficulty in isolating process bottlenecks without dedicating specific data collection resources."
+      ],
+      "achieved_milestones": [
+        "Clear articulation of the target ROI timeline (<12 months) and financial goal (500 bps EBITDA improvement)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved focus from general efficiency to specific process automation (Customs/Regulatory). Increased budget commitment shows greater organizational buy-in and financial discipline."
+    }
+  }
+}

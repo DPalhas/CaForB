@@ -1,0 +1,199 @@
+{
+  "id": "R0114",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0458",
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:37:24.724486+00:00",
+    "duration_ms": 46649,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Pioneer",
+      "sector": "Public Administration",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Public transportation authority managing a metropolitan bus and light rail network with 200 vehicles, 60 routes, and 45 million annual passenger journeys. Currently deploying a contactless fare collection system and real-time passenger information displays. Next priority is AI-driven schedule optimization and predictive maintenance. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have never run a formal innovation initiative. Problems are solved ad-hoc as they arise, usually by the most directly affected team member. There is no dedicated budget, no structured ideation process, and no track record of experimenting with new technologies or business models beyond basic operational necessity.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "6 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 6,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0458",
+      "fields": {
+        "companyName": "Pioneer",
+        "sector": "Public Administration",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Public transportation authority managing a metropolitan bus and light rail network with 200 vehicles, 60 routes, and 45 million annual passenger journeys. Currently deploying a contactless fare collection system and real-time passenger information displays. Next priority is AI-driven schedule optimization and predictive maintenance. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have never run a formal innovation initiative. Problems are solved ad-hoc as they arise, usually by the most directly affected team member. There is no dedicated budget, no structured ideation process, and no track record of experimenting with new technologies or business models beyond basic operational necessity.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 6,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 3 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "opp_4": "completed",
+      "step_1": "completed",
+      "step_2": "completed",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "radical",
+        "title": "Strategic Diversification into Urban Mobility Consulting",
+        "rationale": "Given the structural decline facing traditional public transit, the company must leverage its accumulated operational data and brand credibility to solve related urban challenges. This shifts focus from merely running buses/trains (operational) to selling insights (knowledge asset). The high regulatory environment requires early alignment with municipal planning bodies.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 potential adjacent markets (e.g., last-mile micro-mobility, urban density planning) and map their specific local compliance requirements.",
+            "Develop a minimum viable product (MVP) offering based on anonymized journey data analysis for municipal partners.",
+            "Engage with external industry advisors specializing in public sector knowledge transfer to validate market demand."
+          ],
+          "resources_needed": [
+            "Regulatory/Legal Counsel",
+            "Data Scientist (part-time)",
+            "Founder time dedication (Strategy)"
+          ],
+          "success_metric": "Securing 1 paid pilot contract with a municipal or private planning entity within 9 months.",
+          "milestones": [
+            "Market selection and compliance framework definition (Q1).",
+            "MVP data pipeline completion (Q2).",
+            "First formal presentation/proposal submission to external client (Q3)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5",
+        "type": "incremental",
+        "title": "Formalizing the Innovation Funnel and Governing Board",
+        "rationale": "The current reliance on ad-hoc problem solving is unsustainable. To manage growth and maximize ROI, Pioneer needs a structured intake process that filters ideas, assesses feasibility against regulatory constraints, and assigns clear ownership. This institutionalizes innovation, mitigating founder dependency.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement a mandatory 'Innovation Idea Submission Form' requiring initial cost/benefit estimates and linking to relevant regulatory departments.",
+            "Establish a quarterly Innovation Review Board (IRB) with diverse input (Operations, Finance, Legal).",
+            "Develop a simple scoring matrix (Impact vs. Feasibility vs. ROI) for all submitted ideas."
+          ],
+          "resources_needed": [
+            "Operational Lead Time",
+            "Minor process software investment (e.g., dedicated collaboration board)",
+            "Dedicated Program Manager role (part-time)"
+          ],
+          "success_metric": "Formal adoption and use of the Innovation Submission Form for 100% of new project ideas in a quarter.",
+          "milestones": [
+            "Process design completion and training (Month 1).",
+            "First formal IRB meeting executed (Month 2).",
+            "Tracking 3 fully vetted pipeline opportunities (Month 3)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_4",
+        "action": "Conduct a comprehensive regulatory audit mapping (Compliance/Risk focus) for the top 3 identified adjacent markets. This is required before launching any diversification pitch.",
+        "owner": "Founder/Legal Counsel",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_5",
+        "action": "Formalize a 'Data Asset Catalog' by documenting all real-time operational data streams and their potential non-transit use cases (e.g., foot traffic flow, crowd density). This supports Opp 1.",
+        "owner": "Digital/Operations Team",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "step_6",
+        "action": "Pilot the new Innovation Submission Form (Opp 5) using a small, contained operational problem to test governance and process efficiency.",
+        "owner": "Process Owner/Team Lead",
+        "timeframe": "Immediate (Next 4 weeks)"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on the founder for strategic direction (Bottleneck risk).",
+      "Lack of formalized governance structure resulting in inconsistent innovation execution.",
+      "Underdeveloped mechanism for quantifying long-term ROI and non-fare revenue streams."
+    ],
+    "progress": {
+      "improvements": [
+        "Systematic automation of legacy processes has freed up operational capacity.",
+        "Successful deployment of advanced digital systems (contactless fare collection, real-time info) increases data capture capability.",
+        "The team is actively moving from pure maintenance mode to exploring external value propositions."
+      ],
+      "persistent_gaps": [
+        "Strategic execution remains siloed; the connection between operational data and commercial strategy is weak.",
+        "Governance structure for innovation needs institutionalization (lack of dedicated process owner).",
+        "Limited capacity/resource constraints require all new initiatives to have near-immediate, tangible ROI."
+      ],
+      "achieved_milestones": [
+        "Completion of foundational digital infrastructure upgrades and automation projects.",
+        "Progress on core recommendations validates the team's ability to execute small, defined tasks."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 1.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has moved from 'none' to establishing foundational digital capabilities (Digital Maturity 2) and shifting its strategic mindset entirely towards diversification outside of core operations. The initial focus on operational stability has given way to high-level structural strategy development."
+    }
+  }
+}

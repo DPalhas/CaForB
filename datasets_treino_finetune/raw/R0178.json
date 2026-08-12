@@ -1,0 +1,202 @@
+{
+  "id": "R0178",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0177",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:19:52.851854+00:00",
+    "duration_ms": 52913,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Element Group",
+      "sector": "Professional & Consulting Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Engineering design consultancy providing structural, MEP, and sustainability consulting for large-scale commercial and infrastructure projects. Team of 60 engineers using Revit, AutoCAD, and IES VE for building performance simulation. Evaluating computational design and generative design tools for structural optimization. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0177",
+      "fields": {
+        "companyName": "Element Group",
+        "sector": "Professional & Consulting Services",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Engineering design consultancy providing structural, MEP, and sustainability consulting for large-scale commercial and infrastructure projects. Team of 60 engineers using Revit, AutoCAD, and IES VE for building performance simulation. Evaluating computational design and generative design tools for structural optimization. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 13,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "superseded",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_digital_scale",
+        "type": "incremental",
+        "title": "Scaling Predictive Maintenance and Digital Integration",
+        "rationale": "The successful IoT pilot proves the viability of predictive maintenance, offering a clear ROI (15% downtime reduction). Scaling this requires moving beyond technical implementation to solving complex organizational integration challenges with legacy systems. This evolution focuses on maximizing current technological investments.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional governance committee involving IT, Maintenance, and Procurement to standardize data protocols (Compliance/Governance).",
+            "Develop detailed integration mapping between the new IoT platform and legacy ERP/CMMS systems.",
+            "Pilot rollout in a limited operational vertical before full fleet deployment."
+          ],
+          "resources_needed": [
+            "Dedicated Integration Architect",
+            "Updated Procurement Budget (Hardware/Software)",
+            "Process Owners from Operations"
+          ],
+          "success_metric": "Achieve 80% data uptime and maintain >12% reduction in unplanned downtime across the fully instrumented fleet.",
+          "milestones": [
+            "Integration feasibility report completed",
+            "Pilot group successfully trained on new protocols",
+            "Full business case approved for national rollout"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_digital_scale",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_revenue_pivot",
+        "type": "radical",
+        "title": "Developing and Piloting Outcome-Based Service Contracts",
+        "rationale": "To meet the ambitious €50M ARR target, the company must fundamentally shift from transactional design fees to outcomes-based or recurring enterprise services. This requires new pricing models, a sales process overhaul, and defining measurable performance guarantees that justify subscription revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-value client segments suitable for outcome-based contracts (e.g., MEP optimization guarantee).",
+            "Design a tiered pricing model structure covering retainer, usage, and performance tiers (Compliance/Finance review required).",
+            "Develop new sales enablement materials focused on TCO reduction rather than initial cost."
+          ],
+          "resources_needed": [
+            "Sales Leadership time (dedicated to process redesign)",
+            "Financial Modeling expertise (for risk pricing)",
+            "Legal Counsel (for service level agreements - SLAs)"
+          ],
+          "success_metric": "Secure commitment from 2 pilot clients for a recurring revenue contract model within 9 months.",
+          "milestones": [
+            "New SLA framework drafted and approved",
+            "Internal sales training completed on value-selling techniques",
+            "First paid retainer/subscription signed"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_sales_alignment",
+        "action": "Mandate a quarterly cross-departmental workshop to align R&D capabilities with Sales' understanding of recurring revenue value propositions.",
+        "owner": "COO/Head of Business Development",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_market_analysis",
+        "action": "Conduct detailed competitive pricing analysis specifically targeting the identified high-leverage growth sectors (e.g., sustainable infrastructure optimization).",
+        "owner": "Strategy Team/Data Engineers",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "ns_culture_intervention",
+        "action": "Implement structured, company-wide sessions focused on overcoming the 'process' barrier by celebrating small wins and recognizing process improvement contributions.",
+        "owner": "HR/Leadership Team",
+        "timeframe": "Ongoing (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Conflict between operating efficiency (Run-the-Business) and innovation resources, leading to resource fragmentation.",
+      "Heavy reliance on manual workflows and spreadsheets for critical business processes, creating significant scalability bottlenecks.",
+      "Underdeveloped system for capturing high-quality customer feedback beyond informal conversations."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully managed a large-scale digital pilot (IoT sensors), proving both technical feasibility and clear ROI in predictive maintenance.",
+        "Established dedicated, structured R&D/Data teams following lean startup principles, professionalizing the innovation intake process."
+      ],
+      "persistent_gaps": [
+        "Systemic integration gaps between new digital assets and legacy core enterprise systems remain complex and resource-intensive.",
+        "The pricing model and sales motion are still heavily reliant on one-time project fees, failing to capitalize fully on recurring revenue potential.",
+        "Lack of formal process for converting informal customer conversations into quantifiable product/service requirements."
+      ],
+      "achieved_milestones": [
+        "Secured business approval and ROI justification for full IoT fleet rollout.",
+        "Defined R&D structure enabling parallel workstreams (core innovation vs. new model prototyping)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Score has improved due to tangible progress in digital capability (IoT pilot success) and dedicated R&D structure. However, external pressures (competitor entry, rising churn) have increased urgency, while internal systemic barriers (manual process reliance, resource conflict) persist and require more radical strategic pivots."
+    }
+  }
+}

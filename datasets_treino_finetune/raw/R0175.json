@@ -1,0 +1,204 @@
+{
+  "id": "R0175",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0136",
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:16:22.642535+00:00",
+    "duration_ms": 51406,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.984946+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Anchor Corporation",
+      "sector": "Transportation & Logistics",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Temperature-controlled logistics provider operating 50 refrigerated trucks and 8,000 m² of cold storage warehousing. Specialize in pharmaceutical and fresh food distribution across Iberia. Evaluating real-time temperature monitoring sensors and predictive cold-chain failure alerting. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0136",
+      "fields": {
+        "companyName": "Anchor Corporation",
+        "sector": "Transportation & Logistics",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Temperature-controlled logistics provider operating 50 refrigerated trucks and 8,000 m² of cold storage warehousing. Specialize in pharmaceutical and fresh food distribution across Iberia. Evaluating real-time temperature monitoring sensors and predictive cold-chain failure alerting. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 2,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 7 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "completed",
+      "step_1": "completed",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Standardize Cold-Chain Operational Protocols via Digital Workflow Automation",
+        "rationale": "The current variation in cold-chain management across multiple BUs creates significant operational risk and inefficiency. By automating the core workflow (temperature logging, exception handling, customs documentation), Anchor can standardize processes while maintaining localized decision autonomy.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the top 3 high-variance cold-chain workflows across different BUs.",
+            "Pilot centralized digital handoff points (e.g., at major transfer hubs).",
+            "Integrate standard API calls for sensor data and regulatory checks."
+          ],
+          "resources_needed": [
+            "Workflow BPM/low-code platform access",
+            "Domain experts from Operations and Compliance",
+            "Dedicated IT/Engineering capacity"
+          ],
+          "success_metric": "Reduction in manual process steps per shipment (KPI: 20% reduction)",
+          "milestones": [
+            "Complete workflow mapping for 5 key routes.",
+            "Successful pilot launch with one full business unit.",
+            "Documented SOPs replacing outdated physical checklists."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Develop a Centralized Digital Optimization Twin for Logistics Assets",
+        "rationale": "Anchor has the technical capability (AI/ML CoEs) and data volume to build a predictive model that simulates entire supply chain failure points. This moves beyond reactive monitoring to proactive optimization, treating all assets (trucks, warehouses, lanes) as interconnected inputs.",
+        "execution_plan": {
+          "first_actions": [
+            "Define key performance indicators for asset degradation and throughput bottlenecks.",
+            "Establish a unified data lake combining sensor, ERP, and market data streams.",
+            "Run proof-of-concept simulations using historical failure data (ML input)."
+          ],
+          "resources_needed": [
+            "Data Science leadership (AI/ML)",
+            "Cloud computing infrastructure budget",
+            "Executive sponsorship for cross-BU data sharing mandate"
+          ],
+          "success_metric": "Reduction in predicted service disruption incidents by 15% within the first year of use.",
+          "milestones": [
+            "Completion of unified data taxonomy and governance model.",
+            "MVP simulation framework built (e.g., predicting cold storage failure rate).",
+            "Integration of predictive alerts into operational dashboards."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Establish a formal, centralized Governance Model for Innovation Adoption (GMA) that mandates shared KPIs and resource allocation across BUs.",
+        "owner": "Executive Steering Committee/CDTO Lead",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns_2",
+        "action": "Conduct Value Stream Mapping (VSM) workshops focused on the end-to-end procurement and last-mile delivery processes to identify non-value-add time sinks.",
+        "owner": "Process Improvement Team/Business Unit Leads",
+        "timeframe": "4 months"
+      },
+      {
+        "id": "ns_3",
+        "action": "Formalize the relationship between the internal incubator and core BUs, ensuring that successful prototypes (like those from the CoE) are mandated for pilot deployment into live operational systems.",
+        "owner": "Head of Innovation/COO",
+        "timeframe": "Ongoing Quarterly Review"
+      }
+    ],
+    "key_weaknesses": [
+      "Business unit autonomy causes inconsistent adoption and process variance across geographies.",
+      "Reliance on manual, rigorous ROI modeling acts as a significant bottleneck for scaling successful pilots into full enterprise solutions.",
+      "Lack of standardized data governance across disparate legacy systems limits the potential scale of advanced analytics."
+    ],
+    "progress": {
+      "improvements": [
+        "Formalization of strategic planning and professional management structure (Founder-led -> Professional).",
+        "Significant increase in digital capability, evidenced by the 80+ person team size and established CoEs.",
+        "Successful completion/in-progress status on core initial recommendations (opp_3 and opp_4)."
+      ],
+      "persistent_gaps": [
+        "The organizational structure still struggles to transition high potential pilots into mandated, scaled operational standards.",
+        "Difficulty in shifting the cultural mindset from 'local success' to 'enterprise-wide efficiency'."
+      ],
+      "achieved_milestones": [
+        "Secured commitment and resources (team size) for advanced digital initiatives.",
+        "Validated initial efficiencies through completed pilot projects."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant structural maturation observed (professional management hired, CoEs built). Digital maturity has improved from basic to capable (2 -> 3). The focus remains highly efficient/cost-reduction driven despite growing capability."
+    }
+  }
+}

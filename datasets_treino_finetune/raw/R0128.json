@@ -1,0 +1,229 @@
+{
+  "id": "R0128",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0104",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:53:14.540560+00:00",
+    "duration_ms": 58434,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian",
+      "sector": "Healthtech",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 21,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0104",
+      "fields": {
+        "companyName": "Meridian",
+        "sector": "Healthtech",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 21,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 4 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "radical",
+        "title": "Establish Dedicated R&D Function to Scale Tech Investment Capacity",
+        "rationale": "The current generalist developer setup is unsustainable for rapid, complex expansion (e.g., AI tools, 2 new markets). Establishing a dedicated R&D function shifts innovation from 'spare cycles' to core operational capacity. This structure is critical to support the aggressive growth goals while maintaining quality.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the technical scope and required skill set for specialized roles (e.g., AI/ML Engineer, Product Architect).",
+            "Implement a formal hiring process managed by an external recruiter to ensure objective evaluation across merged teams.",
+            "Ring-fence 15% of future revenue growth budget specifically for new R&D hires and tooling."
+          ],
+          "resources_needed": [
+            "Dedicated HR/Recruiting support",
+            "Initial talent acquisition budget (6 months)",
+            "Executive time commitment (Strategic hiring interviews)"
+          ],
+          "success_metric": "Hire 1 dedicated R&D lead within Q3 and reduce developer time spent on maintenance tasks by 20%.",
+          "milestones": [
+            "Role definition finalized.",
+            "First specialized hire onboarded.",
+            "R&D roadmap for next two quarters approved."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Systematize Scalable Customer Acquisition Channels for New Markets",
+        "rationale": "To double revenue, the company must move beyond dependence on existing B2B channels. This requires formalizing multi-market entry strategies and building operational playbooks specific to DTC and new geographic regulatory environments. Completion of this phase is crucial for maximizing market reach.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed competitive analysis (pricing, channel partners) in the top two target geographies.",
+            "Design a phased go-to-market playbook differentiating B2B vs. DTC customer journeys.",
+            "Identify and onboard initial advisory support for market entry compliance."
+          ],
+          "resources_needed": [
+            "Market intelligence budget",
+            "Dedicated Sales/Strategy lead (external or internal)",
+            "Legal/Regulatory consultancy retainer"
+          ],
+          "success_metric": "Formalized Go-To-Market Playbook approved by leadership, including identified initial target market and required legal steps.",
+          "milestones": [
+            "Target markets prioritized.",
+            "DTC acquisition model prototyped.",
+            "Partner sales channel defined."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Formalize Post-Merger Operational Governance and Culture Alignment",
+        "rationale": "The merger is causing significant culture clashes, which will throttle the potential gains from rapid growth. Implementing a defined governance structure and dedicated team integration leads are necessary to stabilize decision-making and trust between legacy and new teams.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct cross-functional workshops focusing on shared mission/values, rather than departmental history.",
+            "Define clear RACI charts for core processes (product development, sales cycles) immediately post-merger.",
+            "Establish a recurring 'Integration Sync' meeting led by an executive sponsor."
+          ],
+          "resources_needed": [
+            "External Change Management Consultant",
+            "Executive Sponsor time allocation",
+            "Internal HR/Operations lead (part-time)"
+          ],
+          "success_metric": "Reduction in reported cross-functional communication bottlenecks and 80% adoption of new core process documentation.",
+          "milestones": [
+            "Integration charter approved.",
+            "Key functional processes documented (RACI).",
+            "Culture pulse survey administered (baseline)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-4 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Executive Leadership to assign a dedicated Integration Project Lead responsible for driving the governance and culture alignment across the merged teams.",
+        "owner": "CEO/Leadership Team",
+        "timeframe": "Immediate (2 weeks)"
+      },
+      {
+        "id": "ns2",
+        "action": "Strategy/Sales to allocate resources to build a deep, structured market analysis for the top two new target geographies, prioritizing regulatory requirements.",
+        "owner": "Head of Strategy",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "HR/Operations to define and initiate the sourcing process for a specialized R&D architect role to manage future technical scalability.",
+        "owner": "HR/CTO",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Highly informal decision-making model, which hinders structured scaling and complex investment decisions.",
+      "Lack of specialized internal R&D capacity (relying on generalist developers)",
+      "Persistent culture clashes from the recent merger, creating operational instability."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully developed clinical evidence (RCT) demonstrating strong product efficacy.",
+        "Operational process improvement achieved with a prototype that reduced defect escape rate by 35%.",
+        "Team size has increased to four members, providing greater bandwidth."
+      ],
+      "persistent_gaps": [
+        "Lack of specialized talent in complex technology evaluation (AI/ML).",
+        "Need for defined operational governance structures post-merger.",
+        "Scaling processes remain ad hoc and dependent on individual availability rather than formal roles."
+      ],
+      "achieved_milestones": [
+        "Automated quality inspection prototype moved into production use, demonstrating successful internal innovation cycle."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The company has significantly matured its product validation (RCT data) and implemented successful internal process improvements. However, growth ambition combined with operational constraints (merger chaos, talent gaps) requires a strategic shift from mere execution to building specialized organizational capacity."
+    }
+  }
+}

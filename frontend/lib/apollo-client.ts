@@ -24,7 +24,31 @@ const httpLink = new HttpLink({
 
 const client = new ApolloClient({
   link: from([errorLink, httpLink]),
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    typePolicies: {
+      InsightType: {
+        fields: {
+          opportunities: { merge: false },
+          nextSteps: { merge: false },
+          keyWeaknesses: { merge: false },
+        },
+      },
+      ExecutionPlanType: {
+        fields: {
+          firstActions: { merge: false },
+          resourcesNeeded: { merge: false },
+          milestones: { merge: false },
+        },
+      },
+      ProgressReportType: {
+        fields: {
+          improvements: { merge: false },
+          persistentGaps: { merge: false },
+          achievedMilestones: { merge: false },
+        },
+      },
+    },
+  }),
 });
 
 export default client;

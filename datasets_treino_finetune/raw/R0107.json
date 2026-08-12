@@ -1,0 +1,200 @@
+{
+  "id": "R0107",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0501",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:31:54.163986+00:00",
+    "duration_ms": 48608,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Aether Dynamics",
+      "sector": "Information Technology",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Managed IT services provider offering helpdesk, network management, cybersecurity monitoring, and cloud migration services to 150+ SME clients. 24/7 NOC with 18 technicians. Currently developing a self-service client portal for ticket tracking and automated health reporting. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "9 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0501",
+      "fields": {
+        "companyName": "Aether Dynamics",
+        "sector": "Information Technology",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Managed IT services provider offering helpdesk, network management, cybersecurity monitoring, and cloud migration services to 150+ SME clients. 24/7 NOC with 18 technicians. Currently developing a self-service client portal for ticket tracking and automated health reporting. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 13,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 5 strategic partnerships. Revenue growth 15% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1a",
+        "type": "incremental",
+        "title": "Operationalize Full Fleet IoT Predictive Service Offering",
+        "rationale": "The pilot success for predictive maintenance on the full fleet represents a massive operational improvement. The next phase must transition this from a capital expenditure (CapEx) project into a recurring, scalable service offering that can be packaged and sold to new B2B clients or leveraged in D2C channels.",
+        "execution_plan": {
+          "first_actions": [
+            "Finalize the integration roadmap between IoT sensors/data lake and core billing systems.",
+            "Develop a Tier 1 'Predictive Health Check' package for immediate client upsell.",
+            "Assign dedicated engineering time (20% capacity) to resolve legacy system API bottlenecks."
+          ],
+          "resources_needed": [
+            "Integration architect (part-time)",
+            "Dedicated procurement liaison",
+            "Operational Service Manager"
+          ],
+          "success_metric": "15% reduction in Mean Time To Resolution (MTTR) for flagship clients within 6 months.",
+          "milestones": [
+            "Complete data integration mapping by Q3.",
+            "Soft launch of predictive service package to 5 key accounts."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2b",
+        "type": "radical",
+        "title": "Establish Scalable, Hybrid Go-To-Market (GTM) Model",
+        "rationale": "Doubling revenue requires moving beyond simply optimizing current B2B relationships. Launching D2C and entering new geographies demand a radical shift from 'tight-knit operations' to structured, standardized repeatable processes. This involves building out entirely new functions (e.g., digital marketing, international sales compliance) that do not currently exist.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed market entry feasibility study for 2 target geographies (legal/regulatory focus).",
+            "Map the customer journey end-to-end for a D2C purchase, identifying necessary technology stack upgrades.",
+            "Develop an organizational charter defining roles and required headcount for rapid expansion."
+          ],
+          "resources_needed": [
+            "External strategy consultancy (Market Research)",
+            "HR/Operations Lead (dedicated focus)",
+            "Financial modeling tools (forecasting high volume costs)"
+          ],
+          "success_metric": "Approval of a 3-year organizational design and hiring plan.",
+          "milestones": [
+            "Complete market selection analysis by end of quarter.",
+            "Pilot MVP for D2C channel with 10 non-B2B customers."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize and protect a ring-fenced innovation budget (minimum 5% of projected annual revenue) to move past opportunistic funding models.",
+        "owner": "Small Leadership Team/CFO",
+        "timeframe": "Immediate/Q3"
+      },
+      {
+        "id": "ns_2",
+        "action": "Lead a cross-departmental 'Process Standardization Workshop' focusing on mapping core service delivery into repeatable, scalable processes suitable for multi-market expansion.",
+        "owner": "Operations/Team Leads",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Establish a formal 'Growth Steering Committee' (including key technical staff) responsible for evaluating and prioritizing opportunities against the radical expansion goals.",
+        "owner": "CEO/Leadership Team",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a dedicated, protected innovation budget structure (reliance on opportunistic funding).",
+      "Organizational culture that favors optimizing current processes over radically adopting new operational models.",
+      "Operational capacity limits due to reliance on cross-functional team members ('wearing multiple hats')."
+    ],
+    "progress": {
+      "improvements": [
+        "Validated commercial potential (business case approved) for major technology investments (IoT fleet rollout).",
+        "Demonstrated clear upward trajectory in revenue growth and strategic partnerships.",
+        "Initiated fundamental digital infrastructure improvements with the self-service client portal development."
+      ],
+      "persistent_gaps": [
+        "Formalizing operational processes needed to support rapid, multi-channel (D2C) volume growth.",
+        "Securing dedicated human capital and clear departmental ownership for new functions (e.g., international sales).",
+        "Addressing the fundamental cultural barrier that limits scale outside of existing B2B comfort zones."
+      ],
+      "achieved_milestones": [
+        "IoT pilot program successfully completed, proving core technology viability.",
+        "Strategic partnerships secured, expanding market reach and capability set.",
+        "Established clear revenue growth targets (doubling revenue in 3 years)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The focus has shifted dramatically from internal operational optimization (fixing bottlenecks) to aggressive external market expansion (D2C and new geographies). The company has successfully validated its core technology assets but must now transition into a high-growth organization."
+    }
+  }
+}

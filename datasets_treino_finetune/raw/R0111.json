@@ -1,0 +1,196 @@
+{
+  "id": "R0111",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0049",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:35:01.784294+00:00",
+    "duration_ms": 52723,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Ember",
+      "sector": "Fintech",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Digital lending platform offering point-of-sale consumer financing and SME working capital loans through an API-integrated credit decisioning engine. Underwritten €120M in loans across 40 merchant partners. Risk scoring combines traditional bureau data with open banking transaction analysis. Evaluating real-time affordability assessment enhancements. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "6 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0049",
+      "fields": {
+        "companyName": "Ember",
+        "sector": "Fintech",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Digital lending platform offering point-of-sale consumer financing and SME working capital loans through an API-integrated credit decisioning engine. Underwritten €120M in loans across 40 merchant partners. Risk scoring combines traditional bureau data with open banking transaction analysis. Evaluating real-time affordability assessment enhancements. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 9,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 5 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establish Scalable Governance and Risk Oversight Framework",
+        "rationale": "The transition to professional management requires formalizing decision-making authority beyond the founder. This opportunity leverages the new senior leadership team (5 hires) to build robust governance mechanisms, mitigating operational risk as loan volume grows.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement a dedicated Credit Risk Committee structure with cross-functional representation.",
+            "Formalize key process documentation for credit underwriting and regulatory reporting compliance (AML/KYC).",
+            "Define clear delegation of authority matrix to distribute decision power away from the founder.",
+            "Conduct specialized internal training on complex technology due diligence."
+          ],
+          "resources_needed": [
+            "Internal Legal Counsel Time",
+            "Process Mapping Software",
+            "Senior Leadership Workshops"
+          ],
+          "success_metric": "Adoption and utilization of the formal Governance Charter by 80% of department heads.",
+          "milestones": [
+            "Drafting of the Risk Committee Charter (Month 1)",
+            "Training rollout to management team (Month 2)",
+            "Formal sign-off on the Delegation Matrix (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Develop Diversified Revenue Stream through Adjacent Financial Services",
+        "rationale": "The current heavy reliance on the top 3 clients (55% revenue) poses an existential risk. The company must pivot from simply optimizing lending products to identifying and launching entirely new, uncorrelated business lines or customer segments.",
+        "execution_plan": {
+          "first_actions": [
+            "Execute a comprehensive market gap analysis focusing on B2B cash flow management solutions (e.g., supply chain finance).",
+            "Engage external advisory support specializing in alternative financial services models for Fintechs.",
+            "Pilot the concept with 1-2 non-core merchant partners to test viability and appetite."
+          ],
+          "resources_needed": [
+            "External Strategic Consultant (Financial Modeling)",
+            "Dedicated Product Development FTE",
+            "Access to new market data feeds"
+          ],
+          "success_metric": "Secure initial Letters of Intent (LOIs) from prospective non-core merchant partners for the new product line.",
+          "milestones": [
+            "Completion of Gap Analysis Report (Month 3)",
+            "Prototype/MVP design approved by leadership (Month 6)",
+            "Pilot program launch and metrics tracking (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Draft and circulate a revised Owner/Leadership Decision-Making Framework to formalize delegation of authority.",
+        "owner": "CEO/Owner",
+        "timeframe": "1 month"
+      },
+      {
+        "id": "ns2",
+        "action": "Schedule dedicated workshops with senior leaders to map current operational processes and identify points of institutional knowledge dependency (documentation gap).",
+        "owner": "HR/COO",
+        "timeframe": "6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize a quarterly review cadence for the 'innovation fellow' program outcomes, linking successful prototypes directly to revenue generation metrics.",
+        "owner": "Innovation Fellow Program Lead",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme concentration risk in the top 3 client accounts (55% of revenue).",
+      "Decision-making process remains heavily bottlenecked by the founder's personal authority, impeding scalability.",
+      "Lack of specialized internal expertise required to evaluate complex, non-core technology investments."
+    ],
+    "progress": {
+      "improvements": [
+        "Significant professionalization: Successful hiring and integration of 5 senior leaders.",
+        "Structured innovation lifecycle established (quarterly hackathons, patent portfolio).",
+        "Increased strategic focus and budget allocation (12% funding) indicates commitment to growth."
+      ],
+      "persistent_gaps": [
+        "The core cultural barrier around decentralized decision-making persists despite structural hiring.",
+        "Operationalizing the diversification strategy requires significant investment outside of current profitable lines.",
+        "Reliance on informal customer feedback rather than structured NPS/CSAT data for market validation."
+      ],
+      "achieved_milestones": [
+        "Successful transition of hackathon prototype (automated quality inspection) into production, resulting in a 35% reduction in defect escape rate."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Demonstrated significant organizational maturation through professional staffing and formalization of innovation processes. Shifted focus from mere 'process creation' to 'risk mitigation' (diversification) due to revenue concentration."
+    }
+  }
+}

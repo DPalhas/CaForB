@@ -1,0 +1,199 @@
+{
+  "id": "R0396",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0434",
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:56:04.694032+00:00",
+    "duration_ms": 42307,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Prime Labs",
+      "sector": "Telecommunications",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Unified communications provider offering cloud PBX, video conferencing, and contact center solutions to 3,000 business customers. Migrating legacy on-premise customers to cloud platform. Developing AI-powered call transcription, sentiment analysis, and agent assist features. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "11 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0434",
+      "fields": {
+        "companyName": "Prime Labs",
+        "sector": "Telecommunications",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Unified communications provider offering cloud PBX, video conferencing, and contact center solutions to 3,000 business customers. Migrating legacy on-premise customers to cloud platform. Developing AI-powered call transcription, sentiment analysis, and agent assist features. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 10,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 7 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_data_monetization",
+        "type": "incremental",
+        "title": "Develop a Regulated Data Marketplace Platform (DMP)",
+        "rationale": "Building on the proprietary data collected from 3,000 customers and existing AI features, developing a managed marketplace for anonymized data insights is key to diversification. Due to high regulatory standards in telecommunications, this requires building compliance into every step of the platform's lifecycle.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an external legal/compliance advisory board specializing in telecom data privacy (e.g., GDPR, CCPA equivalents).",
+            "Map all data streams to determine anonymization feasibility and required consent layers.",
+            "Pilot a Minimum Viable Product (MVP) focusing only on non-PII sentiment analysis reports for industry partners."
+          ],
+          "resources_needed": [
+            "External Compliance Counsel",
+            "Data Governance Architect",
+            "Dedicated legal risk fund"
+          ],
+          "success_metric": "Achieve regulatory sign-off (legal/ethics) on the data usage model.",
+          "milestones": [
+            "Complete initial data mapping and compliance gap analysis.",
+            "Launch internal proof-of-concept for anonymized data transfer.",
+            "Secure first paid external pilot partner."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_skill_matrix",
+        "type": "radical",
+        "title": "Establish a Specialized Technology Talent Acquisition Pipeline",
+        "rationale": "The current barrier of specialized expertise limits the ability to evaluate complex investments (e.g., advanced AI/Marketplace integration). A proactive pipeline, focusing on dedicated external partnerships and internal upskilling tracks, is necessary for sustainable growth in highly technical adjacent markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Define 3 critical job profiles (e.g., Data Ethicist, Cloud Compliance Engineer) that are currently lacking internally.",
+            "Formalize a university or industry incubator partnership to provide early access talent pools.",
+            "Implement mandatory cross-training programs for existing staff on data governance best practices."
+          ],
+          "resources_needed": [
+            "HR Budget increase (15%)",
+            "Partnership development time",
+            "Executive sponsorship commitment"
+          ],
+          "success_metric": "Reduction of external advisory support hours by 20% within one year.",
+          "milestones": [
+            "Signed MOUs with two target educational/talent institutions.",
+            "Internal staff certified in basic data governance principles.",
+            "Hiring of first specialized, full-time role."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1_governance",
+        "action": "Finalize and execute the Data Marketplace Governance Framework with external compliance counsel.",
+        "owner": "COO/Legal Department",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "step_2_market_vetting",
+        "action": "Identify and vet three potential non-core business models (e.g., specialized vertical SaaS layer) that require minimal initial capital commitment but utilize existing data.",
+        "owner": "R&D/Strategy Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_3_culture_alignment",
+        "action": "Host mandatory cross-functional workshops focused on unified process standards to mitigate post-merger cultural friction.",
+        "owner": "HR/Leadership Team",
+        "timeframe": "Ongoing (Next 2 months)"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on proprietary data, which presents significant regulatory and ethical risk if governance is not perfect.",
+      "The specialized talent gap remains critical for executing advanced diversification plays like marketplaces.",
+      "Persistent internal culture friction following the merger, risking collaboration efficiency."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully institutionalized a formal innovation process with dedicated R&D funding and stage-gate review (significant maturity lift).",
+        "Increased budget allocation to 13% of revenue demonstrates executive commitment to growth/risk.",
+        "Successful completion of initial steps on multiple diversification opportunities."
+      ],
+      "persistent_gaps": [
+        "The core talent barrier remains, requiring specialized external investment rather than internal training alone.",
+        "Cross-functional process standardization is undermined by ongoing cultural integration challenges.",
+        "Regulatory complexity associated with data monetization was not fully mitigated pre-assessment."
+      ],
+      "achieved_milestones": [
+        "Developed an AI-powered recommendation engine that now contributes 18% of total revenue.",
+        "Advanced multiple diversification tracks into the 'in-progress' phase, proving process capability."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant maturation from an informal/emerging phase to a structured operation with proven successful product lines and increased operational budget allocation. The primary focus has shifted successfully from basic process establishment (Process Barrier) toward complex market diversification (Talent/Regulation Barriers)."
+    }
+  }
+}

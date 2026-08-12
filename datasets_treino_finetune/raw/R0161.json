@@ -1,0 +1,202 @@
+{
+  "id": "R0161",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0259",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:26:16.015655+00:00",
+    "duration_ms": 60104,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova Labs.ai",
+      "sector": "Healthtech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. 500+ credentialed physicians on the platform with 120,000 completed consultations. Regulated as a Class I medical device. Seeking AI-powered triage and symptom checking to optimize specialist routing. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0259",
+      "fields": {
+        "companyName": "Nova Labs.ai",
+        "sector": "Healthtech",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. 500+ credentialed physicians on the platform with 120,000 completed consultations. Regulated as a Class I medical device. Seeking AI-powered triage and symptom checking to optimize specialist routing. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 9,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 8 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "superseded",
+      "opp_4": "not_done",
+      "step_1": "completed",
+      "step_2": "not_done",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_refined",
+        "type": "incremental",
+        "title": "Streamlining Mid-Cycle Innovation Funding Approval Governance",
+        "rationale": "The core bottleneck remains the formal, rigid business case approval chain (3-4 stakeholders) that stalls innovative progress. This opportunity refines governance to create a rapid 'Innovation Fast Track' mechanism without compromising compliance or financial rigor.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional compliance checkpoint for early funding proposals, ensuring regulatory review occurs *before* initial budget allocation.",
+            "Map the current 3-4 stakeholder approval workflow to identify points of maximum latency and redundant sign-offs.",
+            "Draft a formal charter for an 'Innovation Steering Committee' (ISC) with defined authority to greenlight seed funding based on pre-agreed KPIs, bypassing traditional annual planning bottlenecks."
+          ],
+          "resources_needed": [
+            "Executive Sponsor (CEO/COO)",
+            "Finance Lead",
+            "Legal/Compliance Counsel"
+          ],
+          "success_metric": "Reduction of the average time from concept pitch to seed funding approval by 40%.",
+          "milestones": [
+            "Stakeholder workshop completion and charter agreement.",
+            "Pilot program approval for two defined low-risk initiatives (MVP stage).",
+            "Integration into quarterly planning cycle."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5_sandbox",
+        "type": "radical",
+        "title": "Establishing a Decentralized Digital MVP Sandbox for New Market Entry",
+        "rationale": "To achieve the goal of entering two new geographic markets and launching D2C, Nova must de-risk market entry. Creating an isolated digital sandbox allows rapid prototyping (MVP) for specific use cases/regions without needing full corporate buy-in or modifying core B2B infrastructure.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the lowest regulatory burden, highest growth potential pilot region/D2C function to test initially.",
+            "Allocate a segregated 'sandbox' budget pool managed by the R&D exploratory squad, requiring only high-level leadership sign-off (bypassing formal business case).",
+            "Develop standardized telemetry and monitoring tools within the sandbox environment to track adoption rates, conversion metrics, and localized compliance risks."
+          ],
+          "resources_needed": [
+            "Dedicated R&D/Tech Squad capacity.",
+            "Limited Operational Budget Pool (non-OPEX)",
+            "Legal Counsel specializing in international data privacy/regulations."
+          ],
+          "success_metric": "Successful, compliant deployment of a minimum viable product to the pilot region achieving X number of paying users within 90 days.",
+          "milestones": [
+            "Sandbox framework design and regulatory pre-check complete.",
+            "Pilot MVP launched in target market (Beta).",
+            "Go/No-go review based on initial adoption metrics."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize the internal structure and KPIs of the newly proposed Innovation Steering Committee (ISC) to gain executive commitment for fast-tracking funding.",
+        "owner": "COO/Head of Strategy",
+        "timeframe": "Q3 2024"
+      },
+      {
+        "id": "ns2",
+        "action": "Develop detailed market requirements and regulatory checklists for the top two target geographic markets identified during strategic planning.",
+        "owner": "Commercial Lead/Legal",
+        "timeframe": "Q3 2024"
+      },
+      {
+        "id": "ns3",
+        "action": "Conduct a focused review of the current product roadmap to explicitly allocate capacity and budget (6% reduction) towards the exploratory squad's sandbox prototyping efforts.",
+        "owner": "VP R&D",
+        "timeframe": "Ongoing/Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Dependency on annual planning cycles, leading to poor mid-cycle agility for growth initiatives.",
+      "Funding and resource allocation process is too complex and slow, stifling the rapid iteration required by a high-growth D2C model.",
+      "Innovation output lacks a clear commercialization 'owner' role after initial brainstorming, resulting in execution fade (as seen previously)."
+    ],
+    "progress": {
+      "improvements": [
+        "Formalizing organizational structure with dedicated functional leadership and two specialized R&D squads.",
+        "Increased digital maturity to Level 3, demonstrating capability for data-driven insights and analytics infrastructure build-out.",
+        "Successfully completing initial foundational process steps (e.g., defining the scope of Opportunity 2 and establishing core operational metrics)."
+      ],
+      "persistent_gaps": [
+        "The bottleneck in internal decision-making (the 3-4 stakeholder approval chain) remains unresolved, creating a critical gap between idea generation and execution funding.",
+        "Lack of demonstrable commercialization pathways for exploratory ideas; process governance is improving, but quick *money* to prove value is still difficult."
+      ],
+      "achieved_milestones": [
+        "Opportunity 2 (Initial Governance) has been completed, allowing foundational steps toward operationalizing the sandbox concept.",
+        "Step 1 of internal streamlining efforts has been completed, providing initial process maps for review."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has dramatically professionalized its structure (hiring senior leaders, formalizing planning) and advanced its digital capabilities (D2 maturity). However, growth ambitions are currently constrained by rigid internal governance processes."
+    }
+  }
+}

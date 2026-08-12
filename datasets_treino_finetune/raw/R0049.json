@@ -1,0 +1,203 @@
+{
+  "id": "R0049",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0326",
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:25:08.941349+00:00",
+    "duration_ms": 57509,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.953073+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Helix.ai",
+      "sector": "Hospitality & Tourism",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Event venue and catering company managing a conference center and 3 satellite event spaces. Hosting 500+ corporate events and weddings annually. Looking to implement end-to-end event management software covering CRM, floor plan design, menu customization, and day-of operations coordination. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "11 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0326",
+      "fields": {
+        "companyName": "Helix.ai",
+        "sector": "Hospitality & Tourism",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Event venue and catering company managing a conference center and 3 satellite event spaces. Hosting 500+ corporate events and weddings annually. Looking to implement end-to-end event management software covering CRM, floor plan design, menu customization, and day-of operations coordination. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 10,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 7 strategic partnerships. Revenue growth 25% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "opp_3": "completed",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Complete Fleet-Wide Operational Integration (IoT)",
+        "rationale": "The successful pilot of IoT sensors demonstrated significant capability to reduce downtime. The current bottleneck is the full rollout and integration with legacy maintenance systems, which must be formalized and scaled across all operational sites to realize maximum ROI.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a standardized change management protocol incorporating regulatory safety compliance checks for all new sensor installations.",
+            "Establish API middleware layer dedicated solely to translating IoT data streams into the legacy maintenance system format.",
+            "Map end-to-end ownership (from IT procurement to site operations) to ensure accountability during rollout."
+          ],
+          "resources_needed": [
+            "Dedicated Enterprise Architecture Lead",
+            "Integration Specialist Team",
+            "Updated Compliance Manuals"
+          ],
+          "success_metric": "Reduction in unplanned downtime across 90% of the total fleet capacity.",
+          "milestones": [
+            "Successful integration sandbox test with legacy system (Q1)",
+            "Full rollout completion on two satellite event sites (Q2)",
+            "Formalized operational SOPs for IoT monitoring (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Formalize and Scale Enterprise Recurring Revenue Model (RRM)",
+        "rationale": "To achieve the €50M ARR target, Helix.ai must transition from project-based service delivery to a predictable recurring revenue model. This requires fundamentally changing sales playbooks, pricing architecture, and defining repeatable enterprise client segments.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct deep segmentation analysis of the top 10 clients by potential for annual retainer/subscription services.",
+            "Design a tiered B2B service offering matrix (e.g., Bronze, Silver, Gold) that bundles software access and guaranteed operational support hours.",
+            "Establish baseline metrics for successful enterprise sales cycles (time-to-close, required touchpoints).",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Revenue Operations Specialist",
+            "Financial Modeling Expert",
+            "Senior Sales Leadership Time"
+          ],
+          "success_metric": "Identification and creation of at least three viable recurring revenue product lines with defined pricing (Internal Beta).",
+          "milestones": [
+            "Completion of segmentation analysis report (Q1)",
+            "Pilot sales pitch training rollout to 5 key account managers (Q2)",
+            "First negotiated annual contract under the new RRM structure (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Establish a Cross-Functional Transformation Steering Committee (TSC) involving Operations, IT, and Sales leadership to govern the RRM transition and IoT deployment.",
+        "owner": "CEO/COO",
+        "timeframe": "Immediate (30 days)"
+      },
+      {
+        "id": "step_2",
+        "action": "Institute mandatory centralized training on formalized data collection methodologies for all business unit staff, replacing reliance on 'informal conversations'.",
+        "owner": "Digital Transformation Office (DTO)",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "step_3",
+        "action": "Conduct a detailed gap analysis between current IoT data standards and the requirements of potential future AI/ML predictive models.",
+        "owner": "IT/Operations Lead",
+        "timeframe": "Next 45 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Structural variability in business unit adoption (matrix structure governance gap).",
+      "Over-reliance on ad-hoc, informal customer feedback rather than standardized data sources.",
+      "High complexity and dependency risk associated with integrating modern tech solutions into legacy maintenance systems."
+    ],
+    "progress": {
+      "improvements": [
+        "Achieved quantifiable growth (25% YoY revenue increase) validating market fit.",
+        "Successful completion of the IoT pilot, proving operational capability reduction.",
+        "Defined and ambitious long-term strategic goal (€50M ARR), providing necessary direction."
+      ],
+      "persistent_gaps": [
+        "Lack of standardized process governance across geographically dispersed business units.",
+        "Failure to translate proven technical capabilities (IoT) into systemic, scalable revenue models.",
+        "Decision-making remains highly decentralized and project-gated, slowing enterprise adoption."
+      ],
+      "achieved_milestones": [
+        "Successful piloting of IoT sensors leading to a 15% reduction in unplanned downtime on instrumented machines.",
+        "Formal approval of the full fleet rollout business case for operational monitoring."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Demonstrated significant tactical progress (IoT pilot success, high revenue growth) and increased digital maturity from 3 to 4. The focus has shifted from mere capability assessment to complex execution strategy (RRM and full rollout)."
+    }
+  }
+}

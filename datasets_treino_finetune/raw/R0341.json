@@ -1,0 +1,227 @@
+{
+  "id": "R0341",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0390",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:05:34.537471+00:00",
+    "duration_ms": 49520,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.033225+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian Systems",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 0,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+    },
+    "previous_assessment": {
+      "id": "0390",
+      "fields": {
+        "companyName": "Meridian Systems",
+        "sector": "Manufacturing",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 3,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 4 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_automation_2.0",
+        "type": "incremental",
+        "title": "Efficiency Automation & Workflow Modernization (OPEX Focus)",
+        "rationale": "The core goal remains OPEX reduction by automating manual workflows (invoicing, order processing). Given the constrained budget and focus on efficiency, this must be executed in small, high-ROI batches. The mandatory infrastructure upgrade provides a natural opportunity to modernize these workflows simultaneously.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed process mapping workshops focused solely on the top 3 pain points (e.g., order intake validation).",
+            "Define clear scope for API integration points between existing systems and new cloud architecture components.",
+            "Establish a minimum viable automation proof-of-concept using internal developer capacity.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Time dedicated from the 2 generalist developers (ring-fenced)",
+            "Access to detailed operational workflow documentation",
+            "External consultant for initial process mapping validation (short contract)"
+          ],
+          "success_metric": "Reduction in manual touchpoints/transaction time by X% within 6 months.",
+          "milestones": [
+            "Completed high-ROI process map and prioritized backlog.",
+            "Successful pilot automation deployment (e.g., Invoice generation).",
+            "Measurable reduction in associated labor hours."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_regulatory_infra",
+        "type": "incremental",
+        "title": "Mandatory Cloud Infrastructure Modernization & Compliance Layering",
+        "rationale": "The data localization mandate is a non-discretionary technical project, but it represents the single largest opportunity to improve digital maturity. By treating this compliance requirement as an innovation driver, Meridian can build resilience and modern architecture that supports future efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Engage legal/compliance counsel early to define precise data residency requirements for all four product lines.",
+            "Develop a phased migration roadmap (Wave 1: Non-critical data; Wave 2: Core transactional data).",
+            "Conduct a full audit of existing system dependencies against the new cloud architecture scope."
+          ],
+          "resources_needed": [
+            "Dedicated external Cloud Architect/Compliance Expert",
+            "Owner's commitment to project governance and decision-making.",
+            "Budget allocation for mandatory migration costs (Treat as CAPEX, not OPEX)."
+          ],
+          "success_metric": "Achieving 100% compliance with new data residency laws by the deadline. Reduction in technical debt risk score.",
+          "milestones": [
+            "Completed gap analysis of current infrastructure vs required state.",
+            "Successful migration of a non-critical, test environment workload.",
+            "Go-live reporting for mandatory functional scope."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_process_loop",
+        "type": "incremental",
+        "title": "Structured Process Improvement Loop (S-PIL)",
+        "rationale": "The previous brainstorming sessions failed due to lack of execution path. This opportunity structures the improvement process by limiting scope and mandating rapid, measurable action for small wins, thereby building internal capability and overcoming cultural inertia.",
+        "execution_plan": {
+          "first_actions": [
+            "Formalize a 'Process Champion' role (even if temporary) to own coordination across departments.",
+            "Institute a 2-week cycle: Identify -> Map -> Automate POC. Focus on single, isolated manual steps.",
+            "Tie process improvement directly to measured OPEX savings shown in the P&L."
+          ],
+          "resources_needed": [
+            "Owner's time for championing and quick decision-making.",
+            "Dedicated 4 hours/week from generalist developers solely for POC building.",
+            "A clear, shared visual process mapping tool."
+          ],
+          "success_metric": "Successful completion of three distinct, low-complexity automation POCs within the next quarter.",
+          "milestones": [
+            "Selection and agreement on 3 pilot processes (e.g., stock adjustment request).",
+            "Documentation of measurable time/cost savings for each pilot.",
+            "Creation of a repeatable 'Improvement Playbook'."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Ongoing",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Owner to formally scope and dedicate resources (time/budget) for the mandatory cloud infrastructure re-architecture, treating it as a foundational project that enables all innovation.",
+        "owner": "Founder/Owner",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "step_2",
+        "action": "Form a cross-functional core team (including one operations staff, one developer, and the Process Champion) to conduct deep process mapping workshops for Order Processing.",
+        "owner": "Operations Lead/Process Champion",
+        "timeframe": "Next 45 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on single owner decision-making (bottleneck risk).",
+      "Limited technical bandwidth due to generalist developer roles.",
+      "Lack of standardized, documented processes outside of core operational execution."
+    ],
+    "progress": {
+      "improvements": [
+        "The company successfully launched the Inventory Digitalization project, addressing a key supply chain vulnerability and demonstrating initial commitment to technology.",
+        "Increased awareness of regulatory risk, which forces structured planning for modernization."
+      ],
+      "persistent_gaps": [
+        "Formal process ownership remains decentralized; improvements are ad-hoc rather than systemic.",
+        "The 'idea generation' stage is still disconnected from the execution/budgetary stage (reiteration of previous failure).",
+        "Funding and resource allocation for innovation must be explicitly ring-fenced from mandatory operational maintenance."
+      ],
+      "achieved_milestones": [
+        "Initiation of inventory digitalization efforts.",
+        "Clear understanding of 15% OPEX reduction target, focusing the scope on automation opportunities."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The assessment cycle has shifted from general 'optimization' thinking to mandated 'survival and compliance.' The external pressure (localization mandate) provides a critical structure that must now be leveraged to fund and de-risk efficiency gains."
+    }
+  }
+}

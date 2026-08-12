@@ -1,0 +1,197 @@
+{
+  "id": "R0021",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0485",
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:36:27.803012+00:00",
+    "duration_ms": 50936,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault Labs.io",
+      "sector": "SaaS / Software",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "B2B SaaS platform for field service management including scheduling, dispatching, mobile work orders, and invoicing. 600+ customers across HVAC, plumbing, and electrical trades. Processing 2 million work orders annually. Current ARR growth rate of 40%. Evaluating AI-powered route optimization and parts inventory prediction modules. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "6 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 21,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0485",
+      "fields": {
+        "companyName": "Vault Labs.io",
+        "sector": "SaaS / Software",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "B2B SaaS platform for field service management including scheduling, dispatching, mobile work orders, and invoicing. 600+ customers across HVAC, plumbing, and electrical trades. Processing 2 million work orders annually. Current ARR growth rate of 40%. Evaluating AI-powered route optimization and parts inventory prediction modules. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "4",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 21,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 4 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.8,
+    "score_delta": 1.3,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "End-to-End Workflow Standardization Initiative",
+        "rationale": "The company’s high volume (2M work orders) and stated goal for standardization require mapping out critical paths that currently rely on ad-hoc processes. This initiative directly tackles the 'time' barrier by creating standardized operational playbooks, improving throughput without adding headcount.",
+        "execution_plan": {
+          "first_actions": [
+            "Select 3 core field service workflows (e.g., job creation to billing) for detailed process mapping workshops.",
+            "Establish a cross-functional 'Process Guild' composed of operations and IT stakeholders.",
+            "Develop standardized SOPs (Standard Operating Procedures) and define clear digital handoffs between departments."
+          ],
+          "resources_needed": [
+            "Dedicated Operations Analyst",
+            "SME time commitment (Subject Matter Experts)",
+            "Low-code/No-code platform access for initial automation prototypes"
+          ],
+          "success_metric": "Reduction in average cycle time for key workflows by 15% within 6 months.",
+          "milestones": [
+            "Completion of process maps for 3 core functions.",
+            "Approval and deployment of standardized digital handoffs (Phase 1 automation).",
+            "Training rolled out to all relevant teams on new SOPs."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Predictive Operational Digital Twin Model",
+        "rationale": "Vault Labs has significant data depth (scheduling, inventory, work orders) but is constrained by internal processes. A digital twin model moves beyond simple automation to simulate 'what-if' scenarios—predicting parts failure, optimal scheduling adjustments, and resource needs—fundamentally boosting efficiency in a bold manner.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify core data streams (historical work orders, inventory levels, travel time) for model ingestion.",
+            "Engage specialized predictive modeling consultants to design the initial simulation architecture.",
+            "Establish a dedicated sandbox environment for model development, bypassing standard IT procurement review initially."
+          ],
+          "resources_needed": [
+            "Data Science/AI Expertise",
+            "Advanced Data Warehouse Capacity (Cloud)",
+            "High-level executive sponsorship to mandate data access across silos"
+          ],
+          "success_metric": "Demonstrable improvement in service call completion rate due to proactive parts staging (measured by reduction in failed first visits).",
+          "milestones": [
+            "Proof of Concept: Model predicts optimal route adjustments for a specific geographic zone.",
+            "Integration with inventory management system.",
+            "Pilot deployment and validation against current operations."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a dedicated Process Deep Dive Workshop to map and quantify the bottlenecks in the service lifecycle (from dispatch order to final invoice).",
+        "owner": "Operations/Project Lead",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Form a Governance Task Force, including representatives from Legal, Procurement, and IT Security, to create a streamlined 'Innovation Review Fast Track' protocol.",
+        "owner": "Executive Leadership/COO",
+        "timeframe": "6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Execute a Data Architecture Audit across core systems (CRM, ERP, WMS) to create a unified data model supporting predictive modeling.",
+        "owner": "IT/Data Engineering",
+        "timeframe": "8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational Velocity: Internal processes are heavily weighted toward stability and risk management, significantly hindering speed and agility (the 'speed tax').",
+      "Data Silos: Despite significant data volume, the lack of a unified data architecture prevents full operational optimization and predictive capability.",
+      "Governance Bottleneck: The existing formal committee process creates unnecessary latency for proven innovation ideas."
+    ],
+    "progress": {
+      "improvements": [
+        "Expansion into adjacent markets signals successful growth leveraging high capital depth.",
+        "Increased awareness of internal systemic inefficiencies (staff acknowledging the need for standardization)."
+      ],
+      "persistent_gaps": [
+        "Crucial process improvements and automation steps have not been initiated or completed, indicating a continuation of organizational inertia despite resource availability.",
+        "The structural barriers (legal/procurement) that slow innovation remain unaddressed by executed actions."
+      ],
+      "achieved_milestones": [
+        "No major project milestones were reported as achieved since the last assessment cycle."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.5,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Slight increase in maturity (7.8) driven by increased enterprise client success and recognizing the need for standardization, though progress execution remains stalled due to persistent internal governance friction."
+    }
+  }
+}

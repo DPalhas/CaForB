@@ -1,0 +1,200 @@
+{
+  "id": "R0020",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0486",
+  "split": "train",
+  "metadata": {
+    "sector": "Public Administration",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:35:36.843578+00:00",
+    "duration_ms": 47700,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova Industries.co",
+      "sector": "Public Administration",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Municipal government administration serving a population of 250,000 residents with services spanning urban planning, waste management, social services, and cultural programming. Annual operating budget of €180M. Currently executing a smart city strategy including sensor-based waste bin fill monitoring, intelligent traffic light optimization, and a unified citizen services portal. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "12 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0486",
+      "fields": {
+        "companyName": "Nova Industries.co",
+        "sector": "Public Administration",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Municipal government administration serving a population of 250,000 residents with services spanning urban planning, waste management, social services, and cultural programming. Annual operating budget of €180M. Currently executing a smart city strategy including sensor-based waste bin fill monitoring, intelligent traffic light optimization, and a unified citizen services portal. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 5,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "culture"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 4 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "completed",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_rework_journey",
+        "type": "incremental",
+        "title": "Re-engineering Citizen Journey Mapping & Automation Feasibility",
+        "rationale": "The previous self-service attempt failed due to inadequate understanding of user needs and process complexity. This opportunity shifts focus from building technology features to deeply mapping current manual processes first, ensuring that any automation directly solves a critical pain point for both citizens and staff.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct targeted ethnographic interviews with end-users (staff) in the affected departments (e.g., invoicing).",
+            "Map 'As-Is' processes using Business Process Modeling Notation (BPMN), highlighting manual handoffs and decision points.",
+            "Categorize pain points by effort vs. impact to prioritize automation targets."
+          ],
+          "resources_needed": [
+            "Dedicated process mapping consultant (part-time)",
+            "Stakeholder time commitment (mandatory participation from department leads)",
+            "Process documentation software license"
+          ],
+          "success_metric": "Completion of 3 high-fidelity 'To-Be' process maps with documented ROI potential.",
+          "milestones": [
+            "Phase 1: Pain Point Identification (Month 1)",
+            "Phase 2: Process Mapping & Prioritization (Month 2)",
+            "Phase 3: MVP Scope Definition for automation (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_process_mining",
+        "type": "incremental",
+        "title": "Process Mining & Low-Code Automation Implementation",
+        "rationale": "Given the 15% cost reduction goal and identified manual waste in back-office functions (invoicing, order processing), process mining provides objective data on where time and resources are wasted. Starting with low-code solutions minimizes upfront technical risk while maximizing immediate ROI.",
+        "execution_plan": {
+          "first_actions": [
+            "Select a narrow scope area for initial pilot (e.g., Accounts Payable/Invoicing workflow).",
+            "Implement process mining tool connected to existing system logs to visualize bottlenecks and deviations.",
+            "Develop low-code RPA bots to handle high-volume, repetitive data extraction or transfer tasks."
+          ],
+          "resources_needed": [
+            "Process Mining Tool Subscription (low cost)",
+            "IT/Technical SME time for integration",
+            "Team buy-in and willingness to document current procedures"
+          ],
+          "success_metric": "Automated reduction in processing time or error rate for the pilot workflow by 20%.",
+          "milestones": [
+            "Tool setup and data connection validation (Month 1)",
+            "Pilot Bot Deployment & Testing (Month 2)",
+            "ROI Calculation & Expansion Plan (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Establish a dedicated Process Owner role (not necessarily headcount growth) responsible for championing process documentation and acting as the single point of truth for efficiency gains.",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Execute a low-cost 'quick win' workflow mapping workshop focusing exclusively on the invoicing cycle to build immediate momentum and demonstrate ROI.",
+        "owner": "Team Leads/Process Owner",
+        "timeframe": "Within 45 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize an internal KPI dashboard tracking operational metrics (e.g., time per transaction, manual intervention count) to monitor automation impact.",
+        "owner": "IT/Data Analyst",
+        "timeframe": "Next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on key individuals (Founder bottlenecking strategic decisions).",
+      "Underdeveloped internal process documentation and adherence to standardized workflows.",
+      "Cultural resistance to change, particularly concerning perceived threat from automation."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased budget allocation for innovation focus (10% vs 5%).",
+        "Client acquisition success in adjacent markets demonstrates market expansion capability.",
+        "Digital maturity has improved from Level 1 to Level 2, showing foundational tech adoption."
+      ],
+      "persistent_gaps": [
+        "Fundamental operational processes remain undocumented and manual.",
+        "Lack of a formal governance structure for innovation prioritization outside the founder's direct involvement.",
+        "The root cause of low customer adoption (process understanding) has not been addressed, only superficial fixes."
+      ],
+      "achieved_milestones": [
+        "Completion of foundational technology infrastructure improvements related to smart city management.",
+        "Successful acquisition and onboarding of 4 new enterprise clients."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved digital capability and market presence (4 new clients); shifted focus from general experimentation to targeted cost reduction through process automation."
+    }
+  }
+}

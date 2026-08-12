@@ -1,0 +1,199 @@
+{
+  "id": "R0096",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0012",
+  "split": "train",
+  "metadata": {
+    "sector": "Other",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:21:14.894850+00:00",
+    "duration_ms": 116274,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.965305+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex",
+      "sector": "Other",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0012",
+      "fields": {
+        "companyName": "Apex",
+        "sector": "Other",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "balanced",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 6,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 7 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "opp_4": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establishing a Group Innovation Funnel and Governance Model",
+        "rationale": "The shift to professional management requires codifying the innovation process across disparate operating businesses. This formalization helps move from 'informal' ideas to vetted, resource-allocated projects, providing necessary structure for rapid growth goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a standardized Intake/Idea Management System (e.g., Jira/Aha!) accessible across all 6 operating companies.",
+            "Define clear Stage-Gate criteria: concept definition, business case validation, resource allocation approval.",
+            "Mandate quarterly 'Innovation Portfolio Review' sessions with the executive leadership team.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Innovation Program Manager (full-time)",
+            "Integration time from core finance/strategy teams",
+            "Lean process modeling tools"
+          ],
+          "success_metric": "Time-to-concept validation cycle reduced by 25%.",
+          "milestones": [
+            "Draft Governance Charter approved.",
+            "First cross-portfolio concept submitted and rated.",
+            "Pilot Funnel operational in one business unit."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "new_opp_2",
+        "type": "radical",
+        "title": "Implementing a Centralized Group Shared Service Platform (GS²P)",
+        "rationale": "With combined revenues of €180M and plans for cross-portfolio expansion, decentralized digital functions create significant integration risk. A foundational platform is needed to standardize core processes (finance, HR, supply chain) before scaling into new markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis comparing current 6 operating company systems against industry best practices for centralized ERP/HCM functions.",
+            "Select an enterprise platform vendor and form the core business requirements team (including compliance officers).",
+            "Define a minimum viable scope: target one high-friction, cross-portfolio process (e.g., Group Procure-to-Pay) for the pilot."
+          ],
+          "resources_needed": [
+            "Dedicated Enterprise Architect/System Integrator consultancy",
+            "Buy-in and time commitment from operational heads",
+            "Budget allocation for platform licensing"
+          ],
+          "success_metric": "Successful integration of one shared function (e.g., unified global vendor master data) across 3+ operating units.",
+          "milestones": [
+            "Platform requirements defined and vendor shortlisted.",
+            "Pilot scope agreed upon with measurable metrics.",
+            "Initial data migration strategy complete."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formally establish a Cross-Functional Steering Committee comprising operational VPs and IT leads to govern the GS²P vision and resolve departmental resource conflicts.",
+        "owner": "CEO/Executive Sponsor",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Initiate a formal Regulatory Impact Assessment (RIA) comparing the compliance requirements of the two primary target geographic markets to inform process redesign.",
+        "owner": "Legal/Compliance Officer",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Identify one 'quick win' operational area (e.g., internal expense reporting or initial B2B customer onboarding flow) to serve as the pilot for both governance and digital platform implementation.",
+        "owner": "COO/Process Improvement Lead",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Processes remain fundamentally siloed across operating units, preventing scalable group-level growth.",
+      "Digital maturity remains stuck at Level 1; the lack of centralized architecture prevents standardized scaling (the biggest impediment to achieving rapid revenue goals).",
+      "Process ownership is decentralized, leading to decision paralysis regarding which system or process should be modernized first."
+    ],
+    "progress": {
+      "improvements": [
+        "Leadership structure has professionalized significantly (hiring senior leaders) and defined aggressive growth targets.",
+        "Formalizing strategic planning processes and identifying cross-portfolio gaps demonstrates commitment to modernization."
+      ],
+      "persistent_gaps": [
+        "The core 'process' barrier persists. While plans are made, the execution requires overcoming entrenched operational habits and departmental inertia.",
+        "Digital foundation remains rudimentary (D=1); lack of a shared, integrated platform limits both growth potential and global compliance management."
+      ],
+      "achieved_milestones": [
+        "The initial framework for structured innovation oversight has been completed and agreed upon in principle.",
+        "Executive alignment on the necessity of modernization is high, providing crucial political capital to drive large-scale change."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 1.5,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant organizational maturation from founder-led to professional management. The company has transitioned from merely acknowledging a need for change to actively formalizing strategic goals and evaluating enterprise-level transformation (Cross-portfolio/DTC), increasing the scope and complexity of required initiatives."
+    }
+  }
+}

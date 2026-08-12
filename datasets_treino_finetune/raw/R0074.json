@@ -1,0 +1,202 @@
+{
+  "id": "R0074",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0336",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:56:57.949967+00:00",
+    "duration_ms": 64530,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus Services",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 15,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0336",
+      "fields": {
+        "companyName": "Nexus Services",
+        "sector": "Manufacturing",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "balanced",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 10,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 7 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "opp_4": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_scale_opx",
+        "type": "incremental",
+        "title": "Establish a Process Scale Accelerator Function",
+        "rationale": "The company has successfully run decentralized innovation projects (hackathons, fellows) resulting in tangible process improvements (35% defect reduction). The next step is to standardize the processes used by these successful initiatives into repeatable, scalable playbooks that can be adopted across all production lines and geographies.",
+        "execution_plan": {
+          "first_actions": [
+            "Document current 'best practice' workflows from completed innovation projects.",
+            "Develop a cross-functional task force (Operations/IT) to map these processes against existing ERP/MES capabilities.",
+            "Pilot the standardized playbook in one high-volume, low-complexity production line."
+          ],
+          "resources_needed": [
+            "Dedicated Process Engineering FTE",
+            "Integration Mapping Software Tool",
+            "Operational Budget for Pilot Run"
+          ],
+          "success_metric": "Reduction in time-to-implement new process by 25% across BUs.",
+          "milestones": [
+            "Process mapping complete (Q1)",
+            "Pilot implementation successful and documented (Q2)",
+            "Rollout plan to remaining sites established (H2)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_rev_model",
+        "type": "radical",
+        "title": "Develop and Pilot Recurring Service Revenue Stream (SaaS/Data)",
+        "rationale": "Achieving €50M ARR requires a shift away from pure transactional product sales. The existing successful technology implementations (e.g., vision inspection) provide the ideal basis for recurring, subscription-based value offerings tied to data insights or uptime monitoring. This de-risks growth by creating predictable revenue.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 core client use cases where failure detection/optimization is critical (e.g., energy consumption, shelf-life tracking).",
+            "Develop a Minimum Viable Product (MVP) prototype focusing solely on data aggregation and predictive alert generation.",
+            "Create tiered pricing models based on usage volume and feature set."
+          ],
+          "resources_needed": [
+            "Data Science/AI Talent",
+            "Legal Counsel (contractual model design)",
+            "Dedicated Business Unit Lead for Partnerships"
+          ],
+          "success_metric": "Conversion of 1 anchor client into a paid pilot subscription contract within 6 months.",
+          "milestones": [
+            "Market requirements and MVP scope defined (Q1)",
+            "Pilot data dashboard operational in sandbox environment (Q2)",
+            "Signed LOI for paying customer pilot program (H1)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_tech_roadmap",
+        "action": "Formalize a consolidated 18-month roadmap for integrating core systems (ERP/CRM/HRIS) to eliminate data silos and improve sales visibility.",
+        "owner": "CTO / IT Leadership",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "ns_sales_pilot",
+        "action": "Select 3 'lighthouse' existing clients willing to pilot the new recurring revenue data service model, providing high visibility and usage data.",
+        "owner": "Head of Strategic Accounts/Sales",
+        "timeframe": "Immediate (4 Weeks)"
+      },
+      {
+        "id": "ns_ip_monetize",
+        "action": "Conduct a workshop involving legal, R&D, and business leadership to map the full commercialization potential of the patent portfolio beyond simple filing.",
+        "owner": "Innovation Fellow Program Manager / Strategy Lead",
+        "timeframe": "Next 6 Weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Data Silos and Integration Gaps: Core systems (ERP, CRM) are not fully integrated, hampering end-to-end visibility.",
+      "Strategic Execution Bottleneck: High innovation potential exists via '20% time,' but converting these ideas into funded, scaled product lines remains challenging due to varied BU ownership.",
+      "Revenue Model Imbalance: Over-reliance on one-time transactional sales rather than establishing a predictable, recurring service revenue stream."
+    ],
+    "progress": {
+      "improvements": [
+        "Significant expansion and commercial validation through 7 new enterprise client acquisitions.",
+        "Demonstrated operational excellence via the automated quality inspection prototype (35% defect reduction).",
+        "Enhanced structural capacity with formalized programs (hackathons, patent portfolio) improving innovation velocity."
+      ],
+      "persistent_gaps": [
+        "Systemic technology integration remains a primary bottleneck for data-driven decision making.",
+        "The transition of innovative prototypes from proof-of-concept to fully scaled commercial offerings requires more governance and dedicated funding outside the '20% time' structure."
+      ],
+      "achieved_milestones": [
+        "Successful implementation of new quality inspection technology in production lines.",
+        "Formalization of internal innovation processes (Fellows program, Quarterly Hackathons)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has significantly matured its operational framework and successfully executed initial innovation projects, moving from a 'Defined' process state to an advanced level of structural capability. The focus is now shifting from internal setup (process/culture) to external scalability and revenue model transformation."
+    }
+  }
+}

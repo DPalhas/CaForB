@@ -1,0 +1,206 @@
+{
+  "id": "R0268",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0360",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:39:47.607038+00:00",
+    "duration_ms": 39480,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.011339+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Synapse Consulting",
+      "sector": "Professional & Consulting Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 1,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0360",
+      "fields": {
+        "companyName": "Synapse Consulting",
+        "sector": "Professional & Consulting Services",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 7 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "step_1": "in_progress",
+      "step_2": "superseded",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 0.7,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Process Automation Maturity and ROI Quantification",
+        "rationale": "Building on the 7 processes already automated, the next step must be to standardize the identification of 'waste' across all remaining manual workflows. This shifts the focus from mere automation capability to proven, measurable return on investment (ROI) for efficiency gains.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct cross-functional value stream mapping workshops focused on high-volume touchpoints (e.g., invoicing/order processing).",
+            "Develop a standardized ROI calculator model that tracks time saved vs. implementation cost.",
+            "Identify the top 3 remaining bottlenecks and assign clear process owners responsible for documentation.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Process Mapping Specialist (External or Internal)",
+            "Data Engineering Time",
+            "Leadership Commitment (Time Allocation)"
+          ],
+          "success_metric": "Reduction in average cycle time for core processes by 10% within 6 months.",
+          "milestones": [
+            "Completed process maps for 5 critical workflows.",
+            "Pilot automation successful in one low-risk area.",
+            "Formalized ROI scorecard adopted by department heads."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_new_1",
+        "type": "incremental",
+        "title": "High Regulatory Compliance Framework Implementation",
+        "rationale": "Given the high regulatory environment and reliance on manual workflows, establishing a formal governance framework is critical. This mitigates risk before scaling efficiency gains through automation.",
+        "execution_plan": {
+          "first_actions": [
+            "Engage legal counsel to audit key operational processes against current regulations (e.g., data handling, consent).",
+            "Map compliance requirements directly into the required process steps and system controls.",
+            "Implement mandatory digital sign-offs or documentation checkpoints within existing CRMs/tools."
+          ],
+          "resources_needed": [
+            "Legal Counsel",
+            "Compliance Officer (Dedicated Time)",
+            "Project Management Office (PMO) Support"
+          ],
+          "success_metric": "Zero critical non-compliance findings during the first internal audit.",
+          "milestones": [
+            "Completed gap analysis report.",
+            "Trained staff on new compliance workflows.",
+            "Digital record retention policy established."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-15 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Facilitate a 'Waste Identification Workshop' with department leads to map manual workflows and quantify time sinks.",
+        "owner": "Operations Director / Consultant",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize the R&D function's interaction with Operations by establishing a prioritized automation backlog based on ROI scoring.",
+        "owner": "Small Leadership Team / CTO",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Initiate preliminary scoping for regulatory gap analysis, targeting the most sensitive data workflows first.",
+        "owner": "Compliance/Legal Department Lead",
+        "timeframe": "Immediately"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on manual processes and spreadsheets creates high operational risk and limits scalability.",
+      "Lack of formalized, standardized process documentation across multiple departments (Knowledge Silos).",
+      "Insufficient linkage between operational performance data and strategic decision-making cycles."
+    ],
+    "progress": {
+      "improvements": [
+        "Structural improvements in leadership team organization provide better governance potential.",
+        "Successfully automated 7 legacy processes, providing initial efficiency gains.",
+        "The R&D function is structured with clear lean methodology and dedicated resources for innovation."
+      ],
+      "persistent_gaps": [
+        "Manual workflows remain the primary bottleneck, indicating process formalization has not kept pace with automation efforts.",
+        "Previous strategic initiatives (e.g., customer self-service) lacked sufficient upfront discovery to validate actual user needs.",
+        "The organization is struggling to balance immediate operational efficiency demands with long-term innovation investment."
+      ],
+      "achieved_milestones": [
+        "Leadership restructuring completed and functional.",
+        "Proof of concept established for automation in 7 specific workflows."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.8,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has demonstrated improved internal structure and achieved tangible efficiency wins through initial process automation (7 processes). The focus has narrowed sharply onto operational expenses reduction, moving the priority from general innovation to measurable process ROI. However, core governance weaknesses persist."
+    }
+  }
+}

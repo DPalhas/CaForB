@@ -1,0 +1,201 @@
+{
+  "id": "R0292",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0321",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:16:33.849966+00:00",
+    "duration_ms": 46306,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Holdings",
+      "sector": "Mining & Extraction",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 20,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0321",
+      "fields": {
+        "companyName": "Strato Holdings",
+        "sector": "Mining & Extraction",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 15,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 8 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "step_1": "not_done",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 3.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_iot_optimization",
+        "type": "incremental",
+        "title": "Optimize IoT Integration and Data Pipeline Architecture",
+        "rationale": "The initial IoT pilot proved technical viability, showing a 15% reduction in downtime. The next focus must shift from mere sensor rollout to integrating this operational data stream robustly with the core legacy maintenance system, turning raw data into actionable insights for predictive maintenance models.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear API requirements and mapping protocols between IoT platform and CMMS/ERP.",
+            "Pilot a phased integration using one specific equipment line to validate the end-to-end data flow.",
+            "Establish standardized internal operational KPIs derived from integrated sensor data (e.g., Mean Time Between Failure - MTBIF)."
+          ],
+          "resources_needed": [
+            "Dedicated integration specialist (Talent)",
+            "System Architecture Blueprinting",
+            "Initial budget allocation for middleware/API gateway services"
+          ],
+          "success_metric": "Successful, automated data transfer of 95% of required operational metrics into the core maintenance system.",
+          "milestones": [
+            "Completed API gap analysis and resource mapping.",
+            "Successful pilot integration on first machine cluster.",
+            "Documentation of optimized data workflow process."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2_digital_platform",
+        "type": "radical",
+        "title": "Develop a Customer-Centric Digital Engagement Platform",
+        "rationale": "To address the critical decline in customer retention (92% to 84%), Strato must transition from informal conversation feedback loops to a structured, self-service digital platform. This radical shift is necessary to modernize the client experience and proactively halt product stagnation concerns among mid-tier/enterprise clients.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct detailed user journey mapping focusing specifically on customer pain points (self-service gaps).",
+            "Define Minimum Viable Product (MVP) scope targeting the top 3 friction points cited in exit interviews.",
+            "Establish a formal roadmap and dedicated resource pool for UX/UI design and development (shifting from generalists)."
+          ],
+          "resources_needed": [
+            "External CX/UX Consultant",
+            "Dedicated Project Manager (Strategy)",
+            "Formalized internal requirements gathering process"
+          ],
+          "success_metric": "Reduction in customer-reported friction points by 30% within the first quarter of platform launch.",
+          "milestones": [
+            "Completion and sign-off on MVP feature set and user stories.",
+            "Prototype testing completed with target mid-tier customers.",
+            "Beta launch of core self-service features."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_01",
+        "action": "Formalize the investment of the increased budget (20%) by creating a cross-functional Steering Committee involving senior leaders to prioritize technical debt vs. market opportunity.",
+        "owner": "Executive Management / Owners",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns_02",
+        "action": "Engage an external consultant specializing in digital transformation/CX mapping to guide the initial scope definition for Opp 2 (Digital Platform).",
+        "owner": "Head of Strategy / Owner",
+        "timeframe": "1 month"
+      },
+      {
+        "id": "ns_03",
+        "action": "Document and standardize all current operational processes that utilize spectrometry/AI analysis to build a clear data governance framework for future expansion.",
+        "owner": "Operations Lead / Technical Team",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Decision-making bottleneck remains centralized with the owner, slowing strategic pivots.",
+      "Lack of dedicated R&D/innovation talent means initiatives are highly dependent on 'spare cycles'.",
+      "Critical disconnect between operational efficiency improvements (IoT) and customer experience gaps (Digital tools), hindering holistic market defense."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful transition toward professional management with 8 senior hires, improving organizational structure.",
+        "Quantifiable proof-of-concept achieved via IoT sensors (15% reduction in unplanned downtime).",
+        "Increased budget allocation from 15% to 20% of revenue range."
+      ],
+      "persistent_gaps": [
+        "Strategic direction remains vulnerable due to owner dependency.",
+        "Core internal barrier: Lack of dedicated capacity for deep innovation work.",
+        "Customer-facing digital service gap continues to erode customer trust and retention."
+      ],
+      "achieved_milestones": [
+        "Successful pilot rollout of IoT monitoring on instrumented equipment lines, proving ROI potential."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.2,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant organizational professionalization and successful demonstration of operational efficiency improvements (IoT pilot). The focus has shifted from basic process improvement to urgent market defense via customer retention strategies."
+    }
+  }
+}

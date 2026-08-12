@@ -1,0 +1,205 @@
+{
+  "id": "R0296",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0299",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:19:27.344820+00:00",
+    "duration_ms": 28229,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Synapse Partners",
+      "sector": "Manufacturing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 26,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+    },
+    "previous_assessment": {
+      "id": "0299",
+      "fields": {
+        "companyName": "Synapse Partners",
+        "sector": "Manufacturing",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 21,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 3 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O1",
+        "type": "radical",
+        "title": "Establish Adjacent Market Testing Unit (AMTU)",
+        "rationale": "Given the structural decline in the core market, Synapse must pursue radical diversification. Creating a dedicated unit to test entirely new value propositions—leveraging adhesive formulation expertise into related sectors like green energy components or advanced composite structures—is critical. This shifts focus from incremental improvements.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market scoping workshops focusing on adjacent industrial needs (e.g., wind turbine seals, electric vehicle battery casings).",
+            "Identify 2-3 potential pilot partners in non-traditional sectors and map their pain points.",
+            "Allocate a dedicated 'sprint budget' within the innovation squad for rapid prototyping/feasibility studies."
+          ],
+          "resources_needed": [
+            "Industry expert consultants (non-chemical sector)",
+            "Dedicated time from product management and data science team members",
+            "Small seed fund ($50k-$100k) for pilots"
+          ],
+          "success_metric": "Number of viable, differentiated market hypotheses generated and validated within 6 months.",
+          "milestones": [
+            "Completion of cross-sector needs assessment (Month 2)",
+            "Selection of two primary target adjacent industries (Month 4)",
+            "Pilot proposal finalized with external partner (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "O2",
+        "type": "incremental",
+        "title": "Optimize Digital Operational Backbone Integration (ERP-CRM-HRIS)",
+        "rationale": "While digital maturity is higher, the lack of integration between core systems creates operational drag and hinders data utilization. Integrating ERP/CRM/HRIS will standardize data flows, improve visibility across business units, and ensure that customer insights immediately inform both sales and formulation processes.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed gap analysis of current system APIs and integration points (data mapping).",
+            "Prioritize the single most valuable data flow to integrate first (e.g., customer project history feeding into inventory demand forecasting).",
+            "Establish a cross-functional 'Integration Working Group' with dedicated IT resources."
+          ],
+          "resources_needed": [
+            "Dedicated Enterprise Architect/IT consultant",
+            "Business Process Owners from Sales and Operations",
+            "Sustained executive sponsorship for change management"
+          ],
+          "success_metric": "Reduction in manual data entry time by X% across key functional teams.",
+          "milestones": [
+            "Integration roadmap completion (Month 3)",
+            "Pilot integration success on one critical process area (Month 6)",
+            "Rollout plan for remaining integrations (Month 9)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "medium",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Formally charter the Adjacent Market Testing Unit (AMTU) and ring-fence initial funding/personnel.",
+        "owner": "Executive Leadership/CEO",
+        "timeframe": "Within 30 days"
+      },
+      {
+        "id": "NS2",
+        "action": "Host a 'Culture Integration & Workload Balancing' workshop, focusing on shared goals and redefining roles post-restructuring.",
+        "owner": "HR/Dedicated Innovation Squad Lead",
+        "timeframe": "Within 45 days"
+      },
+      {
+        "id": "NS3",
+        "action": "Develop a KPI dashboard that links the digital maturity roadmap (O2) directly to revenue uplift potential, securing buy-in from finance.",
+        "owner": "Data Scientist/Product Manager",
+        "timeframe": "Within 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Cultural cohesion and morale remain vulnerable due to recent restructuring (Culture barrier)",
+      "Sustained focus on diversification requires overcoming internal resistance and lack of precedent.",
+      "Data silos persist, limiting the ability to execute truly integrated business processes."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully launched a cross-functional digital customer onboarding flow, significantly improving speed and NPS scores.",
+        "The innovation team has stabilized its structure (8 members) and established a dedicated sprint cadence, showing operational maturity.",
+        "Formalized budget allocation for innovation (26%) suggests high commitment from leadership."
+      ],
+      "persistent_gaps": [
+        "Integration gaps between core systems (ERP, CRM, HRIS) limit data utility.",
+        "The organizational culture must transition from reactive survival mode to proactive, experimental risk-taking required for diversification.",
+        "Execution velocity remains variable across business units despite the strategic agenda."
+      ],
+      "achieved_milestones": [
+        "Reduction of average customer onboarding time from 12 days to 5 days.",
+        "Confirmation of board-level commitment and annual budget allocation for innovation."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant operational progress (digital customer journey) and structural maturity improvements (dedicated squad, formalized budget). However, the strategic imperative for diversification is heightened by market decline, requiring a sharper focus on radical new opportunities and addressing cultural strain from post-merger restructuring."
+    }
+  }
+}

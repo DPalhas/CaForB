@@ -1,4 +1,7 @@
-import { Award, TrendingUp, ShieldCheck } from "lucide-react";
+"use client";
+
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 interface ScoreCardProps {
   score: number;
@@ -11,12 +14,41 @@ const getScoreLabel = (score: number) => {
   return { label: "Advanced Leader", color: "text-yellow-300", bg: "bg-yellow-950/40 border-yellow-800/40", fill: "#fbbf24", bar: "#fbbf24" };
 };
 
+function AnimatedCounter({ value, className }: { value: number; className?: string }) {
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    let raf: number;
+    const duration = 1200;
+    const start = performance.now();
+
+    const animate = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      setDisplay(progress * value);
+      if (progress < 1) {
+        raf = requestAnimationFrame(animate);
+      }
+    };
+
+    raf = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(raf);
+  }, [value]);
+
+  return <span className={className}>{display.toFixed(1)}</span>;
+}
+
 export default function ScoreCard({ score }: ScoreCardProps) {
   const { label, color, bg, fill } = getScoreLabel(score);
   const percentage = Math.min(100, Math.max(0, (score / 10) * 100));
 
   return (
-    <div className="glass-card rounded-3xl border border-stone-800/80 p-6 sm:p-8">
+    <motion.div
+      className="glass-card rounded-3xl border border-stone-800/80 p-6 sm:p-8"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
+    >
       <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
         
         {/* Score Circular Metric */}
@@ -30,20 +62,24 @@ export default function ScoreCard({ score }: ScoreCardProps) {
                 fill="none"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
               />
-              <path
+              <motion.path
                 strokeWidth="3.5"
                 strokeDasharray={`${percentage}, 100`}
                 strokeLinecap="round"
                 stroke={fill}
                 fill="none"
                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                className="transition-all duration-1000 ease-out"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                style={{ pathLength: 1, strokeDasharray: `${percentage}, 100` }}
               />
             </svg>
             <div className="absolute flex flex-col items-center justify-center text-center">
-              <span className={`text-3xl font-extrabold tracking-tight ${color}`}>
-                {score.toFixed(1)}
-              </span>
+              <AnimatedCounter
+                value={score}
+                className={`text-3xl font-extrabold tracking-tight font-mono ${color}`}
+              />
               <span className="text-[10px] font-mono font-semibold text-stone-500">OUT OF 10</span>
             </div>
           </div>
@@ -69,9 +105,12 @@ export default function ScoreCard({ score }: ScoreCardProps) {
             <span className="font-mono text-amber-400">{percentage.toFixed(0)}%</span>
           </div>
           <div className="w-full bg-stone-800 rounded-full h-2.5 overflow-hidden">
-            <div
-              className="h-full rounded-full transition-all duration-1000 ease-out"
-              style={{ width: `${percentage}%`, backgroundColor: fill }}
+            <motion.div
+              className="h-full rounded-full"
+              style={{ backgroundColor: fill }}
+              initial={{ width: "0%" }}
+              animate={{ width: `${percentage}%` }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
             />
           </div>
           <div className="flex justify-between text-[10px] text-stone-500 mt-2 font-mono">
@@ -82,6 +121,6 @@ export default function ScoreCard({ score }: ScoreCardProps) {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   );
 }

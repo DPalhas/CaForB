@@ -1,0 +1,201 @@
+{
+  "id": "R0274",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0413",
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:45:00.278378+00:00",
+    "duration_ms": 90752,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.011339+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan",
+      "sector": "SaaS / Software",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Vertical SaaS providing compliance management software for the pharmaceutical industry covering GxP training, deviation tracking, and audit readiness. 85 enterprise customers including 3 of the top 10 global pharma companies. SOC 2 Type II certified. Considering a no-code workflow builder to allow clients to customize compliance processes. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "8 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins."
+    },
+    "previous_assessment": {
+      "id": "0413",
+      "fields": {
+        "companyName": "Titan",
+        "sector": "SaaS / Software",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Vertical SaaS providing compliance management software for the pharmaceutical industry covering GxP training, deviation tracking, and audit readiness. 85 enterprise customers including 3 of the top 10 global pharma companies. SOC 2 Type II certified. Considering a no-code workflow builder to allow clients to customize compliance processes. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins."
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "completed",
+      "opp_4": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 3.0,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Adjacent Product Lines for Diversification",
+        "rationale": "The company is heavily reliant on a few major clients (55% revenue concentration). Focus must shift to identifying adjacent compliance needs or different customer segments within Pharma to mitigate this risk before the acquisition. This leverages existing domain expertise with moderate development effort.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a full portfolio review mapping current features against non-primary SaaS niches (e.g., clinical trial management).",
+            "Develop 2-3 detailed low-cost proof-of-concept workflows for these new lines.",
+            "Formalize pricing and sales narratives for diversified offerings."
+          ],
+          "resources_needed": [
+            "Product Management time",
+            "Sales/Account Executive input",
+            "Market research budget (small)"
+          ],
+          "success_metric": "Pipeline creation of 2 new revenue streams representing a minimum 10% contribution to the next year's projected revenue.",
+          "milestones": [
+            "Identify target niche market segments (Month 1)",
+            "Deliver PoC workflow specifications (Month 2)",
+            "Secure initial interest/pilot commitment from non-top-3 clients (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "System Integration & Operational Blueprinting for Acquirer",
+        "rationale": "Given the impending acquisition and the current lack of integration between core systems (ERP, CRM, HRIS), a bold effort is needed to build a clear operational blueprint. This reduces post-acquisition risk and establishes process maturity independently of the new owner.",
+        "execution_plan": {
+          "first_actions": [
+            "Define critical cross-functional workflows requiring integration (e.g., lead tracking -> contract signing -> billing).",
+            "Conduct a gap analysis between current systems' capabilities and required integrated state.",
+            "Document the ideal 'future state' process flow, prioritizing compliance checkpoints."
+          ],
+          "resources_needed": [
+            "IT Architect/Consultant time",
+            "Key departmental leaders (Finance, Sales)",
+            "Documentation templates"
+          ],
+          "success_metric": "Completion of a prioritized integration roadmap with defined owner and estimated cost for the top 5 critical workflows.",
+          "milestones": [
+            "System inventory audit completed (Month 1)",
+            "Cross-functional process map finalized (Month 2)",
+            "Integration feasibility report presented to leadership (Month 3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6 months+",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Execute a formal 'Acquisition Readiness Audit' focusing specifically on data portability and cross-system integration gaps.",
+        "owner": "Strategy Function / CTO",
+        "timeframe": "Immediate (Next 4 weeks)"
+      },
+      {
+        "id": "ns2",
+        "action": "Restructure the innovation process: Instead of open brainstorming, implement a structured 'Idea-to-Pilot' intake funnel requiring mandatory ownership and resource commitment.",
+        "owner": "Department Leads / Leadership Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Develop dedicated pitch material targeting smaller, non-top-tier pharma clients to actively diversify the revenue base.",
+        "owner": "Sales Team / Product Marketing",
+        "timeframe": "Ongoing (Starting next month)"
+      }
+    ],
+    "key_weaknesses": [
+      "High concentration risk due to dependence on top 3 enterprise customers.",
+      "Lack of integrated core operational systems leading to process inefficiency and manual workarounds.",
+      "Innovation efforts lack clear governance, funding paths, or mandated executive follow-through."
+    ],
+    "progress": {
+      "improvements": [
+        "The realization of the acquisition timeline has provided necessary urgency and focus.",
+        "Formal processes (QBRs, Strategy Function) are utilized more consistently than previously assessed."
+      ],
+      "persistent_gaps": [
+        "Core systems remain siloed, impeding efficiency.",
+        "Strategic diversification efforts have not yet translated into concrete pipeline growth.",
+        "The cultural barrier to structured innovation remains a risk if governance is too rigid."
+      ],
+      "achieved_milestones": [
+        "Formalization of the strategic planning function at QBRs.",
+        "Recognition and active documentation of systemic gaps (data/process)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The immediate threat of a major competitor and the pending acquisition have dramatically increased the urgency and forced focus onto operational auditing and integration readiness, moving beyond general strategic discussions."
+    }
+  }
+}

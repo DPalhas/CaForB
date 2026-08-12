@@ -1,0 +1,196 @@
+{
+  "id": "R0405",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0276",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:03:23.017332+00:00",
+    "duration_ms": 37930,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Aether.ai",
+      "sector": "Education",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Corporate training provider designing and delivering technical skills bootcamps in data science, cybersecurity, and cloud computing. Graduated 1,200+ professionals placed at 80+ partner companies. Online-live delivery model with project-based assessment. Seeking to implement skills verification through automated coding challenge grading. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "8 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 20,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0276",
+      "fields": {
+        "companyName": "Aether.ai",
+        "sector": "Education",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Corporate training provider designing and delivering technical skills bootcamps in data science, cybersecurity, and cloud computing. Graduated 1,200+ professionals placed at 80+ partner companies. Online-live delivery model with project-based assessment. Seeking to implement skills verification through automated coding challenge grading. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 20,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 6 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "step_1": "in_progress",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "radical",
+        "title": "Establish a Dedicated Digital Product Incubator for Self-Service Tools",
+        "rationale": "Urgent need to address declining customer retention due to product stagnation and poor self-service tools. This initiative requires radical cross-functional alignment outside of the standard annual planning cycle, bypassing current formal committee bottlenecks.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a small, independent 'Tiger Team' empowered for rapid prototyping (must include legal/compliance representative).",
+            "Map out all high-friction customer journey points and prioritize the top 3 areas for self-service automation.",
+            "Develop initial compliance review checklist specifically for data handling in customer-facing tools."
+          ],
+          "resources_needed": [
+            "Dedicated budget allocation (Sponsor level commitment)",
+            "Cross-functional senior leadership time",
+            "External UX/CX consultant"
+          ],
+          "success_metric": "Reduction of self-service tool usage friction points by 40% within six months.",
+          "milestones": [
+            "Incubator Team charter signed and funded.",
+            "MVP wireframes for the first self-service feature completed.",
+            "Beta launch achieved with positive initial internal compliance audit."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Formalize and Optimize Post-Merger Operational Playbook",
+        "rationale": "The ongoing post-merger integration is causing culture clash, which threatens execution speed. A formalized playbook that standardizes operational workflows across both legacy and new teams will mitigate cultural friction while ensuring compliance consistency.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct stakeholder interviews to map current 'as-is' process gaps between the two cultures/teams.",
+            "Draft a standardized, role-based operational playbook focusing on key interaction points (e.g., customer intake, billing).",
+            "Integrate mandatory training modules covering updated compliance protocols into the playbook."
+          ],
+          "resources_needed": [
+            "Dedicated HR/Operations lead time (Internal)",
+            "Process mapping software/consultant",
+            "Executive sponsorship for enforcement"
+          ],
+          "success_metric": "Documented reduction in process deviation reports by 25% post-implementation.",
+          "milestones": [
+            "Gap analysis complete and reviewed by functional leads.",
+            "Draft playbook approved by senior management.",
+            "Pilot implementation successful within one department."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "3-4 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Schedule a focused workshop with product, compliance, and customer success leads to define the scope/MVP for the Incubator (opp_3).",
+        "owner": "Product Lead / Chief Innovation Officer",
+        "timeframe": "Next 2 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize weekly cross-team 'Culture Sync' meetings to address integration pain points and ensure buy-in for the new operational playbook (opp_1).",
+        "owner": "HR / Operations Lead",
+        "timeframe": "Immediate start"
+      },
+      {
+        "id": "ns_3",
+        "action": "Identify and quantify key pain points in the mid-tier/enterprise customer journey to prioritize investment for self-service tools.",
+        "owner": "Customer Success Team / Data Analyst",
+        "timeframe": "Next 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Acute decline in customer retention rates (84%), directly linked to perceived product stagnation.",
+      "High organizational friction due to unresolved post-merger cultural clashes and process ambiguity.",
+      "Reliance on rigid formal committee approval processes, severely limiting mid-cycle innovation speed."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful digital customer onboarding flow implementation drastically reduced time-to-onboard (12 days to 5 days).",
+        "Digital maturity level increased from 3 to 4, demonstrating improved technical capability and cross-functional execution.",
+        "Cross-functional collaboration is functional in specific defined projects."
+      ],
+      "persistent_gaps": [
+        "The core cultural barriers (legacy vs. new team dynamics) remain unaddressed, causing process fragmentation.",
+        "Lack of a dedicated, agile innovation sandbox structure prevents rapid response to market demands.",
+        "Strategic planning remains heavily influenced by formal gatekeeping processes."
+      ],
+      "achieved_milestones": [
+        "Completed the cross-functional digital onboarding pilot (opp_2).",
+        "Stabilized initial core customer journeys using technology and process improvements."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved digital capability (3 to 4) and successfully implemented a major customer-facing workflow improvement. However, significant internal structural barriers remain, and the critical metric of customer retention is declining rapidly."
+    }
+  }
+}

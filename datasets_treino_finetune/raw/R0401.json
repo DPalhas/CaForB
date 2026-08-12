@@ -1,0 +1,199 @@
+{
+  "id": "R0401",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0059",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:59:50.473635+00:00",
+    "duration_ms": 48919,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Anchor Networks",
+      "sector": "Healthtech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Health data interoperability startup building FHIR-based API infrastructure to connect hospital EHR systems, lab information systems, and patient-facing health apps. 12 hospital clients integrated. Addressing the fragmented health data exchange landscape. Evaluating AI-assisted clinical data normalization and semantic mapping. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 22,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0059",
+      "fields": {
+        "companyName": "Anchor Networks",
+        "sector": "Healthtech",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Health data interoperability startup building FHIR-based API infrastructure to connect hospital EHR systems, lab information systems, and patient-facing health apps. 12 hospital clients integrated. Addressing the fragmented health data exchange landscape. Evaluating AI-assisted clinical data normalization and semantic mapping. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 22,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 2 strategic partnerships. Revenue growth 25% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "step_1": "not_done",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "radical",
+        "title": "Establish AI-Native Data Interoperability Layer to Maximize Switching Costs",
+        "rationale": "To counter pricing pressure and build a modern experience, Anchor Networks must move beyond basic API connectivity. Implementing an integrated AI data layer that handles clinical normalization and semantic mapping deepens integration within the client's ecosystem, making migration prohibitively complex for competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Map regulatory compliance requirements (HIPAA/FHIR) for AI processing in Healthtech.",
+            "Pilot semantic data normalization using 1-2 anchor clients to prove value before enterprise rollout.",
+            "Define the necessary governance model for integrating ML output into core FHIR APIs."
+          ],
+          "resources_needed": [
+            "Data Scientist (full-time dedicated)",
+            "Compliance/Legal counsel",
+            "Dedicated technical architect resource"
+          ],
+          "success_metric": "Reduction in client reported data integration time by 30% using the new AI layer.",
+          "milestones": [
+            "Complete regulatory assessment for ML use cases (Q1).",
+            "Successful internal proof-of-concept with synthetic/sandbox data set (Q2).",
+            "Secure commitment from a marquee client to co-develop the initial production module (H2)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "long",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Formalize and Industrialize the Innovation Process for Market Defense",
+        "rationale": "The current 'partial' process is insufficient given increasing competitive pressure. The goal is to standardize the journey from customer feedback (informal conversations) to a funded MVP, reducing reliance on ad-hoc efforts or rigid annual planning cycles.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a standardized 'Opportunity Funnel' playbook, including criteria for early viability assessment.",
+            "Institute a mandatory pre-build discovery phase (Customer Interviews/Value Mapping) before allocating engineering resources.",
+            "Create a dedicated review board structure to fast-track mid-cycle funding approvals."
+          ],
+          "resources_needed": [
+            "Product Manager (process owner)",
+            "UX Designer (to create process visualization tools)",
+            "Executive Sponsor time commitment"
+          ],
+          "success_metric": "Decrease the average time from 'Idea Generation' to 'Prototype Approval' by 40%.",
+          "milestones": [
+            "Draft and socialize the new Opportunity Funnel playbook with functional leaders (Q1).",
+            "Run two internal case studies through the formal process, documenting lessons learned (Q2).",
+            "Establish quarterly operational review meetings focused solely on innovation pipeline health."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "medium",
+        "carry_forward_from": "strategy, culture",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Develop and execute a differentiated market response strategy (e.g., value-based pricing models vs. matching competitor discounts) to stabilize installed base revenue.",
+        "owner": "Commercial/Product Leadership",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns_2",
+        "action": "Validate and prioritize the top 5 most valuable use cases for AI data normalization with key hospital clients to fund Opp_1 PoC.",
+        "owner": "Data Scientist/Technical Leads",
+        "timeframe": "4 months"
+      },
+      {
+        "id": "ns_3",
+        "action": "Formalize the governance structure for innovation funding approval, requiring only two executive sign-offs instead of 3-4.",
+        "owner": "CEO/Executive Committee",
+        "timeframe": "2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of a formally defined competitive pricing and value retention strategy against deep-pocketed entrants.",
+      "Internal process rigidity (formal committee required for mid-cycle funding) slows market response time.",
+      "Over-reliance on informal discovery methods, leading to potential scope creep or missed customer needs."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful establishment of 2 strategic partnerships enhances network reach and validates infrastructure value.",
+        "Significant YoY revenue growth (25%) demonstrates market acceptance despite competitive pressure.",
+        "Formation of a dedicated, cross-functional innovation squad provides focused internal capacity."
+      ],
+      "persistent_gaps": [
+        "The core processes for translating customer insight into funded product features remain underdeveloped ('partial' state).",
+        "While exploring AI/ML, the immediate tactical response to competitor pricing and UX gaps is not yet defined.",
+        "Internal decision-making bottlenecks (funding approval) are still limiting agility."
+      ],
+      "achieved_milestones": [
+        "Secured 2 strategic partnerships.",
+        "Increased revenue by 25% YoY."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 1.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Moved from informal status to active development with dedicated team and revenue growth; shift of focus from general capacity building to specific market defense mechanisms (AI/Interoperability)."
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "R0290",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0251",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:15:04.955388+00:00",
+    "duration_ms": 133580,
+    "attempts": 3
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex",
+      "sector": "Mining & Extraction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Industrial sand and gravel dredging operation supplying raw materials to glass and concrete manufacturers. Fleet of 8 dredging vessels operating on inland waterways. Key innovation priority is reducing fuel consumption and sediment plume through GPS-guided precision dredging. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment."
+    },
+    "previous_assessment": {
+      "id": "0251",
+      "fields": {
+        "companyName": "Apex",
+        "sector": "Mining & Extraction",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Industrial sand and gravel dredging operation supplying raw materials to glass and concrete manufacturers. Fleet of 8 dredging vessels operating on inland waterways. Key innovation priority is reducing fuel consumption and sediment plume through GPS-guided precision dredging. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment."
+      }
+    },
+    "changes_since_last": "Acquired 4 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "opp_3": "superseded",
+      "step_1": "completed",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_adv_1",
+        "type": "incremental",
+        "title": "Develop Digital Twin/Simulation for Dredging Efficiency & Recertification Aid",
+        "rationale": "To address the mandatory recertification requirement and reduce fuel consumption, modeling operational data (dredge paths, sediment flow) can prove both compliance and efficiency gains. This mitigates the time barrier while providing quantifiable value to justify the combined investment.",
+        "execution_plan": {
+          "first_actions": [
+            "Map required recertification parameters against measurable simulation outputs.",
+            "Pilot a data capture layer on one dredging vessel to collect real-time operational metrics (fuel, volume, flow resistance).",
+            "Stakeholder workshop with Operations/Technology to define the scope of the digital twin model."
+          ],
+          "resources_needed": [
+            "Data Scientist",
+            "IoT Sensor integration budget",
+            "Engineering time (4 weeks)"
+          ],
+          "success_metric": "Achieve 95% operational accuracy in predicted fuel savings vs. actual savings after 3 months.",
+          "milestones": [
+            "Phase 1: Data requirement definition (4 weeks)",
+            "Phase 2: Model prototype and simulation run (8 weeks)",
+            "Phase 3: Field validation and integration plan (12 weeks)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_adv_2",
+        "type": "incremental",
+        "title": "Implement Tiered Customer Loyalty and Service-Level Commitment Program",
+        "rationale": "Facing a major competitor threat, the focus must shift from mere product differentiation (self-service portal) to creating sticky relationships. A tiered program rewards high-volume clients with preferential service levels, making exit costly for new entrants.",
+        "execution_plan": {
+          "first_actions": [
+            "Survey top 20 enterprise clients regarding their perceived value of 'guaranteed uptime' or customized resource allocation.",
+            "Define the criteria and benefits matrix for Bronze, Silver, and Gold service tiers.",
+            "Draft a revised Commercial Agreement template incorporating these new SLAs."
+          ],
+          "resources_needed": [
+            "Commercial/Sales leadership",
+            "UX Designer (for program visualization)",
+            "Product Manager"
+          ],
+          "success_metric": "Increase the average contract value (ACV) from top 20 clients by 15% within one year.",
+          "milestones": [
+            "Tier benefit definition finalized and approved (4 weeks)",
+            "Pilot program rollout with 3 'Gold' tier customers (8 weeks)",
+            "Full marketing and sales training complete (12 weeks)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "low",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize a 'fast-track' innovation budget approval process that bypasses multiple stakeholders for pre-validated, high-impact initiatives (reducing reliance on the rigid committee structure).",
+        "owner": "Executive Committee/CFO",
+        "timeframe": "Next 2 months"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct deep discovery interviews ('Jobs to Be Done') with potential 'Gold Tier' customers, focusing on operational pain points that current competitors cannot easily replicate.",
+        "owner": "Innovation Squad/Product Manager",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Create a comprehensive project roadmap linking the mandatory recertification timeline to specific, deliverable innovation milestones (e.g., Milestone A: Recertify GPS accuracy; Innovation B: Use enhanced data for predictive maintenance).",
+        "owner": "Operations Lead/Innovation Squad",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Formal internal approval processes are overly bureaucratic, hindering mid-cycle funding agility.",
+      "The organization relies too heavily on general operational expenditure for innovation rather than dedicated strategic investment funds.",
+      "Past initiatives (MVP self-service portal) suggest a weakness in pre-build customer discovery and needs validation."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully acquired 4 new enterprise clients, validating market expansion capability.",
+        "Digital maturity has increased to Level 3, indicating the successful establishment of structured data collection capabilities (e.g., IoT integration planning).",
+        "The dedicated innovation squad is operational and reporting progress quarterly to the executive committee."
+      ],
+      "persistent_gaps": [
+        "Structural process barriers (committee approval) still threaten speed and efficiency.",
+        "The team needs more formal training in advanced customer discovery methods beyond simple 'conversations'.",
+        "The combination of mandatory recertification and market threat requires a single, integrated planning framework."
+      ],
+      "achieved_milestones": [
+        "Opposite 2 was completed successfully (implies successful execution on previous recommendations).",
+        "Step 1 was completed, validating the initial technical or process component required for future initiatives."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant progress in execution and market expansion (new clients/adjacencies). Digital maturity has advanced from Level 2 to Level 3. The focus shifts from basic capability building to high-value defensive moats against competitor entry."
+    }
+  }
+}

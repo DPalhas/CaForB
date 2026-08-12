@@ -1,0 +1,204 @@
+{
+  "id": "R0124",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0440",
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:48:31.244544+00:00",
+    "duration_ms": 55446,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus",
+      "sector": "Construction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0440",
+      "fields": {
+        "companyName": "Nexus",
+        "sector": "Construction",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 19,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 8 strategic partnerships. Revenue growth 15% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "superseded",
+      "opp_4": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 3.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_2_evolved",
+        "type": "incremental",
+        "title": "Build Data Monetization Platform for Adjacent Markets",
+        "rationale": "Nexus possesses proprietary data from infrastructure projects and operations. By centralizing this into a governed, marketable platform, they can move beyond simple service execution towards creating scalable data assets in areas like urban planning or resource allocation.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional Data Governance Working Group (Tech, Commercial, Legal).",
+            "Identify 2-3 specific, high-value data streams (e.g., project cycle time vs budget variance) for MVP.",
+            "Develop initial legal and privacy framework for non-customer data sharing."
+          ],
+          "resources_needed": [
+            "Data Architect expertise (internal or external)",
+            "Legal counsel specializing in commercial data rights",
+            "Seed funding allocation for platform prototyping"
+          ],
+          "success_metric": "Deployment of a Minimum Viable Product (MVP) with 3 defined APIs.",
+          "milestones": [
+            "Data inventory completed and classified by sensitivity.",
+            "Working Group charter finalized and meeting cadence established.",
+            "Internal prototype demo utilizing first data set."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_5_radical",
+        "type": "radical",
+        "title": "Develop Predictive Equipment Service-as-a-Service (PESS)",
+        "rationale": "Given the proprietary heavy equipment fleet and established telematics evaluation, Nexus can transition from merely using data to selling predictive uptime guarantees. This is a radical diversification into an outsourced B2B service model.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot telematics integration on 5 critical machines (Proof of Concept).",
+            "Define tiered subscription models based on uptime guarantees and data access levels.",
+            "Develop a commercial playbook targeting adjacent construction firms or municipal partners."
+          ],
+          "resources_needed": [
+            "IoT Platform Integration Specialist",
+            "Product Management support for service bundling",
+            "Initial sales/BD effort dedicated to the new model"
+          ],
+          "success_metric": "Securing a paid pilot contract (MRR) exceeding $5k.",
+          "milestones": [
+            "Successful data transmission and visualization of predictive maintenance alerts.",
+            "Formalized pricing structure approved by leadership.",
+            "Presentation of PESS model to the broader market."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize the '20% time' output into structured quarterly business cases (QBCs) with defined ROI targets, ensuring innovation leads to measurable revenue/cost savings.",
+        "owner": "Technology Leadership / Portfolio Manager",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "ns2",
+        "action": "Identify and train internal 'Innovation Champions' outside of the tech squad (e.g., in Operations and Commercial) to embed data fluency across functional silos.",
+        "owner": "HR / Operational Leadership",
+        "timeframe": "Next 3 Months"
+      },
+      {
+        "id": "ns3",
+        "action": "Host a targeted 'Diversification Strategy Workshop' with the small leadership team to pre-validate assumptions around marketplace/data monetization models.",
+        "owner": "CEO / Strategic Planning Office",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational rigidity in formal planning processes, despite high growth ambition.",
+      "Difficulty translating innovative ideas (20% time) into formalized, budgeted execution paths.",
+      "Over-reliance on the centralized technology team to drive multiple radical initiatives."
+    ],
+    "progress": {
+      "improvements": [
+        "Established a clear innovation structure (squads, 20% time) leading to tangible technical output.",
+        "Achieved significant revenue growth (15% YoY), validating core business stability and capacity for risk-taking.",
+        "Strong strategic focus on diversification and adjacent market penetration."
+      ],
+      "persistent_gaps": [
+        "Formal budget allocation process remains a bottleneck, requiring complex multi-stakeholder approvals.",
+        "The ability to quickly scale successful pilot programs into full commercial offerings requires clearer internal governance.",
+        "Culture still struggles with bridging the gap between 'interesting ideas' and 'profitable execution'."
+      ],
+      "achieved_milestones": [
+        "Completion of 8 strategic partnerships, diversifying market reach.",
+        "Increased investment in proprietary data assets via telematics exploration."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Shifted from 'informal' idea generation to structured technical execution (squad model). Successfully de-risked the core business while actively pursuing bold diversification into high-tech service layers (data/IoT), significantly improving maturity."
+    }
+  }
+}

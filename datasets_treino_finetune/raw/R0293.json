@@ -1,0 +1,200 @@
+{
+  "id": "R0293",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0105",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:17:21.410500+00:00",
+    "duration_ms": 47498,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 3,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+    },
+    "previous_assessment": {
+      "id": "0105",
+      "fields": {
+        "companyName": "Nova",
+        "sector": "Manufacturing",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Specialty chemicals formulator producing industrial adhesives, sealants, and surface treatment solutions for the automotive repair aftermarket. In-house R&D lab with 3 chemists. Seeking to digitize batch recipe management and implement automated raw material traceability. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 3,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+      }
+    },
+    "changes_since_last": "Completed 2 strategic partnerships. Revenue growth 20% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 3.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Deepening Competitive Moats via Service-Product Integration (Carry-Forward)",
+        "rationale": "The primary goal remains building barriers to entry against the major competitor. Since internal R&D capacity is now established, the focus must shift from simply developing products to linking those products with specialized service models or proprietary data layers that are difficult for a new entrant to replicate quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a formal regulatory compliance checklist integrated into the Stage-Gate process for all product differentiation initiatives (High Regulatory).",
+            "Pilot the integration of service recommendations (e.g., maintenance schedules, usage data) directly with the core adhesive/sealant products.",
+            "Identify and document 3 key technical differentiators that require proprietary customer training or installation services."
+          ],
+          "resources_needed": [
+            "Dedicated Process Architect (to map service-product links)",
+            "Legal/Compliance SME (for regulatory sign-off on new claims)",
+            "Sales Engineering resources (for packaging the service offering)"
+          ],
+          "success_metric": "Creation of 2 revenue streams linked to post-sale services that contribute >5% of product revenue.",
+          "milestones": [
+            "Completion of regulatory compliance mapping for target products.",
+            "Pilot launch with 3 key accounts showcasing service/product integration.",
+            "Executive presentation validating moat strength for Series B investors."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Formalizing Global Regulatory & Supply Chain Resilience Protocol (New)",
+        "rationale": "Given the high regulatory environment and global market threat, redundancy in the supply chain is critical. This opportunity formalizes best practices for managing raw material sourcing risk and ensuring immediate compliance documentation readiness across all product lines.",
+        "execution_plan": {
+          "first_actions": [
+            "Map all Level 1 and Level 2 suppliers against geopolitical risk scores and required certifications (High Regulatory).",
+            "Establish a digital twin/central repository for all material Safety Data Sheets (SDS) and compliance documentation, accessible to R&D.",
+            "Implement a 'dual-sourcing' requirement review for the top 5 most critical raw materials."
+          ],
+          "resources_needed": [
+            "Supply Chain Analyst",
+            "ERP/Digital Systems Specialist (for central repository)",
+            "Quality Assurance Manager"
+          ],
+          "success_metric": "Reduction of single-point failure risk for top 5 materials by implementing viable secondary sources.",
+          "milestones": [
+            "Completion of full material risk assessment and sourcing map.",
+            "Deployment of the centralized compliance documentation system.",
+            "Documentation of a formal crisis response playbook for raw material shortages."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Create a cross-functional 'Moat Defense Task Force' (R&D, Sales, Legal) to coordinate efforts between opp_1 and opp_2.",
+        "owner": "Owner/CEO",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize the budget allocation for innovation, ring-fencing a specific amount for 'Competitive Defense' activities to demonstrate focus during Series B roadshow.",
+        "owner": "Finance/Owner",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Conduct external market readiness assessment focusing on competitor technology gaps in the adhesive/sealant space to validate opportunity assumptions.",
+        "owner": "R&D Head",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Potential organizational silos: Despite structured processes, functional teams might optimize locally rather than prioritizing the overarching 'market defense' goal.",
+      "Talent bandwidth constraints: Generalist developers and chemists are highly valuable; risk of burnout or misallocating time between urgent operations and strategic innovation.",
+      "Over-reliance on single executive decision-making (Owner Alone): Lack of formalized governance structure may slow down complex, cross-departmental initiatives required for market defense."
+    ],
+    "progress": {
+      "improvements": [
+        "Significant internal capacity build: Established dedicated R&D lab and formal process maturity.",
+        "Strong revenue traction: Successfully launched multiple product lines contributing 18% of total revenue, proving the efficacy of the current innovation model.",
+        "Digital foundation built: Reached Digital Maturity Level 4, indicating advanced system integration capability."
+      ],
+      "persistent_gaps": [
+        "Formalized governance and decision-making speed remain a risk factor.",
+        "The link between operational efficiency improvements and direct 'market defense' metrics needs stronger documentation for investors.",
+        "Managing cross-functional resource allocation to prevent strategic initiatives from being sidelined by urgent day-to-day operations."
+      ],
+      "achieved_milestones": [
+        "Launched multiple new product lines contributing 18% of revenue.",
+        "Implemented AI-powered recommendation engine (speeding up future SKU growth).",
+        "Successfully completed initial phases of strategic partnerships, enhancing market reach."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Dramatic improvement in operational structure and capacity. The company transitioned from a highly resource-constrained, opportunistically innovating 'Micro' operation to an established organization with dedicated R&D staff (12 engineers), structured processes, measurable revenue contribution from innovation (18%), and advanced digital capabilities (Maturity 4). Focus has shifted from building capability to executing strategic market defense."
+    }
+  }
+}

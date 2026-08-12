@@ -1,0 +1,198 @@
+{
+  "id": "R0041",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0002",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-09T19:11:19.059331+00:00",
+    "duration_ms": 24546,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.951383+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan.com",
+      "sector": "Manufacturing",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "Our industry is facing a pending regulatory shift that will require mandatory carbon emissions reporting and supply chain due diligence starting next fiscal year. We currently have no systematic data collection for these requirements. Innovation efforts must account for compliance infrastructure investment as a non-negotiable prerequisite to growth initiatives."
+    },
+    "previous_assessment": {
+      "id": "0002",
+      "fields": {
+        "companyName": "Titan.com",
+        "sector": "Manufacturing",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 8,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "strategy"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "Our industry is facing a pending regulatory shift that will require mandatory carbon emissions reporting and supply chain due diligence starting next fiscal year. We currently have no systematic data collection for these requirements. Innovation efforts must account for compliance infrastructure investment as a non-negotiable prerequisite to growth initiatives."
+      }
+    },
+    "changes_since_last": "Product launch successful — 6 new features shipped. Customer NPS improved 10 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 0.35,
+    "score_delta": 0.25,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "OP-EFF-01",
+        "type": "incremental",
+        "title": "Order-to-Cash Process Automation (Efficiency)",
+        "rationale": "Titan.com's goal is 15% OpEx reduction via automation of order processing and invoicing. This incremental opportunity leverages existing budget allocation and technical talent to target manual process waste.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current end-to-end order processing workflow and identify top three high-friction/manual touchpoints.",
+            "Define KPIs for automation ROI (reduction in cycle time, error rate).",
+            "Establish a cross-functional task force (Ops, IT, Finance) with clear ownership.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data analyst time (for process mapping)",
+            "Existing development team allocation (40% capacity)",
+            "Process documentation tools"
+          ],
+          "success_metric": "Reduction in order processing cycle time by 30%; documented ROI.",
+          "milestones": [
+            "Completion of current state mapping and gap analysis",
+            "Pilot automation implementation for invoicing (6 months)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "12-18 Months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "OP-COMP-02",
+        "type": "radical",
+        "title": "**Mandatory Regulatory Compliance Infrastructure Build**",
+        "rationale": "Given the pending mandatory carbon emissions reporting and supply chain due diligence, building a dedicated data collection framework is a prerequisite for future growth. This radical step addresses the high-regulation environment directly.",
+        "execution_plan": {
+          "first_actions": [
+            "Immediately initiate a regulatory impact study to define required data points (scope 1/3 emissions, supplier audit parameters).",
+            "Design and secure budget for a dedicated Compliance Data Platform (CDP) or integrated system module.",
+            "Establish legal/compliance sign-off protocol before any pilot data collection begins."
+          ],
+          "resources_needed": [
+            "External regulatory consultant expertise",
+            "IT security team resources (for data integrity)",
+            "Budget approval for specialized software licensing"
+          ],
+          "success_metric": "100% compliance readiness score on mandated reporting metrics; successful integration of CDP into ERP.",
+          "milestones": [
+            "Final regulatory requirement definition and data schema sign-off",
+            "Deployment of pilot carbon tracking module in a single production line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6-9 Months (Critical Path)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "STEP-01",
+        "action": "Formalize the Innovation Process: Define clear stages (Ideation -> Concept -> Validation -> Investment) and allocate a dedicated resource/Sponsor for portfolio governance.",
+        "owner": "VP of Strategy/Innovation Division Head",
+        "timeframe": "Q3 End"
+      },
+      {
+        "id": "STEP-02",
+        "action": "Initiate Project OP-COMP-02 (Regulatory Infrastructure): Secure budget and start the regulatory impact study to define data requirements.",
+        "owner": "Chief Compliance Officer / CTO",
+        "timeframe": "Next 3 Months"
+      },
+      {
+        "id": "STEP-03",
+        "action": "Address Technical Debt: Create a prioritized backlog of technical debt items related to existing systems that impede velocity and risk management.",
+        "owner": "Head of Engineering",
+        "timeframe": "Ongoing (Prioritize Q3)"
+      }
+    ],
+    "key_weaknesses": [
+      "Informal Innovation Process: Lack of systematic transformation framework prevents scaling successful initiatives.",
+      "Growing Technical Debt: Hinders organizational velocity and increases operational risk during rapid change periods.",
+      "Reactive Compliance Posture: No systematic data collection for future regulatory requirements, creating a high barrier to entry for growth."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully validated the viability of new features (NPS +10 points and successful launch).",
+        "Demonstrated effective operational execution capabilities.",
+        "Increased awareness of potential waste areas through strategic goal setting (OpEx reduction)."
+      ],
+      "persistent_gaps": [
+        "Lack of structured innovation pipeline/governance.",
+        "Inability to integrate compliance requirements into current operating models.",
+        "Growing technical debt outpacing refactoring efforts."
+      ],
+      "achieved_milestones": [
+        "Product line successfully launched with 6 new features.",
+        "Customer NPS improved by 10 points."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 0.1,
+      "previous_date": "Unknown",
+      "assessment_number": null,
+      "key_changes": "Maturity increased from 'none' to 0.35 due to demonstrable product success and defined strategic goals, though organizational process remains informal."
+    }
+  }
+}

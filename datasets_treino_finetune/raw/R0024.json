@@ -1,0 +1,205 @@
+{
+  "id": "R0024",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0300",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:39:46.017603+00:00",
+    "duration_ms": 50522,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian Systems",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0300",
+      "fields": {
+        "companyName": "Meridian Systems",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 7 new features shipped. Customer NPS improved 10 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "opp_3": "superseded",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 0.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_ai_screening",
+        "type": "incremental",
+        "title": "Establishing a Controlled Digital Twin for AI-Accelerated Candidate Screening",
+        "rationale": "The core innovation need is leveraging AI for in-silico protein folding. Given the high regulation, this must be implemented not as a black box, but within a controlled digital twin environment that maintains GxP compliance traceability from data ingestion to prediction output.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional task force (R&D, Compliance, IT Security) chartered with defining the minimum viable regulated data set for AI training.",
+            "Develop a structured regulatory mapping matrix that links specific biopharma standards (e.g., FDA guidelines) to planned AI outputs and data provenance requirements.",
+            "Pilot an isolated environment (sandbox) solely for early-stage binding affinity prediction, ensuring all inputs and model weights are auditable."
+          ],
+          "resources_needed": [
+            "Bioinformatics/AI Specialists",
+            "Regulatory Affairs Expert",
+            "Dedicated Compute Infrastructure Budget"
+          ],
+          "success_metric": "Successful generation of 10 novel theoretical candidate structures meeting predetermined biomarker profiles, validated by compliance.",
+          "milestones": [
+            "Completion of regulatory risk assessment for AI outputs (Q2)",
+            "Creation and validation of the initial digital twin data pipeline (Q3)",
+            "First internal demonstration using predicted binding affinity models (Q4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_ai_screening",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_market_velocity",
+        "type": "incremental",
+        "title": "Developing a Rapid Compliance Pathway for New Market/Channel Expansion",
+        "rationale": "To achieve double revenue growth, the current organizational velocity bottleneck must be addressed. This involves proactively mapping regulatory and compliance requirements (FDA, local agencies) for entering new geographic markets or launching DTC channels to reduce manual legal review cycles.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end operational workflows required for a new market/DTC launch, identifying all regulatory touchpoints (legal, QA, local permits).",
+            "Engage external consultants specializing in cross-border biotech regulation to benchmark process best practices against competitors.",
+            "Create an internal 'Compliance Sandbox' model where proposed changes can be stress-tested against regulatory requirements before submitting formal requests."
+          ],
+          "resources_needed": [
+            "Strategy/Commercial Lead",
+            "Legal Counsel (External)",
+            "Process Engineering Tools"
+          ],
+          "success_metric": "Reduction in average time required for internal sign-off on a new market compliance proposal by 30%.",
+          "milestones": [
+            "Completion of the process mapping document (Q2)",
+            "Development and rollout of the 'Compliance Sandbox' template (Q3)",
+            "Pilot application of the streamlined pathway to one target secondary market (Q4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_ai_feasibility",
+        "action": "Initiate a deep-dive feasibility study on AI candidate screening within a designated GxP compliant sandbox environment, involving R&D and Compliance.",
+        "owner": "Innovation Division Lead / Regulatory Affairs",
+        "timeframe": "Next 3 Months"
+      },
+      {
+        "id": "ns_governance_review",
+        "action": "Redesign the formal committee stage-gate process for high-growth/low-risk initiatives (e.g., operational efficiency improvements) to include a 'Fast Track' option, requiring only senior executive signoff instead of full committee vote.",
+        "owner": "Strategy Department / Executive Sponsor",
+        "timeframe": "Next 6 Months"
+      },
+      {
+        "id": "ns_technical_debt_triage",
+        "action": "Form a dedicated 'Technical Debt SWAT Team' with explicit, protected bandwidth (e.g., 20% of engineering time) to prioritize and resolve critical system vulnerabilities that impede product scaling.",
+        "owner": "CTO Office / Engineering VP",
+        "timeframe": "Ongoing (Immediate)"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational velocity bottleneck: Processes designed for stability are actively hindering the speed needed for aggressive growth goals.",
+      "Technical debt accumulation poses an increasing risk to stable product scaling and maintenance, distracting resources from core innovation.",
+      "Decision-making reliance on formal committee governance structure is slow and must be decoupled/streamlined for certain project types."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful launch of new features (7 shipped), validating rapid execution capacity in product development.",
+        "Improved customer sentiment, evidenced by a 10-point NPS increase, suggesting better market fit and user experience.",
+        "Operational efficiency gains achieved through internal initiatives (e.g., automated quality inspection prototype)."
+      ],
+      "persistent_gaps": [
+        "The core organizational friction points remain: navigating compliance/legal review slows down new strategic direction implementation.",
+        "Systemic technical debt accumulation suggests underlying infrastructure limitations are undermining recent product successes.",
+        "Translating significant capital and talent depth into rapid operational output remains the primary systemic challenge."
+      ],
+      "achieved_milestones": [
+        "Successfully deploying multiple high-value product features post-launch.",
+        "Implementing process improvements leading to measurable reduction in Quality Control defect escape rates (35% reduction)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Tangible progress was made in product execution (NPS increase, feature launches) and operational efficiency. However, the core systemic barrier of 'organizational velocity' remains unresolved, suggesting that market-facing successes are currently limited by internal process overhead."
+    }
+  }
+}

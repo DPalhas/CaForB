@@ -1,0 +1,204 @@
+{
+  "id": "R0187",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0491",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:29:08.419992+00:00",
+    "duration_ms": 43792,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.991275+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Ventures",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Pharmaceutical wholesale distributor supplying 1,200 community pharmacies and 40 hospital pharmacies with 35,000 SKUs from 200 manufacturers. Operating a 15,000 m² GDP-compliant warehouse with temperature-controlled zones. Currently implementing serialization track-and-trace compliance and evaluating demand forecasting with AI. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "7 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+    },
+    "previous_assessment": {
+      "id": "0491",
+      "fields": {
+        "companyName": "Strato Ventures",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Pharmaceutical wholesale distributor supplying 1,200 community pharmacies and 40 hospital pharmacies with 35,000 SKUs from 200 manufacturers. Operating a 15,000 m² GDP-compliant warehouse with temperature-controlled zones. Currently implementing serialization track-and-trace compliance and evaluating demand forecasting with AI. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+      }
+    },
+    "changes_since_last": "Product launch successful — 6 new features shipped. Customer NPS improved 25 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O2",
+        "type": "incremental",
+        "title": "Define the Optimal Growth Vector: Build vs. Buy vs. Partner",
+        "rationale": "The company is facing a critical strategic juncture regarding market expansion (vertical specialization vs. horizontal breadth). A formal assessment of build, buy, or partner options is needed to align resources with the high-growth mandate set by the new CEO.",
+        "execution_plan": {
+          "first_actions": [
+            "Assemble cross-functional group (Sales, Product, Finance) to define 3 potential target market segments.",
+            "Conduct a comprehensive competitive landscape analysis focused on adjacent product categories and specialized service providers.",
+            "Develop initial financial models comparing the CapEx/OpEx profile of building vs. acquiring capability."
+          ],
+          "resources_needed": [
+            "External Strategy Consultant",
+            "Executive Sponsorship (C-Level)",
+            "Dedicated Market Research Budget"
+          ],
+          "success_metric": "Signed Decision Charter outlining the top 1 strategic path and associated resource allocation.",
+          "milestones": [
+            "Completion of Target Segment Analysis (Q3 Week 2)",
+            "Model Comparison Workshop Held",
+            "VP-Level Go/No-Go Recommendation"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "O1_CFF",
+        "type": "incremental",
+        "title": "Integrate IoT Fleet Data into Core Predictive Maintenance Workflow",
+        "rationale": "The pilot success for IoT on production equipment is stalled by integration complexity with legacy systems. The immediate focus must shift from mere data collection to actionable, automated workflow triggers that reduce Mean Time To Repair (MTTR).",
+        "execution_plan": {
+          "first_actions": [
+            "Audit the APIs and data formats required for real-time bidirectional communication between IoT platform and legacy ERP/CMMS.",
+            "Pilot a small cohort of non-critical equipment to test end-to-end workflow automation (sensor -> alert -> maintenance ticket).",
+            "Assign dedicated IT resources focused solely on middleware development and integration testing."
+          ],
+          "resources_needed": [
+            "Dedicated Integration Architect/Developer",
+            "Legacy System Owner Time",
+            "Updated Budget for Middleware licensing"
+          ],
+          "success_metric": "Automated generation of 95% of maintenance work orders based on predicted failure metrics.",
+          "milestones": [
+            "System Architecture Gap Analysis Complete (4 weeks)",
+            "Pilot Deployment Success Rate Achieved",
+            "Integration Roadmap Signed Off by IT Committee"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": "step_1, step_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Formalize and fund the full IoT rollout integration plan (O1_CFF) by allocating dedicated IT bandwidth to middleware development.",
+        "owner": "COO / CTO",
+        "timeframe": "Next 30 Days"
+      },
+      {
+        "id": "NS2",
+        "action": "Conduct a formal 'Build vs. Buy vs. Partner' workshop involving the Executive Committee to structure the strategic path for market acceleration (O2).",
+        "owner": "CEO / Strategic Leadership Team",
+        "timeframe": "Next 60 Days"
+      },
+      {
+        "id": "NS3",
+        "action": "Implement targeted training programs for operational staff focusing on data literacy and utilizing AI forecasting outputs to reduce reliance on manual spreadsheet workflows.",
+        "owner": "HR / Training Department",
+        "timeframe": "Ongoing Q3"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant technical debt slowing down full digital adoption (Legacy Systems)",
+      "Process maturity is uneven; high dependence on manual workflows in non-core areas.",
+      "Organizational resource allocation struggle between maintaining current operations and funding true innovation."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful product features launch, improving client satisfaction (NPS +25 points).",
+        "IoT pilot successfully established a clear business case for enterprise-wide rollout.",
+        "Increased executive focus on digital transformation and growth."
+      ],
+      "persistent_gaps": [
+        "Technical integration complexity remains the primary blocker for full operational automation.",
+        "The core tension between running efficiently and investing in future innovation has not been structurally resolved.",
+        "Data management maturity outside of specific centralized systems is low, hindering holistic AI utilization."
+      ],
+      "achieved_milestones": [
+        "Shipment of 6 new customer-facing features.",
+        "Business case approved for full IoT fleet rollout (financial backing secured)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Shifted from a 'process improvement' focus to an aggressive 'growth acceleration' mindset due to new executive leadership and market opportunity identification."
+    }
+  }
+}

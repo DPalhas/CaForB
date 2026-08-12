@@ -1,0 +1,197 @@
+{
+  "id": "R0150",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0051",
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:15:33.099493+00:00",
+    "duration_ms": 50206,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Forge.com",
+      "sector": "Nonprofit / NGO",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Social enterprise providing employment training and job placement services for refugees and marginalized communities. Operates 3 training centers and a social enterprise catering business that provides work experience. Placed 800 individuals into employment in the past year. Evaluating skills-gap matching algorithms and digital training delivery for remote participants. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 6,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0051",
+      "fields": {
+        "companyName": "Forge.com",
+        "sector": "Nonprofit / NGO",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Social enterprise providing employment training and job placement services for refugees and marginalized communities. Operates 3 training centers and a social enterprise catering business that provides work experience. Placed 800 individuals into employment in the past year. Evaluating skills-gap matching algorithms and digital training delivery for remote participants. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 3,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 6 new team members. Launched customer feedback pilot. Budget for innovation increased 15%.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_retention_engine",
+        "type": "incremental",
+        "title": "Develop a Proactive Retention and Digital Experience Platform (Carry-Forward)",
+        "rationale": "To counter the well-funded competitors, Forge must rapidly improve its digital customer experience and reduce churn without triggering a price war. This opportunity focuses on digitizing the job placement lifecycle and integrating advanced feedback loops to strengthen switching costs for clients.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct an internal gap analysis comparing current client journey against top 2 competitors' digital UX/UI.",
+            "Design a compliance-vetted data capture mechanism (GDPR/local privacy) to track program success metrics over time, fulfilling regulatory requirements.",
+            "Pilot the centralized platform features with the existing customer feedback pilot group."
+          ],
+          "resources_needed": [
+            "Dedicated UX/UI consultant",
+            "Data compliance officer (short-term)",
+            "Technical developer bandwidth (minimum 0.5 FTE)"
+          ],
+          "success_metric": "15% reduction in client reported likelihood of switching to a competitor within the first six months.",
+          "milestones": [
+            "Completion of competitive digital analysis and feature roadmap.",
+            "Successful internal compliance audit sign-off on data handling.",
+            "Launch of MVP platform features for initial pilot users."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1_retention_engine",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2_knowledge_transfer",
+        "type": "incremental",
+        "title": "Institute Specialized Technical Capacity Building",
+        "rationale": "The current reliance on the founder for all product/tech decisions creates a critical single point of failure. This opportunity focuses on formalizing knowledge transfer and building specialized, mid-level talent to support technology investments.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify core technical processes currently owned solely by the founder.",
+            "Establish an external advisory board specifically composed of seasoned tech/NGO leaders to vet complex investments.",
+            "Develop cross-training modules for key non-founder staff members in basic technical system maintenance and oversight."
+          ],
+          "resources_needed": [
+            "Executive coaching / Mentorship program funding",
+            "Budget allocation for external advisory retainer",
+            "Internal process documentation time (HR/Operations)"
+          ],
+          "success_metric": "Documentation of 80% of critical technical processes, reducing founder involvement in day-to-day tech decisions by 30%.",
+          "milestones": [
+            "Charter and onboard external advisory board.",
+            "Completion of first wave of process documentation and cross-training.",
+            "Formalizing a role for an internal Tech Program Manager."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Establish a formal Technology Governance Committee (TGC) with non-founder members to approve all tech spending and roadmap decisions.",
+        "owner": "Founder / Board",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns2",
+        "action": "Execute a formal compliance review of all data collection points (customer feedback, training tracking) to ensure adherence to high regulatory standards.",
+        "owner": "External Legal/Compliance Consultant",
+        "timeframe": "Next 4-6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Run a 'Stakeholder Skill Gap Workshop' involving the new hires and key internal staff to map current skills against required digital product delivery capabilities.",
+        "owner": "HR / Operations Lead",
+        "timeframe": "Next 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Founder-level bottleneck on all critical technical decisions (single point of failure).",
+      "Lack of specialized, in-house expertise to evaluate complex technology investments without external support.",
+      "Potential risk of inconsistent digital experience across various training centers/service lines."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased dedicated innovation budget by 15%.",
+        "Launched a formal customer feedback pilot using NPS methodology.",
+        "Formalizing structure through the internal venture studio model with active projects."
+      ],
+      "persistent_gaps": [
+        "Over-reliance on the founder's personal bandwidth for technical and product strategy.",
+        "Lack of dedicated, specialized in-house talent to manage digital transformation.",
+        "Maintaining a modern customer experience while strictly adhering to high regulatory compliance rules."
+      ],
+      "achieved_milestones": [
+        "The successful graduation of one incubated project into a standalone business unit, proving model scalability."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant structural improvements were made (formal process, dedicated funding, hiring). The organization has moved from ad-hoc incubation to a structured venture studio model, greatly enhancing its capacity for strategic innovation."
+    }
+  }
+}

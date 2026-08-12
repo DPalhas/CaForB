@@ -1,0 +1,198 @@
+{
+  "id": "R0136",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0393",
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:01:27.300370+00:00",
+    "duration_ms": 55920,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Anchor Corporation",
+      "sector": "Transportation & Logistics",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Port terminal operator handling container and bulk cargo at a major Atlantic port. Processing 180,000 TEU annually with 4 ship-to-shore cranes. Currently evaluating automated stacking cranes and digital twin simulation for yard optimization to increase throughput by 15%. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "12 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 7,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+    },
+    "previous_assessment": {
+      "id": "0393",
+      "fields": {
+        "companyName": "Anchor Corporation",
+        "sector": "Transportation & Logistics",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Port terminal operator handling container and bulk cargo at a major Atlantic port. Processing 180,000 TEU annually with 4 ship-to-shore cranes. Currently evaluating automated stacking cranes and digital twin simulation for yard optimization to increase throughput by 15%. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 10,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+      }
+    },
+    "changes_since_last": "Product launch successful — 3 new features shipped. Customer NPS improved 10 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "completed",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 2.7,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_integrated_design",
+        "type": "incremental",
+        "title": "Merger Integration and Process Rationalization (Single Source of Truth)",
+        "rationale": "The immediate priority is stabilizing the combined entity by eliminating system duplication and defining core operational processes. This foundational work must precede advanced innovation, ensuring that future digital investments are built on a unified data model rather than patched legacy systems.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional Integration Steering Committee (ISC) with executive mandate and clear prioritization rules.",
+            "Conduct detailed process mapping workshops across key functions (e.g., billing, scheduling) to identify duplication points and 'To-Be' state processes.",
+            "Select a single master data management (MDM) platform for core entities (Customer, Shipment)."
+          ],
+          "resources_needed": [
+            "Dedicated Integration Program Manager",
+            "Process Architects/BPM experts",
+            "Executive Sponsorship (CFO/COO)"
+          ],
+          "success_metric": "Completion and sign-off of the core 'To-Be' operational process map for 3 major workflows.",
+          "milestones": [
+            "ISC Formation & Charter Approval (Month 1)",
+            "Duplication Gap Analysis Complete (Month 2)",
+            "Pilot Process Redesign Implementation (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_unified_cx",
+        "type": "radical",
+        "title": "Building a Unified Digital Customer Experience Layer (Omni-Channel View)",
+        "rationale": "Competitors are winning on experience. The focus must shift from merely processing cargo efficiently to providing an integrated, predictive digital interaction for the client. This requires connecting yard optimization data, billing history, and scheduling into one unified customer portal.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop detailed user journey maps focused on high-friction pain points (e.g., exception handling, rate changes).",
+            "Define Minimum Viable Product (MVP) features for the next 6 months and prioritize against competitor gaps.",
+            "Allocate resources to a dedicated UX/UI team separate from core IT maintenance."
+          ],
+          "resources_needed": [
+            "Digital Experience Lead",
+            "Data Science SME",
+            "Customer Success Team Input"
+          ],
+          "success_metric": "Achieving 80% of target functionality for the MVP within a controlled beta group.",
+          "milestones": [
+            "UX Blueprint & Wireframes Complete (Month 3)",
+            "Alpha Launch with Internal Stakeholders (Month 5)",
+            "Beta Launch to Top 10 Clients (Month 7)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Mandate and charter the Integration Steering Committee (ISC) immediately to break process deadlock across merged units.",
+        "owner": "Executive Leadership Team (ELT)",
+        "timeframe": "Immediate (0-2 weeks)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Conduct a formal 'Digital Capability Gap Assessment' comparing current process design against competitor best practices, feeding directly into the MVP scope.",
+        "owner": "Head of Strategy/IT",
+        "timeframe": "Next 4-6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Identify and fund two small, high-visibility 'quick win' projects (e.g., automated document retrieval) to build momentum and counter change fatigue.",
+        "owner": "Innovation Lead",
+        "timeframe": "Next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational Velocity: Processes are designed for stability/risk rather than rapid iteration, slowing response to market changes.",
+      "Cultural Integration Debt: The recent merger has created system and process duplication, leading to internal friction and low trust in new operational mandates.",
+      "Decision-Making Bottleneck: Reliance on a formal committee structure hinders speed; clear ownership must be assigned for 'To-Be' processes."
+    ],
+    "progress": {
+      "improvements": [
+        "Customer NPS improved by 10 points, indicating successful execution on customer-facing initiatives.",
+        "Increased digital maturity to Level 3 (from 2), demonstrating foundational improvements in technology infrastructure.",
+        "Successful product launch and deployment of 3 new features validated market readiness."
+      ],
+      "persistent_gaps": [
+        "Lack of a unified operational process model due to merger overlap. Technical debt continues to accumulate, risking stability.",
+        "Failure to translate digital improvements into cohesive customer value (still operating in silos).",
+        "Cultural resistance and change fatigue impacting the adoption of new standardized processes."
+      ],
+      "achieved_milestones": [
+        "Completion of initial technical features rollout.",
+        "Confirmation of high-level commitment from leadership to modernize operations."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant movement from 'None' to having measurable product features and improved NPS. The primary challenge has shifted from resource availability to overcoming deep-seated organizational/cultural inertia following a major merger."
+    }
+  }
+}

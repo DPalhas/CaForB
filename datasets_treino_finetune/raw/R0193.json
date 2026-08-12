@@ -1,0 +1,199 @@
+{
+  "id": "R0193",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0088",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:35:14.568321+00:00",
+    "duration_ms": 46735,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Blend of CNC routing for repetitive components with traditional joinery for finishing. Evaluating digital twin assembly planning to reduce custom project lead times from 12 to 7 weeks. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 14,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0088",
+      "fields": {
+        "companyName": "Vault",
+        "sector": "Manufacturing",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Blend of CNC routing for repetitive components with traditional joinery for finishing. Evaluating digital twin assembly planning to reduce custom project lead times from 12 to 7 weeks. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 11,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 6 new features shipped. Customer NPS improved 5 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "completed",
+      "step_2": "completed",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_4",
+        "type": "incremental",
+        "title": "Digital Customer Experience Modernization for Retention",
+        "rationale": "The urgent decline in customer retention (92% to 84%) is directly linked to product stagnation and poor digital self-service. This opportunity focuses on developing a robust, modern customer portal that addresses mid-tier/enterprise pain points before competitors do.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct competitive teardowns of digital self-service portals in the furniture/hospitality sector.",
+            "Prioritize features based on exit interview data (e.g., product configurator, lifecycle tracking).",
+            "Define technical debt remediation roadmap specifically for customer-facing systems."
+          ],
+          "resources_needed": [
+            "Dedicated UX/UI Designer (Contract)",
+            "Minimum Viable Product (MVP) Scope Definition Time",
+            "Marketing Lead Input"
+          ],
+          "success_metric": "Increase in feature utilization rate via the new portal by 25% within 6 months.",
+          "milestones": [
+            "Finalized customer journey map and prioritized backlog.",
+            "Deployment of functional MVP (e.g., accurate quote generation).",
+            "Positive anecdotal feedback increase from sales team."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Scaling Operational Intelligence via IIoT Integration",
+        "rationale": "The initial pilot of IoT sensors successfully reduced unplanned downtime by 15%, validating the business case. The next phase must systematically integrate the full fleet rollout, focusing heavily on overcoming complex legacy system integration challenges.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and allocate resources for a specialized industrial systems integrator to manage procurement complexity.",
+            "Map out data flow architecture between IoT sensors, SCADA, and the existing maintenance system.",
+            "Develop standardized training protocol for operational staff on new predictive maintenance alerts."
+          ],
+          "resources_needed": [
+            "Dedicated Integration Project Manager",
+            "Operational Budget Expansion (CapEx)",
+            "Technical documentation of legacy systems."
+          ],
+          "success_metric": "Deployment of monitoring across 80% of target production equipment, achieving a sustained 25%+ reduction in unplanned downtime.",
+          "milestones": [
+            "Successful integration test on two major machine types.",
+            "Standardized predictive maintenance dashboard operational.",
+            "Full business case funding secured and committed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_2 (Previous Assessment)",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Define a specialized, dedicated roadmap for the customer-facing digital platform (opp_4), separating it from core product development.",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Execute vendor selection for the IIoT integration project, focusing on mitigating legacy system compatibility risks.",
+        "owner": "Founder/Operational Lead",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Hold weekly cross-functional strategy sessions to jointly analyze churn data and technical debt, linking operational efficiency (IoT) back to market retention.",
+        "owner": "Small Leadership Team",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Founder's single point of failure (over-reliance on personal bandwidth for key decisions).",
+      "Lack of formal, specialized in-house engineering expertise to manage complex technology investments.",
+      "Critical disconnect between successful operational efficiency gains (IoT) and the declining customer retention/digital experience."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful product iteration (6 new features launched) improving NPS by 5 points.",
+        "Validated proof-of-concept for IIoT, resulting in a strong business case approval for full fleet rollout.",
+        "Increased budget allocation to innovation (14% from 11%)."
+      ],
+      "persistent_gaps": [
+        "The core strategic vulnerability of customer retention remains critical and unaddressed by current operational improvements.",
+        "Management structure is still informal, impeding the scaling required for enterprise growth.",
+        "Technical debt continues to accumulate despite successful feature launches."
+      ],
+      "achieved_milestones": [
+        "NPS improved 5 points.",
+        "15% reduction in unplanned downtime on instrumented machines (IoT pilot)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Improved operational visibility and product execution momentum (NPS increase; IoT pilot success). However, the strategic focus has shifted sharply from purely internal process optimization to addressing a critical external market failure: severe customer churn due to poor digital self-service."
+    }
+  }
+}

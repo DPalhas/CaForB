@@ -1,0 +1,198 @@
+{
+  "id": "R0201",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0327",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:42:14.789279+00:00",
+    "duration_ms": 44505,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Digital",
+      "sector": "Mining & Extraction",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "9 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0327",
+      "fields": {
+        "companyName": "Strato Digital",
+        "sector": "Mining & Extraction",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "4",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 8 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_supply_chain_opt",
+        "type": "incremental",
+        "title": "Supply Chain Resilience and Digital Visibility Optimization",
+        "rationale": "Building on the ongoing inventory digitalization, this opportunity focuses on making the system actionable by integrating supplier performance data and demand signals. This directly addresses margin pressure and supply chain disruptions, providing immediate, measurable value within a conservative risk framework.",
+        "execution_plan": {
+          "first_actions": [
+            "Map critical node-to-node dependencies (Tier 1 suppliers to final site delivery).",
+            "Develop a standardized Supplier Risk Scorecard integrated into the data warehouse.",
+            "Pilot predictive inventory buffer adjustments for the top 5 disrupted product lines."
+          ],
+          "resources_needed": [
+            "Supply Chain Data SME",
+            "BI Dashboard development hours",
+            "Operational site manager buy-in"
+          ],
+          "success_metric": "Reduction in unplanned stockouts (target: 15% reduction in Q3)",
+          "milestones": [
+            "Completed dependency mapping and risk scoring framework.",
+            "Integration test of predictive buffer adjustments with ERP."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_market_pilots",
+        "type": "incremental",
+        "title": "Adjacent Market Validation and Partnership Strategy",
+        "rationale": "To achieve 30% growth, Strato needs to validate its expansion options (build/buy/partner). This opportunity proposes structured mini-pilots in adjacent segments (e.g., infrastructure or specialized construction) rather than committing large capital, thus managing the 'conservative' risk appetite.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 high-potential adjacent customer profiles based on current quarrying data.",
+            "Develop a low-cost market assessment framework (e.g., small survey/interviews with sector influencers).",
+            "Structure a 'Proof of Concept' partnership agreement template."
+          ],
+          "resources_needed": [
+            "Business Development Lead",
+            "Market research budget (€20k)",
+            "Senior leadership time for strategic review"
+          ],
+          "success_metric": "Identification and commitment to 1 pilot market segment within 4 months.",
+          "milestones": [
+            "Completion of initial customer profiling workshop.",
+            "Selection of the highest-potential pilot partner/segment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "low",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_scopelock",
+        "action": "Finalize the scope and KPI ownership for the Supply Chain Optimization (opp_supply_chain_opt) with departmental heads to prevent scope creep.",
+        "owner": "Transformation Office Director",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_governance",
+        "action": "Schedule a dedicated Leadership Strategy Workshop focused solely on the 'Build vs Buy vs Partner' decision matrix to break the current deadlock.",
+        "owner": "CEO / Executive Sponsor",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_talent",
+        "action": "Assess internal talent capacity gaps (especially in predictive modeling and advanced analytics) resulting from the digital expansion.",
+        "owner": "HR/COO",
+        "timeframe": "Ongoing / Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Leadership alignment gap on market direction (Vertical vs Horizontal specialization).",
+      "Reliance on core technical staff who are managing multiple high-priority projects, creating potential burnout/bottleneck risks.",
+      "Cultural resistance to adopting predictive decision models due to historical reliance on manual/gut-feeling processes."
+    ],
+    "progress": {
+      "improvements": [
+        "Demonstrated digital maturity through successful ERP migration and BI dashboard rollout.",
+        "Proven ability to generate tangible cost savings (€2.4M annualized) from process automation initiatives.",
+        "Formalization of the innovation structure via a dedicated Transformation Office and CoE."
+      ],
+      "persistent_gaps": [
+        "Supply chain visibility remains reactive rather than predictive, particularly concerning Tier 2 suppliers.",
+        "Talent upskilling pace is slower than technology adoption rate.",
+        "The transition from 'cost saving' mindset to 'revenue generation' requires deeper process maturity."
+      ],
+      "achieved_milestones": [
+        "Successful completion of the cloud ERP migration and data warehouse rollout.",
+        "Establishment of measurable cost savings through RPA/low-code automation.",
+        "Launch of dedicated transformation governance structure (CoE)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "2023-10-26",
+      "assessment_number": 1,
+      "key_changes": "Significant operational and digital execution progress was achieved (ERP migration, BI rollout, CoE establishment), successfully monetizing initial investments despite supply chain volatility. The risk profile remains conservative, focusing on measurable growth pilots."
+    }
+  }
+}

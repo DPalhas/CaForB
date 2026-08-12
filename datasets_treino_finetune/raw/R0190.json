@@ -1,0 +1,204 @@
+{
+  "id": "R0190",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0174",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:12:10.609237+00:00",
+    "duration_ms": 94187,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.991275+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova Technologies",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Generic drug manufacturer producing oral solid dosage forms (tablets, capsules) across 8 therapeutic categories. EU GMP-certified manufacturing facility with capacity for 2 billion tablets annually. Currently investing in continuous manufacturing line technology to replace batch processing for high-volume products. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "We have a small technology team of 4-8 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+    },
+    "previous_assessment": {
+      "id": "0174",
+      "fields": {
+        "companyName": "Nova Technologies",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Generic drug manufacturer producing oral solid dosage forms (tablets, capsules) across 8 therapeutic categories. EU GMP-certified manufacturing facility with capacity for 2 billion tablets annually. Currently investing in continuous manufacturing line technology to replace batch processing for high-volume products. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 11,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+      }
+    },
+    "changes_since_last": "Hired 6 new team members. Launched customer feedback pilot. Budget for innovation increased 25%.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "step_1": "superseded",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 4.1,
+    "score_delta": 1.1,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_merger_process_redesign",
+        "type": "radical",
+        "title": "Harmonization of Core Business Processes Post-Merger",
+        "rationale": "The merger presents a unique, time-sensitive opportunity to move beyond 'patching' legacy systems and redesign core workflows (order processing, invoicing, support) from scratch. This is the highest ROI area for achieving the 15% expense reduction goal by eliminating duplicated efforts and streamlining manual processes.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional Governance Committee including representation from both legacy companies' operations, IT, Legal, and Quality Assurance to define new state processes (Compliance first).",
+            "Map current 'as-is' processes for the top 3 high-volume workflows (e.g., order-to-cash) across all systems identified.",
+            "Develop standardized SOPs and training materials that integrate compliance checks at every process stage, satisfying EU GMP requirements."
+          ],
+          "resources_needed": [
+            "Dedicated Business Process Mapping Consultant",
+            "Executive Sponsorship (C-level champion)",
+            "IT System Architect (for future state design)"
+          ],
+          "success_metric": "Reduction in average cycle time for order processing and invoicing by 20%.",
+          "milestones": [
+            "Completion of 'as-is' process mapping for core workflows.",
+            "Final approval of the 'to-be' integrated process model by governance committee.",
+            "Pilot implementation of redesigned flow in a single department/product line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_automation_scaling",
+        "type": "incremental",
+        "title": "Systemizing and Scaling AI/CV Insights Across Production Lines",
+        "rationale": "The success of the automated quality inspection prototype proves internal capability. This opportunity focuses on formalizing the deployment and expansion of successful technological prototypes (like CV) into other high-defect, manual areas to drive measurable operational savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed cost-benefit analysis comparing current defect rates/manual inspection time vs. automation capability for 3 adjacent production processes.",
+            "Formalize the tech team's capacity by ring-fencing 20% of their time specifically for scaling and integration efforts, shielding it from immediate operational maintenance demands.",
+            "Update SOPs to include standardized data capture protocols required for ongoing AI/ML model training.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Process Engineer (to identify expansion points)",
+            "IT Infrastructure Budget Allocation",
+            "Process Owner Buy-in (from Production/QA)"
+          ],
+          "success_metric": "Increased automation coverage from 1 process line to 3+ lines, achieving a cumulative defect escape rate reduction of 10%.",
+          "milestones": [
+            "Selection and technical scoping of the next two target processes.",
+            "Successful integration and testing of automated inspection in the second location.",
+            "Creation of a repeatable 'automation deployment playbook'."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_governance_charter",
+        "action": "Draft and secure executive sign-off for the 'New Operating Model' Governance Charter to legitimize process redesign efforts across both merged entities.",
+        "owner": "CEO/COO Office",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_tech_bandwidth",
+        "action": "Schedule a resource allocation meeting with key department heads to formally commit time and budget (even if small) for the dedicated tech scaling efforts, protecting it from day-to-day demands.",
+        "owner": "CTO/Head of IT",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_customer_deepdive",
+        "action": "Move beyond NPS surveys by hosting deep-dive interviews with the top 10 highest value, most complained-to customers to qualify pain points for automation/process redesign.",
+        "owner": "Customer Success/Product Manager",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational complexity and duplication arising from the recent merger (two CRMs, two HR systems).",
+      "Lack of protected time or budget for innovation, forcing initiatives to compete with immediate operational demands.",
+      "Fragile cultural integration and high change fatigue across middle management layers."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful creation and deployment of a Computer Vision automated quality inspection system in production (35% defect reduction).",
+        "Formalizing the innovation rhythm with structured activities like quarterly hackathons and dedicated fellow programs.",
+        "Increased budget allocation for innovation by 25%, demonstrating renewed executive commitment."
+      ],
+      "persistent_gaps": [
+        "Systemic process inefficiency remains high due to lack of integrated workflows across merged systems.",
+        "The technology team is severely bottlenecked between maintaining legacy products and handling new client integration requests.",
+        "A unified, single source of truth for operational data (CRM/ERP) has not been established."
+      ],
+      "achieved_milestones": [
+        "Prototype automation successfully moved to production scale in QA inspection.",
+        "Increased visibility into customer pain points through the NPS survey methodology."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "2024-01-01",
+      "assessment_number": 2,
+      "key_changes": "The company moved from merely having 'formal' processes to actively implementing successful tech prototypes and initiating process redesign following a major merger. The key shift is the window of opportunity presented by the merger to execute radical systemic improvements."
+    }
+  }
+}

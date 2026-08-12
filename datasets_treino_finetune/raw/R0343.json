@@ -1,0 +1,203 @@
+{
+  "id": "R0343",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0103",
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:08:08.633866+00:00",
+    "duration_ms": 109031,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Anchor Group",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Forestry management cooperative overseeing 5,000 hectares of sustainable pine and eucalyptus plantation. Supplies pulp and timber to paper mills. Evaluating satellite-based forest health monitoring and carbon credit certification programs. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 9,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+    },
+    "previous_assessment": {
+      "id": "0103",
+      "fields": {
+        "companyName": "Anchor Group",
+        "sector": "Agriculture, Forestry & Fishing",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Forestry management cooperative overseeing 5,000 hectares of sustainable pine and eucalyptus plantation. Supplies pulp and timber to paper mills. Evaluating satellite-based forest health monitoring and carbon credit certification programs. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 9,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+      }
+    },
+    "changes_since_last": "Product launch successful — 3 new features shipped. Customer NPS improved 25 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_sales_automation_v2",
+        "type": "incremental",
+        "title": "Implement Full-Cycle Sales Automation and AI Lead Scoring",
+        "rationale": "Building on the successful CRM deployment, the next logical step is integrating marketing automation and advanced lead scoring. This moves the sales motion from manual tracking to a repeatable, measurable process essential for achieving €50M ARR goals.",
+        "execution_plan": {
+          "first_actions": [
+            "Formalize integration scope between CRM and chosen Marketing Automation platform (MAP).",
+            "Design three distinct lead scoring criteria weighted by profitability potential.",
+            "Pilot the new workflow with a small, dedicated segment of the sales team."
+          ],
+          "resources_needed": [
+            "Dedicated process analyst (external consulting)",
+            "SME time from Sales/Marketing (minimum 0.5 FTE)",
+            "Budget allocation for MAP licensing/APIs"
+          ],
+          "success_metric": "Reduction of lead qualification time by 40% and a measured increase in SQL conversion rate.",
+          "milestones": [
+            "MAP platform selection and vendor integration complete.",
+            "Lead scoring model finalized and tested against historical data.",
+            "Full rollout across all sales territories."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_esg_digital_platform",
+        "type": "incremental",
+        "title": "Develop Digital Carbon/ESG Monitoring Platform",
+        "rationale": "The high-level strategic goal and the evaluation of satellite technology point toward a new, recurring revenue stream (carbon credits, ESG monitoring). Developing this platform addresses the need to expand the addressable market and de-risks future growth efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct feasibility study on integrating third-party satellite data APIs into a prototype dashboard.",
+            "Identify 2-3 pilot enterprise clients willing to co-design the monitoring dashboard requirements.",
+            "Map out the technical requirements for handling complex carbon accounting standards."
+          ],
+          "resources_needed": [
+            "Technical partner specializing in GIS/Satellite Data",
+            "Subject Matter Expert (ESG Consultant)",
+            "Dedicated time from core developer team (0.5 FTE)"
+          ],
+          "success_metric": "Successful proof-of-concept dashboard demonstrating real-time forest health metrics for a pilot client.",
+          "milestones": [
+            "Data source integration and ETL process established.",
+            "MVP platform demo presented to the board/leadership.",
+            "Secure Letter of Intent (LOI) from an initial paying customer."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_001",
+        "action": "Formalize an Innovation Roadmap (3-year plan) with measurable milestones and resource allocation, led by the CEO.",
+        "owner": "CEO/Leadership Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_002",
+        "action": "Allocate dedicated (even if part-time) development resources specifically for the ESG Platform PoC, ring-fencing them from maintenance tasks.",
+        "owner": "CTO/Management",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "ns_003",
+        "action": "Conduct external training/consulting on creating a repeatable enterprise sales motion and understanding recurring revenue metrics (ARR).",
+        "owner": "Sales Lead/CEO",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Critical resource constraint: Lack of dedicated, non-operational R&D talent leads to reactive, opportunistic development.",
+      "Strategic clarity gap between immediate operational improvements (CRM) and long-term market pivoting (ESG/ARR).",
+      "Formalized sales methodology is missing; growth efforts rely on generalist effort rather than scalable process."
+    ],
+    "progress": {
+      "improvements": [
+        "Significant strategic momentum gained with the new CEO's focus.",
+        "Digital capability improved (Maturity 2 -> 3).",
+        "Key operational processes (lead tracking) are stable and reliable thanks to CRM deployment."
+      ],
+      "persistent_gaps": [
+        "The core constraints of time and talent remain the primary limiting factors for ambitious growth targets.",
+        "Budget is still seen as a barrier, despite the need for major investment in new platforms (ESG/MAP).",
+        "Transitioning from project-by-project implementation to a systematic, repeatable revenue generation model."
+      ],
+      "achieved_milestones": [
+        "Successful product launch with 3 core feature enhancements.",
+        "NPS improvement of 25 points confirms better customer experience delivery.",
+        "Stabilization and improvement of foundational sales data management via CRM."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The shift in leadership and the successful product launch provided critical momentum. The focus has moved from foundational stability (CRM) to ambitious strategic growth (ARR targets), demanding a higher level of digital rigor."
+    }
+  }
+}

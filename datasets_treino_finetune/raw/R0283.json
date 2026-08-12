@@ -1,0 +1,207 @@
+{
+  "id": "R0283",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0045",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:51:15.266501+00:00",
+    "duration_ms": 41670,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.017568+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Forge Analytics",
+      "sector": "Professional & Consulting Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a corporate innovation division with 60+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 16 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0045",
+      "fields": {
+        "companyName": "Forge Analytics",
+        "sector": "Professional & Consulting Services",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O1_workflow_engine",
+        "type": "incremental",
+        "title": "Implement Standardized Process Automation Layer (Digital Operating System)",
+        "rationale": "The organizational pain point stems from good ideas lacking institutional backing. This opportunity formalizes the concept of process automation across core consulting workflows, shifting efficiency gains from ad-hoc projects to standardized, governed systems. This directly addresses the need for standardization and operational throughput improvement.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional Process Governance Board (PGB) including Legal, Compliance, IT Security, and Operations leadership.",
+            "Conduct detailed 'As-Is' process mapping (scope limited to 3 critical client service workflows).",
+            "Define the minimal viable automation requirements for the pilot scope, ensuring all compliance gateways are integrated upfront."
+          ],
+          "resources_needed": [
+            "Process Architects/BPM Specialists",
+            "Legal and Compliance Review Hours",
+            "Dedicated IT Infrastructure budget (for core system integration)"
+          ],
+          "success_metric": "Reduction in process cycle time for targeted workflows by 25% within the first 6 months.",
+          "milestones": [
+            "PGB charter finalized and staffed.",
+            "Pilot workflow mapping completed and signed off by all stakeholders.",
+            "MVP automated dashboard deployed to internal users (read-only access)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_dashboard_failure",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O2_digital_service_embedding",
+        "type": "incremental",
+        "title": "Create Data-Driven 'Sticky' Service Modules for Clients",
+        "rationale": "To counter rising churn and the threat from new competitors, Forge Analytics should embed measurable digital value into its service offerings. This shifts the focus from purely consulting time to proprietary data insights delivered via a platform layer, increasing client dependence on our intellectual property.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2-3 key metrics/pain points commonly addressed by clients (e.g., retention rates, specific competency gaps).",
+            "Develop proof-of-concept data models using anonymized internal client success data.",
+            "Conduct feasibility assessment on integrating these modules into existing digital learning platforms.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Scientists/Analysts",
+            "Product Design Team (UX focus)",
+            "Sales Leadership buy-in for testing"
+          ],
+          "success_metric": "Attachment rate of new 'Digital Service Modules' to client contracts, aiming for 15% growth QoQ.",
+          "milestones": [
+            "MVP module prototype completed and tested internally.",
+            "Pilot offering presented to three key high-risk accounts.",
+            "Pricing model developed for the modular service."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Form the Process Governance Board (PGB) and define its scope/mandate for workflow standardization.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Immediate (4 weeks)"
+      },
+      {
+        "id": "NS2",
+        "action": "Launch an internal 'Process Pain Point' workshop series targeting the 3 most common high-volume, low-standardization services.",
+        "owner": "Innovation Division Leads / Operations Managers",
+        "timeframe": "Next quarter (8 weeks)"
+      },
+      {
+        "id": "NS3",
+        "action": "Mandate a review of the competitive landscape focusing specifically on digital delivery methods used by new market entrants.",
+        "owner": "Strategy & Consulting Leadership",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on informal or siloed knowledge transfer (proven by the abandoned dashboard). Institutionalization of process is critical.",
+      "Internal bureaucracy, while ensuring compliance, acts as a significant drag on operational velocity and speed to market.",
+      "The current product/service mix may not be sufficiently differentiated in digital value to counteract competitive pressure."
+    ],
+    "progress": {
+      "improvements": [
+        "Established formal portfolio governance process for innovation projects (showing increased structure).",
+        "Team possesses deep, specialized talent depth (12 organizational psychologists, 60+ staff) which is a massive asset.",
+        "Clear internal strategic mandate to improve operational throughput."
+      ],
+      "persistent_gaps": [
+        "The core process documentation and standardization efforts remain fragmented and ad-hoc.",
+        "Integration between systems (e.g., CRM, LMS, Internal Dashboards) is lacking, leading to manual data reconciliation.",
+        "Translating organizational depth into measurable, repeatable digital service offerings."
+      ],
+      "achieved_milestones": [
+        "Successful initiation of formal portfolio governance management for innovation projects.",
+        "Defined clear strategic priority on efficiency and operational throughput improvements."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The organization has moved from an 'informal' state to one with formal governance and significant resources. The key shift is recognizing that the barrier is no longer resource availability but organizational velocity and process maturity."
+    }
+  }
+}

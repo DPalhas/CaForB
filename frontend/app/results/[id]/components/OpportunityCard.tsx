@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { ChevronDown, Zap, Target, Clock, ShieldCheck, Flag } from "lucide-react";
 
 interface ExecutionPlan {
@@ -18,6 +19,7 @@ interface Opportunity {
   impact: string;
   difficulty: string;
   timeframe: string;
+  carryForwardStatus?: string | null;
 }
 
 interface OpportunityCardProps {
@@ -27,7 +29,8 @@ interface OpportunityCardProps {
 
 const tagColor = (value: string) => {
   const v = value.toLowerCase();
-  if (v === "high" || v === "radical") return "bg-amber-950/40 text-amber-300 border-amber-800/40";
+  if (v === "radical" || v === "high-impact") return "bg-indigo-950/40 text-indigo-300 border-indigo-800/40";
+  if (v === "high") return "bg-amber-950/40 text-amber-300 border-amber-800/40";
   if (v === "medium" || v === "strategic") return "bg-emerald-950/40 text-emerald-300 border-emerald-800/40";
   if (v === "low" || v === "incremental") return "bg-cyan-950/40 text-cyan-300 border-cyan-800/40";
   return "bg-stone-900/60 text-stone-300 border-stone-800/60";
@@ -35,10 +38,16 @@ const tagColor = (value: string) => {
 
 const tagBgPill = (value: string) => {
   const v = value.toLowerCase();
-  if (v === "high" || v === "radical") return "bg-amber-950/60 text-amber-300";
+  if (v === "radical" || v === "high-impact") return "bg-indigo-950/60 text-indigo-300";
+  if (v === "high") return "bg-amber-950/60 text-amber-300";
   if (v === "medium" || v === "strategic") return "bg-emerald-950/60 text-emerald-300";
   if (v === "low" || v === "incremental") return "bg-cyan-950/60 text-cyan-300";
   return "bg-stone-800/60 text-stone-300";
+};
+
+const itemReveal = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 export default function OpportunityCard({ opportunity, index }: OpportunityCardProps) {
@@ -46,7 +55,7 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
   const hasExecutionPlan = !!opportunity.executionPlan;
 
   return (
-    <div className="glass-card rounded-3xl border border-stone-800/80 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden">
+    <motion.div className="glass-card rounded-3xl border border-stone-800/80 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden" variants={itemReveal}>
       <div className="p-6 sm:p-7">
         
         {/* Card Header */}
@@ -59,6 +68,16 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
               <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border mb-1 inline-block ${tagColor(opportunity.type)}`}>
                 {opportunity.type} Opportunity
               </span>
+              {opportunity.carryForwardStatus && (
+                <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border mb-1 inline-block ml-1.5 ${
+                  opportunity.carryForwardStatus === "continues" ? "bg-emerald-950/40 text-emerald-300 border-emerald-800/40" :
+                  opportunity.carryForwardStatus === "evolved_to" ? "bg-indigo-950/40 text-indigo-300 border-indigo-800/40" :
+                  opportunity.carryForwardStatus === "retired" ? "bg-rose-950/40 text-rose-300 border-rose-800/40" :
+                  "bg-stone-900/60 text-stone-300 border-stone-800/60"
+                }`}>
+                  {opportunity.carryForwardStatus.replace("_", " ")}
+                </span>
+              )}
               <h3 className="text-lg font-bold text-white leading-snug">{opportunity.title}</h3>
             </div>
           </div>
@@ -169,6 +188,6 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
         )}
 
       </div>
-    </div>
+    </motion.div>
   );
 }

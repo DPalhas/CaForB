@@ -1,0 +1,197 @@
+{
+  "id": "R0122",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0386",
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:45:37.758863+00:00",
+    "duration_ms": 60074,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan Networks.tech",
+      "sector": "Energy & Utilities",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 25,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment."
+    },
+    "previous_assessment": {
+      "id": "0386",
+      "fields": {
+        "companyName": "Titan Networks.tech",
+        "sector": "Energy & Utilities",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 28,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "Upcoming changes to industry-specific safety and certification standards will require us to recertify our entire product line over the next 2 years. The recertification process is expensive and time-consuming. We need innovation ideas that either accelerate the recertification workflow itself or deliver sufficient business value to justify the combined certification-plus-innovation investment."
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 2 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_energy_pred",
+        "type": "radical",
+        "title": "Predictive Compliance & Optimization Platform (PCOP)",
+        "rationale": "The combination of critical safety recertification needs and the existing IoT infrastructure presents a prime opportunity. Building a platform that models compliance decay alongside energy usage will transform regulatory overhead into a high-value, recurring service offering. This radical shift justifies both the certification investment and provides immediate ROI.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish cross-functional steering committee (R&D, Legal/Compliance, Sales) to map recertification requirements to data inputs.",
+            "Develop a Minimum Viable Product (MVP) focused solely on simulating compliance failure points based on usage patterns.",
+            "Pilot the PCOP tool with 3 key existing clients for early feedback and proof-of-concept revenue tracking."
+          ],
+          "resources_needed": [
+            "Dedicated Compliance/Legal SME time",
+            "Advanced Data Modeling Engineers (AI focus)",
+            "Initial budget allocation for external safety consultant review"
+          ],
+          "success_metric": "Reduction in estimated recertification labor costs by 20% within 12 months, quantified via client adoption rate.",
+          "milestones": [
+            "Phase 1: Compliance Gap Analysis Model Complete (3 months)",
+            "Phase 2: Live Pilot Deployment with 3 Clients (6 months)",
+            "Phase 3: Formal Productization and Pricing Strategy Defined (9 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_market_exit",
+        "type": "incremental",
+        "title": "Geographic Market Assessment and Entry Strategy (MENA Focus)",
+        "rationale": "Given the 'growth' mandate and willingness for strategic bets, identifying a high-potential adjacent market is crucial. Targeting a specific geographic region, like the Middle East/North Africa (MENA), allows for focused due diligence rather than dispersed expansion. This initial assessment minimizes risk while providing actionable targets for future M&A consideration.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct competitive landscape mapping in 2 high-priority target cities within the MENA region.",
+            "Identify and vet 3 potential local partners or small acquisitions that could provide immediate market access.",
+            "Develop a preliminary financial model calculating entry costs versus projected Year 1 revenue contribution."
+          ],
+          "resources_needed": [
+            "Business Development/Regional Sales Lead",
+            "Financial modeling expertise (internal or outsourced)",
+            "Travel budget for initial scoping visits"
+          ],
+          "success_metric": "Finalized 'Go/No-Go' recommendation on one target market with a detailed 3-year revenue forecast.",
+          "milestones": [
+            "Market Selection and Partner Identification (4 months)",
+            "Due Diligence Documentation Complete (8 months)",
+            "Executive Presentation of Entry Strategy (12 months)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_steering",
+        "action": "Establish a dedicated Innovation Steering Committee (ISC) comprising senior leaders, compliance/legal representation, and R&D leads. This committee must meet bi-weekly to manage project scope creep and prioritize bets.",
+        "owner": "CTO / Senior Leadership Team",
+        "timeframe": "Immediate (Next 2 Weeks)"
+      },
+      {
+        "id": "ns_bandwidth",
+        "action": "Conduct a 'Capacity Audit' workshop to quantify the engineering team's current bandwidth versus projected hours needed for PCOP MVP development, forcing immediate prioritization and scope limitation.",
+        "owner": "Product Owner / CTO",
+        "timeframe": "Next 4 Weeks"
+      },
+      {
+        "id": "ns_financial_linkage",
+        "action": "Align the innovation budget (5% of revenue) with clear, measurable milestones tied to both growth metrics and mandatory compliance expenditure requirements.",
+        "owner": "CFO / Management",
+        "timeframe": "Next Quarter Budget Review"
+      }
+    ],
+    "key_weaknesses": [
+      "Resource bandwidth management: Difficulty carving out focused time for large, strategic bets without compromising day-to-day sprint deliverables.",
+      "Integration risk: Lack of a formally established mechanism to integrate mandatory industry compliance requirements directly into the innovation roadmap and feature backlog.",
+      "Decision-making bottleneck: While leadership is aligned on 'growth,' the decision process may still suffer from fragmentation between operational priorities (sprints) and strategic investments (M&A/PCOP)."
+    ],
+    "progress": {
+      "improvements": [
+        "Structural maturity increased significantly with formalization of processes, dedicated R&D capacity, and the hiring of senior leaders.",
+        "Stronger alignment on 'Growth' as an existential mandate provides clear strategic focus for investments.",
+        "Demonstrated capability to launch multiple revenue-contributing product lines (18% contribution)."
+      ],
+      "persistent_gaps": [
+        "Operationalizing the strategic vision: The current processes are mature, but translating that into focused, sustained effort on truly radical bets remains challenging due to team bandwidth limitations.",
+        "Compliance Integration: The regulatory imperative (recertification) is currently viewed as an overhead cost rather than a core feature-building opportunity within the innovation pipeline."
+      ],
+      "achieved_milestones": [
+        "Successful maturation of the internal stage-gate process for evaluating new initiatives.",
+        "Solidifying operational revenue stream through product line expansion (AI-powered engine)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Transitioned from founder-led to professionally managed structure; formalized strategic planning processes; established dedicated R&D capacity and innovation funding mechanism."
+    }
+  }
+}

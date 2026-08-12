@@ -1,0 +1,201 @@
+{
+  "id": "R0215",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0067",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:52:17.111861+00:00",
+    "duration_ms": 45300,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova",
+      "sector": "Fintech",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Insurtech MGA underwriting parametric weather insurance for smallholder farmers in Southern Europe. Payouts triggered automatically by satellite-verified rainfall deficit or frost events. Currently operating in Portugal and Spain with 5,000 policies. Evaluating expansion to parametric heat stress insurance for livestock. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "8 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+    },
+    "previous_assessment": {
+      "id": "0067",
+      "fields": {
+        "companyName": "Nova",
+        "sector": "Fintech",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Insurtech MGA underwriting parametric weather insurance for smallholder farmers in Southern Europe. Payouts triggered automatically by satellite-verified rainfall deficit or frost events. Currently operating in Portugal and Spain with 5,000 policies. Evaluating expansion to parametric heat stress insurance for livestock. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+      }
+    },
+    "changes_since_last": "Completed 2 strategic partnerships. Revenue growth 10% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "completed",
+      "step_1": "completed",
+      "step_2": "in_progress",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Parametric Risk Expansion into Adjacent Climate Perils",
+        "rationale": "The core MGA competency lies in rapid, data-triggered payouts. Leveraging successful partnerships and deep domain knowledge allows Nova to incrementally expand its coverage scope (e.g., livestock heat stress) or adjacent geographic markets without fundamental business model changes. This directly addresses the strategic need for diversification while remaining within a conservative risk appetite.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a localized market assessment in target regions to quantify demand and regulatory hurdle costs (Compliance check).",
+            "Model financial exposure for 2-3 high-potential, adjacent perils using current underwriting data.",
+            "Formalize an expanded risk appetite matrix that incorporates new peril types."
+          ],
+          "resources_needed": [
+            "Underwriting expertise (Subject Matter Expert)",
+            "Market research budget",
+            "Legal/Compliance counsel for expansion jurisdictions"
+          ],
+          "success_metric": "Securing Letters of Intent (LOI) from 2 new regional partners or underwriters.",
+          "milestones": [
+            "Complete feasibility study on heat stress insurance in target market (3 months).",
+            "Update underwriting guidelines and risk documentation for expanded perils."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Cloud Native Data Productization Layer for Real-Time Risk Scoring",
+        "rationale": "The mandatory cloud re-architecture, while disruptive, must be treated as a modernization opportunity. Instead of merely migrating infrastructure, Nova should build out standardized APIs and data models within the new platform. This allows them to productize their unique risk scoring logic (the 'secret sauce') for use in external B2B partnerships or adjacent insurance services, turning technical debt cleanup into immediate revenue capability.",
+        "execution_plan": {
+          "first_actions": [
+            "Define a granular API blueprint for core underwriting calculations (e.g., historical deficit modeling).",
+            "Implement mandatory data localization compliance controls within the new cloud architecture design phase.",
+            "Identify and pilot integration with one existing strategic partner's system to validate API usability."
+          ],
+          "resources_needed": [
+            "Dedicated Cloud Architect/DevOps team (Engineering Capacity)",
+            "Data governance framework",
+            "API testing sandbox environment"
+          ],
+          "success_metric": "Successful deployment of 3 core underwriting APIs, fully compliant with new data localization rules.",
+          "milestones": [
+            "Establish the minimal viable API layer and secure internal sign-off on data flow (4 months).",
+            "Integrate first production partner into the new scoring mechanism."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months (Phased)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Finalize the scope and resource allocation for the mandatory cloud re-architecture project, explicitly ring-fencing dedicated engineering time to enable API development (opp_2).",
+        "owner": "CTO/Technical Lead",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns_2",
+        "action": "Execute a comparative market analysis focusing on the adjacent insurance sectors (e.g., agricultural asset tracking, livestock health) to validate assumptions for O_1.",
+        "owner": "Founder/Strategy Lead",
+        "timeframe": "Next 4 months"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a structured framework to decentralize innovation ownership beyond the founder, potentially establishing an internal 'Innovation Council' involving functional heads.",
+        "owner": "Founder/HR",
+        "timeframe": "Next 6 months"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependence on single-point decision making (Founder bottleneck) limits scalability of innovation efforts.",
+      "Constrained capital necessitates extremely high ROI for all new initiatives, increasing execution risk tolerance.",
+      "Current engineering capacity is heavily consumed by non-discretionary compliance/re-architecture work, slowing down proactive development."
+    ],
+    "progress": {
+      "improvements": [
+        "Innovation process has matured from ad-hoc to formally embedded (hackathons, fellow program), demonstrating strong operational discipline.",
+        "Digital maturity increased, validated by the successful implementation of a computer vision prototype reducing defect escape rates by 35%."
+      ],
+      "persistent_gaps": [
+        "Structural diversification efforts must remain highly disciplined and resource-efficient to maintain investor confidence (given constrained capital).",
+        "The operationalization of newly generated data assets into revenue streams is still conceptual, requiring heavy lift during the technical migration period."
+      ],
+      "achieved_milestones": [
+        "Successful completion of strategic partnerships and solid 10% YoY revenue growth.",
+        "Integration of key AI/ML prototype (computer vision) into production workflows."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved operational maturity and revenue growth validate the formal innovation process. The primary challenge shifted from general strategic identification to managing mandatory technical infrastructure modernization (data localization) while pursuing radical diversification."
+    }
+  }
+}

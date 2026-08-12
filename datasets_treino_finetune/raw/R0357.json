@@ -1,0 +1,200 @@
+{
+  "id": "R0357",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0150",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:21:23.145586+00:00",
+    "duration_ms": 85160,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.033225+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina Digital",
+      "sector": "Mining & Extraction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "9 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 18,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0150",
+      "fields": {
+        "companyName": "Lumina Digital",
+        "sector": "Mining & Extraction",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 18,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 4 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "step_1": "in_progress",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 3.4,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A",
+        "type": "incremental",
+        "title": "Establish a Repeatable Enterprise Sales Motion (Recurring Revenue Focus)",
+        "rationale": "The ambitious €50M ARR target requires moving beyond ad-hoc project sales. This opportunity formalizes the process of identifying, pitching, and closing recurring service contracts (e.g., maintenance, digital monitoring) rather than relying solely on one-time equipment purchases. Success hinges on standardizing the consultative sales approach.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current sales process bottlenecks and identify 3 core repeatable product/service lines for recurring revenue focus.",
+            "Develop a standardized Ideal Customer Profile (ICP) and associated value proposition tailored to multi-year contracts.",
+            "Pilot the new sales motion with the top 5 existing clients, requiring executive sponsorship.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Sales Operations resource",
+            "Updated pricing model structure for recurring services",
+            "Executive leadership time for cross-departmental alignment"
+          ],
+          "success_metric": "Percentage of new revenue derived from recurring sources (Target: 20% within 12 months)",
+          "milestones": [
+            "ICP and value proposition finalized.",
+            "Sales playbooks created and trained on.",
+            "First repeatable contract signed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B",
+        "type": "radical",
+        "title": "Implement Integrated Digital Compliance & Risk Management Framework",
+        "rationale": "Given the high regulatory environment and past failure in process adoption, manual compliance tracking is a major risk. This opportunity requires integrating new standard operating procedures (SOPs) directly into core digital systems (ERP/CRM) to automate required reporting and approvals, making compliance unavoidable by design.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit all 4 implemented regulatory SOPs to determine data input points and decision gates.",
+            "Scope the integration requirement: linking specific operational workflows (e.g., quarry closure reports) directly to mandatory compliance checklists in the ERP.",
+            "Secure buy-in from legal/environmental teams on system triggers for 'non-compliance' alerts."
+          ],
+          "resources_needed": [
+            "IT/System Architect",
+            "External regulatory consultant",
+            "Compliance subject matter expert (SME)"
+          ],
+          "success_metric": "Reduction in manual compliance reporting time by 75%",
+          "milestones": [
+            "Workflow mapping completed and signed off.",
+            "Minimum Viable Product (MVP) for one high-risk process deployed to a pilot team.",
+            "Full adoption across all sites/quarries."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a detailed gap analysis between current operational processes and the requirements of the new recurring revenue model (opp_A).",
+        "owner": "Strategy Function / Sales Leadership",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Form a cross-functional task force (IT, Operations, Legal) to scope the data requirements for automating compliance workflows (opp_B).",
+        "owner": "COO / IT Director",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Formalize a mechanism and process owner responsible for converting qualitative customer feedback into actionable, quantitative product improvements.",
+        "owner": "Marketing / Customer Success",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of standardized enterprise sales methodology leading to inconsistent growth trajectory.",
+      "Compliance procedures remain siloed from core operational systems, creating high manual risk.",
+      "Inconsistent adoption and low trust in new digital tools across different business units."
+    ],
+    "progress": {
+      "improvements": [
+        "The organization has proactively implemented 4 new standard operating procedures following recent regulatory changes.",
+        "Team morale is reported as improving, suggesting better internal communication and commitment to change.",
+        "Formal budgeting processes (QBRs) demonstrate increased financial maturity."
+      ],
+      "persistent_gaps": [
+        "The inability to successfully deploy process improvement tools due to insufficient structured change management.",
+        "Reliance on manual tracking for critical compliance steps, creating single points of failure and regulatory risk.",
+        "The customer feedback loop remains unstructured and unquantified."
+      ],
+      "achieved_milestones": [
+        "Completion of core operational setup (opp_1).",
+        "Successful completion of mandatory procedural reviews following external regulatory updates (step_2)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Shift from vague strategic ambition to specific €50M ARR goals and a clear realization of the need for process overhaul (process barrier remains primary focus)."
+    }
+  }
+}

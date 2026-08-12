@@ -1,0 +1,201 @@
+{
+  "id": "R0130",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0009",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:55:11.012434+00:00",
+    "duration_ms": 61410,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Professional & Consulting Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 10,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0009",
+      "fields": {
+        "companyName": "Crest",
+        "sector": "Professional & Consulting Services",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 6 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "superseded",
+      "opp_3": "superseded",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_tech_2",
+        "type": "incremental",
+        "title": "Industrial IoT Service Platformization and Integration",
+        "rationale": "The successful pilot of IoT sensors demonstrates significant technical capability and proven ROI (15% downtime reduction). The current hurdle is not the technology itself, but integrating it robustly into complex legacy maintenance systems to scale. This requires transitioning from a project-based deployment to an integrated, commercialized service offering.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated cross-functional Tiger Team (IT, Operations, Commercial) focused solely on integration scope definition.",
+            "Develop detailed technical requirements and budget for the chosen legacy system API/interface layer.",
+            "Identify 1-2 pilot customers willing to commit to co-development of the standardized solution stack."
+          ],
+          "resources_needed": [
+            "Capital expenditure funding (post-business case approval)",
+            "Dedicated IT architecture specialist",
+            "Technical Subject Matter Experts from Operations"
+          ],
+          "success_metric": "Completion and successful live demonstration with 2 key legacy systems, achieving a minimum of $X revenue commitment by Q4.",
+          "milestones": [
+            "System Gap Analysis Completion (3 months)",
+            "Proof-of-Concept Integration Success (6 months)",
+            "Formal Product Launch/Service Package Definition (9 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_new_model",
+        "type": "radical",
+        "title": "Developing a Subscription-Based Learning Ecosystem (PaaS)",
+        "rationale": "Over-reliance on the top 3 clients for 55% of revenue presents an unacceptable concentration risk. To diversify, Crest must move beyond bespoke consulting projects. Developing a scalable Platform as a Service (PaaS) using its digital learning platform goal could create multiple low-touch revenue streams targeting new segments.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct comprehensive market research to identify 2-3 adjacent, non-client-specific industry needs (e.g., remote leadership skills for tech scale-ups).",
+            "Develop a minimum viable product (MVP) scope defining core content modules and delivery mechanics.",
+            "Model multiple pricing tiers (Freemium/Subscription/Enterprise Licensing) to ensure broad market appeal."
+          ],
+          "resources_needed": [
+            "Dedicated Content Architect/Curriculum Designer",
+            "Market research budget",
+            "Technology development allocation time (leveraging '20% time') "
+          ],
+          "success_metric": "Securing 5 paying beta users across a new industry segment within 9 months.",
+          "milestones": [
+            "Target Market Selection and Validation (3 months)",
+            "MVP Build Completion (6 months)",
+            "Beta Launch and Feedback Loop Established (9 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_governance_review",
+        "action": "Map the formal committee approval process (Decision Making) to identify specific decision gates that can be pre-emptively managed or bypassed for innovation initiatives, requiring C-Suite sponsorship.",
+        "owner": "Executive Leadership / Strategy Lead",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns_productization_scoping",
+        "action": "Formalize the scope and budget for opp_tech_2 by defining clear interfaces between current systems and legacy maintenance platforms.",
+        "owner": "Technology/Operations Leads (Tiger Team)",
+        "timeframe": "Next 4 months"
+      },
+      {
+        "id": "ns_segmentation_workshop",
+        "action": "Host internal workshops involving Product, Sales, and Marketing to systematically validate the target segments for opp_new_model.",
+        "owner": "Commercial/Innovation Lead",
+        "timeframe": "Next 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Structural dependence on top-tier clients (55% revenue concentration) remains the primary threat to long-term stability.",
+      "Formal decision-making governance poses a significant bottleneck, slowing down commercialization of promising internal projects.",
+      "Translating deep technical expertise into scalable, repeatable productized services requires dedicated focus outside of client service delivery."
+    ],
+    "progress": {
+      "improvements": [
+        "Improved digital capabilities (Maturity 3 to 4) and successful deployment of IoT pilots demonstrate technical execution capability.",
+        "Innovation culture has matured significantly with the implementation of '20% time' policy and dedicated internal funding mechanisms.",
+        "Revenue streams have shown diversification through acquisition of 6 new enterprise clients and entry into adjacent markets."
+      ],
+      "persistent_gaps": [
+        "The formal governance structure remains a significant barrier to rapid scaling or pivoting required by new revenue models.",
+        "High talent attrition risk in specialized psychological/consulting roles persists, despite current team size.",
+        "Lack of standardized internal processes for productizing service knowledge gained from large client engagements."
+      ],
+      "achieved_milestones": [
+        "Successfully completed Opp 1 (details pending), freeing up resources and proving commercial viability in a new area.",
+        "Demonstrated capability to execute complex technical pilots and acquire major enterprise clients, validating core consulting competencies."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The company has successfully matured its operating model and internal innovation mechanisms (moving beyond 'potential' to 'execution'). The strategic focus has sharpened from general diversification concerns to actionable risk mitigation against client concentration. Operational progress is strong, allowing for higher maturity scoring despite structural governance gaps."
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "id": "R0076",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0109",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:59:09.908701+00:00",
+    "duration_ms": 65219,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.961279+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Digital",
+      "sector": "Professional & Consulting Services",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Engineering design consultancy providing structural, MEP, and sustainability consulting for large-scale commercial and infrastructure projects. Team of 60 engineers using Revit, AutoCAD, and IES VE for building performance simulation. Evaluating computational design and generative design tools for structural optimization. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0109",
+      "fields": {
+        "companyName": "Strato Digital",
+        "sector": "Professional & Consulting Services",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Engineering design consultancy providing structural, MEP, and sustainability consulting for large-scale commercial and infrastructure projects. Team of 60 engineers using Revit, AutoCAD, and IES VE for building performance simulation. Evaluating computational design and generative design tools for structural optimization. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 12,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 2 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_diversify_adj_market",
+        "type": "radical",
+        "title": "Adjacent Market Expansion via Sustainability Policy Consulting",
+        "rationale": "The core business relies on declining legacy infrastructure. To achieve diversification, Strato must leverage its brand trust and engineering expertise (structural/MEP) into high-growth adjacent sectors like Net Zero standards or regulatory policy advisory services. This radical shift requires mitigating new market entry risks.",
+        "execution_plan": {
+          "first_actions": [
+            "Engage external legal counsel to map key international/state regulations for carbon accounting and net-zero building codes.",
+            "Form a dedicated, cross-functional 'Tiger Team' (including senior leaders) to scope 3 potential adjacent service lines.",
+            "Identify two existing anchor clients who are already expressing interest in policy-driven sustainability solutions."
+          ],
+          "resources_needed": [
+            "External regulatory/policy consultants",
+            "Dedicated internal FTE for market research",
+            "Executive time commitment (Founder + 2 Senior Leaders)"
+          ],
+          "success_metric": "Successful qualification of one new, non-engineering service offering with projected revenue streams.",
+          "milestones": [
+            "Regulatory gap analysis complete (3 months)",
+            "Pilot client proposal drafted and accepted (6 months)",
+            "Initial external advisory contract secured (9 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "long-term",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2_tech_governance",
+        "type": "incremental",
+        "title": "Formalizing Technical Investment Vetting and Process Scaling",
+        "rationale": "While innovation is embedded (hackathons), the technical evaluation process remains limited by specialized internal expertise. Developing a formal governance framework for vetting complex technologies will de-risk future investments and allow systematic scaling of successful prototypes.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a standardized Technology Readiness Level (TRL) scoring model tailored for construction/engineering tech.",
+            "Formalize partnership agreements with external subject matter experts (SMEs) to fill temporary talent gaps during evaluation phases.",
+            "Integrate the TRL process into the quarterly innovation fellow program curriculum.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Internal Process Architect",
+            "Budget allocation for specialized SME contracts",
+            "Existing tech champions within the senior leadership team"
+          ],
+          "success_metric": "Reduction of average time-to-decision for a new technology prototype by 25%.",
+          "milestones": [
+            "TRL model v1.0 finalized and approved (4 months)",
+            "Minimum of two external SME engagements completed using the new process (8 months)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "medium-term",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Establish a formal governance committee (Board/Senior Leadership) responsible for strategic portfolio allocation and approving major diversification initiatives, reducing founder dependency.",
+        "owner": "Founder / Senior Leaders",
+        "timeframe": "Q3 2024"
+      },
+      {
+        "id": "step_2",
+        "action": "Develop a formalized budgetary tracking system that explicitly allocates resources and milestones for diversification pilot projects, preventing them from being absorbed by core operations.",
+        "owner": "Operations Management / Finance",
+        "timeframe": "Q4 2024"
+      },
+      {
+        "id": "step_3",
+        "action": "Conduct a deep-dive gap analysis on required regulatory compliance for the top two targeted adjacent markets identified in Opportunity 1.",
+        "owner": "Senior Leaders / External Counsel",
+        "timeframe": "Ongoing (Immediate)"
+      }
+    ],
+    "key_weaknesses": [
+      "Founder Dependency: Critical strategic and product decisions are still centralized, limiting scalability despite new hires.",
+      "Undefined Talent Structure: Reliance on temporary contractors or founder bandwidth limits the ability to execute complex evaluation/diversification strategies consistently.",
+      "Process Governance Gap: Formal innovation process exists (hackathons), but formal *strategic* governance (approving pivot points) is not yet mature."
+    ],
+    "progress": {
+      "improvements": [
+        "Formal processes are embedded (quarterly hackathons, innovation fellow program).",
+        "Operational efficiency has been validated, demonstrated by a 35% reduction in defect escape rate.",
+        "Transitioning from founder-led to professional management is underway."
+      ],
+      "persistent_gaps": [
+        "Structural decision-making authority remains largely concentrated with the founder.",
+        "The link between operational process improvements and strategic diversification mandates needs stronger executive sponsorship.",
+        "Budgetary allocation for radical, non-core ventures requires clearer departmental separation and governance."
+      ],
+      "achieved_milestones": [
+        "A proof-of-concept automated quality inspection prototype is successfully implemented in production.",
+        "Formalization of the innovation pipeline (fellows/hackathons) provides repeatable structure."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant improvement in process maturity (formal programs running) and demonstrable operational success. However, strategic governance and critical talent scaling remain major barriers."
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "R0314",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0031",
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:35:35.024473+00:00",
+    "duration_ms": 92880,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Ember",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Music rights and publishing company managing a catalog of 5,000 songs across 200 songwriters and composers. Handling royalty collection, sync licensing for TV/film/advertising, and copyright enforcement. Seeking to implement automated royalty tracking from streaming platforms and AI-assisted music similarity detection for infringement monitoring. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "6 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+    },
+    "previous_assessment": {
+      "id": "0031",
+      "fields": {
+        "companyName": "Ember",
+        "sector": "Arts, Entertainment & Media",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Music rights and publishing company managing a catalog of 5,000 songs across 200 songwriters and composers. Handling royalty collection, sync licensing for TV/film/advertising, and copyright enforcement. Seeking to implement automated royalty tracking from streaming platforms and AI-assisted music similarity detection for infringement monitoring. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+      }
+    },
+    "changes_since_last": "Hired 6 new team members. Launched customer feedback pilot. Budget for innovation increased 25%.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "superseded",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Systemic Royalty Workflow Automation & Audit Trail:",
+        "rationale": "The core business (royalty collection) is currently prone to manual inefficiencies and margin compression. Automating the tracking, reconciliation, and compliance reporting for 5,000 songs will provide visible, immediate efficiency gains that directly impact cost reduction goals. This builds upon existing progress in process mapping.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the end-to-end current state of royalty collection (source feed intake to payment generation).",
+            "Define key data validation rules and necessary compliance checkpoints for regulatory reporting.",
+            "Pilot integration points between streaming platform APIs and internal ledger system.",
+            "Identify necessary SME input from accounting/legal teams."
+          ],
+          "resources_needed": [
+            "IT Development Time (Dedicated Stream)",
+            "Accounting Subject Matter Expert (SME)",
+            "Legal Compliance Oversight"
+          ],
+          "success_metric": "Reduction in manual reconciliation hours by 40% within two quarters.",
+          "milestones": [
+            "Completion of 'As-Is' process map and bottleneck identification.",
+            "Selection/Proof-of-Concept for automation platform (e.g., specialized workflow tool).",
+            "Successful dry run of automated payment cycle."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "new_opp_5",
+        "type": "incremental",
+        "title": "Process Governance and Institutional Memory Capture:",
+        "rationale": "The failure of the internal dashboard highlights a critical gap: good ideas die without institutional support. To prevent this, Ember must formalize processes for vetting, documenting, and maintaining successful operational improvements. This shifts innovation from heroic effort to managed capability.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a small, cross-functional 'Process Improvement Guild' (PIG) with dedicated time slots.",
+            "Develop standardized templates for documenting process changes and pain points (e.g., using BPMN notation).",
+            "Conduct quarterly knowledge transfer sessions to capture specialized operational knowledge before staff members transition or depart.",
+            "Identify one low-risk, high-visibility process to pilot the new documentation lifecycle."
+          ],
+          "resources_needed": [
+            "Dedicated Process Owner (Internal Lead)",
+            "Process Mapping Software/Tools",
+            "Management Time Allocation (for PIG meetings)"
+          ],
+          "success_metric": "Creation and formal sign-off on 3 documented, repeatable processes that were previously informal.",
+          "milestones": [
+            "PIG charter signed by department heads.",
+            "Successful documentation of one core 'back office' process.",
+            "Integration of the PIG review step into annual operational planning."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Host a mandatory 'Pain Point Deep Dive' workshop focused solely on the top 3 manual processes identified in the royalty workflow, involving staff from Accounts and Operations.",
+        "owner": "COO/Process Improvement Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Formally charter the Process Improvement Guild (PIG) with a defined scope, mandatory participation time, and explicit mandate to document successful efficiency gains.",
+        "owner": "Management Committee/HR Partner",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Review existing IT spend and identify opportunities for low-cost digital improvements (e.g., advanced internal SharePoint use, standardized forms) before committing to high-CAPEX automation.",
+        "owner": "IT Department Lead",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational capacity constraints and staff burnout due to restructuring impacts are the primary barrier, limiting bandwidth for proactive improvement efforts.",
+      "Process formalization remains ad-hoc; knowledge is housed in individuals rather than documented workflows, posing a key operational risk.",
+      "The ability to prioritize efficiency initiatives over immediate day-to-day firefighting requires stronger governance and executive shielding."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased innovation budget by 25%, providing clearer commitment signals for improvement work.",
+        "Successfully hired new team members, expanding the operational capacity (though staff are still overloaded).",
+        "Moved digital maturity from informal conversations to a measurable functional level (Digital Maturity 3)."
+      ],
+      "persistent_gaps": [
+        "The core barrier of 'time' and operational overload remains acute. New initiatives must demonstrate immediate, visible relief for frontline employees.",
+        "Formal process documentation and standardized governance structures have yet to be implemented across multiple units."
+      ],
+      "achieved_milestones": [
+        "Initiation of customer feedback pilot gathering qualitative data (though the method is still informal).",
+        "Progress on core efficiency processes has solidified, moving from conceptual planning into active development stages for key areas."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Improved structure and funding (budget increase, new hires) indicate increased commitment to growth. The focus shifted from simply identifying inefficiencies to actively planning systemic automation in core revenue areas."
+    }
+  }
+}

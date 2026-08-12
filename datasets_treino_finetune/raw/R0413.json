@@ -1,0 +1,203 @@
+{
+  "id": "R0413",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0237",
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:09:24.514117+00:00",
+    "duration_ms": 46332,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core Corporation",
+      "sector": "Insurance",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Insurance brokerage firm advising corporate clients on risk management programs spanning property, casualty, cyber, D&O, and employee benefits. Team of 35 brokers managing €60M in placed premiums. Seeking to implement a risk analytics platform for client exposure modeling and benchmarking. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 0,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0237",
+      "fields": {
+        "companyName": "Core Corporation",
+        "sector": "Insurance",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Insurance brokerage firm advising corporate clients on risk management programs spanning property, casualty, cyber, D&O, and employee benefits. Team of 35 brokers managing €60M in placed premiums. Seeking to implement a risk analytics platform for client exposure modeling and benchmarking. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 8 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "completed",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Implement Predictive Client Health Analytics Platform",
+        "rationale": "The core weakness is declining retention (92% to 84%) among mid-tier clients, indicating a lack of proactive intervention capability. Building this platform will allow Core Corp to model client risk exposure using advanced data metrics, moving beyond reactive problem solving.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct regulatory review (e.g., GDPR/CCPA) for incorporating new PII sources into the analytics model.",
+            "Define target variables for 'churn risk' using existing operational data and CRM outputs.",
+            "Pilot integration of a specialized third-party predictive modeling tool with limited dataset scope."
+          ],
+          "resources_needed": [
+            "Data Science expertise (internal or external contractor)",
+            "Product/Business Analyst time",
+            "Integration budget for core systems (CRM/Policy Admin)"
+          ],
+          "success_metric": "Reduction in client churn rate by 5% within 12 months.",
+          "milestones": [
+            "Data architecture finalized and cleaned (Q+1).",
+            "Initial predictive model trained and validated against historical data.",
+            "Pilot dashboard launched for the sales/relationship management team."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Develop Digital Client Self-Service Portal",
+        "rationale": "Customer feedback explicitly points to poor digital self-service tools and product stagnation. A dedicated portal will serve as the primary modernization effort, improving user experience and reducing operational load on brokers by handling routine requests.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out all critical customer journeys (e.g., policy renewal inquiry, claim status check) for digital automation.",
+            "Establish compliance guidelines for secure data exchange through the portal interface.",
+            "Define Minimum Viable Product (MVP) scope focusing only on top 3 friction points."
+          ],
+          "resources_needed": [
+            "UX/UI Designer",
+            "Compliance/Legal review time",
+            "Development capacity (platform team)"
+          ],
+          "success_metric": "Reduce volume of manual service inquiries handled by brokers by 20%.",
+          "milestones": [
+            "User flow mapping and wireframing complete.",
+            "MVP prototype signed off by product committee.",
+            "Beta launch to a segment of mid-tier clients."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "7-10 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the Product Modernization Roadmap (PRM) based on predictive analytics and self-service gaps, securing dedicated leadership sponsorship.",
+        "owner": "Leadership/Product Head",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Dedicate specific budget allocation and FTE resources (minimum 1.5 FTE) to the Self-Service Portal MVP build, treating it as a critical infrastructure project.",
+        "owner": "CFO/Executive Committee",
+        "timeframe": "Next Quarter Budget Cycle"
+      },
+      {
+        "id": "ns_3",
+        "action": "Structure and formalize the output of the '20% time' policy by requiring winning ideas from the internal pitch competition to immediately translate into dedicated product backlogs.",
+        "owner": "CTO/Innovation Lead",
+        "timeframe": "Ongoing (Quarterly)"
+      }
+    ],
+    "key_weaknesses": [
+      "Systemic difficulty translating internal innovation capacity ('20% time') into stable, revenue-generating product lines.",
+      "Lack of predictive intelligence infrastructure leading to reactive relationship management and high churn risk in the mid-tier segment.",
+      "Reliance on formal committee decision-making slows the execution cycle necessary for rapid market defense."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully digitized a core client workflow (onboarding), significantly improving efficiency metrics (12 days to 5 days).",
+        "Expanded market reach and secured new enterprise clients, validating adjacent market expansion strategy.",
+        "The internal innovation culture is healthy, demonstrated by the cross-functional nature of recent successful initiatives."
+      ],
+      "persistent_gaps": [
+        "Operational process maturity remains uneven; many workflows still rely heavily on manual data handling outside key digital touchpoints.",
+        "Lack of visibility into product stagnation pain points for clients who are not actively engaging with the company (silent churn risk).",
+        "The core technology stack needs modernization to support advanced predictive analytics and seamless self-service functionality."
+      ],
+      "achieved_milestones": [
+        "Successful cross-functional launch of digital onboarding flow.",
+        "Completion of process improvements for initial service delivery steps (steps 2 & 3)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant digital process improvements were achieved (onboarding flow), and the company successfully expanded into new client segments. However, core business risks related to product stagnation and customer retention remain high priorities."
+    }
+  }
+}

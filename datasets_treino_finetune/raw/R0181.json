@@ -1,0 +1,201 @@
+{
+  "id": "R0181",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0452",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:23:46.438883+00:00",
+    "duration_ms": 93230,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Systems.io",
+      "sector": "Manufacturing",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Blend of CNC routing for repetitive components with traditional joinery for finishing. Evaluating digital twin assembly planning to reduce custom project lead times from 12 to 7 weeks. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "none",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 10 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0452",
+      "fields": {
+        "companyName": "Quantum Systems.io",
+        "sector": "Manufacturing",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Custom furniture manufacturer crafting solid wood pieces for hospitality and high-end residential projects. Blend of CNC routing for repetitive components with traditional joinery for finishing. Evaluating digital twin assembly planning to reduce custom project lead times from 12 to 7 weeks. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "none",
+        "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 6 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "superseded",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_2024_3",
+        "type": "incremental",
+        "title": "Standardized End-to-End Digital Twin Process Modeling",
+        "rationale": "The company is evaluating digital twin planning, which represents a direct path to achieving the target 7-week lead time reduction. This opportunity focuses on formalizing the process mapping—integrating design, supply chain visibility, and manufacturing execution systems (MES)—to turn isolated digital efforts into a core operational capability.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current state processes for 3 high-volume custom furniture product lines using BPMN standards.",
+            "Establish cross-functional 'Process Improvement Cohorts' involving engineering, production, and IT.",
+            "Develop a minimum viable simulation model linking CAD data to CNC routing cycle times."
+          ],
+          "resources_needed": [
+            "Dedicated Process Architect (BPR focus)",
+            "MES/ERP system integration budget",
+            "Executive sponsorship for process mandate"
+          ],
+          "success_metric": "Reduction of custom project lead time from 12 to 7 weeks, validated by simulation.",
+          "milestones": [
+            "Completion of 'As-Is' Process Map (Q1)",
+            "Pilot implementation of digital twin for one product line (Q2)",
+            "Quantified throughput increase via process standardization (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_initial_efficiency",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2024_4",
+        "type": "incremental",
+        "title": "Institutionalizing the Innovation Funnel (I-Funnel)",
+        "rationale": "The company possesses significant internal R&D capacity and a VC arm, but innovation is currently 'isolated' and lacks formal governance. This opportunity focuses on building a structured funnel that routes grassroots ideas into vetted, resource-allocated projects, mitigating organizational inertia.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear stage-gate criteria for internal project graduation (e.g., concept -> prototype -> pilot).",
+            "Implement a centralized Idea Management System (IMS) accessible to all employees.",
+            "Run a 'Process Standardization Challenge' using the IMS as the primary input mechanism."
+          ],
+          "resources_needed": [
+            "Chief Innovation Officer (CIO) role definition/hiring",
+            "Idea management software license",
+            "Executive workshop on structured innovation governance"
+          ],
+          "success_metric": "Number of vetted, funded internal initiatives moving past the pilot stage annually.",
+          "milestones": [
+            "Formalized I-Funnel documentation and training (Q1)",
+            "First cohort of 5 ideas successfully passed to pilot funding (Q2)",
+            "Integration of I-Funnel metrics into divisional OKRs (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months+",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_001",
+        "action": "Conduct a formal process capability assessment (PMA) for the top 5 revenue-generating product families to identify manual handoffs and bottlenecks.",
+        "owner": "Operations Director / Process Architect",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_002",
+        "action": "Draft the charter for a cross-functional Governance Steering Committee (GSC) comprising senior leaders from R&D, Operations, and Finance to champion standardization efforts.",
+        "owner": "COO / Executive Sponsor",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_003",
+        "action": "Select and procure a dedicated Idea Management System (IMS) platform suitable for enterprise-scale collaborative input.",
+        "owner": "IT Leadership / Innovation Team",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and resistance to standardized processes, despite digital capability.",
+      "Lack of formal governance structure linking grassroots innovation efforts (R&D) to core operational execution (Manufacturing).",
+      "Siloed systems preventing holistic data flow necessary for true end-to-end process optimization."
+    ],
+    "progress": {
+      "improvements": [
+        "Expanded market presence and secured 6 new enterprise clients, validating product fit.",
+        "Internal digital maturity is demonstrably improving (evidenced by AI/ML team growth and venture arm activity).",
+        "Executive awareness of the need for standardization and efficiency gains is high."
+      ],
+      "persistent_gaps": [
+        "Lack of standardized, repeatable operational processes that can be efficiently digitized.",
+        "Governance mechanism remains ad-hoc; successful digitization efforts are not yet mandatory or institutionally enforced across all divisions.",
+        "Translating advanced digital capabilities (AI/ML) into simple, scalable process improvements rather than expensive pilot projects."
+      ],
+      "achieved_milestones": [
+        "Successful acquisition of new enterprise client base.",
+        "Completion of internal capability building within the Digital and Innovation organization structure."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Shift from acknowledging lack of process to having the resources (staffing, venture capital, client base) and strategic urgency necessary to mandate process standardization and digital transformation."
+    }
+  }
+}

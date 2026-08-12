@@ -1,0 +1,203 @@
+{
+  "id": "R0338",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0054",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:03:19.579014+00:00",
+    "duration_ms": 41597,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Analytics",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0054",
+      "fields": {
+        "companyName": "Quantum Analytics",
+        "sector": "Manufacturing",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 12,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 5 new team members. Launched customer feedback pilot. Budget for innovation increased 15%.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A2",
+        "type": "incremental",
+        "title": "Formalized Idea and Knowledge Capture Framework",
+        "rationale": "The failure of the internal dashboard highlights a critical lack of institutional backing for good ideas. Establishing a formal process ensures that high-value insights, even those developed informally by staff, are documented, maintained, and prioritized before personnel changes impact them.",
+        "execution_plan": {
+          "first_actions": [
+            "Select and implement a simple digital repository (e.g., SharePoint/Trello) for idea submission.",
+            "Establish clear ownership rules for ideas: designated 'Idea Stewards' responsible for vetting and maintaining progress.",
+            "Integrate the framework into the ISO 9001 documentation process as a required input step."
+          ],
+          "resources_needed": [
+            "Dedicated time from Operations Lead (1 day/week)",
+            "Simple cloud-based project management tool",
+            "Training for all new hires on submission guidelines"
+          ],
+          "success_metric": "Three submitted ideas move beyond initial concept status within 6 months.",
+          "milestones": [
+            "Framework selected and rolled out to the team (Month 1).",
+            "Two successful, documented idea cycles completed (Month 3)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "low",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_A1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B1",
+        "type": "incremental",
+        "title": "End-to-End Process Automation Audit (Waste Identification)",
+        "rationale": "The primary objective is a 15% OpEx reduction, which stems from identifying waste in manual processes. A focused audit across order processing, invoicing, and support workflows will provide the necessary data points to scope high-ROI automation opportunities efficiently.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current state (AS-IS) workflow for a single representative order from receipt to billing.",
+            "Identify key manual handoffs and decision points requiring physical or digital intervention.",
+            "Interview finance and operations staff specifically on time sinks and redundancy in data entry."
+          ],
+          "resources_needed": [
+            "Time allocation from the founder (for executive sign-off)",
+            "Process mapping software/diagramming tool",
+            "Cross-functional team participation (Ops, Finance)"
+          ],
+          "success_metric": "Completion of three detailed AS-IS process maps identifying quantifiable time/resource sinks.",
+          "milestones": [
+            "AS-IS mapping complete for Order Processing (Month 1).",
+            "Draft automation roadmap and top 3 candidates identified (Month 2)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Standardize operational roles and responsibilities (RACI matrix) to mitigate founder dependency.",
+        "owner": "Founder/Management",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Formalize the 'Idea Stewardship' role within the new Idea Framework, assigning a primary owner to drive progress on internal suggestions.",
+        "owner": "Operations Lead",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Conduct initial financial deep dive into current manual transaction costs (e.g., calculating time spent per invoice/order manually) to quantify automation ROI.",
+        "owner": "Finance/Management",
+        "timeframe": "Ongoing, starting immediately"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on the Founder for strategic direction and complex decision-making.",
+      "Lack of formalized mechanisms to capture and sustain institutional knowledge and good ideas.",
+      "Process documentation (SOPs) is still fragmented, despite ISO efforts, making scaling difficult."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased dedicated budget for innovation (+15%) provides necessary resources.",
+        "Staff capacity increased by hiring 5 new members, increasing execution bandwidth.",
+        "Formal commitment to process maturity via ISO 9001:2025 certification."
+      ],
+      "persistent_gaps": [
+        "Knowledge retention remains a risk (proven by the abandoned dashboard).",
+        "The company has not yet moved from identifying 'waste' to scoping specific, measurable automation solutions.",
+        "Decision-making still requires significant founder input rather than being delegated."
+      ],
+      "achieved_milestones": [
+        "Successfully launched a customer feedback pilot program (informal data collection).",
+        "Developed and utilized an internal dashboard for order backlog visualization, proving utility in the operations team.",
+        "Initial stages of ISO 9001 compliance are underway."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 0,
+      "key_changes": "Significant improvement in team capacity and financial commitment (budget increase). Focus has shifted from general 'capability building' to targeted 'efficiency optimization,' supported by the launch of formal compliance initiatives."
+    }
+  }
+}

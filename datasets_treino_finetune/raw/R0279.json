@@ -1,0 +1,203 @@
+{
+  "id": "R0279",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0236",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:48:15.979480+00:00",
+    "duration_ms": 23558,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.017568+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Anchor Innovations",
+      "sector": "Fintech",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 26,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0236",
+      "fields": {
+        "companyName": "Anchor Innovations",
+        "sector": "Fintech",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Investment platform providing commission-free stock and ETF trading with fractional shares through a mobile app. 150,000 registered users, €600M assets under custody. Recently launched savings plans and pension products. Exploring robo-advisory portfolio construction and ESG scoring integration. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 26,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 5 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "in_progress",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 3.8,
+    "score_delta": 0.4,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Formalize Portfolio Strategy and Risk Framework (Carry-Forward)",
+        "rationale": "The initial need for structured strategy remains critical given the 'growth' priority. The formalization of strategic planning processes helps establish guardrails, especially as they explore M&A or new lines. This opportunity matures from conceptual to operational necessity.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a tiered risk matrix (e.g., low/medium/high impact on AUC) aligned with 'bold' appetite.",
+            "Conduct workshops with senior leaders to define clear investment thesis criteria for new products/markets.",
+            "Integrate required compliance steps (AML, KYC updates) into the framework design immediately due to 'high' regulation."
+          ],
+          "resources_needed": [
+            "External strategy consultant (1 month)",
+            "Legal/Compliance counsel time",
+            "Senior Management Team Time"
+          ],
+          "success_metric": "Signed off, actionable Portfolio Risk & Strategy Document.",
+          "milestones": [
+            "Drafting of risk matrix completed by Month 2.",
+            "Executive sign-off on investment criteria by Month 3."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Establish Centralized, Scalable Innovation/R&D Function",
+        "rationale": "Hiring 5 senior leaders helps, but innovation is bottlenecked by generalist developers (talent constraint). Creating a dedicated function moves R&D from 'spare cycles' to strategic asset management. This scales the capacity needed for ambitious growth bets.",
+        "execution_plan": {
+          "first_actions": [
+            "Hire a dedicated Head of Innovation/Product Strategy (early focus on process, not code).",
+            "Define clear KPIs and tooling stack to replace informal processes (lessons from pilot failure).",
+            "Implement agile sprint cycles for prototyping new features, dedicating 20% developer time.",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Budget Line Item (Personnel)",
+            "PMO/Project Management Tooling subscription",
+            "Operational Time Allocation (Developer capacity)"
+          ],
+          "success_metric": "Minimum viable prototype of a new feature launched within 6 months.",
+          "milestones": [
+            "Hiring process finalized for Head of Innovation by Month 2.",
+            "First cross-functional sprint review completed by Month 4."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Formalize and document the governance structure for new strategic investments (M&A vetting, product line decisions).",
+        "owner": "Senior Management Team / CEO",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "step_2",
+        "action": "Implement a mandatory 'Design Thinking' workshop cadence across all departments to improve customer feedback capture and internal process alignment.",
+        "owner": "Head of Innovation (Future)",
+        "timeframe": "Ongoing / Quarterly"
+      },
+      {
+        "id": "step_3",
+        "action": "Audit current technology stack against future growth requirements, identifying necessary core system enhancements before scaling new features.",
+        "owner": "CTO/Technical Leads",
+        "timeframe": "4 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of specialized technical expertise for complex investment evaluation (reliance on external advisors).",
+      "Inefficient internal process documentation and project management tools.",
+      "Over-reliance on generalist developers, creating a major bottleneck for innovation."
+    ],
+    "progress": {
+      "improvements": [
+        "Transitioning from founder-led to professional management with 5 new senior leaders.",
+        "Formalizing strategic planning processes and establishing clear goals ('Growth' mandate).",
+        "Successful initial expansion into savings plans and pension products."
+      ],
+      "persistent_gaps": [
+        "Informal decision-making remains a risk despite structured efforts.",
+        "Persistent inability to fully adopt project management tools (requires structured change management intervention).",
+        "Lack of dedicated, specialized R&D talent capacity."
+      ],
+      "achieved_milestones": [
+        "Secured significant AUM (€600M)",
+        "Successfully launched new product lines (savings/pension)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.4,
+      "previous_date": "2023-10-15",
+      "assessment_number": 2,
+      "key_changes": "Increased management structure and product lines (positive), but persistent operational inefficiency and talent constraints limit scalable innovation."
+    }
+  }
+}

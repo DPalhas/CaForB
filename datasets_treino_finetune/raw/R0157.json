@@ -1,0 +1,203 @@
+{
+  "id": "R0157",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0267",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:22:26.668880+00:00",
+    "duration_ms": 59238,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.984946+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova Ventures",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Wholesale distributor of plumbing, heating, and electrical supplies serving 500+ independent contractors and hardware retailers. Operate a 12,000 m² central warehouse with 15 delivery vehicles. Evaluating warehouse management system upgrade and route optimization software. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "2",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 21,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0267",
+      "fields": {
+        "companyName": "Nova Ventures",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Wholesale distributor of plumbing, heating, and electrical supplies serving 500+ independent contractors and hardware retailers. Operate a 12,000 m² central warehouse with 15 delivery vehicles. Evaluating warehouse management system upgrade and route optimization software. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 21,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 6 strategic partnerships. Revenue growth 15% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "step_1": "not_done",
+      "step_2": "superseded",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_data_monetization",
+        "type": "incremental",
+        "title": "Structured Data Asset Monetization Play (B2B)",
+        "rationale": "Nova collects proprietary transactional data from 500+ contractors. This valuable, structured dataset represents a scalable revenue stream that minimizes initial market risk. By formalizing the anonymization and aggregation process, we can create specialized insights for adjacent businesses (e.g., municipal planning, construction firms).",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated Data Governance Council involving Legal, IT, and Operations to map data ownership.",
+            "Conduct a full regulatory audit focused on GDPR/CCPA compliance for aggregated datasets (High Regulation focus).",
+            "Define the Minimum Viable Product (MVP) dataset—e.g., regional usage density metrics—and secure initial internal buy-in."
+          ],
+          "resources_needed": [
+            "Legal Counsel specializing in data privacy.",
+            "Dedicated Data Scientist/Analyst team.",
+            "Seed funding from the Innovation Fund (€5M pool)."
+          ],
+          "success_metric": "Successful pilot sale of anonymized, aggregated market intelligence reports to one external B2B client within 9 months.",
+          "milestones": [
+            "Regulatory Compliance Framework established (T+3 months).",
+            "MVP Data Pipeline operational and validated (T+6 months).",
+            "Pilot Client engagement secured (T+12 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_data_assets",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2_marketplace_platform",
+        "type": "radical",
+        "title": "Developing an Adjacent Digital Marketplace/Platform Layer",
+        "rationale": "To overcome limited core market growth, Nova must transition from a pure distributor to a service orchestrator. A marketplace allows us to connect independent contractors and suppliers directly with complementary services (e.g., specialized equipment rental, certifications), capturing new transaction fees.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a high-level business case analyzing competitive landscape for multi-sided platforms in the construction supply chain.",
+            "Form cross-functional 'Discovery Tribe' consisting of Sales, IT, and Marketing to define core user journeys.",
+            "Identify 2-3 key non-core services that can be onboarded rapidly (e.g., specialized installation consultation) to test viability.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Executive sponsorship for cross-departmental mandate.",
+            "Market research budget (€500k).",
+            "UX/UI Design resources."
+          ],
+          "success_metric": "Successful pilot MVP launch with 10 unique service providers and generating initial platform revenue within 12 months.",
+          "milestones": [
+            "Platform blueprint defined and signed off by executive committee (T+4 months).",
+            "Initial provider onboarding program launched (T+8 months).",
+            "Pilot MVP live in a single geographic region (T+12 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-30 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Executive Steering Committee must define and mandate a formal 'Innovation Governance Charter' to overcome current process inertia.",
+        "owner": "CEO / Executive Team",
+        "timeframe": "Next Quarter (Q1)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Launch the Data Asset Monetization Council (per opp_1), ensuring compliance and legal review is the primary deliverable.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Immediate (Next 4 Weeks)"
+      },
+      {
+        "id": "ns_3",
+        "action": "Mandate a quarterly 'Innovation Portfolio Review' where business units must present concrete resource allocation plans and measurable KPIs for their funded projects.",
+        "owner": "Group CFO / COO",
+        "timeframe": "Ongoing (Starting Next Quarter)"
+      }
+    ],
+    "key_weaknesses": [
+      "Structural organizational inertia remains the primary blocker, despite resources and executive awareness.",
+      "Innovation governance is highly decentralized, leading to potential resource conflicts and inconsistent standards across business units.",
+      "The current reliance on internal capital allocation (pitting funds) discourages genuine cross-divisional collaboration necessary for large transformations."
+    ],
+    "progress": {
+      "improvements": [
+        "Strong 15% YoY revenue growth validates core market strength and operational execution.",
+        "Proactive exploration of AI/ML capabilities signals increased technological awareness and readiness to modernize.",
+        "Formalizing the strategic intent toward diversification (marketplace, data play) provides a clear directional vector."
+      ],
+      "persistent_gaps": [
+        "The inability to translate strategic vision into systematic process change remains critical. Initiatives are still siloed or stuck in planning phases ('not_done').",
+        "Formalizing customer feedback and operational usage data collection is lacking, making monetization opportunities harder to scope precisely."
+      ],
+      "achieved_milestones": [
+        "Successfully building 6 strategic partnerships solidifies market reach and resilience.",
+        "Increased visibility into the 'bold' risk appetite helps guide resource allocation toward high-reward/high-risk ventures."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved strategic focus and financial performance (15% growth) have raised the potential maturity score from 'none' to recognizing formal resource commitments and clear diversification goals. However, persistent process and governance weaknesses mean the change remains highly reliant on executive mandate rather than organic systemic improvement."
+    }
+  }
+}

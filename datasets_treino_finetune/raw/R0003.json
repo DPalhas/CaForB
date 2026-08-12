@@ -1,0 +1,203 @@
+{
+  "id": "R0003",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0144",
+  "split": "train",
+  "metadata": {
+    "sector": "Other",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:19:27.632094+00:00",
+    "duration_ms": 43459,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Grid Capital",
+      "sector": "Other",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 4,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0144",
+      "fields": {
+        "companyName": "Grid Capital",
+        "sector": "Other",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Diversified holding company with operating businesses in industrial packaging, specialty chemicals, and food ingredients. Portfolio of 6 operating companies with combined revenues of €180M. Central corporate team of 25 managing strategy, M&A, and group finance. Evaluating cross-portfolio digital transformation and shared services platform implementation. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 6 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "in_progress",
+      "step_1": "superseded",
+      "step_2": "completed",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_shared_platform",
+        "type": "incremental",
+        "title": "Standardizing Cross-Portfolio Operational Processes via Shared Services",
+        "rationale": "While automating individual processes is good, the lack of centralized standards across 6 operating companies prevents true scale. Implementing a shared platform for core functions (e.g., HR, finance reporting) will free up founder time and ensure consistent data integrity as growth occurs.",
+        "execution_plan": {
+          "first_actions": [
+            "Select one high-impact, low-complexity process area (e.g., invoice reconciliation) for the pilot.",
+            "Establish a cross-functional 'Process Improvement Task Force' involving managers from key operating units.",
+            "Map current state vs desired state workflow using standardized BPMN tools."
+          ],
+          "resources_needed": [
+            "Dedicated process owner (internal)",
+            "Limited external consultant time (for best practices)",
+            "Small pool of shared platform software license"
+          ],
+          "success_metric": "Reduction in cycle time for the piloted function by 20% within 6 months.",
+          "milestones": [
+            "Process mapping completed and agreed upon by all unit heads.",
+            "Pilot team trained on new standardized process.",
+            "Measured reduction in manual effort reported."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_d2c_engine",
+        "type": "incremental",
+        "title": "Developing a Scalable Customer Acquisition and Channel Management Engine",
+        "rationale": "The goal of D2C expansion requires moving beyond founder-led decision making. This opportunity focuses on building the repeatable, systematic infrastructure (tech stack, process flow) necessary to support rapid volume growth without operational breakdown.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a deep dive analysis of competitor D2C acquisition funnels and cost structures.",
+            "Design a minimal viable tech stack (website + CRM integration) focused purely on data capture.",
+            "Develop a formalized, measurable marketing test budget framework."
+          ],
+          "resources_needed": [
+            "Dedicated Marketing Lead (internal or fractional)",
+            "Small seed technology budget for MVP build",
+            "KPI dashboard tooling access"
+          ],
+          "success_metric": "Achieve X number of qualified leads through the new D2C channel within 6 months.",
+          "milestones": [
+            "MVP website launch (functional only).",
+            "First paid acquisition campaign executed and analyzed.",
+            "D2C performance metrics integrated into core reporting."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_delegation",
+        "action": "Formalize and document clear decision rights (RACI matrix) for the founder to delegate operational approvals across unit managers.",
+        "owner": "Founder/Leadership Team",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns_change_mgmt",
+        "action": "Mandatory training session on structured change management principles for all middle management to prevent process regression (failure mode observed with prior cloud tool).",
+        "owner": "HR/Strategy Lead",
+        "timeframe": "4 months"
+      },
+      {
+        "id": "ns_pilot_sourcing",
+        "action": "Identify the single most ripe, low-risk area (e.g., centralized reporting of material spend) to begin the shared services pilot.",
+        "owner": "Finance/Operations Lead",
+        "timeframe": "2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on the founder for strategic and technical decisions (single point of failure).",
+      "Lack of standardized governance or playbook across disparate operating businesses.",
+      "Inconsistent process adherence due to inadequate formal change management protocols."
+    ],
+    "progress": {
+      "improvements": [
+        "Restructured leadership has created more accountability and defined roles.",
+        "Automation of 6 legacy processes demonstrates a tangible commitment to operational efficiency.",
+        "Increased clarity on strategic goals (D2C, new markets) provides focus."
+      ],
+      "persistent_gaps": [
+        "The organization still struggles with sustaining adopted process changes without highly structured governance.",
+        "Digital adoption remains fragmented; tools are used, but the underlying *process* integration is missing.",
+        "Bandwidth constraints remain critical due to founder-level decision bottlenecks."
+      ],
+      "achieved_milestones": [
+        "Completed internal restructuring milestones (Leadership Team).",
+        "Successfully completed step 2 of previous recommendations (indicating tactical execution capability)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has moved from an 'informal' state to active process improvement and strategic planning. Digital maturity increased from Level 1 to Level 2, supported by clearer leadership structure and automation efforts."
+    }
+  }
+}

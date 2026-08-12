@@ -1,0 +1,200 @@
+{
+  "id": "R0213",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0205",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:50:47.134880+00:00",
+    "duration_ms": 44846,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Technologies",
+      "sector": "Fintech",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "B2B buy-now-pay-later provider embedding installment payment options at checkout for B2B marketplaces and wholesale platforms. Serving 200 merchant partners and 8,000 business buyers. Key innovation challenge is automated credit limit adjustment based on real-time business financial health signals. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 19,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0205",
+      "fields": {
+        "companyName": "Apex Technologies",
+        "sector": "Fintech",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "B2B buy-now-pay-later provider embedding installment payment options at checkout for B2B marketplaces and wholesale platforms. Serving 200 merchant partners and 8,000 business buyers. Key innovation challenge is automated credit limit adjustment based on real-time business financial health signals. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 16,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 7 new features shipped. Customer NPS improved 10 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_iot_scale",
+        "type": "incremental",
+        "title": "Full-Scale IoT Integration & Predictive Maintenance Platform Rollout",
+        "rationale": "The initial pilot proves the value of predictive maintenance, but scaling is hampered by legacy systems and procurement complexity. This opportunity focuses on standardizing integration protocols across business units to achieve full fleet coverage and establish a centralized data model for asset performance tracking.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional steering committee (IT/Operations) dedicated solely to legacy system API mapping and required middleware development.",
+            "Develop a phased integration roadmap, prioritizing high-impact, low-complexity equipment groups first.",
+            "Secure dedicated budget allocation for integration specialists rather than relying on general capex funds."
+          ],
+          "resources_needed": [
+            "Enterprise Architecture Team (IT)",
+            "Operations/Maintenance Subject Matter Experts",
+            "Dedicated Integration Budget ($1M est.)"
+          ],
+          "success_metric": "Uptime improvement exceeding 20% across the target fleet segment within 9 months.",
+          "milestones": [
+            "Completion of API documentation and mapping (Month 3)",
+            "Successful integration and data flow validation on two distinct equipment types (Month 6)",
+            "Full deployment to pilot business unit, demonstrating KPI improvement (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_iot_pilot",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_adj_market_bet",
+        "type": "radical",
+        "title": "Identify and Pilot Adjacent B2B Vertical Expansion (M&A/Partnership Focus)",
+        "rationale": "Given the 'bold' risk appetite and existential mandate for growth, Apex must stop focusing solely on internal optimization. This opportunity requires scouting adjacent B2B verticals where installment payments are critical, potentially through strategic M&A or large ecosystem partnerships to rapidly capture new market share.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated 'Market Bets' task force reporting directly to the Executive Committee (EC), bypassing standard BU funding funnels.",
+            "Conduct deep-dive analysis on 3 high-potential, non-core B2B sectors (e.g., specialized industrial equipment financing).",
+            "Develop a standardized, rapid ROI screening model specifically for evaluating acquisition targets or major partnership potential."
+          ],
+          "resources_needed": [
+            "Corporate Development/M&A expertise",
+            "Market Intelligence Subscription Services",
+            "Executive Sponsor (CEO/COO) commitment"
+          ],
+          "success_metric": "Submission of a qualified deal flow pipeline with preliminary valuation models within 6 months.",
+          "milestones": [
+            "Completion of target market analysis and scoring (Month 2)",
+            "Identification and initial outreach to 3 potential strategic partners/targets (Month 4)",
+            "Formalized pitch to the board outlining the top M&A or partnership rationale (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_tech_debt_review",
+        "action": "Mandate a technical debt audit across all core revenue-generating platforms to quantify the cost of inaction and prioritize architectural refactoring.",
+        "owner": "CTO/Head of Engineering",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_governance_streamline",
+        "action": "Implement a standardized 'Growth Initiative Vetting Charter' that clearly defines success metrics, required executive buy-in, and resource allocation limits to reduce decision variability.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Next 8 weeks"
+      },
+      {
+        "id": "step_nps_feedback_loop",
+        "action": "Formalize the link between Customer NPS feedback and product backlog prioritization, ensuring that top-scoring pain points immediately jump the queue for development resources.",
+        "owner": "Product Management Lead",
+        "timeframe": "Ongoing / Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Accumulating technical debt threatens platform stability and slows down feature velocity.",
+      "Decentralized decision-making, while promoting autonomy, creates resource conflicts and inconsistent execution standards across BUs.",
+      "Organizational bandwidth is strained by constant reactive firefighting (technical debt) rather than proactive strategic betting."
+    ],
+    "progress": {
+      "improvements": [
+        "Product development velocity has increased significantly with the successful launch of 7 new features.",
+        "NPS score improvement validates product-market fit in core use cases, demonstrating improved customer value proposition.",
+        "Formal business case approval for full IoT rollout provides concrete movement on a major operational efficiency gain."
+      ],
+      "persistent_gaps": [
+        "The accumulation of technical debt remains the primary constraint preventing faster scaling and feature deployment.",
+        "Culture and time barriers persist, requiring stronger governance to unify decentralized efforts toward common strategic goals.",
+        "Lack of clear escalation path for 'bold' market bets that fall outside current business unit mandates."
+      ],
+      "achieved_milestones": [
+        "Successful launch and adoption of 7 new product features into the marketplace.",
+        "Confirmation of a strong, viable ROI-backed use case (IoT) ready for large-scale deployment planning."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "2023-10-15",
+      "assessment_number": 2,
+      "key_changes": "Momentum has significantly improved due to product execution and customer validation (NPS up 10 pts). The shift from pilot proof-of-concept (IoT) to full scale planning is positive. However, the underlying structural challenges—technical debt and organizational alignment—persist."
+    }
+  }
+}

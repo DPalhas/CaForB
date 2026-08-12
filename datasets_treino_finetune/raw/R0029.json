@@ -1,0 +1,200 @@
+{
+  "id": "R0029",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0263",
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:46:36.871869+00:00",
+    "duration_ms": 97922,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Forge Partners",
+      "sector": "Legal Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "11 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0263",
+      "fields": {
+        "companyName": "Forge Partners",
+        "sector": "Legal Services",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Corporate law firm with 45 lawyers specializing in M&A, tax structuring, competition law, and cross-border transactions. Serving 200+ corporate clients across technology, financial services, and energy sectors. Evaluating AI-assisted contract review and due diligence document analysis tools. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 4 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_ai_due_diligence",
+        "type": "incremental",
+        "title": "AI-Powered Due Diligence & Contract Review Platform Pilot",
+        "rationale": "The firm has identified AI tools for document analysis, which is critical given the complexity of M&A and cross-border transactions. This initiative should transition from exploration (in_progress) to a structured pilot focused on tangible client outcomes.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a small, multidisciplinary 'Innovation Task Force' with mandatory senior sponsorship.",
+            "Select 2-3 high-value, low-risk contracts/deal files for the initial AI pilot run.",
+            "Integrate AI scoring results directly into the existing CRM workflow for immediate usability feedback."
+          ],
+          "resources_needed": [
+            "Dedicated internal subject matter experts (SMEs) from M&A and Tax divisions.",
+            "Budget allocation for specialized vendor APIs/licensing.",
+            "Executive sponsorship mandate to bypass siloed process bottlenecks."
+          ],
+          "success_metric": "Reduction in average time spent on due diligence document review by 20% within the pilot scope.",
+          "milestones": [
+            "Pilot team formed and scoped (Month 1).",
+            "Initial data ingestion and model testing completed (Month 2).",
+            "Client feedback loop yielding quantitative process improvements (Month 3)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_service_productization",
+        "type": "incremental",
+        "title": "Productizing Cross-Border Advisory Services for New Markets",
+        "rationale": "The expansion into adjacent markets and acquisition of enterprise clients suggests untapped, repeatable service opportunities. The firm needs to formalize these successful engagements into standardized, revenue-generating 'products' rather than bespoke services.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the top 3 common pain points encountered during new client acquisition/onboarding.",
+            "Develop modular service offerings (packages) around these pain points.",
+            "Pilot pricing and sales messaging with the Sales department using the existing CRM tools."
+          ],
+          "resources_needed": [
+            "Service Line Owners (Partners) accountable for product definition.",
+            "Collaboration with Marketing to create standardized collateral.",
+            "Training dedicated staff on repeatable delivery mechanisms."
+          ],
+          "success_metric": "Generate 10% of new revenue from service packages defined in this initiative within the next year.",
+          "milestones": [
+            "Service blueprint finalized and priced (Month 2).",
+            "Internal sales training completed for packaging/pitching (Month 3).",
+            "First three package sales executed and reviewed by leadership (Month 5)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Mandate the establishment of an executive Steering Committee (CSO/COO level) to oversee digital transformation and resource allocation for AI pilots.",
+        "owner": "Managing Partner / COO",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct a 'Process Gap Analysis' workshop involving practitioners from M&A and Tax to identify manual, non-standardized processes that hinder the scale of the AI tools.",
+        "owner": "Innovation Task Force Lead",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize a quarterly review process for 'Failed Bets' to accelerate learning and reduce the fear of failure that contributes to cultural inertia.",
+        "owner": "Department Heads",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and siloed operational processes remain significant barriers to scaling technology adoption across all divisions.",
+      "Lack of a single, empowered owner/process accountable for cross-functional digital integration (i.e., the gap between CRM data and legal practice workflow).",
+      "Difficulty translating successful ad-hoc client wins into repeatable, marketable service products."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful deployment of new CRM system improving lead tracking by 30% (operational efficiency demonstrated).",
+        "Confirmed market expansion and acquisition of 4 new enterprise clients provides strong evidence of external demand.",
+        "The commitment to exploring AI-assisted tools demonstrates increased digital ambition."
+      ],
+      "persistent_gaps": [
+        "Failure to formalize processes around innovation/technology adoption; reliance on ad-hoc projects rather than systemic change.",
+        "Cultural resistance and reluctance among long-standing practitioners to adopt new, non-legacy workflows.",
+        "The governance structure is still too slow (formal committee) for the pace of required growth."
+      ],
+      "achieved_milestones": [
+        "Successful CRM integration deployment.",
+        "Solidifying a foothold in an adjacent market sector."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant operational progress was made with CRM implementation and market expansion efforts. The firm has successfully converted investment into concrete client wins (4 new enterprise clients), validating their growth strategy despite internal process challenges."
+    }
+  }
+}

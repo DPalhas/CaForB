@@ -1,0 +1,199 @@
+{
+  "id": "R0411",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0008",
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:07:55.992109+00:00",
+    "duration_ms": 43825,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Solutions",
+      "sector": "Nonprofit / NGO",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. 200 field staff and 40 HQ staff. Evaluating remote sensor-based water point monitoring and mobile-based beneficiary feedback collection. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "process"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0008",
+      "fields": {
+        "companyName": "Quantum Solutions",
+        "sector": "Nonprofit / NGO",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. 200 field staff and 40 HQ staff. Evaluating remote sensor-based water point monitoring and mobile-based beneficiary feedback collection. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 16,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 3 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "score_delta": 0.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Integrated Customer Experience (CX) Framework for Retention",
+        "rationale": "The NGO is facing pressure from competitors offering a more modern CX. This opportunity focuses on integrating data from field staff, remote sensors, and beneficiary feedback into a single service layer to strengthen switching costs and improve the perceived value of their services. This directly supports market defense efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current end-to-end service journey for water/sanitation intervention (current pain points).",
+            "Establish cross-functional working groups including field staff and digital teams to define 'ideal' user flow.",
+            "Pilot a consolidated dashboard visualizing real-time program impact data vs. competitor offerings."
+          ],
+          "resources_needed": [
+            "Dedicated UX/UI resource (part-time)",
+            "Data architecture support",
+            "Time allocation from key field operations managers"
+          ],
+          "success_metric": "Reduction in beneficiary reported churn rate by 10% within 6 months.",
+          "milestones": [
+            "Phase 1: CX Gap Analysis completed (Month 2)",
+            "Pilot MVP of integrated feedback loop deployed (Month 4)",
+            "Formal recommendation for scaling the new digital experience unit (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Formalize Decision Architecture and Resource Allocation Model",
+        "rationale": "The current state shows high dependence on key individuals (owner alone) and frequent interruption of innovative staff time. While the venture studio model is strong, its execution capability is limited by process bottlenecks outside the core innovation function. Formalizing decision rights will protect bandwidth for strategic projects.",
+        "execution_plan": {
+          "first_actions": [
+            "Draft RACI matrix defining roles for major investment committee decisions (e.g., new technology adoption).",
+            "Implement a 'Shielding' process: assigning a dedicated resource to buffer innovation staff from operational incidents.",
+            "Establish clear budget thresholds requiring multi-stakeholder sign-off before engaging external contractors."
+          ],
+          "resources_needed": [
+            "Executive sponsor time (Owner/CEO)",
+            "Process improvement consultant (short-term)",
+            "Innovation function senior lead"
+          ],
+          "success_metric": "Reduction in reported process roadblocks and decision cycle time by 25%.",
+          "milestones": [
+            "Draft Decision Framework ratified by senior leadership (Month 1.5)",
+            "Process shield implemented protecting at least 80% of allocated innovation hours (Month 3)",
+            "Documentation and training completed for new operational standards (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "Conduct a detailed resource capacity audit to quantify the time lost due to 'production incidents' and establish clear triage protocols.",
+        "owner": "Operations/IT Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_2",
+        "action": "Update the internal venture studio charter to mandate that all funded projects include a 'Market Defense' strategic pillar in their initial scope definition.",
+        "owner": "Innovation Committee/Program Manager",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_3",
+        "action": "Identify and secure one dedicated, quantifiable budget source (e.g., restricted donor funding) specifically ring-fenced for digital infrastructure upgrades to reduce reliance on operating margins.",
+        "owner": "Executive Leadership/Fundraising Team",
+        "timeframe": "Ongoing quarterly cycle"
+      }
+    ],
+    "key_weaknesses": [
+      "High dependency on single decision-makers (Owner bottleneck) creating process risk despite established structures.",
+      "Intermittent resource allocation for innovation staff, frequently interrupted by urgent operational demands.",
+      "Digital integration efforts are described as 'ad-hoc,' indicating a lack of systemic data governance across different field and HQ systems."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully launched inventory digitalization project (Supply chain resilience improvement).",
+        "The internal venture studio model continues to function, leading to successful graduation of an incubated project.",
+        "Clear strategic focus on market defense has been established by the organization."
+      ],
+      "persistent_gaps": [
+        "Formalizing governance and decision rights remains challenging due to existing operational dependencies and owner involvement.",
+        "Integrating disparate digital systems into a unified CX view requires significant data architecture effort.",
+        "Budget constraints are persistent, leading to resource allocation conflicts between operations and innovation."
+      ],
+      "achieved_milestones": [
+        "Completion of Project 2 (Opportunity/Recommendation 2)",
+        "Initiation of inventory digitalization efforts."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The organization has matured its internal innovation process (venture studio model is active) and improved operational resilience via digitalization projects. However, the assessment highlights that while processes exist on paper, execution bottlenecks related to decision-making authority and resource protection are critical risks."
+    }
+  }
+}

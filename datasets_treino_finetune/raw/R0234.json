@@ -1,0 +1,203 @@
+{
+  "id": "R0234",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0038",
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:06:49.962006+00:00",
+    "duration_ms": 38927,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina",
+      "sector": "Nonprofit / NGO",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Environmental conservation foundation managing 15 protected area and habitat restoration projects covering 25,000 hectares. Blend of scientific research, community engagement, and advocacy. Annual budget of €4M from grants and individual donations. Seeking to implement satellite-based deforestation monitoring and AI-assisted biodiversity species identification from camera trap images. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "9 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 7,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0038",
+      "fields": {
+        "companyName": "Lumina",
+        "sector": "Nonprofit / NGO",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Environmental conservation foundation managing 15 protected area and habitat restoration projects covering 25,000 hectares. Blend of scientific research, community engagement, and advocacy. Annual budget of €4M from grants and individual donations. Seeking to implement satellite-based deforestation monitoring and AI-assisted biodiversity species identification from camera trap images. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 10,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 7 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "superseded",
+      "step_1": "superseded",
+      "step_2": "superseded",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Diversified Revenue Streams via Capability Monetization",
+        "rationale": "The critical risk remains the dependency on top 3 clients (55% revenue). Leveraging existing scientific expertise (environmental monitoring, community engagement) into scalable consulting services or productized data insights will stabilize future funding. This builds directly upon the prior strategic focus but requires formal process definition.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a formal portfolio review mapping core capabilities to adjacent market needs (e.g., specialized environmental impact assessments).",
+            "Develop 2-3 minimum viable service offerings, integrating compliance checks for all new revenue streams.",
+            "Pilot the commercialization of successful digital initiatives (like onboarding) across multiple client types."
+          ],
+          "resources_needed": [
+            "Dedicated strategy resource time (internal or fractional consultant)",
+            "Market research budget",
+            "Leadership team consensus on risk acceptance for new revenue lines"
+          ],
+          "success_metric": "Identify and model 3 viable, non-client-specific revenue streams generating >10% of projected annual revenue.",
+          "milestones": [
+            "Capability mapping workshop completed (Q1)",
+            "MVP service package defined and costed (Q2)",
+            "Pilot sales cycle established with a new target segment (H2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Establish a Data Governance and Compliance Framework for Tech Initiatives",
+        "rationale": "The goal to implement AI/satellite monitoring is powerful but must be protected by rigorous governance. Given the high regulatory environment, formalizing data acquisition, privacy, and ethical use protocols early will de-risk technology adoption. This structure supports future scaling.",
+        "execution_plan": {
+          "first_actions": [
+            "Appoint a dedicated Data Governance Lead responsible for cross-functional compliance checks (Legal, Tech, Science).",
+            "Map all data inputs (camera traps, satellite feeds) against relevant jurisdictional regulations (GDPR/local environmental laws).",
+            "Develop standardized operating procedures (SOPs) for AI model deployment and output validation."
+          ],
+          "resources_needed": [
+            "Legal counsel specializing in environmental tech law",
+            "IT infrastructure budget for secure data storage",
+            "Dedicated project manager coordinating scientific and compliance teams"
+          ],
+          "success_metric": "Completion of a fully compliant Data Governance Charter, allowing pilot testing of AI/satellite feed on a controlled basis.",
+          "milestones": [
+            "Data Governance Lead hired/assigned (Q1)",
+            "Regulatory checklist completed for target region (Q2)",
+            "Pilot deployment launched with internal compliance sign-off (H2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a formal resource capacity assessment to identify critical middle management roles required to support professionalization and manage the influx of senior leaders.",
+        "owner": "Executive Director / HR",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns_2",
+        "action": "Schedule a dedicated workshop involving the small leadership team to define and prioritize which strategic gaps (e.g., revenue diversification vs. technology implementation) will receive primary annual capital allocation.",
+        "owner": "Leadership Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Formalize the process for knowledge transfer from founder-led methods to scalable, documented internal processes to reduce reliance on key individuals.",
+        "owner": "Operations/Process Team",
+        "timeframe": "Ongoing (Quarterly Review)"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited middle management layers impede operational scaling and efficiency gains.",
+      "High dependence on a concentrated client base represents an unacceptable strategic risk despite efforts to diversify.",
+      "Processes for integrating new, complex technological streams (AI/satellite) with existing compliance frameworks are not yet formalized."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully transitioned operational execution from founder-led methods to a structured team model (hiring 7 senior leaders).",
+        "Demonstrated ability to execute cross-functional digital initiatives, evidenced by the successful customer onboarding flow.",
+        "Formalization of strategic planning processes provides necessary structure for future decision-making."
+      ],
+      "persistent_gaps": [
+        "The strategic shift from operational excellence to diversified revenue generation requires a dedicated business model overhaul.",
+        "Decision-making capacity remains constrained by the 'small leadership team' size, potentially leading to bottlenecking on major decisions.",
+        "Operational time and process bottlenecks continue to divert focus from high-impact strategic initiatives."
+      ],
+      "achieved_milestones": [
+        "Reduced average new customer onboarding time from 12 days to 5 days.",
+        "Established functional cross-departmental workflows involving product, compliance, and CS teams."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The organization has successfully professionalized its structure and operational workflows (staffing, onboarding flow). The risk profile remains high due to critical strategic dependencies and the need for robust governance around new technology."
+    }
+  }
+}

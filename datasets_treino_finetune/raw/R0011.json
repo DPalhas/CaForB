@@ -1,0 +1,209 @@
+{
+  "id": "R0011",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0064",
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:28:08.629105+00:00",
+    "duration_ms": 49315,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-09T18:48:58.809939+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex",
+      "sector": "Construction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Residential renovation and energy retrofit company performing deep energy upgrades including external insulation, heat pump installation, and solar PV integration. Completing ~80 projects per year. Seeking to standardize energy audit workflows with tablet-based inspection and automated grant application filing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 7 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 19,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+    },
+    "previous_assessment": {
+      "id": "0064",
+      "fields": {
+        "companyName": "Apex",
+        "sector": "Construction",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Residential renovation and energy retrofit company performing deep energy upgrades including external insulation, heat pump installation, and solar PV integration. Completing ~80 projects per year. Seeking to standardize energy audit workflows with tablet-based inspection and automated grant application filing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 22,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+      }
+    },
+    "changes_since_last": "Acquired 5 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "superseded",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.8,
+    "score_delta": 1.3,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_new_01",
+        "type": "radical",
+        "title": "Standardized Energy Service Contract (ESCO) Portfolio Model",
+        "rationale": "To hit the €50M ARR target, Apex must shift its revenue profile from one-time project sales to predictable recurring revenue. This requires moving beyond mere retrofits and developing standardized service contracts that include long-term maintenance, performance guarantees, and energy management subscriptions.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop 3 tiered contract templates (Bronze/Silver/Gold) focusing on SaaS-like performance monitoring add-ons.",
+            "Model the financial impact of shifting 20% of current revenue streams to recurring service fees.",
+            "Pilot the new model with the five newly acquired enterprise clients.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "CFO/Finance Lead",
+            "Legal Counsel (for contract structure)",
+            "Sales Strategy Team"
+          ],
+          "success_metric": "Percentage of revenue derived from annual recurring service contracts (Target: 15% within 12 months).",
+          "milestones": [
+            "Completion of 3 core contract templates.",
+            "Initial pilot revenue secured from enterprise clients.",
+            "Internal training program for sales on value-based pricing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "6 months (High Urgency)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_evolved_01",
+        "type": "incremental",
+        "title": "Automated Regulatory Compliance & Audit Reporting Platform",
+        "rationale": "Given the high regulatory environment and the need for repeatability, Apex should move beyond manual audit filing. Developing a centralized platform that ingests field data (via tablets) and automatically structures compliance reports drastically reduces time-to-market and mitigates risk during deep energy upgrades.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current state of regulatory requirements against necessary digital inputs (e.g., permit numbers, material types).",
+            "Define API requirements to link tablet data collection directly into the ERP/CRM for single source of truth.",
+            "Conduct a focused workflow design session with field technicians and compliance officers."
+          ],
+          "resources_needed": [
+            "Product Owner (Digital)",
+            "Field Operations Manager",
+            "Compliance Specialist"
+          ],
+          "success_metric": "Reduction in average time spent on audit filing/reporting by 40%.",
+          "milestones": [
+            "Completion of regulatory requirement digital mapping.",
+            "Prototype developed for core report generation.",
+            "Pilot deployment with a single business unit."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize the shift from project sales to subscription-based ENergy Services (ESCO) and update all sales materials accordingly.",
+        "owner": "Head of Sales/CFO",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct a dedicated integration workshop to connect the ERP, CRM, and HRIS to eliminate siloed data entry points and provide a unified customer/project view.",
+        "owner": "Technology Lead",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Structure the '20% time' policy to prioritize resources specifically on building the Series B pitch deck roadmap (demonstrable progress items).",
+        "owner": "Department Managers/Leadership Team",
+        "timeframe": "Ongoing, Quarterly Review"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented Systems Integration: Core systems exist (ERP, CRM, HRIS) but data flow is manual or siloed, hindering scalable operations.",
+      "Translating Strategy to Execution Velocity: While the innovation process is formal (Venture Studio), execution speed varies significantly across business units, risking missed market windows.",
+      "Over-reliance on Founder/Key Personnel Knowledge: Critical operational knowledge remains localized rather than codified into scalable processes."
+    ],
+    "progress": {
+      "improvements": [
+        "Solidified corporate structure with a formal internal venture studio model and dedicated innovation committee.",
+        "Successfully expanded market reach by acquiring 5 new enterprise clients and entering an adjacent service sector.",
+        "Increased operational digitalization efforts through the focus on standardized audit workflows."
+      ],
+      "persistent_gaps": [
+        "Lack of visible, measurable integration between major core systems (ERP/CRM).",
+        "The transition from strategic intent (Board goals) to predictable, repeatable commercial execution is still immature.",
+        "Need for dedicated executive bandwidth to shepherd the radical process changes required by new revenue models."
+      ],
+      "achieved_milestones": [
+        "Completion of key internal processes (e.g., project scoping and initial design stages).",
+        "Demonstrated operational capability using advanced client feedback loops.",
+        "Successful execution of some previous, smaller-scale optimization projects."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.5,
+      "previous_date": "2023-11-01",
+      "assessment_number": 2,
+      "key_changes": "Increased enterprise client base and clear strategic pivot toward recurring revenue models to support Series B fundraising efforts."
+    }
+  }
+}

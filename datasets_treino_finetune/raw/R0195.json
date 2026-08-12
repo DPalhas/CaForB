@@ -1,0 +1,194 @@
+{
+  "id": "R0195",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0193",
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:36:44.414923+00:00",
+    "duration_ms": 42477,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Orbit Labs.co",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Organic vineyard and winery producing 60,000 bottles per year. Direct-to-consumer sales through wine clubs account for 45% of revenue. Seeking to modernize fermentation monitoring and explore biodynamic certification. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0193",
+      "fields": {
+        "companyName": "Orbit Labs.co",
+        "sector": "Agriculture, Forestry & Fishing",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Organic vineyard and winery producing 60,000 bottles per year. Direct-to-consumer sales through wine clubs account for 45% of revenue. Seeking to modernize fermentation monitoring and explore biodynamic certification. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 3 new team members. Launched customer feedback pilot. Budget for innovation increased 15%.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "not_done",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Recurring Revenue Model Playbook (Subscription)",
+        "rationale": "To achieve the €50M ARR target, Orbit Labs must pivot from transactional sales to predictable recurring revenue streams. This requires standardizing complex B2B/enterprise sales processes that can be tracked and scaled.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current sales cycles against ideal subscription consumption models (usage-based, retainer).",
+            "Establish a cross-functional team (Sales/Finance/Legal) to define pricing tiers and contractual agreements.",
+            "Develop standardized internal training modules for identifying and qualifying enterprise accounts."
+          ],
+          "resources_needed": [
+            "VP of Sales bandwidth",
+            "Financial modeling expertise",
+            "Dedicated legal counsel time"
+          ],
+          "success_metric": "Development and formal approval of a repeatable, measurable Enterprise Sales Playbook.",
+          "milestones": [
+            "Completion of initial market mapping (Q2).",
+            "Finalized 3-tier pricing model presentation to board (Q3)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Formalize Biodynamic Certification and Supply Chain Vetting",
+        "rationale": "Biodynamic certification is a key market differentiator and requires rigorous process adherence. This initiative must evolve beyond simple product development to involve deep operational standardization across sourcing, processing, and compliance.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis between current operating procedures and official Biodynamic standards (compliance focus).",
+            "Integrate required vetting points into the existing procurement lifecycle, requiring mandatory sign-offs from Compliance/Legal.",
+            "Pilot the new compliance tracking process with a single product line to test scalability."
+          ],
+          "resources_needed": [
+            "External certification consultant",
+            "Operations Process Mapping Specialist",
+            "IT system modification budget (for tracking)"
+          ],
+          "success_metric": "Successful internal audit confirming 80% adherence to core Biodynamic compliance standards.",
+          "milestones": [
+            "Gap analysis report delivered and reviewed by board (Q2).",
+            "Pilot product line successfully through full compliant lifecycle (Q3)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12 months",
+        "carry_forward_from": "opp_x",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Establish a dedicated Process Excellence Task Force (PETF) chartered to map and standardize the full lifecycle from idea intake to commercial launch, focusing on reducing internal review cycle time.",
+        "owner": "COO/PMO Lead",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Mandate all innovation project leads to assign a dedicated 'Business Process Owner' responsible for documenting and updating repeatable workflows, moving away from ad-hoc task management.",
+        "owner": "Head of Innovation Division",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational velocity remains hindered by internal compliance/legal review bottlenecks (lack of standardized parallel process streams).",
+      "Process maturity is strong in execution but weak in capturing and leveraging structured, deep insights from informal customer feedback.",
+      "Difficulty linking early-stage innovation projects directly to measurable P&L impact metrics required for board confidence."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased dedicated budget (15%) for innovation shows improved executive commitment and resource allocation.",
+        "Formal governance structures are in place, allowing management of a larger portfolio size (15 projects).",
+        "Hiring new talent depth adds necessary specialized expertise to the division."
+      ],
+      "persistent_gaps": [
+        "The cultural resistance to adopting process standardization remains high (evidenced by the failure of the cloud PM tool).",
+        "Customer insights are still gathered through informal conversations, rather than structured data capture and analysis.",
+        "Execution velocity is not measurably improved despite the new resources."
+      ],
+      "achieved_milestones": [
+        "Successful establishment of a formal portfolio governance process for stage-gate funding decisions."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The organization has increased its financial commitment to innovation and formalized governance (budget up +15%, dedicated division staff), moving from an entirely informal state to a structured program managing multiple projects."
+    }
+  }
+}

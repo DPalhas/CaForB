@@ -1,0 +1,198 @@
+{
+  "id": "R0253",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0212",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:27:10.577218+00:00",
+    "duration_ms": 126796,
+    "attempts": 3
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan Group",
+      "sector": "Healthtech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. 500+ credentialed physicians on the platform with 120,000 completed consultations. Regulated as a Class I medical device. Seeking AI-powered triage and symptom checking to optimize specialist routing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "12 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 5,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0212",
+      "fields": {
+        "companyName": "Titan Group",
+        "sector": "Healthtech",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Telemedicine platform connecting patients with GPs and specialists for video consultations, e-prescriptions, and remote monitoring. 500+ credentialed physicians on the platform with 120,000 completed consultations. Regulated as a Class I medical device. Seeking AI-powered triage and symptom checking to optimize specialist routing. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 2,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 5 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "superseded",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_data_aggregation",
+        "type": "incremental",
+        "title": "Developing a Regulated Data Aggregation Layer for Adjacent Care Models",
+        "rationale": "The company possesses significant proprietary health data and is strategically positioned to explore diversification into new service models. This opportunity focuses on building an incremental, compliant framework that allows aggregation of anonymized patient journey data (e.g., specialist referrals, remote monitoring metrics) while strictly adhering to regulatory standards.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated Data Governance Committee including legal and compliance officers.",
+            "Map all existing data flows for potential inclusion in the aggregation layer.",
+            "Develop initial architecture requirements focusing on patient consent mechanisms (HIPAA/GDPR equivalent).",
+            "Benchmark industry best practices for clinical data anonymization techniques."
+          ],
+          "resources_needed": [
+            "Clinical Data Scientists",
+            "Regulatory Compliance Officer",
+            "IT Architecture Lead"
+          ],
+          "success_metric": "Completion of a functional, compliance-vetted Minimum Viable Product (MVP) dashboard showcasing aggregated patient journey metrics.",
+          "milestones": [
+            "Legal sign-off on data usage agreements and anonymization protocols.",
+            "Successful pilot integration with one key department's existing systems.",
+            "Internal presentation to the board demonstrating compliant data utility."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_data_marketplace",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_system_integration",
+        "type": "incremental",
+        "title": "Standardizing Core System Integration Hub and Ownership Model",
+        "rationale": "The reliance on fragmented core systems (ERP, CRM, HRIS) creates operational risk. This initiative stabilizes the technology backbone by creating a standardized integration layer, ensuring that new initiatives are built upon reliable data foundations rather than ad-hoc fixes.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct an inventory audit of all existing system APIs and integration points.",
+            "Select a low-code/no-code platform or middleware solution to act as the central hub.",
+            "Design clear data ownership protocols, assigning specific department owners (the 'data steward') for each core dataset."
+          ],
+          "resources_needed": [
+            "Enterprise Architect",
+            "Operations Lead",
+            "System Owners from Finance/HR"
+          ],
+          "success_metric": "Reduction in reported system data discrepancies by 30% within six months.",
+          "milestones": [
+            "Selection and deployment of the integration platform sandbox environment.",
+            "Successful automated synchronization test between two major systems (e.g., CRM to ERP).",
+            "Formalization of inter-departmental Service Level Agreements (SLAs) for data changes."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formally charter a Data Governance Committee (DGC) to oversee compliance and quality for all proprietary data assets.",
+        "owner": "Chief Compliance Officer/Strategy Lead",
+        "timeframe": "Q3"
+      },
+      {
+        "id": "ns2",
+        "action": "Execute a detailed talent gap analysis focusing on necessary skills (e.g., advanced ML engineering, specialized data governance) required to support diversified business lines.",
+        "owner": "HR/Strategy Function",
+        "timeframe": "Q3-Q4"
+      },
+      {
+        "id": "ns3",
+        "action": "Allocate a defined 'Innovation Sandbox' budget ($X amount) and scope for 2-3 contained, low-risk experimental business lines to test viability without disrupting core operations.",
+        "owner": "CFO/Board Sponsor",
+        "timeframe": "Q3 Kickoff"
+      }
+    ],
+    "key_weaknesses": [
+      "System fragmentation and poor integration between core platforms (ERP, CRM, HRIS) create operational risk.",
+      "Strategic execution velocity is inconsistent across business units, relying heavily on ad-hoc initiatives rather than institutional process.",
+      "High dependency on specific individual knowledge for critical processes, as demonstrated by the abandonment of the internal dashboard."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful digitalization of supply chain/inventory tracking has mitigated operational risk in core product lines.",
+        "Formalization of organizational structure (dedicated strategy function, QBRs) shows increased commitment to process maturity."
+      ],
+      "persistent_gaps": [
+        "The foundational integration layer remains underdeveloped and is a critical barrier to scalable data monetization.",
+        "Governance around innovation ideas and maintenance plans needs formal institutional backing to prevent 'project decay'."
+      ],
+      "achieved_milestones": [
+        "Successful completion of previous opportunity 2, proving capacity for structured project execution."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has matured from an 'informal' process state to one with formalized budgets and strategy functions, demonstrating structural improvement despite persistent internal system fragmentation."
+    }
+  }
+}

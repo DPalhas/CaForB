@@ -1,0 +1,200 @@
+{
+  "id": "R0370",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0416",
+  "split": "train",
+  "metadata": {
+    "sector": "Nonprofit / NGO",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:32:04.037101+00:00",
+    "duration_ms": 87710,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core Holdings",
+      "sector": "Nonprofit / NGO",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. 200 field staff and 40 HQ staff. Evaluating remote sensor-based water point monitoring and mobile-based beneficiary feedback collection. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 12,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0416",
+      "fields": {
+        "companyName": "Core Holdings",
+        "sector": "Nonprofit / NGO",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "International development NGO implementing water, sanitation, and hygiene programs across 6 countries in sub-Saharan Africa. Annual program budget of €15M funded by institutional donors including EU, USAID, and bilateral agencies. 200 field staff and 40 HQ staff. Evaluating remote sensor-based water point monitoring and mobile-based beneficiary feedback collection. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 12,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 8 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A_crm_scale",
+        "type": "incremental",
+        "title": "Scale CRM Success via Marketing Automation and AI Scoring",
+        "rationale": "The successful deployment of the CRM system provides a robust foundation for advanced digital processes. The next logical step is integrating marketing automation to scale lead generation efficiency, while using AI scoring to prioritize high-value opportunities in the competitive market.",
+        "execution_plan": {
+          "first_actions": [
+            "Define and map data flow between CRM, MA platform, and necessary APIs.",
+            "Pilot the AI lead scoring model using 18 months of historical pipeline data.",
+            "Implement role-based training for sales/marketing staff on integrated workflows."
+          ],
+          "resources_needed": [
+            "Dedicated Project Manager (Internal)",
+            "Data Science expertise (Consultant or Internal)",
+            "Budget allocation for MA platform licensing"
+          ],
+          "success_metric": "Reduction in average time-to-qualification for a new lead by 35%.",
+          "milestones": [
+            "Integration of MA module successful.",
+            "AI scoring model trained and validated.",
+            "Pilot launch with the sales team."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B_data_platform",
+        "type": "incremental",
+        "title": "Develop Digital Data Service Layer from Field Input (IoT/Mobile)",
+        "rationale": "The company has diverse data streams (remote sensors, beneficiary feedback). To build sticky market defense capabilities, these disparate sources must be standardized and integrated into a single actionable service layer, moving beyond just collection to predictive insight.",
+        "execution_plan": {
+          "first_actions": [
+            "Standardize data input protocols across all 6 countries for sensor/feedback inputs.",
+            "Develop a centralized data governance framework (data ownership, quality checks).",
+            "Pilot dashboard visualizing combined IoT and feedback metrics to identify service gaps."
+          ],
+          "resources_needed": [
+            "Technical Architect",
+            "Field Operations Subject Matter Experts (SMEs)",
+            "Data Quality Assurance Specialist"
+          ],
+          "success_metric": "Achieve a 90% data completeness score for key program indicators across all countries.",
+          "milestones": [
+            "Standardized field reporting protocol deployed in the pilot country.",
+            "Centralized master data model finalized.",
+            "Executive dashboard launched showing integrated service insights."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize a Governance Structure defining data ownership and decision-making authority for the new Data Service Layer (opp_B).",
+        "owner": "Executive Committee / Program Director",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns2",
+        "action": "Mandate a cross-functional process mapping workshop involving field staff, HQ operations, and the innovation squad to identify core manual pain points.",
+        "owner": "Process Improvement Lead / PMO",
+        "timeframe": "Next 4 months"
+      },
+      {
+        "id": "ns3",
+        "action": "Develop a 'Business Case for Digitalization' portfolio ranking the highest ROI processes that require automation (focusing on resource/time barriers).",
+        "owner": "Innovation Squad Lead / PM",
+        "timeframe": "Next 6 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Operational Process Integration: Difficulty moving from localized digital 'pockets' to standardized enterprise-wide workflows.",
+      "Resource Allocation Conflict: Persistent tension between funding/time for day-to-day operational efficiency (BAU) versus strategic innovation.",
+      "Data Governance Maturity: Lack of formalized, centralized governance over the diverse streams of field and technical data."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation and utilization of a new CRM system (30% reduction in lead entry time).",
+        "Strategic expansion into adjacent market segments.",
+        "Establishment of a dedicated, well-staffed innovation squad with allocated budget."
+      ],
+      "persistent_gaps": [
+        "The transition from manual/spreadsheet workflows to scalable digital processes remains the primary friction point in core operations.",
+        "Lack of formalized governance framework for combining field data (IoT) with strategic decision-making at HQ level."
+      ],
+      "achieved_milestones": [
+        "CRM deployment successfully completed and adopted by sales teams."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant operational success (CRM adoption) and strategic expansion have been achieved. The core challenge has shifted from implementing tools to integrating processes and standardizing data governance across multiple field locations."
+    }
+  }
+}

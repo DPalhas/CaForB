@@ -1,0 +1,204 @@
+{
+  "id": "R0103",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0128",
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:28:33.462192+00:00",
+    "duration_ms": 45520,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.965305+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus Enterprises",
+      "sector": "Telecommunications",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment. Evaluating XGS-PON upgrade and IPTV service launch. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "6 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 15,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0128",
+      "fields": {
+        "companyName": "Nexus Enterprises",
+        "sector": "Telecommunications",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment. Evaluating XGS-PON upgrade and IPTV service launch. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "4",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 10,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 7 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "opp_4": "not_done",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "evolved_to",
+        "title": "Advanced Network Service Bundling and Resilience Enhancement",
+        "rationale": "The core infrastructure upgrade (XGS-PON/IPTV) is critical for maintaining service parity with competitors. Given the high regulatory environment, these upgrades must be paired with robust redundancy planning to ensure continuous compliance and reliable customer experience. This evolves from basic capacity upgrades into a defense mechanism.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive audit of XGS-PON deployment against new local utility standards (Regulatory Compliance).",
+            "Develop service bundles that mandate higher resilience components (e.g., guaranteed QoS for critical services) to increase switching costs.",
+            "Pilot an IPTV service rollout in one municipality, focusing on high-reliability and regulatory reporting compliance."
+          ],
+          "resources_needed": [
+            "Dedicated network engineering team time",
+            "Compliance officer involvement",
+            "Budget allocation for initial hardware redundancy testing"
+          ],
+          "success_metric": "Reduction in service interruption reports (SIRI) by 15% within the pilot zone.",
+          "milestones": [
+            "Completion of regulatory audit and gap analysis.",
+            "Finalization of XGS-PON deployment roadmap with resilience built-in.",
+            "Successful beta launch of bundled services."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5",
+        "type": "radical",
+        "title": "Community Integration Hubs and Managed Services Offering",
+        "rationale": "To counter price undercutting, Nexus must differentiate through localized high-touch services that competitors cannot easily replicate. By leveraging the existing physical network presence (the last mile), we can co-locate small local business support/IoT monitoring centers—effectively bundling connectivity with essential community management services.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 anchor municipalities where high-value SMEs are concentrated.",
+            "Develop a standardized, low-cost 'Nexus Hub' operational model (e.g., point of sale for local digital services).",
+            "Pilot the service offering with two key local business groups to validate demand and ROI.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Local sales/field operations staff time",
+            "Partnership development resources",
+            "Updated pricing models for managed connectivity services"
+          ],
+          "success_metric": "Securing 10 anchor business clients within the first six months.",
+          "milestones": [
+            "Completion of initial market segmentation and demand validation.",
+            "Establishment of the standardized operational framework/training material.",
+            "Launch at least two functional pilot Hubs."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months (Pilot)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Develop a clear 'North Star' vision document for the company that moves beyond just cost savings and defines the differentiated customer experience model.",
+        "owner": "CEO/Executive Leadership Team",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize the budget request process for 'quick win' experiments (e.g., Hub pilot, service bundle testing) to free up decision-making capacity from the small leadership team.",
+        "owner": "Transformation Office Lead/CFO",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Integrate compliance checks for all new digital service deployments (IPTV, services) into the standard project lifecycle from day one.",
+        "owner": "Compliance Officer/Operations Lead",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of unified strategic narrative: The leadership debate over where to start hinders rapid execution despite the strong Transformation Office presence.",
+      "Over-reliance on core infrastructure investment (CAPEX) as a defense mechanism, rather than immediate service differentiation.",
+      "Process bottlenecks remain in localized market adoption and securing small local partnerships needed for 'Hub' models."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation of major digital tools (Cloud ERP, Data Warehouse, RPA) resulting in tangible cost savings (€2.4M annualized).",
+        "Compliance readiness has been significantly improved by implementing 7 new standard procedures following regulatory changes.",
+        "Team morale shows positive directional improvement."
+      ],
+      "persistent_gaps": [
+        "Translating digital efficiencies (cost savings) into competitive market advantage and revenue growth is still unclear.",
+        "The small leadership team struggles to commit to a unified, high-risk strategic direction needed to challenge well-funded entrants.",
+        "Sustaining the pace of change across multiple departments remains difficult given limited dedicated resources."
+      ],
+      "achieved_milestones": [
+        "Completion of ERP migration and data warehousing capabilities.",
+        "Implementation of departmental RPA automation initiatives in core processes."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant operational process maturity achieved through major digital investments (ERP/Data Warehouse), and regulatory compliance procedures were substantially updated."
+    }
+  }
+}

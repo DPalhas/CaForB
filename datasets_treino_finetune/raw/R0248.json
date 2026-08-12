@@ -1,0 +1,202 @@
+{
+  "id": "R0248",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0415",
+  "split": "train",
+  "metadata": {
+    "sector": "Arts, Entertainment & Media",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:22:04.495322+00:00",
+    "duration_ms": 46858,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.006241+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina Corporation",
+      "sector": "Arts, Entertainment & Media",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Digital marketing agency specializing in social media strategy, influencer campaign management, and content production for lifestyle, beauty, and fashion brands. Team of 35 creatives and strategists managing 25 active client accounts. Seeking to implement AI-powered content performance prediction and automated A/B creative testing. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 12,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0415",
+      "fields": {
+        "companyName": "Lumina Corporation",
+        "sector": "Arts, Entertainment & Media",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Digital marketing agency specializing in social media strategy, influencer campaign management, and content production for lifestyle, beauty, and fashion brands. Team of 35 creatives and strategists managing 25 active client accounts. Seeking to implement AI-powered content performance prediction and automated A/B creative testing. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "The board has challenged us to improve EBITDA margins by 500 basis points within 3 years. This requires a disciplined, data-driven approach to identifying cost drivers and process bottlenecks. We are open to technology investment if it demonstrably reduces unit costs or eliminates manual touchpoints, but every project must have a clear ROI timeline of under 12 months.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 9,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 8 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "not_done",
+      "opp_4": "completed",
+      "step_1": "not_done",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A",
+        "type": "incremental",
+        "title": "Implementing AI-Powered Content Performance Prediction & A/B Testing Loop",
+        "rationale": "Building on the success of CRM deployment, integrating predictive analytics is the most direct path to achieving the 500 bps EBITDA goal. This moves Lumina from reactive content creation to proactive, data-driven optimization for key client accounts.",
+        "execution_plan": {
+          "first_actions": [
+            "Define a Minimum Viable Product (MVP) scope focusing on one high-volume client type (e.g., beauty/fashion) and specific campaign metrics.",
+            "Conduct legal and compliance review of all AI data ingestion points to ensure adherence to the 8 new standard procedures.",
+            "Integrate prediction model testing with existing marketing automation tools and central platform infrastructure."
+          ],
+          "resources_needed": [
+            "Data science expertise (internal or consulting)",
+            "Dedicated squad time/sprint allocation",
+            "Access to historical campaign performance data sets"
+          ],
+          "success_metric": "Demonstrable lift in average Content Performance Score (CPS) by 15% over baseline within 6 months.",
+          "milestones": [
+            "Pilot scope definition and compliance approval (Month 1)",
+            "Model training and initial back-testing (Month 2)",
+            "Live A/B testing deployment with measurable KPI tracking (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B",
+        "type": "incremental",
+        "title": "Centralized Cross-Squad Process Mapping and Standardization",
+        "rationale": "The current reliance on manual workflows across various squads increases operational risk, consuming valuable 'time' resources. Standardizing core client service processes will reduce friction points and allow knowledge gained in one squad to benefit the entire organization.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct workflow mapping workshops involving key personnel from 3-4 diverse squads (e.g., Strategy, Content Production).",
+            "Identify the top 5 most manual, repetitive, or error-prone steps across these mapped processes.",
+            "Develop standardized 'playbooks' and required technical documentation for automated or semi-automated execution.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Process mapping specialist (BA)",
+            "Training budget/time allocation",
+            "Central Platform Team oversight"
+          ],
+          "success_metric": "Reduction in average time spent on the top 5 identified manual processes by 20%.",
+          "milestones": [
+            "Completion of initial workflow audit (Month 1)",
+            "Drafting and internal review of first three standardized playbooks (Month 3)",
+            "Training rollout for process adoption (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Mandate a 'Business Process Owner' (BPO) role within each product-aligned squad to champion process documentation and identify automation candidates for Opp B.",
+        "owner": "Squad Leads / Department Head",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Develop a detailed ROI framework specifically tailored to measuring process standardization benefits (e.g., FTE hours saved vs. technology cost) for the board review.",
+        "owner": "Finance / Program Director",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Secure explicit budget and technical allocation (e.g., dedicated platform engineering hours) for the AI MVP pilot, treating it as a critical path item.",
+        "owner": "Leadership Team / CTO",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Persistent operational reliance on manual workflows and tribal knowledge, inhibiting scalability (addressed by Opp B).",
+      "Time management remains a core bottleneck; the barrier is not lack of resources, but coordinated execution time.",
+      "ROI quantification needs to move beyond simple revenue gains to explicitly show EBITDA margin improvement via cost reduction."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful deployment and adoption of new CRM system across sales (30% efficiency gain).",
+        "Improved regulatory compliance posture through the implementation of 8 standard procedures.",
+        "Structural improvements implemented via product-squad model and '20% time' policy."
+      ],
+      "persistent_gaps": [
+        "Siloed knowledge and processes still rely on manual handoffs between functional areas.",
+        "The strategic connection between current process efficiencies and the 500 bps EBITDA goal needs stronger, measurable linking (Lumina needs to prove cost reduction).",
+        "High operational burden limits capacity for launching new, complex initiatives simultaneously."
+      ],
+      "achieved_milestones": [
+        "CRM implementation completion.",
+        "Successful navigation and integration of new regulatory standards into core processes."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The organization has moved from pure structural definition to operational execution (CRM success, regulatory adherence). The focus shifts now from 'how to build the engine' to 'optimizing the fuel efficiency of the existing process'."
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "R0320",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0247",
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:49:14.052204+00:00",
+    "duration_ms": 44364,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus.tech",
+      "sector": "Telecommunications",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment. Evaluating XGS-PON upgrade and IPTV service launch. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 9,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0247",
+      "fields": {
+        "companyName": "Nexus.tech",
+        "sector": "Telecommunications",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Regional fiber-optic broadband ISP building and operating FTTH networks in underserved rural and semi-urban municipalities. Currently serving 35,000 subscribers across 12 municipalities. Building passive infrastructure while leasing active equipment. Evaluating XGS-PON upgrade and IPTV service launch. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 2.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "radical",
+        "title": "Establish Next-Gen Service Ecosystem (Platformization)",
+        "rationale": "To achieve €50M ARR and combat competitive threats, Nexus must move beyond being a pure connectivity provider. This requires developing an integrated digital platform that bundles services (e.g., smart home integration, tailored business IoT solutions) rather than selling standalone pipes. This is foundational for scalable growth and recurring revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a gap analysis between current service offering (ISP) and desired bundled/platformed services (e.g., energy monitoring, security).",
+            "Define the Minimum Viable Product (MVP) feature set for the platform using existing technical capabilities.",
+            "Secure dedicated cross-functional leadership sponsorship and resource allocation (beyond 20% engineer time)."
+          ],
+          "resources_needed": [
+            "Dedicated Business Analyst headcount",
+            "Mid-level product management support",
+            "Executive commitment to scope definition"
+          ],
+          "success_metric": "Number of new revenue streams generated from platformized bundles.",
+          "milestones": [
+            "Completion of the service portfolio gap analysis (Q1)",
+            "Successful internal pilot launch of MVP feature set (Q2)",
+            "Signed Letter of Intent with a strategic technology partner (H2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Formalize Digital Customer Care and Retention Playbook",
+        "rationale": "With rising churn and competitive pressure, Nexus must professionalize its customer interaction model. This opportunity builds on existing efforts to define standardized service protocols and leverage data (from the completed step_1) to proactively address friction points before they lead to contract cancellation.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a comprehensive churn prediction model using historical data.",
+            "Design tiered customer support journeys (Tier 1: Self-Service; Tier 2: Proactive Outreach; Tier 3: Executive Intervention).",
+            "Integrate the playbook into training for existing and future middle management staff."
+          ],
+          "resources_needed": [
+            "Data Scientist time",
+            "Training/L&D budget",
+            "CRM system optimization"
+          ],
+          "success_metric": "Reduction in monthly churn rate (Target: <2.5%)",
+          "milestones": [
+            "Finalized churn risk scoring model and dashboard deployment.",
+            "Completion of initial staff training on new protocols.",
+            "Proof-of-concept demonstrating reduced service tickets via self-service portal."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Establish a formal Innovation Governance Committee (IGC) comprising leadership, sales, and engineering. Mandate quarterly review cycles to manage the competing priorities between operations and growth.",
+        "owner": "CEO / Leadership Team",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Launch a rapid discovery sprint focused on identifying three high-leverage, low-cost digital services that can be bundled and marketed immediately (e.g., parental controls, energy usage monitoring).",
+        "owner": "Innovation Engineer / CTO",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize the hiring plan for a dedicated Product Manager role to transition ownership of innovation from ad-hoc engineering time to structured business development.",
+        "owner": "HR / COO",
+        "timeframe": "Next 90 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized decision-making structure: Decisions are currently bottlenecked at the owner level, preventing scalable growth beyond the current capacity.",
+      "Resource Allocation Conflict: Innovation efforts continue to compete directly with immediate operational demands (firefighting), wasting potential momentum.",
+      "Middle Management Gap: The absence of strong middle management layers hinders process standardization and prevents the successful scaling of new methodologies across all 12 municipalities."
+    ],
+    "progress": {
+      "improvements": [
+        "The company has increased its allocated budget percentage for innovation (from 4% to 9%), signaling stronger board buy-in.",
+        "Progress on core recommendations is visible, with key steps completed and others actively underway, demonstrating commitment.",
+        "Strategic goals are highly defined (€50M ARR), providing clear North Star metrics for internal prioritization."
+      ],
+      "persistent_gaps": [
+        "The underlying systemic barrier of 'time' remains critical; the operational model has not fundamentally changed to free up bandwidth for strategic work.",
+        "Innovation remains informal, lacking a dedicated ownership or formal process that protects early-stage projects from operational disruption.",
+        "Customer feedback gathering is still limited to 'informal conversations,' indicating a need for more systematic data collection mechanisms."
+      ],
+      "achieved_milestones": [
+        "Successfully completed initial steps on the current recommendation track (step_1).",
+        "Leadership has quantified their ambitious, yet necessary, growth target of €50M ARR.",
+        "The core management team is dedicated to modernizing operations and embracing change."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Nexus has significantly increased its formal budget commitment (4% to 9%), defined a clear long-term revenue target (€50M ARR), and shown progress in executing previous initiatives, moving from 'none' systematic approach toward structured implementation."
+    }
+  }
+}

@@ -364,6 +364,89 @@ def check_duplicates(examples: list[dict]) -> list[dict]:
 
 
 # ──────────────────────────────────────────────────────────────────────
+# Reassessment-specific checks
+# ──────────────────────────────────────────────────────────────────────
+
+VALID_CARRY_STATUSES = {"continues", "evolved_to", "retired", "new"}
+VALID_SCORE_CHANGES = {"improved", "stable", "declined"}
+
+
+def is_reassessment(ex: dict) -> bool:
+    return ex.get("assessment_type") == "reassessment"
+
+
+def check_reassessment_fields(ex: dict) -> list[str]:
+    if not is_reassessment(ex):
+        return []
+    output = ex.get("output", {})
+    issues = []
+    if "score_delta" not in output:
+        issues.append("missing score_delta (reassessment)")
+    if "score_change" not in output:
+        issues.append("missing score_change (reassessment)")
+    elif output.get("score_change") not in VALID_SCORE_CHANGES:
+        issues.append(f"invalid score_change: {output['score_change']}")
+    if "progress" not in output:
+        issues.append("missing progress block (reassessment)")
+    if "comparison_to_previous" not in output:
+        issues.append("missing comparison_to_previous (reassessment)")
+    return issues
+
+
+def check_carry_forward(ex: dict) -> list[str]:
+    if not is_reassessment(ex):
+        return []
+    issues = []
+    for i, opp in enumerate(ex.get("output", {}).get("opportunities", [])):
+        cfs = opp.get("carry_forward_status")
+        if cfs and cfs not in VALID_CARRY_STATUSES:
+            issues.append(f"opportunity {i}: invalid carry_forward_status '{cfs}'")
+        cff = opp.get("carry_forward_from")
+        if cfs == "new" and cff:
+            issues.append(f"opportunity {i}: new with carry_forward_from='{cff}'")
+        if cfs and cfs != "new" and not cff:
+            issues.append(f"opportunity {i}: {cfs} but no carry_forward_from")
+    return issues
+
+
+def check_score_delta_consistency(ex: dict) -> list[str]:
+    if not is_reassessment(ex):
+        return []
+    output = ex.get("output", {})
+    ms = output.get("maturity_score")
+    sd = output.get("score_delta")
+    cp = output.get("comparison_to_previous", {})
+    ps = cp.get("previous_score")
+    if ms is not None and sd is not None and ps is not None:
+        delta = ms - ps
+        if abs(sd - delta) > 1.0:
+            return [f"score_delta {sd} inconsistent with {ms} - {ps} = {delta:.1f}"]
+    return []
+
+
+def check_progress_structure(ex: dict) -> list[str]:
+    if not is_reassessment(ex):
+        return []
+    progress = ex.get("output", {}).get("progress", {})
+    issues = []
+    for field in ("improvements", "persistent_gaps", "achieved_milestones"):
+        if field not in progress:
+            issues.append(f"progress missing '{field}'")
+    return issues
+
+
+def check_comparison_structure(ex: dict) -> list[str]:
+    if not is_reassessment(ex):
+        return []
+    cp = ex.get("output", {}).get("comparison_to_previous", {})
+    issues = []
+    for field in ("previous_score", "previous_date", "assessment_number", "key_changes"):
+        if field not in cp:
+            issues.append(f"comparison_to_previous missing '{field}'")
+    return issues
+
+
+# ──────────────────────────────────────────────────────────────────────
 # Run all checks
 # ──────────────────────────────────────────────────────────────────────
 
@@ -388,6 +471,11 @@ def run_validation(verbose: bool = False) -> dict:
         ("budget_sanity", check_budget_sanity, "warning"),
         ("regulatory", check_regulatory, "warning"),
         ("priority_alignment", check_priority_alignment, "warning"),
+        ("reassessment_fields", check_reassessment_fields, "error"),
+        ("carry_forward", check_carry_forward, "error"),
+        ("score_delta_consistency", check_score_delta_consistency, "warning"),
+        ("progress_structure", check_progress_structure, "warning"),
+        ("comparison_structure", check_comparison_structure, "warning"),
     ]
 
     issue_counts = Counter()

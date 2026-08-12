@@ -1,0 +1,205 @@
+{
+  "id": "R0335",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0295",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:01:01.585686+00:00",
+    "duration_ms": 46216,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst.ai",
+      "sector": "Mining & Extraction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 27,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+    },
+    "previous_assessment": {
+      "id": "0295",
+      "fields": {
+        "companyName": "Catalyst.ai",
+        "sector": "Mining & Extraction",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Junior mining exploration company focused on lithium and rare earth mineral prospecting in northern Portugal. Currently in the geological survey and drilling phase with 15 active concessions. Seeking to modernize core sample analysis with spectrometry and AI-based mineral identification. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "4",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 22,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We are 6 months away from launching our Series B fundraising round and need to present a compelling innovation roadmap to investors. The board expects demonstrable progress on at least one major efficiency or growth initiative before the roadshow begins. Speed and visible traction are critical — we need initiatives that can show measurable results within a compressed timeline."
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 8 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O2_digital_supply",
+        "type": "incremental",
+        "title": "End-to-End Digital Supply Chain Optimization and Predictive Inventory Management",
+        "rationale": "Building on the launched inventory digitalization, this opportunity extends automation to critical adjacent workflows like order intake, invoicing, and optimizing spare part/consumable stock levels. Success here provides immediate, measurable Opex reduction crucial for investor confidence.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current state process flow for 'Order-to-Cash' cycle to identify manual handoffs.",
+            "Pilot AI matching logic between sales orders and validated inventory/supply chain capacity.",
+            "Integrate lessons learned from the successful inventory digitalization project into core ERP systems."
+          ],
+          "resources_needed": [
+            "Dedicated Process Analyst (Liaising Ops & IT)",
+            "Minor budget allocation for API integration testing",
+            "Data science support for process modeling"
+          ],
+          "success_metric": "Reduction in 'Days Sales Outstanding' (DSO) by 15% and reduction in manual order processing errors by 90%.",
+          "milestones": [
+            "End-to-end process map completion within 6 weeks.",
+            "Successful automated processing of 1,000 mock orders/invoices.",
+            "Quantified annual operational cost savings model approved."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O5_predictive_ai",
+        "type": "radical",
+        "title": "Predictive Resource Allocation & Mineral Yield Modeling using Edge AI",
+        "rationale": "Leveraging the 'bold' risk appetite and advanced engineering talent, this project moves beyond simple automation to predictive intelligence. By modeling mineral yield based on sensor data (spectrometry) and geological inputs, Catalyst can optimize drilling points and minimize waste—a high-impact differentiator for investors.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the core data ontology linking spectrometry output, historical drill logs, and commodity prices.",
+            "Develop a Minimum Viable Product (MVP) model prototype using existing sensor datasets.",
+            "Secure access to high-resolution geological survey maps for AI input structuring."
+          ],
+          "resources_needed": [
+            "Lead Data Scientist/AI Specialist",
+            "Collaboration with external geologists/mining experts",
+            "Increased compute resources (cloud/edge deployment)"
+          ],
+          "success_metric": "Increase in predicted recoverable resource percentage by 5-10% over baseline models.",
+          "milestones": [
+            "MVP model trained on historical data and achieving acceptable accuracy (>85%).",
+            "Successful demonstration of predictive yield adjustments in a simulated drilling scenario.",
+            "Formalized roadmap for physical field deployment."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9-12 months (Phased)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS01",
+        "action": "Conduct a 'Quick Win' Process Audit: Target the top 3 most manual workflows (e.g., invoicing, initial client intake) to quantify immediate labor cost savings and prioritize automation scope.",
+        "owner": "Operations Director / Finance Lead",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "NS02",
+        "action": "Formalize the AI Roadmap: Develop a detailed, milestone-driven pitch deck for 'O5' (Predictive Modeling) specifically tailored for Series B investors, demonstrating technical capability and commercial ROI.",
+        "owner": "R&D Squad Lead / CEO",
+        "timeframe": "6 weeks"
+      },
+      {
+        "id": "NS03",
+        "action": "Establish a dedicated 'Innovation Fund Challenge': Ring-fence 5% of the next quarter's OpEx savings into a dedicated, fast-approval fund to accelerate small automation projects and demonstrate internal agility.",
+        "owner": "Finance Director / Leadership Team",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "The established, formal annual planning cycle struggles to allocate mid-cycle funding for highly disruptive efficiency initiatives.",
+      "Process optimization efforts remain siloed; successful process improvements need structured governance and wider adoption mandates beyond the initial pilot team.",
+      "While technical capacity is high (R&D), the translation of that technical capability into formalized, measurable business process change requires stronger cross-departmental process ownership."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully launched inventory digitalization, providing immediate visibility and control over critical assets.",
+        "High employee engagement demonstrated via structured innovation programs (hackathons) leading to tangible product improvements (defect reduction).",
+        "Clear strategic focus on Opex reduction has successfully aligned the R&D function with immediate commercial investor needs."
+      ],
+      "persistent_gaps": [
+        "The structural inertia of the annual planning process remains a risk, potentially bottlenecking rapid funding for mid-term projects.",
+        "Failure to consistently transition successful pilot programs (e.g., automated inspection) into permanently owned and scaled operational workflows.",
+        "Dependencies on specific functional leaders mean key processes are vulnerable if that personnel leaves or shifts focus."
+      ],
+      "achieved_milestones": [
+        "Reduced defect escape rate by 35% via implemented computer vision prototype.",
+        "Successful launch of the core inventory digitalization module and associated data infrastructure."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant improvement in execution visibility and focus on efficiency gains following the launch of digitalization projects. The company has matured from identifying problems to implementing solutions, making it highly appealing for investor roadshows, provided governance gaps are addressed."
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "id": "R0313",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0396",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:34:02.132130+00:00",
+    "duration_ms": 41238,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina Solutions",
+      "sector": "Fintech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "B2B buy-now-pay-later provider embedding installment payment options at checkout for B2B marketplaces and wholesale platforms. Serving 200 merchant partners and 8,000 business buyers. Key innovation challenge is automated credit limit adjustment based on real-time business financial health signals. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 14,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0396",
+      "fields": {
+        "companyName": "Lumina Solutions",
+        "sector": "Fintech",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "B2B buy-now-pay-later provider embedding installment payment options at checkout for B2B marketplaces and wholesale platforms. Serving 200 merchant partners and 8,000 business buyers. Key innovation challenge is automated credit limit adjustment based on real-time business financial health signals. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "2",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 14,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 2 new features shipped. Customer NPS improved 20 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "step_1": "in_progress",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A2",
+        "type": "evolved_to",
+        "title": "Build Embedded Ecosystem Switching Costs via API Layer",
+        "rationale": "To defend the installed base, Lumina must move beyond simple payment options and deepen its integration into merchant operational workflows. This requires creating a standardized, robust API layer that allows partners to build proprietary processes directly on top of our platform, making migration costly for competitors.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the core set of 5 essential business APIs required by B2B merchants (e.g., credit pre-check, advanced reporting).",
+            "Pilot a sandbox environment and co-develop the API documentation with 3 key anchor partners.",
+            "Establish governance policies for third-party access and data standards."
+          ],
+          "resources_needed": [
+            "Dedicated API architect (Engineer)",
+            "Legal/Compliance SME",
+            "Product Manager (Lead)"
+          ],
+          "success_metric": "3 active, documented, and utilized APIs with successful partner onboarding.",
+          "milestones": [
+            "API specification completion in Q1.",
+            "Internal beta testing of core endpoints.",
+            "Launch to first wave of 5 anchor partners."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B3",
+        "type": "radical",
+        "title": "Implement Real-Time Financial Signal Integration into Credit Underwriting Loop",
+        "rationale": "The current process for credit adjustment needs to move from periodic review to near real-time, automated scoring using external financial data feeds. This radical shift is necessary not only for optimizing risk but also for delivering a 'modern customer experience' that directly counters competitor offerings.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify and vet 2-3 potential third-party FinTech data aggregators for B2B signals (e.g., supply chain velocity, localized market distress).",
+            "Design the new microservice architecture capable of ingesting external APIs and scoring inputs.",
+            "Map current underwriting logic to the expanded real-time data points."
+          ],
+          "resources_needed": [
+            "Data Scientist (Dedicated)",
+            "Backend Engineers (2)",
+            "Risk Management SME"
+          ],
+          "success_metric": "Reduction in false negative credit adjustments by 15% using automated signals.",
+          "milestones": [
+            "Vendor selection and API connection established.",
+            "Model training and back-testing completed.",
+            "Staged rollout to a limited cohort of partners."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_01",
+        "action": "Formalize the 'Innovation Process' by implementing a mandatory stage-gate review system for all initiatives, replacing ad-hoc email/spreadsheet tracking.",
+        "owner": "Product Manager / Innovation Squad Lead",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns_02",
+        "action": "Conduct a full audit and prioritization of the top 5 most critical areas of technical debt that directly impact customer-facing feature speed or reliability.",
+        "owner": "Tech Lead / Engineers",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "ns_03",
+        "action": "Develop a formal 'Competitive Feature Parity Roadmap' detailing gaps against the top 2 competitors, prioritizing based on impact to installed base retention.",
+        "owner": "Product Manager / Strategy Function",
+        "timeframe": "6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal, adopted project management process (reliance on manual methods).",
+      "Underlying technical debt and integration complexity risk slowing down future feature velocity.",
+      "Risk mitigation remains primarily reactive; the strategy needs to shift toward proactive market shaping."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful launch of 2 core features improving product capability.",
+        "Customer NPS improved by 20 points, indicating perceived value increase.",
+        "Innovation has achieved standing agenda item status at the board level."
+      ],
+      "persistent_gaps": [
+        "Core systems (ERP/CRM) remain siloed and poorly integrated despite investment.",
+        "The organizational process remains informal, hindering execution consistency across business units.",
+        "Technical debt is growing faster than it can be adequately mitigated by current sprint cycles."
+      ],
+      "achieved_milestones": [
+        "Successfully shipped two major product features enhancing the value proposition.",
+        "Established a dedicated, funded innovation squad with clear quarterly reporting lines."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Improved tactical execution (NPS, features launched) and increased executive focus on innovation. However, the core structural weaknesses (process formality, technical debt) have persisted or worsened."
+    }
+  }
+}

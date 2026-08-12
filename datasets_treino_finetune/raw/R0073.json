@@ -1,0 +1,200 @@
+{
+  "id": "R0073",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0165",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:12:35.391792+00:00",
+    "duration_ms": 55108,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Prime Networks",
+      "sector": "Professional & Consulting Services",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 5,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0165",
+      "fields": {
+        "companyName": "Prime Networks",
+        "sector": "Professional & Consulting Services",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 8,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 4 strategic partnerships. Revenue growth 10% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "completed",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 3.8,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_km_ai",
+        "type": "incremental",
+        "title": "Knowledge Management AI Implementation (Internal Playbook Generation)",
+        "rationale": "The firm has successfully gathered data (CRM, partnerships) and identified a need to capture institutional knowledge. This opportunity focuses on building the AI layer that surfaces past insights into actionable proposal components, directly addressing efficiency gaps in proposal development.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct internal workshops with senior consultants to map the top 5 recurring engagement themes and required documentation.",
+            "Develop a Minimum Viable Product (MVP) scope focusing on indexing past proposals, project reports, and successful case studies.",
+            "Engage external AI advisory support specializing in knowledge graph construction within consulting services."
+          ],
+          "resources_needed": [
+            "External Data Science Consultant",
+            "Dedicated SME Time (Senior Consultants)",
+            "Existing Knowledge Repository/SharePoint access"
+          ],
+          "success_metric": "Reduction of proposal drafting time for standard engagements by 25%.",
+          "milestones": [
+            "Completion of data taxonomy and source mapping.",
+            "Successful pilot search query testing against historical data.",
+            "Integration of AI suggestions into the core CRM/Proposal platform."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_process_automation",
+        "type": "incremental",
+        "title": "Workflow Standardization and Automation Audit",
+        "rationale": "Current growth is organic, leading to process bottlenecks. This initiative standardizes core operational workflows (e.g., intake, project status updates) beyond the CRM layer to achieve the target 20% throughput improvement without increasing headcount.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end workflow diagrams for the top three revenue-generating services.",
+            "Identify manual handoffs (e.g., moving data from project tracking sheets to billing/CRM) suitable for low-code automation.",
+            "Build a small, dedicated internal 'Automation Sandbox' environment utilizing available developer time."
+          ],
+          "resources_needed": [
+            "Process Mapping Tools",
+            "Generalist Developer Time (ring-fenced)",
+            "Consulting Lead input on process steps"
+          ],
+          "success_metric": "Reduction in the average cycle time of a project phase by 15%.",
+          "milestones": [
+            "Completion of core workflow documentation.",
+            "Successful automation proof-of-concept (PoC) for one department handoff.",
+            "Creation of standardized, repeatable operational playbooks."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Schedule a meeting with management/owner to ring-fence 20% of the developers' time for process automation development (opp_process_automation).",
+        "owner": "CEO/Management",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Formalize the scope and budget request for an external AI advisory consultant to tackle knowledge graph construction.",
+        "owner": "COO/Operations Lead",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Conduct a 'Time Sink' audit by having project teams document all manual, repetitive data transfers required for billing or reporting.",
+        "owner": "Consultants/PMO",
+        "timeframe": "Next 2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of dedicated R&D capacity, leading to innovation being reactive rather than proactive.",
+      "Process standardization is ad-hoc; workflows are documented primarily through tribal knowledge rather than repeatable systems.",
+      "Decision-making structure remains highly centralized ('owner_alone'), which may slow down the adoption or scaling of automated solutions."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully deployed and utilized CRM system, providing a strong foundation for data capture.",
+        "Secured 4 strategic partnerships, diversifying revenue streams and market reach.",
+        "Increased YoY revenue growth to 10%, validating market demand."
+      ],
+      "persistent_gaps": [
+        "Lack of formalized process ownership or Process Management Office (PMO) function.",
+        "Limited ability to scale standardized processes due to reliance on key individual expertise ('talent' barrier).",
+        "Developer capacity remains severely constrained by urgent operational support needs."
+      ],
+      "achieved_milestones": [
+        "Successful CRM implementation and adoption in sales.",
+        "Initial exploration of AI/ML capabilities using partnerships as testing grounds."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.8,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant progress in revenue growth and foundational digital system deployment (CRM). The focus has shifted from initial implementation to systemic efficiency gains via AI/automation, but core internal structural barriers remain."
+    }
+  }
+}

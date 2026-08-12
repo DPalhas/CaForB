@@ -1,0 +1,200 @@
+{
+  "id": "R0117",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0427",
+  "split": "train",
+  "metadata": {
+    "sector": "Telecommunications",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:40:45.747350+00:00",
+    "duration_ms": 47119,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Beacon Analytics",
+      "sector": "Telecommunications",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Telecom infrastructure services company providing tower construction, maintenance, and colocation services for major MNOs. Managing 450 tower sites. Evaluating drone-based tower inspection to replace manual climbing inspections and reduce technician safety risk. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "7 person team",
+      "digitalMaturity": "1",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 14,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0427",
+      "fields": {
+        "companyName": "Beacon Analytics",
+        "sector": "Telecommunications",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Telecom infrastructure services company providing tower construction, maintenance, and colocation services for major MNOs. Managing 450 tower sites. Evaluating drone-based tower inspection to replace manual climbing inspections and reduce technician safety risk. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We experimented with a customer self-service portal two years ago after seeing competitors offer similar functionality. We built an MVP with an external agency in 3 months, but customer adoption was disappointing — only 8% of customers created accounts. We did not invest enough in understanding whether our specific customer base actually wanted self-service before building.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 14,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 7 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "completed",
+      "opp_3": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_data_monetization",
+        "type": "incremental",
+        "title": "Structured Data Asset Marketplace for Telecom Infrastructure Insights",
+        "rationale": "Beacon collects proprietary data across 450 sites. To achieve diversification, they must move beyond service delivery and monetize this collected intelligence (e.g., site utilization rates, environmental data). This evolved approach requires a structured understanding of customer needs before building an MVP, learning from the self-service portal failure.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct regulatory review on data ownership and anonymization requirements for market offerings.",
+            "Develop 3 key industry pain points (non-Beacon specific) to define initial marketplace use cases.",
+            "Pilot a proof-of-concept offering with 5 existing high-value MNO clients."
+          ],
+          "resources_needed": [
+            "Dedicated process analyst",
+            "Legal/Compliance consultant (Data Governance)",
+            "Business Development lead time"
+          ],
+          "success_metric": "Conversion of 1 data insight product into a paid subscription pilot.",
+          "milestones": [
+            "Initial regulatory compliance framework drafted.",
+            "Market validation report completed with target revenue potential.",
+            "Pilot offering launched and tested."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-12 months",
+        "carry_forward_from": "opp_marketplace",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_drone_inspection_platform",
+        "type": "radical",
+        "title": "Integrated Drone Inspection & Predictive Maintenance Platform",
+        "rationale": "Leveraging the proposed drone inspection technology not just for cost reduction (operational efficiency), but as a primary revenue source. This involves combining hardware capabilities with proprietary data analysis, shifting from physical service provision to tech-enabled solutions.",
+        "execution_plan": {
+          "first_actions": [
+            "Map required regulatory approvals and certifications for commercial drone use in telecom sites.",
+            "Develop a ROI model comparing manual vs. automated inspection costs/risk reduction per site type.",
+            "Formulate an initial partnership structure with advanced AI/analytics vendors."
+          ],
+          "resources_needed": [
+            "Regulatory compliance officer",
+            "Engineering time (Data integration)",
+            "Initial seed funding for rapid prototyping"
+          ],
+          "success_metric": "Securing a minimum viable contract (pilot) based on predictive maintenance services.",
+          "milestones": [
+            "Drone operational safety protocol approved.",
+            "Predictive model trained on initial site data set.",
+            "Internal pitch deck formalized for dedicated capital expenditure."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_regulatory_governance",
+        "action": "Establish a formalized Data Governance committee involving legal and technical leads to manage compliance for all new data products.",
+        "owner": "Small Leadership Team",
+        "timeframe": "Q1 Next Year"
+      },
+      {
+        "id": "ns_internal_process_mapping",
+        "action": "Conduct a process audit mapping the entire lifecycle of an innovation idea, from initial concept to pilot deployment, minimizing reliance on ad-hoc effort.",
+        "owner": "Middle Management (if hired/allocated)",
+        "timeframe": "Next 3 Months"
+      },
+      {
+        "id": "ns_strategic_alignment_workshop",
+        "action": "Host a structured strategy workshop with key stakeholders to prioritize between the data marketplace and the drone platform, ensuring resource focus.",
+        "owner": "CEO/Executive Sponsor",
+        "timeframe": "Next 6 Weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Processes remain informal and undocumented, creating single points of failure for knowledge transfer.",
+      "Strategic initiatives lack dedicated operational focus, leading to resource distraction between core service delivery and growth efforts.",
+      "Over-reliance on the small leadership team limits scalability and introduces bottlenecks in decision-making."
+    ],
+    "progress": {
+      "improvements": [
+        "Regulatory compliance posture has significantly improved due to mandated reviews and implementation of 7 new standard procedures.",
+        "Team morale is reported as improving, suggesting better internal cohesion despite operational demands."
+      ],
+      "persistent_gaps": [
+        "The core technical/process barriers (documentation, formalized workflow) remain the primary bottleneck for scaling innovation.",
+        "Strategic focus on diversification remains high-risk and requires dedicated capital that competes with day-to-day operations funding."
+      ],
+      "achieved_milestones": [
+        "Successfully implemented 7 new standard operating procedures in response to regulatory changes.",
+        "Leadership has confirmed willingness to dedicate seed funding for 2-3 experimental business lines, providing strategic buy-in."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant operational improvement in regulatory compliance and internal stability (morale). The focus has crystallized on aggressive diversification via data monetization and advanced technology integration."
+    }
+  }
+}

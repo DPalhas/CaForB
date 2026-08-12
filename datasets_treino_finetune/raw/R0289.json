@@ -1,0 +1,200 @@
+{
+  "id": "R0289",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0173",
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:56:46.862680+00:00",
+    "duration_ms": 57420,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.017568+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian",
+      "sector": "Financial Services",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Wealth management advisory serving 400+ high-net-worth families with holistic financial planning, tax optimization, and estate structuring. Blending in-person advisory with a client portal for portfolio tracking. Seeking to enhance client reporting with interactive scenario modeling tools. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections."
+    },
+    "previous_assessment": {
+      "id": "0173",
+      "fields": {
+        "companyName": "Meridian",
+        "sector": "Financial Services",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Wealth management advisory serving 400+ high-net-worth families with holistic financial planning, tax optimization, and estate structuring. Blending in-person advisory with a client portal for portfolio tracking. Seeking to enhance client reporting with interactive scenario modeling tools. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "Preparing for Series A in the next 9 months. We need to articulate a clear, credible innovation strategy that differentiates us from competitors in the eyes of VCs. The narrative must tie our innovation investments directly to defensible competitive advantages and revenue growth projections."
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "step_1": "completed",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Unified Data Layer for Client Lifecycle Management",
+        "rationale": "System fragmentation (ERP, CRM, HRIS) prevents a holistic 'single view of the client,' which is critical for efficiency gains and comprehensive reporting. Unifying this data layer mitigates process risk and provides the foundational clean data required for advanced modeling.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct mandatory compliance gap analysis across all core systems (CRM, ERP) to identify data residency requirements.",
+            "Establish a master data management (MDM) initiative focused on defining golden records for client entities and service touchpoints.",
+            "Pilot a middleware integration layer between the top two most disparate systems (e.g., CRM and Core Banking)."
+          ],
+          "resources_needed": [
+            "Data Architect Team",
+            "Compliance Legal Counsel",
+            "Dedicated Middleware Budgeting"
+          ],
+          "success_metric": "Reduction in manual data reconciliation time by 40% within 6 months.",
+          "milestones": [
+            "Complete MDM blueprint and governance model.",
+            "Successful API integration between CRM and ERP for core client records.",
+            "Rollout of integrated reporting dashboard."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "AI-Powered Predictive Financial Scenario Modeling Engine",
+        "rationale": "To combat margin compression and differentiate from competitors, Meridian must move beyond simple reporting. This engine will utilize ML models to predict client financial outcomes based on external variables (e.g., tax law changes, market shifts), transforming the advisory service into a proactive intelligence platform.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a robust data governance framework specifically for proprietary client risk profiles and historical transaction data.",
+            "Form an advisory/data science task force to define key predictive variables (e.g., tax optimization levers).",
+            "Develop Minimum Viable Product (MVP) prototype focused initially on single-variable scenario testing (e.g., retirement withdrawal rates)."
+          ],
+          "resources_needed": [
+            "Data Scientist/ML Engineer",
+            "Client Advisory Subject Matter Experts",
+            "Secure Cloud Compute Resources"
+          ],
+          "success_metric": "Adoption rate of the predictive tool among advisory staff (Target: 60% usage monthly).",
+          "milestones": [
+            "Data governance and privacy sign-off.",
+            "Development and backtesting of Model v1.0.",
+            "Pilot integration into the client portal for controlled testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_3",
+        "action": "Conduct a formal cross-functional workshop (Strategy/IT/Ops) to map the ideal end-to-end client journey, highlighting required data touchpoints and identifying integration gaps.",
+        "owner": "Chief Strategy Officer (CSO)",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_4",
+        "action": "Initiate a formal audit of current data governance policies against upcoming regulatory changes to ensure the foundational requirements for predictive modeling are met.",
+        "owner": "Chief Compliance Officer (CCO)",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_5",
+        "action": "Define and allocate dedicated resources (budget/personnel) for the MDM initiative, treating it as a core pillar of the Series A growth narrative.",
+        "owner": "CFO / COO",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Siloed and non-integrated core business systems (ERP/CRM/HRIS), leading to operational inefficiencies and fragmented client views.",
+      "Lack of formalized data governance, hindering the ability to leverage data for proactive, predictive services.",
+      "The strategic translation gap: difficulty in articulating day-to-day process improvements into a compelling, defensible narrative required by VCs."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation of digital customer onboarding flow significantly improving client experience and reducing operational cycle time.",
+        "High measurable impact on NPS scores for new customers due to the optimized digital process.",
+        "Completion of key recommendation steps (Step 1 completed) demonstrates cross-functional execution capability."
+      ],
+      "persistent_gaps": [
+        "The systemic data integration challenge remains unsolved, limiting efficiency gains across multiple departments.",
+        "Strategic culture shift is required to mandate the use of new processes and technologies across all business units.",
+        "Decision-making agility still varies significantly by project/department."
+      ],
+      "achieved_milestones": [
+        "Reduced average client onboarding time from 12 days to 5 days.",
+        "Established a measurable improvement in early customer satisfaction (NPS)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased competitive pressure and explicit need to demonstrate advanced digital differentiation (Series A prep) has shifted the focus from basic process optimization to sophisticated, data-driven predictive capabilities."
+    }
+  }
+}

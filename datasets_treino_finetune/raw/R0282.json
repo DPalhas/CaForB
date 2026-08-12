@@ -1,0 +1,198 @@
+{
+  "id": "R0282",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0026",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:50:33.577425+00:00",
+    "duration_ms": 46131,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Prime.co",
+      "sector": "Information Technology",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "12 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 11,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0026",
+      "fields": {
+        "companyName": "Prime.co",
+        "sector": "Information Technology",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 11,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "completed",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Develop Core Process Optimization Streamlines (Efficiency Focus)",
+        "rationale": "The strategic focus on margin compression requires systematically identifying and eliminating operational inefficiencies. This opportunity transitions from general awareness to deep functional mapping across procurement, logistics, and back-office functions to generate quantified cost savings.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a cross-functional process working group (Process Owners).",
+            "Select one high-impact, low-complexity area (e.g., procurement requisition workflow) for initial mapping.",
+            "Document 'As-Is' processes and conduct stakeholder interviews to identify pain points and waste."
+          ],
+          "resources_needed": [
+            "Dedicated process analyst time (internal or consulting)",
+            "Executive sponsorship for cross-departmental mandates",
+            "Process mapping software/tooling"
+          ],
+          "success_metric": "Quantified reduction in cycle time and cost for the pilot process area.",
+          "milestones": [
+            "Completion of 2-3 key process maps (As-Is).",
+            "Identification of 5 high-leverage automation/streamlining opportunities.",
+            "Pilot implementation of a streamlined workflow."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "3-6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_4",
+        "type": "incremental",
+        "title": "Build Client Value Acceleration Framework (Market Resilience)",
+        "rationale": "Addressing rising churn and increased competitive pressure requires moving beyond reactive support. This framework standardizes how efficiency gains are tracked, communicated, and sold back to clients, turning successful implementation into a repeatable revenue driver.",
+        "execution_plan": {
+          "first_actions": [
+            "Update the CRM structure to mandate tracking of defined client success metrics (CSMs).",
+            "Develop standardized 'Efficiency Gain' reporting dashboards for key accounts.",
+            "Integrate CSM tracking into the Project Scoping/Discovery phase."
+          ],
+          "resources_needed": [
+            "CRM administrator time",
+            "Sales and Delivery team collaboration",
+            "Templates for value proposition articulation"
+          ],
+          "success_metric": "Increase in client retention rate (measured against industry average) and increased attachment rate of service expansion.",
+          "milestones": [
+            "Mandatory use of CSM tracking on all new projects.",
+            "Creation and presentation of 3 successful 'ROI Case Studies'.",
+            "Formal inclusion of value-based metrics in sales pitches."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-7 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Establish a formal, cross-departmental Process Steering Committee (PSC) with clear executive sponsorship and mandated meeting cadence.",
+        "owner": "CEO/Leadership Team",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct a detailed financial review comparing the projected cost savings from process optimization (O1) against the investment required for system integration.",
+        "owner": "CFO/Finance Team",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Pilot mandatory adoption of value tracking in the sales cycle, requiring every new engagement to map at least three measurable efficiency outcomes.",
+        "owner": "Sales/Account Management Leads",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal governance and process ownership across operational functions, leading to inconsistent execution (evidenced by project tool adoption failure).",
+      "Over-reliance on manual processes and ad-hoc system integrations, creating technical debt and limiting scalability.",
+      "Insufficiently codified value proposition that links service delivery directly back to measurable client economic outcomes."
+    ],
+    "progress": {
+      "improvements": [
+        "The leadership team has elevated the strategic priority from general growth to specific cost reduction and process optimization.",
+        "Key internal initiatives (O1, O2) have moved into active planning stages ('in_progress'), indicating increased commitment."
+      ],
+      "persistent_gaps": [
+        "Fundamental operational processes remain poorly documented or executed inconsistently across departments.",
+        "The capacity to implement change is still constrained by resource bandwidth and the need for executive mandate enforcement.",
+        "Integration maturity (Digital 2) prevents seamless linkage between planning, execution, and billing/value tracking systems."
+      ],
+      "achieved_milestones": [
+        "Successful completion of initial process scoping (Step 1).",
+        "Increased market awareness regarding the need for accelerated digital transformation due to competitor entry."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has elevated its focus from general scaling challenges to specific financial and operational threats (margin compression, churn). While processes are still informal, the strategic intent is now intensely focused on quantifiable efficiency gains."
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "R0077",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0114",
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:00:12.569906+00:00",
+    "duration_ms": 62619,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian Dynamics",
+      "sector": "Real Estate",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Commercial property management firm operating 12 office buildings, 3 retail centers, and 2 logistics parks totaling 120,000 m² of leasable area. Managing 400+ tenant relationships. Seeking to implement IoT-based building energy management and a tenant experience mobile app. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "11 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 26,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0114",
+      "fields": {
+        "companyName": "Meridian Dynamics",
+        "sector": "Real Estate",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Commercial property management firm operating 12 office buildings, 3 retail centers, and 2 logistics parks totaling 120,000 m² of leasable area. Managing 400+ tenant relationships. Seeking to implement IoT-based building energy management and a tenant experience mobile app. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "1",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 21,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 4 new features shipped. Customer NPS improved 5 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establish a Formal Internal Innovation Portfolio & Opportunity Funnel",
+        "rationale": "The need for systematic diversification (25% revenue mandate) requires moving beyond opportunistic improvements. This opportunity formalizes the intake, vetting, and prioritization of new market ideas from across the organization, addressing past process failures.",
+        "execution_plan": {
+          "first_actions": [
+            "Define clear criteria for 'adjacent markets' based on existing asset portfolios (e.g., retail tenants needing tech solutions).",
+            "Implement a lightweight stage-gate process to move ideas from 'Idea' -> 'Pilot' -> 'Venture'.",
+            "Mandate the involvement of key stakeholders (Operations, Finance) in the initial vetting phase to ensure cross-functional buy-in.",
+            "Train department leads on structured concept submission rather than relying on ad-hoc proposals."
+          ],
+          "resources_needed": [
+            "Dedicated 0.2 FTE Process Coordinator (6 months)",
+            "Standardized Idea Management Platform (low cost SaaS)",
+            "Board/Leadership sponsorship for process mandate"
+          ],
+          "success_metric": "Minimum of 5 vetted, cross-functional concepts submitted and prioritized in Q3.",
+          "milestones": [
+            "Process framework defined and communicated (Month 1).",
+            "First cohort of pilot opportunities selected (Month 2).",
+            "Funnel metrics established (Idea count vs. Pilot progression)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Launch a Real Estate Tech Venture Arm for External Monetization (M&A/JV Focus)",
+        "rationale": "Given the 'bold' risk appetite and the need for 25% new revenue, Meridian must systematically explore external markets. Establishing a dedicated venture arm allows the firm to test adjacent services (e.g., specialized energy consulting, IoT platform licensing) via strategic acquisition or joint ventures.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate a small seed budget ($50k-$100k) specifically for external market research and due diligence.",
+            "Identify 3 potential adjacent service providers (non-competing tech firms, specialized consultants) for initial partnership review.",
+            "Formally define the operational scope: Will this arm manage assets, or sell services? (Focus on services first).",
+            "Determine key internal talent to dedicate to this new business line."
+          ],
+          "resources_needed": [
+            "Dedicated leadership champion (CEO/COO level)",
+            "Access to financial modeling expertise for valuation.",
+            "Initial seed capital for research and travel."
+          ],
+          "success_metric": "Agreement on a Letter of Intent (LOI) or pilot partnership with an external entity by year end.",
+          "milestones": [
+            "Venture mandate approved by the Board/Leadership Team (Month 1).",
+            "Target market and initial screening list defined (Month 2).",
+            "Feasibility presentation delivered to Leadership on potential JV models (Month 4)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Conduct a 'Process Failure Root Cause Analysis' on the cloud PM tool pilot to extract non-negotiable change management steps for future initiatives.",
+        "owner": "Project Manager / Operations Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Formalize the initial budget allocation process, securing a dedicated 'Innovation Exploration Fund' rather than relying on opportunistic funding.",
+        "owner": "Finance / Small Leadership Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Host a mandatory cross-departmental workshop focused solely on identifying 'adjacent market revenue leakage' (i.e., services Meridian currently provides but doesn't monetize).",
+        "owner": "Executive Sponsor / HR",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized, institutionalized change management process (evidenced by PM tool failure and reverting to spreadsheets).",
+      "Funding structure is non-dedicated; innovation efforts remain subject to operational budget cycles.",
+      "Strategy remains highly focused on internal operational efficiency rather than systematic external market development."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful product launch demonstrates improved cross-functional execution capability and technical capacity (4 new features shipped).",
+        "Increased customer satisfaction metrics (+5 NPS) validating core service improvements.",
+        "The board has formally mandated a strategic focus on diversification, providing clear corporate direction."
+      ],
+      "persistent_gaps": [
+        "Persistent reliance on manual processes and 'tribal knowledge,' preventing scalability.",
+        "Technical debt is increasing faster than the operational capacity to manage it.",
+        "Process gaps prevent the full realization of high-level strategic goals (e.g., failure to maintain PM tool adoption)."
+      ],
+      "achieved_milestones": [
+        "Successful deployment and initial rollout of new features/product updates."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved operational execution and gained clear executive mandate for systematic diversification. While process maturity remains a concern, the strategic focus has sharpened significantly."
+    }
+  }
+}

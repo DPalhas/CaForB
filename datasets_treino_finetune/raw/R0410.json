@@ -1,0 +1,204 @@
+{
+  "id": "R0410",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0421",
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:07:12.096396+00:00",
+    "duration_ms": 47510,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.046471+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault",
+      "sector": "Financial Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Retail bank operating 45 branches across northern Portugal serving 180,000 individual and 12,000 business customers. Core product portfolio includes mortgages, consumer loans, current accounts, and SME lending. Currently executing a digital transformation roadmap including mobile-first account opening and AI-assisted credit adjudication. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "7 person team",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0421",
+      "fields": {
+        "companyName": "Vault",
+        "sector": "Financial Services",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Retail bank operating 45 branches across northern Portugal serving 180,000 individual and 12,000 business customers. Core product portfolio includes mortgages, consumer loans, current accounts, and SME lending. Currently executing a digital transformation roadmap including mobile-first account opening and AI-assisted credit adjudication. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3_revised",
+        "type": "incremental",
+        "title": "Optimize SME Lending Process for Digital Self-Service and Cross-selling",
+        "rationale": "The existing formal processes are excellent, but the focus must shift from just internal efficiency to external customer experience. By streamlining the complex SME lending process using newly implemented RPA tools, Vault can accelerate time-to-loan while simultaneously exposing SMEs to other high-value products (e.g., payroll services).",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end digital journey for SME loan application and funding.",
+            "Integrate the RPA platform directly with the data warehouse dashboards used by relationship managers.",
+            "Pilot a self-service dashboard for SME clients to track existing loans and potential new services."
+          ],
+          "resources_needed": [
+            "Business Process Owners (SME Division)",
+            "UX/UI Design Team",
+            "Data Analytics Experts"
+          ],
+          "success_metric": "Reduction in average time-to-fund for SME loans by 20%.",
+          "milestones": [
+            "Completion of process mapping and gap analysis (Month 1).",
+            "Development and testing of self-service portal module (Month 3).",
+            "Rollout to a controlled cohort of relationship managers (Month 4)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_new_diversification",
+        "type": "incremental",
+        "title": "Establish Advisory Services for Pre-Retirement Financial Planning (Wealth Adjacent)",
+        "rationale": "Given the structural decline and need to find new value propositions, leveraging the deep trust established with long-term clients in adjacent sectors like wealth management or specialized advisory services is critical. This minimizes risk while tapping into growing demand areas not directly tied to core lending products.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a small internal 'Venture Pod' dedicated solely to market research for non-core adjacent financial needs (e.g., inheritance, specialized insurance).",
+            "Identify 2-3 initial advisory service offerings that require minimal new capital but high trust.",
+            "Partner with an external boutique wealth management firm for initial operational governance and expertise."
+          ],
+          "resources_needed": [
+            "Senior Leadership Sponsor (C-Level)",
+            "External Financial Advisor/Consultant",
+            "Dedicated time allocation from 2 experienced Product Managers"
+          ],
+          "success_metric": "Successful pilot launch of the advisory service with at least 10 paying clients within 9 months.",
+          "milestones": [
+            "Market opportunity assessment report completed (Month 2).",
+            "Operational framework and compliance review finalized (Month 4).",
+            "Pilot client cohort secured and program launched (Month 6)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_01",
+        "action": "Mandate quarterly senior executive sponsorship meetings specifically dedicated to reviewing the progress of the two diversification initiatives (opp_3_revised and opp_new_diversification) to ensure sustained focus.",
+        "owner": "CEO/Innovation Steering Committee",
+        "timeframe": "Ongoing, Q3 Start"
+      },
+      {
+        "id": "ns_02",
+        "action": "Recruit or upskill internal talent specifically in non-traditional financial services knowledge (e.g., digital health, specialized insurance) to support adjacent market exploration.",
+        "owner": "HR/Talent Acquisition Lead",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns_03",
+        "action": "Establish a formal 'Failure Tolerance' metric within the governance structure to allow the Venture Pod (opp_new_diversification) to rapidly iterate and fail small, thus breaking organizational inertia.",
+        "owner": "COO/Operational Governance",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia requires sustained C-level mandate, especially when transitioning from core business optimization to radical diversification.",
+      "The barrier of specialized talent required for adjacent market exploration is high and cannot be solved purely through internal upskilling efforts.",
+      "Governance processes, while formal, risk becoming a bottleneck, slowing down the agility needed to capitalize on rapid competitive changes."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful cloud migration of ERP and establishment of a data warehouse significantly improved foundational operational visibility.",
+        "Implementation of RPA tools has delivered quantifiable cost savings (€2.4M annualized), validating the capability for process automation.",
+        "The dedicated Transformation Office provides consistent executive focus on digital transformation."
+      ],
+      "persistent_gaps": [
+        "Translating newly available data assets (BI dashboards) into actionable, revenue-generating new products remains a challenge.",
+        "Moving beyond optimized core processes to successfully launch radical, diversified value propositions requires overcoming deep cultural resistance.",
+        "The lack of dedicated expertise in non-traditional adjacent markets slows down the evaluation process for diversification."
+      ],
+      "achieved_milestones": [
+        "Completion of ERP migration and data warehouse rollout.",
+        "Established operational capability for RPA/low-code process automation within multiple departments.",
+        "Demonstrated ability to deliver tangible cost savings through structured program execution."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The focus shifted from general process improvement to identifying structural market decline and the critical need for new value streams through diversification efforts. While operational maturity has improved (data/automation), organizational agility remains a major hurdle."
+    }
+  }
+}

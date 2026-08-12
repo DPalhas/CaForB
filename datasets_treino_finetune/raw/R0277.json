@@ -1,0 +1,203 @@
+{
+  "id": "R0277",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0424",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:47:15.766228+00:00",
+    "duration_ms": 44039,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nova Analytics.tech",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 27,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0424",
+      "fields": {
+        "companyName": "Nova Analytics.tech",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We operate in a consolidating market where competitors are merging to gain economies of scale. Our independent position is increasingly vulnerable. We need to proactively strengthen our competitive positioning — either by deepening our specialization in high-margin niches where scale matters less, or by building platform-like switching costs that make our offering stickier for existing customers.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 27,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 8 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_cff_1",
+        "type": "incremental",
+        "title": "Establish Agile Funding Pathways for Mid-Cycle Innovation",
+        "rationale": "The current formal committee structure creates significant drag, particularly when rapid adaptation is needed (market defense). Creating a dedicated funding pathway that requires only mid-level executive buy-in can accelerate the pace of innovation and overcome process friction.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the current 3-4 stakeholder approval workflow to identify critical choke points.",
+            "Draft a proposal for a 'Fast Track Innovation Budget' requiring only two executive signatures for pre-defined scope projects (e.g., AI POCs).",
+            "Run a pilot with the innovation squad and finance department using the proposed pathway on a small, high-urgency project."
+          ],
+          "resources_needed": [
+            "Executive buy-in from CFO/COO level.",
+            "Process mapping consultant (internal or external).",
+            "Legal review of governance changes."
+          ],
+          "success_metric": "Reduction in average time needed to approve budget for new POCs by 40%.",
+          "milestones": [
+            "Complete process map and stakeholder interviews.",
+            "Present 'Fast Track' model proposal to executive committee.",
+            "Successfully fund and launch one pilot through the new pathway."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_new_1",
+        "type": "radical",
+        "title": "Build a Proprietary AI-Accelerated Drug Discovery Platform",
+        "rationale": "To truly defend market position, Nova must move beyond simple data analysis and build an integrated platform that predicts outcomes (binding affinity) faster than competitors. This requires integrating in-silico folding models with internal R&D systems into one proprietary toolchain.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the specific 'golden dataset' required for initial model training, focusing on successful/failed candidates for autoimmune diseases.",
+            "Conduct technical feasibility study defining API layers needed to connect external AI models (e.g., AlphaFold) with proprietary internal biological assay data.",
+            "Define a phased architecture roadmap: Phase 1 (Screening Only), Phase 2 (Predictive Modeling), Phase 3 (System Integration)."
+          ],
+          "resources_needed": [
+            "Dedicated compute resources and cloud budget increase.",
+            "Senior AI/Computational Biologist expertise.",
+            "Integration architect."
+          ],
+          "success_metric": "Successfully run a full virtual screening cycle on the target dataset, generating 10 novel, prioritized candidates within 6 months.",
+          "milestones": [
+            "Finalize and secure access to necessary historical data sets.",
+            "Develop and test core predictive model (MVP).",
+            "Integrate MVP output into a dashboard viewable by R&D leadership."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize and secure full rollout funding/resources for the IoT maintenance system integration.",
+        "owner": "Operations/Finance Lead",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "ns2",
+        "action": "Host a cross-functional workshop (R&D, IT, Commercial) to scope the data requirements for the AI platform.",
+        "owner": "Innovation Squad Lead/Data Scientist",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Develop and present a formal proposal detailing how 'Fast Track' funding will bypass current committee bottlenecks.",
+        "owner": "Business Analyst/Innovation Squad Lead",
+        "timeframe": "6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Process rigidity: Over-reliance on the formal, multi-stakeholder annual planning and funding committee slows critical mid-cycle innovation.",
+      "System integration complexity: Integrating advanced technologies (AI/IoT) with legacy internal systems poses a significant technical bottleneck.",
+      "Cross-functional alignment risk: While the team is skilled, operationalizing platform changes requires deep buy-in across traditionally siloed functional units."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully established and scaled initial IoT sensor deployment (15% unplanned downtime reduction achieved).",
+        "Increased revenue base through acquisition of 8 new enterprise clients and expansion into adjacent markets.",
+        "Formalized a dedicated, cross-functional innovation squad structure with allocated resources."
+      ],
+      "persistent_gaps": [
+        "Lack of standardized governance for mid-cycle innovation funding.",
+        "Limited operationalization of AI capabilities; current data is not yet connected to predictive drug design workflows.",
+        "The business process remains the primary constraint on realizing tech investments."
+      ],
+      "achieved_milestones": [
+        "Completed successful pilot demonstrating ROI for IoT deployment.",
+        "Secured approval and resources to move from pilot phase to full-scale infrastructure rollout (IoT).",
+        "Defined internal innovation squad reporting structure to the executive committee."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant progress in commercialization (8 new clients) and tactical operations (IoT rollout). Focus has shifted from identifying potential opportunities to tackling systemic internal barriers (process/funding)."
+    }
+  }
+}

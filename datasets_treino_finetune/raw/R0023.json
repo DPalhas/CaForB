@@ -1,0 +1,205 @@
+{
+  "id": "R0023",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0123",
+  "split": "train",
+  "metadata": {
+    "sector": "Other",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:38:55.473726+00:00",
+    "duration_ms": 93870,
+    "attempts": 2,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-09T18:48:58.809939+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan Holdings",
+      "sector": "Other",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Equipment rental and leasing company offering construction machinery, aerial work platforms, and power generation equipment for short and long-term rental. Fleet of 2,500 assets across 8 depots. Key challenges are fleet utilization optimization and predictive maintenance scheduling. Evaluating IoT-based equipment telematics deployment. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0123",
+      "fields": {
+        "companyName": "Titan Holdings",
+        "sector": "Other",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Equipment rental and leasing company offering construction machinery, aerial work platforms, and power generation equipment for short and long-term rental. Fleet of 2,500 assets across 8 depots. Key challenges are fleet utilization optimization and predictive maintenance scheduling. Evaluating IoT-based equipment telematics deployment. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 6,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 2 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "completed",
+      "opp_4": "in_progress",
+      "step_1": "superseded",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 0.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Enterprise-Wide IoT Telematics & Data Governance Implementation",
+        "rationale": "The successful pilot (15% downtime reduction) validates the core technology. The current challenge is scaling this across 100% of assets and integrating that data reliably with existing legacy maintenance systems. This requires formalizing data governance to ensure compliance and operational integrity at scale.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated Data Governance Committee involving IT, Operations, and Compliance teams.",
+            "Audit all current data endpoints and define standardized APIs for bidirectional communication between IoT platforms and CMMS/ERP systems.",
+            "Develop mandatory operational protocols for sensor deployment and data quality assurance to meet regulatory standards."
+          ],
+          "resources_needed": [
+            "Dedicated integration architect (external or internal reassignment)",
+            "Formalized process documentation budget",
+            "Legal/Compliance review hours"
+          ],
+          "success_metric": "Completion of system integrations for 75% of the fleet and formal Sign-off on Data Governance Policy.",
+          "milestones": [
+            "Complete legacy system audit (Q1)",
+            "Deploy standardized middleware layer (Q2)",
+            "Full data pipeline operationalization with SLA monitoring (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5",
+        "type": "incremental",
+        "title": "Digital Proactive Service Layer for Client Retention (Swapping Costs)",
+        "rationale": "To defend market share against new, modern entrants without price wars, Titan must deepen client dependency by improving the service experience. This opportunity focuses on building a digital layer that allows clients to manage services, view IoT data insights, and schedule maintenance *through* Titan's platform, thereby increasing switching costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Map critical client 'pain points' related to service interaction (e.g., scheduling, billing).",
+            "Develop a low-fidelity prototype of the integrated service portal/dashboard using existing APIs where possible.",
+            "Involve 2-3 key enterprise clients in structured User Acceptance Testing (UAT) sessions.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Product Manager dedicated to UX design",
+            "Limited API access from current digital tools",
+            "Sales/Account Management time for client interviews"
+          ],
+          "success_metric": "Successful beta launch of the service portal with positive feedback (NPS lift) from 3 key accounts.",
+          "milestones": [
+            "User journey mapping complete (1 month)",
+            "V1 Prototype functional on staging environment (2 months)",
+            "Client Pilot Launch & Feedback Cycle (4 months)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "6-8 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a resource allocation audit to formally ring-fence 20% of the technology team's time exclusively for innovation tasks and process improvement.",
+        "owner": "Senior Leadership Team/VP Operations",
+        "timeframe": "30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize a comprehensive Data Governance Framework (DGF) covering IoT data ingestion, retention, and usage compliance.",
+        "owner": "IT/Compliance Officer",
+        "timeframe": "60 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a quantified financial model demonstrating the ROI of enhancing client digital engagement (opp_5) vs. cost reduction measures.",
+        "owner": "Finance/Strategic Planning",
+        "timeframe": "45 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of ring-fenced innovation time or budget, forcing work into reactive margins.",
+      "Reliance on informal processes and key internal advocates rather than scalable governance structures.",
+      "Ad-hoc integration methods between core systems slow down the full realization of IoT data value."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful validation of predictive maintenance through IoT pilot (15% downtime reduction).",
+        "Strategic direction is clear: Focus on market defense and increasing client switching costs.",
+        "Increased revenue visibility through acquisition of 2 new enterprise clients."
+      ],
+      "persistent_gaps": [
+        "The complexity and resource drain associated with integrating new IoT data into legacy systems remain a bottleneck.",
+        "Governance structures (data, process) have not kept pace with technological expansion.",
+        "Difficulty in shifting the team focus from maintenance to proactive strategic development."
+      ],
+      "achieved_milestones": [
+        "Business case approved for full fleet IoT rollout.",
+        "Acquisition and onboarding of two new enterprise clients.",
+        "Defined scope for required digital service improvements (opp_5)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.2,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significantly improved operational visibility (IoT pilot) and market understanding (new clients/competitor focus). Progress is now blocked by systemic integration complexity and governance needs."
+    }
+  }
+}

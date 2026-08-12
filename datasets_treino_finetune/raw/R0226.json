@@ -1,0 +1,202 @@
+{
+  "id": "R0226",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0160",
+  "split": "train",
+  "metadata": {
+    "sector": "Legal Services",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:00:07.147713+00:00",
+    "duration_ms": 43720,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst.tech",
+      "sector": "Legal Services",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Boutique litigation firm handling complex commercial disputes, arbitration, and white-collar defense. Team of 18 litigators. Managing 60+ active cases with thousands of documents per case. Seeking e-discovery platform with predictive coding for document review prioritization. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "5 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 10,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0160",
+      "fields": {
+        "companyName": "Catalyst.tech",
+        "sector": "Legal Services",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Boutique litigation firm handling complex commercial disputes, arbitration, and white-collar defense. Team of 18 litigators. Managing 60+ active cases with thousands of documents per case. Seeking e-discovery platform with predictive coding for document review prioritization. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 13,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 6 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "completed",
+      "step_1": "in_progress",
+      "step_2": "superseded",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Scale IoT Monitoring and Legacy System Integration",
+        "rationale": "The successful pilot on unplanned downtime validates the technology's ROI. The next critical step is moving from limited deployment to full fleet rollout, requiring significant focus on integrating the new sensor data streams with existing, older maintenance systems.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed technical audit of legacy system APIs for integration feasibility.",
+            "Phased procurement plan focusing first on core service lines to manage capital expenditure.",
+            "Develop standardized training modules for technicians on new data interpretation tools."
+          ],
+          "resources_needed": [
+            "Integration Specialist/Consultant",
+            "Capital Budget Allocation (Phase 2)",
+            "IT Infrastructure Time"
+          ],
+          "success_metric": "90% uptime prediction accuracy across all monitored equipment within 12 months.",
+          "milestones": [
+            "Complete technical scoping and integration plan (3 months).",
+            "Pilot rollout on core service line fleet segment (6 months).",
+            "Full system operational status (12-18 months)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Productization of e-Discovery & Advisory Services (New Revenue Stream)",
+        "rationale": "The mandated strategic goal requires significant diversification. Leveraging the firm’s core competency in complex litigation and its identified need for predictive coding, developing a service layer or acquiring a small tech vendor is necessary to generate new revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Analyze competitive landscape (legal/tech) for early-stage e-discovery SaaS platforms.",
+            "Develop Minimum Viable Product (MVP) requirements based on predictive coding needs.",
+            "Identify 2-3 suitable small, innovative tech targets for potential acquisition or partnership."
+          ],
+          "resources_needed": [
+            "Dedicated Tech/Product Lead",
+            "Targeted M&A Budget Analysis",
+            "Legal/Compliance Counsel (Data Privacy)"
+          ],
+          "success_metric": "Secure Letter of Intent (LOI) for a pilot product offering or identify 2 potential acquisition targets within 9 months.",
+          "milestones": [
+            "Complete competitive analysis and market positioning document (3 months).",
+            "Build initial service pitch deck and ROI model (4 months).",
+            "Secure first paid advisory/product retainer client (6-9 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize a dedicated 'Innovation Capital Budget' to ring-fence funds for IoT integration and product development, addressing the primary barrier of constrained working capital.",
+        "owner": "Founder/Finance Lead",
+        "timeframe": "30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Conduct internal workshop to map current legal processes (document intake, review) against predictive coding capabilities to define the exact MVP scope.",
+        "owner": "Litigation Team Lead/Tech Consultant",
+        "timeframe": "45 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Draft a preliminary target market matrix identifying 3 adjacent sectors (e.g., corporate compliance, regulatory filings) where e-discovery skills can be productized.",
+        "owner": "Strategy/Founding Team",
+        "timeframe": "60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Highly constrained working capital and reliance on immediate ROI for all spending.",
+      "Decision-making is centralized (Owner alone), potentially slowing the execution of complex, cross-departmental initiatives.",
+      "Technical debt and complexity in integrating modern digital tools with legacy operational systems."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased Digital Maturity Score (2 to 3), demonstrating improved internal capability.",
+        "Successful initial pilot of IoT technology, validating a strong ROI use case for asset management.",
+        "Clear strategic mandate from the board requiring diversification and new revenue generation."
+      ],
+      "persistent_gaps": [
+        "Translating successful pilots into scalable, integrated corporate assets.",
+        "Formalizing processes to distribute decision-making authority to accelerate execution speed.",
+        "Securing non-operational funding sources (e.g., strategic partnerships or venture debt) to mitigate budget constraints."
+      ],
+      "achieved_milestones": [
+        "Successfully validated the business case for full IoT rollout, moving it past the conceptual stage.",
+        "Defined clear organizational mandate for revenue diversification (25% target)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The firm has transitioned from a general state of 'partial' innovation to one with tangible operational wins (IoT pilot) and a clear, high-stakes strategic mandate for radical diversification. Digital maturity has improved significantly."
+    }
+  }
+}

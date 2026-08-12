@@ -1,0 +1,198 @@
+{
+  "id": "R0113",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0469",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:36:38.043268+00:00",
+    "duration_ms": 47151,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Nexus Ventures",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0469",
+      "fields": {
+        "companyName": "Nexus Ventures",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "long",
+        "riskAppetite": "bold",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "4",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 13,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 4 new features shipped. Customer NPS improved 5 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Standardize and Automate Core R&D Workflows for Throughput Gain",
+        "rationale": "Nexus has successfully built the foundational data infrastructure (data warehouse, COE). The next step is to move beyond basic automation (RPA) into true process standardization across drug discovery workflows. This will directly address the goal of 20% throughput improvement by eliminating manual steps and variances in core processes.",
+        "execution_plan": {
+          "first_actions": [
+            "Map 3-4 high-volume, repeatable research lab or clinical trial data entry/processing workflows for standardization.",
+            "Pilot the deployment of low-code tools to enforce standardized data input templates across departments.",
+            "Establish mandatory process ownership within functional management layers (not just IT)."
+          ],
+          "resources_needed": [
+            "Functional Process Experts (SMEs)",
+            "Process Mapping Tools",
+            "Mid-level Operational Management Buy-in"
+          ],
+          "success_metric": "Reduction in cycle time for standardized process X by 15%",
+          "milestones": [
+            "Completion of workflow mapping for high-priority process.",
+            "Pilot automation successful in test environment.",
+            "Formal documentation and adoption of new standard operating procedure (SOP)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_4",
+        "type": "radical",
+        "title": "Implement AI-Driven In-Silico Candidate Screening Platform",
+        "rationale": "The core strategic need identified is leveraging advanced computation for candidate screening (protein folding, binding affinity). This requires adopting cutting-edge computational biology tools that are currently outside the company's internal technological scope. Success here moves Nexus from a purely operational focus to becoming a truly research-intensive biotech leader.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct market analysis and vendor deep dive for specialized AI drug discovery platforms (e.g., partnerships with academic/industry compute clusters).",
+            "Allocate dedicated, ring-fenced seed funding specifically for external computational resources/AI partnership.",
+            "Define clear bio-informatics KPIs to measure the predictive power of new models."
+          ],
+          "resources_needed": [
+            "Computational Biology Expertise (External Consultants)",
+            "Seed Funding Pool",
+            "Executive Sponsorship (C-level commitment)"
+          ],
+          "success_metric": "Identification and testing of 5 novel candidate leads via in-silico prediction, resulting in a measurable increase in lead quality.",
+          "milestones": [
+            "Vendor shortlist completion and proof-of-concept agreement.",
+            "Successful execution of first large-scale virtual screening pipeline.",
+            "Review of AI findings leading to modification or acceleration of internal research."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize and empower a 'Process Standardization' task force across R&D and Ops to drive OpEx gains.",
+        "owner": "VP of Operations/COO",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns_2",
+        "action": "Draft a business case for the AI platform (opp_4) requiring dedicated funding and assessing potential external partnerships.",
+        "owner": "CEO/Head of R&D",
+        "timeframe": "Next 6 months"
+      },
+      {
+        "id": "ns_3",
+        "action": "Implement time-blocking or protected 'Innovation Sprints' to ensure dedicated bandwidth for strategic work, moving away from ad-hoc marginal effort.",
+        "owner": "Department Leads/PMO Office",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Limited capacity in the core technology team, leading to burnout and inability to dedicate time to innovation.",
+      "Lack of formal structure in middle management layers to enforce standardized processes across departments.",
+      "Innovation activities are perpetually constrained by competing day-to-day operational demands (Time barrier)."
+    ],
+    "progress": {
+      "improvements": [
+        "Significant investment in foundational digital infrastructure completed (ERP migration, Data Warehouse, COE setup), providing the necessary data backbone for advanced analysis.",
+        "Demonstrated ability to deliver quantifiable cost savings (€2.4M annualized) through automation initiatives."
+      ],
+      "persistent_gaps": [
+        "The inability to transition from *building* infrastructure (digital maturity) to *using* that infrastructure to fundamentally redesign and standardize complex human processes.",
+        "Lack of formal mechanisms or mandated time allocation for high-leverage, strategic innovation work."
+      ],
+      "achieved_milestones": [
+        "Completed migration to cloud ERP system.",
+        "Rolled out company-wide self-service BI dashboards.",
+        "Established Center of Excellence (COE) for RPA/low-code tools."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Nexus has moved from laying the groundwork for digital transformation to achieving measurable implementation success (ERP/Data Warehouse). While technical capability is high, the focus must now shift from process digitization to strategic application and standardization of scientific workflows."
+    }
+  }
+}

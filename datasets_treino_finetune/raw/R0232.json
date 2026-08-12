@@ -1,0 +1,195 @@
+{
+  "id": "R0232",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0411",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:05:23.751441+00:00",
+    "duration_ms": 41998,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Prime Systems",
+      "sector": "Information Technology",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Data engineering and business intelligence consultancy designing data warehouses, ETL pipelines, and Power BI dashboards for finance and retail clients. Team of 15 data engineers and analysts. Exploring AI-augmented analytics offering including natural language querying of client datasets. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 27,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0411",
+      "fields": {
+        "companyName": "Prime Systems",
+        "sector": "Information Technology",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Data engineering and business intelligence consultancy designing data warehouses, ETL pipelines, and Power BI dashboards for finance and retail clients. Team of 15 data engineers and analysts. Exploring AI-augmented analytics offering including natural language querying of client datasets. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 22,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 3 new team members. Launched customer feedback pilot. Budget for innovation increased 25%.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "superseded",
+      "opp_3": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_market_moat",
+        "type": "incremental",
+        "title": "Develop a Defensible AI-Augmented Data Service Layer",
+        "rationale": "The core competitive threat is market entry, requiring more than just good data warehousing. The company must formalize and productize its unique data insights (e.g., natural language querying) into exclusive service layers that competitors cannot replicate quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out the entire customer journey to identify 3 key points where AI augmentation can create stickiness (the 'moat').",
+            "Establish a dedicated internal 'Data Product Owner' role responsible for defining and prioritizing advanced data features.",
+            "Develop a pilot proof-of-concept showcasing NLQ capabilities against simulated client datasets."
+          ],
+          "resources_needed": [
+            "Dedicated senior software architect time (minimum 50% allocation)",
+            "Small, dedicated innovation budget line item ($5k - $10k)",
+            "Legal counsel review for potential partnership data usage agreements"
+          ],
+          "success_metric": "Successful deployment and measured utilization of the AI-augmented service layer in at least one paying client environment.",
+          "milestones": [
+            "Completion of Moat Mapping (4 weeks)",
+            "MVP Prototype deployed internally (8 weeks)",
+            "Pilot customer acceptance testing complete (12 weeks)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_data_analytics",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_governance_scale",
+        "type": "radical",
+        "title": "Establish a Center of Excellence (CoE) for Data Governance and Integration",
+        "rationale": "Current systems integration is ad-hoc, which severely limits scalability and increases technical debt. To manage growth and mitigate risk against competitors, the company needs formal governance that treats data flow as a product.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement standardized metadata management across all operational systems (ETL, BI, etc.).",
+            "Develop a Data Governance Charter and assign ownership roles for key data domains (e.g., Client ID, Transaction Type).",
+            "Select and pilot an Enterprise Data Catalog tool to track lineage and usage."
+          ],
+          "resources_needed": [
+            "Data Governance Lead (potentially fractional resource)",
+            "Dedicated time from core engineering team members for process documentation",
+            "Budget allocation for specialized data governance tooling"
+          ],
+          "success_metric": "Reduction in reported ad-hoc system workarounds by 75% and formalization of a repeatable onboarding process for new client data sources.",
+          "milestones": [
+            "Governance Charter approved (6 weeks)",
+            "Data Catalog populated with top 3 critical datasets (10 weeks)",
+            "Runbook established for new data source integration (14 weeks)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize and quantify the scope of 'owner alone' decision-making bottlenecks by documenting 5 key operational approvals that require delegation or process mandates.",
+        "owner": "Leadership/Founder",
+        "timeframe": "4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct a detailed assessment of technical debt related to ad-hoc system integrations, prioritizing the 3 most critical systems that must be integrated via API or middleware.",
+        "owner": "Senior Engineering Team Lead",
+        "timeframe": "6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Allocate a mandatory minimum of 10% of the new innovation budget specifically towards foundational governance tools (metadata, data cataloging) rather than just feature prototyping.",
+        "owner": "Finance/Innovation Advocate",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Decision-making remains highly centralized ('owner alone'), hindering necessary departmental scale and reducing resilience.",
+      "System integration is ad-hoc, leading to unmanaged technical debt and slow time-to-market for complex features.",
+      "Innovation capacity is easily disrupted by urgent production incidents, preventing deep focus required for strategic moats."
+    ],
+    "progress": {
+      "improvements": [
+        "The organization has successfully formalized its innovation rhythm (hackathons, fellows) and increased dedicated budget allocation.",
+        "Customer feedback collection has matured from general interest to a dedicated research function, providing actionable insights."
+      ],
+      "persistent_gaps": [
+        "Systemic data governance remains underdeveloped, preventing repeatable scaling of complex processes.",
+        "The innovation team lacks protected capacity and clear hierarchical process ownership, leading to founder dependency in critical decisions."
+      ],
+      "achieved_milestones": [
+        "Successfully launched automated quality inspection prototype into production, demonstrating internal R&D ROI."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has significantly improved its operational structure (formal process adoption) and financial commitment (increased budget). However, the core weakness of technical debt and centralized governance persists despite structural improvements. The strategic focus remains highly defined: market defense."
+    }
+  }
+}

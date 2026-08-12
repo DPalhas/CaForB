@@ -1,0 +1,203 @@
+{
+  "id": "R0097",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0370",
+  "split": "train",
+  "metadata": {
+    "sector": "Agriculture, Forestry & Fishing",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:22:07.904771+00:00",
+    "duration_ms": 52987,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Beacon Digital",
+      "sector": "Agriculture, Forestry & Fishing",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Aquaculture operation producing 800 tons of tilapia and seabass annually for export to Southern European markets. Currently expanding hatchery capacity by 40%. Main challenges are feed cost optimization and disease prevention in high-density tanks. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 23,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+    },
+    "previous_assessment": {
+      "id": "0370",
+      "fields": {
+        "companyName": "Beacon Digital",
+        "sector": "Agriculture, Forestry & Fishing",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Aquaculture operation producing 800 tons of tilapia and seabass annually for export to Southern European markets. Currently expanding hatchery capacity by 40%. Main challenges are feed cost optimization and disease prevention in high-density tanks. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 18,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We have a new CEO who joined 3 months ago from a more digitally mature industry. She has signaled that innovation and digital transformation will be top strategic priorities, replacing the previous leadership's conservative, cost-cutting orientation. The organization is cautiously optimistic but also uncertain about what concrete changes to expect."
+      }
+    },
+    "changes_since_last": "Restructured leadership team. 4 legacy processes automated. Exploring new revenue streams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "superseded",
+      "opp_3": "not_done",
+      "opp_4": "in_progress",
+      "step_1": "completed",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_revised",
+        "type": "incremental",
+        "title": "Integrated Production Efficiency & Predictive Modeling Suite",
+        "rationale": "The primary cost drivers are feed and disease. This opportunity evolves the previous process optimization work by focusing specifically on applying machine learning to aquaculture operational data (e.g., water quality, growth rates) to predict optimal feeding schedules and potential outbreaks before they occur.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate historical feed cost, tank sensor data, and disease outbreak records into a unified data lake.",
+            "Pilot the predictive model on one high-density tank segment to establish baseline accuracy metrics.",
+            "Form cross-functional working groups involving production specialists (SME) and tech squads."
+          ],
+          "resources_needed": [
+            "Dedicated Data Scientist (ML focus)",
+            "IoT Sensor Integration Budget",
+            "Production Operations Time Allocation (1 FTE)"
+          ],
+          "success_metric": "Reduction in feed cost per kilogram of biomass by 5% within 9 months.",
+          "milestones": [
+            "Data Model Foundation Complete (Month 2)",
+            "Pilot Prediction Accuracy > 80% (Month 4)",
+            "Enterprise Rollout Plan Drafted (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_digital_twin",
+        "type": "radical",
+        "title": "Digital Twin for Full Farm/Supply Chain Simulation",
+        "rationale": "Given the bold risk appetite, simulating the entire business ecosystem—from hatchery capacity planning to export logistics—allows Beacon Digital to optimize processes beyond current cost-cutting needs. This radical step minimizes financial risk associated with expansion and market fluctuations.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end supply chain process flow (Fish farm -> Processing -> Export).",
+            "Select a simulation platform vendor/toolset that supports environmental variables.",
+            "Define key variables for modeling, including regulatory constraints and commodity price volatility."
+          ],
+          "resources_needed": [
+            "External Simulation Consulting Partner",
+            "Strategic Leadership Sponsorship (CEO Level)",
+            "Legal/Compliance Review Time"
+          ],
+          "success_metric": "Identification of 3 major supply chain choke points or cost-saving alternative routes.",
+          "milestones": [
+            "Scope Definition & Platform Selection (Month 3)",
+            "Basic Model Simulation Run (Month 6)",
+            "Executive Review & Scenario Planning Workshop (Month 9)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize the 'Center of Excellence' role to govern data assets and standardize digital tools across production, procurement, and back-office functions.",
+        "owner": "COO/CIO",
+        "timeframe": "Q3"
+      },
+      {
+        "id": "ns_2",
+        "action": "Conduct a deep dive skill gap analysis to determine specific internal talent gaps (e.g., advanced ML application, industrial IoT maintenance) and establish targeted hiring or upskilling programs.",
+        "owner": "HR/Technology Leadership",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Establish a formal 'Innovation Portfolio Board' (separate from the current committee) that meets monthly to prioritize and fund selected '20% time' projects, ensuring alignment with strategic efficiency goals.",
+        "owner": "Executive Leadership Team",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational silo effect: Success in the customer onboarding flow has not automatically translated into process improvement or data sharing across core operational units (production/procurement).",
+      "Talent bandwidth vs. complexity gap: While innovation capacity exists ('20% time'), applying advanced digital solutions requires specialized, high-level ML talent that may not be readily available internally.",
+      "Strategic prioritization depth: The focus remains heavily on cost reduction and efficiency, potentially neglecting opportunities for market differentiation or sustainable long-term growth investments."
+    ],
+    "progress": {
+      "improvements": [
+        "The cross-functional collaboration model was successfully validated by the digital customer onboarding flow launch (reduced time from 12 to 5 days).",
+        "Automation efforts have significantly streamlined 4 legacy processes, creating reusable infrastructure.",
+        "New leadership and formalized innovation structures ('20% time', pitch competition) provide clear organizational momentum."
+      ],
+      "persistent_gaps": [
+        "Systemic process mapping beyond the immediate customer-facing journey is required to identify hidden inefficiencies in core production operations (e.g., internal logistics, resource allocation).",
+        "Integration between digital successes and physical/biological processes remains manual or reliant on spreadsheets."
+      ],
+      "achieved_milestones": [
+        "Successful launch of the automated customer onboarding flow with measurable positive impact on NPS.",
+        "Formation of a dedicated cross-functional project team for automation review."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The organizational landscape has dramatically improved due to new leadership and internal restructuring. The company moved from a general state of 'partial' maturity struggling with broad barriers toward a defined focus on measurable efficiency gains, evidenced by successful automation and launching cross-functional digital flows."
+    }
+  }
+}

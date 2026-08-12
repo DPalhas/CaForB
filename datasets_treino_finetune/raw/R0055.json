@@ -1,0 +1,202 @@
+{
+  "id": "R0055",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0060",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:30:42.260339+00:00",
+    "duration_ms": 60855,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Lumina Dynamics",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Specialty coffee and gourmet food retailer with 6 physical locations and a growing e-commerce channel. Roast our own beans in-house and curate 200+ artisanal products. Seeking to unify inventory across physical and online channels and implement a subscription-based loyalty program. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 0,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0060",
+      "fields": {
+        "companyName": "Lumina Dynamics",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Specialty coffee and gourmet food retailer with 6 physical locations and a growing e-commerce channel. Roast our own beans in-house and curate 200+ artisanal products. Seeking to unify inventory across physical and online channels and implement a subscription-based loyalty program. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 3,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 3 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop Tiered Loyalty and Subscription Ecosystem",
+        "rationale": "Building out a formalized subscription model is critical for predictable recurring revenue (MRR) and increases customer stickiness. This leverages the existing e-commerce platform while providing immediate, measurable ROI opportunities. Focus should be on unifying physical inventory data to ensure seamless omnichannel fulfillment.",
+        "execution_plan": {
+          "first_actions": [
+            "Integrate POS/inventory system with e-commerce backend to achieve single source of truth for stock levels.",
+            "Define 3 tiered membership levels (e.g., Bronze, Silver, Gold) tied to different incentives and product bundles.",
+            "Develop a pilot cohort group (e.g., current top 50 customers) to test the subscription model viability."
+          ],
+          "resources_needed": [
+            "IT/Development time dedicated solely to integration",
+            "Marketing team bandwidth for customer segmentation",
+            "Operations leads for fulfillment process mapping"
+          ],
+          "success_metric": "Achieve 15% of total revenue from recurring subscription services within 9 months.",
+          "milestones": [
+            "Integration completion and successful test transaction (Month 2)",
+            "MVP launch with pilot cohort (Month 4)",
+            "Full rollout across all 6 stores and online channels (Month 7)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Market De-risking through Segment Diversification (Non-Coffee Products)",
+        "rationale": "The high dependency on the top 3 clients and single product category presents an unacceptable risk. This opportunity requires identifying adjacent, uncorrelated revenue streams by packaging existing 'curated artisanal products' into new segments (e.g., local gifting boxes, specialized food pairing kits). This lowers dependence while using current inventory.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct competitive analysis on niche gift/pairing box markets outside of core coffee beans.",
+            "Curate and test 3 new 'mini-collection' product bundles based on existing low-performing SKU groups.",
+            "Establish clear ROI targets for these new segments to justify marketing spend."
+          ],
+          "resources_needed": [
+            "Product merchandising expertise",
+            "Market research budget (small)",
+            "Sales input from store managers in different regions"
+          ],
+          "success_metric": "Generate 10% of total revenue from the new diversified product lines within 6 months.",
+          "milestones": [
+            "Identify and vet three viable niche segments (Month 2)",
+            "Launch first seasonal mini-collection with measurable sales data (Month 4)",
+            "Optimize packaging/supply chain for scaled gifting model (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize dedicated R&D time allocation: Institute a mandatory 20% capacity reservation for developers (or designated staff) specifically for innovation projects, shielding them from operational support tasks.",
+        "owner": "Small Leadership Team / Founder",
+        "timeframe": "Immediate (Q3)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Develop a comprehensive Customer Concentration Risk Mitigation Plan: Implement a structured process to proactively identify and cultivate new, smaller client segments and business partners to reduce reliance on the top 3 accounts.",
+        "owner": "Head of Sales/Strategic Planning",
+        "timeframe": "Next 4 Weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Map operational processes for 'quick wins': Conduct a deep dive to identify manual, repetitive tasks in the physical stores or e-commerce fulfillment that can be automated with minimal development effort (i.e., immediate ROI).",
+        "owner": "Operations Manager / Generalist Developers",
+        "timeframe": "Next 6 Weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe operational bandwidth constraint: Innovation efforts are constantly competing with urgent day-to-day maintenance tasks.",
+      "High strategic concentration risk (55% revenue reliance on top clients), leaving the business highly vulnerable to single client loss.",
+      "Lack of dedicated, protected R&D capacity and skilled talent pool to execute complex technological shifts."
+    ],
+    "progress": {
+      "improvements": [
+        "Improved organizational structure: Transitioning from founder-led model to professional management with 3 senior hires.",
+        "Formalized innovation process: Running hackathons and maintaining an 'innovation fellow' program demonstrates structural commitment.",
+        "Operational success: The automated quality inspection prototype has been successfully implemented, yielding a measurable reduction in defect escape rate."
+      ],
+      "persistent_gaps": [
+        "Execution dependency on limited talent: Despite the formal processes, actual execution is stalled by developer bandwidth limitations.",
+        "Strategic resource allocation remains reactive rather than proactive.",
+        "The foundational business risk (client concentration) has not been structurally addressed."
+      ],
+      "achieved_milestones": [
+        "Reduction in defect escape rate by 35% via automated quality inspection.",
+        "Formalizing quarterly hackathons and patent portfolio management."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "The company has significantly matured its *process* and governance (formalization, hiring leaders), moving beyond initial founder-led uncertainty. However, the core operational constraints regarding talent bandwidth and extreme client concentration risk remain critical barriers to scalable growth."
+    }
+  }
+}

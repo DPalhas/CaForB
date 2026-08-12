@@ -1,0 +1,202 @@
+{
+  "id": "R0004",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0342",
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T18:20:20.618571+00:00",
+    "duration_ms": 52960,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vanguard Digital",
+      "sector": "E-commerce",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Recommerce platform facilitating peer-to-peer resale of premium children's clothing and gear. Mobile-first experience with AI-powered item condition grading from user-uploaded photos. Operating in 4 European countries. Scaling challenge is fraud detection and automated quality dispute resolution. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0342",
+      "fields": {
+        "companyName": "Vanguard Digital",
+        "sector": "E-commerce",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Recommerce platform facilitating peer-to-peer resale of premium children's clothing and gear. Mobile-first experience with AI-powered item condition grading from user-uploaded photos. Operating in 4 European countries. Scaling challenge is fraud detection and automated quality dispute resolution. The organization has significant capital, talent depth, and existing technology infrastructure, but internal processes are designed for stability and risk management — not speed. Innovation initiatives must navigate procurement, legal, compliance, and IT security review before receiving green-light. The key challenge is not resource availability but organizational velocity.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 4 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_diversification_strategy",
+        "type": "incremental",
+        "title": "Develop and Pilot New Product Line Segments for Revenue Diversification",
+        "rationale": "The organization's high concentration risk (55% revenue from 3 clients) is the primary threat. Leveraging existing AI grading capabilities, initial pilots should target entirely new categories or adjacent markets to build resilience. This effort directly addresses the strategic priority while utilizing established internal expertise.",
+        "execution_plan": {
+          "first_actions": [
+            "Map existing technology stack (AI/ML) against 3 non-core, high-demand product verticals.",
+            "Form cross-functional 'Tiger Team' with limited scope and accelerated decision authority to conduct initial market validation workshops.",
+            "Define a Minimum Viable Offering (MVO) for the highest potential new segment."
+          ],
+          "resources_needed": [
+            "Strategic Marketing Expertise",
+            "Dedicated Budget Pool ($500k - $1M)",
+            "Designated Internal Authority/Sponsor"
+          ],
+          "success_metric": "Number of validated, high-potential new product segments with associated pilot revenue projections.",
+          "milestones": [
+            "Segment feasibility report completed (3 months).",
+            "Successful launch of MVO in a controlled geographical area (6 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Mid-term (9-18 months)",
+        "carry_forward_from": "opp_diversification_strategy",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_fraud_dispute_automation",
+        "type": "incremental",
+        "title": "Scale AI for Automated Fraud Detection and Quality Dispute Resolution",
+        "rationale": "Fraud detection and automated quality dispute resolution are stated scaling challenges. Given the company's deep tech talent (AI/ML), automating these processes will improve operational velocity, reduce manual overhead, and enhance platform trust without requiring radical structural changes.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a detailed audit of current dispute resolution workflows to identify key decision points for automation.",
+            "Develop a Proof-of-Concept (POC) module using existing ML models trained on historical fraud/dispute data.",
+            "Integrate the POC into a sandbox environment alongside core operational systems."
+          ],
+          "resources_needed": [
+            "Data Science Engineering Team",
+            "Product Ownership Support",
+            "Legal Review (for dispute adjudication logic)"
+          ],
+          "success_metric": "Reduction in average time-to-resolution for disputes and measurable decrease in fraud losses.",
+          "milestones": [
+            "POC model achieves 85% accuracy rate on historical data (4 months).",
+            "Successful beta deployment with limited operational use (7 months)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Short-term (6-9 months)",
+        "carry_forward_from": "opp_fraud_dispute_automation",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_process_fast_track",
+        "action": "Establish a 'Rapid Innovation Fast Track' committee with limited decision authority (e.g., for budget < $100k or time < 3 months) to bypass full formal committee bottleneck.",
+        "owner": "Chief Operating Officer (COO)",
+        "timeframe": "Short-term (4 weeks)"
+      },
+      {
+        "id": "step_revenue_modeling",
+        "action": "Develop and socialize a comprehensive revenue diversification model that stress-tests the business against loss of 20% of top client revenue.",
+        "owner": "Strategy & Finance Team",
+        "timeframe": "Mid-term (6 weeks)"
+      },
+      {
+        "id": "step_tech_POC_scope",
+        "action": "Finalize the scope and KPIs for the Fraud/Dispute Resolution POC, ensuring clear sign-off from Legal and Compliance early in the process.",
+        "owner": "Product Lead / CTO",
+        "timeframe": "Short-term (4 weeks)"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational Velocity: Decisions are bottlenecked by formal, multi-layered committee approvals, significantly slowing time-to-market for promising initiatives.",
+      "Client Concentration Risk: Over-reliance on the top 3 clients (55% of revenue) creates systemic risk that requires immediate and aggressive diversification efforts.",
+      "Process Rigidity: Core internal processes are designed for stability and compliance rather than speed or iterative experimentation, hindering rapid scaling."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased Digital Maturity Score (3 -> 4), indicating successful technology adoption and capability growth.",
+        "Budget allocation increased from 3% to 6%, providing more financial headroom for innovation efforts.",
+        "Team morale is reported as improving, suggesting positive cultural shifts are underway."
+      ],
+      "persistent_gaps": [
+        "The core process barriers (decision-making structure) have not been functionally addressed, despite the implementation of new compliance procedures.",
+        "The 'Not Done' opportunities still represent significant strategic blind spots that require dedicated attention to achieve full diversification.",
+        "Reliance on formal committee approvals continues to be the primary drag on operational speed."
+      ],
+      "achieved_milestones": [
+        "Successful deployment of advanced CRM systems (18 months ago).",
+        "Increased compliance robustness through implementation of 4 new standard regulatory procedures.",
+        "Expansion of budget capacity and strategic scope for innovation initiatives."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Digital maturity improved significantly (3->4) and budget increased (3%->6%). While operational processes are more compliant following regulatory changes, the core systemic weaknesses related to organizational speed and client concentration remain critical concerns."
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "id": "R0207",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0086",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:46:33.014107+00:00",
+    "duration_ms": 45406,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Pulse",
+      "sector": "Healthcare & Medical",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Clinical laboratory performing hematology, biochemistry, microbiology, and molecular diagnostics for 300+ referring physicians and clinics. Processing 5,000 samples daily. Evaluating total lab automation track systems and AI-based peripheral blood smear analysis for differential cell counting. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "none",
+      "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0086",
+      "fields": {
+        "companyName": "Pulse",
+        "sector": "Healthcare & Medical",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Clinical laboratory performing hematology, biochemistry, microbiology, and molecular diagnostics for 300+ referring physicians and clinics. Processing 5,000 samples daily. Evaluating total lab automation track systems and AI-based peripheral blood smear analysis for differential cell counting. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "none",
+        "pastInitiatives": "We have not undertaken any systematic innovation or transformation programs. Our operational model has been largely unchanged for several years. While leadership acknowledges the need to modernize, we have not yet allocated resources, defined ownership, or committed to a timeline for any specific innovation initiative.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "1",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "process",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 3 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "superseded",
+      "step_1": "in_progress",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 3.7,
+    "score_delta": 2.7,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O1_automation_scaling",
+        "type": "incremental",
+        "title": "Scale Automation Maturity Across Core LIMS Processes",
+        "rationale": "The successful implementation of automation in lab diagnostics (opp_1 completion) must now be systematically applied to non-tech core processes, such as sample intake logging and reporting workflow. This moves the company from isolated digital pockets to standardized operational efficiency.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end workflows for 3 high-volume manual processes (e.g., sample triage).",
+            "Pilot low-code/no-code RPA solutions for data transfer between legacy systems and new LIMS.",
+            "Define a 'Process Automation Champion' role outside of the R&D squad."
+          ],
+          "resources_needed": [
+            "Dedicated Business Analyst (BA)",
+            "IT Process Mapping Software",
+            "Operational Leadership Time"
+          ],
+          "success_metric": "Reduction in manual data entry time by 30% within 6 months.",
+          "milestones": [
+            "Workflow mapping complete for top 3 processes.",
+            "Pilot RPA implemented and validated.",
+            "Process documentation ratified by department heads."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O2_market_expansion",
+        "type": "radical",
+        "title": "Establish Dedicated Growth Vehicle for Strategic Bets (M&A/New Lines)",
+        "rationale": "Given the existential mandate and willingness to make significant bets, the company needs a formal, ring-fenced structure outside of routine operations. This requires defining criteria for acquiring smaller tech competitors or entering adjacent diagnostic markets.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an executive steering committee (CEO/CFO/COO) with clear ownership of M&A strategy.",
+            "Develop a rigorous 'Target Screening Criteria' based on revenue contribution potential and technological fit.",
+            "Allocate dedicated seed funding ($X amount) separate from core operating budget for exploration."
+          ],
+          "resources_needed": [
+            "External Strategy Consultant",
+            "Dedicated Financial Modeling Expertise (CFO)",
+            "Executive Time Commitment"
+          ],
+          "success_metric": "Identification and initial vetting of 3 viable M&A/partnership targets within 12 months.",
+          "milestones": [
+            "Strategy committee chartered and meeting cadence set.",
+            "Target screening criteria finalized.",
+            "First pitch deck prepared for potential strategic partners."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Institute a formal 'Idea Incubation' program to bridge R&D output with operational needs, ensuring ideas move beyond the lab environment.",
+        "owner": "COO/Innovation Lead",
+        "timeframe": "Next Quarter (Q3)"
+      },
+      {
+        "id": "NS2",
+        "action": "Formalize and socialize a cross-functional risk matrix that incorporates new compliance procedures with growth initiatives, ensuring regulatory diligence does not stall strategic acceleration.",
+        "owner": "Compliance Officer/Senior Management",
+        "timeframe": "Within 45 days"
+      },
+      {
+        "id": "NS3",
+        "action": "Establish a formal customer feedback loop (e.g., structured interviews, dedicated feedback portal) to move beyond 'no_formal_process' and feed directly into the R&D/Growth vehicle.",
+        "owner": "Sales Leadership",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Budget Allocation Tension: The low budget percentage (2%) remains a critical constraint for realizing large-scale, transformative projects needed for growth.",
+      "Cultural Siloing: Operational teams and R&D squads operate largely independently, risking friction between efficient current operations and radical future bets.",
+      "Strategic Ownership Gap: While leadership acknowledges the need for transformation, formal ownership of the overall innovation governance model is still diffused across multiple committees."
+    ],
+    "progress": {
+      "improvements": [
+        "Formal operational procedures were established following regulatory changes (3 new standard procedures).",
+        "Team morale and internal commitment are improving, facilitating structured R&D work.",
+        "The company has successfully matured its digital maturity from Level 1 to Level 2, showing capability in data infrastructure."
+      ],
+      "persistent_gaps": [
+        "Integration: Despite tech progress, manual workflows and spreadsheet reliance persist outside of automated core systems.",
+        "Funding Mechanism: The process for allocating significant capital towards high-risk/high-reward strategic bets is undefined and remains a bottleneck.",
+        "Feedback Loop: Customer insights are still unstructured and not systematically captured or fed back into the product development cycle."
+      ],
+      "achieved_milestones": [
+        "Completion of core automation initiatives (Opp 1).",
+        "Formalization of R&D structure using lean startup methods.",
+        "Defined strategic mandate for aggressive market growth and potential M&A."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 1.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Maturity increased due to measurable operational progress (3 new procedures) and improved internal structure (R&D squads). Strategic focus shifted from basic stability to aggressive market growth, requiring a transition from incremental improvement to radical exploration."
+    }
+  }
+}

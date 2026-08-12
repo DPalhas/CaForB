@@ -70,7 +70,6 @@ def format_user_input(ex: dict) -> str:
     inp = ex["input"]
     company = inp["company"]
     answers = inp["answers"]
-
     budget = compute_budget(answers)
 
     lines = [
@@ -101,6 +100,23 @@ def format_user_input(ex: dict) -> str:
         f"Past Initiatives: {answers.get('pastInitiatives', 'None')}",
         f"Additional Context: {answers.get('additionalContext', 'None')}",
     ]
+
+    if "previous_assessment" in inp:
+        lines.append("")
+        lines.append("--- PRIOR ASSESSMENT ---")
+        prev = inp["previous_assessment"]
+        pf = prev.get("fields", prev)
+        lines.append(f"Company: {pf.get('companyName', '?')}")
+        lines.append(f"Sector: {pf.get('sector', '?')}")
+        lines.append(f"Risk: {pf.get('riskAppetite', '?')} | Priority: {pf.get('strategicPriority', '?')}")
+        lines.append(f"Regulatory: {pf.get('regulatoryEnvironment', '?')} | Competition: {pf.get('competitivePressure', '?')}")
+        lines.append(f"Budget: {pf.get('budgetPercentage', '?')}% of {pf.get('revenueRange', '?')}")
+        if pf.get('mainBarrier'):
+            lines.append(f"Barriers: {', '.join(pf.get('mainBarrier', []))}")
+        lines.append("")
+        lines.append(f"Changes since last assessment: {inp.get('changes_since_last', 'N/A')}")
+        lines.append(f"Recommendation status: {json.dumps(inp.get('recommendation_status', {}))}")
+
     return "\n".join(lines)
 
 
@@ -115,15 +131,27 @@ def format_assistant_output(ex: dict) -> str:
 
 def convert(examples: list[dict]) -> list[dict]:
     records = []
+    first_instruction = (
+        "You are a strategic corporate innovation advisor. "
+        "Analyse the company profile and survey responses, then respond ONLY with "
+        "a valid JSON object containing maturity_score, opportunities, next_steps, "
+        "and key_weaknesses. Apply all constraints consistently: budget limits, "
+        "regulatory burden, risk appetite alignment, competitive urgency, and "
+        "strategic priority focus."
+    )
+    reassess_instruction = (
+        "You are a strategic corporate innovation advisor conducting a reassessment. "
+        "Analyse the prior assessment summary, changes since last assessment, "
+        "and updated survey, then respond ONLY with a valid JSON object containing "
+        "maturity_score, score_delta, score_change, opportunities with carry_forward "
+        "tracking, next_steps, key_weaknesses, progress, and comparison_to_previous. "
+        "Apply all constraints consistently."
+    )
     for ex in examples:
-        instruction = ex.get("instruction", (
-            "You are a strategic corporate innovation advisor. "
-            "Analyse the company profile and survey responses, then respond ONLY with "
-            "a valid JSON object containing maturity_score, opportunities, next_steps, "
-            "and key_weaknesses. Apply all constraints consistently: budget limits, "
-            "regulatory burden, risk appetite alignment, competitive urgency, and "
-            "strategic priority focus."
-        ))
+        is_reassess = ex.get("assessment_type") == "reassessment"
+        instruction = reassess_instruction if is_reassess else ex.get(
+            "instruction", first_instruction
+        )
         record = {
             "messages": [
                 {"role": "system", "content": instruction},

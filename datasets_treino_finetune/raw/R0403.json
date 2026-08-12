@@ -1,0 +1,200 @@
+{
+  "id": "R0403",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0412",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T10:02:03.494545+00:00",
+    "duration_ms": 88062,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Networks",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Contract research organization providing clinical trial management, biostatistics, and regulatory submission services to pharma and biotech sponsors. Managing 40 active clinical trials across 25 countries. Evaluating risk-based monitoring platforms and AI-assisted adverse event case processing from clinical narratives. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+    },
+    "previous_assessment": {
+      "id": "0412",
+      "fields": {
+        "companyName": "Apex Networks",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Contract research organization providing clinical trial management, biostatistics, and regulatory submission services to pharma and biotech sponsors. Managing 40 active clinical trials across 25 countries. Evaluating risk-based monitoring platforms and AI-assisted adverse event case processing from clinical narratives. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 13,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": "We completed a merger with a similarly-sized competitor 4 months ago and are in the middle of integrating teams, systems, and processes. The combined organization has significant duplication — two CRMs, two HR systems, overlapping product lines. There is a unique window to redesign processes from scratch rather than patching legacy approaches, but cultural integration is fragile and change fatigue is real."
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 6 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "completed",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 2.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A_biopharma_platform",
+        "type": "radical",
+        "title": "Establish a Managed Data Commons for Clinical Outcomes (CDO)",
+        "rationale": "The industry needs standardized, federated data access. Leveraging the combined network's unique patient and trial data assets to create a secure CDO platform is a radical diversification step that moves beyond service delivery into asset monetization. This requires solving deep integration challenges created by the merger.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an inter-departmental Data Governance Committee (DGC) including legal and compliance stakeholders.",
+            "Map data schema requirements across the two legacy CRMs/systems to identify core, transferable datasets.",
+            "Pilot a secure, anonymized data sharing agreement with one key strategic partner for initial validation."
+          ],
+          "resources_needed": [
+            "Data Scientists (3)",
+            "Legal Counsel (Compliance Focus)",
+            "Cloud Architecture Expertise"
+          ],
+          "success_metric": "Successful deployment of a functional, anonymized data sandbox available to internal stakeholders within 9 months.",
+          "milestones": [
+            "DGC formation and policy approval (Q1).",
+            "Data pipeline proof-of-concept (Q2).",
+            "Initial partner validation agreement signed (Q3)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_B_process_optimization_merge",
+        "type": "incremental",
+        "title": "Standardize Global Core Process Workflow (CRM/HRIS Consolidation)",
+        "rationale": "The merger created significant process duplication and cultural friction. By focusing on consolidating 2-3 core processes (e.g., Adverse Event Reporting, Resource Allocation) into a single, unified standard workflow, Apex can immediately reduce operational drag and improve speed. This is an essential foundation for radical efforts.",
+        "execution_plan": {
+          "first_actions": [
+            "Select the 'best-of-breed' process model (e.g., which CRM handles adverse event reporting most effectively) via a cross-functional workshop.",
+            "Develop and implement mandatory, compliance-checked SOPs for the consolidated workflow.",
+            "Conduct targeted training for end-users on the single, optimized process flow."
+          ],
+          "resources_needed": [
+            "Process Improvement Team (BPR expertise)",
+            "System Owners (CRM/HRIS leads)",
+            "Change Management Specialist"
+          ],
+          "success_metric": "Reduction of manual effort time spent on the consolidated workflow by 40% within 6 months.",
+          "milestones": [
+            "Process mapping and gap analysis completed (Q1).",
+            "System configuration changes finalized and tested (Q2).",
+            "Go-live with minimal process variance reported."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": "opp_B_prior",
+        "carry_forward_status": "evolved_to"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize the Data Governance Committee (DGC) charter and secure compliance sign-off on initial data usage protocols for Opp A.",
+        "owner": "Strategy Function / Compliance Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Execute the 'Process Workshop' phase of Opp B, involving stakeholders from both merged entities to achieve consensus on the single source of truth workflow.",
+        "owner": "Operations / Process Owner",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Leverage the '20% time' policy to dedicate a dedicated squad to building a digital process map of current state workflows (opp_B) for visualization and gap analysis.",
+        "owner": "Technology Organization / Squad Leads",
+        "timeframe": "Ongoing / Next Quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Fragmented systems landscape due to the recent merger, leading to process duplication (two CRMs, two HRIS).",
+      "Fragile cultural integration and change fatigue among staff, slowing adoption of new processes.",
+      "Lack of formalized, governed data standards necessary for large-scale asset diversification."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful adoption and scaling of Agile methodology within engineering teams (60% release cycle reduction).",
+        "Implementation of 6 new standard procedures following regulatory changes.",
+        "Increased visibility into strategic opportunities (board-level diversification focus)."
+      ],
+      "persistent_gaps": [
+        "Integration gaps remain high across operational processes and core systems.",
+        "Cross-departmental cultural alignment is still weak, creating resistance to standardized workflows.",
+        "Data assets are siloed or poorly governed, hindering large-scale platform development."
+      ],
+      "achieved_milestones": [
+        "completion of necessary steps for Opp 2 (advanced)",
+        "Adoption of sprint methodology in product teams",
+        "Formalization of annual board-level innovation budget commitment"
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Significant operational gains (Agile adoption, regulatory compliance) and clear strategic direction toward diversification were achieved following the merger, shifting focus from core process stability to asset leveraging."
+    }
+  }
+}

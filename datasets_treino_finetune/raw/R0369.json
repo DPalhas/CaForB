@@ -1,0 +1,200 @@
+{
+  "id": "R0369",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0380",
+  "split": "train",
+  "metadata": {
+    "sector": "Financial Services",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:30:36.257007+00:00",
+    "duration_ms": 49232,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core",
+      "sector": "Financial Services",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Corporate finance advisory boutique specializing in M&A, capital raising, and valuation services for technology and healthcare companies in the €5M-€100M deal range. Completed 14 transactions in the last 18 months. Evaluating an AI-assisted comparable company analysis and precedent transaction database tool. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 17,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0380",
+      "fields": {
+        "companyName": "Core",
+        "sector": "Financial Services",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Corporate finance advisory boutique specializing in M&A, capital raising, and valuation services for technology and healthcare companies in the €5M-€100M deal range. Completed 14 transactions in the last 18 months. Evaluating an AI-assisted comparable company analysis and precedent transaction database tool. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 17,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 3 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "step_1": "superseded",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_rerun",
+        "type": "radical",
+        "title": "Transition Advisory Model to Recurring Revenue Retainers",
+        "rationale": "The goal of reaching $50M ARR necessitates a pivot away from transactional, one-time deals. Moving toward retained advisory services creates predictable cash flow and deepens client relationships, which is crucial for sustained growth in the high-competition financial sector.",
+        "execution_plan": {
+          "first_actions": [
+            "Work with legal counsel to define service tiers and contractual language for annual retainer models.",
+            "Identify 3-5 anchor clients suitable for a pilot transition to recurring billing/retainer agreements.",
+            "Develop new sales collateral focused on 'Continuous Risk Management' rather than single project outcomes."
+          ],
+          "resources_needed": [
+            "Executive Sponsor (C-suite commitment)",
+            "Legal Counsel",
+            "Sales Operations Support"
+          ],
+          "success_metric": "Conversion of 10% of current client base to retainer model within 12 months.",
+          "milestones": [
+            "Finalized pilot offering scope (Month 2)",
+            "Secure 3 pilot clients and sign LOIs (Month 4)",
+            "Formalize billing/invoicing system adjustments (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_ai",
+        "type": "incremental",
+        "title": "Implement Specialized AI Intelligence Platform for Deal Comps",
+        "rationale": "Evaluating an AI tool addresses a key operational bottleneck (comparable analysis time). Integrating this technology will immediately boost the efficiency of the core product, allowing senior staff to focus on higher-leverage strategic advice rather than data compilation.",
+        "execution_plan": {
+          "first_actions": [
+            "Define minimum viable product requirements with a focus on specific sector/deal types (Tech/Health).",
+            "Conduct compliance review of the chosen AI vendor's data handling and security protocols.",
+            "Pilot integration with internal CRM/data sources to ensure seamless workflow adoption."
+          ],
+          "resources_needed": [
+            "Senior Engineer (20% time dedicated)",
+            "Product Owner",
+            "Compliance Officer"
+          ],
+          "success_metric": "Reduction of manual comparable company analysis time by 40%.",
+          "milestones": [
+            "Vendor selection and contract negotiation (Month 1-2)",
+            "Internal data mapping and cleansing (Month 3)",
+            "Successful pilot run with limited client use (Month 4)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Hold a dedicated leadership workshop to define the core value proposition and financial model for recurring revenue services.",
+        "owner": "Leadership Team / CEO",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Formalize an 'Innovation Time Budget' (e.g., 1 day/week) protected from operational firefighting, and dedicate the senior engineer entirely to prototyping O2.",
+        "owner": "COO / Department Head",
+        "timeframe": "Immediate"
+      },
+      {
+        "id": "ns3",
+        "action": "Document all successful processes (like the onboarding flow) into repeatable SOPs to mitigate reliance on key individual knowledge.",
+        "owner": "Operations Lead",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Operational bandwidth is frequently diverted by urgent production incidents, severely limiting dedicated innovation time.",
+      "The decision-making process remains highly decentralized and reactive ('owner_alone'), hindering predictable strategic execution.",
+      "Critical processes lack formalized Standard Operating Procedures (SOPs), posing a risk during high growth or staff changes."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully launched a cross-functional digital customer onboarding flow, significantly improving efficiency and NPS scores (+22 points).",
+        "Digital maturity has increased from 3 to 4 through successful process implementation.",
+        "Leadership alignment on the need for modernization is visible."
+      ],
+      "persistent_gaps": [
+        "Lack of sustained dedicated budget or protected time specifically allocated for experimentation and innovation development.",
+        "The strategic pivot (recurring revenue) remains conceptual, requiring structural change rather than just tactical execution.",
+        "PMI stress continues to pull focus away from long-term strategic initiatives."
+      ],
+      "achieved_milestones": [
+        "Onboarding process reduced average time from 12 days to 5 days.",
+        "Established a measurable, scalable digital customer journey experience."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant progress was made in execution (onboarding flow) and digital capability maturity. The primary evolution is the firm commitment to an ARR target ($50M), which mandates a radical shift in business model from transactional advisory to retained enterprise services."
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "R0218",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0101",
+  "split": "train",
+  "metadata": {
+    "sector": "E-commerce",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:54:29.582203+00:00",
+    "duration_ms": 47170,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Systems",
+      "sector": "E-commerce",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Recommerce platform facilitating peer-to-peer resale of premium children's clothing and gear. Mobile-first experience with AI-powered item condition grading from user-uploaded photos. Operating in 4 European countries. Scaling challenge is fraud detection and automated quality dispute resolution. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "11 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0101",
+      "fields": {
+        "companyName": "Strato Systems",
+        "sector": "E-commerce",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Recommerce platform facilitating peer-to-peer resale of premium children's clothing and gear. Mobile-first experience with AI-powered item condition grading from user-uploaded photos. Operating in 4 European countries. Scaling challenge is fraud detection and automated quality dispute resolution. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 4 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "step_1": "not_done",
+      "step_2": "superseded",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Digital Customer Self-Service Overhaul for Retention",
+        "rationale": "The decline in customer retention (92% to 84%) and feedback citing product stagnation is the most urgent threat. This requires moving from general platform improvements to targeted, self-service digital tools that specifically address high-value segment pain points.",
+        "execution_plan": {
+          "first_actions": [
+            "Map critical customer journeys for mid/enterprise users to identify specific friction points in dispute resolution and item grading.",
+            "Establish a dedicated cross-functional working group (Product, Legal, Customer Success) led by senior sponsorship to bypass committee bottlenecks.",
+            "Integrate mandatory compliance review steps (e.g., data residency rules for EU countries) into the UX/UI wireframing process before development begins."
+          ],
+          "resources_needed": [
+            "Customer journey mapping expertise",
+            "Legal/Compliance counsel input",
+            "Product design budget allocation ($$$)"
+          ],
+          "success_metric": "Increase in self-service usage rate (e.g., dispute filing, returns initiation) by 20% within 6 months.",
+          "milestones": [
+            "Completion of user journey mapping and pain point prioritization.",
+            "Prototype developed and tested with key mid-tier segment users.",
+            "Pilot launch in one test market (e.g., Germany) focusing solely on self-service tools."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Standardizing Fraud and Dispute Resolution Workflows",
+        "rationale": "The scaling challenge in fraud detection and automated dispute resolution needs to be formalized into a scalable process. By creating standardized workflows, Strato can reduce reliance on manual intervention and improve the overall user experience while maintaining regulatory integrity.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop comprehensive flowcharts detailing the current manual/semi-automated dispute resolution lifecycle.",
+            "Consult with legal teams to build compliance guardrails for AI decision thresholds in disputed grading/returns.",
+            "Pilot an internal PoC using newly available resources (8% budget) to automate 30% of the initial triage process."
+          ],
+          "resources_needed": [
+            "Process architecture consultants",
+            "AI/ML engineering time",
+            "Legal compliance officer time"
+          ],
+          "success_metric": "Reduction in average dispute resolution time by 15%",
+          "milestones": [
+            "Completion of the 'as-is' and 'to-be' process mapping.",
+            "Finalized technical specification for automated triage engine.",
+            "Successful internal dry run with test cases."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Mandate cross-departmental governance sponsorship (Senior Executive Level) for Opp 1 to break down organizational inertia and culture gaps.",
+        "owner": "CEO/COO Office",
+        "timeframe": "Immediate"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct deep-dive workshops with Marketing, Support, and Engineering (all teams) to standardize communication protocols around the new agile cadence.",
+        "owner": "Head of Operations/Process Improvement",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Review current budget allocation to ensure sufficient ring-fenced funding (8% budget) is immediately available for the dedicated working group supporting Opp 1.",
+        "owner": "CFO/Finance Dept",
+        "timeframe": "Next 30 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia and resistance to change, particularly outside of core engineering functions.",
+      "Over-reliance on formal committee approval processes, which drastically slows decision velocity for market defense initiatives.",
+      "Inconsistent cross-functional process adoption (e.g., Marketing/Support lagging the technical teams' agile speed)."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful adoption of Agile methodologies within engineering significantly reduced release cycle time by 60%.",
+        "Increased operational resources and budget allocation (from 3% to 8%), providing necessary scale."
+      ],
+      "persistent_gaps": [
+        "Cross-functional process alignment remains poor; adjacent teams are not fully utilizing the benefits of rapid deployment.",
+        "The core structural issues (inertia, governance) persist despite increased resources."
+      ],
+      "achieved_milestones": [
+        "Establishment of a functional and high-velocity engineering development pipeline.",
+        "Confirmation of dedicated senior budget ownership for innovation initiatives."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved process capability (Agile adoption) and substantially increased innovation budget/team size. However, the core business urgency has shifted from general process improvement to urgent market defense strategies focused on solving critical customer retention issues."
+    }
+  }
+}

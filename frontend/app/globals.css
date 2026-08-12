@@ -29,6 +29,11 @@
   /* Soft sage / moss green accent */
   --accent: oklch(0.48 0.07 160);
   --accent-foreground: oklch(0.99 0 0);
+
+  /* Cobalt / electric indigo — analytical metrics accent */
+  --analytical: oklch(0.45 0.18 255);
+  --analytical-foreground: oklch(0.99 0 0);
+
   --destructive: oklch(0.52 0.18 15);
   --border: oklch(0.24 0.01 60 / 60%);
   --input: oklch(0.18 0.01 60);
@@ -39,11 +44,8 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image:
-    radial-gradient(at 0% 0%, rgba(251, 146, 60, 0.06) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.06) 0px, transparent 50%);
   background-attachment: fixed;
 }
 

@@ -1,0 +1,201 @@
+{
+  "id": "R0086",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0223",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Medium",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:09:11.473986+00:00",
+    "duration_ms": 68839,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vanguard",
+      "sector": "Healthtech",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "6 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0223",
+      "fields": {
+        "companyName": "Vanguard",
+        "sector": "Healthtech",
+        "size": "Medium",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 8 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "step_1": "completed",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Create a Unified Digital Care Journey (Digital UX Shield)",
+        "rationale": "To defend market share against undercutting competitors, Vanguard must strengthen the user experience and increase switching costs. This requires integrating clinical tracking data (from RCTs) directly into the app's core journey. Focusing on retention and value-added features prevents clients from leaving due to perceived 'modernity' gaps.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the end-to-end user journey, identifying all integration points between therapy, corporate wellness, and clinical tracking systems.",
+            "Develop a phased roadmap focusing initially on improving core feature parity with competitors (e.g., modern UI/UX elements).",
+            "Establish compliance checkpoints for integrating sensitive patient data into new digital workflows."
+          ],
+          "resources_needed": [
+            "Dedicated UX/UI design team (internal or contracted)",
+            "API integration specialist",
+            "Clinical governance officer"
+          ],
+          "success_metric": "Decrease in 6-month user churn rate by X% (target: 15%)",
+          "milestones": [
+            "Finalized high-fidelity wireframes for integrated journey.",
+            "Successful pilot testing of the updated digital workflow with a small group of users.",
+            "Go/No-go decision based on measurable user adoption metrics."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Establish Institutional Innovation Governance Framework (Idea Lifecycle)",
+        "rationale": "The failure of the internal dashboard highlighted a critical gap: good ideas lack institutional support. Vanguard needs a formal, low-friction process to vet and resource promising side projects. This governance framework ensures that innovative concepts are vetted for clinical viability, operational feasibility, and technical integration before significant resources are committed.",
+        "execution_plan": {
+          "first_actions": [
+            "Draft a standardized 'Innovation Intake Form' requiring scope definition, projected ROI, and required resource estimate (addressing budget/strategy barriers).",
+            "Appoint an Innovation Review Board (IRB) with cross-functional representation (Tech, Operations, Clinical, Strategy) to maintain objectivity.",
+            "Mandate the governance framework for all post-merger systems integration projects."
+          ],
+          "resources_needed": [
+            "Executive sponsorship (Board/C-suite mandate)",
+            "Operational process architect",
+            "Training materials for department heads"
+          ],
+          "success_metric": "Successful formal vetting and resource allocation for 2+ non-core departmental ideas within 6 months.",
+          "milestones": [
+            "IRB charter finalized and approved by the executive committee.",
+            "First cohort of internal projects submitted through the new intake form.",
+            "Establishment of a clear 'kill switch' mechanism to de-scope failing ideas early."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "4-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "The Executive Committee must mandate the creation of a dedicated Systems Integration Working Group (SIWG) to prioritize ERP, CRM, and HRIS data flow mapping.",
+        "owner": "COO/CIO",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Launch a formal cultural workshop addressing the operational gaps between legacy teams and new merger members to mitigate friction points.",
+        "owner": "HR/People Operations",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Define initial KPIs for the Innovation Review Board (IRB) charter, focusing on speed-to-value rather than sheer volume of ideas.",
+        "owner": "Strategy Function Leader",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of integrated core systems (ERP, CRM, HRIS) hinders end-to-end operational efficiency and data visibility.",
+      "Persistent cultural friction following the merger complicates cross-departmental execution velocity.",
+      "Innovation efforts are currently reliant on informal enthusiasm rather than a formal, sustainable governance structure."
+    ],
+    "progress": {
+      "improvements": [
+        "The organization has solidified its position as an incumbent leader with clear clinical evidence (RCT), increasing external credibility.",
+        "Internal processes and funding for innovation are now standing agenda items at the board level, providing necessary strategic buy-in.",
+        "Team size growth and departmental formalization show commitment to scale."
+      ],
+      "persistent_gaps": [
+        "The inability to translate clinical success into fully integrated digital/operational experiences remains a major bottleneck.",
+        "Operationalizing governance (moving from policy on paper to daily practice) is proving difficult across siloed departments.",
+        "Mitigating the cultural impact of the recent merger requires sustained, targeted effort."
+      ],
+      "achieved_milestones": [
+        "Successfully developed and leveraged published clinical evidence for strategic messaging.",
+        "Formalized budget allocation for innovation at the board level.",
+        "Structural processes (e.g., QBRs) are in place to review departmental performance."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has transitioned from an 'informal' state to a partially structured organization with board-level commitment and measurable data (RCT). The focus has shifted from simply identifying problems to developing systematic governance structures and defense mechanisms against competition."
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "R0116",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0242",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:39:58.592735+00:00",
+    "duration_ms": 106580,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Ventures",
+      "sector": "Healthcare & Medical",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Home healthcare services provider delivering nursing, physiotherapy, and palliative care to 1,200 patients at home. Managing a workforce of 180 healthcare professionals with complex scheduling and routing requirements. Seeking to implement a mobile workforce management platform with intelligent visit scheduling optimization. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "12 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0242",
+      "fields": {
+        "companyName": "Apex Ventures",
+        "sector": "Healthcare & Medical",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Home healthcare services provider delivering nursing, physiotherapy, and palliative care to 1,200 patients at home. Managing a workforce of 180 healthcare professionals with complex scheduling and routing requirements. Seeking to implement a mobile workforce management platform with intelligent visit scheduling optimization. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Cost reduction and process optimization are our dominant strategic priorities. Our industry is experiencing margin compression due to rising input costs and price-sensitive customers. We need to systematically identify and eliminate inefficiencies across procurement, production, logistics, and back-office functions. Every 1% of margin improvement directly impacts our ability to reinvest in growth.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 13,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 8 new team members. Launched customer feedback pilot. Budget for innovation increased 5%.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "step_1": "superseded",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_optimization_workflows",
+        "type": "incremental",
+        "title": "End-to-End Clinical Pathway Workflow Optimization",
+        "rationale": "The core business bottleneck involves complex, manual scheduling and routing for 180 professionals. Leveraging the newly established data warehouse and RPA tools can move beyond basic cost tracking to optimizing entire patient care lifecycles (e.g., post-discharge follow-up). This will directly address margin compression.",
+        "execution_plan": {
+          "first_actions": [
+            "Map 3 critical clinical pathways (e.g., initial assessment, physiotherapy cycle) end-to-end to identify process handoffs and data choke points.",
+            "Develop a proof-of-concept scheduling module within the workforce management platform, integrating real-time patient status data from the EHR/ERP.",
+            "Establish compliance review protocols for any automated decision affecting patient care coordination."
+          ],
+          "resources_needed": [
+            "Clinical Subject Matter Experts (SMEs)",
+            "Workforce Management Platform Vendor",
+            "Data Analytics Team"
+          ],
+          "success_metric": "Reduction in average scheduling time by 25% and decrease in redundant visits by 10%.",
+          "milestones": [
+            "Process mapping completion (3 months)",
+            "Pilot deployment of automated routing for a single service line (6 months)",
+            "System integration sign-off."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_proactive_care_system",
+        "type": "incremental",
+        "title": "Implementation of Predictive Deterioration Alerting System",
+        "rationale": "The existing data warehouse provides excellent cost reporting, but the next leap is moving from historical analysis to predictive modeling. By integrating patient history, visit metrics, and biometric data, Apex can proactively alert staff to potential declines *before* they become critical failures, improving both care quality and resource utilization.",
+        "execution_plan": {
+          "first_actions": [
+            "Define 3 high-risk 'predictive indicators' (e.g., polypharmacy interactions, fall risk score increases).",
+            "Develop a data model within the warehouse to correlate these indicators with negative outcomes.",
+            "Design and pilot an alert workflow that triggers required staff action and documentation, adhering strictly to HIPAA/data privacy regulations."
+          ],
+          "resources_needed": [
+            "Biostatistician/Data Scientist",
+            "IT Infrastructure Lead (Cloud)",
+            "Medical Director Input"
+          ],
+          "success_metric": "Reduction in preventable readmissions or adverse events by 15% within the pilot cohort.",
+          "milestones": [
+            "Data pipeline establishment for required data feeds (3 months)",
+            "Model training and validation with historical data (6 months)",
+            "Pilot deployment and clinical review."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Formalize a Governance Charter for the Center of Excellence (CoE) to standardize and audit all low-code/RPA development, ensuring security and regulatory compliance across all new automation initiatives.",
+        "owner": "Transformation Office Lead",
+        "timeframe": "Immediate (Q1)"
+      },
+      {
+        "id": "ns2",
+        "action": "Conduct mandatory cross-functional workshops involving operational staff and the data team to build trust in, and adoption of, predictive analytics tools, focusing on change management.",
+        "owner": "HR/Project Management Office (PMO)",
+        "timeframe": "Q1 - Q2"
+      },
+      {
+        "id": "ns3",
+        "action": "Prioritize the integration gap between the electronic health record (EHR) and the newly implemented scheduling platform to ensure a single source of truth for patient status.",
+        "owner": "IT Director",
+        "timeframe": "Q2"
+      }
+    ],
+    "key_weaknesses": [
+      "Operational Integration Complexity: Difficulty in fully integrating disparate systems (EHR, ERP, WFM) to provide a single operational view of the patient/resource.",
+      "Cultural Adoption Risk: Reliance on 'opportunistic' improvements indicates that structured change management and incentive alignment are needed beyond technical implementation.",
+      "Governance Scalability: While automation is mature, ensuring quality control and compliance across an expanding portfolio of departmental, self-built low-code solutions presents a governance risk."
+    ],
+    "progress": {
+      "improvements": [
+        "Established robust foundational digital assets (Cloud ERP migration, company-wide Data Warehouse, RPA/Low-Code CE).",
+        "Formalized internal capacity for improvement via a dedicated Transformation Office.",
+        "Increased funding commitment to innovation and quantifiable process savings (€2.4M realized)."
+      ],
+      "persistent_gaps": [
+        "Translating data capability into optimized clinical workflows rather than just cost reports.",
+        "Addressing systemic resource constraints and the 'tight-knit' culture barrier to scalable, standardized processes.",
+        "Dependency on manual mapping of critical operational pathways for automation."
+      ],
+      "achieved_milestones": [
+        "Successful migration of core financial and operational data to the cloud ERP system.",
+        "Operationalization of self-service BI dashboards allowing decentralized cost tracking."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "2023-10-25",
+      "assessment_number": 2,
+      "key_changes": "Significant structural improvements have been achieved: the company has formalized its transformation capability (dedicated office, data warehouse) and delivered initial cost savings through automation. The focus is shifting from foundational setup to high-value operational optimization."
+    }
+  }
+}

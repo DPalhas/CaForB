@@ -1,0 +1,199 @@
+{
+  "id": "R0367",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0308",
+  "split": "train",
+  "metadata": {
+    "sector": "SaaS / Software",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:28:55.749888+00:00",
+    "duration_ms": 47715,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Titan",
+      "sector": "SaaS / Software",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "HR tech SaaS platform for mid-market companies offering recruitment pipeline management, onboarding automation, and performance review cycles. 400+ customers, 80,000 active employee profiles. Recently launched an AI-assisted job description generator. Evaluating skills-gap analysis and internal mobility recommendation features. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 11,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0308",
+      "fields": {
+        "companyName": "Titan",
+        "sector": "SaaS / Software",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "HR tech SaaS platform for mid-market companies offering recruitment pipeline management, onboarding automation, and performance review cycles. 400+ customers, 80,000 active employee profiles. Recently launched an AI-assisted job description generator. Evaluating skills-gap analysis and internal mobility recommendation features. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 11,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 6 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "step_1": "completed",
+      "step_2": "not_done",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "score_delta": 0.7,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop an Ecosystem Moat through Strategic Compliance Partnerships",
+        "rationale": "Given the major international competitor threat and high regulatory environment, simply differentiating features is not enough. The company must create a dependency moat by integrating third-party best-in-class solutions, particularly those that meet stringent compliance standards, making switching costs prohibitively high for customers.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out core industry compliance gaps (e.g., GDPR, CCPA) and identify partnership areas where external expertise adds significant value.",
+            "Design a standardized integration framework that mandates compliance adherence for all new partners.",
+            "Establish a Partner Certification program that validates both technical capability and regulatory alignment."
+          ],
+          "resources_needed": [
+            "Legal/Compliance team time",
+            "Partner Integration Engineering resources",
+            "Business Development leadership"
+          ],
+          "success_metric": "Number of certified, high-value strategic partnerships integrated into the platform.",
+          "milestones": [
+            "Completion of compliance gap analysis and partner criteria definition (Q1)",
+            "Launch of pilot integration with 2 critical partners (Q2)",
+            "Formalization and marketing of the 'Certified Ecosystem' badge/tier system (H2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_3",
+        "type": "radical",
+        "title": "Implement Decentralized 'Innovation Sandbox' Governance for Business Units",
+        "rationale": "The current governance model, reliant on rigorous ROI modeling and centralized committee approval, acts as a significant bottleneck in the matrix organization. To accelerate market defense, the company must empower BUs with controlled autonomy to test rapid, small-scale differentiators without full central sign-off.",
+        "execution_plan": {
+          "first_actions": [
+            "Pilot a 'Sandbox' funding mechanism that allocates micro-budgets (e.g., $50k-$100k) directly to BUs for high-priority, rapid experiments.",
+            "Develop clear 'exit criteria' and reporting standards so the CDTO maintains oversight without stifling speed.",
+            "Train BU leadership on risk acceptance thresholds versus traditional ROI modeling."
+          ],
+          "resources_needed": [
+            "Executive Sponsorship (CEO/COO level)",
+            "Legal counsel for defining liability boundaries",
+            "CDTO process architects and facilitators"
+          ],
+          "success_metric": "Reduction in average time-to-proof-of-concept (PoC) approval cycle by 40%.",
+          "milestones": [
+            "Drafting of Sandbox charter and risk guidelines (Q1)",
+            "Successful pilot launch with 3 designated BUs (Q2)",
+            "Integration of successful sandbox learnings into the main innovation pipeline process (H2)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1",
+        "action": "CDTO must facilitate a workshop with BU leaders to draft the operational charter for the Decentralized Innovation Sandbox (opp_3).",
+        "owner": "Head of Digital Transformation Office",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_2",
+        "action": "Product and Partnerships teams must formalize the top 5 potential strategic partners needed for compliance-based moats (opp_1).",
+        "owner": "VP of Product / Business Development",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_3",
+        "action": "Executive leadership must redefine and communicate the updated governance boundaries between central CDTO funding and local BU autonomy.",
+        "owner": "C-Suite Executive Team",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Governance structure remains a bottleneck; centralized decision-making slows down necessary market agility.",
+      "Adoption variability across business units undermines the platform's unified value proposition.",
+      "Strategic focus needs to shift from pure product features to building defensible, interconnected ecosystems."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful expansion into adjacent markets and acquisition of 6 new enterprise clients demonstrates strong market traction.",
+        "Increased capability maturity in the digital organization (80+ staff) allows for complex initiative execution."
+      ],
+      "persistent_gaps": [
+        "Structural governance hurdles (committee approval/ROI gating) still prevent rapid, decentralized innovation adoption.",
+        "The matrix organizational structure continues to dilute consistent rollout and utilization of new features across all BUs."
+      ],
+      "achieved_milestones": [
+        "Maintaining a high level of product delivery velocity, evidenced by launching 4 product lines contributing 18% revenue growth over three years.",
+        "Successfully building out internal incubation capacity (6 products graduated in 2 years)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has significantly strengthened its execution muscle (staffing/product lines) and achieved critical market validation (enterprise clients). However, the strategic challenge of organizational governance to match market velocity remains a primary drag on overall maturity."
+    }
+  }
+}

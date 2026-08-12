@@ -1,0 +1,198 @@
+{
+  "id": "R0123",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0208",
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:47:35.770233+00:00",
+    "duration_ms": 117986,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst Dynamics",
+      "sector": "Real Estate",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Real estate brokerage with 8 offices and 85 agents facilitating residential and light commercial transactions. Average of 600 closed transactions annually. Evaluating AI-powered property valuation models and automated comparable market analysis report generation. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 8,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0208",
+      "fields": {
+        "companyName": "Catalyst Dynamics",
+        "sector": "Real Estate",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Real estate brokerage with 8 offices and 85 agents facilitating residential and light commercial transactions. Average of 600 closed transactions annually. Evaluating AI-powered property valuation models and automated comparable market analysis report generation. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 5,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 8 strategic partnerships. Revenue growth 10% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "step_1": "superseded",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "o1_process_standardization",
+        "type": "incremental",
+        "title": "Operational Process Standardization Engine",
+        "rationale": "The company has mature processes but lacks standardization across all 8 offices, leading to productivity drag. Implementing a formal, digitized process layer will capture the efficiency gains needed to hit the 20% throughput target without increasing headcount.",
+        "execution_plan": {
+          "first_actions": [
+            "Appoint an Operational Excellence lead responsible for mapping core workflows (e.g., transaction closing, client onboarding).",
+            "Pilot process digitization in one high-volume office to validate the standardized workflows.",
+            "Integrate digitized workflow steps into the CRM/core system architecture."
+          ],
+          "resources_needed": [
+            "Dedicated Process Mapping Analyst",
+            "Initial technology budget for low-code automation tools (RPA)",
+            "Executive buy-in mandating adherence to new standards"
+          ],
+          "success_metric": "Reduction in average time spent on manual compliance/reporting tasks by 30%.",
+          "milestones": [
+            "Completion of the first cross-departmental workflow map (Q1).",
+            "Successful pilot launch and KPI tracking in one representative location (Q2)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "o2_ai_valuation_platform",
+        "type": "radical",
+        "title": "Automated AI-Powered Valuation & CMA Platform",
+        "rationale": "While the company is exploring AI/ML, formalizing this into a dedicated, integrated commercial platform moves it beyond an 'exploratory' capability. This leverages existing R&D strength (AI focus) to create a new, highly differentiated revenue stream.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the MVP scope: Focus only on residential valuation and basic comparable analysis first.",
+            "Establish clear data ingestion pipelines from diverse sources (MLS, public records).",
+            "Conduct user acceptance testing with top-performing agents to refine UX/UI."
+          ],
+          "resources_needed": [
+            "Dedicated ML Data Scientist FTE (for scope 2)",
+            "Access to robust external property data feeds",
+            "Cross-functional team comprising R&D, Sales, and IT"
+          ],
+          "success_metric": "Time saved generating a full CMA report for agents vs. manual method (target: <15 minutes).",
+          "milestones": [
+            "Data model trained and validated internally on 500 records (Q1).",
+            "Beta launch to internal R&D/Pilot team (Q2)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Mandate a cross-functional process audit to identify the top five manual workflow choke points across all offices.",
+        "owner": "Operational Excellence Lead (New Role)",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Execute a data governance workshop involving IT, R&D, and Operations to define standardized data input/quality protocols.",
+        "owner": "Data Engineers / CIO Office",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Develop a clear ROI model comparing the cost of current manual operations vs. projected efficiency gains from digitization.",
+        "owner": "Finance & Strategy Department",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Systemic gaps in process standardization across geographically dispersed offices.",
+      "Difficulty translating siloed R&D/AI prototypes into seamless, usable core business workflows (Adoption gap).",
+      "Potential resource conflicts between sustaining current revenue-generating operations and funding high-risk innovation initiatives."
+    ],
+    "progress": {
+      "improvements": [
+        "Strong structural foundation with a dedicated R&D lab of 12 engineers.",
+        "Successful market validation, evidenced by launching 4 new product lines contributing 18% revenue.",
+        "Demonstrated commitment to process improvement through strategic goal setting (20% throughput lift)."
+      ],
+      "persistent_gaps": [
+        "Reliance on manual workflows and spreadsheets for critical functions.",
+        "Lack of integrated data governance leading to workflow inconsistencies.",
+        "Decision-making processes remain highly variable depending on the project scope."
+      ],
+      "achieved_milestones": [
+        "Consistent 10% Year-over-Year revenue growth.",
+        "Formalization of structured stage-gate innovation process."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant growth in product lines and internal R&D capacity has increased maturity. The shift is from simply 'having a program' to actively needing to 'standardize execution.' Focus remains heavily on efficiency gains through process digitization."
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "id": "R0140",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0200",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:06:15.529484+00:00",
+    "duration_ms": 118091,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Labs",
+      "sector": "Professional & Consulting Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 120+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins."
+    },
+    "previous_assessment": {
+      "id": "0200",
+      "fields": {
+        "companyName": "Quantum Labs",
+        "sector": "Professional & Consulting Services",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Management consulting firm serving mid-market companies with strategy, operational excellence, and digital transformation engagements. Team of 40 consultants across 3 offices. Typical engagements are 8-16 weeks. Evaluating knowledge management AI to capture and surface past engagement insights for proposal development. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "A junior engineer built an internal dashboard to visualize our order backlog, which the operations team found useful. However, this was an informal side project with no official support or maintenance plan. When that engineer left, the dashboard became unreliable and was eventually abandoned. We learned that good ideas need institutional backing to survive.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We are in the final stages of being acquired by a larger international group. The deal is expected to close in 3 months. The acquiring company has a strong reputation for technology-driven operations, and we anticipate significant investment in modernizing our systems post-acquisition. In the interim, we are in a holding pattern — major strategic decisions require acquirer approval, but we can prepare by auditing our current state and identifying quick wins."
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "superseded",
+      "opp_4": "superseded",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_revised",
+        "type": "incremental",
+        "title": "Knowledge-to-Proposal Synthesis Engine (AI KM)",
+        "rationale": "This opportunity is critical for maintaining high service quality and accelerating proposals in a competitive market. By centralizing captured insights, Quantum Labs can significantly reduce the time spent drafting non-differentiating content, allowing consultants to focus on strategic thought leadership required by the acquisition target's culture.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a full audit of existing proprietary knowledge sources (internal repositories, past project documentation) to map data quality and accessibility constraints.",
+            "Define minimum viable product (MVP) scope: Focus initially on 2-3 high-value service lines/client types where success metrics are clearest.",
+            "Establish a dedicated, cross-functional governance committee with senior buy-in to mandate input structure and data contribution from all active projects."
+          ],
+          "resources_needed": [
+            "Dedicated AI/ML Engineering Team (Internal)",
+            "Executive Sponsor (VP of Consulting or Strategy)",
+            "Standardized Data Taxonomy Guidelines"
+          ],
+          "success_metric": "Reduction in average proposal generation time by 20% for targeted service lines.",
+          "milestones": [
+            "Data Source Audit Completion (1 month)",
+            "MVP Prototype Demonstration (3 months)",
+            "Pilot Use Case Adoption within 5 core teams (6 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 Months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_5_new",
+        "type": "incremental",
+        "title": "Strategic Opportunity Pipeline for Acquirer Diligence",
+        "rationale": "Given the pending acquisition, the immediate strategic focus must shift from general 'growth' to 'pre-integration value capture.' This initiative formalizes a rapid process to audit internal capabilities against potential acquirer synergies or market gaps identified by competitors. It provides actionable data while respecting the decision constraints of the M&A holding pattern.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a 'Synergy Hypothesis' framework (e.g., Tech X + Market Y = Value Z) based on competitor movements and acquirer profile.",
+            "Host bi-weekly internal workshops involving CVC, R&D, and Consulting leads to vet hypotheses against current operational data.",
+            "Create a structured repository of 'Quick Win' projects that can be executed or paused without requiring immediate major strategic approval."
+          ],
+          "resources_needed": [
+            "Program Manager (Dedicated)",
+            "CVC Arm Leadership",
+            "Key Department Leads (Engineering, Consulting, Finance)"
+          ],
+          "success_metric": "Identification and prioritization of 3-5 validated, high-impact, low-dependency pre-acquisition initiatives.",
+          "milestones": [
+            "Framework Workshop Completion (1 month)",
+            "Initial Hypothesis Vetting Round (2 months)",
+            "Finalized Pipeline Document presented to Steering Committee (4 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 Months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Initiate a Governance Audit focusing on the decision-making pathways for digital projects. Identify specific pain points where cross-departmental sign-off creates bottlenecks, especially those that could be delegated during the M&A interim period.",
+        "owner": "COO/Project Management Office (PMO)",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Mandate and execute a 'Customer Value Deep Dive' with the Sales, Consulting, and Product teams. The goal is to map current high-churn client needs directly against Quantum Labs’ core intellectual property gaps.",
+        "owner": "VP of Customer Success/Strategy Lead",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize the definition and governance charter for 'Quick Win' initiatives, ensuring these projects are fully scoped, resource-allocated, and ready for rapid execution upon any decision to accelerate pre-acquisition."
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia remains a significant barrier, leading to difficulty in operationalizing new ideas despite high digital maturity.",
+      "Decision governance is highly complex (multi-layer process), creating potential bottlenecks and slowing response time during critical market moments.",
+      "The holding pattern created by the acquisition fundamentally restricts top-down strategic deployment, requiring all efforts to be scoped for minimal organizational disruption."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased digital maturity (from 3 to 4) demonstrates successful scaling of core technical capabilities and internal innovation mechanisms.",
+        "Significant team size and resources (120+ professionals, CVC arm) provide the organizational muscle needed for large-scale transformation."
+      ],
+      "persistent_gaps": [
+        "The lack of sustained institutional support for informal successes remains a risk; knowledge capture processes are still manually intensive.",
+        "The inability to execute major strategic bets due to M&A approval creates an 'intention gap' where operational readiness is high, but strategic authorization is low."
+      ],
+      "achieved_milestones": [
+        "Successful operation of the internal incubator and CVC arm validates capacity for productization and external investment vetting.",
+        "Completing Step 2 shows demonstrable progress in adopting standardized processes (assuming step 2 was a core process improvement)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The market context has drastically changed: a major competitor entered the space and customer churn is rising. Most critically, the company has moved into the final stages of an acquisition, making speed and demonstrable value capture (vs. broad growth mandates) the immediate priority."
+    }
+  }
+}

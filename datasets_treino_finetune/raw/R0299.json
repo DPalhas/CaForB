@@ -1,0 +1,204 @@
+{
+  "id": "R0299",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0351",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:22:27.636387+00:00",
+    "duration_ms": 89002,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core Systems.com",
+      "sector": "Information Technology",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 13,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0351",
+      "fields": {
+        "companyName": "Core Systems.com",
+        "sector": "Information Technology",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 13,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Completed 4 strategic partnerships. Revenue growth 20% YoY. Exploring AI/ML capabilities.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.0,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_refined",
+        "type": "incremental",
+        "title": "Strategic Diversification via Verticalization & ML Integration",
+        "rationale": "Building on the success of strategic partnerships and increased revenue, the focus should be narrowing down which vertical/industry segment (e.g., specific manufacturing niche) to dominate first. Integrating AI/ML capabilities into this specialized offering will increase stickiness and justify higher pricing.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a compliance audit of current data handling practices related to new ML models, ensuring adherence to industry-specific regulations (e.g., HIPAA, specific manufacturing safety rules).",
+            "Map existing product capabilities against the regulatory requirements and pain points of 2-3 target vertical sub-segments.",
+            "Establish joint business planning sessions with strategic partners focused solely on co-developing AI features for these identified niches."
+          ],
+          "resources_needed": [
+            "Dedicated compliance officer time",
+            "ML/AI architect resources",
+            "Partnership leadership bandwidth"
+          ],
+          "success_metric": "Launch of a Minimum Viable Product (MVP) with AI capabilities in one new vertical segment.",
+          "milestones": [
+            "Vertical feasibility study completed (Q2)",
+            "Compliance framework established for new data streams",
+            "Prototype MVP built and tested with partner beta group"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_new",
+        "type": "radical",
+        "title": "Developing a Productized Service Platform (PaaS) for Adjacent Markets",
+        "rationale": "The dependency on the top 3 clients is an existential threat. To achieve true diversification, Core Systems must decouple its revenue from bespoke, custom development work by productizing core services into a standardized platform model aimed at SMBs outside current client verticals.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct financial modeling to determine the required investment and acceptable loss rate associated with exiting low-margin customized projects for PaaS adoption.",
+            "Identify 3 core, repeatable functions (e.g., inventory tracking, basic workflow automation) that can be packaged as a standardized service layer, separate from deep integration work.",
+            "Define necessary compliance gates and security standards for the PaaS offering before market release."
+          ],
+          "resources_needed": [
+            "Finance lead",
+            "Product architecture team (for standardization)",
+            "Legal/Compliance counsel"
+          ],
+          "success_metric": "Completion of a business case defining initial pricing, feature set, and target SMB segment for the PaaS offering.",
+          "milestones": [
+            "PaaS value proposition documented",
+            "Pilot group (non-core clients) secured for beta testing",
+            "Operational roadmap to decommissioning customized services starts"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_process_review",
+        "action": "Streamline the annual planning and mid-cycle innovation funding process by creating a 'Fast Track' committee for projects with high regulatory compliance scores.",
+        "owner": "Operations/Leadership",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "step_risk_mitigation",
+        "action": "Form an internal task force (Strategy, Finance, Sales) dedicated solely to identifying and qualifying 5 new potential SMB verticals/markets for PaaS testing.",
+        "owner": "Strategic Leadership Team",
+        "timeframe": "Ongoing (Quarterly Review)"
+      },
+      {
+        "id": "step_tech_governance",
+        "action": "Develop clear governance guidelines dictating when to use low-code/no-code platforms versus custom development, ensuring developers are not pulled into 'solutionizing' non-technical business process gaps.",
+        "owner": "CTO/Technology Leadership",
+        "timeframe": "2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "High concentration risk of revenue tied to the top 3 client accounts (55% dependency).",
+      "Formal, rigid annual planning and funding committee structure hinders agile mid-cycle innovation.",
+      "Lack of clear governance separating standardized low-code adoption from necessary custom development scope."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully reduced customer onboarding time by 70% (12 days to 5 days), demonstrating cross-functional efficiency gains and improved NPS.",
+        "Established structured innovation channels ('20% time' policy, internal pitch competition) that encourage self-directed development.",
+        "Formalized technical structure using product-aligned squads and a shared central platform team."
+      ],
+      "persistent_gaps": [
+        "Inability to easily or quickly scale revenue outside of existing strategic client relationships.",
+        "The formal decision-making process remains a bottleneck for rapid market response.",
+        "Need to transition from solving bespoke problems (custom development) to creating repeatable, scalable products."
+      ],
+      "achieved_milestones": [
+        "Digital Customer Onboarding Flow Deployment",
+        "Successful execution of initial strategic partnerships/pilots",
+        "Defining internal '20% time' capacity and success tracking mechanisms"
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significantly improved execution capabilities through successful cross-functional internal projects (onboarding flow) and adopting structured innovation policies (20% time). However, the core strategic vulnerability (client concentration) remains unaddressed."
+    }
+  }
+}

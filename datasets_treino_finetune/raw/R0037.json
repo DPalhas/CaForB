@@ -1,0 +1,198 @@
+{
+  "id": "R0037",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0206",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-09T19:07:38.189764+00:00",
+    "duration_ms": 25055,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vertex Ventures.io",
+      "sector": "Healthcare & Medical",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Diagnostic imaging center network with 12 locations offering MRI, CT, ultrasound, and X-ray services. Processing 80,000 exams per year. Radiologist team of 25 reading remotely across subspecialties. Evaluating AI-assisted detection tools for mammography and lung nodule analysis with radiologist-in-the-loop workflow. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "We have a corporate innovation division with 80+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 18 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 17,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0206",
+      "fields": {
+        "companyName": "Vertex Ventures.io",
+        "sector": "Healthcare & Medical",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Diagnostic imaging center network with 12 locations offering MRI, CT, ultrasound, and X-ray services. Processing 80,000 exams per year. Radiologist team of 25 reading remotely across subspecialties. Evaluating AI-assisted detection tools for mammography and lung nodule analysis with radiologist-in-the-loop workflow. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 14,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 5 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_div_01",
+        "type": "radical",
+        "title": "Establish a 'New Revenue Stream' Incubator (Bold Diversification)",
+        "rationale": "The current high dependency on the top three clients is an unacceptable concentration risk. This radical opportunity focuses on identifying and developing completely new product lines or business models that leverage existing diagnostic capabilities but target different customer segments.",
+        "execution_plan": {
+          "first_actions": [
+            "Form a dedicated cross-functional 'Diversification Task Force' (R&D, Strategy, Sales leadership).",
+            "Conduct market gap analysis identifying underserved patient demographics or specialized clinical needs not currently served by the top 3 clients.",
+            "Allocate seed budget for 2 high-risk, high-reward new product/service prototypes."
+          ],
+          "resources_needed": [
+            "Dedicated Strategy Consultant specializing in market entry",
+            "Small dedicated R&D team (6 months initial phase)"
+          ],
+          "success_metric": "Successful identification of 2 viable non-core business models with positive initial concept validation.",
+          "milestones": [
+            "Q3: Finalized pipeline of potential new product concepts",
+            "Q4: Pilot launch/MVP defined for the highest priority diversification idea"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_ops_02",
+        "type": "incremental",
+        "title": "Enhance Supply Chain Resilience through Digital Integration",
+        "rationale": "Mitigate the recent supply chain disruptions and inventory pressure by fully integrating digital tools into the procurement and logistics process, moving beyond initial digitalization efforts to predictive inventory management.",
+        "execution_plan": {
+          "first_actions": [
+            "Implement a centralized digital inventory tracking system across all 5 affected product lines.",
+            "Establish partnerships with 2 new regional suppliers to reduce single-source dependency.",
+            "Set up AI/ML models for predictive demand forecasting based on historical exam volumes and external factors."
+          ],
+          "resources_needed": [
+            "IT Development team (Data Science focus)",
+            "Procurement/Logistics management support"
+          ],
+          "success_metric": "Reduction in inventory holding costs by 15% and improvement in on-time delivery rate to <95%.",
+          "milestones": [
+            "Q3: Predictive forecasting model deployment for core products",
+            "Q4: Full integration of digital tracking system into operations"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_01",
+        "action": "Finalize and approve the budget allocation for 'Opp_div_01' (New Revenue Stream Incubator).",
+        "owner": "Steering Committee / CFO",
+        "timeframe": "30 days"
+      },
+      {
+        "id": "ns_02",
+        "action": "Initiate the 'Opp_ops_02' project by assigning a dedicated Project Manager and defining KPIs for inventory resilience.",
+        "owner": "COO / IT Director",
+        "timeframe": "14 days"
+      },
+      {
+        "id": "ns_03",
+        "action": "Conduct deep-dive interviews with the Innovation Division team to address talent gaps identified as a main barrier.",
+        "owner": "HR / Head of Innovation",
+        "timeframe": "60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Inconsistent adoption across business units due to decentralized decision-making structure.",
+      "High sensitivity to budget constraints, leading to 'gated' ROI modeling that may stifle high-risk/high-reward radical initiatives.",
+      "Talent scarcity in specialized areas (e.g., AI application specific to radiology workflow)."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation of CRM system improved sales pipeline data entry efficiency by 30%.",
+        "Established formal portfolio governance structure for innovation budgeting and stage-gate funding.",
+        "Launched inventory digitalization project addressing supply chain challenges."
+      ],
+      "persistent_gaps": [
+        "Inability to pivot strategically due to over-reliance on existing revenue streams (Top 3 clients).",
+        "Lack of standardized, scalable processes for innovation process execution beyond initial projects.",
+        "Limited talent pool capable of executing the required radical diversification strategy."
+      ],
+      "achieved_milestones": [
+        "CRM system successfully deployed and utilized by sales team.",
+        "Centralized digital transformation office established to coordinate innovation efforts."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "2023-10-01",
+      "assessment_number": 1,
+      "key_changes": "Maturity score improved from partial (5.0) to moderately advanced (6.2). The shift is driven by moving from initial project deployment (CRM) to formal strategic execution and addressing critical operational risks like supply chain fragility."
+    }
+  }
+}

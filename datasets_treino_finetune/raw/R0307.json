@@ -1,0 +1,198 @@
+{
+  "id": "R0307",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0477",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:29:36.413210+00:00",
+    "duration_ms": 39938,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Forge Corporation",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Pharmaceutical wholesale distributor supplying 1,200 community pharmacies and 40 hospital pharmacies with 35,000 SKUs from 200 manufacturers. Operating a 15,000 m² GDP-compliant warehouse with temperature-controlled zones. Currently implementing serialization track-and-trace compliance and evaluating demand forecasting with AI. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+      "customerFeedback": "no_formal_process",
+      "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 9,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0477",
+      "fields": {
+        "companyName": "Forge Corporation",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Pharmaceutical wholesale distributor supplying 1,200 community pharmacies and 40 hospital pharmacies with 35,000 SKUs from 200 manufacturers. Operating a 15,000 m² GDP-compliant warehouse with temperature-controlled zones. Currently implementing serialization track-and-trace compliance and evaluating demand forecasting with AI. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We attempted to introduce a weekly innovation brainstorming session across departments, but attendance dropped rapidly after the first month. Participants felt the sessions generated interesting ideas but had no clear path to execution or budget. The initiative faded without producing any tangible outcome.",
+        "customerFeedback": "no_formal_process",
+        "strategicGoals": "We are targeting a 20% improvement in operational throughput without increasing headcount. Our processes have grown organically over the years and are overdue for standardization. We suspect that workflow digitization, basic automation, and better data integration between our core systems can unlock significant productivity gains within our current cost structure.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "process"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 7 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "step_1": "completed",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3_evolution",
+        "type": "incremental",
+        "title": "Standardize and Optimize Core Operational Workflows",
+        "rationale": "The implementation of 7 new standard procedures is a significant positive step, but these processes must be formally documented, mapped, and optimized across departments. This effort directly addresses the core barriers of process and standardization needed to hit the 20% throughput goal.",
+        "execution_plan": {
+          "first_actions": [
+            "Appoint a Process Owner committee (cross-functional) responsible for documenting current state 'as-is' workflows.",
+            "Prioritize mapping the top three revenue-generating or highest-friction processes first.",
+            "Develop standardized SOPs linked to departmental KPIs and training modules."
+          ],
+          "resources_needed": [
+            "Process Mapping Software (BPMN tool)",
+            "Dedicated Process Owner time (part-time allocation)",
+            "Cross-departmental SME participation"
+          ],
+          "success_metric": "Reduction of process steps or cycle time by 15% in the prioritized workflows.",
+          "milestones": [
+            "Completion of 'as-is' mapping for top priority workflow (Month 2)",
+            "Approval and rollout of optimized SOPs (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_3",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_data_layer",
+        "type": "incremental",
+        "title": "Implement an Integration/Data Service Layer (Middleware)",
+        "rationale": "The current ad-hoc nature of system integration is a major bottleneck. Building a dedicated middleware or data service layer will allow Forge to connect core systems (e.g., inventory, pharmacy management, ERP) without requiring massive overhauls. This foundational step unlocks automation potential and supports efficient data exchange.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the top 3 necessary system integrations required for immediate efficiency gains (e.g., Inventory -> Forecasting).",
+            "Conduct a gap analysis on API availability between existing systems.",
+            "Allocate focused time from the small tech team to design the initial integration architecture."
+          ],
+          "resources_needed": [
+            "DevOps engineering expertise",
+            "System architecture documentation",
+            "Pharma data governance consultant"
+          ],
+          "success_metric": "Successful automated data transfer and synchronization between two key core systems (e.g., ERP to Warehouse Management).",
+          "milestones": [
+            "Integration requirements finalized and signed off (Month 1)",
+            "MVP middleware connection operational (Month 4)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Establish a formal 'Process Governance Board' with executive sponsorship to prioritize process mapping and ensure adherence to new SOPs.",
+        "owner": "Leadership/COO",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Dedicatedly ring-fence 10% of the small tech team's time (e.g., one half-day per week) for structured data modeling and integration prototyping, treating it as critical project work.",
+        "owner": "CTO/PM",
+        "timeframe": "Ongoing"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a formal mechanism (e.g., quarterly 'Innovation Sprint Day') to generate ideas and, crucially, assign accountable owners and small budgets for execution paths.",
+        "owner": "HR/Internal Advocates",
+        "timeframe": "Next quarter"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formal governance structure required to scale new processes beyond localized initiatives.",
+      "Insufficient dedicated capacity (time and budget) for proactive innovation work, leading to project fatigue.",
+      "Ad-hoc system integration architecture severely limits data visibility and operational automation."
+    ],
+    "progress": {
+      "improvements": [
+        "Enhanced process compliance through the implementation of 7 new standard operating procedures (SOPs).",
+        "Improved internal team morale, creating a better environment for adopting standardized processes.",
+        "Increased budget allocation to innovation activities (9% of revenue)."
+      ],
+      "persistent_gaps": [
+        "The lack of formal process ownership and governance means newly created standards are vulnerable to being bypassed or not scaled.",
+        "Still struggling with low data interoperability between core systems, hindering automated throughput gains.",
+        "Decision-making processes remain bottlenecked by key individuals (owner_alone)."
+      ],
+      "achieved_milestones": [
+        "Successful implementation of serialization track-and-trace compliance procedures.",
+        "Establishment of foundational standardized procedures across the warehouse and supply chain."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Shift from merely identifying barriers (culture/process) to actively executing small-scale process fixes and recognizing the need for foundational IT integration layers. The focus is now actionable standardization rather than theoretical improvement."
+    }
+  }
+}

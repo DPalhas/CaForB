@@ -1,0 +1,199 @@
+{
+  "id": "R0101",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0227",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:27:00.633564+00:00",
+    "duration_ms": 93820,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Crest Innovations",
+      "sector": "Manufacturing",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0227",
+      "fields": {
+        "companyName": "Crest Innovations",
+        "sector": "Manufacturing",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Industrial bakery producing frozen dough and par-baked products for supermarket chains and food service distributors. Output of 15,000 units per day across 4 production lines. Key challenges are shelf-life extension through modified atmosphere packaging and reducing energy consumption in blast freezing. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We have a mature innovation program with a dedicated R&D lab of 12 engineers, an annual innovation budget equivalent to 5% of revenue, and a structured stage-gate process for evaluating and funding new initiatives. In the past 3 years we have launched 4 new product lines that now contribute 18% of total revenue, including an AI-powered recommendation engine that has become our fastest-growing SKU.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "The board has mandated that 25% of revenue should come from products or services that did not exist 3 years ago. This requires us to systematically explore adjacent markets, new customer segments, and alternative monetization models. We are open to both organic build initiatives and strategic acquisitions of small, innovative companies that can serve as diversification platforms.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a corporate innovation division with 50+ staff spanning research scientists, engineers, designers, and strategy professionals. The division manages a portfolio of 15 active innovation projects at various maturity stages, from early-stage research collaborations with universities to near-commercialization products. Annual innovation budget is managed through a formal portfolio governance process with stage-gate funding decisions.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 9,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 2 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O1_STRAT_MNA",
+        "type": "incremental",
+        "title": "Strategic Market & M&A Pipeline Buildout",
+        "rationale": "The board mandate requires systematic exploration of adjacent markets and alternative monetization models. Leveraging the existing formal structure, establishing a dedicated M&A pipeline function will formalize this diversification effort.",
+        "execution_plan": {
+          "first_actions": [
+            "Form an executive steering committee (C-suite level) with mandated quarterly attendance to review potential targets.",
+            "Develop detailed screening criteria for adjacent market sectors and SME acquisition candidates, prioritizing intellectual property over asset volume.",
+            "Mandate legal/compliance reviews within the first 30 days due to increased regulatory exposure from new jurisdictions."
+          ],
+          "resources_needed": [
+            "Dedicated Corporate Strategy FTE (internal or external consultant)",
+            "Access to proprietary financial modeling tools",
+            "Initial budget allocation for deal flow screening (estimated $500k)"
+          ],
+          "success_metric": "Number of qualified, actionable M&A opportunities screened per quarter.",
+          "milestones": [
+            "Establish cross-functional due diligence team (3 months)",
+            "Identify and qualify 5 initial target companies/markets (6 months)",
+            "Complete first preliminary investment thesis for executive review (12 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "Long-term",
+        "carry_forward_from": "unknown",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O2_SMART_OPT",
+        "type": "radical",
+        "title": "Smart Manufacturing & Energy Optimization Loop",
+        "rationale": "Focusing on core operational efficiencies (blast freezing, shelf-life) through advanced digitalization is critical for cost control and competitive advantage. This requires moving beyond simple process improvements to systemic technology integration.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive energy audit across the 4 production lines, mapping consumption points with granular IoT sensors.",
+            "Pilot an AI-driven predictive maintenance model on critical equipment (e.g., blast freezer compressors).",
+            "Develop a quantifiable ROI framework for advanced process controls and mandatory technology adoption."
+          ],
+          "resources_needed": [
+            "Specialized Industrial IoT/Data Science vendor partnership",
+            "Dedicated budget for sensor deployment and data storage infrastructure",
+            "Operations team training on interpreting predictive models"
+          ],
+          "success_metric": "Reduction in energy consumption per unit produced (kWh/unit) by X%.",
+          "milestones": [
+            "Successful sensor deployment and baseline data collection (4 months)",
+            "Pilot completion demonstrating minimum 8% efficiency improvement (9 months)",
+            "Integration of optimized controls into standard SOPs (12 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium-term",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Host a 'Strategic Horizon' workshop involving the C-suite and R&D leads to formally prioritize between deep operational optimization (O2) vs. MNA exploration (O1).",
+        "owner": "Chief Strategy Officer (CSO)",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "NS2",
+        "action": "Formalize the 'Innovation Portfolio Governance' review to dedicate 25% of meeting time specifically to evaluating radical, high-risk/high-reward projects (like O2).",
+        "owner": "Head of Innovation Division",
+        "timeframe": "Ongoing/Immediate"
+      },
+      {
+        "id": "NS3",
+        "action": "Implement a structured talent assessment program to identify key skill gaps related to digitalization and cross-functional M&A integration.",
+        "owner": "HR Director / Talent Acquisition",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia resisting radical process changes, despite formal governance.",
+      "Inter-departmental talent alignment: Difficulty transferring expertise from dedicated R&D functions into broader operational or M&A contexts.",
+      "Decision making still varies by project stage, hindering rapid adoption of external acquisitions."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful implementation of 2 new standard operating procedures following regulatory changes.",
+        "Measurable improvement in team morale and commitment to innovation objectives.",
+        "Strong revenue growth contribution from existing product lines (18% from 4 new lines)."
+      ],
+      "persistent_gaps": [
+        "Overall strategic execution remains fragmented, with key initial opportunities (opp_1/opp_2) not yet fully activated or completed.",
+        "The transition from 'formal' process to genuinely agile, radical experimentation needs stricter guardrails and funding mechanisms."
+      ],
+      "achieved_milestones": [
+        "Maintained strong innovation pipeline flow through the existing stage-gate process.",
+        "Secured significant market share growth in specific product categories (AI engine SKU)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased regulatory compliance requirements and established two new standard procedures enhanced operational rigor while maintaining the core focus on diversification."
+    }
+  }
+}

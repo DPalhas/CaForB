@@ -1,0 +1,198 @@
+{
+  "id": "R0271",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0461",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:42:04.427907+00:00",
+    "duration_ms": 45402,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Grid.com",
+      "sector": "Education",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Higher education institution with 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. Developing hybrid learning capabilities and micro-credential programs for executive education. Key challenge is student retention analytics and personalized learning pathway design. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 120+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 3,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0461",
+      "fields": {
+        "companyName": "Grid.com",
+        "sector": "Education",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Higher education institution with 8,000 students across undergraduate and master's programs in business, engineering, and health sciences. Developing hybrid learning capabilities and micro-credential programs for executive education. Key challenge is student retention analytics and personalized learning pathway design. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "budget",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 8 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "not_done",
+      "opp_3": "not_done",
+      "step_1": "completed",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 7.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A1",
+        "type": "incremental",
+        "title": "Establish Strategic Market Thesis Framework (Build vs. Buy vs. Partner)",
+        "rationale": "Grid is at a critical inflection point regarding growth—determining whether to deepen vertical specialization or expand horizontally. The current process needs a formalized, weighted decision framework that systematically evaluates build, buy, and partner options against core competencies and risk appetite before large-scale resource allocation.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a comparative matrix scoring model (e.g., Time to Market, IP Control, Capital Outlay) for the three models.",
+            "Conduct workshops with BU leaders to map their preferred market expansion vectors against current organizational capabilities and talent pools.",
+            "Pilot the new framework on 2-3 potential adjacent customer segments identified in strategic goal setting."
+          ],
+          "resources_needed": [
+            "Strategy Consulting Expertise",
+            "Senior Executive Sponsorship (CRO/CEO)",
+            "Market Data Providers"
+          ],
+          "success_metric": "Formalized, approved decision framework utilized for 80% of new market opportunity vetting.",
+          "milestones": [
+            "Framework V1 completion and approval within Q1.",
+            "Pilot results analyzed and incorporated into the final playbook."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_A1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_B2",
+        "type": "incremental",
+        "title": "Digitalize and Integrate Learning-Supply Chain Resilience Platform",
+        "rationale": "Recent supply chain disruptions highlight physical vulnerabilities that impact the delivery of learning materials and hardware required for hybrid models. By integrating inventory digitalization with student progress tracking, Grid can proactively predict shortages or delays before they interrupt key academic pathways.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify critical product lines (8 affected) and map their dependency on physical assets/inventory.",
+            "Design a unified data layer linking ERP inventory systems to the Learning Management System (LMS).",
+            "Develop automated alert triggers for predicted resource shortages relative to upcoming course cohorts."
+          ],
+          "resources_needed": [
+            "IT Architecture Team",
+            "Operations Process Experts",
+            "Domain Subject Matter Experts (Curriculum Development)"
+          ],
+          "success_metric": "Reduction in learning delivery disruptions attributed to supply chain failure by 25% within one academic cycle.",
+          "milestones": [
+            "Data source mapping and API integration complete.",
+            "Pilot deployment across the top 3 most affected product lines."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "12+ months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Institute a 'Governance Checkpoint' phase for all incubated projects to streamline ROI modeling and accelerate decision-making, reducing reliance on lengthy committee approvals.",
+        "owner": "CDO/Digital Transformation Office",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "ns2",
+        "action": "Establish a dedicated cross-functional task force (including BU leaders, Ops, and IT) to govern the scope and priority rollout plan for inventory digitalization across all geographies.",
+        "owner": "COO/Operations Leadership",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize a mechanism (e.g., an internal consortium or governance board) to ensure shared adoption standards and prevent technology silo formation between business units.",
+        "owner": "HR/Organizational Design Lead",
+        "timeframe": "Ongoing/Quarterly Review"
+      }
+    ],
+    "key_weaknesses": [
+      "Varied organizational adoption rates across BUs, leading to inconsistent application of successful digital initiatives.",
+      "Strategic decision-making processes (build/buy/partner) lack a standardized, quantitative framework, leading to potential resource misalignment.",
+      "High reliance on centralized approval bodies (Steering Committee), creating operational bottlenecks despite strong programmatic capabilities."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful establishment of the internal venture studio model and corporate incubation program structure.",
+        "Large, dedicated innovation team size (120+) demonstrates commitment and capability for scaling initiatives.",
+        "Inventory digitalization project has been launched, addressing immediate operational risks."
+      ],
+      "persistent_gaps": [
+        "The core strategic question of vertical deepening vs. horizontal broadening remains unresolved at the executive level.",
+        "Operational friction points (supply chain/inventory) are still highly exposed despite focused initiatives.",
+        "Matrix organizational structure complicates consistent policy enforcement and technological standardization."
+      ],
+      "achieved_milestones": [
+        "Successfully graduated 6 digital products to market in the last two years, validating the internal innovation pipeline.",
+        "Launched inventory digitalization efforts across affected product lines."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant maturation of the formal innovation process (venture studio) and operational scale observed. However, external shocks (supply chain) and internal governance bottlenecks persist."
+    }
+  }
+}

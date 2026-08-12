@@ -1,0 +1,201 @@
+{
+  "id": "R0137",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0399",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:02:24.593922+00:00",
+    "duration_ms": 57254,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Crest Capital.co",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Regional supermarket chain operating 28 stores across central and northern Portugal. Private-label program accounts for 35% of revenue. Currently rolling out self-checkout kiosks and evaluating AI-driven demand forecasting to reduce fresh produce waste by 25%. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "bold",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 27,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0399",
+      "fields": {
+        "companyName": "Crest Capital.co",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Regional supermarket chain operating 28 stores across central and northern Portugal. Private-label program accounts for 35% of revenue. Currently rolling out self-checkout kiosks and evaluating AI-driven demand forecasting to reduce fresh produce waste by 25%. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 27,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Post-merger integration underway. Team doubled to 2 members. Culture clash between legacy and new teams.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "completed",
+      "step_1": "in_progress",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_digital_journey",
+        "type": "radical",
+        "title": "Customer Journey Digital Overhaul and Self-Service Optimization",
+        "rationale": "The decline in customer retention (92% to 84%) is directly linked to poor digital self-service. This opportunity requires moving beyond standalone kiosks to redesigning the entire multi-touchpoint journey, making it intuitive for mid-tier customers who are leaving due to product stagnation and friction.",
+        "execution_plan": {
+          "first_actions": [
+            "Map high-value customer pathways (e.g., bulk buying, subscription renewals) to identify current pain points.",
+            "Pilot a centralized digital portal that aggregates inventory data, loyalty status, and personalized offers from all 28 stores.",
+            "Develop AI-assisted self-diagnosis tools for common customer issues (e.g., returns, pricing checks)."
+          ],
+          "resources_needed": [
+            "UX/UI Design Specialist (Contract)",
+            "Data Analytics Expertise",
+            "Integration time with existing POS/Inventory systems"
+          ],
+          "success_metric": "Increase in Digital Self-Service Usage Rate by 20% within 6 months.",
+          "milestones": [
+            "Completion of customer journey mapping and pain point quantification.",
+            "Successful beta launch of the centralized digital portal for one test region.",
+            "Achieve a measurable reduction in support calls related to basic account/product queries."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_innovation_office",
+        "type": "incremental",
+        "title": "Establish a Dedicated Innovation/Process Improvement Function",
+        "rationale": "Innovation currently happens only when developers have spare cycles, which is unsustainable. Formalizing this function protects strategic time, improves process flow, and allows the company to proactively manage technical debt while continuing essential operational improvements.",
+        "execution_plan": {
+          "first_actions": [
+            "Allocate 10% of developer bandwidth (or hire a fractional Process Analyst) dedicated solely to innovation prototyping/tech debt mitigation.",
+            "Formalize a quarterly 'Idea Bounty' structure, incentivizing cross-functional employees (not just developers) to submit actionable ideas.",
+            "Conduct a workshop to define clear process gaps preventing strategic initiatives from launching."
+          ],
+          "resources_needed": [
+            "Dedicated internal champion/manager",
+            "Time budget for dedicated workshops",
+            "Clear definition of 'Minimum Viable Innovation' (MVI)"
+          ],
+          "success_metric": "Number of high-priority prototypes moved from concept to defined scope per quarter.",
+          "milestones": [
+            "Formalized governance structure signed off by the founder/leadership team.",
+            "Successful completion and review of three MVI prototypes in 6 months.",
+            "Reduction in operational 'firefighting' time reported by development staff."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Conduct a cross-functional workshop to harmonize process flows between the legacy and new teams, focusing specifically on post-merger operational gaps.",
+        "owner": "Leadership Team/HR Liaison",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Define specific ROI thresholds for all proposed technology investments (e.g., AI forecasting must yield X% savings to justify cost).",
+        "owner": "Founder/Finance Lead",
+        "timeframe": "Ongoing, immediately"
+      },
+      {
+        "id": "ns3",
+        "action": "Finalize the scope and data requirements for the Digital Customer Portal (O1), ensuring integration with the existing CRM success.",
+        "owner": "Development Team/Project Manager",
+        "timeframe": "Next 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Persistent cultural friction between newly integrated teams, hindering cohesive execution.",
+      "Extreme resource constraint (2 developers) prevents dedicated focus on strategic innovation or technical debt management.",
+      "Lack of a formal governance structure for idea generation and prioritization."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful deployment and learning from the new CRM system, providing a foundation for advanced marketing automation.",
+        "Proactive rollout of self-checkout kiosks demonstrates investment in customer experience technology.",
+        "Increased team size (doubled staff) provides greater operational capacity."
+      ],
+      "persistent_gaps": [
+        "The fundamental issue of high churn driven by inadequate digital self-service remains unresolved.",
+        "Cultural misalignment is consuming management bandwidth and slowing down process improvements.",
+        "Innovation efforts are reactive, dependent on 'spare cycles' rather than dedicated resources."
+      ],
+      "achieved_milestones": [
+        "Completion of previous core recommendation (opp_3).",
+        "Successful completion of key operational steps (step_2)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company has successfully executed on several foundational technology improvements (CRM, self-checkout), demonstrating operational capability and commitment to modernization. However, critical strategic gaps—specifically customer experience failure and lack of dedicated innovation resources—remain the primary roadblocks."
+    }
+  }
+}

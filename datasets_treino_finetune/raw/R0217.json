@@ -1,0 +1,199 @@
+{
+  "id": "R0217",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0120",
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Small",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:53:42.377930+00:00",
+    "duration_ms": 45751,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst Partners",
+      "sector": "Energy & Utilities",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "8 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 8,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0120",
+      "fields": {
+        "companyName": "Catalyst Partners",
+        "sector": "Energy & Utilities",
+        "size": "Small",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 11,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 8 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "completed",
+      "step_1": "in_progress",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 5.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Developing a De-risked Diversification Strategy",
+        "rationale": "The high concentration risk (55% revenue from top 3 clients) is the most critical threat to long-term stability. This requires shifting focus from incremental process improvements to defining entirely new, non-correlated revenue streams or business models.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive portfolio analysis of current and adjacent energy service markets (e.g., focusing on residential/commercial segments outside the top 3 client vertical).",
+            "Develop two distinct, high-potential pilot business models that leverage existing core competencies (HVAC optimization, audits) but target new customer profiles.",
+            "Establish a cross-functional 'Future Ventures' task force involving sales, finance, and technical leads to model potential profitability."
+          ],
+          "resources_needed": [
+            "External market consultant (specializing in energy service models)",
+            "Dedicated time allocation from senior leadership/Strategy lead",
+            "Access to historical non-top-3 client data"
+          ],
+          "success_metric": "Identification and successful scoping of at least one viable, revenue-generating pilot business model outside the top 3 client base.",
+          "milestones": [
+            "Completed competitor/market gap analysis (Month 2)",
+            "Approved selection of two target diversification models (Month 4)",
+            "Initiation of the first pilot program MVP build (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Optimizing Supply Chain Resilience via Digital Inventory Management",
+        "rationale": "Supply chain disruptions hit multiple product lines, increasing risk and compressing margins. Completing the inventory digitalization project is crucial for stabilizing operations and allowing better resource allocation.",
+        "execution_plan": {
+          "first_actions": [
+            "Finalize integration of IoT data feeds into the core ERP/inventory system to provide real-time stock visibility across all 2-3 locations.",
+            "Implement automated reorder points based on actual usage rates and supplier lead time variance, minimizing buffer stock while ensuring service continuity.",
+            "Develop standardized process documentation for handling critical component shortages due to disruptions."
+          ],
+          "resources_needed": [
+            "IT/System Integration resources",
+            "Operations team dedicated hours (process mapping)",
+            "Supplier engagement portal access"
+          ],
+          "success_metric": "Reduction of reported inventory stock-outs on critical components by 25% within the next quarter.",
+          "milestones": [
+            "Successful real-time data flow pilot completion (Month 1.5)",
+            "Training and adoption across all regional departments (Month 3)",
+            "Demonstrated reduction in expedited shipping costs (Quarterly)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4-6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a formal client segmentation and risk modeling exercise to map revenue dependency and identify non-core, low-risk clients suitable for cross-selling/pilot programs.",
+        "owner": "Leadership Team / Strategy Lead",
+        "timeframe": "Next 6 Weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Define the full scope and data requirements (data governance, APIs) for integrating IoT platform data with existing CRM/ERP systems to enable service productization.",
+        "owner": "Technical Lead / CTO",
+        "timeframe": "Next 8 Weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Develop a financial model and target list for potential new revenue streams, focusing on adjacent service offerings (e.g., predictive maintenance contracts) rather than completely unrelated industries.",
+        "owner": "Finance Lead / Sales Director",
+        "timeframe": "Next 8 Weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "High revenue concentration risk, creating single points of failure in the client base.",
+      "Lack of a formalized, proactive strategic planning mechanism that moves beyond reactive problem-solving (tactical execution).",
+      "Process gaps in converting collected data (IoT, CRM) into standardized, profitable service blueprints."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful launch/progress on Inventory Digitalization project.",
+        "Leadership team alignment on the necessity of modernization and strategic change (diversification).",
+        "Exploring advanced digital capabilities (Marketing Automation, AI lead scoring) building on CRM success."
+      ],
+      "persistent_gaps": [
+        "The primary barrier remains defining *where* to diversify strategically, requiring executive consensus and time.",
+        "Process mapping around new integrated data workflows is incomplete.",
+        "Full execution of the secondary digital steps (Marketing Automation, AI scoring) has not yet started."
+      ],
+      "achieved_milestones": [
+        "CRM system successfully implemented 18 months ago, providing a stable foundation for further automation."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 2,
+      "key_changes": "Increased operational focus (inventory digitalization launched) and a clear recognition of critical strategic risk (client concentration). Progress is moving from assessment/planning into concrete execution on digital tools, though the ultimate strategy remains undefined."
+    }
+  }
+}

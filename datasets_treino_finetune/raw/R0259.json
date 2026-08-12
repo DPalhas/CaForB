@@ -1,0 +1,201 @@
+{
+  "id": "R0259",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0216",
+  "split": "train",
+  "metadata": {
+    "sector": "Hospitality & Tourism",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:33:16.259766+00:00",
+    "duration_ms": 41598,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Holdings",
+      "sector": "Hospitality & Tourism",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Boutique hotel group operating 4 properties in historic city centers with a combined 180 rooms. Focus on experiential luxury with in-house curated culinary programs and cultural immersion packages. Evaluating dynamic pricing algorithms and guest personalization through integrated CRM. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 13,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+    },
+    "previous_assessment": {
+      "id": "0216",
+      "fields": {
+        "companyName": "Apex Holdings",
+        "sector": "Hospitality & Tourism",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Boutique hotel group operating 4 properties in historic city centers with a combined 180 rooms. Focus on experiential luxury with in-house curated culinary programs and cultural immersion packages. Evaluating dynamic pricing algorithms and guest personalization through integrated CRM. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "3",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 10,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "We underwent a significant restructuring 6 months ago, consolidating 5 business units into 3 and reducing headcount by 12%. The remaining teams are stretched thin managing the same workload with fewer people. Morale has stabilized but is still recovering. Any innovation initiative must be achievable without adding burden to already-overloaded teams and should visibly improve their daily work experience."
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "step_1": "in_progress",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.0,
+    "score_delta": 1.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_digital_retention_2.0",
+        "type": "incremental",
+        "title": "Implement Self-Service Digital Concierge to Curb Mid-Tier Churn",
+        "rationale": "Customer feedback points directly to poor digital self-service tools as a primary driver of churn among mid-tier segments. Evolving the previous focus on CRM integration, this initiative must prioritize robust, user-facing automation (e.g., booking modifications, amenity requests) that immediately reduces strain on generalist staff and improves the guest journey.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the top 5 digital pain points cited in exit interviews (e.g., pricing inquiries, service adjustments).",
+            "Pilot a simple FAQ/chatbot module within the existing booking flow to handle Tier 1 support questions.",
+            "Integrate self-service functions with current CRM data structure and test user flows."
+          ],
+          "resources_needed": [
+            "Dedicated developer time (20% allocation)",
+            "Marketing content resources",
+            "Operational feedback loop"
+          ],
+          "success_metric": "Reduction in Tier 1 support tickets handled manually by staff (Target: 15% reduction within 6 months).",
+          "milestones": [
+            "Pain point map finalized and approved.",
+            "Basic chatbot module deployed to internal testing group.",
+            "Self-service booking modification flow live for soft launch."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_digital_retention_1.0",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_process_optimization_staffing",
+        "type": "incremental",
+        "title": "Operational Streamlining via Internal Consulting Model",
+        "rationale": "The greatest current barrier is staff capacity and burnout due to restructuring. This opportunity leverages the formal 'venture studio' model not for external products, but internally, assigning cross-functional teams to audit and automate the most time-consuming, non-customer-facing operational bottlenecks (e.g., inventory reconciliation).",
+        "execution_plan": {
+          "first_actions": [
+            "Identify the three processes consuming the most generalist developer/staff hours currently.",
+            "Form a dedicated internal 'Efficiency Sprint' team (2 cross-functional members) to map current state and identify automation targets.",
+            "Prioritize low-complexity, high-impact process automations for quick wins."
+          ],
+          "resources_needed": [
+            "Designated time from operational staff leaders",
+            "Internal subject matter expertise",
+            "Workflow mapping tools"
+          ],
+          "success_metric": "Reduction in average man-hours spent on the three targeted processes (Target: 10% efficiency gain within 4 months).",
+          "milestones": [
+            "Top 3 process bottlenecks identified.",
+            "Automation requirements documented for Phase 1.",
+            "First automated workflow successfully deployed and validated."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1_staffing_audit",
+        "action": "Conduct a granular audit of generalist staff time allocation to quantify exact bottlenecks and prioritize automation efforts.",
+        "owner": "General Manager / Operations Lead",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2_vendor_vetting",
+        "action": "Research off-the-shelf, modular CRM add-ons that can rapidly deploy basic self-service features without requiring massive custom development.",
+        "owner": "Technical Lead / Committee Member",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3_staff_buyin_session",
+        "action": "Host a dedicated session with remaining staff to present the concept of internal process optimization, ensuring buy-in and ownership.",
+        "owner": "HR / Leadership Team",
+        "timeframe": "Next 2 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme reliance on overstretched generalist talent pool, creating single points of failure for critical operations.",
+      "The organizational culture tends to solve problems opportunistically rather than through structured, proactive innovation budgeting.",
+      "Difficulty maintaining momentum on long-term strategic goals when faced with immediate operational crises (i.e., high churn)."
+    ],
+    "progress": {
+      "improvements": [
+        "Structural maturity of the innovation process has significantly improved with the formalization and successful operation of the internal venture studio model.",
+        "Digital maturity is now at a level 4, indicating an increased capacity to integrate complex systems compared to previous assessments."
+      ],
+      "persistent_gaps": [
+        "The foundational issue of staff bandwidth and recovery from restructuring remains unaddressed, hindering sustainable innovation velocity.",
+        "Critical customer-facing technology (self-service) has not kept pace with the market need, resulting in measurable revenue decline via high churn."
+      ],
+      "achieved_milestones": [
+        "Successfully consolidated 5 business units into a streamlined 3-unit structure.",
+        "Established an active pipeline of cross-functional innovation projects within the internal studio model."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased digital maturity and formal process structure provide significant structural improvements (boosting capacity). However, this is directly countered by critical operational stress (staff burnout) and immediate market pressure (high churn), shifting focus from internal building blocks to urgent customer-facing fixes."
+    }
+  }
+}

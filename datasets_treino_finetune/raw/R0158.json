@@ -1,0 +1,204 @@
+{
+  "id": "R0158",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0175",
+  "split": "train",
+  "metadata": {
+    "sector": "Information Technology",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:23:23.102450+00:00",
+    "duration_ms": 56410,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vanguard Labs",
+      "sector": "Information Technology",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 18,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0175",
+      "fields": {
+        "companyName": "Vanguard Labs",
+        "sector": "Information Technology",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Custom software development house building bespoke ERP, CRM, and workflow automation solutions for mid-market manufacturing and logistics companies. Full-stack team of 22 developers. Evaluating low-code platform adoption to accelerate delivery for standard use cases while preserving custom development for complex integrations. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 13,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "superseded",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 2.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_governance",
+        "type": "incremental",
+        "title": "Implement Tiered Digital Architecture Governance (Low-Code/Custom)",
+        "rationale": "The simultaneous evaluation of low-code platforms and bespoke development is creating architectural risk and slow decision cycles. A formal governance model is needed to define clear boundaries, allowing standard use cases to accelerate via low-code while reserving complex, high-value integrations for full custom builds.",
+        "execution_plan": {
+          "first_actions": [
+            "Create a joint Architecture Review Board (ARB) including business unit leads and core engineering staff.",
+            "Define clear 'low-risk/standard' vs. 'high-complexity/core' use case taxonomies for all future projects.",
+            "Pilot the governance model on 2 high-priority, non-customer-facing internal processes first."
+          ],
+          "resources_needed": [
+            "Lead Solution Architect",
+            "Business Process Owners (x3)",
+            "Formal Policy Mandate from Steering Committee"
+          ],
+          "success_metric": "Reduction in ambiguous project scoping resulting in a 25% decrease in ARB review time within one quarter.",
+          "milestones": [
+            "Taxonomy definition complete.",
+            "ARB charter approved and staffed.",
+            "First two low-code/custom integration proofs of concept executed."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_market_defense",
+        "type": "radical",
+        "title": "Develop a Competitive Experience Layer (CXL) Accelerator",
+        "rationale": "To defend market share and reduce churn against aggressive, modern competitors, Vanguard must move beyond mere feature parity. This initiative requires radical investment in the customer-facing experience layer—unifying ERP/CRM functionality into a superior, seamless digital shell that enhances perceived value and increases switching costs.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct comprehensive CX benchmarking against top three competitors' user journeys.",
+            "Establish a dedicated 'Experience SWAT Team' with full cross-functional authority (Product, UX, Engineering).",
+            "Define the MVP for the CXL based on high-churn touchpoints identified in NPS feedback."
+          ],
+          "resources_needed": [
+            "UX/CX Lead Specialist",
+            "Dedicated Product Roadmap Budget (ring-fenced)",
+            "Executive Sponsorship and Mandate to bypass standard committee approval for critical path items."
+          ],
+          "success_metric": "Increase in Net Promoter Score (NPS) by 15 points within 9 months, correlated with adoption of the CXL MVP.",
+          "milestones": [
+            "CX gap analysis report delivered and approved.",
+            "Design system finalized for CXL components.",
+            "Beta launch of core 'stickiness' features."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Establish the Digital Speed Council (DSC) to bypass standard committee bottlenecks for critical market defense initiatives.",
+        "owner": "COO/CTO Leadership",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": "ns_2",
+        "action": "Mandate the creation of a 'Low-Code Adoption Playbook' detailing governance, required training, and ROI guardrails for all business units.",
+        "owner": "CDO/Process Improvement Office",
+        "timeframe": "Next 60 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Prioritize the top three high-churn customer journeys and initiate rapid, focused sprints targeting feature parity with key competitors.",
+        "owner": "Product Management/Engineering Leads",
+        "timeframe": "Ongoing (Quarterly focus)"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and reliance on formal committee decision-making slow down required rapid market responses.",
+      "The matrix structure allows for deep technical capability but results in variable business unit adoption rates, creating inconsistent customer experiences.",
+      "Difficulty balancing speed (low-code) versus resilience/complexity (custom development) is limiting strategic focus."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful transition to Agile methodology across engineering teams, yielding a 60% reduction in release cycle time.",
+        "Robust digital capability buildout confirmed by the large team size and successful internal product graduation program (6 products).",
+        "Increased budget allocation for innovation (18%) demonstrates executive commitment."
+      ],
+      "persistent_gaps": [
+        "Process maturity remains 'partial,' indicating procedural bottlenecks are not fully resolved.",
+        "The decision-making framework is still too dependent on formal committee approval, hindering speed.",
+        "Alignment between engineering rapid cadence and adjacent teams (Marketing/Support) requires dedicated process support."
+      ],
+      "achieved_milestones": [
+        "Successful implementation of continuous deployment pipelines across core services.",
+        "Established internal accelerator program generating viable market products consistently."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant improvement in digital capability (3 to 4) and resource depth, but the core strategic challenge—defending market share against new entrants—has escalated rapidly, requiring a shift from general transformation to hyper-focused competitive experience layer development."
+    }
+  }
+}

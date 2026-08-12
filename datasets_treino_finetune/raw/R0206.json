@@ -1,0 +1,203 @@
+{
+  "id": "R0206",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0018",
+  "split": "train",
+  "metadata": {
+    "sector": "Pharmaceuticals & Biotech",
+    "size": "Large",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:45:47.589705+00:00",
+    "duration_ms": 35696,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.991275+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Fusion",
+      "sector": "Pharmaceuticals & Biotech",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 10 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "strategy"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0018",
+      "fields": {
+        "companyName": "Fusion",
+        "sector": "Pharmaceuticals & Biotech",
+        "size": "Large",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Biotech company developing novel monoclonal antibody therapies for autoimmune diseases. Lead candidate in Phase II clinical trials for rheumatoid arthritis with promising biomarker data. 65-person R&D team. Key innovation need is AI-accelerated candidate screening using in-silico protein folding and binding affinity prediction. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 6 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "not_done",
+      "opp_3": "not_done",
+      "step_1": "superseded",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Establish Centralized AI/ML Governance Framework for Drug Discovery",
+        "rationale": "The core innovation need involves AI-accelerated screening, which requires rigorous data handling and regulatory oversight. Formalizing governance now mitigates risk associated with complex multi-layer processes before scaling up R&D reliance on these models.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a cross-functional AI Ethics and Compliance committee (R&D, Legal, Quality Assurance).",
+            "Map data provenance requirements for all in-silico protein folding inputs to ensure audit readiness.",
+            "Implement mandatory regulatory impact assessments at the stage-gate review points for any new ML model deployment."
+          ],
+          "resources_needed": [
+            "Legal Counsel (Biotech/AI Focus)",
+            "Data Governance Specialist",
+            "R&D Leadership Time"
+          ],
+          "success_metric": "Zero findings of non-compliance in internal AI audit.",
+          "milestones": [
+            "Drafting and approval of the AI Usage Policy v1.0 within 6 months.",
+            "Pilot implementation with lead candidate R&D team.",
+            "Integration into formal stage-gate process documentation."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Institute a Structured Competitive Intelligence (CI) Loop into Market Defense Planning",
+        "rationale": "While strategic goals focus on market defense, the current process needs formalized inputs from competitor actions (pricing/UX). Integrating CI earlier allows for pre-emptive product adjustments and strengthening switching costs proactively.",
+        "execution_plan": {
+          "first_actions": [
+            "Formalize quarterly 'Threat Landscape' workshops involving sales, marketing, and executive leadership.",
+            "Develop standardized playbooks triggered by competitor moves (e.g., price drop response, new feature parity plan).",
+            "Implement a shared dashboard tracking key competitor metrics (pricing changes, clinical trial announcements).",
+            "Conduct GDPR and data privacy compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated Strategy Analyst Team",
+            "Sales/Marketing Input Time",
+            "Executive Sponsorship"
+          ],
+          "success_metric": "Reduction in time-to-respond to major competitive actions by 30%.",
+          "milestones": [
+            "Successful delivery of the first threat landscape report.",
+            "Approval of three documented response playbooks.",
+            "Quarterly integration into the overall strategic planning cycle."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "low",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Update and standardize SOPs for all data transfer points between R&D/AI teams and clinical site partners to ensure HIPAA/GDPR compliance.",
+        "owner": "Quality Assurance / Legal Counsel",
+        "timeframe": "Q3 Next Year"
+      },
+      {
+        "id": "ns2",
+        "action": "Mandate executive participation in 'Culture Shift' workshops focused on adapting cross-functional teams (Marketing, Support) to the new agile velocity.",
+        "owner": "HR / Chief Operating Officer",
+        "timeframe": "Ongoing (Quarterly)"
+      },
+      {
+        "id": "ns3",
+        "action": "Formalize the process for incorporating competitive pricing data into initial budget planning stages to manage cost-of-entry risk.",
+        "owner": "Finance / Strategy Office",
+        "timeframe": "Next 4 Months"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational inertia and alignment across non-core digital teams (Marketing, Support) remain a bottleneck despite agile adoption.",
+      "Governance maturity needs to formally govern the rapidly expanding use of AI/ML in high-risk drug discovery processes.",
+      "The organization's strategic agility requires formal mechanisms to preemptively counter competitor pricing strategies."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful adoption of agile methodology leading to a 60% reduction in release cycle time for engineering functions.",
+        "Formalization of the strategic planning process, moving toward professional management rigor.",
+        "Increased dedicated digital talent pool (80+ professionals) and established internal incubation/VC arms."
+      ],
+      "persistent_gaps": [
+        "Alignment gap persists between core technical teams and adjacent functional departments.",
+        "Formalized compliance steps for novel AI models are not yet fully integrated into the operational governance structure.",
+        "The 'varies by project' decision-making process remains a structural barrier to speed."
+      ],
+      "achieved_milestones": [
+        "Agile adoption stabilization within engineering teams.",
+        "Formation of internal startup/venture capital capabilities demonstrating resource breadth."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.5,
+      "previous_date": "2023-10-01",
+      "assessment_number": 2,
+      "key_changes": "Significant progress noted in professional management structure and digital capability (Digital Maturity increased from 3 to 4). The focus shifted from foundational process building to operationalizing advanced technology (AI/ML) within a high regulatory context. Recommendations moved from general recommendations to specific governance frameworks."
+    }
+  }
+}

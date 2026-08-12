@@ -1,0 +1,171 @@
+{
+  "id": "R0047",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0233",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-09T19:15:15.864147+00:00",
+    "duration_ms": 23026,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Fusion Holdings",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "2",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 7,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0233",
+      "fields": {
+        "companyName": "Fusion Holdings",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 10,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 3 new team members. Launched customer feedback pilot. Budget for innovation increased 10%.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "superseded",
+      "opp_3": "not_done",
+      "step_1": "completed",
+      "step_2": "in_progress",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.2,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3_diversification_platform",
+        "type": "radical",
+        "title": "AI-Driven New Value Proposition Discovery & Validation Engine",
+        "rationale": "To meet the strategic goal of identifying entirely new value propositions outside the fast-fashion cycle, this radical initiative will utilize AI lead scoring and customer feedback data to rapidly prototype and validate adjacent market opportunities (e.g., near-shoring model diversification). This directly addresses the need for non-incremental growth.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a cross-functional 'Adjacent Markets' task force including CTO, Head of Sales, and Lead Dev.",
+            "Define data requirements (CRM + Pilot Feedback) necessary to train lead scoring models on adjacent customer segments.",
+            "Allocate 20% of the increased budget for initial AI/ML tool subscription or custom model development scoping."
+          ],
+          "resources_needed": [
+            "Data Science Consultant (part-time)",
+            "Dedicated Product Manager",
+            "Internal Talent (1 dedicated Dev/Analyst)"
+          ],
+          "success_metric": "Number of validated adjacent market opportunities with draft business cases approved.",
+          "milestones": [
+            "Q3: MVP Lead Scoring Model deployed in pilot environment.",
+            "Q4: Three distinct, fully costed diversification proposals presented to leadership."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_4_process_governance",
+        "action": "Formalize and document the new innovation process workflow (Idea Intake -> Validation -> Budgeting) to address main barrier 'process'.",
+        "owner": "CTO/Product Owner",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "step_5_talent_upskilling",
+        "action": "Implement targeted training for existing team members on emerging tech (AI integration, advanced data analysis) to mitigate 'talent' barriers.",
+        "owner": "CTO",
+        "timeframe": "Ongoing (Quarterly focus)"
+      },
+      {
+        "id": "step_6_pilot_scaling",
+        "action": "Convert the successful customer feedback pilot into a scalable, automated data collection pipeline integrated with the CRM.",
+        "owner": "Lead Dev/Product Manager",
+        "timeframe": "4 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of formalized innovation process (currently partial maturity).",
+      "High dependence on CTO for both technical leadership and product ownership, creating a scaling bottleneck.",
+      "Inconsistent application of new digital tools due to ad-hoc system integrations."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful completion of the initial recommendation (Opp_1).",
+        "Increased innovation budget by 10% and hiring key talent to expand capacity.",
+        "Initiated customer feedback pilot, providing early informal insights into operational needs."
+      ],
+      "persistent_gaps": [
+        "Gap between current execution capacity and the need for focused time on 'radical' diversification bets.",
+        "Formalizing governance structures needed to manage scaling across a growing organization.",
+        "Translating digital tool deployment (CRM) into strategic, integrated business value."
+      ],
+      "achieved_milestones": [
+        "Completed Step 1 of the recommendation plan.",
+        "Successfully deployed and stabilized the new CRM system."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "2023-01-01",
+      "assessment_number": 1,
+      "key_changes": "Maturity increased from partial (4.0) to improved execution level (6.2). Strategic focus has shifted from incremental improvement to radical diversification, requiring a higher maturity score to reflect the ambition and complexity of new initiatives."
+    }
+  }
+}

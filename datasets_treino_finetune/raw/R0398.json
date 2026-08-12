@@ -1,0 +1,202 @@
+{
+  "id": "R0398",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0489",
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T09:57:28.958291+00:00",
+    "duration_ms": 48226,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.041135+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Aether",
+      "sector": "Energy & Utilities",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Waste-to-energy facility processing 180,000 tons of municipal solid waste annually, generating 15 MW of baseload electricity. Evaluating advanced flue gas treatment to meet tightening emissions standards and exploring district heating network connection to improve overall plant efficiency. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 0,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0489",
+      "fields": {
+        "companyName": "Aether",
+        "sector": "Energy & Utilities",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Waste-to-energy facility processing 180,000 tons of municipal solid waste annually, generating 15 MW of baseload electricity. Evaluating advanced flue gas treatment to meet tightening emissions standards and exploring district heating network connection to improve overall plant efficiency. Multi-department organization with formalized budgets, quarterly business reviews, and a dedicated strategy function. We have invested in core systems (ERP, CRM, HRIS) but these are not always well-integrated. Innovation is a standing agenda item at board level with annual investment allocated, but execution velocity varies across business units.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Our digital transformation program is in its third year with a dedicated transformation office reporting to the CEO. We have completed an ERP migration to the cloud, rolled out a company-wide data warehouse with self-service BI dashboards, and established a center of excellence for process automation using RPA and low-code tools. The program has delivered €2.4M in annualized cost savings to date.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our industry is facing structural decline due to technological disruption and changing consumer behavior. We cannot rely on incremental improvements to our legacy business — we need to identify entirely new value propositions that leverage our brand, customer relationships, or operational capabilities in adjacent spaces where demand is growing, not shrinking.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 6 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "in_progress",
+      "step_1": "not_done",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.2,
+    "score_delta": 1.2,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3",
+        "type": "incremental",
+        "title": "Advanced Market Opportunity Identification via Data Modeling",
+        "rationale": "Leverage the new data warehouse and BI capabilities to model potential non-WTE revenue streams. This moves beyond simple operational efficiency improvements by using historical waste, energy consumption, and regional market data to quantify demand in adjacent sectors (e.g., carbon credit arbitrage, localized heat sales).",
+        "execution_plan": {
+          "first_actions": [
+            "Map all existing waste/energy output streams into quantifiable commodities.",
+            "Build predictive models integrating external macro-economic and regulatory data sets.",
+            "Host an internal scenario planning workshop involving engineering and finance teams."
+          ],
+          "resources_needed": [
+            "Data Science resources (dedicated time)",
+            "External market research subscription",
+            "Executive sponsorship for cross-functional mandate"
+          ],
+          "success_metric": "Identification of 3 viable, quantifiable, non-core revenue streams with projected IRR > 15%",
+          "milestones": [
+            "Data ingestion pipeline finalized (Month 2)",
+            "Initial market simulation report delivered (Month 4)",
+            "Top 3 opportunities presented to leadership committee (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_4",
+        "type": "incremental",
+        "title": "Circular Economy Value Chain Expansion (Beyond WTE)",
+        "rationale": "To meet the strategic need for diversification, Aether must explore turning waste streams into high-value industrial commodities rather than just baseload electricity. This requires bold partnerships and entering new markets, such as advanced material recovery or sustainable chemical synthesis.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 3 anchor industry partners (e.g., construction, chemical manufacturing) interested in waste by-products.",
+            "Develop a high-level feasibility study for co-locating pilot recovery units near the plant site.",
+            "Draft preliminary partnership MOUs focusing on shared risk and revenue streams."
+          ],
+          "resources_needed": [
+            "Business Development/Legal expertise",
+            "Pilot funding (seed capital)",
+            "Executive participation in external networking events"
+          ],
+          "success_metric": "Signed Letter of Intent (LOI) with a strategic industrial partner for pilot testing by-products.",
+          "milestones": [
+            "Partner shortlist and initial outreach complete (Month 3)",
+            "Detailed technical/financial feasibility report produced (Month 6)",
+            "Pilot implementation agreement finalized (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Integrate data from the new dedicated innovation squad into core operational KPIs, ensuring process automation visibility across departments.",
+        "owner": "COO/Transformation Office Lead",
+        "timeframe": "Q2 2024"
+      },
+      {
+        "id": "ns_2",
+        "action": "Establish a formal cross-departmental 'Rapid Prototyping Guild' to break down siloed knowledge and accelerate ideation for diversification opportunities.",
+        "owner": "HR/Innovation Squad Lead",
+        "timeframe": "Q2 2024"
+      },
+      {
+        "id": "ns_3",
+        "action": "Conduct a formal risk-adjusted market sizing exercise focused exclusively on potential carbon and renewable energy credit arbitrage.",
+        "owner": "Finance/Data Science Team",
+        "timeframe": "Q2 2024"
+      }
+    ],
+    "key_weaknesses": [
+      "Inter-departmental knowledge silos persist despite digital integration, slowing adoption of complex cross-functional solutions.",
+      "Talent allocation remains highly constrained; the dedicated innovation squad must prove its ROI to gain full operational autonomy and headcount growth.",
+      "Transitioning from a stable utility model (WTE) requires overcoming deeply entrenched organizational inertia regarding novel business risk."
+    ],
+    "progress": {
+      "improvements": [
+        "Digital backbone is substantially complete: Cloud ERP, self-service BI dashboards, and RPA/low-code automation are operational.",
+        "Organizational structure has matured with a dedicated Transformation Office reporting directly to the CEO, formalizing innovation as an executive priority.",
+        "Process compliance has improved significantly due to new regulatory standards implementation."
+      ],
+      "persistent_gaps": [
+        "Integration layer maturity: Core systems (ERP, CRM) are separate, leading to manual reconciliation points and data inconsistencies.",
+        "Strategic bandwidth: The leadership team's focus is highly operational, limiting dedicated time for deep strategic/radical thinking required for diversification.",
+        "Talent utilization: Despite having a dedicated squad, the skills gap remains in high-level business modeling and external partnership negotiation."
+      ],
+      "achieved_milestones": [
+        "Cloud ERP migration successfully completed.",
+        "Centralized data warehouse launched with functional self-service BI dashboards.",
+        "Sustained annual innovation investment allocated at board level."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "2023-10-15",
+      "assessment_number": 1,
+      "key_changes": "Significant structural and digital improvements have been achieved (cloud ERP, data warehouse). The company has professionalized its innovation function and is actively shifting its focus from incremental efficiency to radical diversification."
+    }
+  }
+}

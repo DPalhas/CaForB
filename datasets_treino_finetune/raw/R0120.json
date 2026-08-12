@@ -1,0 +1,198 @@
+{
+  "id": "R0120",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0248",
+  "split": "train",
+  "metadata": {
+    "sector": "Education",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:43:45.850741+00:00",
+    "duration_ms": 63188,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Catalyst Consulting",
+      "sector": "Education",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "Our team includes 6 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+      "digitalMaturity": "4",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 9,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0248",
+      "fields": {
+        "companyName": "Catalyst Consulting",
+        "sector": "Education",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Private K-12 school network operating 5 campuses with 3,200 enrolled students from preschool through secondary education. Following the International Baccalaureate curriculum. Evaluating adaptive learning platforms and AI-powered student progress analytics for early intervention on at-risk learners. Operate from 2-3 locations or departments. We have some budget headroom for experimentation but look for quick wins that can demonstrate value within 6 months before committing to longer-term programs. The leadership team is aligned on the need to modernize but debates where to start.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Targeting 30% year-over-year top-line growth. We see untapped demand in adjacent customer segments and are evaluating whether to build, buy, or partner to accelerate market penetration. The core question is whether to deepen our vertical specialization or broaden horizontally into related product categories.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "Our team includes 3 backend developers, 1 frontend developer, and 1 QA engineer, managed by the CTO who also acts as product owner. We outsource UI/UX design to a freelance designer as needed. The team can handle incremental product improvements but struggles to carve out focused time for larger innovation bets without compromising current sprint commitments.",
+        "digitalMaturity": "4",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 12,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 3 new features shipped. Customer NPS improved 5 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "step_1": "superseded",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1_2024",
+        "type": "incremental",
+        "title": "Formalize and Scale the Innovation Fellow Program (Center of Excellence)",
+        "rationale": "The existing formal process (hackathons, fellows) is successful but risks being ad-hoc. To support 30% growth, this capacity needs to be institutionalized into a dedicated function or 'Innovation Squad.' This ensures high-potential ideas are given sustained resources and leadership visibility.",
+        "execution_plan": {
+          "first_actions": [
+            "Mandate that the CTO/Product Owner dedicates 10% of time weekly to managing the Innovation Fellow cohort.",
+            "Establish a standardized pipeline for vetting fellow project results (Kill criteria, MVP requirements).",
+            "Allocate a ring-fenced 'Discovery Budget' specifically for testing these innovative prototypes."
+          ],
+          "resources_needed": [
+            "Dedicated internal mentor time (CTO/Senior Dev)",
+            "Small operational budget ($5k-$10k initial)",
+            "Cross-functional working group (Sales, Product, Engineering)"
+          ],
+          "success_metric": "Number of fully scoped, funded MVPs transitioned from Fellow program to product roadmap within 6 months.",
+          "milestones": [
+            "Pilot the 'Squad' concept with one project by Q3 end.",
+            "Formalize intake criteria for new innovation fellows/projects."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2_tech_debt",
+        "type": "incremental",
+        "title": "Implement a Mandatory Technical Debt Refactoring Allocation (The 20% Rule)",
+        "rationale": "The rapidly growing technical debt poses the single greatest threat to achieving 30% growth and maintaining NPS. Treating refactoring as a mandatory, dedicated sprint allocation ensures that feature velocity does not compromise product stability.",
+        "execution_plan": {
+          "first_actions": [
+            "Mandate that at least 20% of all engineering sprint capacity is reserved for technical debt reduction or infrastructure hardening.",
+            "Conduct a quantifiable tech debt audit and categorize it (e.g., security, performance, codebase fragility).",
+            "Adjust resource planning to make this allocation non-negotiable during quarterly roadmap sessions."
+          ],
+          "resources_needed": [
+            "Engineering team bandwidth commitment",
+            "Architecture review/Code quality metrics tool",
+            "Product Owner agreement on scope reduction if 20% is enforced"
+          ],
+          "success_metric": "Reduction in high-priority bug reports related to legacy code and measurable decrease in mean time to recovery (MTTR).",
+          "milestones": [
+            "Complete the initial tech debt audit within 4 weeks.",
+            "Establish and measure the adherence rate of the 20% rule for two consecutive sprints."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Ongoing/Immediate",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Schedule a cross-functional workshop (Leadership/Product/CTO) to define the scope and resource allocation for the 20% Technical Debt Rule.",
+        "owner": "CTO / CTO's direct reports",
+        "timeframe": "Next 3 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Develop a structured framework (e.g., low-cost pilots, stakeholder interviews) to rapidly validate the core strategic question: Vertical Depth vs. Horizontal Breadth.",
+        "owner": "Strategy/Sales Leadership",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns_3",
+        "action": "Formalize the charter and success metrics for the Innovation Fellow program, transitioning it from a 'side project' to a recognized growth engine.",
+        "owner": "CTO / Product Owner",
+        "timeframe": "Next 4 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Strategic ambiguity regarding market focus (Vertical specialization vs. Horizontal expansion)",
+      "Systemic capacity constraint: The team struggles to dedicate focused time for large innovation bets without sacrificing immediate sprint commitments.",
+      "Accumulating technical debt threatens operational stability and limits ability to scale new features."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful product feature delivery (3 new features shipped).",
+        "Demonstrated positive market traction evidenced by a 5-point NPS improvement.",
+        "Formal innovation processes are actively running, providing tangible prototypes in production (CV inspection tool)."
+      ],
+      "persistent_gaps": [
+        "Technical debt is growing, creating hidden operational risk.",
+        "The core strategic direction remains undefined at the leadership level.",
+        "Resource allocation requires explicit management to balance feature parity with innovation/refactoring."
+      ],
+      "achieved_milestones": [
+        "Successful product launch and initial deployment of new features.",
+        "Positive early adoption metrics (NPS improvement)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased operational maturity shown by successful product launches and formal process reinforcement (CV prototype). However, the risk profile has shifted from structural gaps to critical resource/technical debt constraints. The focus must now pivot from *creating* processes to *sustaining* profitable growth despite capacity limits."
+    }
+  }
+}

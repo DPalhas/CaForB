@@ -1,0 +1,203 @@
+{
+  "id": "R0172",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0359",
+  "split": "train",
+  "metadata": {
+    "sector": "Retail & Wholesale Trade",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:14:09.192825+00:00",
+    "duration_ms": 45523,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Aether.tech",
+      "sector": "Retail & Wholesale Trade",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "7 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 6,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0359",
+      "fields": {
+        "companyName": "Aether.tech",
+        "sector": "Retail & Wholesale Trade",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Fashion and apparel retail chain with 45 stores across shopping malls in 3 countries. Fast-fashion model with 6-week design-to-shelf cycle. Facing margin pressure from ultra-fast-fashion online competitors. Exploring near-shoring production and RFID-based inventory visibility to improve replenishment speed. Currently operating from a single location with very limited management layers. Decision-making is fast and informal, but we lack the specialized expertise in-house to evaluate complex technology investments without external advisory support.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 3,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "culture",
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Hired 5 new team members. Launched customer feedback pilot. Budget for innovation increased 25%.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "not_done",
+      "step_1": "in_progress",
+      "step_2": "in_progress",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_data_monetization",
+        "type": "incremental",
+        "title": "Establish Compliant Data Monetization Stream (Marketplace/Subscription)",
+        "rationale": "The company explicitly seeks adjacent business models like marketplaces or subscription services, which are data-intensive. Given the high regulatory environment and existing CRM success, this opportunity involves building structured, compliant processes around proprietary customer data to create new revenue streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a legal review of all current data collection points (GDPR/local laws) for monetization potential.",
+            "Develop an anonymization and aggregation strategy for core sales/customer journey data.",
+            "Pilot the integration of collected data into a dedicated 'Insights Dashboard' accessible by marketing and product teams."
+          ],
+          "resources_needed": [
+            "Legal counsel specializing in retail data compliance",
+            "Data Scientist (external advisory)",
+            "Dedicated Project Manager time allocation"
+          ],
+          "success_metric": "Successful pilot launch of 1 non-core revenue stream using proprietary data within 9 months.",
+          "milestones": [
+            "Compliance framework established and approved (Month 3)",
+            "Minimum Viable Data Product defined and tested (Month 6)",
+            "Initial cash flow generated from the new data stream (Month 12)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-18 months",
+        "carry_forward_from": "opp_data_monetization",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_tech_expertise",
+        "type": "incremental",
+        "title": "Build Specialized In-House Technology Evaluation Capability",
+        "rationale": "The current constraint is the lack of specialized expertise for evaluating complex tech investments. Since decision-making is centralized with the owner, building a dedicated internal function or advisory team will mitigate risk and accelerate adoption cycles for AI/automation tools.",
+        "execution_plan": {
+          "first_actions": [
+            "Define the scope and requirements for an interim 'Innovation Advisor' role (contract basis).",
+            "Create a standardized RFI/RFP process template used by all department heads before technology procurement.",
+            "Allocate 10% of the new budget toward external advisory support hours."
+          ],
+          "resources_needed": [
+            "Budget allocation for specialized contract talent",
+            "Head of Operations (internal champion)",
+            "Internal training on structured vendor evaluation"
+          ],
+          "success_metric": "Reduction in technology procurement decision cycle time by 30%.",
+          "milestones": [
+            "Innovation Advisor role defined and initially staffed (Month 2)",
+            "Standardized RFI/RFP process adopted company-wide (Month 4)",
+            "Successful vetting and recommendation of a new core system upgrade (Month 7)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months",
+        "carry_forward_from": "opp_tech_evaluation",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_1_governance",
+        "action": "Formalize the data governance framework, ensuring all monetization and AI initiatives comply with current regulatory standards.",
+        "owner": "Executive Leadership/Legal Counsel",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "step_2_marketplace_scope",
+        "action": "Conduct a detailed, low-cost feasibility study for the 'Marketplace' model, focusing only on high-margin inventory resale/pre-owned items to minimize initial risk.",
+        "owner": "COO/Sales Team Lead",
+        "timeframe": "Next 4 months"
+      },
+      {
+        "id": "step_3_process_standardization",
+        "action": "Mandate the use of a standardized project management methodology for all department process improvements (beyond simple CRM adoption).",
+        "owner": "New Project Manager/HR",
+        "timeframe": "Next 6 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on the single owner for critical decision-making, creating a significant bottleneck.",
+      "Lack of specialized internal talent to evaluate and manage complex technological investments (AI/ML).",
+      "Processes are still highly informal, limiting scalability outside core sales functions."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased innovation budget allocation (6% vs 3%) indicates stronger commitment.",
+        "Formal launch of a customer feedback pilot moves the company beyond purely 'informal conversations'.",
+        "Success with CRM implementation demonstrates an ability to execute complex, structured IT projects."
+      ],
+      "persistent_gaps": [
+        "The core barrier of specialized technical talent remains unaddressed structurally.",
+        "Decision-making structure has not decentralized sufficiently despite hiring new team members.",
+        "Processes are improving but lack formal governance and adherence across all departments."
+      ],
+      "achieved_milestones": [
+        "Successfully deployed CRM system (18 months ago).",
+        "Increased internal resources via budget increase and new hires."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company demonstrated significant internal momentum by securing higher funding and formalizing its customer data collection process. Focus has shifted strongly towards diversification and leveraging proprietary data assets, while compliance remains a critical early hurdle."
+    }
+  }
+}

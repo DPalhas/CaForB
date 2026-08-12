@@ -1,0 +1,199 @@
+{
+  "id": "R0295",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0450",
+  "split": "train",
+  "metadata": {
+    "sector": "Fintech",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:18:59.045046+00:00",
+    "duration_ms": 48959,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Meridian.tech",
+      "sector": "Fintech",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Insurtech MGA underwriting parametric weather insurance for smallholder farmers in Southern Europe. Payouts triggered automatically by satellite-verified rainfall deficit or frost events. Currently operating in Portugal and Spain with 5,000 policies. Evaluating expansion to parametric heat stress insurance for livestock. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "11 person team",
+      "digitalMaturity": "3",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 2,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0450",
+      "fields": {
+        "companyName": "Meridian.tech",
+        "sector": "Fintech",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Insurtech MGA underwriting parametric weather insurance for smallholder farmers in Southern Europe. Payouts triggered automatically by satellite-verified rainfall deficit or frost events. Currently operating in Portugal and Spain with 5,000 policies. Evaluating expansion to parametric heat stress insurance for livestock. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "Our engineering team adopted an agile methodology last year, moving from waterfall-style quarterly releases to 2-week sprints with continuous deployment. This reduced our release cycle time by 60% and improved cross-functional collaboration. However, adjacent teams (marketing, support) are still adapting to the faster cadence.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "Our digital and innovation organization includes 80+ professionals across centers of excellence for AI/ML, cloud engineering, UX design, and agile delivery. We run an internal incubator program that has graduated 6 new digital products to market in the past 2 years, alongside a corporate venture capital arm that makes strategic minority investments in relevant startups.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 5,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 5 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "opp_3": "superseded",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_digital_selfservice",
+        "type": "incremental",
+        "title": "Customer-Centric Digital Self-Service Platform",
+        "rationale": "The decline in customer retention (92% to 84%) and specific feedback citing poor digital tools necessitate urgent modernization. Building a robust self-service platform stabilizes the core market and allows for scalable product exploration, directly supporting the 'market_defense' priority.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current customer journeys to identify high-friction digital touchpoints (especially for mid-tier/enterprise clients).",
+            "Map out mandatory compliance steps for automated policy adjustments and data retrieval in the new platform.",
+            "Establish a dedicated cross-functional working group (Product, Tech, CX) with C-level sponsorship."
+          ],
+          "resources_needed": [
+            "UX/UI Design Team",
+            "Dedicated Backend Integration Specialists",
+            "Governance/Compliance Officer time"
+          ],
+          "success_metric": "Reduce average customer service inquiries by 25% within 12 months.",
+          "milestones": [
+            "Completion of high-friction journey mapping (Q1).",
+            "MVP launch focusing on policy renewal and claim status tracking (Q2)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_parametric_expansion_framework",
+        "type": "incremental",
+        "title": "Standardized Parametric Product Portfolio Expansion Framework",
+        "rationale": "To proactively mitigate product stagnation risk and manage future growth (e.g., livestock heat stress), a repeatable framework is needed. This standardizes the process from opportunity identification to regulatory filing, ensuring consistent governance as the company expands its parametric offering.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a matrix linking new risk categories (e.g., agricultural/livestock) to required data inputs and underwriting models.",
+            "Establish a formal 'Feasibility Assessment' gate, requiring mandatory sign-off from Legal, Actuary, and R&D before project initiation.",
+            "Pilot the framework using the evaluation for parametric heat stress insurance."
+          ],
+          "resources_needed": [
+            "Actuarial Expertise",
+            "Legal/Compliance Counsel",
+            "Senior Executive Sponsorship (Strategy)"
+          ],
+          "success_metric": "Reduce time-to-concept validation and preliminary risk assessment by 40%.",
+          "milestones": [
+            "Framework document finalized and approved by governance committee (Q1).",
+            "Pilot product concept fully mapped through the gates (Q2)."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "high",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct deep-dive customer journey mapping focused on the digital self-service experience for enterprise clients.",
+        "owner": "Customer Experience (CX) Team / Product Owner",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns_2",
+        "action": "Secure explicit C-suite sponsorship and funding commitment for the Digital Self-Service Platform initiative.",
+        "owner": "Strategy Office / CEO's Office",
+        "timeframe": "Immediate (Next 4 weeks)"
+      },
+      {
+        "id": "ns_3",
+        "action": "Hold mandatory cross-departmental workshops to standardize the definition of 'success' and required adoption for new agile processes across Marketing and Support teams.",
+        "owner": "PMO / HR L&D",
+        "timeframe": "Within 6 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia, leading to slow cross-functional adoption despite successful process changes (e.g., Marketing/Support lagging agile pace).",
+      "Critical vulnerability in the mid-tier and enterprise segments due to product stagnation and poor self-service digital tools.",
+      "Governance structure is complex, requiring deliberate senior executive effort just to initiate non-core strategic projects."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful adoption of Agile methodology (2-week sprints) leading to a 60% reduction in release cycle time and improved cross-functional technical collaboration.",
+        "Increased internal capability maturity demonstrated through the implementation of continuous deployment practices."
+      ],
+      "persistent_gaps": [
+        "Customer retention rate remains critically low in key segments (84%), indicating the digital self-service gap is systemic, not isolated.",
+        "The organizational culture requires more targeted effort to ensure operational teams fully embed fast-paced agile mindsets into their daily workflows."
+      ],
+      "achieved_milestones": [
+        "Successful transition from quarterly Waterfall releases to continuous deployment sprints (Process maturity milestone)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company successfully operationalized core development processes (Agile adoption), significantly improving technical efficiency and release cadence. However, market pains (churn) are more pronounced than previously assumed, demanding an immediate pivot from internal process optimization to external customer experience modernization."
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "id": "R0214",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0278",
+  "split": "train",
+  "metadata": {
+    "sector": "Real Estate",
+    "size": "Micro",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:51:31.790783+00:00",
+    "duration_ms": 44633,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Orbit Analytics",
+      "sector": "Real Estate",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "PropTech startup operating a platform for fractional real estate investment allowing retail investors to invest in commercial properties with as little as €100. 15,000 registered investors, €25M in funded properties. Regulated by CMVM. Evaluating automated property sourcing and due diligence workflow tools. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 14,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0278",
+      "fields": {
+        "companyName": "Orbit Analytics",
+        "sector": "Real Estate",
+        "size": "Micro",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "PropTech startup operating a platform for fractional real estate investment allowing retail investors to invest in commercial properties with as little as €100. 15,000 registered investors, €25M in funded properties. Regulated by CMVM. Evaluating automated property sourcing and due diligence workflow tools. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "bold",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 17,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "culture"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 2 new features shipped. Customer NPS improved 25 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "opp_4": "superseded",
+      "step_1": "superseded",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.2,
+    "score_delta": 1.7,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_A",
+        "type": "incremental",
+        "title": "Build Automated PropTech Workflow Layer (Sourcing & Due Diligence)",
+        "rationale": "The company is actively evaluating automated property sourcing and due diligence tools. Formalizing this workflow into a dedicated product layer mitigates technical debt, improves operational efficiency, and creates a defensible competitive advantage in the Real Estate vertical.",
+        "execution_plan": {
+          "first_actions": [
+            "Map end-to-end ideal state property sourcing/due diligence journey for minimum viable product (MVP).",
+            "Scope core data API integration points with external data providers (e.g., tax records, zoning databases).",
+            "Prioritize features that provide immediate regulatory compliance checks into the workflow."
+          ],
+          "resources_needed": [
+            "Dedicated backend developer bandwidth (contract)",
+            "Domain expert time (legal/compliance)",
+            "External API credits/partnerships"
+          ],
+          "success_metric": "Time-to-Due-Diligence reduction by 40% (measured end-to-end).",
+          "milestones": [
+            "Workflow mapping completion.",
+            "POC integration with one key data source.",
+            "MVP functionality ready for internal user testing."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_B",
+        "type": "radical",
+        "title": "Establish a Dedicated Growth Innovation Cell (GIC)",
+        "rationale": "Current innovation is highly dependent on the founder's personal bandwidth, creating massive operational risk. To sustain 'bold' growth ambitions and manage growing technical debt, the company needs to formalize capacity by dedicating resources specifically for strategic bets (M&A vetting, new product lines).",
+        "execution_plan": {
+          "first_actions": [
+            "Ring-fence 10% of revenue/time bandwidth explicitly for GIC work.",
+            "Define the charter, scope, and key KPIs for the GIC (e.g., lead generation vetting, M&A research).",
+            "Outsource initial GIC coordination/project management to alleviate founder bottleneck."
+          ],
+          "resources_needed": [
+            "Small fractional PM resource",
+            "Initial seed budget allocation (from strategic bets)",
+            "Executive sponsorship commitment"
+          ],
+          "success_metric": "Completion of 3 actionable, vetted growth hypotheses within the first quarter.",
+          "milestones": [
+            "GIC charter finalized and approved by founder.",
+            "Pilot project launched with limited external resources.",
+            "Measurable contribution to pipeline/revenue identified from GIC work."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "3-6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Conduct a deep technical debt audit and create a prioritized backlog dedicated solely to core platform stability (anti-fragility).",
+        "owner": "Founder / Freelance Developer",
+        "timeframe": "Immediate (Next 4 weeks)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Formalize the internal process for evaluating strategic partnerships or M&A targets required to hit 18-month revenue goals.",
+        "owner": "GIC Lead / Founder",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "ns_3",
+        "action": "Integrate automated lead scoring and marketing automation tools into the existing CRM setup, leveraging recent deployment success.",
+        "owner": "Sales Operations Team",
+        "timeframe": "Q3"
+      }
+    ],
+    "key_weaknesses": [
+      "Extreme founder dependency (single point of failure for product vision and execution).",
+      "Lack of dedicated innovation funding mechanism, forcing growth to be opportunistic.",
+      "Significant accumulating technical debt threatening platform scalability during rapid growth."
+    ],
+    "progress": {
+      "improvements": [
+        "NPS increased by 25 points, validating core value proposition and customer trust.",
+        "Successful deployment of new CRM functionalities improved internal process efficiency (30% reduction in data entry time).",
+        "Product team successfully shipped two critical features."
+      ],
+      "persistent_gaps": [
+        "Lack of structured innovation bandwidth/dedicated budget prevents proactive strategic betting.",
+        "Technical debt is increasing, creating potential bottlenecks for high-speed feature development.",
+        "Operational capacity remains highly correlated with the founder's personal time availability."
+      ],
+      "achieved_milestones": [
+        "Successful launch and adoption of new product features.",
+        "Proven ability to execute complex system integrations (CRM deployment)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 3.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased operational execution velocity and improved customer satisfaction metrics (NPS). Shifted focus from internal process improvement to aggressive market growth, necessitating structural change to manage scale."
+    }
+  }
+}

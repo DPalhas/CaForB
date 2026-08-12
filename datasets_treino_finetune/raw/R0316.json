@@ -1,0 +1,202 @@
+{
+  "id": "R0316",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0279",
+  "split": "train",
+  "metadata": {
+    "sector": "Manufacturing",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "conservative",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:45:33.617695+00:00",
+    "duration_ms": 44076,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex Solutions",
+      "sector": "Manufacturing",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "6 person team",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 1,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0279",
+      "fields": {
+        "companyName": "Apex Solutions",
+        "sector": "Manufacturing",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Precision metal fabrication shop specializing in CNC-machined aluminum and titanium components for aerospace and automotive Tier-1 suppliers. We run 12 CNC machining centers across two shifts. Currently implementing ISO 9001:2025 certification and evaluating robotic tending automation. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We installed IoT sensors on 40% of our production equipment to monitor utilization and predict failures. The pilot showed a 15% reduction in unplanned downtime on instrumented machines. We now have a business case approved for full fleet rollout, but procurement and integration with our legacy maintenance system are proving more complex than anticipated.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "The founder handles all product and technology decisions personally with occasional input from a part-time freelance developer. There is no formal engineering team — technical work is either done by the founder or outsourced to contractors on a project basis. Innovation bandwidth is essentially limited to whatever the founder can personally drive alongside day-to-day operations.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 4,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "process"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 2 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 5.5,
+    "score_delta": 1.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_automation_workflow",
+        "type": "incremental",
+        "title": "End-to-End Order-to-Cash Process Automation",
+        "rationale": "The core strategic goal is a 15% OpEx reduction, which points directly to waste in manual processes like order intake and invoicing. By automating the workflow between CRM/order processing and accounting/invoicing, Apex can immediately capture high ROI gains using existing data streams.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current 'Order-to-Cash' process flow to identify all manual handoffs (Process gap analysis).",
+            "Implement a middleware or lightweight RPA solution layer to connect the legacy maintenance system with invoicing software.",
+            "Develop initial standardized templates for customer order inputs."
+          ],
+          "resources_needed": [
+            "Dedicated SME (Subject Matter Expert) from Sales/Operations.",
+            "External Process Mapping Consultant.",
+            "IT Budget allocation for RPA/Middleware licensing."
+          ],
+          "success_metric": "Reduction in average Days Sales Outstanding (DSO) by 10 days within 6 months.",
+          "milestones": [
+            "Process mapping complete and bottlenecks quantified.",
+            "Proof-of-concept implemented for order intake automation on one product line.",
+            "System integration testing passed with key stakeholders."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_automation_workflow",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_supply_chain_visibility",
+        "type": "incremental",
+        "title": "Integrated Inventory and Supply Chain Digitalization",
+        "rationale": "The IoT pilot proved value in machine uptime, but the next step is to apply that digitalization effort upstream to inventory management. Integrating real-time usage data with digitized stock levels will improve planning accuracy and mitigate future supply chain disruptions.",
+        "execution_plan": {
+          "first_actions": [
+            "Define material flow points (receiving dock, kitting area) for RFID/barcode integration.",
+            "Develop a centralized digital inventory dashboard that cross-references IoT utilization rates with stock consumption.",
+            "Cross-train key personnel on the new integrated planning system."
+          ],
+          "resources_needed": [
+            "Warehouse Management System (WMS) module access or upgrade.",
+            "Barcode/RFID hardware implementation.",
+            "Operations Team lead dedication for data validation."
+          ],
+          "success_metric": "Reduction in excess inventory holding costs by 15% while improving fill rate accuracy to >98%.",
+          "milestones": [
+            "Inventory counting process digitalized and validated (Pilot area).",
+            "Dashboard fully integrated with IoT data stream.",
+            "Full training cycle completed for all receiving/shipping personnel."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_process_mapping",
+        "action": "Conduct a targeted process mapping workshop focused specifically on the 'Order-to-Cash' cycle, involving sales, operations, and accounting personnel to quantify non-value-add steps.",
+        "owner": "Operations Manager / Lead Consultant",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "step_iot_integration_scope",
+        "action": "Form a dedicated, cross-functional task force (IT/Maintenance/Engineering) to scope the integration requirements between the IoT platform and the legacy CMMS system.",
+        "owner": "Technical Lead / Small Leadership Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "step_iso_compliance_gap",
+        "action": "Review ISO 9001:2025 requirements against current operational procedures, focusing on documentation controls for 'process' barriers.",
+        "owner": "Quality Control / Leadership Team",
+        "timeframe": "Ongoing (High Priority)"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of dedicated innovation funding/budgetary allocation.",
+      "Siloed systems and complex integration challenges between IoT, legacy CMMS, and business process software.",
+      "Process formalization maturity is low; processes rely heavily on tribal knowledge rather than documented workflows."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully moved from pilot to approved business case for full-scale machine digitalization (IoT).",
+        "Established concrete compliance effort by implementing ISO 9001:2025 standards.",
+        "Identified measurable value in reducing unplanned downtime on monitored machinery."
+      ],
+      "persistent_gaps": [
+        "Bridging the gap between operational technology (OT) and information technology (IT) remains a major bottleneck.",
+        "The manual nature of core administrative processes (Order/Invoicing) prevents achieving target OpEx savings.",
+        "Formalized SOPs are required to standardize workflows across shifts and roles."
+      ],
+      "achieved_milestones": [
+        "IoT sensor deployment on 40% of production equipment.",
+        "15% reduction in unplanned downtime recorded on instrumented lines.",
+        "Business case approved for full IoT fleet rollout."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Demonstrated concrete technical progress (IoT rollout) and compliance focus (ISO 9001). However, the core barriers of process formalization, integration complexity, and lack of budget have persisted."
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "id": "R0288",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0313",
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Small",
+    "regulatory_environment": "low",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T23:55:49.414303+00:00",
+    "duration_ms": 58048,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Strato Holdings",
+      "sector": "Construction",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+      "strategicPriority": "growth",
+      "timeHorizon": "medium",
+      "riskAppetite": "conservative",
+      "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+      "digitalMaturity": "3",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 1,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "budget",
+        "culture",
+        "process",
+        "strategy"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0313",
+      "fields": {
+        "companyName": "Strato Holdings",
+        "sector": "Construction",
+        "size": "Small",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Civil engineering firm executing public infrastructure tenders including bridge rehabilitation, water treatment plants, and road widening projects. Operate our own heavy equipment fleet of 45 machines. Evaluating telematics-based predictive maintenance to reduce equipment downtime. A growing organization that has moved past founder-led decision-making but is still building the formal processes and governance structures needed to scale. We have some digital tools in place but integration between systems is ad-hoc. Innovation is championed by 1-2 internal advocates.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "We aim to double revenue within 3 years by entering 2 new geographic markets and launching a direct-to-consumer channel alongside our existing B2B distribution. Our top priority is identifying scalable customer acquisition channels and building the operational capacity to support rapid volume growth without degrading quality or margins.",
+        "strategicPriority": "growth",
+        "timeHorizon": "medium",
+        "riskAppetite": "conservative",
+        "teamSize": "The innovation function is informal — one senior engineer has been given permission to spend 20% of their time exploring new technologies and prototyping ideas, but this allocation is frequently interrupted by production incidents and urgent feature requests. We have no dedicated innovation budget beyond standard cloud infrastructure costs.",
+        "digitalMaturity": "2",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 4,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "budget",
+          "culture",
+          "strategy"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Supply chain disruptions affected 2 product lines. Inventory digitalization project launched. Margins under pressure.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "completed",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O-01",
+        "type": "incremental",
+        "title": "Establish Scalable Change Management Framework for Growth Channels",
+        "rationale": "The previous failure in adopting the PM tool highlights a lack of structured change management, which is critical when expanding into new geographic markets and launching a direct-to-consumer (DTC) channel. Implementing formal process rollouts will de-risk rapid growth efforts by embedding adoption mechanisms.",
+        "execution_plan": {
+          "first_actions": [
+            "Map current end-to-end processes for both B2B and planned DTC channels to identify key pain points and necessary process standardization.",
+            "Develop a structured change management plan (e.g., phased rollout, targeted training, champion network) before selecting any new operational software.",
+            "Pilot the standardized process framework within one low-risk department or single defined geographic area."
+          ],
+          "resources_needed": [
+            "Internal Process Lead/Operations Manager",
+            "External Change Management Consulting (short term)",
+            "Stakeholder Time Commitment"
+          ],
+          "success_metric": "Adoption rate of the standardized process framework (>80%) within the pilot group.",
+          "milestones": [
+            "Process Mapping Complete (Q1)",
+            "Change Management Plan Approved and Funded (Q2)",
+            "Pilot Program successfully transitioned to standard operation (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "O-02",
+        "type": "incremental",
+        "title": "Implement Predictive Asset Management via Telematics Integration",
+        "rationale": "The heavy equipment fleet (45 machines) is a core asset, and margins are under pressure due to supply chain issues. Leveraging telematics data for predictive maintenance shifts operations from reactive repairs to planned efficiency gains, directly supporting margin recovery and reliable service delivery.",
+        "execution_plan": {
+          "first_actions": [
+            "Define critical failure points and operational metrics (KPIs) associated with the 2 most affected product lines/equipment types.",
+            "Develop a proof-of-concept scope involving data collection from 5-10 representative assets, focusing on utilization rates and engine diagnostics.",
+            "Integrate telematics data output into existing CMMS or project management systems for visualization."
+          ],
+          "resources_needed": [
+            "IT/Digital Integration Specialist",
+            "Telematics Vendor Partnership",
+            "Fleet Supervisor Time (SMEs)"
+          ],
+          "success_metric": "Reduction in unexpected equipment downtime (>15%) and quantifiable reduction in emergency maintenance costs.",
+          "milestones": [
+            "Proof-of-Concept setup complete (3 months)",
+            "Predictive Alerting System operationalized for core fleet segment (6 months)",
+            "Cost Savings Model presented to leadership (9 months)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "N-01",
+        "action": "Formalize the budget request and scope definition for O-02 (Predictive Asset Management), quantifying projected ROI in margin recovery.",
+        "owner": "Senior Engineer/Leadership Team",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "N-02",
+        "action": "Develop a detailed operational roadmap for the new geographic markets and DTC channel, prioritizing necessary process standardization before execution begins.",
+        "owner": "Leadership Team/Operations Director",
+        "timeframe": "Next 3 months"
+      },
+      {
+        "id": "N-03",
+        "action": "Identify and secure a single internal 'Process Champion' who can dedicate protected time to lead the process mapping effort (O-01), shielding them from urgent production interruptions.",
+        "owner": "Leadership Team/HR",
+        "timeframe": "Immediate"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on ad-hoc processes and manual coordination, leading to integration gaps across systems.",
+      "Insufficient formal governance surrounding change adoption (Culture/Process barrier).",
+      "Budget allocation remains highly constrained, limiting dedicated resources for strategic innovation initiatives."
+    ],
+    "progress": {
+      "improvements": [
+        "Digital maturity increased from 2 to 3, with specific projects launched (inventory digitalization) and technology options evaluated (telematics).",
+        "Strategic ambition has solidified around measurable growth targets (doubling revenue in 3 years), providing clear direction.",
+        "Initial process improvements have been achieved via completing the first stage of previous steps."
+      ],
+      "persistent_gaps": [
+        "The root cause of failed tool adoption—lack of structured change management—remains unaddressed at scale.",
+        "Operational execution is still highly susceptible to external shocks (supply chain, unplanned downtime).",
+        "Lack of dedicated innovation funding forces reliance on internal advocates' limited time."
+      ],
+      "achieved_milestones": [
+        "Successfully launched the inventory digitalization project.",
+        "Elevated awareness and evaluation capability regarding high-impact technologies like telematics.",
+        "Clear definition of growth vector (DTC + 2 new markets)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Improved digitalization maturity and formalized growth ambitions (DTC/new markets). The focus has shifted from general operational stability to quantifiable scale-up strategies, although process governance remains a critical hurdle."
+    }
+  }
+}

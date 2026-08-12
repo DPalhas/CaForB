@@ -12,6 +12,7 @@ Output: raw_inputs.json (array of survey objects matching frontend AssessmentFor
 import json
 import random
 import math
+import sys
 from pathlib import Path
 from collections import defaultdict
 from typing import Any
@@ -438,5 +439,119 @@ def main():
     print(f"\nWritten to {OUTPUT_PATH}")
 
 
+def generate_reassessment_pairs(base_examples: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Generate reassessment variants from base survey examples.
+
+    Each reassessment pair reuses the company identity with slightly evolved
+    answers and adds changes_since_last, recommendation_status, and a
+    previous_assessment block.
+    """
+    reassessments: list[dict[str, Any]] = []
+    status_pool = ["completed", "in_progress", "in_progress", "not_done", "not_done", "superseded"]
+    changes_templates = [
+        "Hired {n} new team members. Launched customer feedback pilot. Budget for innovation increased {pct}%.",
+        "Acquired {n} new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+        "Restructured leadership team. {n} legacy processes automated. Exploring new revenue streams.",
+        "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+        "Completed {n} strategic partnerships. Revenue growth {pct}% YoY. Exploring AI/ML capabilities.",
+        "Regulatory changes forced compliance reviews. {n} new standard procedures implemented. Team morale improving.",
+        "Post-merger integration underway. Team doubled to {n} members. Culture clash between legacy and new teams.",
+        "Supply chain disruptions affected {n} product lines. Inventory digitalization project launched. Margins under pressure.",
+        "Product launch successful — {n} new features shipped. Customer NPS improved {pct} points. Backlog of technical debt growing.",
+        "Transitioning from founder-led to professional management. Hired {n} senior leaders. Strategic planning process being formalized.",
+    ]
+
+    for i, base in enumerate(base_examples):
+        if random.random() > 0.80:
+            continue  # skip ~20% to avoid 1:1 pairing
+
+        b = base["fields"]
+        n = random.randint(2, 8)
+        pct = random.choice([5, 10, 15, 20, 25])
+
+        changes_txt = random.choice(changes_templates).format(n=n, pct=pct)
+
+        new_process = b["innovationProcess"]
+        if b["innovationProcess"] in ("none", "informal") and random.random() < 0.5:
+            new_process = {"none": "informal", "informal": "partial"}[b["innovationProcess"]]
+
+        new_digital = str(min(4, max(1, int(b["digitalMaturity"]) + random.choice([0, 0, 1]))))
+        new_budget = max(0, min(30, int(b["budgetPercentage"]) + random.choice([-3, 0, 0, 3, 5])))
+        new_time = b["timeHorizon"]
+        if b["timeHorizon"] in ("short", "medium") and random.random() < 0.4:
+            new_time = {"short": "medium", "medium": "long"}[b["timeHorizon"]]
+
+        old_barriers = list(b.get("mainBarrier", []))
+        if len(old_barriers) >= 2 and random.random() < 0.4:
+            old_barriers = old_barriers[1:]
+        if random.random() < 0.5 and len(old_barriers) < 4:
+            new_barrier = random.choice([x for x in ALL_BARRIERS if x not in old_barriers])
+            old_barriers.append(new_barrier)
+
+        old_team = b.get("teamSize", "N/A")
+        new_team = old_team
+        if random.random() < 0.4:
+            new_team = old_team.replace(str(n), str(n + random.randint(1, 4))) if str(n) in old_team else f"{random.randint(5, 12)} person team"
+
+        rec_status: dict[str, str] = {}
+        for j in range(random.randint(2, 4)):
+            rec_status[f"opp_{j+1}"] = random.choice(status_pool)
+        for j in range(random.randint(2, 3)):
+            rec_status[f"step_{j+1}"] = random.choice(status_pool)
+
+        fields = dict(b)
+        fields.update({
+            "innovationProcess": new_process,
+            "digitalMaturity": new_digital,
+            "budgetPercentage": new_budget,
+            "timeHorizon": new_time,
+            "mainBarrier": sorted(old_barriers),
+            "teamSize": new_team,
+        })
+
+        reassessments.append({
+            "combo_id": base["combo_id"],
+            "base_id": base["id"],
+            "reassess_id": None,
+            "fields": fields,
+            "changes_since_last": changes_txt,
+            "recommendation_status": rec_status,
+            "previous_assessment": {
+                "id": base["id"],
+                "fields": b,
+            },
+        })
+
+    random.shuffle(reassessments)
+    for i, ex in enumerate(reassessments):
+        ex["reassess_id"] = f"R{i + 1:04d}"
+
+    return reassessments
+
+
 if __name__ == "__main__":
-    main()
+    mode = sys.argv[1] if len(sys.argv) > 1 else "all"
+    if mode in ("base", "all"):
+        print(f"Generating {TOTAL_COMBOS} combos x {VARIANTS_PER_COMBO} variants = {TOTAL_COMBOS * VARIANTS_PER_COMBO}")
+        examples = generate_all()
+        print(f"Generated {len(examples)} first-assessment examples.")
+        print_distribution(examples)
+        OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+            json.dump(examples, f, indent=2, ensure_ascii=False)
+        print(f"Written to {OUTPUT_PATH}")
+
+    if mode in ("reassessment", "all"):
+        base_path = BASE_DIR / "raw_inputs.json"
+        if not base_path.exists():
+            print(f"Base surveys not found at {base_path}. Run with 'base' first.")
+        else:
+            with open(base_path, "r", encoding="utf-8") as f:
+                base_examples = json.load(f)
+            print(f"\nGenerating reassessment pairs from {len(base_examples)} base surveys...")
+            reassessments = generate_reassessment_pairs(base_examples)
+            print(f"Generated {len(reassessments)} reassessment variants.")
+            out_path = BASE_DIR / "raw_inputs_reassessment.json"
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(reassessments, f, indent=2, ensure_ascii=False)
+            print(f"Written to {out_path}")

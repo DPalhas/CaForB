@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useAuth } from "@/lib/auth-context";
 import { Loader2, AlertCircle } from "lucide-react";
 import NavHeader from "@/components/NavHeader";
+import PageBackground from "@/components/PageBackground";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -36,11 +37,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col selection:bg-amber-500 selection:text-white">
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -right-40 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 left-1/3 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl" />
-      </div>
+      <PageBackground variant="auth" />
 
       <NavHeader />
 

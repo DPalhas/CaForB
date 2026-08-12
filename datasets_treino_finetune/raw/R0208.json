@@ -1,0 +1,198 @@
+{
+  "id": "R0208",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0480",
+  "split": "train",
+  "metadata": {
+    "sector": "Other",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "growth",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:47:15.726200+00:00",
+    "duration_ms": 42693,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.991275+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Vault Partners",
+      "sector": "Other",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Venture studio founding and scaling B2B SaaS startups in the supply chain and procurement space. Currently incubating 4 companies at various stages from pre-seed to Series A. In-house team of product designers, engineers, and growth marketers shared across portfolio companies. Evaluating an AI-powered venture thesis validation tool. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+      "strategicPriority": "growth",
+      "timeHorizon": "short",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "2",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 4,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "process"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities — explainability, human oversight, risk classification documentation — into our product roadmap immediately to avoid market access risk when enforcement begins."
+    },
+    "previous_assessment": {
+      "id": "0480",
+      "fields": {
+        "companyName": "Vault Partners",
+        "sector": "Other",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Venture studio founding and scaling B2B SaaS startups in the supply chain and procurement space. Currently incubating 4 companies at various stages from pre-seed to Series A. In-house team of product designers, engineers, and growth marketers shared across portfolio companies. Evaluating an AI-powered venture thesis validation tool. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "informal",
+        "pastInitiatives": "We piloted a cloud-based project management tool last year, but adoption was inconsistent across teams and we ultimately reverted to spreadsheets and email for most project tracking. The experience highlighted that tool adoption requires more structured change management than we initially planned for.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our board has set an ambitious revenue target of reaching €50M ARR within 5 years from our current base. This requires us to expand our addressable market, potentially pivot pricing models from one-time to recurring revenue, and build a repeatable enterprise sales motion. We need to identify the highest-leverage growth levers without overextending our cash runway.",
+        "strategicPriority": "growth",
+        "timeHorizon": "short",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "2",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 4,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "process"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": "A major new regulation (EU AI Act) comes into full effect in 18 months, directly impacting our core product which uses automated decision-making. We need to build compliance capabilities — explainability, human oversight, risk classification documentation — into our product roadmap immediately to avoid market access risk when enforcement begins."
+      }
+    },
+    "changes_since_last": "Acquired 6 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "superseded",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 4.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Implement AI Act Compliance Governance Framework (Risk Mitigation)",
+        "rationale": "Given the impending EU AI Act, integrating compliance into the product roadmap is no longer optional; it is a market access prerequisite. This requires structural changes to data handling and decision logic far beyond standard feature development.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish an internal AI Governance Board (cross-functional: legal, tech, product) responsible for risk classification.",
+            "Conduct a gap analysis mapping current automated decision points against EU AI Act requirements (explainability, human oversight).",
+            "Develop and document minimum viable compliance features (e.g., audit trails, confidence scoring) into the next sprint cycle."
+          ],
+          "resources_needed": [
+            "External legal counsel specializing in EU regulatory technology.",
+            "Dedicated data scientist bandwidth for model interpretability testing.",
+            "Process architecture specialist to map complex workflows."
+          ],
+          "success_metric": "Completion of the initial AI System Inventory and Gap Report (signed off by governance board).",
+          "milestones": [
+            "Board charter established in 4 weeks.",
+            "Gap analysis delivered in 8 weeks.",
+            "Initial compliance feature implemented in MVP."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "3-6 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Standardize and Scale Enterprise Sales Motion (Revenue Generation)",
+        "rationale": "To hit the ambitious $50M ARR target, Vault Partners must transition from project-by-project sales to a repeatable, predictable enterprise motion. This requires formalizing ideal customer profiles and implementing structured playbooks.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct deep dive interviews with the top 10 existing clients to reverse-engineer successful purchase journeys.",
+            "Develop tiered pricing models (one-time vs. recurring) based on client scope/module usage.",
+            "Formalize a dedicated sales enablement playbook covering discovery, qualification, and technical proof points.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Dedicated BDR/Sales Ops resource for documentation.",
+            "Product Marketing expertise to refine value propositions.",
+            "Executive time commitment for sales leadership sign-off on process changes."
+          ],
+          "success_metric": "Creation and adoption of the 'Enterprise Sales Playbook v1.0' resulting in a 15% increase in qualified leads from existing accounts within 6 months.",
+          "milestones": [
+            "ICPs finalized in 8 weeks.",
+            "Pricing model ratified by finance/execs in 12 weeks.",
+            "Sales playbook trained and utilized on first three deals."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Establish the AI Governance Board and charter its authority to mandate technical compliance requirements immediately.",
+        "owner": "CEO/COO",
+        "timeframe": "Next 4 weeks"
+      },
+      {
+        "id": "ns2",
+        "action": "Host a working session involving the innovation squad, sales leadership, and product team to map the current manual operational workflows (spreadsheets) onto ideal digital processes.",
+        "owner": "Product Manager/BA",
+        "timeframe": "Next 6 weeks"
+      },
+      {
+        "id": "ns3",
+        "action": "Define a clear resource allocation mechanism and KPI structure to ensure the innovation squad has protected time/budget separate from operational demands, mitigating internal process tension.",
+        "owner": "Executive Committee",
+        "timeframe": "Next 8 weeks"
+      }
+    ],
+    "key_weaknesses": [
+      "Critical dependency on manual workflows and spreadsheets despite having mature processes in some areas (Process Governance Gap).",
+      "Lack of structured change management capability, leading to inconsistent adoption of new tools or processes.",
+      "Tension between operational stability (running the business) and dedicated resources for future innovation development."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully acquired 6 new enterprise clients and expanded into adjacent markets, validating market expansion strategy.",
+        "Increased focus and capacity in the dedicated innovation squad, demonstrating commitment to long-term growth initiatives."
+      ],
+      "persistent_gaps": [
+        "The core structural risk of reliance on non-scalable manual processes remains high, posing a threat during rapid enterprise scale.",
+        "Formal process integration (SOPs) and change management protocols have not been successfully deployed across the entire organization."
+      ],
+      "achieved_milestones": [
+        "Validation of multiple new client segments in adjacent markets.",
+        "Improved digital maturity within specific, focused teams."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 2.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant positive operational traction (client acquisition, market expansion) combined with the emergence of a mandatory regulatory risk (EU AI Act). The focus has shifted from pure opportunity identification to immediate structural compliance and scaling."
+    }
+  }
+}

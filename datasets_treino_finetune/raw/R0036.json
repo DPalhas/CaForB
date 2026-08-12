@@ -1,0 +1,189 @@
+{
+  "id": "R0036",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0195",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthcare & Medical",
+    "size": "Medium",
+    "regulatory_environment": "low",
+    "risk_appetite": "bold",
+    "strategic_priority": "efficiency",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4:e2b-it-qat_synthetic",
+    "generated_at": "2026-08-09T19:07:13.109168+00:00",
+    "duration_ms": 24090,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Solutions.ai",
+      "sector": "Healthcare & Medical",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Clinical laboratory performing hematology, biochemistry, microbiology, and molecular diagnostics for 300+ referring physicians and clinics. Processing 5,000 samples daily. Evaluating total lab automation track systems and AI-based peripheral blood smear analysis for differential cell counting. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+      "strategicPriority": "efficiency",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 22,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+    },
+    "previous_assessment": {
+      "id": "0195",
+      "fields": {
+        "companyName": "Quantum Solutions.ai",
+        "sector": "Healthcare & Medical",
+        "size": "Medium",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Clinical laboratory performing hematology, biochemistry, microbiology, and molecular diagnostics for 300+ referring physicians and clinics. Processing 5,000 samples daily. Evaluating total lab automation track systems and AI-based peripheral blood smear analysis for differential cell counting. We operate across multiple locations and have distinct functional leadership for operations, commercial, finance, and technology. Our annual planning process is well-established but can be rigid — mid-cycle innovation funding requires navigating a formal business case approval chain involving 3-4 stakeholders.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Our primary objective is to reduce operating expenses by 15% over the next 2 years while maintaining current output levels. We believe there is significant waste in our manual processes and want to identify the highest-ROI automation opportunities across order processing, invoicing, and customer support workflows. We are not looking to grow headcount — we want to do more with our existing team.",
+        "strategicPriority": "efficiency",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "The technology organization is structured into product-aligned squads with a central platform team of 5 engineers enabling shared infrastructure. Innovation is driven by a '20% time' policy where all engineers can dedicate one day per sprint to self-directed projects, plus a quarterly internal pitch competition where winning ideas receive seed funding and 3 months of dedicated squad allocation.",
+        "digitalMaturity": "4",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 22,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": "New data localization requirements in our second-largest market will force us to re-architect our cloud infrastructure within 12 months to maintain operating licenses. This is a non-discretionary technical project that will consume significant engineering capacity. Innovation initiatives must be sequenced around this mandatory work or find ways to turn the migration itself into a modernization opportunity."
+      }
+    },
+    "changes_since_last": "Major competitor entered our market. Customer churn rising. Need to accelerate digital transformation.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "superseded"
+    }
+  },
+  "output": {
+    "maturity_score": 6.5,
+    "score_delta": 0.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Accelerated Digital Product Pipeline for Churn Mitigation",
+        "rationale": "The rise in customer churn necessitates a faster response to market shifts. This radical initiative focuses on shortening the 'idea-to-value' cycle by streamlining cross-functional collaboration and prioritizing high-impact digital features over broad feature sets.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated, empowered 'Churn Response Squad' with mandatory daily syncs between Sales/Support/Tech.",
+            "Conduct a rapid feasibility study (3 weeks) on the top 2 most requested digital product features that can be launched within Q3."
+          ],
+          "resources_needed": [
+            "Dedicated Product Manager",
+            "Two full-time engineers assigned to squad sprint cycles"
+          ],
+          "success_metric": "Reduction in customer churn rate by 10% within the next two quarters.",
+          "milestones": [
+            "Launch MVP of Churn Response Tool (Month 3)",
+            "Achieve positive ROI on digital feature deployment (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "Medium-Term (9 months)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Automation ROI Deep Dive for OpEx Reduction",
+        "rationale": "To meet the strategic goal of 15% OpEx reduction, we must rigorously identify and prioritize automation opportunities in manual processes (order processing, invoicing). This builds upon existing operational efficiency focus.",
+        "execution_plan": {
+          "first_actions": [
+            "Map out the top 3 most labor-intensive workflows identified by Finance/Operations.",
+            "Initiate a 'Quick Win' pilot project targeting one specific high-waste workflow (e.g., automated invoice generation)."
+          ],
+          "resources_needed": [
+            "Finance Analyst support",
+            "One dedicated operations engineer"
+          ],
+          "success_metric": "Achieve 5% measurable OpEx reduction in the pilot area within six months.",
+          "milestones": [
+            "Completion of workflow mapping and ROI assessment (Month 2)",
+            "Full deployment of the Quick Win automation solution (Month 6)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "Short-Term (6 months)",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Initiate and staff the 'Churn Response Squad' (opp_2) to define MVP scope.",
+        "owner": "Head of Product/COO",
+        "timeframe": "30 days"
+      },
+      {
+        "id": "ns2",
+        "action": "Finalize technical scoping and compliance roadmap for mandatory cloud re-architecture, sequencing it against innovation capacity.",
+        "owner": "CTO/VP Engineering",
+        "timeframe": "60 days"
+      },
+      {
+        "id": "ns3",
+        "action": "Implement the 'Quick Win' pilot (opp_1) and establish a formalized, automated tracking mechanism for all OpEx savings initiatives.",
+        "owner": "Head of Operations/Finance",
+        "timeframe": "90 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Talent scarcity in specialized AI/automation engineering required to drive digital transformation.",
+      "Rigid formal business case approval chains slowing down the '20% time' innovation process.",
+      "Risk of technical debt accumulation due to rapid, mandatory cloud re-architecture coinciding with high feature pressure."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully shifted focus toward speed and market responsiveness (opp_2 initiated).",
+        "Established a clear link between strategic goals (OpEx reduction) and innovation pilots (opp_1 initiated)."
+      ],
+      "persistent_gaps": [
+        "Lack of dedicated resources for specialized automation initiatives.",
+        "Inability to scale the current formal approval process to support accelerated digital needs."
+      ],
+      "achieved_milestones": [
+        "Identified key high-waste manual workflows for OpEx reduction (opp_1).",
+        "Created initial framework for rapid response team structure (opp_2)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Market pressure from competitors and customer churn has elevated the urgency for digital acceleration, shifting focus from purely formal process management to speed and immediate ROI generation."
+    }
+  }
+}

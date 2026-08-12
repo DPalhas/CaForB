@@ -1,0 +1,201 @@
+{
+  "id": "R0297",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0362",
+  "split": "train",
+  "metadata": {
+    "sector": "Insurance",
+    "size": "Micro",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:20:13.776061+00:00",
+    "duration_ms": 46381,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.021446+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Crest",
+      "sector": "Insurance",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Insurance brokerage firm advising corporate clients on risk management programs spanning property, casualty, cyber, D&O, and employee benefits. Team of 35 brokers managing €60M in placed premiums. Seeking to implement a risk analytics platform for client exposure modeling and benchmarking. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "short",
+      "riskAppetite": "balanced",
+      "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+      "digitalMaturity": "2",
+      "revenueRange": "under_1m",
+      "budgetPercentage": 11,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "strategy"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0362",
+      "fields": {
+        "companyName": "Crest",
+        "sector": "Insurance",
+        "size": "Micro",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Insurance brokerage firm advising corporate clients on risk management programs spanning property, casualty, cyber, D&O, and employee benefits. Team of 35 brokers managing €60M in placed premiums. Seeking to implement a risk analytics platform for client exposure modeling and benchmarking. A tight-knit operation where everyone wears multiple hats. We have no dedicated innovation budget — improvements happen opportunistically when the team identifies a clear bottleneck affecting our core operations or customer experience.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "Customer retention has declined from 92% to 84% over the past 18 months, primarily among our mid-tier and enterprise segments. Exit interviews consistently cite product stagnation and poor digital self-service tools as reasons for leaving. We need to urgently modernize our customer-facing technology and proactively address the specific pain points driving churn before the trend becomes irreversible.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "short",
+        "riskAppetite": "balanced",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "2",
+        "revenueRange": "under_1m",
+        "budgetPercentage": 8,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "strategy"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Regulatory changes forced compliance reviews. 8 new standard procedures implemented. Team morale improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "completed",
+      "opp_3": "not_done",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 6.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Develop a Digital Self-Service Retention Portal",
+        "rationale": "The critical gap identified is the severe decline in customer retention due to poor digital tools. Building a self-service portal focused on policy management and accessing educational risk resources will directly address the primary churn driver, converting process improvements into revenue defense.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit existing client data sources (policy admin, claims) to define required APIs for read access.",
+            "Define MVP scope focused solely on policy viewing, document retrieval, and risk educational content delivery.",
+            "Establish a clear integration pathway with the newly implemented CRM system."
+          ],
+          "resources_needed": [
+            "Business Analyst (to map client journeys)",
+            "Mid-level Developer dedicated to frontend/UX",
+            "Stakeholder commitment from operations for data access"
+          ],
+          "success_metric": "Reduction in customer service calls related to basic policy inquiries by 15% within 6 months.",
+          "milestones": [
+            "Completion of user flow mapping and wireframes (4 weeks).",
+            "Successful integration with core policy data systems (3 months).",
+            "Pilot launch with the mid-tier segment (6 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Standardize Risk Analytics Platform (Client Benchmarking)",
+        "rationale": "Leveraging the new compliance rigor and data governance achieved, Crest must move beyond basic CRM functionality to offer proactive, quantifiable risk benchmarking. This will elevate their advisory capacity and mitigate competitive pressure from larger players.",
+        "execution_plan": {
+          "first_actions": [
+            "Inventory all available structured client data (claims history, premium types) for modeling.",
+            "Define 3 key industry benchmarks relevant to mid-tier clients (e.g., Cyber exposure vs size).",
+            "Pilot a basic dashboard prototype utilizing existing BI tools before custom development.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Data Scientist/Analyst expertise",
+            "Dedicated developer time for API connectivity",
+            "Leadership buy-in to define 'best' risk metrics"
+          ],
+          "success_metric": "Deployment of a functional, client-facing dashboard that generates actionable insights (leading to upselling opportunity).",
+          "milestones": [
+            "Data governance framework finalized and tested (2 months).",
+            "Prototype visualization built for internal testing (4 months).",
+            "Beta release with 5 key clients (7 months)."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": 101,
+        "action": "Formalize the digital roadmap and secure dedicated development time for the Self-Service Portal (opp_1).",
+        "owner": "Owner/Leadership",
+        "timeframe": "Next 30 days"
+      },
+      {
+        "id": 102,
+        "action": "Establish a small working group to define and prioritize the initial data sources required for risk benchmarking (opp_2).",
+        "owner": "Generalist Developers/Analyst",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": 103,
+        "action": "Mandate quarterly 'Innovation Time' blocks for generalist developers to ensure continuous process improvement and prevent resource exhaustion.",
+        "owner": "Owner/Management",
+        "timeframe": "Ongoing"
+      }
+    ],
+    "key_weaknesses": [
+      "Lack of dedicated R&D or innovation budget/role, forcing opportunistic development.",
+      "Strategy remains the primary barrier; no clear organizational roadmap connecting compliance to growth initiatives.",
+      "Over-reliance on generalist developers leads to resource contention between urgent operational fixes and strategic improvements."
+    ],
+    "progress": {
+      "improvements": [
+        "Regulatory risk handling is formalized, demonstrated by 8 new standard procedures.",
+        "Team morale is improving, indicating increased confidence in the company's ability to adapt.",
+        "Operational success was achieved with CRM deployment (opp_2 completed)."
+      ],
+      "persistent_gaps": [
+        "The core digital customer experience remains fragmented and fails to meet mid/enterprise client expectations.",
+        "Lack of a quantifiable, forward-looking strategy that ties compliance investment directly to revenue growth.",
+        "Developer bandwidth remains severely constrained by day-to-day operational firefighting."
+      ],
+      "achieved_milestones": [
+        "Completion of the CRM system deployment and training cycle.",
+        "Successful implementation of all 8 mandatory regulatory standard procedures."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "The company successfully improved its regulatory adherence and process maturity following mandated changes, moving from reactive compliance to structured operational procedures. However, the critical strategic failure regarding customer retention via digital tools remains unresolved."
+    }
+  }
+}

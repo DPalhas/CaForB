@@ -1,6 +1,6 @@
 {
-  "total": 504,
-  "pass": 504,
+  "total": 917,
+  "pass": 917,
   "fail": 0,
   "errors": [],
   "warnings": [
@@ -1063,11 +1063,328 @@
       "file": "0502.json",
       "issue": "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)",
       "severity": "warning"
+    },
+    {
+      "file": "R0006.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Pivoting to Subscription-Based Bio-Assets & Credit' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0008.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/3 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0032.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0034.json",
+      "issue": "REG: high regulatory env but opportunity 2 '**Launch Subscription-Based Service Layer (Marketp' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0035.json",
+      "issue": "score_delta 3.0 inconsistent with 6.5 - 5.0 = 1.5",
+      "severity": "warning"
+    },
+    {
+      "file": "R0039.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0044.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0045.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 1/3 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0058.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0076.json",
+      "issue": "REG: high regulatory env but opportunity 1 'Adjacent Market Expansion via Sustainability Polic' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0091.json",
+      "issue": "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0100.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0108.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Developing a Sector-Specific Interoperability Plat' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0112.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0114.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0117.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0118.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0135.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0141.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Implementing a Unified, Portfolio-Level Growth Str' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0148.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0150.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Institute Specialized Technical Capacity Building' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0163.json",
+      "issue": "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0164.json",
+      "issue": "REG: high regulatory env but opportunity 1 'Implement Cross-Platform Data Governance and Workf' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0166.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0172.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Build Specialized In-House Technology Evaluation C' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0174.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0182.json",
+      "issue": "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0211.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0217.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0220.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Establish a Regional Public Health Data Ecosystem ' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0226.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0244.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0245.json",
+      "issue": "score_delta 0.3 inconsistent with 6.5 - 5.0 = 1.5",
+      "severity": "warning"
+    },
+    {
+      "file": "R0256.json",
+      "issue": "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0258.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0260.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0262.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0265.json",
+      "issue": "score_delta 0.4 inconsistent with 4.0 - 0.0 = 4.0",
+      "severity": "warning"
+    },
+    {
+      "file": "R0278.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0289.json",
+      "issue": "REG: high regulatory env but opportunity 2 'AI-Powered Predictive Financial Scenario Modeling ' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0294.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0319.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0321.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0327.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0332.json",
+      "issue": "REG: high regulatory env but opportunity 1 'Customer Experience Defensibility Loop (CXDL)' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0337.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0341.json",
+      "issue": "REG: high regulatory env but opportunity 3 'Structured Process Improvement Loop (S-PIL)' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0342.json",
+      "issue": "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0347.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0355.json",
+      "issue": "REG: high regulatory env but opportunity 1 'Enterprise-Wide Diversification Strategy and New M' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0356.json",
+      "issue": "REG: high regulatory env but opportunity 1 'Proactive Digital Churn Prediction & Prevention Sy' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0360.json",
+      "issue": "PRIORITY: strategicPriority=efficiency but only 0/2 opportunities use efficiency-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0367.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Implement Decentralized 'Innovation Sandbox' Gover' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0370.json",
+      "issue": "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0375.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0380.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0381.json",
+      "issue": "REG: high regulatory env but opportunity 2 'Develop Predictive Risk/Service Scoring Engine for' has no compliance/legal step in first_actions",
+      "severity": "warning"
+    },
+    {
+      "file": "R0383.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0391.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0402.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0403.json",
+      "issue": "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)",
+      "severity": "warning"
+    },
+    {
+      "file": "0407.json",
+      "issue": "DUPLICATE: weakness 'reliance on owner-dependent decision-making, creating single' is 85% similar to 'heavy reliance on founder's decision-making, creating a sing' in R0272.json (both sector=Pharmaceuticals & Biotech)",
+      "severity": "warning"
+    },
+    {
+      "file": "R0272.json",
+      "issue": "DUPLICATE: weakness 'heavy reliance on founder's decision-making, creating a sing' is 85% similar to 'reliance on owner-dependent decision-making, creating single' in 0407.json (both sector=Pharmaceuticals & Biotech)",
+      "severity": "warning"
     }
   ],
   "summary": {
-    "priority_alignment": 191,
-    "regulatory": 21
+    "priority_alignment": 233,
+    "regulatory": 37,
+    "score_delta_consistency": 3,
+    "duplicates": 2
   },
   "by_file": {
     "0004.json": [
@@ -1548,6 +1865,9 @@
     "0404.json": [
       "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)"
     ],
+    "0407.json": [
+      "DUPLICATE: weakness 'reliance on owner-dependent decision-making, creating single' is 85% similar to 'heavy reliance on founder's decision-making, creating a sing' in R0272.json (both sector=Pharmaceuticals & Biotech)"
+    ],
     "0408.json": [
       "PRIORITY: strategicPriority=diversification but only 1/3 opportunities use diversification-related language (threshold=1)"
     ],
@@ -1679,6 +1999,192 @@
     ],
     "0502.json": [
       "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0006.json": [
+      "REG: high regulatory env but opportunity 2 'Pivoting to Subscription-Based Bio-Assets & Credit' has no compliance/legal step in first_actions"
+    ],
+    "R0008.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/3 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0032.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0034.json": [
+      "REG: high regulatory env but opportunity 2 '**Launch Subscription-Based Service Layer (Marketp' has no compliance/legal step in first_actions"
+    ],
+    "R0035.json": [
+      "score_delta 3.0 inconsistent with 6.5 - 5.0 = 1.5"
+    ],
+    "R0039.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0044.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0045.json": [
+      "PRIORITY: strategicPriority=diversification but only 1/3 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0058.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0076.json": [
+      "REG: high regulatory env but opportunity 1 'Adjacent Market Expansion via Sustainability Polic' has no compliance/legal step in first_actions"
+    ],
+    "R0091.json": [
+      "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)"
+    ],
+    "R0100.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0108.json": [
+      "REG: high regulatory env but opportunity 2 'Developing a Sector-Specific Interoperability Plat' has no compliance/legal step in first_actions"
+    ],
+    "R0112.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0114.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0117.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0118.json": [
+      "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0135.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0141.json": [
+      "REG: high regulatory env but opportunity 2 'Implementing a Unified, Portfolio-Level Growth Str' has no compliance/legal step in first_actions"
+    ],
+    "R0148.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0150.json": [
+      "REG: high regulatory env but opportunity 2 'Institute Specialized Technical Capacity Building' has no compliance/legal step in first_actions"
+    ],
+    "R0163.json": [
+      "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)"
+    ],
+    "R0164.json": [
+      "REG: high regulatory env but opportunity 1 'Implement Cross-Platform Data Governance and Workf' has no compliance/legal step in first_actions"
+    ],
+    "R0166.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0172.json": [
+      "REG: high regulatory env but opportunity 2 'Build Specialized In-House Technology Evaluation C' has no compliance/legal step in first_actions"
+    ],
+    "R0174.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0182.json": [
+      "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)"
+    ],
+    "R0211.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0217.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0220.json": [
+      "REG: high regulatory env but opportunity 2 'Establish a Regional Public Health Data Ecosystem ' has no compliance/legal step in first_actions"
+    ],
+    "R0226.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0244.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0245.json": [
+      "score_delta 0.3 inconsistent with 6.5 - 5.0 = 1.5"
+    ],
+    "R0256.json": [
+      "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)"
+    ],
+    "R0258.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0260.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0262.json": [
+      "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0265.json": [
+      "score_delta 0.4 inconsistent with 4.0 - 0.0 = 4.0"
+    ],
+    "R0272.json": [
+      "DUPLICATE: weakness 'heavy reliance on founder's decision-making, creating a sing' is 85% similar to 'reliance on owner-dependent decision-making, creating single' in 0407.json (both sector=Pharmaceuticals & Biotech)"
+    ],
+    "R0278.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0289.json": [
+      "REG: high regulatory env but opportunity 2 'AI-Powered Predictive Financial Scenario Modeling ' has no compliance/legal step in first_actions"
+    ],
+    "R0294.json": [
+      "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0319.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0321.json": [
+      "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0327.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0332.json": [
+      "REG: high regulatory env but opportunity 1 'Customer Experience Defensibility Loop (CXDL)' has no compliance/legal step in first_actions"
+    ],
+    "R0337.json": [
+      "PRIORITY: strategicPriority=market_defense but only 1/3 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0341.json": [
+      "REG: high regulatory env but opportunity 3 'Structured Process Improvement Loop (S-PIL)' has no compliance/legal step in first_actions"
+    ],
+    "R0342.json": [
+      "PRIORITY: strategicPriority=growth but only 0/2 opportunities use growth-related language (threshold=1)"
+    ],
+    "R0347.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0355.json": [
+      "REG: high regulatory env but opportunity 1 'Enterprise-Wide Diversification Strategy and New M' has no compliance/legal step in first_actions"
+    ],
+    "R0356.json": [
+      "REG: high regulatory env but opportunity 1 'Proactive Digital Churn Prediction & Prevention Sy' has no compliance/legal step in first_actions"
+    ],
+    "R0360.json": [
+      "PRIORITY: strategicPriority=efficiency but only 0/2 opportunities use efficiency-related language (threshold=1)"
+    ],
+    "R0367.json": [
+      "REG: high regulatory env but opportunity 2 'Implement Decentralized 'Innovation Sandbox' Gover' has no compliance/legal step in first_actions"
+    ],
+    "R0370.json": [
+      "PRIORITY: strategicPriority=market_defense but only 0/2 opportunities use market_defense-related language (threshold=1)"
+    ],
+    "R0375.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0380.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0381.json": [
+      "REG: high regulatory env but opportunity 2 'Develop Predictive Risk/Service Scoring Engine for' has no compliance/legal step in first_actions"
+    ],
+    "R0383.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0391.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0402.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
+    ],
+    "R0403.json": [
+      "PRIORITY: strategicPriority=diversification but only 0/2 opportunities use diversification-related language (threshold=1)"
     ]
   }
 }

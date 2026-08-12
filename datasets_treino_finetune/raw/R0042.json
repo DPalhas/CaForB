@@ -1,0 +1,202 @@
+{
+  "id": "R0042",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0232",
+  "split": "train",
+  "metadata": {
+    "sector": "Mining & Extraction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "growth",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T19:20:18.374858+00:00",
+    "duration_ms": 50456,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Quantum Digital",
+      "sector": "Mining & Extraction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+      "customerFeedback": "surveys_nps",
+      "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+      "strategicPriority": "growth",
+      "timeHorizon": "long",
+      "riskAppetite": "balanced",
+      "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+      "digitalMaturity": "4",
+      "revenueRange": "10m_to_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "culture",
+        "strategy",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0232",
+      "fields": {
+        "companyName": "Quantum Digital",
+        "sector": "Mining & Extraction",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Mid-size quarrying operation extracting high-grade limestone and granite for the construction industry. We operate 3 active quarries and supply 40+ contractors across the region. Major capital investment in automated cutting and crushing equipment is under evaluation. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We successfully deployed a new CRM system across the sales team 18 months ago, which improved lead tracking and reduced pipeline data entry time by 30%. The implementation was well-planned with dedicated project management and training. Building on this success, we are now exploring marketing automation integration and AI-assisted lead scoring.",
+        "customerFeedback": "surveys_nps",
+        "strategicGoals": "Growth is our existential mandate. We are losing market share to faster-moving competitors and need to reignite our growth trajectory. We are willing to make significant strategic bets — potentially including M&A, new product lines, or geographic expansion — provided they have a credible path to meaningful revenue contribution within 18 months.",
+        "strategicPriority": "growth",
+        "timeHorizon": "long",
+        "riskAppetite": "balanced",
+        "teamSize": "Our R&D function consists of 10-12 engineers organized into two squads: one focused on core product innovation and one on exploratory/new business model prototyping. We also have 2 dedicated data engineers building our analytics infrastructure. Innovation projects follow a lean startup methodology with clear go/no-go criteria at 3-month checkpoints.",
+        "digitalMaturity": "3",
+        "revenueRange": "10m_to_50m",
+        "budgetPercentage": 6,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "culture",
+          "strategy",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 4 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "not_done",
+      "opp_2": "in_progress",
+      "step_1": "in_progress",
+      "step_2": "superseded",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.0,
+    "score_delta": 3.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Implement Advanced AI/Marketing Automation Funnel",
+        "rationale": "Building on the successful CRM deployment, the next logical step is to integrate marketing automation and advanced AI lead scoring. This operational lift will ensure that growth efforts are systematically supported by optimized data pipelines, converting digital success into quantifiable revenue increases.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current regulatory compliance requirements for cross-regional data sharing (GDPR/local mining regulations).",
+            "Define ideal customer journey mapping from initial inquiry to contract signature.",
+            "Pilot AI lead scoring models against historical high-value accounts in partnership with the sales team."
+          ],
+          "resources_needed": [
+            "Data Governance Specialist (for compliance)",
+            "Marketing Automation Platform License",
+            "Dedicated BI Analyst time"
+          ],
+          "success_metric": "Increase in qualified lead conversion rate by 15% within 9 months.",
+          "milestones": [
+            "Phase I: Data Cleansing and API integration complete (Q1)",
+            "Phase II: AI Model Pilot Launch with Sales Team (Q2)",
+            "Full Operationalization and adoption across all regional sales teams (Q3)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "radical",
+        "title": "Establish a Dedicated Corporate Venture & M&A Assessment Unit",
+        "rationale": "Given the mandate for significant strategic bets (M&A, new lines) and the existing barriers in strategy/culture, Quantum needs a formal mechanism to vet opportunities outside core quarrying. This unit will de-risk exploration by establishing structured due diligence processes required for rapid growth.",
+        "execution_plan": {
+          "first_actions": [
+            "Develop a weighted scoring matrix (WSM) covering market size, technological feasibility, and regulatory hurdles for potential ventures.",
+            "Assign cross-functional leadership (Strategy/Legal/Engineering) to chair the unit.",
+            "Conduct external benchmarking against peer companies successfully executing strategic pivots or M&A."
+          ],
+          "resources_needed": [
+            "External Strategy Consultant (initial setup)",
+            "Executive time commitment (Steering Committee level)",
+            "Updated Legal framework documentation"
+          ],
+          "success_metric": "Successful completion of the WSM and feasibility assessment for at least 2 tangible M&A/new market targets within 6 months.",
+          "milestones": [
+            "Formation and charter approval (Month 1)",
+            "WSM finalized and tested on internal options (Month 3)",
+            "External target list narrowed down to top candidates (Month 6)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "12-18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "step_a",
+        "action": "Develop and approve a formalized resource allocation model that quantifies the trade-off between 'Efficiency Maintenance' (Run) and 'Growth Exploration' (Innovate).",
+        "owner": "Executive Leadership Team / CFO",
+        "timeframe": "3 months"
+      },
+      {
+        "id": "step_b",
+        "action": "Formalize the governance structure for Opp 2, assigning clear ownership and KPIs to the proposed Venture Unit.",
+        "owner": "COO / HR Lead",
+        "timeframe": "4 months"
+      },
+      {
+        "id": "step_c",
+        "action": "Schedule a regulatory deep-dive workshop focused on expanding into adjacent markets/regions, specifically addressing environmental impact assessments (EIA) for potential M&A targets.",
+        "owner": "Legal Counsel / Operations Head",
+        "timeframe": "2 months"
+      }
+    ],
+    "key_weaknesses": [
+      "Organizational tendency to prioritize short-term operational efficiency gains over long-term strategic bets (Resource Allocation Conflict).",
+      "Lack of a standardized, rapid due diligence process for external M&A or new market entry.",
+      "Reliance on specialized talent within the R&D/Data team, creating potential single points of failure if growth efforts outpace capacity planning."
+    ],
+    "progress": {
+      "improvements": [
+        "Successful deployment and optimization of core digital tools (CRM) leading to measurable efficiency gains (30% reduction in data entry time).",
+        "Increased digital maturity level, demonstrating capability to handle complex automation/AI integration.",
+        "Formalization of the R&D structure into specialized squads allows for clearer separation between core maintenance and exploratory innovation."
+      ],
+      "persistent_gaps": [
+        "The organization still lacks a formal process or leadership mandate to mediate the 'run-the-business' vs. 'build-the-future' conflict.",
+        "Strategy execution remains highly dependent on ad hoc committee decisions rather than a standing, empowered strategic unit.",
+        "Need for standardized governance rules around AI/advanced data usage across different functional units."
+      ],
+      "achieved_milestones": [
+        "Completion of the CRM system deployment and initial process optimization cycle.",
+        "Successful definition of R&D roles into dedicated squads, improving focus and accountability.",
+        "Quantified efficiency gains in sales pipeline management achieved through new technology adoption."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "2023-01-15",
+      "assessment_number": 2,
+      "key_changes": "The company successfully moved from implementing foundational digital tools (CRM) to actively planning for advanced automation and strategic growth (AI/M&A). Digital maturity has visibly increased, allowing the focus to shift from 'Can we digitize?' to 'How do we use data for exponential growth?'"
+    }
+  }
+}

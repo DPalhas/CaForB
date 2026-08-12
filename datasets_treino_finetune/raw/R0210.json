@@ -1,0 +1,201 @@
+{
+  "id": "R0210",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0176",
+  "split": "train",
+  "metadata": {
+    "sector": "Healthtech",
+    "size": "Large",
+    "regulatory_environment": "low",
+    "risk_appetite": "balanced",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:48:33.206207+00:00",
+    "duration_ms": 33009,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Atlas Networks",
+      "sector": "Healthtech",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "low",
+      "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+      "innovationProcess": "partial",
+      "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 9,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "process",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0176",
+      "fields": {
+        "companyName": "Atlas Networks",
+        "sector": "Healthtech",
+        "size": "Large",
+        "regulatoryEnvironment": "low",
+        "companyDescription": "Mental health tech company offering an app-based cognitive behavioral therapy program with human therapist chat support. 18,000 active users. Clinical evidence from a published RCT showing 40% reduction in PHQ-9 scores. Expanding into corporate wellness programs and evaluating AI-supported therapist productivity tools. We operate across multiple geographies and business units with a matrix organizational structure. A centralized digital transformation office coordinates innovation initiatives, but business unit autonomy means adoption varies significantly. Annual capex budget for innovation exists but deployment is gated by rigorous ROI modeling and steering committee approval.",
+        "innovationProcess": "partial",
+        "pastInitiatives": "We launched a digital customer onboarding flow last quarter that reduced average onboarding time from 12 days to 5 days. The project was cross-functional involving product, compliance, and customer success teams. Early NPS scores for new customers onboarded through this flow are 22 points higher than the legacy process.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "3",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 6,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "budget",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 5 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "superseded",
+      "opp_3": "in_progress",
+      "opp_4": "completed",
+      "step_1": "not_done",
+      "step_2": "not_done",
+      "step_3": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 6.8,
+    "score_delta": 2.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O1_Diversification_ProductLine",
+        "type": "incremental",
+        "title": "Develop Adjacent Product Lines for New Segments",
+        "rationale": "The company suffers from significant revenue concentration (top 3 clients = 55%). Developing new, product lines targeting less correlated customer segments is essential to achieve diversification and mitigate risk. This leverages existing cognitive behavioral therapy methodologies but expands the scope beyond current core users.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct a comprehensive market analysis of adjacent wellness sectors (e.g., occupational health, chronic condition management).",
+            "Design 2-3 Minimum Viable Products (MVPs) specifically for these new segments and estimate necessary feature sets.",
+            "Develop clear pricing models and ROI projections tailored to non-traditional healthcare spenders."
+          ],
+          "resources_needed": [
+            "Dedicated market research budget",
+            "Product design team time",
+            "Financial modeling expert"
+          ],
+          "success_metric": "Launch of 1 revenue-generating MVP in a new segment within 9 months.",
+          "milestones": [
+            "Market opportunity prioritization matrix completed (Month 2).",
+            "MVP concept approval from steering committee (Month 4).",
+            "Pilot launch with non-core client group (Month 8)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "O2_NewBusinessModel_B2B",
+        "type": "radical",
+        "title": "Transition to Platform/PaaS Offering for Wellness Providers",
+        "rationale": "Current success relies heavily on direct product sales. A radical shift involves packaging the core CBT methodology and platform tools into a white-label or API service (Platform as a Service). This de-risks reliance on individual client budgets by making revenue scalable across many smaller B2B implementations.",
+        "execution_plan": {
+          "first_actions": [
+            "Audit current tech stack to identify modular components suitable for external APIs/white labeling.",
+            "Develop a tiered pricing structure model based on usage volume and customization complexity.",
+            "Identify 3-5 target B2B vertical partners (e.g., EAPs, HR Tech firms) for initial pilot integration."
+          ],
+          "resources_needed": [
+            "Dedicated API development resources",
+            "Legal/Compliance consultation for partnerships",
+            "Sales enablement training on platform selling"
+          ],
+          "success_metric": "Secure 3 Letters of Intent (LOI) from B2B partners to pilot the PaaS offering within 12 months.",
+          "milestones": [
+            "API roadmap and architecture finalized (Month 3).",
+            "Pricing tier document approved by leadership (Month 5).",
+            "Initial joint discovery session with first LOI partner (Month 8)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS1",
+        "action": "Formalize cross-BU KPIs linking innovation funding directly to measurable revenue diversification metrics (e.g., % of revenue from non-core segments).",
+        "owner": "Group Chief Innovation Officer (CINO)",
+        "timeframe": "Q3 2024"
+      },
+      {
+        "id": "NS2",
+        "action": "Establish a formal 'Innovation Portfolio Governance' committee to review and allocate resources based on risk-adjusted potential, moving beyond simple ROI modeling.",
+        "owner": "Steering Committee/Executive Leadership",
+        "timeframe": "Q4 2024"
+      },
+      {
+        "id": "NS3",
+        "action": "Develop a centralized knowledge repository documenting successful digital transformation flows (like the onboarding flow) to ensure best practices are adopted across all business units.",
+        "owner": "Digital Transformation Office (DTO)",
+        "timeframe": "Q3 2024"
+      }
+    ],
+    "key_weaknesses": [
+      "Over-reliance on a concentrated customer base, posing significant revenue concentration risk.",
+      "Decentralized innovation structure leads to inconsistent adoption and difficulty in scaling best practices across business units.",
+      "Decision making (formal committee) is robust but appears highly restrictive, potentially slowing down market responsiveness and radical experimentation."
+    ],
+    "progress": {
+      "improvements": [
+        "Digital capability has significantly improved, demonstrated by the successful cross-functional launch of a digital customer onboarding flow.",
+        "The company successfully expanded into an adjacent market segment.",
+        "Increased funding percentage dedicated to innovation (9%) compared to prior years."
+      ],
+      "persistent_gaps": [
+        "Structural dependency on high-value core clients limits long-term strategic flexibility.",
+        "Organizational autonomy across business units prevents full realization of scaled, enterprise-level process efficiencies.",
+        "Innovation fund deployment is still heavily gated by rigorous ROI modeling, impeding radical, non-linear growth initiatives."
+      ],
+      "achieved_milestones": [
+        "Reduced average customer onboarding time from 12 days to 5 days.",
+        "Achieved a 22-point increase in NPS for newly onboarded customers via digital process improvement."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 4.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased digital maturity (3 to 4), expanded revenue scope into adjacent markets, and demonstrated successful cross-functional process improvements."
+    }
+  }
+}

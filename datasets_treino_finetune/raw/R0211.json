@@ -1,0 +1,206 @@
+{
+  "id": "R0211",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0032",
+  "split": "train",
+  "metadata": {
+    "sector": "Energy & Utilities",
+    "size": "Micro",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "medium",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T22:49:16.524554+00:00",
+    "duration_ms": 43297,
+    "attempts": 1
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Apex",
+      "sector": "Energy & Utilities",
+      "size": "Micro"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+      "innovationProcess": "informal",
+      "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "medium",
+      "riskAppetite": "bold",
+      "teamSize": "7 person team",
+      "digitalMaturity": "1",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 10,
+      "decisionMaking": "owner_alone",
+      "mainBarrier": [
+        "budget",
+        "process",
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "medium",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0032",
+      "fields": {
+        "companyName": "Apex",
+        "sector": "Energy & Utilities",
+        "size": "Micro",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "Energy services company providing energy efficiency audits, HVAC optimization, and building management system integration for commercial and industrial clients. Completed 200+ projects across hospitals, hotels, and manufacturing plants. Developing an IoT-based real-time energy monitoring platform. We are a bootstrapped company with a lean team. Every euro of investment must show near-immediate ROI given our constrained working capital. The founder is involved in all strategic decisions including innovation priorities.",
+        "innovationProcess": "none",
+        "pastInitiatives": "Innovation is not a formalized function in our organization. We occasionally try new tools or workflows when a team member champions them, but these are isolated, grassroots efforts without executive sponsorship, budget allocation, or structured measurement of outcomes.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "Our core business is stable and cash-generative, but we see limited growth potential within our current market. We are actively exploring adjacent business models — potentially a marketplace, a subscription-based service layer, or a data monetization play built on the proprietary data we already collect. We are willing to incubate 2-3 experimental business lines with seed funding to test viability.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "We have 2 generalist developers who split their time between maintaining our existing systems, handling customer support escalations, and occasionally prototyping new features. There is no dedicated innovation or R&D role — innovation happens when these developers have spare cycles between urgent operational tasks, which is rare.",
+        "digitalMaturity": "1",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 13,
+        "decisionMaking": "owner_alone",
+        "mainBarrier": [
+          "budget",
+          "process",
+          "talent",
+          "time"
+        ],
+        "competitivePressure": "medium",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 7 new features shipped. Customer NPS improved 15 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "superseded",
+      "opp_4": "not_done",
+      "step_1": "not_done",
+      "step_2": "completed",
+      "step_3": "completed"
+    }
+  },
+  "output": {
+    "maturity_score": 3.5,
+    "score_delta": 2.5,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_data_marketplace",
+        "type": "radical",
+        "title": "Develop and Launch Proprietary Data Marketplace MVP",
+        "rationale": "The company possesses highly valuable, aggregated data from its installations (hospitals, hotels). Moving beyond simply offering services to monetizing this proprietary dataset—via a B2B marketplace or subscription insights layer—is the most direct path to achieving diversification goals. This requires transitioning from service provider mindset to platform owner.",
+        "execution_plan": {
+          "first_actions": [
+            "Legal assessment of data ownership and GDPR/CCPA compliance for external monetization.",
+            "Identify 3-5 ideal early adopter anchor clients willing to test a premium data subscription model.",
+            "Develop a minimal viable product (MVP) demonstrating key aggregated insights (e.g., energy consumption anomaly detection by sector).",
+            "Create standardized pricing tiers based on data volume and insight depth."
+          ],
+          "resources_needed": [
+            "Legal Counsel specializing in Data Privacy/IP",
+            "Dedicated Software Engineer (Data Architecture)",
+            "Founder Time (Strategic Vision & Sales)"
+          ],
+          "success_metric": "Acquisition of 3 paying anchor clients for the data subscription layer within 6 months.",
+          "milestones": [
+            "Legal framework established and validated.",
+            "MVP functional prototype completed with internal data feeds.",
+            "Initial paid pilot test launched."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      },
+      {
+        "id": "opp_process_governance",
+        "type": "incremental",
+        "title": "Formalize Core Business Processes and Reduce Technical Debt",
+        "rationale": "The growth driven by successful product launches is currently hampered by informal processes and accumulating technical debt. Implementing structured governance for the sales, audit, and deployment workflows will create repeatable quality and reduce single-point-of-failure risk associated with the founder's direct involvement.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the 3 most frequent/critical employee touchpoints (e.g., initial audit intake, client onboarding).",
+            "Select and implement a low-cost workflow management tool to document processes.",
+            "Dedicate 10% of one team member's time for 'Process Documentation & Training' over two quarters."
+          ],
+          "resources_needed": [
+            "Internal Process Owner/Analyst",
+            "Basic Workflow Management Software License (e.g., Notion, Jira)",
+            "Dedicated training sessions with existing staff."
+          ],
+          "success_metric": "Reduction in audit cycle time by 15% due to documented workflow improvements.",
+          "milestones": [
+            "Key business workflows mapped and documented.",
+            "Process documentation circulated and validated by the core team.",
+            "Initial training run completed, achieving measurable efficiency gain."
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "3-4 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns1",
+        "action": "Conduct a deep dive legal review on the proprietary data assets to quantify monetization risks and opportunities.",
+        "owner": "Founder/External Legal Counsel",
+        "timeframe": "Immediate (2 weeks)"
+      },
+      {
+        "id": "ns2",
+        "action": "Implement process mapping workshops with the core team to select 1-2 high-impact, low-complexity processes for immediate formalization.",
+        "owner": "Designated Process Owner/Team Lead",
+        "timeframe": "Next Month (4 weeks)"
+      },
+      {
+        "id": "ns3",
+        "action": "Allocate a small 'Innovation Runway Budget' ($5k-$10k) specifically ring-fenced for testing the data marketplace hypothesis.",
+        "owner": "Founder/Finance",
+        "timeframe": "Next Quarter (End of reporting period)"
+      }
+    ],
+    "key_weaknesses": [
+      "High Founder Dependency: Strategic decisions and operational knowledge are centralized, creating a significant bottleneck for scaling.",
+      "Process Immaturity: Reliance on 'informal conversations' means growth is not repeatable or scalable without structured SOPs (Standard Operating Procedures).",
+      "Technical Debt Accumulation: While product features launched successfully, the underlying technical infrastructure risk growing faster than development velocity."
+    ],
+    "progress": {
+      "improvements": [
+        "Strong Market Validation: Product success led to a significant 15-point NPS increase, validating core service offerings.",
+        "Revenue Stability & Focus: The company remains cash-generative and has clear strategic direction toward diversification.",
+        "Product Development Capability: Ability to rapidly iterate and launch new features demonstrates strong execution muscle."
+      ],
+      "persistent_gaps": [
+        "Lack of Formal Structure: Innovation efforts remain 'grassroots' and lack executive sponsorship or standardized measurement beyond direct ROI.",
+        "Process Documentation Gap: Critical knowledge transfer points are undocumented, limiting team scalability.",
+        "Over-reliance on founder's time for strategic decisions."
+      ],
+      "achieved_milestones": [
+        "Successful launch of 7 new product features.",
+        "Significant improvement in customer satisfaction (NPS +15)."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 1.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Increased product capability and proven market fit (NPS +15) allowed the company to move from a pure conceptual state to one capable of structured growth planning, although internal processes remain underdeveloped."
+    }
+  }
+}

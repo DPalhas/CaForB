@@ -1,0 +1,200 @@
+{
+  "id": "R0166",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0203",
+  "split": "train",
+  "metadata": {
+    "sector": "Professional & Consulting Services",
+    "size": "Large",
+    "regulatory_environment": "medium",
+    "risk_appetite": "bold",
+    "strategic_priority": "diversification",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": false,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T21:32:11.648165+00:00",
+    "duration_ms": 99456,
+    "attempts": 2
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Cipher Group",
+      "sector": "Professional & Consulting Services",
+      "size": "Large"
+    },
+    "answers": {
+      "regulatoryEnvironment": "medium",
+      "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+      "strategicPriority": "diversification",
+      "timeHorizon": "long",
+      "riskAppetite": "bold",
+      "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 19,
+      "decisionMaking": "varies_by_project",
+      "mainBarrier": [
+        "talent",
+        "time"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0203",
+      "fields": {
+        "companyName": "Cipher Group",
+        "sector": "Professional & Consulting Services",
+        "size": "Large",
+        "regulatoryEnvironment": "medium",
+        "companyDescription": "HR and organizational development consultancy designing leadership programs, culture transformation initiatives, and competency frameworks for corporate clients. Team of 12 organizational psychologists and facilitators. Delivered 80+ programs in the past year. Seeking a digital learning platform to complement in-person workshops. Enterprise-scale organization with complex multi-layer governance, dedicated innovation/R&D departments, and formal stage-gate project approval processes. We have substantial resources but also significant organizational inertia — aligning stakeholders across divisions takes deliberate effort and senior executive sponsorship.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are heavily dependent on a single product category and a concentrated customer base — our top 3 clients represent 55% of revenue. This concentration risk is unacceptable for our long-term health. We need to identify and develop new revenue streams, possibly including new product lines for different customer segments or entirely new business models that leverage our existing capabilities.",
+        "strategicPriority": "diversification",
+        "timeHorizon": "medium",
+        "riskAppetite": "bold",
+        "teamSize": "Innovation is decentralized across business units, each with its own innovation lead and dedicated resources, coordinated by a group-level Chief Innovation Officer. The total innovation workforce is approximately 100 people across the organization. A group innovation fund of €5M annually is allocated competitively — business units pitch for funding against clear innovation KPIs including revenue from new products and process efficiency gains.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 14,
+        "decisionMaking": "varies_by_project",
+        "mainBarrier": [
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Transitioning from founder-led to professional management. Hired 7 senior leaders. Strategic planning process being formalized.",
+    "recommendation_status": {
+      "opp_1": "superseded",
+      "opp_2": "in_progress",
+      "opp_3": "not_done",
+      "opp_4": "not_done",
+      "step_1": "superseded",
+      "step_2": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.8,
+    "score_delta": 1.8,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_3_revised",
+        "type": "radical",
+        "title": "Develop and Launch a 'Productized Practice' Platform (SaaS/IP Monetization)",
+        "rationale": "The group has successfully industrialized internal processes (e.g., computer vision prototype) but remains too reliant on human consulting time. This opportunity requires radical shift to package IP or standardized diagnostic tools into scalable digital products, creating a true new revenue stream separate from client labor.",
+        "execution_plan": {
+          "first_actions": [
+            "Establish a dedicated 'Product Incubation Unit' funded by the innovation fund.",
+            "Conduct opportunity sizing based on existing patents and operational efficiencies (e.g., automated assessment tools).",
+            "Formalize pricing models for productized services, separating them from traditional consulting rates."
+          ],
+          "resources_needed": [
+            "Dedicated engineering talent (CTO oversight)",
+            "Legal counsel (IP protection/licensing)",
+            "Senior leadership sponsorship (C-suite commitment)"
+          ],
+          "success_metric": "Revenue contribution percentage from productized services, targeting 10% of total revenue within 3 years.",
+          "milestones": [
+            "MVP prototype launched and tested with a friendly client group (6 months).",
+            "Formal sales process established for the product line.",
+            "First paid enterprise contract signed specifically for the digital platform."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "high",
+        "timeframe": "18-24 months",
+        "carry_forward_from": "opp_2",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "opp_1_diversification_focus",
+        "type": "incremental",
+        "title": "Strategic Vertical Expansion into High-Growth Niche Industry (e.g., Healthcare)",
+        "rationale": "The current concentration risk (top 3 clients = 55% revenue) is the single greatest threat. Instead of purely horizontal expansion, focus incremental efforts on mastering a specific high-growth vertical where existing core competencies are highly valuable.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify 2-3 target verticals with minimal current client overlap.",
+            "Assemble small, cross-functional 'Tiger Teams' composed of internal experts and external subject matter specialists for rapid market analysis.",
+            "Develop a pilot diagnostic service package tailored specifically to the chosen industry's pain points."
+          ],
+          "resources_needed": [
+            "Industry advisory board funding",
+            "Targeted sales resources (Account Executives)",
+            "Executive sponsorship linking R&D to specific market needs"
+          ],
+          "success_metric": "Securing 1 new anchor client in the chosen vertical within 12 months.",
+          "milestones": [
+            "Completed Market Viability Report for top-choice niche.",
+            "Successful pilot program delivery (Proof of Concept).",
+            "Formalized sales pitch and resource allocation for the vertical line."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "12-18 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Formalize a steering committee with C-level representation to oversee the Product Incubation Unit and resolve cross-divisional resource conflicts.",
+        "owner": "Chief Innovation Officer (CIO)",
+        "timeframe": "Next Quarter"
+      },
+      {
+        "id": "ns_2",
+        "action": "Mandate bi-weekly 'Diversification Review' sessions across all business units to explicitly track and report on progress against new market segments, overcoming silo effects.",
+        "owner": "Head of Business Development/COO",
+        "timeframe": "Immediate"
+      },
+      {
+        "id": "ns_3",
+        "action": "Review and update the internal 'Innovation KPI' structure to better incentivize product development revenue (new models) over pure service delivery hours.",
+        "owner": "HR/Finance Leadership",
+        "timeframe": "Next 6 Months"
+      }
+    ],
+    "key_weaknesses": [
+      "Significant organizational inertia hindering rapid structural change across business units.",
+      "Over-reliance on a small cluster of major clients, creating substantial revenue concentration risk.",
+      "Decision-making processes, while formalizing, remain fragmented (varies by project), slowing enterprise adoption of new initiatives."
+    ],
+    "progress": {
+      "improvements": [
+        "Successfully transitioned governance from founder-led to professional management structures with 7 senior leaders in place.",
+        "Formal innovation mechanisms are robust (hackathons, patent portfolio) and generate quantifiable results (35% defect reduction).",
+        "Increased strategic resources allocation (19% budget percentage, €5M fund), signaling executive commitment."
+      ],
+      "persistent_gaps": [
+        "The fundamental risk of client concentration remains unresolved at the structural level.",
+        "Translating successful internal process innovation into scalable external product offerings requires significant organizational realignment and investment.",
+        "Alignment across decentralized business units for unified strategic execution is still challenging."
+      ],
+      "achieved_milestones": [
+        "Successfully commercialized an automated quality inspection prototype using computer vision, demonstrating high operational maturity.",
+        "Strategic planning process has moved from conceptual to formalized stage-gate deployment."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant organizational maturation observed (founder-led to professional enterprise). Increased governance structure and formalized processes have stabilized innovation output and resource allocation."
+    }
+  }
+}

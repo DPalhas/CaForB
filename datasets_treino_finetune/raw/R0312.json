@@ -1,0 +1,204 @@
+{
+  "id": "R0312",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0117",
+  "split": "train",
+  "metadata": {
+    "sector": "Construction",
+    "size": "Medium",
+    "regulatory_environment": "high",
+    "risk_appetite": "conservative",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "high",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-10T08:33:20.884034+00:00",
+    "duration_ms": 45293,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:18.021446+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Atlas Enterprises.ai",
+      "sector": "Construction",
+      "size": "Medium"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors. Current focus is on BIM adoption and drone-based site progress monitoring. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+      "customerFeedback": "informal_conversations",
+      "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "long",
+      "riskAppetite": "conservative",
+      "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+      "digitalMaturity": "4",
+      "revenueRange": "over_50m",
+      "budgetPercentage": 6,
+      "decisionMaking": "small_leadership_team",
+      "mainBarrier": [
+        "strategy",
+        "time"
+      ],
+      "competitivePressure": "high",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0117",
+      "fields": {
+        "companyName": "Atlas Enterprises.ai",
+        "sector": "Construction",
+        "size": "Medium",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "General contractor specializing in multi-family residential projects and light commercial builds. We manage 6-8 active construction sites simultaneously with a network of 30+ subcontractors. Current focus is on BIM adoption and drone-based site progress monitoring. The company has mature core business processes but struggles with the tension between running the existing operation efficiently and carving out resources for innovation. We have pockets of digital maturity in specific teams while other areas rely heavily on manual workflows and spreadsheets.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "Innovation is embedded in our operating rhythm. We run quarterly hackathons, maintain a formal patent portfolio, and have a rotating 'innovation fellow' program where high-potential employees spend 6 months dedicated to exploratory projects. Our last hackathon produced a prototype for automated quality inspection using computer vision that is now in production, reducing defect escape rate by 35%.",
+        "customerFeedback": "informal_conversations",
+        "strategicGoals": "A major international competitor has signaled intent to enter our core market within the next 12 months. We have a 6-9 month window to build competitive moats — whether through product differentiation, exclusive partnerships, customer loyalty programs, or service-level improvements that would be costly for a new entrant to replicate quickly.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "long",
+        "riskAppetite": "conservative",
+        "teamSize": "We have a dedicated innovation squad of 8 people — 4 engineers, 1 data scientist, 1 UX designer, 1 product manager, and a part-time business analyst. This team operates with its own sprint cadence separate from the core product teams and has an allocated annual innovation budget. They report progress quarterly to the executive committee.",
+        "digitalMaturity": "4",
+        "revenueRange": "over_50m",
+        "budgetPercentage": 3,
+        "decisionMaking": "small_leadership_team",
+        "mainBarrier": [
+          "process",
+          "strategy",
+          "time"
+        ],
+        "competitivePressure": "high",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Product launch successful — 4 new features shipped. Customer NPS improved 20 points. Backlog of technical debt growing.",
+    "recommendation_status": {
+      "opp_1": "completed",
+      "opp_2": "not_done",
+      "opp_3": "completed",
+      "step_1": "not_done",
+      "step_2": "in_progress",
+      "step_3": "in_progress"
+    }
+  },
+  "output": {
+    "maturity_score": 7.8,
+    "score_delta": 1.3,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "O-2024-A",
+        "type": "incremental",
+        "title": "Formalizing Digital Compliance Protocols for Site Management (Evolving Moat)",
+        "rationale": "With the imminent threat of a major competitor, Atlas must build defensible barriers around its operational knowledge. Leveraging successful BIM and drone adoption, formalizing compliance protocols will transform a process advantage into a proprietary service offering that new entrants cannot replicate quickly.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct gap analysis between current site documentation practices and state/federal regulatory requirements (Compliance Focus).",
+            "Integrate automated checklists derived from BIM models directly into the drone monitoring platform workflow to flag deviations immediately.",
+            "Develop a tiered access control system for compliance data, restricting sensitive operational blueprints only to certified personnel."
+          ],
+          "resources_needed": [
+            "Dedicated Compliance Officer time (Part-time)",
+            "IoT/Digital Platform Engineering expertise",
+            "Legal counsel review of proposed protocols"
+          ],
+          "success_metric": "Reduction in compliance-related site incidents by 40% within the next 6 months.",
+          "milestones": [
+            "Completion of regulatory gap analysis (Q1)",
+            "Pilot rollout on two active sites with automated flagging system (Q2)",
+            "Integration into core operational software (Q3)"
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": "O-prior-001",
+        "carry_forward_status": "evolved_to"
+      },
+      {
+        "id": "O-2024-B",
+        "type": "incremental",
+        "title": "Structured Customer Loyalty & Feedback Loop Implementation",
+        "rationale": "While NPS improved, relying on 'informal conversations' is not scalable for market defense. To build a moat, Atlas must systematically capture, analyze, and act upon structured customer feedback to drive differentiation in service-level improvements.",
+        "execution_plan": {
+          "first_actions": [
+            "Map the entire customer journey from initial inquiry to project completion to identify key touchpoints for feedback capture.",
+            "Develop a dedicated post-completion survey integrated into billing/project management software (CRM link).",
+            "Train account managers on qualitative data mining techniques using captured feedback.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "UX Designer time",
+            "Data Scientist time",
+            "CRM platform integration budget"
+          ],
+          "success_metric": "Achieve 70% participation rate in the post-completion survey within 6 months.",
+          "milestones": [
+            "Finalize customer journey map and required data fields (Q1)",
+            "Deploy beta feedback module on one segment of clients (Q2)",
+            "Analyze feedback data monthly to inform product roadmap adjustments (Ongoing)"
+          ]
+        },
+        "impact": "medium",
+        "difficulty": "low",
+        "timeframe": "6 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "NS-1",
+        "action": "Form a cross-functional 'Strategy & Moat' task force (Leadership buy-in required) to dedicate 20% of senior management time specifically to competitive response planning.",
+        "owner": "CEO / Leadership Team",
+        "timeframe": "Immediate (Next 30 days)"
+      },
+      {
+        "id": "NS-2",
+        "action": "Allocate specific technical resources from the innovation squad to address and mitigate critical technical debt areas identified during product launch.",
+        "owner": "CTO / Engineering Lead",
+        "timeframe": "Next Quarter (Q1)"
+      },
+      {
+        "id": "NS-3",
+        "action": "Formalize the 'Innovation Fellow' program by linking successful prototypes directly to measurable operational KPIs and profit centers.",
+        "owner": "Head of Innovation",
+        "timeframe": "Ongoing (Quarterly Review Cycle)"
+      }
+    ],
+    "key_weaknesses": [
+      "Persistent tension between efficient core operations management and dedicated resource allocation for innovation ('Strategy/Time' barrier)",
+      "Digital maturity remains fragmented, with reliance on manual workflows in non-core areas despite investments in BIM/drones",
+      "Lack of structured customer data capture means the company is reacting to market signals rather than predicting them."
+    ],
+    "progress": {
+      "improvements": [
+        "Product launch successfully shipped 4 new features, increasing product viability.",
+        "Customer NPS improved by 20 points, signaling positive reception to current service efforts.",
+        "Budget allocation increased from 3% to 6% of revenue, demonstrating executive commitment."
+      ],
+      "persistent_gaps": [
+        "Technical debt accumulation poses an increasing threat to development velocity and stability.",
+        "The fundamental barrier of carving out time/resources for strategic planning remains unsolved at the leadership level.",
+        "Data governance around site-specific regulatory compliance is still process-heavy and not fully automated."
+      ],
+      "achieved_milestones": [
+        "Successful deployment and production use of the computer vision quality inspection prototype, reducing defect escape rate by 35%.",
+        "Formal innovation processes (hackathons, patents) are running smoothly and yielding results."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 6.5,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Significant operational improvements were noted (NPS, product features), and innovation funding increased substantially (3% to 6%). The formalization of process is a major step up, but strategic execution risk remains high due to market competition."
+    }
+  }
+}

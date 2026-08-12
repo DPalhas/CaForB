@@ -1,0 +1,204 @@
+{
+  "id": "R0119",
+  "version": 1,
+  "assessment_type": "reassessment",
+  "base_id": "0307",
+  "split": "train",
+  "metadata": {
+    "sector": "Transportation & Logistics",
+    "size": "Small",
+    "regulatory_environment": "high",
+    "risk_appetite": "balanced",
+    "strategic_priority": "market_defense",
+    "competitive_pressure": "low",
+    "assessment_type": "reassessment",
+    "reviewed": true,
+    "source": "gemma4_synthetic",
+    "generated_at": "2026-08-09T20:42:42.634984+00:00",
+    "duration_ms": 54538,
+    "attempts": 1,
+    "auto_fixed": true,
+    "reviewed_at": "2026-08-10T10:21:17.971255+00:00"
+  },
+  "instruction": "You are a strategic corporate innovation advisor conducting a reassessment. Analyse the prior assessment summary, changes since last assessment, and updated survey, then respond with a complete reassessment JSON including score_delta, carry_forward, progress, and comparison_to_previous.",
+  "input": {
+    "company": {
+      "name": "Core",
+      "sector": "Transportation & Logistics",
+      "size": "Small"
+    },
+    "answers": {
+      "regulatoryEnvironment": "high",
+      "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+      "innovationProcess": "formal",
+      "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+      "customerFeedback": "dedicated_research",
+      "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+      "strategicPriority": "market_defense",
+      "timeHorizon": "medium",
+      "riskAppetite": "balanced",
+      "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+      "digitalMaturity": "4",
+      "revenueRange": "1m_to_10m",
+      "budgetPercentage": 10,
+      "decisionMaking": "formal_committee",
+      "mainBarrier": [
+        "culture",
+        "process",
+        "talent"
+      ],
+      "competitivePressure": "low",
+      "additionalContext": ""
+    },
+    "previous_assessment": {
+      "id": "0307",
+      "fields": {
+        "companyName": "Core",
+        "sector": "Transportation & Logistics",
+        "size": "Small",
+        "regulatoryEnvironment": "high",
+        "companyDescription": "Freight forwarding and customs brokerage firm managing sea, air, and road shipments for 200+ SME importers and exporters. Processing ~300 customs declarations monthly. Seeking to implement automated customs document classification and regulatory change monitoring across 15 trade corridors. We have a dedicated management team across core functions but operate with limited middle management layers. Budget cycles are annual with moderate flexibility for mid-year reallocation if a strong business case is presented. Innovation initiatives compete with day-to-day operational demands for team attention.",
+        "innovationProcess": "formal",
+        "pastInitiatives": "We operate an internal venture studio model where cross-functional teams pitch innovation ideas to an investment committee quarterly. Approved projects receive 6 months of funded incubation with dedicated resources. Our current portfolio includes 4 active projects across new business models, digital products, and operational AI use cases. One incubated project has already graduated to become a standalone business unit.",
+        "customerFeedback": "dedicated_research",
+        "strategicGoals": "We are the incumbent market leader but face increasing pressure from 2 well-funded new entrants who are undercutting our pricing and offering a more modern customer experience. Our priority is defending our installed base — reducing churn, strengthening switching costs, and matching the digital experience our competitors offer without triggering a destructive price war.",
+        "strategicPriority": "market_defense",
+        "timeHorizon": "medium",
+        "riskAppetite": "balanced",
+        "teamSize": "We have a small technology team of 4-6 people including developers, a part-time DevOps engineer, and a product manager who also handles project management. The team is fully allocated to maintaining current products and handling integration requests from key clients. Innovation work is done in the margins — there is no formally ring-fenced innovation time or budget.",
+        "digitalMaturity": "3",
+        "revenueRange": "1m_to_10m",
+        "budgetPercentage": 10,
+        "decisionMaking": "formal_committee",
+        "mainBarrier": [
+          "process",
+          "talent"
+        ],
+        "competitivePressure": "low",
+        "additionalContext": ""
+      }
+    },
+    "changes_since_last": "Acquired 3 new enterprise clients. Expanded into adjacent market. Digital maturity improving.",
+    "recommendation_status": {
+      "opp_1": "in_progress",
+      "opp_2": "in_progress",
+      "opp_3": "in_progress",
+      "opp_4": "in_progress",
+      "step_1": "not_done",
+      "step_2": "not_done"
+    }
+  },
+  "output": {
+    "maturity_score": 7.0,
+    "score_delta": 2.0,
+    "score_change": "improved",
+    "opportunities": [
+      {
+        "id": "opp_1",
+        "type": "incremental",
+        "title": "Implement Proactive Customer Digital Experience Layer for Churn Reduction",
+        "rationale": "To defend the installed base against competitors, Core must move beyond simple transaction processing to offering a 'modern customer experience.' Leveraging existing enterprise client relationships and the venture studio model is key to strengthening switching costs through superior digital interaction.",
+        "execution_plan": {
+          "first_actions": [
+            "Conduct deep-dive process mapping with the top 5 clients to identify friction points in their current end-to-end journey.",
+            "Design a lightweight, modular customer portal (MVP) focusing specifically on proactive alerts and performance dashboards rather than pure transaction filing.",
+            "Pilot the portal with a small cohort of existing SME importers/exporters to gather immediate usage data.",
+            "Conduct regulatory compliance review with legal team to ensure alignment with applicable regulations"
+          ],
+          "resources_needed": [
+            "Product Manager time (dedicated)",
+            "Small UX/UI design sprint team",
+            "Integration APIs for key client systems"
+          ],
+          "success_metric": "Reduction in quarterly customer churn rate among the top 10% of clients by 5%.",
+          "milestones": [
+            "Complete journey mapping and identify 3 primary digital pain points.",
+            "Launch MVP portal with core features (alerts/dashboards).",
+            "Achieve beta adoption from a minimum of 20 pilot users."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "6-9 months",
+        "carry_forward_from": "opp_1",
+        "carry_forward_status": "continues"
+      },
+      {
+        "id": "opp_2",
+        "type": "incremental",
+        "title": "Automated Regulatory Change Adaptation Engine",
+        "rationale": "Given the high regulatory environment and focus on 15 trade corridors, manual monitoring creates risk and limits scalability. Implementing a dedicated system to track regulatory changes and automatically suggesting process/documentation updates is critical for maintaining compliance leadership.",
+        "execution_plan": {
+          "first_actions": [
+            "Identify core data streams and jurisdictions needing automated monitoring (focus on the top 3 most volatile corridors).",
+            "Vet third-party API solutions or AI services capable of ingesting and classifying regulatory documents.",
+            "Build a dedicated compliance dashboard that flags changes and assigns preliminary remediation tasks to internal teams."
+          ],
+          "resources_needed": [
+            "Dedicated DevOps/Technical resources (ring-fenced time)",
+            "Legal/Compliance SME input",
+            "External Regulatory Data Service Subscription"
+          ],
+          "success_metric": "Reduction in regulatory compliance manual effort hours by 20% within the first quarter of deployment.",
+          "milestones": [
+            "Select and integrate data source APIs for initial pilot corridors.",
+            "Develop and validate the change classification workflow (internal testing).",
+            "Formal sign-off from Compliance on system accuracy."
+          ]
+        },
+        "impact": "high",
+        "difficulty": "medium",
+        "timeframe": "9-12 months",
+        "carry_forward_from": null,
+        "carry_forward_status": "new"
+      }
+    ],
+    "next_steps": [
+      {
+        "id": "ns_1",
+        "action": "Secure a formal 'Innovation Capacity' allocation (time/budget) to decouple core maintenance work from strategic development.",
+        "owner": "Management Team / Executive Sponsor",
+        "timeframe": "Immediate (Next 30 days)"
+      },
+      {
+        "id": "ns_2",
+        "action": "Structure the small technology team roles to include a dedicated 'Platform Owner' responsible solely for maintaining and advancing innovation systems, preventing resource drain.",
+        "owner": "HR / Operations Lead",
+        "timeframe": "Next 45 days"
+      },
+      {
+        "id": "ns_3",
+        "action": "Re-calibrate the venture studio model to prioritize 'Defensive Innovation' (market defense, churn reduction) over purely exploratory projects for the next two quarters.",
+        "owner": "Venture Studio Lead / Investment Committee",
+        "timeframe": "Next 60 days"
+      }
+    ],
+    "key_weaknesses": [
+      "Severe operational resource strain: The small tech team is fully allocated to maintaining current products, leaving innovation work perpetually 'in the margins.'",
+      "Lack of institutionalization in strategic resource allocation: Innovation efforts lack a formally ring-fenced time or budget structure.",
+      "Middle management layer deficiency: Limited middle management hinders efficient scaling and deep process ownership required for rapid expansion."
+    ],
+    "progress": {
+      "improvements": [
+        "Increased digital maturity (from 3 to 4), indicating foundational technical capabilities have improved.",
+        "Successful acquisition of 3 new enterprise clients, validating the adjacent market expansion strategy.",
+        "The formal internal venture studio model remains active and operational."
+      ],
+      "persistent_gaps": [
+        "Inability to transition innovative ideas from 'in-progress' status into fully funded, resource-dedicated business units due to ongoing operational demands.",
+        "Insufficient mechanism for proactively monitoring external regulatory changes across all 15 trade corridors.",
+        "Lack of executive sponsorship enforcing the separation between day-to-day operations and strategic innovation time."
+      ],
+      "achieved_milestones": [
+        "The expansion into an adjacent market segment, broadening revenue streams.",
+        "Successful incubation of at least one project that has graduated to a standalone business unit."
+      ]
+    },
+    "comparison_to_previous": {
+      "previous_score": 5.0,
+      "previous_date": "unknown",
+      "assessment_number": 1,
+      "key_changes": "Digital maturity improved (3 to 4), and the scope of operations expanded into new adjacent markets while retaining high regulatory complexity. The core challenge shifted from capability building to resource allocation efficiency under competitive pressure."
+    }
+  }
+}
