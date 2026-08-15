@@ -32,7 +32,7 @@ export default function ResultsPage() {
   const router = useRouter();
   const id = parseInt(params.id as string, 10);
 
-  const { data, loading, error } = useQuery(GET_INSIGHT, {
+  const { data, loading, error, refetch } = useQuery(GET_INSIGHT, {
     variables: { id },
     fetchPolicy: "no-cache",
   });
@@ -98,12 +98,20 @@ export default function ResultsPage() {
               <AlertCircle className="w-10 h-10 text-rose-400 mx-auto" />
               <h3 className="text-lg font-bold text-rose-200">Unable to load report</h3>
               <p className="text-xs text-rose-300 max-w-sm mx-auto">{error.message}</p>
-              <button
-                onClick={() => router.push("/assessment")}
-                className="mt-2 px-5 py-2.5 text-xs font-semibold bg-rose-600 text-white rounded-xl hover:bg-rose-700 transition"
-              >
-                Restart Assessment
-              </button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                <button
+                  onClick={() => refetch()}
+                  className="px-5 py-2.5 text-xs font-semibold bg-amber-400 text-stone-950 rounded-xl hover:opacity-90 transition"
+                >
+                  Try Again
+                </button>
+                <button
+                  onClick={() => router.push("/assessment")}
+                  className="px-5 py-2.5 text-xs font-semibold bg-rose-600 text-white rounded-xl hover:bg-rose-700 transition"
+                >
+                  Restart Assessment
+                </button>
+              </div>
             </div>
           )}
 

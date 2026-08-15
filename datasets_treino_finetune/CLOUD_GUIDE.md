@@ -2,7 +2,7 @@
 
 ## Overview
 
-Fine-tune `google/gemma-4-12b-it` (full 12B Gemma 4) using 4-bit QLoRA.
+Fine-tune `google/gemma-4-12B-it` (full 12B Gemma 4) using 4-bit QLoRA.
 The full training takes ~6-10 hours at ~$4-7 on an RTX 4090.
 
 **Why 12B instead of 2.3B E2B:** The 12B model produces noticeably better reassessments —
@@ -114,9 +114,9 @@ With RunPod's $10 minimum preload, you'll have $3-6 leftover for hyperparameter 
 
 ## Alternate model
 
-If `google/gemma-4-12b-it` is not available on HuggingFace yet, change the model:
+If `google/gemma-4-12B-it` is not available on HuggingFace yet, change the model:
 ```bash
-python scripts/train_caforb.py --model google/gemma-4-12b-it  # try this
+python scripts/train_caforb.py --model google/gemma-4-12B-it  # try this
 # or any other HuggingFace model ID
 ```
 Check https://huggingface.co/google for the latest Gemma 4 models.
@@ -125,4 +125,4 @@ Check https://huggingface.co/google for the latest Gemma 4 models.
 
 - **OOM**: Lower `--max-seq-length` in cloud_train.sh (try 2048)
 - **Model not found**: RunPod might need `huggingface-cli login` if model is gated
-- **Slow downloads**: The base model `google/gemma-4-E2B-it` is ~5 GB — first download may take a few minutes
+- **Slow downloads**: The base model `google/gemma-4-12B-it` is ~24 GB (fp16) — first download may take several minutes

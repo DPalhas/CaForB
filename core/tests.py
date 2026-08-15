@@ -224,7 +224,19 @@ class AgentLoopTests(TestCase):
     @patch("core.services.llm_services.ollama.chat")
     def test_agent_loop_reassessment(self, mock_ollama):
         mock_ollama.return_value = {
-            "message": {"content": '{"maturity_score": 6.0, "score_delta": 0.5, "opportunities": [], "next_steps": [], "key_weaknesses": []}'}
+            "message": {"content": (
+                '{"maturity_score": 6.0, "score_delta": 0.5, '
+                '"score_change": "improved", '
+                '"opportunities": [{"id": "opp_1", "type": "incremental", '
+                '"title": "Adopt CRM", "rationale": "R", "impact": "high", '
+                '"difficulty": "low", "timeframe": "3 months"}], '
+                '"next_steps": [{"id": "s1", "action": "A", "owner": "O", '
+                '"timeframe": "2 weeks"}], '
+                '"key_weaknesses": ["No process"], '
+                '"progress": {"improvements": [], "persistent_gaps": [], '
+                '"achieved_milestones": []}, '
+                '"comparison_to_previous": {"previous_score": 5.5}}'
+            )}
         }
         from core.services.llm_services import generate_innovation_insight
 
@@ -241,8 +253,65 @@ class AgentLoopTests(TestCase):
         )
         steps = traces
         self.assertIn("resolve_context", steps)
-        self.assertIn("build_prompt", steps)
+        self.assertIn("phase1_build_prompt", steps)
+        self.assertIn("phase1_parsed", steps)
+        self.assertIn("phase1_raw", steps)
+        self.assertIn("phase2_build_prompt", steps)
+        self.assertIn("phase2_parsed", steps)
         self.assertIn("llm_inference", steps)
+        self.assertIn("6.0", raw)
+        self.assertIn("Adopt CRM", raw)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_reassessment_phase1_retries_then_succeeds(self, mock_ollama):
+        bad = {"message": {"content": "not json at all"}}
+        good = {"message": {"content": (
+            '{"maturity_score": 5.0, "score_delta": 0.1, '
+            '"opportunities": [{"id": "o1", "type": "incremental", '
+            '"title": "T", "impact": "medium", "difficulty": "low", '
+            '"timeframe": "3 months"}]}'
+        )}}
+        # phase1 attempt1 -> bad, attempt2 -> good, phase2 -> good
+        mock_ollama.side_effect = [bad, good, good]
+        from core.services.llm_services import generate_innovation_insight
+
+        raw, _ = generate_innovation_insight(
+            {"name": "Test", "sector": "Tech", "size": "Small"},
+            {"companyDescription": "desc"},
+            history="PRIOR ASSESSMENT SUMMARY\n...",
+        )
+        self.assertIn("5.0", raw)
+        self.assertEqual(mock_ollama.call_count, 3)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_reassessment_phase1_unparseable_raises(self, mock_ollama):
+        mock_ollama.return_value = {
+            "message": {"content": "I cannot produce valid JSON here {broken"}
+        }
+        from core.services.llm_services import generate_innovation_insight
+
+        with self.assertRaises(ValueError):
+            generate_innovation_insight(
+                {"name": "Test", "sector": "Tech", "size": "Small"},
+                {"companyDescription": "desc"},
+                history="PRIOR ASSESSMENT SUMMARY\n...",
+            )
+
+    def test_salvage_phase1_recovers_fields(self):
+        from core.services.llm_services import _salvage_phase1
+        text = ('Some prose "maturity_score": 4.5, "score_delta": 0.2, '
+                '"score_change": "improved", "opportunities": '
+                '[{"id": "o1", "type": "incremental", "title": "T"}] }] tail')
+        result = _salvage_phase1(text)
+        self.assertEqual(result["maturity_score"], 4.5)
+        self.assertEqual(result["score_delta"], 0.2)
+        self.assertEqual(result["score_change"], "improved")
+        self.assertEqual(len(result["opportunities"]), 1)
+        self.assertEqual(result["opportunities"][0]["title"], "T")
+
+    def test_salvage_phase1_empty_when_nothing(self):
+        from core.services.llm_services import _salvage_phase1
+        self.assertEqual(_salvage_phase1("nothing useful here"), {})
 
     @patch("core.services.llm_services.ollama.chat")
     def test_generate_uses_correct_model(self, mock_ollama):

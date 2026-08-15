@@ -327,6 +327,13 @@ def _create_response_and_insight(
             "Raw output (first 500 chars): " + str(ai_text)[:500]
         )
 
+    if parsed.get("maturity_score") is None:
+        qr.delete()
+        raise ValueError(
+            "Assessment generation failed: model returned no maturity score. "
+            "Raw output (first 500 chars): " + str(ai_text)[:500]
+        )
+
     score = parsed.get("maturity_score", None)
     score_delta = parsed.get("score_delta", None)
 

@@ -13,7 +13,7 @@ set -e
 
 echo "============================================"
 echo "  CaForB — 12B Gemma 4 Fine-Tuning"
-echo "  Target: google/gemma-4-12b-it"
+echo "  Target: google/gemma-4-12B-it"
 echo "  VRAM: ~14-18 GB (fits in 24GB)"
 echo "============================================"
 
@@ -52,6 +52,7 @@ echo "   ETA: ~6-10 hours"
 echo ""
 
 python scripts/train_caforb.py \
+    --model google/gemma-4-12B-it \
     --max-seq-length 4096 \
     --lora-r 8 \
     --epochs 3

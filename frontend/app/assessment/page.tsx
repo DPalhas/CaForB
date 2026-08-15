@@ -5,8 +5,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useQuery, useMutation } from "@apollo/client/react";
 import { SUBMIT_QUESTIONNAIRE, SUBMIT_REASSESSMENT } from "@/lib/graphql/mutations";
 import { GET_INSIGHT, MY_COMPANIES } from "@/lib/graphql/queries";
+import { friendlyAssessmentError } from "@/lib/graphql/errors";
 import { AssessmentFormData, EMPTY_FORM } from "@/lib/types";
-import { ArrowLeft, ArrowRight, Sparkles, CheckCircle, AlertCircle, Loader2, Building2, Plus } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles, CheckCircle, AlertCircle, Loader2, Building2, Plus, RefreshCw } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion"
 import { easeOut } from "@/lib/easing";
 import NavHeader from "@/components/NavHeader";
@@ -469,10 +470,8 @@ function AssessmentPageInner() {
       }
     } catch (err: any) {
       setIsAnalysing(false);
-      const msg = err?.graphQLErrors?.[0]?.message
-        || err?.message
-        || "Something went wrong. Please try again.";
-      setError(msg);
+      const { message } = friendlyAssessmentError(err);
+      setError(message);
       console.error(err);
     }
   };
@@ -565,9 +564,41 @@ function AssessmentPageInner() {
                 </AnimatePresence>
 
                 {error && (
-                  <div className="mt-6 flex items-center gap-3 text-sm text-rose-300 bg-rose-950/40 border border-rose-800/60 rounded-xl p-4">
-                    <AlertCircle className="w-5 h-5 flex-shrink-0 text-rose-400" />
-                    <span>{error}</span>
+                  <div className="mt-6 rounded-2xl border border-rose-800/60 bg-rose-950/40 p-6 text-center space-y-4">
+                    <AlertCircle className="w-10 h-10 text-rose-400 mx-auto" />
+                    <div>
+                      <h3 className="text-lg font-bold text-rose-200">
+                        We couldn&apos;t generate your analysis
+                      </h3>
+                      <p className="text-sm text-rose-300 max-w-sm mx-auto mt-2">
+                        {error}
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <button
+                        onClick={handleSubmit}
+                        disabled={loading || isAnalysing}
+                        className="px-6 py-2.5 text-sm font-semibold text-stone-950 bg-amber-400 rounded-xl hover:opacity-90 transition disabled:opacity-60 flex items-center gap-2"
+                      >
+                        {loading || isAnalysing ? (
+                          <>
+                            <Loader2 className="w-4 h-4 animate-spin" />
+                            <span>Retrying...</span>
+                          </>
+                        ) : (
+                          <>
+                            <RefreshCw className="w-4 h-4" />
+                            <span>Try Again</span>
+                          </>
+                        )}
+                      </button>
+                      <button
+                        onClick={() => setError(null)}
+                        className="px-6 py-2.5 text-sm font-semibold text-stone-300 bg-stone-900/80 border border-stone-800 rounded-xl hover:bg-stone-800 transition"
+                      >
+                        Back to Form
+                      </button>
+                    </div>
                   </div>
                 )}
 

@@ -49,7 +49,7 @@ VAL_PATH = BASE_DIR / "final" / "validation.jsonl"
 OUTPUT_DIR = BASE_DIR / "caforb-lora"
 
 # Gemma 4 E2B (2.3B effective, 5.1B total) — instruction-tuned
-MODEL_NAME = "google/gemma-4-12b-it"  # Full 12B Gemma 4 — change if needed
+MODEL_NAME = "google/gemma-4-12B-it"  # Full 12B Gemma 4 (case-sensitive)
 
 # ──────────────────────────────────────────────────────────────────────
 # Configuration

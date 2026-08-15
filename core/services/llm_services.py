@@ -380,24 +380,170 @@ def generate_innovation_insight(company: dict, answers: dict,
         return _ollama_chat(model, prompt, trace_cb)
 
 
+def _extract_balanced(text: str, key: str) -> str:
+    """Return the JSON value (array/object) that follows "<key>": , or None."""
+    m = re.search(rf'"{key}"\s*:\s*([\[{{])', text)
+    if not m:
+        return None
+    open_ch, close_ch = m.group(1), "]" if m.group(1) == "[" else "}"
+    start = m.end() - 1
+    depth = 0
+    i = start
+    in_str = False
+    esc = False
+    while i < len(text):
+        c = text[i]
+        if esc:
+            esc = False
+        elif c == "\\" and in_str:
+            esc = True
+        elif c == '"':
+            in_str = not in_str
+        elif not in_str:
+            if c == m.group(1):
+                depth += 1
+            elif c == close_ch:
+                depth -= 1
+                if depth == 0:
+                    break
+        i += 1
+    return text[start:i + 1]
+
+
+def _salvage_phase1(text: str) -> dict:
+    """Recover phase-1 fields (score + opportunities) when full JSON fails."""
+    def _num(key):
+        m = re.search(rf'"{key}"\s*:\s*(-?\d+(?:\.\d+)?)', text)
+        return float(m.group(1)) if m else None
+
+    def _change():
+        m = re.search(r'"score_change"\s*:\s*"([^"]+)"', text)
+        return m.group(1) if m else None
+
+    opps = []
+    slice_ = _extract_balanced(text, "opportunities")
+    if slice_:
+        try:
+            opps = json.loads(slice_) or []
+        except json.JSONDecodeError:
+            opps = []
+
+    score = _num("maturity_score")
+    if score is None and not opps:
+        return {}
+    return {
+        "maturity_score": score,
+        "score_delta": _num("score_delta"),
+        "score_change": _change(),
+        "opportunities": opps,
+    }
+
+
+def _salvage_phase2(text: str) -> dict:
+    """Recover phase-2 fields (next steps, weaknesses, progress, comparison)."""
+    result = {}
+
+    slice_ = _extract_balanced(text, "next_steps")
+    if slice_:
+        try:
+            result["next_steps"] = json.loads(slice_)
+        except json.JSONDecodeError:
+            pass
+
+    slice_ = _extract_balanced(text, "key_weaknesses")
+    if slice_:
+        try:
+            result["key_weaknesses"] = json.loads(slice_)
+        except json.JSONDecodeError:
+            pass
+
+    slice_ = _extract_balanced(text, "progress")
+    if slice_:
+        try:
+            result["progress"] = json.loads(slice_)
+        except json.JSONDecodeError:
+            pass
+
+    slice_ = _extract_balanced(text, "comparison_to_previous")
+    if slice_:
+        try:
+            result["comparison_to_previous"] = json.loads(slice_)
+        except json.JSONDecodeError:
+            pass
+
+    return result
+
+
+def _phase1_ok(parsed: dict) -> bool:
+    return (
+        parsed.get("maturity_score") is not None
+        and isinstance(parsed.get("opportunities"), list)
+        and len(parsed.get("opportunities", [])) > 0
+    )
+
+
+def _json_error(text: str) -> str:
+    try:
+        json.loads(text)
+        return ""
+    except json.JSONDecodeError as e:
+        return f"JSONDecodeError: {e.msg} (pos {e.pos})"
+
+
+def _run_phase1(company, answers, history, model, trace_cb,
+                max_attempts=2) -> tuple:
+    """Phase 1: score + opportunities. Retries, then raises on failure."""
+    total_duration = 0
+    last_raw = ""
+    last_error = ""
+    parsed1 = {}
+    attempts = 0
+    for attempt in range(1, max_attempts + 1):
+        attempts = attempt
+        p1 = _build_phase1_prompt(company, answers, history)
+        if trace_cb:
+            trace_cb("phase1_build_prompt", {"phase": 1, "attempt": attempt},
+                     {"prompt_len": len(p1)}, 0)
+        t1, d1 = _ollama_chat(model, p1, trace_cb)
+        total_duration += d1
+        last_raw = t1
+        last_error = _json_error(t1)
+        parsed1 = _extract_json(t1) or {}
+        if not parsed1:
+            parsed1 = _salvage_phase1(t1) or {}
+        if trace_cb:
+            trace_cb("phase1_parsed", {"phase": 1, "attempt": attempt},
+                     {"keys": list(parsed1.keys()) if parsed1 else []}, d1)
+        if _phase1_ok(parsed1):
+            break
+
+    if trace_cb:
+        trace_cb("phase1_raw", {"phase": 1},
+                 {"raw": last_raw, "parse_error": last_error,
+                  "attempts": attempts}, d1)
+
+    if not _phase1_ok(parsed1):
+        raise ValueError(
+            "Phase 1 LLM response could not be parsed as JSON (no maturity "
+            "score / opportunities). Raw output (first 300 chars): "
+            + str(last_raw)[:300]
+        )
+    return parsed1, last_raw, last_error, total_duration
+
+
 def _generate_reassessment(company, answers, history, model, trace_cb):
     """Two-phase LLM approach for reassessments."""
     total_duration = 0
 
-    # Phase 1: Score + Opportunities
-    p1 = _build_phase1_prompt(company, answers, history)
-    if trace_cb:
-        trace_cb("phase1_build_prompt", {"phase": 1},
-                 {"prompt_len": len(p1)}, 0)
-    t1, d1 = _ollama_chat(model, p1, trace_cb)
-    total_duration += d1
-    parsed1 = _extract_json(t1) or {}
-    if trace_cb:
-        trace_cb("phase1_parsed", {"phase": 1},
-                 {"keys": list(parsed1.keys()) if parsed1 else []}, d1)
+    # Phase 1: Score + Opportunities (retry + raise on failure)
+    parsed1, t1, phase1_error, phase1_dur = _run_phase1(
+        company, answers, history, model, trace_cb
+    )
+    total_duration += phase1_dur
+
+    opps = parsed1.get("opportunities", [])
 
     # Phase 2: Next Steps + Weaknesses + Progress + Comparison
-    opps = parsed1.get("opportunities", [])
     p2 = _build_phase2_prompt(company, answers, history, opps)
     if trace_cb:
         trace_cb("phase2_build_prompt", {"phase": 2},
@@ -405,6 +551,8 @@ def _generate_reassessment(company, answers, history, model, trace_cb):
     t2, d2 = _ollama_chat(model, p2, trace_cb)
     total_duration += d2
     parsed2 = _extract_json(t2) or {}
+    if not parsed2:
+        parsed2 = _salvage_phase2(t2) or {}
     if trace_cb:
         trace_cb("phase2_parsed", {"phase": 2},
                  {"keys": list(parsed2.keys()) if parsed2 else []}, d2)
@@ -418,7 +566,6 @@ def _generate_reassessment(company, answers, history, model, trace_cb):
         "key_weaknesses": parsed2.get("key_weaknesses", []),
         "progress": parsed2.get("progress", {}),
         "comparison_to_previous": parsed2.get("comparison_to_previous", {}),
-        "_debug_phase1_raw": t1[:1000] if t1 else "(empty)",
     }
     combined_text = json.dumps(combined)
     return combined_text, total_duration
@@ -446,14 +593,20 @@ Description: {answers.get('companyDescription', 'Not provided')}
 PHASE 1 — SCORE & OPPORTUNITIES
 
 Compare with the prior assessments above. Determine the updated maturity score
-(0-10), score delta, score change, and 1-2 prioritized opportunities with
+(0-10), score delta, score change, and at most 2 prioritized opportunities with
 carry_forward tracking. Include execution plans — keep them brief.
 
 {constraints}
 
 Respond ONLY with valid JSON:
 {{"maturity_score": <float 0-10>, "score_delta": <float>, "score_change": "improved|stable|declined", "opportunities": [{{"id": "<str>", "type": "incremental|radical", "title": "<str>", "rationale": "<1 sentence>", "execution_plan": {{"first_actions": ["<str>"], "resources_needed": ["<str>"], "success_metric": "<str>", "milestones": ["<str>"]}}, "impact": "low|medium|high", "difficulty": "low|medium|high", "timeframe": "<str>", "carry_forward_from": null, "carry_forward_status": "continues|evolved_to|retired|new"}}]}}
-No markdown. No + before numbers."""
+Rules:
+- Output a single JSON object only. No markdown, no prose, nothing before the
+  first {{ or after the last }}.
+- No more than 2 opportunities. Do NOT omit "maturity_score" or "opportunities".
+- Escape any double quote inside a string value as \\". Do not put literal
+  newlines inside string values.
+- Do NOT prefix positive numbers with a + sign. No trailing commas."""
 
 
 def _build_phase2_prompt(company, answers, history, opportunities):

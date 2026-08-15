@@ -3,7 +3,8 @@
 ## Environment
 
 - WSL (Windows Subsystem for Linux). Use `/mnt/c/` paths for Windows files; use `powershell.exe -Command "..."` or `cmd.exe /c "..."` to run Windows executables.
-- Two virtualenv dirs exist: `.venv/` (tracked in `.gitignore`) and `venv/`. Always use `.venv/`.
+- Two virtualenv dirs exist: `.venv/` (has the Django deps) and `venv/` (empty). Both are **Windows** virtualenvs (Python 3.12; packages under `Scripts/`, not `bin/`). `source .venv/bin/activate` does NOT work under WSL — invoke the interpreter directly via `powershell.exe -Command ".venv\Scripts\python.exe ..."` (or run natively on Windows).
+- No `requirements.txt` for the backend. `.venv` is currently missing `django-cors-headers` (imported by `backend/settings.py`); install it if `manage.py` fails to boot with `ModuleNotFoundError: No module named 'corsheaders'`.
 
 ## Quick reference
 
@@ -17,10 +18,9 @@
 ## Commands
 
 ```bash
-# Backend
-source .venv/bin/activate
-python manage.py migrate
-python manage.py runserver 8000        # GraphQL at http://localhost:8000/graphql/
+# Backend — Windows venv, so invoke via PowerShell from WSL (not `source .venv/bin/activate`)
+powershell.exe -Command ".venv\Scripts\python.exe manage.py migrate"
+powershell.exe -Command ".venv\Scripts\python.exe manage.py runserver 8000"   # GraphQL at http://localhost:8000/graphql/
 
 # Frontend — dev server at :3000
 cd frontend && npm run dev
@@ -63,5 +63,6 @@ ollama run gemma4                       # verify model is pulled
 
 ## Testing / verification
 
-- No dedicated test runner. Canonical verification: `cd frontend && npm run build`.
-- For backend changes, verify by running the server and hitting GraphQL.
+- Frontend: `cd frontend && npm run build` (ESLint + TypeScript + Next.js build in one; no separate lint/typecheck scripts).
+- Backend: 29 Django tests in `core/tests.py` (django.test.TestCase, LLM calls mocked). Run with `powershell.exe -Command ".venv\Scripts\python.exe manage.py test core"` — no Ollama required. Note: 3 tests are stale (pre-existing failures); the suite is not fully green.
+- For end-to-end backend changes, run the server and hit GraphQL at `http://localhost:8000/graphql/`.
