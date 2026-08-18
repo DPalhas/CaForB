@@ -324,6 +324,7 @@ function AssessmentPageInner() {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState<AssessmentFormData>(EMPTY_FORM);
   const [error, setError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   const [isAnalysing, setIsAnalysing] = useState(false);
 
   const [submitQuestionnaire, { loading }] = useMutation(SUBMIT_QUESTIONNAIRE);
@@ -383,6 +384,7 @@ function AssessmentPageInner() {
   const handleChange = (field: keyof AssessmentFormData, value: any) => {
     setForm((prev) => ({ ...prev, [field]: value }));
     setError(null);
+    setNotice(null);
   };
 
   const isStepValid = () =>
@@ -395,16 +397,18 @@ function AssessmentPageInner() {
 
   const handleNext = () => {
     if (!isStepValid()) {
-      setError("Please fill in all required fields before continuing.");
+      setNotice("Please fill in all required fields before continuing.");
       return;
     }
     setStep((s) => s + 1);
     setError(null);
+    setNotice(null);
   };
 
   const handleBack = () => {
     setStep((s) => s - 1);
     setError(null);
+    setNotice(null);
   };
 
   const buildAnswers = () => ({
@@ -429,7 +433,7 @@ function AssessmentPageInner() {
 
   const handleSubmit = async () => {
     if (!isStepValid()) {
-      setError("Please fill in all required fields before submitting.");
+      setNotice("Please fill in all required fields before submitting.");
       return;
     }
     setIsAnalysing(true);
@@ -562,6 +566,13 @@ function AssessmentPageInner() {
                     {steps[step]}
                   </motion.div>
                 </AnimatePresence>
+
+                {notice && (
+                  <div className="mt-6 flex items-center gap-3 rounded-xl border border-amber-700/50 bg-amber-950/40 px-4 py-3 text-sm text-amber-200">
+                    <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                    <span>{notice}</span>
+                  </div>
+                )}
 
                 {error && (
                   <div className="mt-6 rounded-2xl border border-rose-800/60 bg-rose-950/40 p-6 text-center space-y-4">

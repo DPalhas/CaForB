@@ -18,7 +18,7 @@ REVENUE_RANGE_MIDPOINTS = {
     "over_50m": 75_000_000,
 }
 
-DEFAULT_MODEL = "gemma4"
+DEFAULT_MODEL = "gemma4:12B"
 
 # --- Budget estimation (unchanged) ---
 
@@ -42,15 +42,16 @@ _CONSTRAINT_RULES = """Consider the following when forming your assessment:
 - Regulatory environment ({regulatory_level}) should directly influence "difficulty" and "timeframe": high regulation should push toward higher difficulty, longer timeframes, and "first_actions" that explicitly include compliance, legal review, or certification steps where relevant. Low regulation allows faster, more experimental timeframes without added compliance overhead.
 - Competitive pressure ({competitive_pressure}) should influence the balance between "incremental" and "radical" opportunity types: high urgency should bias toward including at least one radical, faster-moving opportunity even if higher risk, while low urgency justifies purely incremental, longer-horizon suggestions. Explicitly reflect this urgency in the "rationale" field when relevant.
 - Risk appetite ({risk_appetite}) should be the primary driver of the "type" field for each opportunity: "conservative" should produce mostly or entirely "incremental" opportunities with cautious framing in the rationale; "bold" should include at least one clearly "radical" opportunity even if difficulty is high; "balanced" should mix both types roughly evenly. Do not contradict a conservative risk appetite with a majority-radical opportunity list, even if competitive pressure is high — in that case, favor faster-timeframe incremental moves instead.
-- Strategic priority ({strategic_priority}) should shape the "title" and "rationale" of each opportunity so they visibly serve that priority: "growth" opportunities should target new revenue, customers or markets; "efficiency" opportunities should target cost reduction or process optimization; "market_defense" opportunities should target retention, competitive moats or countering specific competitor moves; "diversification" opportunities should target new products, verticals or business models distinct from the core business."""
+- Strategic priority ({strategic_priority}) should shape the "title" and "rationale" of each opportunity so they visibly serve that priority: "growth" opportunities should target new revenue, customers or markets; "efficiency" opportunities should target cost reduction or process optimization; "market_defense" opportunities should target retention, competitive moats or countering specific competitor moves; "diversification" opportunities should target new products, verticals or business models distinct from the core business.
+- Tailoring: every opportunity and next step must reference the company's ACTUAL sector, product, or market (from the Company description and Sector above) — never generic SaaS/tech playbook advice. Name the company's real product category, customer type, or competitive context."""
 
-_EXECUTION_CRITICAL = """Keep execution plans concise — use short phrases.
-- "first_actions": 2-3 concrete immediate steps
-- "resources_needed": 1-2 specific items (tools, budget, headcount)
-- "success_metric": a KPI with a target number
-- "milestones": 2 timed milestones
-- Budget asks must stay within the estimated innovation budget.
-- High-regulation environments require compliance steps in first_actions."""
+_EXECUTION_CRITICAL = """CRITICAL REQUIREMENTS FOR EXECUTION PLANS:
+- "first_actions" must be concrete and immediately actionable — name specific tools, roles, or deliverables. Avoid vague phrases like "establish a process" or "conduct analysis" without specifying what the process/analysis actually involves.
+- "success_metric" must include a measurable BASELINE AND TARGET with numbers (e.g. "increase customer retention from 92% to 96%"), never a bare "improve by 15%" without a baseline.
+- "milestones" must include rough time markers (e.g. "Month 1", "Quarter 2") so the plan reads as a real roadmap, not a wishlist.
+- Every "next_steps" item must specify who is responsible and a realistic timeframe — not just what should happen.
+- "resources_needed" must state an explicit euro amount for EVERY resource — either a one-off figure or an annual figure (e.g. "€5,000 one-off", "€40,000/year for 1 part-time project manager"). These figures must be a plausible fraction of the estimated innovation budget above. NEVER write vague costs like "low-cost tool", "some consulting", or "10 hours of staff time" without a concrete € figure.
+- Every opportunity MUST include ALL execution_plan fields: first_actions, resources_needed, success_metric, and milestones. Do not omit any field."""
 
 
 # --- Output JSON schemas ---
@@ -133,6 +134,37 @@ _REASSESSMENT_JSON = """{
 
 # --- Prompt builders ---
 
+_FEWSHOT_EXAMPLE = """Here is ONE illustrative example of the level of concreteness, euro-anchoring, and sector-tailoring expected. DO NOT copy it — tailor every detail to the actual company above:
+
+{
+  "id": "opp_1",
+  "type": "incremental",
+  "title": "Automated inventory reordering for the top 50 SKUs",
+  "rationale": "The company is a mid-size wholesale distributor with a lean operations team; automating reorder points on its fastest-moving SKUs cuts stockout losses and frees the two warehouse staff for higher-value work.",
+  "execution_plan": {
+    "first_actions": [
+      "Extract 12 months of SKU-level sales history from the existing ERP (Sage 200)",
+      "Define min/max reorder thresholds for the top 50 SKUs with the warehouse supervisor",
+      "Enable the built-in reorder module in the current ERP rather than buying a new tool"
+    ],
+    "resources_needed": [
+      "ERP reorder module licence: €3,000/year",
+      "0.25 FTE operations analyst: €11,000/year",
+      "ERP consultant configuration: €2,400 one-off"
+    ],
+    "success_metric": "Reduce stockout incidents from 14 per quarter to 4 per quarter within 6 months",
+    "milestones": [
+      "Month 1: SKU history extracted and thresholds defined",
+      "Month 2: ERP reorder module configured and tested",
+      "Month 4: Live on all 50 SKUs, first stockout report reviewed"
+    ]
+  },
+  "impact": "high",
+  "difficulty": "medium",
+  "timeframe": "6 months"
+}"""
+
+
 def _build_first_assessment_prompt(company: dict, answers: dict) -> str:
     formatted_answers = json.dumps(answers, indent=2)
     estimated_budget = _estimate_budget(answers)
@@ -164,6 +196,10 @@ Questionnaire answers:
 {constraints}
 
 {_EXECUTION_CRITICAL}
+
+{_FEWSHOT_EXAMPLE}
+
+Provide 3 prioritized opportunities, 3 next steps, and 3 key_weaknesses.
 
 IMPORTANT: Respond with a single valid JSON object only. No markdown, no explanation, no extra text.
 Ensure all arrays are closed with ] and the object is closed with }}."""
@@ -234,15 +270,15 @@ explaining why it was retired.
 
 {_EXECUTION_CRITICAL}
 
+{_FEWSHOT_EXAMPLE}
+
 IMPORTANT: Respond with a single valid JSON object only, in this format:
 {_REASSESSMENT_JSON}
 
 No markdown, no explanation, no extra text. Do NOT prefix positive numbers with a + sign.
 Ensure all arrays are closed with ] and the object is closed with }}.
-Keep rationale to 1 sentence. Provide 2-3 key_weaknesses.
-Limit opportunities to 2 and next_steps to 2.
-Do NOT write empty arrays — if there is no content, omit the field.
-Ensure the complete JSON fits in your response — do not truncate."""
+Provide 3 prioritized opportunities, 3 next steps, and 3 key_weaknesses.
+Do NOT write empty arrays — if there is no content, omit the field."""
 
 
 def build_innovation_prompt(company: dict, answers: dict,
@@ -297,6 +333,7 @@ def _repair_truncated_json(text: str) -> str:
                 break
 
     if stack:
+        text = re.sub(r'[,\s]+$', '', text)
         text += ''.join(reversed(stack))
     return text
 
@@ -341,7 +378,8 @@ def _ollama_chat(model: str, prompt: str,
     response = ollama.chat(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        options={"num_predict": 4096}
+        think=False,
+        options={"num_predict": 16384, "temperature": 0.3, "num_ctx": 8192}
     )
     duration_ms = int((time.time() - start) * 1000)
     raw_text = response["message"]["content"]
@@ -349,6 +387,56 @@ def _ollama_chat(model: str, prompt: str,
         trace_cb("llm_inference", {"model": model, "prompt_len": len(prompt)},
                  {"raw_text_len": len(raw_text)}, duration_ms)
     return raw_text, duration_ms
+
+
+_RETRY_SUFFIX = (
+    "\n\nRespond with a single valid JSON object only — no reasoning, no thinking, "
+    "no markdown, no prose. Include a numeric \"maturity_score\". Ensure all arrays "
+    "are closed with ] and the object is closed with }."
+)
+
+
+def _chat_with_retry(model: str, prompt: str, trace_cb: Optional[Callable],
+                     max_attempts: int = 3) -> tuple[str, int, int]:
+    """Call the LLM, retrying on empty/unparseable/no-score responses.
+
+    Both the base model and the fine-tuned model pass through this same function,
+    so the retry policy is symmetric for A/B benchmarking. Returns
+    (raw_text, total_duration_ms, attempts).
+    """
+    total_duration = 0
+    attempts = 0
+    last_raw = ""
+
+    for attempt in range(1, max_attempts + 1):
+        attempts = attempt
+        p = prompt if attempt == 1 else prompt + _RETRY_SUFFIX
+        raw, dur = _ollama_chat(model, p, trace_cb)
+        total_duration += dur
+        last_raw = raw
+
+        if not raw or not raw.strip():
+            if trace_cb:
+                trace_cb("retry_empty", {"attempt": attempt},
+                         {"reason": "empty response"}, dur)
+            continue
+
+        parsed = _extract_json(raw)
+        if not parsed:
+            if trace_cb:
+                trace_cb("retry_unparseable", {"attempt": attempt},
+                         {"reason": "unparseable json", "raw_head": raw[:200]}, dur)
+            continue
+
+        if parsed.get("maturity_score") is None:
+            if trace_cb:
+                trace_cb("retry_no_score", {"attempt": attempt},
+                         {"reason": "missing maturity_score"}, dur)
+            continue
+
+        return raw, total_duration, attempts
+
+    return last_raw, total_duration, attempts
 
 
 def generate_innovation_insight(company: dict, answers: dict,
@@ -359,9 +447,15 @@ def generate_innovation_insight(company: dict, answers: dict,
     """
     Generate innovation insight for a company assessment.
 
-    If history is provided, uses a two-phase approach:
-      Phase 1 - score + opportunities
-      Phase 2 - next steps + weaknesses + progress + comparison
+    Single-call for both first assessments and reassessments:
+    - First assessment (no history): standard contract
+      (maturity_score, opportunities, next_steps, key_weaknesses).
+    - Reassessment (history present): full extended contract in one call
+      (maturity_score, score_delta, score_change, opportunities with carry_forward,
+      next_steps, key_weaknesses, progress, comparison_to_previous).
+
+    Retries (same policy for any model) on empty, unparseable, or missing-score
+    responses, up to 3 attempts.
     """
     is_reassessment = bool(history)
 
@@ -370,267 +464,18 @@ def generate_innovation_insight(company: dict, answers: dict,
                  {"is_reassessment": is_reassessment, "has_history": bool(history)},
                  {"assessment_type": "reassessment" if is_reassessment else "first"}, 0)
 
-    if is_reassessment:
-        return _generate_reassessment(company, answers, history, model, trace_cb)
-    else:
-        prompt = build_innovation_prompt(company, answers)
-        if trace_cb:
-            trace_cb("build_prompt", {"assessment_type": "first"},
-                     {"prompt_len": len(prompt)}, 0)
-        return _ollama_chat(model, prompt, trace_cb)
-
-
-def _extract_balanced(text: str, key: str) -> str:
-    """Return the JSON value (array/object) that follows "<key>": , or None."""
-    m = re.search(rf'"{key}"\s*:\s*([\[{{])', text)
-    if not m:
-        return None
-    open_ch, close_ch = m.group(1), "]" if m.group(1) == "[" else "}"
-    start = m.end() - 1
-    depth = 0
-    i = start
-    in_str = False
-    esc = False
-    while i < len(text):
-        c = text[i]
-        if esc:
-            esc = False
-        elif c == "\\" and in_str:
-            esc = True
-        elif c == '"':
-            in_str = not in_str
-        elif not in_str:
-            if c == m.group(1):
-                depth += 1
-            elif c == close_ch:
-                depth -= 1
-                if depth == 0:
-                    break
-        i += 1
-    return text[start:i + 1]
-
-
-def _salvage_phase1(text: str) -> dict:
-    """Recover phase-1 fields (score + opportunities) when full JSON fails."""
-    def _num(key):
-        m = re.search(rf'"{key}"\s*:\s*(-?\d+(?:\.\d+)?)', text)
-        return float(m.group(1)) if m else None
-
-    def _change():
-        m = re.search(r'"score_change"\s*:\s*"([^"]+)"', text)
-        return m.group(1) if m else None
-
-    opps = []
-    slice_ = _extract_balanced(text, "opportunities")
-    if slice_:
-        try:
-            opps = json.loads(slice_) or []
-        except json.JSONDecodeError:
-            opps = []
-
-    score = _num("maturity_score")
-    if score is None and not opps:
-        return {}
-    return {
-        "maturity_score": score,
-        "score_delta": _num("score_delta"),
-        "score_change": _change(),
-        "opportunities": opps,
-    }
-
-
-def _salvage_phase2(text: str) -> dict:
-    """Recover phase-2 fields (next steps, weaknesses, progress, comparison)."""
-    result = {}
-
-    slice_ = _extract_balanced(text, "next_steps")
-    if slice_:
-        try:
-            result["next_steps"] = json.loads(slice_)
-        except json.JSONDecodeError:
-            pass
-
-    slice_ = _extract_balanced(text, "key_weaknesses")
-    if slice_:
-        try:
-            result["key_weaknesses"] = json.loads(slice_)
-        except json.JSONDecodeError:
-            pass
-
-    slice_ = _extract_balanced(text, "progress")
-    if slice_:
-        try:
-            result["progress"] = json.loads(slice_)
-        except json.JSONDecodeError:
-            pass
-
-    slice_ = _extract_balanced(text, "comparison_to_previous")
-    if slice_:
-        try:
-            result["comparison_to_previous"] = json.loads(slice_)
-        except json.JSONDecodeError:
-            pass
-
-    return result
-
-
-def _phase1_ok(parsed: dict) -> bool:
-    return (
-        parsed.get("maturity_score") is not None
-        and isinstance(parsed.get("opportunities"), list)
-        and len(parsed.get("opportunities", [])) > 0
-    )
-
-
-def _json_error(text: str) -> str:
-    try:
-        json.loads(text)
-        return ""
-    except json.JSONDecodeError as e:
-        return f"JSONDecodeError: {e.msg} (pos {e.pos})"
-
-
-def _run_phase1(company, answers, history, model, trace_cb,
-                max_attempts=2) -> tuple:
-    """Phase 1: score + opportunities. Retries, then raises on failure."""
-    total_duration = 0
-    last_raw = ""
-    last_error = ""
-    parsed1 = {}
-    attempts = 0
-    for attempt in range(1, max_attempts + 1):
-        attempts = attempt
-        p1 = _build_phase1_prompt(company, answers, history)
-        if trace_cb:
-            trace_cb("phase1_build_prompt", {"phase": 1, "attempt": attempt},
-                     {"prompt_len": len(p1)}, 0)
-        t1, d1 = _ollama_chat(model, p1, trace_cb)
-        total_duration += d1
-        last_raw = t1
-        last_error = _json_error(t1)
-        parsed1 = _extract_json(t1) or {}
-        if not parsed1:
-            parsed1 = _salvage_phase1(t1) or {}
-        if trace_cb:
-            trace_cb("phase1_parsed", {"phase": 1, "attempt": attempt},
-                     {"keys": list(parsed1.keys()) if parsed1 else []}, d1)
-        if _phase1_ok(parsed1):
-            break
-
+    prompt = build_innovation_prompt(company, answers, history)
     if trace_cb:
-        trace_cb("phase1_raw", {"phase": 1},
-                 {"raw": last_raw, "parse_error": last_error,
-                  "attempts": attempts}, d1)
+        trace_cb("build_prompt",
+                 {"assessment_type": "reassessment" if is_reassessment else "first",
+                  "prompt_len": len(prompt)},
+                 {"prompt_len": len(prompt)}, 0)
 
-    if not _phase1_ok(parsed1):
-        raise ValueError(
-            "Phase 1 LLM response could not be parsed as JSON (no maturity "
-            "score / opportunities). Raw output (first 300 chars): "
-            + str(last_raw)[:300]
-        )
-    return parsed1, last_raw, last_error, total_duration
-
-
-def _generate_reassessment(company, answers, history, model, trace_cb):
-    """Two-phase LLM approach for reassessments."""
-    total_duration = 0
-
-    # Phase 1: Score + Opportunities (retry + raise on failure)
-    parsed1, t1, phase1_error, phase1_dur = _run_phase1(
-        company, answers, history, model, trace_cb
-    )
-    total_duration += phase1_dur
-
-    opps = parsed1.get("opportunities", [])
-
-    # Phase 2: Next Steps + Weaknesses + Progress + Comparison
-    p2 = _build_phase2_prompt(company, answers, history, opps)
+    raw_text, duration_ms, attempts = _chat_with_retry(model, prompt, trace_cb)
     if trace_cb:
-        trace_cb("phase2_build_prompt", {"phase": 2},
-                 {"prompt_len": len(p2)}, 0)
-    t2, d2 = _ollama_chat(model, p2, trace_cb)
-    total_duration += d2
-    parsed2 = _extract_json(t2) or {}
-    if not parsed2:
-        parsed2 = _salvage_phase2(t2) or {}
-    if trace_cb:
-        trace_cb("phase2_parsed", {"phase": 2},
-                 {"keys": list(parsed2.keys()) if parsed2 else []}, d2)
+        trace_cb("finalize", {"attempts": attempts, "duration_ms": duration_ms},
+                 {"raw_text_len": len(raw_text) if raw_text else 0}, 0)
 
-    combined = {
-        "maturity_score": parsed1.get("maturity_score"),
-        "score_delta": parsed1.get("score_delta"),
-        "score_change": parsed1.get("score_change"),
-        "opportunities": opps,
-        "next_steps": parsed2.get("next_steps", []),
-        "key_weaknesses": parsed2.get("key_weaknesses", []),
-        "progress": parsed2.get("progress", {}),
-        "comparison_to_previous": parsed2.get("comparison_to_previous", {}),
-    }
-    combined_text = json.dumps(combined)
-    return combined_text, total_duration
+    return raw_text, duration_ms
 
 
-def _build_phase1_prompt(company, answers, history):
-    """Score + Opportunities only."""
-    constraints = _CONSTRAINT_RULES.format(
-        estimated_budget=_estimate_budget(answers),
-        decision_making=answers.get("decisionMaking", "unknown"),
-        customer_feedback=answers.get("customerFeedback", "unknown"),
-        regulatory_level=answers.get("regulatoryEnvironment", "unknown"),
-        competitive_pressure=answers.get("competitivePressure", "unknown"),
-        risk_appetite=answers.get("riskAppetite", "unknown"),
-        strategic_priority=answers.get("strategicPriority", "unknown"),
-    )
-
-    return f"""You are a strategic innovation advisor.
-
-{history}
-
-Company: {company['name']} | Sector: {company['sector']} | Size: {company['size']}
-Description: {answers.get('companyDescription', 'Not provided')}
-
-PHASE 1 — SCORE & OPPORTUNITIES
-
-Compare with the prior assessments above. Determine the updated maturity score
-(0-10), score delta, score change, and at most 2 prioritized opportunities with
-carry_forward tracking. Include execution plans — keep them brief.
-
-{constraints}
-
-Respond ONLY with valid JSON:
-{{"maturity_score": <float 0-10>, "score_delta": <float>, "score_change": "improved|stable|declined", "opportunities": [{{"id": "<str>", "type": "incremental|radical", "title": "<str>", "rationale": "<1 sentence>", "execution_plan": {{"first_actions": ["<str>"], "resources_needed": ["<str>"], "success_metric": "<str>", "milestones": ["<str>"]}}, "impact": "low|medium|high", "difficulty": "low|medium|high", "timeframe": "<str>", "carry_forward_from": null, "carry_forward_status": "continues|evolved_to|retired|new"}}]}}
-Rules:
-- Output a single JSON object only. No markdown, no prose, nothing before the
-  first {{ or after the last }}.
-- No more than 2 opportunities. Do NOT omit "maturity_score" or "opportunities".
-- Escape any double quote inside a string value as \\". Do not put literal
-  newlines inside string values.
-- Do NOT prefix positive numbers with a + sign. No trailing commas."""
-
-
-def _build_phase2_prompt(company, answers, history, opportunities):
-    """Next Steps + Weaknesses + Progress + Comparison."""
-    formatted_answers = json.dumps(answers, indent=2)
-    opp_brief = []
-    for o in (opportunities or []):
-        opp_brief.append(f"- [{o.get('id','?')}] {o.get('type','?')}: {o.get('title','?')}")
-    opp_summary = "\n".join(opp_brief) or "(none)"
-
-    return f"""You are a strategic innovation advisor.
-
-{history}
-
-Company: {company['name']} | Sector: {company['sector']} | Size: {company['size']}
-
-The following opportunities were already identified:
-{opp_summary}
-
-PHASE 2 — NEXT STEPS, WEAKNESSES, PROGRESS & COMPARISON
-
-Generate the remaining assessment fields based on the company context and
-opportunities above.
-
-Respond ONLY with valid JSON:
-{{"next_steps": [{{"id": "...", "action": "...", "owner": "...", "timeframe": "..."}}], "key_weaknesses": ["..."], "progress": {{"improvements": ["..."], "persistent_gaps": ["..."], "achieved_milestones": ["..."]}}, "comparison_to_previous": {{"previous_score": <float>, "previous_date": "...", "assessment_number": <int>, "key_changes": "..."}}}}
-No markdown."""

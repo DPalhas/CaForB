@@ -136,7 +136,7 @@ class PromptBuilderTests(TestCase):
         self.assertIn("strategic innovation advisor", prompt)
         self.assertIn("maturity_score", prompt)
         self.assertIn("Foo Inc", prompt)
-        self.assertIn("REASSESSMENT", prompt)  # the JSON schema always mentions "reassessment" as it's in the opportunities type field hints
+        self.assertNotIn("REASSESSMENT DIRECTIVES", prompt)
 
     def test_reassessment_prompt_with_history(self):
         history = "PRIOR ASSESSMENT SUMMARY"
@@ -161,7 +161,7 @@ class JsonExtractionTests(TestCase):
 
     def test_extract_json_with_markdown(self):
         result = _extract_json('```json\n{"a": 1}\n```')
-        self.assertEqual(result, {})
+        self.assertEqual(result, {"a": 1})
 
     def test_extract_json_embedded(self):
         result = _extract_json('Some text {"key": "value"} more text')
@@ -174,6 +174,14 @@ class JsonExtractionTests(TestCase):
     def test_extract_unclosed_array(self):
         result = _extract_json('{"items": ["a", "b"')
         self.assertEqual(result, {"items": ["a", "b"]})
+
+    def test_extract_truncated_with_trailing_comma(self):
+        result = _extract_json('{"items": ["a", "b", ')
+        self.assertEqual(result, {"items": ["a", "b"]})
+
+    def test_extract_truncated_mid_object(self):
+        result = _extract_json('{"a": {"b": 1,')
+        self.assertEqual(result, {"a": {"b": 1}})
 
 
 class BudgetEstimationTests(TestCase):
@@ -253,26 +261,23 @@ class AgentLoopTests(TestCase):
         )
         steps = traces
         self.assertIn("resolve_context", steps)
-        self.assertIn("phase1_build_prompt", steps)
-        self.assertIn("phase1_parsed", steps)
-        self.assertIn("phase1_raw", steps)
-        self.assertIn("phase2_build_prompt", steps)
-        self.assertIn("phase2_parsed", steps)
+        self.assertIn("build_prompt", steps)
         self.assertIn("llm_inference", steps)
         self.assertIn("6.0", raw)
         self.assertIn("Adopt CRM", raw)
 
     @patch("core.services.llm_services.ollama.chat")
-    def test_reassessment_phase1_retries_then_succeeds(self, mock_ollama):
-        bad = {"message": {"content": "not json at all"}}
+    def test_reassessment_single_call(self, mock_ollama):
         good = {"message": {"content": (
             '{"maturity_score": 5.0, "score_delta": 0.1, '
+            '"score_change": "improved", '
             '"opportunities": [{"id": "o1", "type": "incremental", '
             '"title": "T", "impact": "medium", "difficulty": "low", '
-            '"timeframe": "3 months"}]}'
+            '"timeframe": "3 months"}], '
+            '"next_steps": [], "key_weaknesses": [], '
+            '"progress": {}, "comparison_to_previous": {}}'
         )}}
-        # phase1 attempt1 -> bad, attempt2 -> good, phase2 -> good
-        mock_ollama.side_effect = [bad, good, good]
+        mock_ollama.return_value = good
         from core.services.llm_services import generate_innovation_insight
 
         raw, _ = generate_innovation_insight(
@@ -281,37 +286,22 @@ class AgentLoopTests(TestCase):
             history="PRIOR ASSESSMENT SUMMARY\n...",
         )
         self.assertIn("5.0", raw)
-        self.assertEqual(mock_ollama.call_count, 3)
+        self.assertEqual(mock_ollama.call_count, 1)
 
     @patch("core.services.llm_services.ollama.chat")
-    def test_reassessment_phase1_unparseable_raises(self, mock_ollama):
+    def test_reassessment_returns_raw_unparseable(self, mock_ollama):
         mock_ollama.return_value = {
             "message": {"content": "I cannot produce valid JSON here {broken"}
         }
         from core.services.llm_services import generate_innovation_insight
 
-        with self.assertRaises(ValueError):
-            generate_innovation_insight(
-                {"name": "Test", "sector": "Tech", "size": "Small"},
-                {"companyDescription": "desc"},
-                history="PRIOR ASSESSMENT SUMMARY\n...",
-            )
-
-    def test_salvage_phase1_recovers_fields(self):
-        from core.services.llm_services import _salvage_phase1
-        text = ('Some prose "maturity_score": 4.5, "score_delta": 0.2, '
-                '"score_change": "improved", "opportunities": '
-                '[{"id": "o1", "type": "incremental", "title": "T"}] }] tail')
-        result = _salvage_phase1(text)
-        self.assertEqual(result["maturity_score"], 4.5)
-        self.assertEqual(result["score_delta"], 0.2)
-        self.assertEqual(result["score_change"], "improved")
-        self.assertEqual(len(result["opportunities"]), 1)
-        self.assertEqual(result["opportunities"][0]["title"], "T")
-
-    def test_salvage_phase1_empty_when_nothing(self):
-        from core.services.llm_services import _salvage_phase1
-        self.assertEqual(_salvage_phase1("nothing useful here"), {})
+        raw, _ = generate_innovation_insight(
+            {"name": "Test", "sector": "Tech", "size": "Small"},
+            {"companyDescription": "desc"},
+            history="PRIOR ASSESSMENT SUMMARY\n...",
+        )
+        self.assertEqual(raw, "I cannot produce valid JSON here {broken")
+        self.assertEqual(mock_ollama.call_count, 3)
 
     @patch("core.services.llm_services.ollama.chat")
     def test_generate_uses_correct_model(self, mock_ollama):
@@ -327,8 +317,57 @@ class AgentLoopTests(TestCase):
         )
         mock_ollama.assert_called_once_with(
             model="caforb-v2",
-            messages=[{"role": "user", "content": mock_ollama.call_args[1]["messages"][0]["content"]}]
+            messages=[{"role": "user", "content": mock_ollama.call_args[1]["messages"][0]["content"]}],
+            think=False,
+            options={"num_predict": 16384, "temperature": 0.3, "num_ctx": 8192}
         )
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_retry_on_empty_response(self, mock_ollama):
+        empty = {"message": {"content": ""}}
+        good = {"message": {"content": (
+            '{"maturity_score": 5.0, "opportunities": [], '
+            '"next_steps": [], "key_weaknesses": []}'
+        )}}
+        mock_ollama.side_effect = [empty, good]
+        from core.services.llm_services import generate_innovation_insight
+
+        raw, _ = generate_innovation_insight(
+            {"name": "Test", "sector": "Tech", "size": "Small"},
+            {"companyDescription": "desc"},
+        )
+        self.assertIn("5.0", raw)
+        self.assertEqual(mock_ollama.call_count, 2)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_retry_on_unparseable_then_success(self, mock_ollama):
+        bad = {"message": {"content": "not valid json {broken"}}
+        good = {"message": {"content": (
+            '{"maturity_score": 5.0, "opportunities": [], '
+            '"next_steps": [], "key_weaknesses": []}'
+        )}}
+        mock_ollama.side_effect = [bad, good]
+        from core.services.llm_services import generate_innovation_insight
+
+        raw, _ = generate_innovation_insight(
+            {"name": "Test", "sector": "Tech", "size": "Small"},
+            {"companyDescription": "desc"},
+        )
+        self.assertIn("5.0", raw)
+        self.assertEqual(mock_ollama.call_count, 2)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_retry_exhausts_to_raw_text(self, mock_ollama):
+        always_bad = {"message": {"content": "not valid json {broken"}}
+        mock_ollama.return_value = always_bad
+        from core.services.llm_services import generate_innovation_insight
+
+        raw, _ = generate_innovation_insight(
+            {"name": "Test", "sector": "Tech", "size": "Small"},
+            {"companyDescription": "desc"},
+        )
+        self.assertEqual(mock_ollama.call_count, 3)
+        self.assertEqual(raw, "not valid json {broken")
 
 
 class ModelTests(TestCase):

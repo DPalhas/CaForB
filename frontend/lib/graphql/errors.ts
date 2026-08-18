@@ -34,6 +34,12 @@ const MATCHERS: { code: string; match: RegExp; message: string }[] = [
       "The AI produced an unreadable response. Please try again.",
   },
   {
+    code: "model_not_found",
+    match: /model.*not found|not found.*model|404/i,
+    message:
+      "The AI model isn't available locally. Run `ollama pull gemma4:12B`, then try again.",
+  },
+  {
     code: "network",
     match: /Failed to fetch|NetworkError|ERR_CONNECTION|fetch/i,
     message:

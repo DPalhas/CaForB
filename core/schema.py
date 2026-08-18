@@ -148,7 +148,16 @@ def _insight_to_type(insight: InnovationInsight) -> InsightType:
     opportunities = []
     for o in bundle.get("opportunities", []):
         exec_plan_data = o.get("execution_plan")
-        exec_plan = ExecutionPlanType(**exec_plan_data) if exec_plan_data else None
+        exec_plan = (
+            ExecutionPlanType(
+                first_actions=exec_plan_data.get("first_actions", []),
+                resources_needed=exec_plan_data.get("resources_needed", []),
+                success_metric=exec_plan_data.get("success_metric", ""),
+                milestones=exec_plan_data.get("milestones", []),
+            )
+            if isinstance(exec_plan_data, dict)
+            else None
+        )
         opportunities.append(
             OpportunityType(
                 id=o.get("id", ""),
@@ -273,7 +282,7 @@ def _create_response_and_insight(
     model_name="",
 ) -> InsightType:
     """Core logic shared by submitQuestionnaire and submitReassessment."""
-    effective_model = model_name or "gemma4"
+    effective_model = model_name or "gemma4:12B"
     company_dict = {
         "name": company.name,
         "sector": company.sector,
