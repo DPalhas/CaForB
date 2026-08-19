@@ -58,7 +58,7 @@ MODEL_NAME = "google/gemma-4-12B-it"  # Full 12B Gemma 4 (case-sensitive)
 LORA_R = 8                  # Lower rank for 12B model
 LORA_ALPHA = 8              # Standard alpha=r
 LORA_DROPOUT = 0.05         # Regularization
-MAX_SEQ_LENGTH = 4096       # 24GB GPU handles this comfortably
+MAX_SEQ_LENGTH = 8192       # Comfortable for aligned system/user prompts on 80GB A100
 BATCH_SIZE = 1              # Per-device (keep at 1)
 GRAD_ACCUM = 4              # Effective batch = 4
 NUM_EPOCHS = 3              # Full passes over dataset

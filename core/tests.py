@@ -132,26 +132,26 @@ class PromptBuilderTests(TestCase):
         }
 
     def test_first_assessment_prompt_no_history(self):
-        prompt = build_innovation_prompt(self.company, self.answers)
-        self.assertIn("strategic innovation advisor", prompt)
-        self.assertIn("maturity_score", prompt)
-        self.assertIn("Foo Inc", prompt)
-        self.assertNotIn("REASSESSMENT DIRECTIVES", prompt)
+        system, user = build_innovation_prompt(self.company, self.answers)
+        self.assertIn("strategic innovation advisor", system)
+        self.assertIn("maturity_score", system)
+        self.assertIn("Foo Inc", user)
+        self.assertNotIn("REASSESSMENT DIRECTIVES", system)
 
     def test_reassessment_prompt_with_history(self):
         history = "PRIOR ASSESSMENT SUMMARY"
-        prompt = build_innovation_prompt(self.company, self.answers,
-                                         history=history)
-        self.assertIn("PRIOR ASSESSMENT SUMMARY", prompt)
-        self.assertIn("REASSESSMENT DIRECTIVES", prompt)
-        self.assertIn("carry_forward_from", prompt)
-        self.assertIn("score_delta", prompt)
-        self.assertIn("comparison_to_previous", prompt)
+        system, user = build_innovation_prompt(self.company, self.answers,
+                                               history=history)
+        self.assertIn("PRIOR ASSESSMENT SUMMARY", user)
+        self.assertIn("REASSESSMENT DIRECTIVES", system)
+        self.assertIn("carry_forward_from", system)
+        self.assertIn("score_delta", system)
+        self.assertIn("comparison_to_previous", system)
 
     def test_first_assessment_no_carry_forward(self):
-        prompt = build_innovation_prompt(self.company, self.answers)
-        self.assertNotIn("carry_forward_from", prompt)
-        self.assertNotIn("REASSESSMENT DIRECTIVES", prompt)
+        system, user = build_innovation_prompt(self.company, self.answers)
+        self.assertNotIn("carry_forward_from", system)
+        self.assertNotIn("REASSESSMENT DIRECTIVES", system)
 
 
 class JsonExtractionTests(TestCase):
@@ -183,6 +183,17 @@ class JsonExtractionTests(TestCase):
         result = _extract_json('{"a": {"b": 1,')
         self.assertEqual(result, {"a": {"b": 1}})
 
+    def test_extract_newline_inside_string(self):
+        raw = '{"type": "incremental\n", "title": "T", "n": 1}'
+        result = _extract_json(raw)
+        self.assertEqual(result["type"], "incremental ")
+        self.assertEqual(result["title"], "T")
+
+    def test_extract_tab_inside_string(self):
+        raw = '{"action": "do\tthis", "owner": "O"}'
+        result = _extract_json(raw)
+        self.assertEqual(result["action"], "do this")
+
 
 class BudgetEstimationTests(TestCase):
     def test_valid_budget(self):
@@ -210,7 +221,16 @@ class AgentLoopTests(TestCase):
     @patch("core.services.llm_services.ollama.chat")
     def test_agent_loop_first_assessment(self, mock_ollama):
         mock_ollama.return_value = {
-            "message": {"content": '{"maturity_score": 5.5, "opportunities": [], "next_steps": [], "key_weaknesses": []}'}
+            "message": {"content": (
+                '{"maturity_score": 5.5, '
+                '"opportunities": [{"id": "o1", "type": "incremental", '
+                '"title": "T", "rationale": "R", "impact": "medium", '
+                '"difficulty": "low", "timeframe": "3 months", '
+                '"execution_plan": {"first_actions": ["A"], '
+                '"resources_needed": ["B"], "success_metric": "S", '
+                '"milestones": ["M"]}}], '
+                '"next_steps": [], "key_weaknesses": []}'
+            )}
         }
         from core.services.llm_services import generate_innovation_insight
 
@@ -237,6 +257,9 @@ class AgentLoopTests(TestCase):
                 '"score_change": "improved", '
                 '"opportunities": [{"id": "opp_1", "type": "incremental", '
                 '"title": "Adopt CRM", "rationale": "R", "impact": "high", '
+                '"execution_plan": {"first_actions": ["A"], '
+                '"resources_needed": ["B"], "success_metric": "S", '
+                '"milestones": ["M"]}, '
                 '"difficulty": "low", "timeframe": "3 months"}], '
                 '"next_steps": [{"id": "s1", "action": "A", "owner": "O", '
                 '"timeframe": "2 weeks"}], '
@@ -273,6 +296,9 @@ class AgentLoopTests(TestCase):
             '"score_change": "improved", '
             '"opportunities": [{"id": "o1", "type": "incremental", '
             '"title": "T", "impact": "medium", "difficulty": "low", '
+            '"execution_plan": {"first_actions": ["A"], '
+            '"resources_needed": ["B"], "success_metric": "S", '
+            '"milestones": ["M"]}, '
             '"timeframe": "3 months"}], '
             '"next_steps": [], "key_weaknesses": [], '
             '"progress": {}, "comparison_to_previous": {}}'
@@ -306,7 +332,16 @@ class AgentLoopTests(TestCase):
     @patch("core.services.llm_services.ollama.chat")
     def test_generate_uses_correct_model(self, mock_ollama):
         mock_ollama.return_value = {
-            "message": {"content": '{"maturity_score": 5.0, "opportunities": [], "next_steps": [], "key_weaknesses": []}'}
+            "message": {"content": (
+                '{"maturity_score": 5.0, '
+                '"opportunities": [{"id": "o1", "type": "incremental", '
+                '"title": "T", "rationale": "R", "impact": "medium", '
+                '"difficulty": "low", "timeframe": "3 months", '
+                '"execution_plan": {"first_actions": ["A"], '
+                '"resources_needed": ["B"], "success_metric": "S", '
+                '"milestones": ["M"]}}], '
+                '"next_steps": [], "key_weaknesses": []}'
+            )}
         }
         from core.services.llm_services import generate_innovation_insight
 
@@ -317,7 +352,10 @@ class AgentLoopTests(TestCase):
         )
         mock_ollama.assert_called_once_with(
             model="caforb-v2",
-            messages=[{"role": "user", "content": mock_ollama.call_args[1]["messages"][0]["content"]}],
+            messages=[
+                {"role": "system", "content": mock_ollama.call_args[1]["messages"][0]["content"]},
+                {"role": "user", "content": mock_ollama.call_args[1]["messages"][1]["content"]},
+            ],
             think=False,
             options={"num_predict": 16384, "temperature": 0.3, "num_ctx": 8192}
         )
@@ -326,7 +364,13 @@ class AgentLoopTests(TestCase):
     def test_retry_on_empty_response(self, mock_ollama):
         empty = {"message": {"content": ""}}
         good = {"message": {"content": (
-            '{"maturity_score": 5.0, "opportunities": [], '
+            '{"maturity_score": 5.0, '
+            '"opportunities": [{"id": "o1", "type": "incremental", '
+            '"title": "T", "rationale": "R", "impact": "medium", '
+            '"difficulty": "low", "timeframe": "3 months", '
+            '"execution_plan": {"first_actions": ["A"], '
+            '"resources_needed": ["B"], "success_metric": "S", '
+            '"milestones": ["M"]}}], '
             '"next_steps": [], "key_weaknesses": []}'
         )}}
         mock_ollama.side_effect = [empty, good]
@@ -343,7 +387,13 @@ class AgentLoopTests(TestCase):
     def test_retry_on_unparseable_then_success(self, mock_ollama):
         bad = {"message": {"content": "not valid json {broken"}}
         good = {"message": {"content": (
-            '{"maturity_score": 5.0, "opportunities": [], '
+            '{"maturity_score": 5.0, '
+            '"opportunities": [{"id": "o1", "type": "incremental", '
+            '"title": "T", "rationale": "R", "impact": "medium", '
+            '"difficulty": "low", "timeframe": "3 months", '
+            '"execution_plan": {"first_actions": ["A"], '
+            '"resources_needed": ["B"], "success_metric": "S", '
+            '"milestones": ["M"]}}], '
             '"next_steps": [], "key_weaknesses": []}'
         )}}
         mock_ollama.side_effect = [bad, good]
@@ -439,3 +489,62 @@ class ModelTests(TestCase):
         self.assertEqual(trace.step_name, "synthesize")
         self.assertEqual(trace.model_name, "gemma4")
         self.assertEqual(trace.duration_ms, 1500)
+
+    def test_insight_to_type_tolerates_execution_plan_key_typo(self):
+        from core.schema import _insight_to_type
+        company = Company.objects.create(
+            name="ACME", sector="Retail", size="Large", user=self.user
+        )
+        qr = QuestionnaireResponse.objects.create(
+            company=company, assessment_number=1, answers={}
+        )
+        ins = InnovationInsight.objects.create(
+            response=qr, raw_prompt="", ai_output="",
+            innovation_score=5.0,
+            context_bundle={
+                "opportunities": [{
+                    "id": "opp_2", "title": "Brand Expansion",
+                    "execution_4_plan": {
+                        "first_actions": ["A1"],
+                        "resources_needed": ["R1"],
+                        "success_metric": "S1",
+                        "milestones": ["M1"],
+                    },
+                }],
+                "next_steps": [],
+                "key_weaknesses": [],
+            },
+        )
+        result = _insight_to_type(ins)
+        self.assertIsNotNone(result.opportunities[0].execution_plan)
+        self.assertEqual(result.opportunities[0].execution_plan.milestones, ["M1"])
+
+    def test_insight_to_type_tolerates_execution_rf_key(self):
+        from core.schema import _insight_to_type
+        company = Company.objects.create(
+            name="ACME", sector="Retail", size="Large", user=self.user
+        )
+        qr = QuestionnaireResponse.objects.create(
+            company=company, assessment_number=1, answers={}
+        )
+        ins = InnovationInsight.objects.create(
+            response=qr, raw_prompt="", ai_output="",
+            innovation_score=5.0,
+            context_bundle={
+                "opportunities": [{
+                    "id": "opp_2", "type": "radical", "title": "Expansion",
+                    "execution_rf": {
+                        "first_actions": ["A1"],
+                        "resources_needed": ["R1"],
+                        "success_metric": "S1",
+                        "milestones": ["M1"],
+                    },
+                }],
+                "next_steps": [],
+                "key_weaknesses": [],
+            },
+        )
+        result = _insight_to_type(ins)
+        self.assertIsNotNone(result.opportunities[0].execution_plan)
+        self.assertEqual(result.opportunities[0].execution_plan.first_actions, ["A1"])
+        self.assertEqual(result.opportunities[0].type, "radical")

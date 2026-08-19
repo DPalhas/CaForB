@@ -148,6 +148,12 @@ def _insight_to_type(insight: InnovationInsight) -> InsightType:
     opportunities = []
     for o in bundle.get("opportunities", []):
         exec_plan_data = o.get("execution_plan")
+        if not isinstance(exec_plan_data, dict):
+            for k, v in o.items():
+                if (isinstance(v, dict)
+                        and "execution" in str(k).lower()):
+                    exec_plan_data = v
+                    break
         exec_plan = (
             ExecutionPlanType(
                 first_actions=exec_plan_data.get("first_actions", []),
@@ -161,13 +167,13 @@ def _insight_to_type(insight: InnovationInsight) -> InsightType:
         opportunities.append(
             OpportunityType(
                 id=o.get("id", ""),
-                type=o.get("type", ""),
-                title=o.get("title", ""),
-                rationale=o.get("rationale", ""),
+                type=o.get("type", "").strip(),
+                title=o.get("title", "").strip(),
+                rationale=o.get("rationale", "").strip(),
                 execution_plan=exec_plan,
-                impact=o.get("impact", ""),
-                difficulty=o.get("difficulty", ""),
-                timeframe=o.get("timeframe", ""),
+                impact=o.get("impact", "").strip(),
+                difficulty=o.get("difficulty", "").strip(),
+                timeframe=o.get("timeframe", "").strip(),
                 carry_forward_from=o.get("carry_forward_from"),
                 carry_forward_status=o.get("carry_forward_status"),
             )
@@ -301,9 +307,10 @@ def _create_response_and_insight(
     history = build_assessment_history(company, current_response=qr)
 
     from .services.llm_services import build_innovation_prompt
-    actual_prompt = build_innovation_prompt(
+    system_prompt, user_prompt = build_innovation_prompt(
         company_dict, answers, history if history else None
     )
+    actual_prompt = user_prompt
 
     trace_rows = []
 

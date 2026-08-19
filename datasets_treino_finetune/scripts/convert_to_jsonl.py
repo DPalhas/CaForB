@@ -20,19 +20,21 @@ import json
 import random
 import argparse
 import re
+import sys
 from pathlib import Path
 from collections import Counter, defaultdict
+
+# Make the CaForB app importable so training mirrors the runtime prompts exactly.
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from core.services.llm_services import (  # noqa: E402
+    build_first_system_prompt,
+    build_reassessment_system_prompt,
+    _format_company_data,
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RAW_DIR = BASE_DIR / "raw"
 FINAL_DIR = BASE_DIR / "final"
-
-REVENUE_RANGE_MIDPOINTS = {
-    "under_1m": 500_000,
-    "1m_to_10m": 5_500_000,
-    "10m_to_50m": 30_000_000,
-    "over_50m": 75_000_000,
-}
 
 # ──────────────────────────────────────────────────────────────────────
 # Load and validate
@@ -51,111 +53,78 @@ def load_all_examples() -> list[dict]:
 
 
 # ──────────────────────────────────────────────────────────────────────
-# Format user input (mirrors build_innovation_prompt from llm_services.py)
+# Format assistant output
 # ──────────────────────────────────────────────────────────────────────
-
-def compute_budget(answers: dict) -> str:
-    pct = answers.get("budgetPercentage")
-    revenue_key = answers.get("revenueRange")
-    if pct is None or not revenue_key:
-        return "unknown"
-    midpoint = REVENUE_RANGE_MIDPOINTS.get(revenue_key)
-    if midpoint is None:
-        return f"{pct}% of revenue"
-    amount = int(midpoint * (pct / 100))
-    return f"~EUR{amount:,}/year ({pct}% of revenue)"
-
-
-def format_user_input(ex: dict) -> str:
-    inp = ex["input"]
-    company = inp["company"]
-    answers = inp["answers"]
-    budget = compute_budget(answers)
-
-    lines = [
-        f"Company: {company.get('name', 'Unknown')}",
-        f"Sector: {company.get('sector', 'Unknown')}",
-        f"Size: {company.get('size', 'Unknown')}",
-        f"",
-        f"Company Description: {answers.get('companyDescription', 'Not provided')}",
-        f"",
-        f"Innovation Process: {answers.get('innovationProcess', 'unknown')}",
-        f"Digital Maturity: {answers.get('digitalMaturity', 'unknown')}/4",
-        f"Customer Feedback: {answers.get('customerFeedback', 'unknown')}",
-        f"",
-        f"Strategic Goals: {answers.get('strategicGoals', '')}",
-        f"Strategic Priority: {answers.get('strategicPriority', 'unknown')}",
-        f"Time Horizon: {answers.get('timeHorizon', 'unknown')}",
-        f"Risk Appetite: {answers.get('riskAppetite', 'unknown')}",
-        f"",
-        f"Team Size: {answers.get('teamSize', 'unknown')}",
-        f"Revenue Range: {answers.get('revenueRange', 'unknown')}",
-        f"Estimated Innovation Budget: {budget}",
-        f"Decision Making: {answers.get('decisionMaking', 'unknown')}",
-        f"",
-        f"Main Barriers: {', '.join(answers.get('mainBarrier', [])) or 'none'}",
-        f"Competitive Pressure: {answers.get('competitivePressure', 'unknown')}",
-        f"Regulatory Environment: {answers.get('regulatoryEnvironment', 'unknown')}",
-        f"",
-        f"Past Initiatives: {answers.get('pastInitiatives', 'None')}",
-        f"Additional Context: {answers.get('additionalContext', 'None')}",
-    ]
-
-    if "previous_assessment" in inp:
-        lines.append("")
-        lines.append("--- PRIOR ASSESSMENT ---")
-        prev = inp["previous_assessment"]
-        pf = prev.get("fields", prev)
-        lines.append(f"Company: {pf.get('companyName', '?')}")
-        lines.append(f"Sector: {pf.get('sector', '?')}")
-        lines.append(f"Risk: {pf.get('riskAppetite', '?')} | Priority: {pf.get('strategicPriority', '?')}")
-        lines.append(f"Regulatory: {pf.get('regulatoryEnvironment', '?')} | Competition: {pf.get('competitivePressure', '?')}")
-        lines.append(f"Budget: {pf.get('budgetPercentage', '?')}% of {pf.get('revenueRange', '?')}")
-        if pf.get('mainBarrier'):
-            lines.append(f"Barriers: {', '.join(pf.get('mainBarrier', []))}")
-        lines.append("")
-        lines.append(f"Changes since last assessment: {inp.get('changes_since_last', 'N/A')}")
-        lines.append(f"Recommendation status: {json.dumps(inp.get('recommendation_status', {}))}")
-
-    return "\n".join(lines)
-
 
 def format_assistant_output(ex: dict) -> str:
     out = ex["output"]
-    return json.dumps(out, indent=2, ensure_ascii=False)
+    return json.dumps(out, ensure_ascii=False)
 
 
 # ──────────────────────────────────────────────────────────────────────
 # Convert to JSONL
 # ──────────────────────────────────────────────────────────────────────
 
+def build_reassessment_user(ex: dict) -> str:
+    """User message for reassessment: simple prior block + current data."""
+    inp = ex["input"]
+    company = inp["company"]
+    answers = inp["answers"]
+
+    prev = inp.get("previous_assessment", {})
+    pf = prev.get("fields", prev) if isinstance(prev, dict) else {}
+    prior_lines = ["--- PRIOR ASSESSMENT ---"]
+    prior_lines.append(f"Company: {pf.get('companyName', '?')}")
+    prior_lines.append(f"Sector: {pf.get('sector', '?')}")
+    prior_lines.append(
+        f"Risk: {pf.get('riskAppetite', '?')} | "
+        f"Priority: {pf.get('strategicPriority', '?')}"
+    )
+    prior_lines.append(
+        f"Regulatory: {pf.get('regulatoryEnvironment', '?')} | "
+        f"Competition: {pf.get('competitivePressure', '?')}"
+    )
+    prior_lines.append(
+        f"Budget: {pf.get('budgetPercentage', '?')}% of "
+        f"{pf.get('revenueRange', '?')}"
+    )
+    if pf.get('mainBarrier'):
+        prior_lines.append(f"Barriers: {', '.join(pf.get('mainBarrier', []))}")
+    prior_lines.append("")
+    prior_lines.append(
+        f"Changes since last assessment: {inp.get('changes_since_last', 'N/A')}"
+    )
+    prior_lines.append(
+        f"Recommendation status: {json.dumps(inp.get('recommendation_status', {}))}"
+    )
+
+    prior_block = "\n".join(prior_lines)
+    data_block = _format_company_data(company, answers)
+    return f"{prior_block}\n\nCURRENT ASSESSMENT:\n{data_block}"
+
+
 def convert(examples: list[dict]) -> list[dict]:
     records = []
-    first_instruction = (
-        "You are a strategic corporate innovation advisor. "
-        "Analyse the company profile and survey responses, then respond ONLY with "
-        "a valid JSON object containing maturity_score, opportunities, next_steps, "
-        "and key_weaknesses. Apply all constraints consistently: budget limits, "
-        "regulatory burden, risk appetite alignment, competitive urgency, and "
-        "strategic priority focus."
-    )
-    reassess_instruction = (
-        "You are a strategic corporate innovation advisor conducting a reassessment. "
-        "Analyse the prior assessment summary, changes since last assessment, "
-        "and updated survey, then respond ONLY with a valid JSON object containing "
-        "maturity_score, score_delta, score_change, opportunities with carry_forward "
-        "tracking, next_steps, key_weaknesses, progress, and comparison_to_previous. "
-        "Apply all constraints consistently."
-    )
     for ex in examples:
         is_reassess = ex.get("assessment_type") == "reassessment"
-        instruction = reassess_instruction if is_reassess else ex.get(
-            "instruction", first_instruction
+        inp = ex["input"]
+        company = inp.get("company", {})
+        answers = inp.get("answers", {})
+
+        system = (
+            build_reassessment_system_prompt(answers)
+            if is_reassess
+            else build_first_system_prompt(answers)
+        )
+        user = (
+            build_reassessment_user(ex)
+            if is_reassess
+            else _format_company_data(company, answers)
         )
         record = {
             "messages": [
-                {"role": "system", "content": instruction},
-                {"role": "user", "content": format_user_input(ex)},
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
                 {"role": "assistant", "content": format_assistant_output(ex)},
             ]
         }

@@ -53,7 +53,7 @@ echo ""
 
 python scripts/train_caforb.py \
     --model google/gemma-4-12B-it \
-    --max-seq-length 4096 \
+    --max-seq-length 8192 \
     --lora-r 8 \
     --epochs 3
 
