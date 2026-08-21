@@ -2,10 +2,23 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from unittest.mock import patch, MagicMock
 
-from core.models import Company, QuestionnaireResponse, InnovationInsight, LLMTrace
+from core.models import (
+    Company,
+    QuestionnaireResponse,
+    InnovationInsight,
+    LLMTrace,
+    ChatSession,
+    ChatMessage,
+)
 from core.services.memory import build_assessment_history, build_score_trend
 from core.services.llm_services import (
-    build_innovation_prompt, _extract_json, _estimate_budget, DEFAULT_MODEL
+    build_innovation_prompt,
+    _extract_json,
+    _estimate_budget,
+    DEFAULT_MODEL,
+    build_chat_system_prompt,
+    chat_with_insight,
+    CHAT_MODEL,
 )
 
 
@@ -548,3 +561,167 @@ class ModelTests(TestCase):
         self.assertIsNotNone(result.opportunities[0].execution_plan)
         self.assertEqual(result.opportunities[0].execution_plan.first_actions, ["A1"])
         self.assertEqual(result.opportunities[0].type, "radical")
+
+
+class ChatServiceTests(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(
+            username="cuser", email="c@t.com", password="pass"
+        )
+        self.company = Company.objects.create(
+            name="ChatCorp", sector="Retail", size="Small", user=self.user
+        )
+        qr = QuestionnaireResponse.objects.create(
+            company=self.company, assessment_number=1, answers={}
+        )
+        self.insight = InnovationInsight.objects.create(
+            response=qr, raw_prompt="", ai_output="{}",
+            innovation_score=6.5, score_delta=None,
+            context_bundle={
+                "opportunities": [
+                    {"id": "opp_1", "type": "incremental", "title": "Adopt CRM",
+                     "rationale": "...", "impact": "medium", "difficulty": "low",
+                     "timeframe": "3-6 months",
+                     "execution_plan": {"first_actions": ["A"],
+                                        "resources_needed": ["R"],
+                                        "success_metric": "S",
+                                        "milestones": ["M"]}}
+                ],
+                "next_steps": [
+                    {"id": "step_1", "action": "Assign lead", "owner": "CTO",
+                     "timeframe": "2 weeks"}
+                ],
+                "key_weaknesses": ["No process"],
+            }
+        )
+
+    def test_build_chat_system_prompt_includes_context(self):
+        prompt = build_chat_system_prompt(self.insight)
+        self.assertIn("ChatCorp", prompt)
+        self.assertIn("Adopt CRM", prompt)
+        self.assertIn("6.5", prompt)
+        self.assertIn("Assign lead", prompt)
+
+    def test_build_chat_system_prompt_tagged_opportunity(self):
+        prompt = build_chat_system_prompt(
+            self.insight, tagged_opportunity_id="opp_1"
+        )
+        self.assertIn("selected this specific opportunity", prompt)
+        self.assertIn("Adopt CRM", prompt)
+
+    def test_build_chat_system_prompt_tagged_weakness(self):
+        prompt = build_chat_system_prompt(
+            self.insight, tagged_weakness="No process"
+        )
+        self.assertIn("selected this specific vulnerability", prompt)
+        self.assertIn("No process", prompt)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_chat_with_insight_calls_model(self, mock_chat):
+        mock_chat.return_value = {"message": {"content": "Here's why..."}}
+        history = [{"role": "user", "content": "hello"}]
+        result = chat_with_insight(
+            self.insight, history, "Tell me about opp_1",
+            tagged_opportunity_id="opp_1", model="test-chat"
+        )
+        self.assertEqual(result, "Here's why...")
+        kwargs = mock_chat.call_args[1]
+        self.assertEqual(kwargs["model"], "test-chat")
+        messages = kwargs["messages"]
+        self.assertEqual(messages[0]["role"], "system")
+        self.assertIn("Adopt CRM", messages[0]["content"])
+        self.assertEqual(messages[-1]["content"], "Tell me about opp_1")
+
+    def test_chat_session_and_message_persistence(self):
+        session = ChatSession.objects.create(insight=self.insight)
+        msg = ChatMessage.objects.create(
+            session=session, role="user", content="hi",
+            tagged_opportunity_id="opp_1"
+        )
+        self.assertEqual(session.insight, self.insight)
+        self.assertEqual(msg.tagged_opportunity_id, "opp_1")
+        self.assertEqual(list(session.messages.all()), [msg])
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_ask_insight_mutation_persists_and_returns(self, mock_chat):
+        from core.schema import schema
+        from django.test import RequestFactory
+
+        mock_chat.return_value = {"message": {"content": "Answer text"}}
+
+        class FakeContext:
+            def __init__(self, request):
+                self.request = request
+
+        request = RequestFactory().post("/graphql/")
+        request.user = self.user
+
+        result = schema.execute_sync(
+            f'mutation {{ askInsight(insightId: {self.insight.id}, '
+            f'message: "Why?", taggedOpportunityId: "opp_1") '
+            '{ id role content taggedOpportunityId } }',
+            context_value=FakeContext(request),
+        )
+        self.assertIsNone(result.errors, getattr(result, "errors", None))
+        data = result.data["askInsight"]
+        self.assertEqual(data["role"], "assistant")
+        self.assertEqual(data["content"], "Answer text")
+        self.assertEqual(data["taggedOpportunityId"], "opp_1")
+
+        session = ChatSession.objects.get(insight=self.insight)
+        msgs = list(session.messages.all())
+        self.assertEqual(msgs[0].role, "user")
+        self.assertEqual(msgs[1].role, "assistant")
+        self.assertEqual(msgs[1].model_name, CHAT_MODEL)
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_ask_insight_mutation_tagged_weakness(self, mock_chat):
+        from core.schema import schema
+        from django.test import RequestFactory
+
+        mock_chat.return_value = {"message": {"content": "Answer text"}}
+
+        class FakeContext:
+            def __init__(self, request):
+                self.request = request
+
+        request = RequestFactory().post("/graphql/")
+        request.user = self.user
+
+        result = schema.execute_sync(
+            f'mutation {{ askInsight(insightId: {self.insight.id}, '
+            f'message: "Why?", taggedWeakness: "No process") '
+            '{ id taggedWeakness } }',
+            context_value=FakeContext(request),
+        )
+        self.assertIsNone(result.errors, getattr(result, "errors", None))
+        self.assertEqual(result.data["askInsight"]["taggedWeakness"], "No process")
+
+        session = ChatSession.objects.get(insight=self.insight)
+        msgs = list(session.messages.all())
+        self.assertEqual(msgs[0].tagged_weakness, "No process")
+        self.assertEqual(msgs[1].tagged_weakness, "No process")
+
+    @patch("core.services.llm_services.ollama.chat")
+    def test_ask_insight_rejects_other_users_insight(self, mock_chat):
+        from core.schema import schema
+        from django.test import RequestFactory
+
+        other = User.objects.create_user(
+            username="other", email="o@t.com", password="pass"
+        )
+
+        class FakeContext:
+            def __init__(self, request):
+                self.request = request
+
+        request = RequestFactory().post("/graphql/")
+        request.user = other
+
+        result = schema.execute_sync(
+            f'mutation {{ askInsight(insightId: {self.insight.id}, '
+            f'message: "Why?") {{ id }} }}',
+            context_value=FakeContext(request),
+        )
+        self.assertIsNotNone(result.errors)
+        self.assertFalse(mock_chat.called)

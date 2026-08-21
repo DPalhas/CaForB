@@ -64,3 +64,32 @@ class LLMTrace(models.Model):
 
     def __str__(self):
         return f"Trace [{self.step_name}] for Insight #{self.insight_id} ({self.duration_ms}ms)"
+
+
+class ChatSession(models.Model):
+    insight = models.ForeignKey(
+        InnovationInsight, on_delete=models.CASCADE, related_name="chat_sessions"
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"ChatSession #{self.id} for Insight #{self.insight_id}"
+
+
+class ChatMessage(models.Model):
+    session = models.ForeignKey(
+        ChatSession, on_delete=models.CASCADE, related_name="messages"
+    )
+    role = models.CharField(max_length=20)
+    content = models.TextField()
+    tagged_opportunity_id = models.CharField(max_length=50, blank=True, default="")
+    tagged_next_step_id = models.CharField(max_length=50, blank=True, default="")
+    tagged_weakness = models.TextField(blank=True, default="")
+    model_name = models.CharField(max_length=100, blank=True, default="")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["created_at"]
+
+    def __str__(self):
+        return f"ChatMessage [{self.role}] in session #{self.session_id}"

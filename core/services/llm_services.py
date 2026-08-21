@@ -20,6 +20,10 @@ REVENUE_RANGE_MIDPOINTS = {
 
 DEFAULT_MODEL = "gemma4:12B"
 
+CHAT_MODEL = "qwen2.5:7b-instruct"
+
+MAX_CHAT_HISTORY = 12
+
 # --- Budget estimation (unchanged) ---
 
 def _estimate_budget(answers: dict) -> str:
@@ -455,5 +459,124 @@ def generate_innovation_insight(company: dict, answers: dict,
                  {"raw_text_len": len(raw_text) if raw_text else 0}, 0)
 
     return raw_text, duration_ms
+
+
+# --- Chat over a completed insight ---
+
+def build_chat_system_prompt(insight, tagged_opportunity_id=None,
+                             tagged_next_step_id=None,
+                             tagged_weakness=None) -> str:
+    """Serialise a completed assessment into a grounded chat system prompt."""
+    company = insight.response.company
+    bundle = insight.context_bundle or {}
+
+    parts = [
+        "You are an executive innovation advisor helping a business leader "
+        "understand the results of their innovation maturity assessment.",
+        "Ground every answer in the assessment report below. You may draw on "
+        "general strategy, innovation, and management knowledge to explain or "
+        "expand on the report, but never invent facts about this specific "
+        "company that are not in the report. If the user asks something the "
+        "report does not cover, say so and offer what the report does say.",
+        "",
+        "=== ASSESSMENT REPORT ===",
+        f"Company: {company.name}",
+        f"Sector: {company.sector}",
+        f"Size: {company.size}",
+        f"Innovation Maturity Score: {insight.innovation_score}",
+    ]
+    if insight.score_delta is not None:
+        parts.append(f"Score change vs previous assessment: {insight.score_delta}")
+
+    opportunities = bundle.get("opportunities", [])
+    if opportunities:
+        parts.append("\nOpportunities:")
+        parts.append(json.dumps(opportunities, ensure_ascii=False, indent=2))
+
+    next_steps = bundle.get("next_steps", [])
+    if next_steps:
+        parts.append("\nNext Steps:")
+        parts.append(json.dumps(next_steps, ensure_ascii=False, indent=2))
+
+    weaknesses = bundle.get("key_weaknesses", [])
+    if weaknesses:
+        parts.append("\nKey Weaknesses:")
+        parts.append(json.dumps(weaknesses, ensure_ascii=False, indent=2))
+
+    progress = bundle.get("progress")
+    if progress:
+        parts.append("\nProgress Since Previous Assessment:")
+        parts.append(json.dumps(progress, ensure_ascii=False, indent=2))
+
+    comparison = bundle.get("comparison_to_previous")
+    if comparison:
+        parts.append("\nComparison to Previous Assessment:")
+        parts.append(json.dumps(comparison, ensure_ascii=False, indent=2))
+
+    parts.append("\n=== END OF ASSESSMENT REPORT ===")
+
+    if tagged_opportunity_id:
+        item = next(
+            (o for o in opportunities if o.get("id") == tagged_opportunity_id),
+            None,
+        )
+        if item:
+            parts.append(
+                "\nThe user has selected this specific opportunity and is "
+                "asking about it:\n"
+                + json.dumps(item, ensure_ascii=False, indent=2)
+            )
+
+    if tagged_next_step_id:
+        item = next(
+            (s for s in next_steps if s.get("id") == tagged_next_step_id),
+            None,
+        )
+        if item:
+            parts.append(
+                "\nThe user has selected this specific next step and is "
+                "asking about it:\n"
+                + json.dumps(item, ensure_ascii=False, indent=2)
+            )
+
+    if tagged_weakness:
+        parts.append(
+            "\nThe user has selected this specific vulnerability and is "
+            "asking about it:\n" + tagged_weakness
+        )
+
+    parts.append(
+        "\nKeep answers focused and practical, referencing the company's real "
+        "context. If the question is about a selected (tagged) item, answer "
+        "specifically about that item."
+    )
+    return "\n".join(parts)
+
+
+def chat_with_insight(insight, history, message, tagged_opportunity_id=None,
+                      tagged_next_step_id=None, tagged_weakness=None,
+                      model=CHAT_MODEL) -> str:
+    """Answer a follow-up question about a completed assessment insight.
+
+    `history` is a list of {"role": "user"|"assistant", "content": str} turns
+    (oldest first) from the same conversation.
+    """
+    system = build_chat_system_prompt(
+        insight,
+        tagged_opportunity_id=tagged_opportunity_id,
+        tagged_next_step_id=tagged_next_step_id,
+        tagged_weakness=tagged_weakness,
+    )
+    messages = [{"role": "system", "content": system}]
+    for turn in history[-MAX_CHAT_HISTORY:]:
+        messages.append({"role": turn["role"], "content": turn["content"]})
+    messages.append({"role": "user", "content": message})
+
+    response = ollama.chat(
+        model=model,
+        messages=messages,
+        options={"temperature": 0.7, "num_ctx": 8192},
+    )
+    return response["message"]["content"]
 
 

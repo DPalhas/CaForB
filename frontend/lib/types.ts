@@ -51,6 +51,11 @@ export interface AssessmentFormData {
   customerFeedback: string;
 }
 
+export type ChatTag =
+  | { kind: "opportunity"; id: string; label: string }
+  | { kind: "nextStep"; id: string; label: string }
+  | { kind: "weakness"; id: string; label: string };
+
 export const EMPTY_FORM: AssessmentFormData = {
   companyName: "",
   sector: "",

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Zap, Target, Clock, ShieldCheck, Flag } from "lucide-react";
+import { ChevronDown, Zap, Target, Clock, ShieldCheck, Flag, MessageCircle } from "lucide-react";
 
 interface ExecutionPlan {
   firstActions: string[];
@@ -12,6 +12,7 @@ interface ExecutionPlan {
 }
 
 interface Opportunity {
+  id: string;
   type: string;
   title: string;
   rationale: string;
@@ -25,6 +26,7 @@ interface Opportunity {
 interface OpportunityCardProps {
   opportunity: Opportunity;
   index: number;
+  onAsk: (opp: { id: string; title: string }) => void;
 }
 
 const tagColor = (value: string) => {
@@ -50,7 +52,7 @@ const itemReveal = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
-export default function OpportunityCard({ opportunity, index }: OpportunityCardProps) {
+export default function OpportunityCard({ opportunity, index, onAsk }: OpportunityCardProps) {
   const [expanded, setExpanded] = useState(false);
   const hasExecutionPlan = !!opportunity.executionPlan;
 
@@ -81,6 +83,13 @@ export default function OpportunityCard({ opportunity, index }: OpportunityCardP
               <h3 className="text-lg font-bold text-white leading-snug">{opportunity.title}</h3>
             </div>
           </div>
+          <button
+            onClick={() => onAsk({ id: opportunity.id, title: opportunity.title })}
+            className="flex-shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-900/60 border border-stone-700/60 text-[11px] font-semibold text-stone-300 hover:text-amber-300 hover:border-amber-500/40 transition print:hidden"
+          >
+            <MessageCircle className="w-3.5 h-3.5" />
+            Ask AI
+          </button>
         </div>
 
         {/* Rationale Text */}

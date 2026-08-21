@@ -1,5 +1,12 @@
 from django.contrib import admin
-from .models import Company, QuestionnaireResponse, InnovationInsight, LLMTrace
+from .models import (
+    Company,
+    QuestionnaireResponse,
+    InnovationInsight,
+    LLMTrace,
+    ChatSession,
+    ChatMessage,
+)
 
 
 @admin.register(Company)
@@ -31,3 +38,16 @@ class LLMTraceAdmin(admin.ModelAdmin):
                     "duration_ms", "created_at")
     search_fields = ("step_name", "model_name")
     list_filter = ("step_name", "model_name")
+
+
+@admin.register(ChatSession)
+class ChatSessionAdmin(admin.ModelAdmin):
+    list_display = ("id", "insight", "created_at")
+    search_fields = ("insight__response__company__name",)
+
+
+@admin.register(ChatMessage)
+class ChatMessageAdmin(admin.ModelAdmin):
+    list_display = ("id", "session", "role", "model_name", "created_at")
+    search_fields = ("content", "model_name")
+    list_filter = ("role", "model_name")

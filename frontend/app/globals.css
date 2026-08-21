@@ -8,6 +8,8 @@
 @custom-variant disabled (&[data-disabled]);
 
 :root {
+  color-scheme: dark;
+
   /* Deep warm charcoal background */
   --background: oklch(0.16 0.01 60);
   --foreground: oklch(0.95 0.01 80);
@@ -143,4 +145,115 @@ html {
 
 button {
   cursor: pointer;
+}
+
+/* Chatbot markdown rendering */
+.chat-markdown > :first-child {
+  margin-top: 0;
+}
+.chat-markdown > :last-child {
+  margin-bottom: 0;
+}
+.chat-markdown h1,
+.chat-markdown h2,
+.chat-markdown h3,
+.chat-markdown h4 {
+  color: #fcd34d;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0.75rem 0 0.35rem;
+}
+.chat-markdown h1 {
+  font-size: 1.05rem;
+}
+.chat-markdown h2 {
+  font-size: 1rem;
+}
+.chat-markdown h3 {
+  font-size: 0.95rem;
+}
+.chat-markdown h4 {
+  font-size: 0.9rem;
+}
+.chat-markdown p {
+  color: #e7e5e4;
+  margin: 0.35rem 0;
+  line-height: 1.6;
+}
+.chat-markdown strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+.chat-markdown em {
+  color: #e7e5e4;
+}
+.chat-markdown ul,
+.chat-markdown ol {
+  margin: 0.35rem 0;
+  padding-left: 1.25rem;
+}
+.chat-markdown ul {
+  list-style: disc;
+}
+.chat-markdown ol {
+  list-style: decimal;
+}
+.chat-markdown li {
+  color: #e7e5e4;
+  margin: 0.2rem 0;
+  line-height: 1.55;
+}
+.chat-markdown li > ul,
+.chat-markdown li > ol {
+  margin-top: 0.2rem;
+}
+.chat-markdown a {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+.chat-markdown code {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fcd34d;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 0.85em;
+}
+.chat-markdown pre {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+.chat-markdown pre code {
+  background: transparent;
+  color: #e7e5e4;
+  padding: 0;
+}
+.chat-markdown blockquote {
+  border-left: 2px solid #92400e;
+  padding-left: 0.75rem;
+  color: #d6d3d1;
+  margin: 0.5rem 0;
+}
+.chat-markdown hr {
+  border-color: rgba(255, 255, 255, 0.12);
+  margin: 0.75rem 0;
+}
+.chat-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  font-size: 0.85em;
+}
+.chat-markdown th,
+.chat-markdown td {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  color: #e7e5e4;
+}
+.chat-markdown th {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
 }

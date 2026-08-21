@@ -4,8 +4,20 @@ from typing import List, Optional
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.db import transaction
-from .models import Company, QuestionnaireResponse, InnovationInsight, LLMTrace
-from .services.llm_services import generate_innovation_insight, _extract_json
+from .models import (
+    Company,
+    QuestionnaireResponse,
+    InnovationInsight,
+    LLMTrace,
+    ChatSession,
+    ChatMessage,
+)
+from .services.llm_services import (
+    generate_innovation_insight,
+    _extract_json,
+    chat_with_insight,
+    CHAT_MODEL,
+)
 from .services.memory import build_assessment_history, build_score_trend
 
 
@@ -140,6 +152,24 @@ class CompanyDetailType:
     assessments: List[AssessmentTimelineType]
 
 
+@strawberry.type
+class ChatMessageType:
+    id: int
+    role: str
+    content: str
+    tagged_opportunity_id: Optional[str] = None
+    tagged_next_step_id: Optional[str] = None
+    tagged_weakness: Optional[str] = None
+    created_at: str
+
+
+@strawberry.type
+class ChatSessionType:
+    id: int
+    messages: List[ChatMessageType]
+    created_at: str
+
+
 # --- Helpers ---
 
 def _insight_to_type(insight: InnovationInsight) -> InsightType:
@@ -245,6 +275,18 @@ def _record_trace(insight, step_name, input_payload, output_payload,
         input_payload=input_payload,
         output_payload=output_payload,
         duration_ms=duration_ms,
+    )
+
+
+def _chat_message_to_type(msg: ChatMessage) -> ChatMessageType:
+    return ChatMessageType(
+        id=msg.id,
+        role=msg.role,
+        content=msg.content,
+        tagged_opportunity_id=msg.tagged_opportunity_id or None,
+        tagged_next_step_id=msg.tagged_next_step_id or None,
+        tagged_weakness=msg.tagged_weakness or None,
+        created_at=msg.created_at.isoformat(),
     )
 
 
@@ -500,6 +542,32 @@ class Query:
             assessments=assessments,
         )
 
+    @strawberry.field
+    def chat_session(
+        self, info: strawberry.types.Info, insight_id: int
+    ) -> ChatSessionType | None:
+        _guard(info)
+        request = _get_request(info)
+        try:
+            insight = InnovationInsight.objects.get(id=insight_id)
+        except InnovationInsight.DoesNotExist:
+            return None
+        if insight.response.company.user_id != request.user.id:
+            raise PermissionError("Authentication required")
+
+        session = (
+            ChatSession.objects.filter(insight=insight)
+            .order_by("-created_at")
+            .first()
+        )
+        if session is None:
+            return None
+        return ChatSessionType(
+            id=session.id,
+            created_at=session.created_at.isoformat(),
+            messages=[_chat_message_to_type(m) for m in session.messages.all()],
+        )
+
 
 # --- Mutation ---
 
@@ -622,6 +690,71 @@ class Mutation:
             recommendation_status=recommendation_status or {},
             request=request,
         )
+
+    @strawberry.mutation
+    def ask_insight(
+        self,
+        info: strawberry.types.Info,
+        insight_id: int,
+        message: str,
+        tagged_opportunity_id: Optional[str] = None,
+        tagged_next_step_id: Optional[str] = None,
+        tagged_weakness: Optional[str] = None,
+        session_id: Optional[int] = None,
+    ) -> ChatMessageType:
+        _guard(info)
+        request = _get_request(info)
+
+        try:
+            insight = InnovationInsight.objects.get(id=insight_id)
+        except InnovationInsight.DoesNotExist:
+            raise ValueError("Insight not found")
+        if insight.response.company.user_id != request.user.id:
+            raise PermissionError("Authentication required")
+
+        if not message or not message.strip():
+            raise ValueError("Message is required")
+
+        if session_id is not None:
+            try:
+                session = ChatSession.objects.get(id=session_id, insight=insight)
+            except ChatSession.DoesNotExist:
+                raise ValueError("Chat session not found for this insight")
+        else:
+            session = ChatSession.objects.create(insight=insight)
+
+        ChatMessage.objects.create(
+            session=session,
+            role="user",
+            content=message.strip(),
+            tagged_opportunity_id=tagged_opportunity_id or "",
+            tagged_next_step_id=tagged_next_step_id or "",
+            tagged_weakness=tagged_weakness or "",
+        )
+
+        history = [
+            {"role": m.role, "content": m.content}
+            for m in session.messages.all()
+        ]
+        answer = chat_with_insight(
+            insight,
+            history[:-1],
+            message.strip(),
+            tagged_opportunity_id=tagged_opportunity_id or None,
+            tagged_next_step_id=tagged_next_step_id or None,
+            tagged_weakness=tagged_weakness or None,
+        )
+
+        assistant_msg = ChatMessage.objects.create(
+            session=session,
+            role="assistant",
+            content=answer,
+            tagged_opportunity_id=tagged_opportunity_id or "",
+            tagged_next_step_id=tagged_next_step_id or "",
+            tagged_weakness=tagged_weakness or "",
+            model_name=CHAT_MODEL,
+        )
+        return _chat_message_to_type(assistant_msg)
 
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)

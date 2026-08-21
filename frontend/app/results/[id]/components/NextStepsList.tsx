@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckSquare, User, Clock } from "lucide-react";
+import { CheckSquare, User, Clock, MessageCircle } from "lucide-react";
 
 interface NextStep {
+  id: string;
   action: string;
   owner: string;
   timeframe: string;
@@ -11,6 +12,7 @@ interface NextStep {
 
 interface NextStepsListProps {
   steps: NextStep[];
+  onAsk: (step: { id: string; action: string }) => void;
 }
 
 const containerReveal = {
@@ -23,7 +25,7 @@ const itemReveal = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
-export default function NextStepsList({ steps }: NextStepsListProps) {
+export default function NextStepsList({ steps, onAsk }: NextStepsListProps) {
   if (!steps.length) return null;
 
   return (
@@ -69,6 +71,13 @@ export default function NextStepsList({ steps }: NextStepsListProps) {
                 </span>
               </div>
             </div>
+            <button
+              onClick={() => onAsk({ id: step.id, action: step.action })}
+              className="flex-shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-900/60 border border-stone-700/60 text-[11px] font-semibold text-stone-300 hover:text-amber-300 hover:border-amber-500/40 transition print:hidden"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              Ask AI
+            </button>
           </motion.li>
         ))}
       </motion.ol>

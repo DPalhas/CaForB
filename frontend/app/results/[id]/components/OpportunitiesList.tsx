@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import OpportunityCard from "./OpportunityCard";
 
 interface Opportunity {
+  id: string;
   type: string;
   title: string;
   rationale: string;
@@ -14,6 +15,7 @@ interface Opportunity {
 
 interface OpportunitiesListProps {
   opportunities: Opportunity[];
+  onAsk: (opp: { id: string; title: string }) => void;
 }
 
 const containerReveal = {
@@ -21,7 +23,7 @@ const containerReveal = {
   visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
 };
 
-export default function OpportunitiesList({ opportunities }: OpportunitiesListProps) {
+export default function OpportunitiesList({ opportunities, onAsk }: OpportunitiesListProps) {
   if (!opportunities.length) return null;
 
   return (
@@ -36,7 +38,7 @@ export default function OpportunitiesList({ opportunities }: OpportunitiesListPr
       </motion.h2>
       <div className="flex flex-col gap-3">
         {opportunities.map((opp, index) => (
-          <OpportunityCard key={index} opportunity={opp} index={index} />
+          <OpportunityCard key={opp.id ?? index} opportunity={opp} index={index} onAsk={onAsk} />
         ))}
       </div>
     </motion.div>

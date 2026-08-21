@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { useQuery } from "@apollo/client/react";
 import { useParams, useRouter } from "next/navigation";
 import { GET_INSIGHT } from "@/lib/graphql/queries";
-import { RefreshCw, Printer, Sparkles, AlertCircle, TrendingUp, TrendingDown, Minus, ChevronRight, ArrowRight } from "lucide-react";
+import type { ChatTag } from "@/lib/types";
+import { RefreshCw, Printer, Sparkles, AlertCircle, TrendingUp, TrendingDown, Minus, ChevronRight, ArrowRight, MessageCircle } from "lucide-react";
 import NavHeader from "@/components/NavHeader";
 import PageBackground from "@/components/PageBackground";
 import { motion } from "framer-motion";
@@ -12,6 +14,7 @@ import OpportunitiesList from "./components/OpportunitiesList";
 import NextStepsList from "./components/NextStepsList";
 import WeaknessesList from "./components/WeaknessesList";
 import ResultsSkeleton from "./components/ResultsSkeleton";
+import ChatPanel from "./components/ChatPanel";
 
 const dedupeKey = (item: Record<string, any>) =>
   `${item.type ?? ""}|${item.title ?? ""}|${item.rationale ?? ""}|${item.action ?? ""}`;
@@ -32,6 +35,10 @@ export default function ResultsPage() {
   const router = useRouter();
   const id = parseInt(params.id as string, 10);
 
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatExpanded, setChatExpanded] = useState(false);
+  const [pendingTag, setPendingTag] = useState<ChatTag | null>(null);
+
   const { data, loading, error, refetch } = useQuery(GET_INSIGHT, {
     variables: { id },
     fetchPolicy: "no-cache",
@@ -49,6 +56,21 @@ export default function ResultsPage() {
     window.print();
   };
 
+  const handleAskOpportunity = (opp: { id: string; title: string }) => {
+    setPendingTag({ kind: "opportunity", id: opp.id, label: opp.title });
+    setChatOpen(true);
+  };
+
+  const handleAskNextStep = (step: { id: string; action: string }) => {
+    setPendingTag({ kind: "nextStep", id: step.id, label: step.action });
+    setChatOpen(true);
+  };
+
+  const handleAskWeakness = (weakness: { index: number; text: string }) => {
+    setPendingTag({ kind: "weakness", id: String(weakness.index), label: weakness.text });
+    setChatOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-stone-950 flex flex-col selection:bg-amber-500 selection:text-white">
       
@@ -59,7 +81,7 @@ export default function ResultsPage() {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 py-10 px-4 relative z-10">
+      <main className={`flex-1 py-10 px-4 relative z-10 transition-[padding] duration-300 ${chatExpanded ? "lg:pr-[calc(33.333%+1.5rem)]" : ""}`}>
         <div className="w-full max-w-3xl mx-auto space-y-8">
 
           {/* Header Banner */}
@@ -130,13 +152,13 @@ export default function ResultsPage() {
               )}
 
               {/* Ranked Opportunities */}
-              <OpportunitiesList opportunities={insight.opportunities} />
+              <OpportunitiesList opportunities={insight.opportunities} onAsk={handleAskOpportunity} />
 
               {/* Actionable Next Steps */}
-              <NextStepsList steps={insight.nextSteps} />
+              <NextStepsList steps={insight.nextSteps} onAsk={handleAskNextStep} />
 
               {/* Identified Weaknesses */}
-              <WeaknessesList weaknesses={insight.keyWeaknesses} />
+              <WeaknessesList weaknesses={insight.keyWeaknesses} onAsk={handleAskWeakness} />
 
               {/* Comparison to Previous Assessment */}
               {insight.comparisonToPrevious && (
@@ -259,6 +281,30 @@ export default function ResultsPage() {
 
         </div>
       </main>
+
+      {/* Ask AI chat */}
+      {insight && !chatOpen && (
+        <button
+          onClick={() => setChatOpen(true)}
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-2xl bg-amber-400 text-stone-950 text-sm font-bold shadow-lg shadow-amber-500/25 hover:bg-amber-300 transition print:hidden"
+        >
+          <MessageCircle className="w-4 h-4" />
+          <span>Ask AI</span>
+        </button>
+      )}
+
+      <ChatPanel
+        insightId={id}
+        open={chatOpen}
+        onClose={() => {
+          setChatOpen(false);
+          setChatExpanded(false);
+        }}
+        expanded={chatExpanded}
+        onToggleExpanded={() => setChatExpanded((v) => !v)}
+        pendingTag={pendingTag}
+        onConsumeTag={() => setPendingTag(null)}
+      />
 
     </div>
   );
