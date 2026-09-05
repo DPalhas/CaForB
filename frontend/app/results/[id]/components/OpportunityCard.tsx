@@ -57,7 +57,7 @@ export default function OpportunityCard({ opportunity, index, onAsk }: Opportuni
   const hasExecutionPlan = !!opportunity.executionPlan;
 
   return (
-    <motion.div className="glass-card rounded-3xl border border-stone-800/80 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden" variants={itemReveal}>
+    <motion.div className="group glass-card rounded-3xl border border-stone-800/80 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 overflow-hidden" variants={itemReveal}>
       <div className="p-6 sm:p-7">
         
         {/* Card Header */}
@@ -85,10 +85,11 @@ export default function OpportunityCard({ opportunity, index, onAsk }: Opportuni
           </div>
           <button
             onClick={() => onAsk({ id: opportunity.id, title: opportunity.title })}
-            className="flex-shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-900/60 border border-stone-700/60 text-[11px] font-semibold text-stone-300 hover:text-amber-300 hover:border-amber-500/40 transition print:hidden"
+            aria-label="Ask AI about this opportunity"
+            title="Ask AI about this opportunity"
+            className="flex-shrink-0 p-2 rounded-lg text-stone-400 hover:text-amber-300 hover:bg-stone-800/60 transition opacity-0 group-hover:opacity-100 focus-visible:opacity-100 print:hidden"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
-            Ask AI
+            <MessageCircle className="w-4 h-4" />
           </button>
         </div>
 

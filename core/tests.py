@@ -166,6 +166,37 @@ class PromptBuilderTests(TestCase):
         self.assertNotIn("carry_forward_from", system)
         self.assertNotIn("REASSESSMENT DIRECTIVES", system)
 
+    def test_snake_case_answers_are_normalized(self):
+        # The frontend sends a mix of snake_case and camelCase keys.
+        answers = {
+            "company_description": "A fintech startup",
+            "innovation_process": "partial",
+            "customer_feedback": "surveys_nps",
+            "strategic_goals": "Double revenue in 2 years",
+            "time_horizon": "long",
+            "team_size": "12 engineers",
+            "digital_maturity": "3",
+            "decision_making": "owner_alone",
+            "main_barrier": ["budget", "talent"],
+            "past_initiatives": "Launched a mobile app",
+            "additional_context": "New competitor entered",
+            "budgetPercentage": 5,
+            "revenueRange": "1m_to_10m",
+            "regulatoryEnvironment": "high",
+            "riskAppetite": "conservative",
+            "strategicPriority": "growth",
+            "competitivePressure": "medium",
+        }
+        system, user = build_innovation_prompt(self.company, answers)
+        # snake_case values must surface in the clean user block (not defaults)
+        self.assertIn("A fintech startup", user)
+        self.assertIn("Double revenue in 2 years", user)
+        self.assertIn("12 engineers", user)
+        self.assertIn("Launched a mobile app", user)
+        self.assertIn("New competitor entered", user)
+        # budget (camelCase already) still resolved
+        self.assertIn("€", user)
+
 
 class JsonExtractionTests(TestCase):
     def test_extract_clean_json(self):
@@ -601,6 +632,12 @@ class ChatServiceTests(TestCase):
         self.assertIn("Adopt CRM", prompt)
         self.assertIn("6.5", prompt)
         self.assertIn("Assign lead", prompt)
+
+    def test_build_chat_system_prompt_has_refusal_rules(self):
+        prompt = build_chat_system_prompt(self.insight)
+        self.assertIn("SCOPE AND REFUSAL RULES", prompt)
+        self.assertIn("You are NOT a general-purpose assistant", prompt)
+        self.assertIn("Do NOT answer the off-topic request", prompt)
 
     def test_build_chat_system_prompt_tagged_opportunity(self):
         prompt = build_chat_system_prompt(

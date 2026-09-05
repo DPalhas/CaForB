@@ -5,7 +5,7 @@ import { useMutation, useQuery } from "@apollo/client/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ASK_INSIGHT, CHAT_SESSION } from "@/lib/graphql/chat";
-import type { ChatTag } from "@/lib/types";
+import type { ChatTag, ReportSection } from "@/lib/types";
 import { MessageSquare, X, Send, Sparkles, Loader2, Maximize2, Minimize2 } from "lucide-react";
 
 interface ChatMessage {
@@ -24,7 +24,9 @@ interface ChatPanelProps {
   expanded: boolean;
   onToggleExpanded: () => void;
   pendingTag: ChatTag | null;
+  onSetTag: (tag: ChatTag) => void;
   onConsumeTag: () => void;
+  sections: ReportSection[];
 }
 
 export default function ChatPanel({
@@ -34,13 +36,16 @@ export default function ChatPanel({
   expanded,
   onToggleExpanded,
   pendingTag,
+  onSetTag,
   onConsumeTag,
+  sections,
 }: ChatPanelProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [sessionId, setSessionId] = useState<number | null>(null);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [picker, setPicker] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const { data, refetch } = useQuery(CHAT_SESSION, {
@@ -196,6 +201,47 @@ export default function ChatPanel({
             >
               <X className="w-3 h-3" />
             </button>
+          </div>
+        )}
+
+        {sections.length > 0 && (
+          <div className="flex items-center gap-2">
+            <MessageSquare className="w-3.5 h-3.5 text-stone-500 shrink-0" />
+            <select
+              value={picker}
+              onChange={(e) => {
+                const v = e.target.value;
+                setPicker("");
+                if (v !== "") {
+                  const s = sections[Number(v)];
+                  onSetTag({ kind: s.kind, id: s.id, label: s.label });
+                }
+              }}
+              className="flex-1 min-w-0 bg-stone-900/70 border border-stone-700/60 rounded-xl px-2.5 py-2 text-xs text-stone-300 focus:border-amber-500/60 focus:ring-0"
+            >
+              <option value="">Ask about a specific section…</option>
+              {(["opportunity", "nextStep", "weakness"] as const).map((kind) => {
+                const items = sections
+                  .map((s, i) => ({ ...s, i }))
+                  .filter((s) => s.kind === kind);
+                if (!items.length) return null;
+                const label =
+                  kind === "opportunity"
+                    ? "Opportunities"
+                    : kind === "nextStep"
+                      ? "Next Steps"
+                      : "Vulnerabilities";
+                return (
+                  <optgroup key={kind} label={label}>
+                    {items.map((s) => (
+                      <option key={s.i} value={String(s.i)}>
+                        {s.label}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
+            </select>
           </div>
         )}
 

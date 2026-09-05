@@ -45,17 +45,18 @@ export default function WeaknessesList({ weaknesses, onAsk }: WeaknessesListProp
         {weaknesses.map((weakness, index) => (
           <motion.li
             key={index}
-            className="flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs"
+            className="group flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs"
             variants={itemReveal}
           >
             <span className="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
             <p className="text-sm font-medium text-amber-100 leading-relaxed flex-1">{weakness}</p>
             <button
               onClick={() => onAsk({ index, text: weakness })}
-              className="flex-shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-900/60 border border-stone-700/60 text-[11px] font-semibold text-stone-300 hover:text-amber-300 hover:border-amber-500/40 transition print:hidden"
+              aria-label="Ask AI about this vulnerability"
+              title="Ask AI about this vulnerability"
+              className="flex-shrink-0 p-2 rounded-lg text-stone-400 hover:text-amber-300 hover:bg-stone-800/60 transition opacity-0 group-hover:opacity-100 focus-visible:opacity-100 print:hidden"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
-              Ask AI
+              <MessageCircle className="w-4 h-4" />
             </button>
           </motion.li>
         ))}

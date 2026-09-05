@@ -1,8 +1,8 @@
 #!/bin/bash
 # cloud_train.sh — Fine-tune Gemma 4 12B on RunPod / Lambda Labs
 #
-# Recommended GPU: RTX 4090 (24GB) — $0.69/hr on RunPod
-# Training time: ~6-10 hours  |  Cost: ~$4-7
+# Recommended GPU: A100 (80GB) — ~$1.39/hr on RunPod
+# Training time: ~2-3 hours  |  Cost: ~$3-5
 #
 # Usage:
 #   1. Upload caforb_cloud.zip to your cloud instance
@@ -14,7 +14,7 @@ set -e
 echo "============================================"
 echo "  CaForB — 12B Gemma 4 Fine-Tuning"
 echo "  Target: google/gemma-4-12B-it"
-echo "  VRAM: ~14-18 GB (fits in 24GB)"
+echo "  VRAM: ~14-18 GB (fits in 80GB A100)"
 echo "============================================"
 
 # GPU check
@@ -47,7 +47,7 @@ echo ""
 
 # Training
 echo "5. Starting training..."
-echo "   Config: 4-bit QLoRA, r=8, max_seq=4096, 3 epochs"
+echo "   Config: 4-bit QLoRA, r=8, max_seq=8192, 3 epochs"
 echo "   ETA: ~6-10 hours"
 echo ""
 

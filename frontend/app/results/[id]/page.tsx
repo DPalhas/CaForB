@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useQuery } from "@apollo/client/react";
 import { useParams, useRouter } from "next/navigation";
 import { GET_INSIGHT } from "@/lib/graphql/queries";
-import type { ChatTag } from "@/lib/types";
+import type { ChatTag, ReportSection } from "@/lib/types";
 import { RefreshCw, Printer, Sparkles, AlertCircle, TrendingUp, TrendingDown, Minus, ChevronRight, ArrowRight, MessageCircle } from "lucide-react";
 import NavHeader from "@/components/NavHeader";
 import PageBackground from "@/components/PageBackground";
@@ -52,6 +52,26 @@ export default function ResultsPage() {
     keyWeaknesses: [...new Set(insightRaw.keyWeaknesses ?? [])],
   } : null;
 
+  const sections: ReportSection[] = insight
+    ? [
+        ...(insight.opportunities ?? []).map((o: any) => ({
+          kind: "opportunity" as const,
+          id: o.id,
+          label: o.title,
+        })),
+        ...(insight.nextSteps ?? []).map((s: any) => ({
+          kind: "nextStep" as const,
+          id: s.id,
+          label: s.action,
+        })),
+        ...(insight.keyWeaknesses ?? []).map((w: string, i: number) => ({
+          kind: "weakness" as const,
+          id: String(i),
+          label: w,
+        })),
+      ]
+    : [];
+
   const handlePrint = () => {
     window.print();
   };
@@ -72,7 +92,7 @@ export default function ResultsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-950 flex flex-col selection:bg-amber-500 selection:text-white">
+    <div className={`min-h-screen bg-stone-950 flex flex-col selection:bg-amber-500 selection:text-white transition-[padding] duration-300 ${chatExpanded ? "lg:pr-[calc(33.333%+1.5rem)]" : ""}`}>
       
       <PageBackground variant="results" />
 
@@ -81,7 +101,7 @@ export default function ResultsPage() {
       </div>
 
       {/* Main Content */}
-      <main className={`flex-1 py-10 px-4 relative z-10 transition-[padding] duration-300 ${chatExpanded ? "lg:pr-[calc(33.333%+1.5rem)]" : ""}`}>
+      <main className="flex-1 py-10 px-4 relative z-10">
         <div className="w-full max-w-3xl mx-auto space-y-8">
 
           {/* Header Banner */}
@@ -303,7 +323,9 @@ export default function ResultsPage() {
         expanded={chatExpanded}
         onToggleExpanded={() => setChatExpanded((v) => !v)}
         pendingTag={pendingTag}
+        onSetTag={setPendingTag}
         onConsumeTag={() => setPendingTag(null)}
+        sections={sections}
       />
 
     </div>

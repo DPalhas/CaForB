@@ -52,7 +52,7 @@ export default function NextStepsList({ steps, onAsk }: NextStepsListProps) {
         {steps.map((step, index) => (
           <motion.li
             key={index}
-            className="bg-stone-900/80 rounded-2xl p-5 border border-stone-800/80 hover:border-amber-500/40 transition flex items-start gap-4"
+            className="group bg-stone-900/80 rounded-2xl p-5 border border-stone-800/80 hover:border-amber-500/40 transition flex items-start gap-4"
             variants={itemReveal}
           >
             <span className="w-7 h-7 rounded-xl bg-amber-400 text-stone-950 font-extrabold text-xs flex items-center justify-center flex-shrink-0 mt-0.5 shadow-md">
@@ -73,10 +73,11 @@ export default function NextStepsList({ steps, onAsk }: NextStepsListProps) {
             </div>
             <button
               onClick={() => onAsk({ id: step.id, action: step.action })}
-              className="flex-shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-900/60 border border-stone-700/60 text-[11px] font-semibold text-stone-300 hover:text-amber-300 hover:border-amber-500/40 transition print:hidden"
+              aria-label="Ask AI about this next step"
+              title="Ask AI about this next step"
+              className="flex-shrink-0 p-2 rounded-lg text-stone-400 hover:text-amber-300 hover:bg-stone-800/60 transition opacity-0 group-hover:opacity-100 focus-visible:opacity-100 print:hidden"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
-              Ask AI
+              <MessageCircle className="w-4 h-4" />
             </button>
           </motion.li>
         ))}

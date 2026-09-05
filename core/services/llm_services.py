@@ -38,6 +38,32 @@ def _estimate_budget(answers: dict) -> str:
     return f"~€{estimated_amount:,.0f}/year ({pct}% of {REVENUE_RANGE_LABELS.get(revenue_key, revenue_key)} revenue)"
 
 
+# --- Answer key normalization (frontend sends mixed snake_case/camelCase) ---
+
+_SNAKE_TO_CAMEL = {
+    "company_description": "companyDescription",
+    "innovation_process": "innovationProcess",
+    "past_initiatives": "pastInitiatives",
+    "customer_feedback": "customerFeedback",
+    "strategic_goals": "strategicGoals",
+    "time_horizon": "timeHorizon",
+    "team_size": "teamSize",
+    "digital_maturity": "digitalMaturity",
+    "decision_making": "decisionMaking",
+    "main_barrier": "mainBarrier",
+    "additional_context": "additionalContext",
+}
+
+
+def _normalize_answers(answers: dict) -> dict:
+    """Return a copy of answers with camelCase keys (frontend mixes snake_case)."""
+    out = dict(answers or {})
+    for snake, camel in _SNAKE_TO_CAMEL.items():
+        if snake in out and camel not in out:
+            out[camel] = out[snake]
+    return out
+
+
 # --- Constraint rules (shared between first assessment and reassessment) ---
 
 _CONSTRAINT_RULES = """Consider the following when forming your assessment:
@@ -195,6 +221,7 @@ def _build_reassessment_prompt(company: dict, answers: dict, history: str) -> tu
 
 def build_innovation_prompt(company: dict, answers: dict,
                             history: Optional[str] = None) -> tuple[str, str]:
+    answers = _normalize_answers(answers)
     if history:
         return _build_reassessment_prompt(company, answers, history)
     return _build_first_assessment_prompt(company, answers)
@@ -473,6 +500,20 @@ def build_chat_system_prompt(insight, tagged_opportunity_id=None,
     parts = [
         "You are an executive innovation advisor helping a business leader "
         "understand the results of their innovation maturity assessment.",
+        "SCOPE AND REFUSAL RULES (follow strictly):",
+        "- You answer ONLY questions about this assessment report — the "
+        "company, its innovation maturity score, opportunities, next steps, "
+        "execution plans, key weaknesses, progress, and comparison to "
+        "previous assessments — or closely related business and "
+        "innovation-strategy clarifications.",
+        "- You are NOT a general-purpose assistant. For ANY request unrelated "
+        "to this report or to the company's innovation strategy — for example "
+        "recipes, coding, homework, trivia, weather, translations, personal "
+        "tasks, or advice for other companies — decline politely in one short "
+        "sentence and redirect the user to ask about their assessment. Do NOT "
+        "answer the off-topic request.",
+        "- If you are unsure whether a request is in scope, lean toward "
+        "declining and offer to help with the report instead.",
         "Ground every answer in the assessment report below. You may draw on "
         "general strategy, innovation, and management knowledge to explain or "
         "expand on the report, but never invent facts about this specific "
@@ -575,7 +616,7 @@ def chat_with_insight(insight, history, message, tagged_opportunity_id=None,
     response = ollama.chat(
         model=model,
         messages=messages,
-        options={"temperature": 0.7, "num_ctx": 8192},
+        options={"temperature": 0.3, "num_ctx": 8192},
     )
     return response["message"]["content"]
 
