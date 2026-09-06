@@ -5,4 +5,5 @@ trl
 accelerate
 datasets
 bitsandbytes
+sentencepiece
 wandb

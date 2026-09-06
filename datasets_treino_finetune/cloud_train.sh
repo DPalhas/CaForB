@@ -7,7 +7,8 @@
 # Usage:
 #   1. Upload caforb_cloud.zip to your cloud instance
 #   2. unzip caforb_cloud.zip
-#   3. bash cloud_train.sh
+#   3. bash cloud_train.sh           (trains, saves caforb-lora/)
+#   4. bash scripts/export_all.sh    (merge + GGUF — needs >=100GB disk)
 
 set -e
 
@@ -48,7 +49,7 @@ echo ""
 # Training
 echo "5. Starting training..."
 echo "   Config: 4-bit QLoRA, r=8, max_seq=8192, 3 epochs"
-echo "   ETA: ~6-10 hours"
+echo "   ETA: ~2-3 hours"
 echo ""
 
 python scripts/train_caforb.py \
@@ -61,9 +62,10 @@ echo ""
 echo "============================================"
 echo "  Training complete!"
 echo ""
-echo "  Download caforb-lora/ to your machine:"
-echo "    RunPod: File browser → download caforb-lora/"
-echo "    Lambda: scp -r user@ip:~/caforb-lora/ ."
+echo "  LoRA adapter saved to caforb-lora/"
 echo ""
-echo "  Then merge with base model to create caforb-v1."
+echo "  Next, merge + export to GGUF (needs >=100GB disk):"
+echo "    bash scripts/export_all.sh"
+echo ""
+echo "  Then download caforb-v1.Q4_K_M.gguf to your machine."
 echo "============================================"

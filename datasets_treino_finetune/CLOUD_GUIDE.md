@@ -2,8 +2,10 @@
 
 ## Overview
 
-Fine-tune `google/gemma-4-12B-it` (full 12B Gemma 4) using 4-bit QLoRA.
-The full training takes ~6-10 hours at ~$4-7 on an RTX 4090.
+Fine-tune `google/gemma-4-12B-it` (full 12B Gemma 4) using 4-bit QLoRA,
+then merge the adapter and export a quantized GGUF for Ollama.
+
+The full training takes ~2-3 hours at ~$3-5 on an A100 (80GB).
 
 **Why 12B instead of 2.3B E2B:** The 12B model produces noticeably better reassessments —
 coherent carry_forward, realistic progress tracking, budget-anchored recommendations —
@@ -11,106 +13,121 @@ and can generate the full extended contract in one call instead of two phases.
 
 ## Step 1 — Pack your files
 
-From your `datasets_treino_finetune/` directory, upload these to the cloud instance:
+From your `datasets_treino_finetune/` directory, the zip `caforb_cloud.zip` already
+contains everything needed:
 
 ```
 datasets_treino_finetune/
 ├── final/
-│   ├── train.jsonl          (733 records, 5.7 MB)
-│   └── validation.jsonl     (184 records, 1.5 MB)
+│   ├── train.jsonl          (733 records)
+│   └── validation.jsonl     (184 records)
 ├── scripts/
-│   └── train_caforb.py      (training script)
+│   ├── train_caforb.py      (training script)
+│   ├── merge_lora.py        (merge adapter -> fp16 model)
+│   ├── export_gguf.py       (llama.cpp convert + quantize)
+│   ├── export_all.sh        (one-command merge + export)
+│   └── import_to_ollama.ps1 (Windows-side import)
 ├── cloud_train.sh           (one-click launcher)
+├── Modelfile                (Ollama import template)
 └── requirements_cloud.txt   (pip deps)
 ```
 
-**Create a zip file to upload:**
-```powershell
-cd C:\Users\david\OneDrive\Ambiente de Trabalho\MIG\Dissertação\CaForB\datasets_treino_finetune
-Compress-Archive -Path final,scripts\train_caforb.py,cloud_train.sh,requirements_cloud.txt -DestinationPath caforb_cloud.zip
-```
+## Step 2 — Deploy a GPU
 
-## Step 2 — Deploy a GPU (choose one)
+1. Go to https://runpod.io → **Pods** → **Deploy**
+2. Template: **RunPod PyTorch 2.6** (or latest)
+3. GPU: **A100 SXM** (80 GB, ~$1.39/hr)
+4. **Container disk: 100 GB** (needed for base model + merge + GGUF; see disk note below)
+5. **Start Jupyter notebook** ✓ and **SSH terminal access** ✓
+6. Deploy, wait ~30s for "Running"
 
-### Option A: RunPod (easiest, $0.69/hr for RTX 4090)
+## Step 3 — Upload and train
 
-1. Go to https://runpod.io → sign up (add ~$10 credit)
-2. Click **Pods** → **Deploy**
-3. Choose template: **RunPod Pytorch 2.6** (or latest)
-4. GPU: **RTX 4090** (24 GB VRAM, $0.69/hr)
-5. Click **Deploy**
-6. Wait for pod to start (~30 sec), then click **Connect** → **Web Terminal**
-
-### Option B: Lambda Labs ($0.50/hr)
-
-1. Go to https://lambdalabs.com/service/gpu-cloud
-2. Deploy a **1x RTX 4090** instance
-3. SSH in
-
-## Step 3 — Upload and run
-
-In the cloud terminal:
+Upload `caforb_cloud.zip` (Jupyter file browser → drag-and-drop), then in a terminal:
 
 ```bash
-# Upload your zip (from RunPod Jupyter, use the file upload button;
-# from Lambda, use scp or rsync)
-
-# If you zipped the files:
 unzip caforb_cloud.zip
-
-# Make sure the directory structure matches:
-# ./final/train.jsonl
-# ./final/validation.jsonl
-# ./scripts/train_caforb.py
-# ./cloud_train.sh
-# ./requirements_cloud.txt
-
-# Run training
-chmod +x cloud_train.sh
 bash cloud_train.sh
 ```
 
-## Step 4 — Download the model
+Optional smoke test first (~5 min, catches env problems cheaply):
 
-After training finishes, download `caforb-lora/` back to your machine:
+```bash
+pip install -r requirements_cloud.txt
+python scripts/train_caforb.py --test
+```
+
+Watch for: model downloads without a 404, GPU detected, loss trending down.
+If you see loss go to `nan`/`inf`, stop and re-check.
+
+## Step 4 — Merge + export to GGUF (on the pod)
+
+**Do this on the pod, before stopping it** — the Windows machine has neither the
+GPU nor torch/transformers/peft installed. The merge needs ~24 GB fp16 VRAM.
+
+```bash
+bash scripts/export_all.sh
+```
+
+This:
+1. Merges the LoRA adapter into the base model (→ `merged-model/`, fp16)
+2. Clones + builds llama.cpp's `llama-quantize`
+3. Converts to f16 GGUF, then quantizes to **Q4_K_M** (matches runtime `gemma4:12B`)
+4. Deletes intermediates to free disk
+
+Output: `caforb-v1.Q4_K_M.gguf` (~8 GB).
+
+**Troubleshooting:** if `convert_hf_to_gguf.py` errors on the architecture, the
+cloned llama.cpp is too old to support Gemma 4 — re-clone latest master.
+
+## Step 5 — Download the GGUF
+
+From the Jupyter file browser, right-click `caforb-v1.Q4_K_M.gguf` → **Download**,
+then **stop** the pod (billing stops).
+
+Place it at:
+```
+C:\Users\david\OneDrive\Ambiente de Trabalho\MIG\Dissertação\CaForB\datasets_treino_finetune\caforb-v1.Q4_K_M.gguf
+```
+
+## Step 6 — Import into Ollama (Windows)
+
+With Ollama running:
 
 ```powershell
-# From RunPod: use the file browser to download caforb-lora/ as a zip
-# From Lambda: scp -r user@ip:~/caforb-lora/ .
+cd C:\Users\david\OneDrive\Ambiente de Trabalho\MIG\Dissertação\CaForB\datasets_treino_finetune
+powershell -ExecutionPolicy Bypass -File scripts\import_to_ollama.ps1
 ```
 
-Place the downloaded folder at:
-```
-C:\Users\david\OneDrive\Ambiente de Trabalho\MIG\Dissertação\CaForB\datasets_treino_finetune\caforb-lora\
-```
-
-## Step 5 — Merge and import to Ollama
+Or manually:
 
 ```powershell
-# On your Windows machine, in the datasets_treino_finetune/ dir:
-
-# 1. Merge LoRA into base model
-python scripts/merge_lora.py
-
-# 2. Convert to GGUF
-python scripts/convert_to_gguf.py caforb-lora/ caforb-v1.Q4_K_M.gguf
-
-# 3. Import to Ollama
-echo "FROM caforb-v1.Q4_K_M.gguf" > Modelfile
 ollama create caforb-v1 -f Modelfile
-
-# 4. Test
-ollama run caforb-v1
+ollama run caforb-v1 "Reply with exactly: OK"
 ```
+
+## Step 7 — Point the app at the new model
+
+In `core/services/llm_services.py`, change:
+
+```python
+DEFAULT_MODEL = "gemma4:12B"   # -> "caforb-v1"
+```
+
+Also update the `"gemma4:12B"` fallback in `core/schema.py`. Then run the backend,
+submit a fresh assessment and a reassessment, and verify the JSON parses and renders.
+
+## Disk sizing
+
+The export step needs ~72 GB at peak (base cache 24 + merged 24 + f16 GGUF 24),
+so use a **100 GB container disk**. Intermediates are auto-deleted as export
+progresses, ending at ~32 GB (base cache + final Q4 GGUF).
 
 ## Cost estimate
 
 | Service | GPU | Price/hr | Training time | Total cost |
 |---|---|---|---|---|
-| RunPod | RTX 4090 | $0.69 | ~6-10 hours | ~$4-7 |
-| Lambda Labs | RTX 4090 | $0.50 | ~6-10 hours | ~$3-5 |
-
-With RunPod's $10 minimum preload, you'll have $3-6 leftover for hyperparameter tuning or model hosting.
+| RunPod | A100 SXM (80GB) | $1.39 | ~2-3 hours | ~$3-5 |
 
 ## Alternate model
 
@@ -123,6 +140,7 @@ Check https://huggingface.co/google for the latest Gemma 4 models.
 
 ## Troubleshooting
 
-- **OOM**: Lower `--max-seq-length` in cloud_train.sh (try 2048)
-- **Model not found**: RunPod might need `huggingface-cli login` if model is gated
-- **Slow downloads**: The base model `google/gemma-4-12B-it` is ~24 GB (fp16) — first download may take several minutes
+- **OOM**: Lower `--max-seq-length` in cloud_train.sh (try 4096)
+- **Model not found**: RunPod might need `huggingface-cli login` if the model is gated
+- **Slow downloads**: The base model is ~24 GB (fp16) — first download may take several minutes
+- **GGUF conversion fails on arch**: llama.cpp too old — re-clone latest master for Gemma 4 support

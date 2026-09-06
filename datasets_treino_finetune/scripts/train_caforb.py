@@ -2,8 +2,8 @@
 """
 train_caforb.py — LoRA fine-tuning of Gemma 4 12B on the CaForB dataset.
 
-For cloud GPUs (RTX 4090 24GB) with 4-bit QLoRA.
-~6-8 hours training, ~$3-5 on RunPod.
+For cloud GPUs (A100 80GB) with 4-bit QLoRA.
+~2-3 hours training, ~$3-5 on RunPod.
 
 Usage:
     python scripts/train_caforb.py                    # Full training
@@ -13,6 +13,9 @@ Usage:
 Output:
     caforb-lora/               — LoRA adapter weights
     caforb-lora/training.log   — Loss curve
+
+After training, run `bash scripts/export_all.sh` on the same pod to merge the
+adapter into the base model and produce a quantized GGUF for Ollama.
 """
 
 import os
@@ -315,7 +318,7 @@ def train(model, tokenizer, dataset, args):
 
     trainer.train(resume_from_checkpoint=args.resume)
 
-    if not test_mode:
+    if not args.test:
         print(f"\n  Saving LoRA adapter to {OUTPUT_DIR}")
         model.save_pretrained(OUTPUT_DIR)
         tokenizer.save_pretrained(OUTPUT_DIR)
@@ -333,11 +336,10 @@ def print_summary(trainer):
     print(f"  TRAINING COMPLETE")
     print(f"{'='*60}")
     print(f"\n  LoRA adapter saved to: {OUTPUT_DIR}")
-    print(f"\n  Next steps:")
-    print(f"    1. Merge LoRA with base model:")
-    print(f"       python scripts/merge_lora.py")
-    print(f"    2. Convert to GGUF for Ollama:")
-    print(f"       python scripts/convert_to_gguf.py")
+    print(f"\n  Next steps (run on this same pod):")
+    print(f"    1. Merge LoRA + export GGUF in one command:")
+    print(f"       bash scripts/export_all.sh")
+    print(f"    2. Download caforb-v1.Q4_K_M.gguf to your machine")
     print(f"    3. Import into Ollama:")
     print(f"       ollama create caforb-v1 -f Modelfile")
 

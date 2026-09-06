@@ -1,0 +1,5 @@
+FROM caforb-v1.Q4_K_M.gguf
+
+# The chat template is embedded in the GGUF by convert_hf_to_gguf.py.
+# Add a TEMPLATE block here only if `ollama run caforb-v1` misbehaves
+# (e.g. no <end_of_turn> markers in responses).
