@@ -1,33 +1,45 @@
 "use client";
 
-import { useState } from "react";
-import { useQuery } from "@apollo/client/react";
+import { useEffect, useState } from "react";
+import { useMutation } from "@apollo/client/react";
 import { useParams, useRouter } from "next/navigation";
-import { GET_INSIGHT } from "@/lib/graphql/queries";
-import type { ChatTag, ReportSection } from "@/lib/types";
-import { RefreshCw, Printer, Sparkles, AlertCircle, TrendingUp, TrendingDown, Minus, ChevronRight, ArrowRight, MessageCircle } from "lucide-react";
+import { SELECT_INSIGHT } from "@/lib/graphql/mutations";
+import { normalize } from "@/lib/graphql/normalize";
+import { useInsight } from "@/lib/hooks/useInsight";
+import type { ChatTag, ReportSection, Insight } from "@/lib/types";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { AlertCircle, MessageCircle } from "lucide-react";
 import NavHeader from "@/components/NavHeader";
 import PageBackground from "@/components/PageBackground";
 import { motion } from "framer-motion";
-import ScoreCard from "./components/ScoreCard";
-import OpportunitiesList from "./components/OpportunitiesList";
-import NextStepsList from "./components/NextStepsList";
-import WeaknessesList from "./components/WeaknessesList";
+import ReportColumn from "./components/ReportColumn";
 import ResultsSkeleton from "./components/ResultsSkeleton";
 import ChatPanel from "./components/ChatPanel";
 
-const dedupeKey = (item: Record<string, any>) =>
-  `${item.type ?? ""}|${item.title ?? ""}|${item.rationale ?? ""}|${item.action ?? ""}`;
+const MODEL_LABELS: Record<string, string> = {
+  "gemma4:12B": "gemma4:12B — baseline",
+  "caforb-v1": "caforb-v1 — fine-tuned",
+};
 
-function dedupe<T extends Record<string, any>>(arr: T[] | undefined | null): T[] {
-  if (!arr) return [];
-  const seen = new Set<string>();
-  return arr.filter((item) => {
-    const key = dedupeKey(item);
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+const modelLabel = (c: Insight) =>
+  MODEL_LABELS[c.modelName] ?? c.modelName ?? "Model";
+
+const MODEL_SHORT_LABELS: Record<string, string> = {
+  "gemma4:12B": "Base",
+  "caforb-v1": "CaForB",
+};
+
+const shortLabel = (name: string) => MODEL_SHORT_LABELS[name] ?? name;
+
+const VIEW_STORAGE_KEY = "caforb:results:view-mode";
+
+function getInitialViewMode(): string {
+  if (typeof window === "undefined") return "both";
+  try {
+    return localStorage.getItem(VIEW_STORAGE_KEY) ?? "both";
+  } catch {
+    return "both";
+  }
 }
 
 export default function ResultsPage() {
@@ -38,28 +50,39 @@ export default function ResultsPage() {
   const [chatOpen, setChatOpen] = useState(false);
   const [chatExpanded, setChatExpanded] = useState(false);
   const [pendingTag, setPendingTag] = useState<ChatTag | null>(null);
+  const [viewMode, setViewMode] = useState<string>(getInitialViewMode);
 
-  const { data, loading, error, refetch } = useQuery(GET_INSIGHT, {
-    variables: { id },
-    fetchPolicy: "no-cache",
-  });
+  useEffect(() => {
+    try {
+      localStorage.setItem(VIEW_STORAGE_KEY, viewMode);
+    } catch {
+      /* ignore */
+    }
+  }, [viewMode]);
 
-  const insightRaw = (data as any)?.getInsight;
-  const insight = insightRaw ? {
-    ...insightRaw,
-    opportunities: dedupe(insightRaw.opportunities),
-    nextSteps: dedupe(insightRaw.nextSteps),
-    keyWeaknesses: [...new Set(insightRaw.keyWeaknesses ?? [])],
-  } : null;
+  const { insight: rawInsight, loading, error, refetch } = useInsight(id, "no-cache");
+  const [selectInsight] = useMutation(SELECT_INSIGHT);
+
+  const insight = normalize(rawInsight);
+  const variants: Insight[] = (rawInsight?.variants ?? [])
+    .map(normalize)
+    .filter((v): v is Insight => v !== null);
+  const columns = insight ? [insight, ...variants] : [];
+
+  const modelNames = Array.from(new Set(columns.map((c) => c.modelName)));
+  const effectiveViewMode = modelNames.includes(viewMode) ? viewMode : "both";
+  const visibleColumns = columns.filter(
+    (c) => effectiveViewMode === "both" || c.modelName === effectiveViewMode
+  );
 
   const sections: ReportSection[] = insight
     ? [
-        ...(insight.opportunities ?? []).map((o: any) => ({
+        ...(insight.opportunities ?? []).map((o) => ({
           kind: "opportunity" as const,
           id: o.id,
           label: o.title,
         })),
-        ...(insight.nextSteps ?? []).map((s: any) => ({
+        ...(insight.nextSteps ?? []).map((s) => ({
           kind: "nextStep" as const,
           id: s.id,
           label: s.action,
@@ -74,6 +97,15 @@ export default function ResultsPage() {
 
   const handlePrint = () => {
     window.print();
+  };
+
+  const handleSetPrimary = (col: Insight) => async () => {
+    try {
+      await selectInsight({ variables: { insightId: col.id } });
+      await refetch();
+    } catch {
+      /* ignore */
+    }
   };
 
   const handleAskOpportunity = (opp: { id: string; title: string }) => {
@@ -93,21 +125,17 @@ export default function ResultsPage() {
 
   return (
     <div className={`min-h-screen bg-stone-950 flex flex-col selection:bg-amber-500 selection:text-white transition-[padding] duration-300 ${chatExpanded ? "lg:pr-[calc(33.333%+1.5rem)]" : ""}`}>
-      
       <PageBackground variant="results" />
 
       <div className="print:hidden">
         <NavHeader />
       </div>
 
-      {/* Main Content */}
       <main className="flex-1 py-10 px-4 relative z-10">
-        <div className="w-full max-w-3xl mx-auto space-y-8">
-
+        <div className="w-full max-w-7xl mx-auto space-y-6">
           {/* Header Banner */}
           <div className="text-center space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/40 text-amber-300 text-xs font-bold uppercase tracking-wider border border-amber-800/40">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-amber-950/40 text-amber-300 text-xs font-bold uppercase tracking-wider border border-amber-800/40">
               <span>Executive Advisory Report</span>
             </div>
             <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
@@ -126,7 +154,7 @@ export default function ResultsPage() {
           {/* Loading Skeleton */}
           {loading && (
             <div className="space-y-6">
-              <div className="flex flex-col items-center justify-center p-8 glass-card rounded-3xl border border-stone-800/80">
+              <div className="flex flex-col items-center justify-center p-8 rounded-xl border border-stone-800/80 bg-stone-900/60 shadow-sm">
                 <div className="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mb-3" />
                 <p className="text-sm font-semibold text-stone-300">Synthesizing corporate recommendations...</p>
               </div>
@@ -136,23 +164,21 @@ export default function ResultsPage() {
 
           {/* Error State */}
           {error && (
-            <div className="bg-rose-950/40 border border-rose-800/60 rounded-3xl p-8 text-center space-y-3">
+            <div className="bg-rose-950/40 border border-rose-800/60 rounded-xl p-8 text-center space-y-3">
               <AlertCircle className="w-10 h-10 text-rose-400 mx-auto" />
               <h3 className="text-lg font-bold text-rose-200">Unable to load report</h3>
               <p className="text-xs text-rose-300 max-w-sm mx-auto">{error.message}</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-                <button
-                  onClick={() => refetch()}
-                  className="px-5 py-2.5 text-xs font-semibold bg-amber-400 text-stone-950 rounded-xl hover:opacity-90 transition"
-                >
+                <Button size="sm" onClick={() => refetch()}>
                   Try Again
-                </button>
-                <button
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
                   onClick={() => router.push("/assessment")}
-                  className="px-5 py-2.5 text-xs font-semibold bg-rose-600 text-white rounded-xl hover:bg-rose-700 transition"
                 >
                   Restart Assessment
-                </button>
+                </Button>
               </div>
             </div>
           )}
@@ -160,145 +186,127 @@ export default function ResultsPage() {
           {/* Report Data */}
           {insight && (
             <motion.div
-              className="space-y-8"
+              className="space-y-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
             >
-              
-              {/* Score Card */}
-              {insight.innovationScore !== null && (
-                <ScoreCard score={insight.innovationScore} />
+              {/* Report visibility toggle */}
+              {columns.length > 1 && (
+                <div
+                  className="flex flex-wrap items-center gap-2 print:hidden"
+                  role="group"
+                  aria-label="Report visibility"
+                >
+                  <span className="text-xs text-stone-500 mr-1">View:</span>
+                  <button
+                    type="button"
+                    onClick={() => setViewMode("both")}
+                    aria-pressed={effectiveViewMode === "both"}
+                    className={buttonVariants({
+                      variant: effectiveViewMode === "both" ? "secondary" : "ghost",
+                      size: "sm",
+                    })}
+                  >
+                    Both
+                  </button>
+                  {modelNames.map((name) => (
+                    <button
+                      key={name}
+                      type="button"
+                      onClick={() => setViewMode(name)}
+                      aria-pressed={effectiveViewMode === name}
+                      className={buttonVariants({
+                        variant: effectiveViewMode === name ? "secondary" : "ghost",
+                        size: "sm",
+                      })}
+                    >
+                      {shortLabel(name)}
+                    </button>
+                  ))}
+                </div>
               )}
 
-              {/* Ranked Opportunities */}
-              <OpportunitiesList opportunities={insight.opportunities} onAsk={handleAskOpportunity} />
+              {/* Model comparison strip */}
+              {visibleColumns.length > 1 && (
+                <div className="flex items-center gap-2 text-xs font-semibold text-stone-400 uppercase tracking-wider">
+                  <span>Model comparison</span>
+                </div>
+              )}
 
-              {/* Actionable Next Steps */}
-              <NextStepsList steps={insight.nextSteps} onAsk={handleAskNextStep} />
-
-              {/* Identified Weaknesses */}
-              <WeaknessesList weaknesses={insight.keyWeaknesses} onAsk={handleAskWeakness} />
-
-              {/* Comparison to Previous Assessment */}
-              {insight.comparisonToPrevious && (
-                <div className="glass-card rounded-3xl border border-stone-800/80 p-6 space-y-4">
-                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                    {insight.scoreDelta !== null && insight.scoreDelta > 0 ? (
-                      <TrendingUp className="w-5 h-5 text-emerald-400" />
-                    ) : insight.scoreDelta !== null && insight.scoreDelta < 0 ? (
-                      <TrendingDown className="w-5 h-5 text-rose-400" />
-                    ) : (
-                      <Minus className="w-5 h-5 text-amber-400" />
-                    )}
-                    vs. Previous Assessment #{insight.comparisonToPrevious.assessmentNumber}
-                  </h2>
-
-                  <div className="flex items-center justify-center gap-4 p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
-                    <div className="text-center">
-                      <div className="text-xs text-stone-500 mb-1">Previous</div>
-                      <div className="text-xl font-bold text-stone-400">
-                        {insight.comparisonToPrevious.previousScore?.toFixed(1) ?? "—"}
+              {visibleColumns.length > 1 && (
+                <div className="grid grid-cols-2 gap-3">
+                  {visibleColumns.map((col) => (
+                    <div
+                      key={col.id}
+                      className={`rounded-xl border p-4 text-center ${
+                        col.isSelected
+                          ? "border-amber-500/60 bg-amber-950/30"
+                          : "border-stone-800 bg-stone-900/40"
+                      }`}
+                    >
+                      <div className="text-xs uppercase tracking-wider text-stone-500 font-semibold truncate">
+                        {modelLabel(col)}
                       </div>
-                      <div className="text-[10px] text-stone-600">
-                        {insight.comparisonToPrevious.previousDate}
+                      <div className="mt-1 text-3xl font-extrabold text-white">
+                        {col.innovationScore != null ? col.innovationScore.toFixed(1) : "—"}
                       </div>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-stone-600" />
-                    <div className="text-center">
-                      <div className="text-xs text-stone-500 mb-1">Current</div>
-                      <div className="text-xl font-bold text-white">
-                        {insight.innovationScore?.toFixed(1) ?? "—"}
-                      </div>
-                      {insight.scoreDelta !== null && (
-                        <div className={`text-xs font-bold ${
-                          insight.scoreDelta > 0 ? "text-emerald-400" : insight.scoreDelta < 0 ? "text-rose-400" : "text-amber-400"
-                        }`}>
-                          {insight.scoreDelta > 0 ? "+" : ""}{insight.scoreDelta.toFixed(1)}
+                      {col.scoreDelta != null && col.scoreDelta !== 0 && (
+                        <div className={`mt-1 text-xs font-bold ${col.scoreDelta > 0 ? "text-emerald-400" : "text-rose-400"}`}>
+                          {col.scoreDelta > 0 ? "+" : ""}{col.scoreDelta.toFixed(1)}
+                        </div>
+                      )}
+                      {col.isSelected && (
+                        <div className="mt-1 text-xs font-bold uppercase tracking-wider text-amber-400">
+                          Primary
                         </div>
                       )}
                     </div>
-                  </div>
-
-                  {insight.comparisonToPrevious.keyChanges && (
-                    <p className="text-sm text-stone-400 leading-relaxed">
-                      {insight.comparisonToPrevious.keyChanges}
-                    </p>
-                  )}
+                  ))}
                 </div>
               )}
 
-              {/* Progress Report */}
-              {insight.progress && (
-                <div className="glass-card rounded-3xl border border-stone-800/80 p-6 space-y-4">
-                  <h2 className="text-lg font-bold text-white">Progress Report</h2>
-
-                  {(insight.progress.improvements ?? []).length > 0 && (
-                    <div>
-                      <h3 className="text-sm font-semibold text-emerald-400 mb-2">Improvements</h3>
-                      <ul className="space-y-1">
-                        {insight.progress.improvements.map((item: string, i: number) => (
-                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
-                            <span className="text-emerald-500 mt-1">+</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {(insight.progress.persistentGaps ?? []).length > 0 && (
-                    <div>
-                      <h3 className="text-sm font-semibold text-amber-400 mb-2">Persistent Gaps</h3>
-                      <ul className="space-y-1">
-                        {insight.progress.persistentGaps.map((item: string, i: number) => (
-                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
-                            <span className="text-amber-500 mt-1">~</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {(insight.progress.achievedMilestones ?? []).length > 0 && (
-                    <div>
-                      <h3 className="text-sm font-semibold text-blue-400 mb-2">Achieved Milestones</h3>
-                      <ul className="space-y-1">
-                        {insight.progress.achievedMilestones.map((item: string, i: number) => (
-                          <li key={i} className="text-sm text-stone-300 flex items-start gap-2">
-                            <span className="text-blue-500 mt-1">&#10003;</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
+              {/* Report columns */}
+              <div
+                className={
+                  visibleColumns.length > 1
+                    ? "grid grid-cols-1 lg:grid-cols-2 gap-6 items-start"
+                    : "grid grid-cols-1 gap-6 max-w-3xl mx-auto"
+                }
+              >
+                {visibleColumns.map((col) => (
+                  <ReportColumn
+                    key={col.id}
+                    insight={col}
+                    modelLabel={modelLabel(col)}
+                    isPrimary={col.isSelected}
+                    onSetPrimary={col.isSelected ? null : handleSetPrimary(col)}
+                    onAskOpportunity={handleAskOpportunity}
+                    onAskNextStep={handleAskNextStep}
+                    onAskWeakness={handleAskWeakness}
+                  />
+                ))}
+              </div>
 
               {/* Bottom Actions */}
               <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-center print:hidden">
-                <button
+                <Button
                   onClick={() => router.push("/assessment")}
-                  className="w-full sm:w-auto px-6 py-3 text-sm font-semibold text-stone-950 bg-amber-400 rounded-2xl hover:bg-amber-300 transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto"
                 >
-                  <RefreshCw className="w-4 h-4" />
-                  <span>Run Another Assessment</span>
-                </button>
+                  Run Another Assessment
+                </Button>
 
-                <button
+                <Button
+                  variant="secondary"
                   onClick={handlePrint}
-                  className="w-full sm:w-auto px-6 py-3 text-sm font-semibold text-stone-300 bg-stone-900/80 border border-stone-800 rounded-2xl hover:bg-stone-800 transition flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto"
                 >
-                  <Printer className="w-4 h-4 text-stone-400" />
-                  <span>Print or Save PDF Report</span>
-                </button>
+                  Print or Save PDF Report
+                </Button>
               </div>
-
             </motion.div>
           )}
-
         </div>
       </main>
 
@@ -306,7 +314,7 @@ export default function ResultsPage() {
       {insight && !chatOpen && (
         <button
           onClick={() => setChatOpen(true)}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-2xl bg-amber-400 text-stone-950 text-sm font-bold shadow-lg shadow-amber-500/25 hover:bg-amber-300 transition print:hidden"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-400 text-stone-950 text-sm font-bold shadow-lg hover:bg-amber-300 transition print:hidden"
         >
           <MessageCircle className="w-4 h-4" />
           <span>Ask AI</span>
@@ -327,7 +335,6 @@ export default function ResultsPage() {
         onConsumeTag={() => setPendingTag(null)}
         sections={sections}
       />
-
     </div>
   );
 }

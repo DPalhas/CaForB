@@ -1,6 +1,7 @@
 import { AssessmentFormData } from "@/lib/types";
 import { Slider } from "@/components/ui/slider";
-import { Cpu, Users, DollarSign, Layers } from "lucide-react";
+import SectionBadge from "../SectionBadge";
+import SelectField from "../SelectField";
 
 interface Props {
   data: AssessmentFormData;
@@ -21,14 +22,13 @@ const REVENUE_RANGES = [
   { value: "over_50m", label: "€50M+" },
 ];
 
-export default function Step4_Capabilities({ data, onChange }: Props) {
+export default function CapabilitiesStep({ data, onChange }: Props) {
   return (
-    <div className="space-y-7">
+    <div className="space-y-6">
       <div>
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2 border border-amber-800/40">
-          <Cpu className="w-3.5 h-3.5" />
-          <span>Section 4 of 5</span>
-        </div>
+        <SectionBadge>
+          Section 4 of 5
+        </SectionBadge>
         <h2 className="text-2xl font-bold text-white">Internal Capabilities & Budget</h2>
         <p className="text-sm text-stone-400 mt-1">
           Assess available team bandwidth, digital infrastructure, and innovation budget allocation.
@@ -37,15 +37,16 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
 
       {/* Team size */}
       <div className="space-y-2">
-        <label className="block text-sm font-semibold text-stone-200">
+        <label htmlFor="teamSize" className="block text-sm font-semibold text-stone-200">
           Innovation Team Size / Resource Allocation <span className="text-amber-400">*</span>
         </label>
         <input
+          id="teamSize"
           type="text"
           value={data.teamSize}
           onChange={(e) => onChange("teamSize", e.target.value)}
           placeholder="e.g. 4 dedicated R&D engineers, or 2 part-time innovation leads"
-          className="w-full border border-stone-800 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent shadow-sm"
+          className="w-full border border-stone-800 rounded-lg px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
         />
       </div>
 
@@ -62,19 +63,18 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
                 key={value}
                 type="button"
                 onClick={() => onChange("digitalMaturity", value)}
-                className={`border rounded-2xl p-4 text-left transition-all relative ${
+                className={`border rounded-xl p-4 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 relative ${
                   isSelected
-                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30 shadow-sm"
+                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30"
                     : "border-stone-800 hover:border-stone-700 bg-stone-900/40"
                 }`}
               >
-                <div className="flex items-center justify-between mb-1">
+                <div className="mb-1">
                   <span className={`text-xs font-bold ${isSelected ? "text-amber-300" : "text-stone-200"}`}>
                     {label}
                   </span>
-                  <Cpu className={`w-3.5 h-3.5 ${isSelected ? "text-amber-400" : "text-stone-500"}`} />
                 </div>
-                <div className="text-[11px] text-stone-400">{description}</div>
+                <div className="text-xs text-stone-400">{description}</div>
               </button>
             );
           })}
@@ -94,9 +94,9 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
                 key={value}
                 type="button"
                 onClick={() => onChange("revenueRange", value)}
-                className={`border rounded-xl p-3 text-center transition-all ${
+                className={`border rounded-lg p-3 text-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 ${
                   isSelected
-                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30 font-bold text-amber-300 shadow-sm"
+                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30 font-bold text-amber-300"
                     : "border-stone-800 hover:border-stone-700 bg-stone-900/40 text-stone-200 font-medium"
                 }`}
               >
@@ -108,7 +108,7 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
       </div>
 
       {/* Budget percentage slider */}
-      <div className="space-y-3 bg-stone-900/40 p-5 rounded-2xl border border-stone-800">
+      <div className="space-y-3 bg-stone-900/40 p-5 rounded-xl border border-stone-800">
         <div className="flex items-center justify-between">
           <div>
             <label className="block text-sm font-semibold text-stone-200">
@@ -116,7 +116,7 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
             </label>
             <p className="text-xs text-stone-400">Slide to indicate percentage of turnover dedicated to innovation</p>
           </div>
-          <span className="text-lg font-bold text-amber-300 bg-amber-950/40 px-3 py-1 rounded-xl font-mono border border-amber-800/40">
+          <span className="text-lg font-bold text-amber-300 bg-amber-950/40 px-3 py-1 rounded-lg font-mono border border-amber-800/40">
             {data.budgetPercentage ?? 0}%
           </span>
         </div>
@@ -132,7 +132,7 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
           step={1}
           className="py-2 cursor-pointer"
         />
-        <div className="flex justify-between text-[11px] text-stone-500 font-mono">
+        <div className="flex justify-between text-xs text-stone-500 font-mono">
           <span>0% (Minimal)</span>
           <span>15% (Industry standard)</span>
           <span>30%+ (Aggressive)</span>
@@ -141,25 +141,20 @@ export default function Step4_Capabilities({ data, onChange }: Props) {
 
       {/* Decision Making Structure */}
       <div className="space-y-2">
-        <label className="block text-sm font-semibold text-stone-200">
+        <label htmlFor="decisionMaking" className="block text-sm font-semibold text-stone-200">
           Governance & Decision-Making Speed <span className="text-amber-400">*</span>
         </label>
-        <div className="relative">
-          <select
-            value={data.decisionMaking}
-            onChange={(e) => onChange("decisionMaking", e.target.value)}
-            className="w-full border border-stone-800 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-stone-900/60 shadow-sm appearance-none cursor-pointer"
-          >
-            <option value="">Select approval structure...</option>
-            <option value="owner_alone">Founder / Managing Director alone (Fastest)</option>
-            <option value="small_leadership_team">Small executive committee (1-2 weeks)</option>
-            <option value="formal_committee">Formal Board / Governance Committee (Stage-gate approval)</option>
-            <option value="varies_by_project">Varies by project budget threshold</option>
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone-500">
-            <Layers className="w-4 h-4" />
-          </div>
-        </div>
+        <SelectField
+          id="decisionMaking"
+          value={data.decisionMaking}
+          onChange={(e) => onChange("decisionMaking", e.target.value)}
+        >
+          <option value="">Select approval structure...</option>
+          <option value="owner_alone">Founder / Managing Director alone (Fastest)</option>
+          <option value="small_leadership_team">Small executive committee (1-2 weeks)</option>
+          <option value="formal_committee">Formal Board / Governance Committee (Stage-gate approval)</option>
+          <option value="varies_by_project">Varies by project budget threshold</option>
+        </SelectField>
       </div>
     </div>
   );

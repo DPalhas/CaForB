@@ -1,4 +1,5 @@
 import ollama
+import os
 import time
 import json
 import re
@@ -19,6 +20,14 @@ REVENUE_RANGE_MIDPOINTS = {
 }
 
 DEFAULT_MODEL = "gemma4:12B"
+
+# Models to generate on every assessment (dual-output evaluation).
+# Override with env vars: CAFORB_MODELS="gemma4:12B,caforb-v1"
+ACTIVE_MODELS = [m.strip() for m in os.environ.get(
+    "CAFORB_MODELS", "gemma4:12B,caforb-v1"
+).split(",") if m.strip()]
+
+DEFAULT_SELECTED_MODEL = os.environ.get("CAFORB_DEFAULT_MODEL", "caforb-v1")
 
 CHAT_MODEL = "qwen2.5:7b-instruct"
 
@@ -79,6 +88,7 @@ _EXECUTION_CRITICAL = """CRITICAL REQUIREMENTS FOR EXECUTION PLANS:
 - "first_actions" must be concrete and immediately actionable — name specific tools, roles, or deliverables. Avoid vague phrases like "establish a process" or "conduct analysis" without specifying what the process/analysis actually involves.
 - "success_metric" must include a measurable BASELINE AND TARGET with numbers (e.g. "increase customer retention from 92% to 96%"), never a bare "improve by 15%" without a baseline.
 - "milestones" must include rough time markers (e.g. "Month 1", "Quarter 2") so the plan reads as a real roadmap, not a wishlist.
+- "milestones" must be DISTINCT from "first_actions" — milestones are timed completion markers (e.g. "Month 2: dashboard deployed"), never a restatement of the first actions.
 - Every "next_steps" item must specify who is responsible and a realistic timeframe — not just what should happen.
 - "resources_needed" must state an explicit euro amount for EVERY resource — either a one-off figure or an annual figure (e.g. "€5,000 one-off", "€40,000/year for 1 part-time project manager"). These figures must be a plausible fraction of the estimated innovation budget above. NEVER write vague costs like "low-cost tool", "some consulting", or "10 hours of staff time" without a concrete € figure.
 - Every opportunity MUST include ALL execution_plan fields: first_actions, resources_needed, success_metric, and milestones. Do not omit any field."""
@@ -150,9 +160,10 @@ def build_first_system_prompt(answers: dict) -> str:
 
 {_FEWSHOT_EXAMPLE}
 
-Provide 3 prioritized opportunities, 3 next steps, and 3 key_weaknesses.
+Provide 2 prioritized opportunities, 2-3 next steps, and 2-3 key_weaknesses.
 Write a 2-3 sentence rationale for each opportunity that connects it to the company's actual sector, strategy, and constraints — not a generic statement.
 Each next step must be 2-3 sentences: explain the strategic rationale, the concrete action, a specific named owner, and a precise timeframe.
+With only 2 opportunities, make each execution_plan COMPREHENSIVE: 3-4 concrete first_actions, 2-3 euro-anchored resources_needed, a success_metric with a baseline and target, and 2-3 timed milestones.
 
 IMPORTANT: Respond with a single valid JSON object only. No markdown, no explanation, no extra text.
 Output COMPACT JSON — minimize line breaks and indentation to maximize content density.
@@ -394,6 +405,8 @@ def _structure_valid(parsed: dict) -> tuple[bool, str]:
                 return False, f"opportunity {i} execution_plan missing {field}"
         if not ep.get("success_metric"):
             return False, f"opportunity {i} execution_plan missing success_metric"
+        if ep.get("milestones") and ep.get("milestones") == ep.get("first_actions"):
+            return False, f"opportunity {i} milestones duplicate first_actions"
     return True, ""
 
 

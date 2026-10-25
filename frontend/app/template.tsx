@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { easeOut } from "@/lib/easing";
+import { easeOut } from "@/lib/motion";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

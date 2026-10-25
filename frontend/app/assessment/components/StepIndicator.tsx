@@ -24,7 +24,14 @@ export default function StepIndicator({
       </div>
 
       {/* Progress Bar Container */}
-      <div className="w-full bg-stone-900/60 rounded-full h-2 mb-6 overflow-hidden p-0.5 border border-stone-800/80 shadow-inner">
+      <div
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(progressPercent)}
+        aria-label="Assessment progress"
+        className="w-full bg-stone-900/60 rounded-full h-2 mb-6 overflow-hidden p-0.5 border border-stone-800/80 shadow-inner"
+      >
         <div
           className="bg-amber-400 h-full rounded-full transition-all duration-500 ease-out shadow-sm"
           style={{ width: `${progressPercent}%` }}
@@ -43,9 +50,9 @@ export default function StepIndicator({
               <div
                 className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 mb-2 relative ${
                   isCompleted
-                    ? "bg-amber-600 text-white shadow-md shadow-amber-600/20"
+                    ? "bg-amber-600 text-white"
                     : isActive
-                    ? "bg-stone-900 text-amber-400 ring-4 ring-amber-500/20 border border-amber-500 shadow-lg"
+                    ? "bg-stone-900 text-amber-400 ring-2 ring-amber-500/20 border border-amber-500"
                     : "bg-stone-900/40 text-stone-500 border border-stone-800"
                 }`}
               >
@@ -77,4 +84,4 @@ export default function StepIndicator({
       </div>
     </div>
   );
-}
+}

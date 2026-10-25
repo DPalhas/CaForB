@@ -32,8 +32,8 @@ export interface AssessmentFormData {
   // Section 3 — Strategic Goals
   strategicGoals: string;
   timeHorizon: string;
-  riskAppetite: RiskAppetite;               // NEW
-  strategicPriority: StrategicPriority;     // NEW
+  riskAppetite: RiskAppetite;
+  strategicPriority: StrategicPriority;
 
   // Section 4 — Internal Capabilities
   teamSize: string;
@@ -84,3 +84,136 @@ export const EMPTY_FORM: AssessmentFormData = {
   companyDescription: "",
   customerFeedback: "",
 };
+
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+}
+
+export interface CompanySummary {
+  id: number;
+  name: string;
+  sector: string;
+  size: string;
+  latestScore: number | null;
+  latestInsightId: number | null;
+  assessmentCount: number;
+  createdAt: string;
+}
+
+export interface ExecutionPlan {
+  firstActions: string[];
+  resourcesNeeded: string[];
+  successMetric: string;
+  milestones: string[];
+}
+
+export interface Opportunity {
+  id: string;
+  type: string;
+  title: string;
+  rationale: string;
+  executionPlan?: ExecutionPlan | null;
+  impact: string;
+  difficulty: string;
+  timeframe: string;
+  carryForwardFrom?: string | null;
+  carryForwardStatus?: string | null;
+}
+
+export interface NextStep {
+  id: string;
+  action: string;
+  owner: string;
+  timeframe: string;
+}
+
+export interface ProgressReport {
+  improvements: string[];
+  persistentGaps: string[];
+  achievedMilestones: string[];
+}
+
+export interface ComparisonToPrevious {
+  previousScore: number | null;
+  previousDate: string | null;
+  assessmentNumber: number | null;
+  keyChanges: string | null;
+}
+
+export interface Insight {
+  id: number;
+  aiOutput: string;
+  innovationScore: number | null;
+  scoreDelta: number | null;
+  opportunities: Opportunity[];
+  nextSteps: NextStep[];
+  keyWeaknesses: string[];
+  progress?: ProgressReport | null;
+  comparisonToPrevious?: ComparisonToPrevious | null;
+  previousInsightId?: number | null;
+  assessmentNumber: number;
+  companyName: string;
+  sector: string;
+  size: string;
+  previousAnswers: string;
+  modelName: string;
+  responseId?: number | null;
+  isSelected: boolean;
+  variants?: Insight[];
+}
+
+export interface AssessmentTimeline {
+  id: number;
+  assessmentNumber: number;
+  periodLabel: string;
+  innovationScore: number | null;
+  scoreDelta: number | null;
+  generatedAt: string;
+}
+
+export interface CompanyDetail {
+  id: number;
+  name: string;
+  sector: string;
+  size: string;
+  latestScore: number | null;
+  scoreTrend: string;
+  delta: number;
+  assessmentCount: number;
+  createdAt: string;
+  assessments: AssessmentTimeline[];
+}
+
+export interface ChatMessage {
+  id: number;
+  role: string;
+  content: string;
+  taggedOpportunityId?: string | null;
+  taggedNextStepId?: string | null;
+  taggedWeakness?: string | null;
+  createdAt: string;
+}
+
+export interface ChatSession {
+  id: number;
+  messages: ChatMessage[];
+  createdAt: string;
+}
+
+export interface MyCompaniesQueryResult {
+  myCompanies: CompanySummary[];
+}
+
+export interface GetInsightQueryResult {
+  getInsight: Insight | null;
+}
+
+export interface CompanyDetailQueryResult {
+  company: CompanyDetail | null;
+}
+
+export interface ChatSessionQueryResult {
+  chatSession: ChatSession | null;
+}

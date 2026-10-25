@@ -3,45 +3,14 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion"
-import { easeOut } from "@/lib/easing";
+import { easeOut } from "@/lib/motion";
+import { scoreTier } from "@/lib/score";
+import type { CompanySummary } from "@/lib/types";
+import { buttonVariants } from "@/components/ui/button";
 import {
-  Plus,
   Building2,
   ChevronRight,
-  BarChart3,
 } from "lucide-react";
-
-interface CompanyRow {
-  id: number;
-  name: string;
-  sector: string;
-  size: string;
-  latestScore: number | null;
-  latestInsightId: number | null;
-  assessmentCount: number;
-  createdAt: string;
-}
-
-function scoreColor(score: number | null): string {
-  if (score === null) return "text-stone-400";
-  if (score >= 7) return "text-emerald-400";
-  if (score >= 4) return "text-amber-400";
-  return "text-rose-400";
-}
-
-function scoreBg(score: number | null): string {
-  if (score === null) return "bg-stone-900/60 border-stone-800";
-  if (score >= 7) return "bg-emerald-950/40 border-emerald-800/60";
-  if (score >= 4) return "bg-amber-950/40 border-amber-800/60";
-  return "bg-rose-950/40 border-rose-800/60";
-}
-
-function scoreLabel(score: number | null): string {
-  if (score === null) return "—";
-  if (score >= 7) return "Advanced";
-  if (score >= 4) return "Developing";
-  return "Early Stage";
-}
 
 const containerReveal = {
   hidden: { opacity: 0 },
@@ -53,11 +22,11 @@ const itemReveal = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: easeOut } },
 };
 
-interface DashboardHomeProps {
-  companies: CompanyRow[];
+interface HomeOverviewProps {
+  companies: CompanySummary[];
 }
 
-export default function DashboardHome({ companies }: DashboardHomeProps) {
+export default function HomeOverview({ companies }: HomeOverviewProps) {
   const router = useRouter();
 
   const totalAssessments = companies.reduce((sum, c) => sum + c.assessmentCount, 0);
@@ -83,32 +52,33 @@ export default function DashboardHome({ companies }: DashboardHomeProps) {
           </div>
           <Link
             href="/assessment"
-            className="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-stone-950 bg-amber-400 rounded-xl hover:bg-amber-300 transition shadow-lg shadow-amber-500/20"
+            className={buttonVariants({ variant: "primary", size: "md" })}
           >
-            <Plus className="w-4 h-4" />
-            <span>New Assessment</span>
+            New Assessment
           </Link>
         </motion.div>
 
         <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8" variants={containerReveal}>
-          {[{ label: "Companies", value: companies.length },
-            { label: "Assessments", value: totalAssessments },
-            { label: "Avg Score", value: avgScore !== null ? avgScore.toFixed(1) : "—" },
-            ...(best ? [{ label: "Highest", value: best.name, sub: `${best.latestScore?.toFixed(1)}`, subColor: scoreColor(best.latestScore) }] : []),
-          ].map((m, i) => (
+          {(
+            [
+              { label: "Companies", value: companies.length },
+              { label: "Assessments", value: totalAssessments },
+              { label: "Avg Score", value: avgScore !== null ? avgScore.toFixed(1) : "—" },
+              ...(best ? [{ label: "Highest", value: best.name, sub: `${best.latestScore?.toFixed(1)}`, subColor: scoreTier(best.latestScore).color }] : []),
+            ] as { label: string; value: string | number; sub?: string; subColor?: string }[]
+          ).map((m, i) => (
             <motion.div key={i} className="p-4 rounded-xl bg-stone-900/60 border border-stone-800/80" variants={itemReveal}>
               <p className="text-xs text-stone-500 mb-1">{m.label}</p>
               <p className="text-xl font-bold text-white">{m.value}</p>
-              {(m as any).sub && (
-                <p className={`text-lg font-bold ${(m as any).subColor}`}>{(m as any).sub}</p>
+              {m.sub && (
+                <p className={`text-lg font-bold ${m.subColor}`}>{m.sub}</p>
               )}
             </motion.div>
           ))}
         </motion.div>
 
         <div>
-          <motion.h2 className="text-lg font-semibold text-white mb-3 flex items-center gap-2" variants={itemReveal}>
-            <Building2 className="w-5 h-5 text-amber-400" />
+          <motion.h2 className="text-xl font-semibold text-white mb-3" variants={itemReveal}>
             Your Companies
           </motion.h2>
           <motion.div className="flex flex-col gap-3" variants={containerReveal}>
@@ -116,7 +86,7 @@ export default function DashboardHome({ companies }: DashboardHomeProps) {
               <motion.button
                 key={c.id}
                 onClick={() => router.push(`/company/${c.id}`)}
-                className="w-full text-left p-4 rounded-xl bg-stone-900/60 border border-stone-800/80 hover:border-amber-500/50 transition group"
+                className="w-full text-left p-4 rounded-xl bg-stone-900/60 border border-stone-800/80 hover:border-amber-500/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 group"
                 variants={itemReveal}
               >
                 <div className="flex items-center gap-3">
@@ -131,17 +101,17 @@ export default function DashboardHome({ companies }: DashboardHomeProps) {
                       {c.sector} &middot; {c.size} &middot; {c.assessmentCount} assessment{c.assessmentCount !== 1 ? "s" : ""}
                     </div>
                   </div>
-                  <div className={`flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-semibold ${scoreBg(c.latestScore)} ${scoreColor(c.latestScore)}`}>
+                  <div className={`flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-semibold ${scoreTier(c.latestScore).bg} ${scoreTier(c.latestScore).color}`}>
                     {c.latestScore !== null ? (
                       <>
-                        <span>{scoreLabel(c.latestScore)}</span>
+                        <span>{scoreTier(c.latestScore).label}</span>
                         <span className="font-mono">{c.latestScore.toFixed(1)}</span>
                       </>
                     ) : (
                       <span>Pending</span>
                     )}
                   </div>
-                  <ChevronRight className="w-4 h-4 text-stone-600 group-hover:text-amber-400 transition flex-shrink-0" />
+                  <ChevronRight className="w-4 h-4 text-stone-500 group-hover:text-amber-400 transition flex-shrink-0" />
                 </div>
               </motion.button>
             ))}
@@ -150,10 +120,9 @@ export default function DashboardHome({ companies }: DashboardHomeProps) {
           <motion.div className="mt-6 text-center" variants={itemReveal}>
             <Link
               href="/dashboard"
-              className="inline-flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300 transition"
+              className="text-sm text-amber-400 hover:text-amber-300 transition"
             >
-              <BarChart3 className="w-4 h-4" />
-              <span>View all companies &amp; assessments</span>
+              View all companies &amp; assessments
             </Link>
           </motion.div>
         </div>

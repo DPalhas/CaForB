@@ -10,12 +10,7 @@ import {
 } from "react";
 import { useMutation, useLazyQuery } from "@apollo/client/react";
 import { LOGIN, REGISTER, LOGOUT, ME } from "@/lib/graphql/auth";
-
-interface User {
-  id: number;
-  username: string;
-  email: string;
-}
+import type { User } from "@/lib/types";
 
 interface AuthContextValue {
   user: User | null;
@@ -31,22 +26,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const [fetchMe] = useLazyQuery(ME);
-  const [loginMutation] = useMutation(LOGIN);
-  const [registerMutation] = useMutation(REGISTER);
-  const [logoutMutation] = useMutation(LOGOUT);
+  const [fetchMe] = useLazyQuery<{ me: User | null }>(ME);
+  const [loginMutation] = useMutation<
+    { login: User },
+    { username: string; password: string }
+  >(LOGIN);
+  const [registerMutation] = useMutation<
+    { register: User },
+    { username: string; email: string; password: string }
+  >(REGISTER);
+  const [logoutMutation] = useMutation<{ logout: boolean }>(LOGOUT);
 
   useEffect(() => {
     fetchMe()
       .then(({ data }) => {
-        const result = data as { me?: User } | null;
-        if (result?.me) {
-          setUser(result.me);
+        if (data?.me) {
+          setUser(data.me);
         }
       })
       .catch(() => {})
       .finally(() => setLoading(false));
-  }, []);
+  }, [fetchMe]);
 
   useEffect(() => {
     const handleSessionExpired = () => {
@@ -63,7 +63,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const login = useCallback(
     async (username: string, password: string) => {
       const { data } = await loginMutation({ variables: { username, password } });
-      setUser((data as any).login);
+      setUser(data?.login ?? null);
     },
     [loginMutation]
   );
@@ -73,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { data } = await registerMutation({
         variables: { username, email, password },
       });
-      setUser((data as any).register);
+      setUser(data?.register ?? null);
     },
     [registerMutation]
   );

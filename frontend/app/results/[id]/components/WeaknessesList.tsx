@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AlertTriangle, MessageCircle } from "lucide-react";
+import { easeOut } from "@/lib/motion";
+import { MessageCircle } from "lucide-react";
 
 interface WeaknessesListProps {
   weaknesses: string[];
@@ -15,7 +16,7 @@ const containerReveal = {
 
 const itemReveal = {
   hidden: { opacity: 0, x: -12 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] as const } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: easeOut } },
 };
 
 export default function WeaknessesList({ weaknesses, onAsk }: WeaknessesListProps) {
@@ -23,29 +24,24 @@ export default function WeaknessesList({ weaknesses, onAsk }: WeaknessesListProp
 
   return (
     <motion.div
-      className="bg-amber-950/30 rounded-3xl border border-amber-800/40 p-6 sm:p-7"
+      className="bg-amber-950/30 rounded-xl border border-amber-800/40 p-6"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
+      transition={{ duration: 0.5, ease: easeOut }}
     >
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-600/40 flex items-center justify-center text-amber-400">
-          <AlertTriangle className="w-5 h-5" />
-        </div>
-        <div>
-          <h2 className="text-lg font-bold text-amber-200">
-            Key Strategic Vulnerabilities & Barriers
-          </h2>
-          <p className="text-xs text-amber-400/70">Risk areas identified from your operational & process inputs</p>
-        </div>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold text-amber-200">
+          Key Strategic Vulnerabilities &amp; Barriers
+        </h2>
+        <p className="text-xs text-amber-400/70">Risk areas identified from your operational &amp; process inputs</p>
       </div>
 
-      <motion.ul className="space-y-2.5" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerReveal}>
+      <motion.ul className="space-y-2" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerReveal}>
         {weaknesses.map((weakness, index) => (
           <motion.li
             key={index}
-            className="group flex items-start gap-3 bg-stone-950/60 p-3.5 rounded-2xl border border-amber-800/40 shadow-2xs"
+            className="group flex items-start gap-3 bg-stone-950/60 p-4 rounded-xl border border-amber-800/40"
             variants={itemReveal}
           >
             <span className="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0" />

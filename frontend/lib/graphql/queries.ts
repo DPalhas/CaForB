@@ -1,55 +1,68 @@
 import { gql } from "@apollo/client";
 
+const INSIGHT_FRAGMENT = gql`
+  fragment InsightFields on InsightType {
+    id
+    innovationScore
+    scoreDelta
+    assessmentNumber
+    previousInsightId
+    companyName
+    sector
+    size
+    previousAnswers
+    modelName
+    responseId
+    isSelected
+    opportunities {
+      id
+      type
+      title
+      rationale
+      executionPlan {
+        firstActions
+        resourcesNeeded
+        successMetric
+        milestones
+      }
+      impact
+      difficulty
+      timeframe
+      carryForwardFrom
+      carryForwardStatus
+    }
+    nextSteps {
+      id
+      action
+      owner
+      timeframe
+    }
+    keyWeaknesses
+    progress {
+      improvements
+      persistentGaps
+      achievedMilestones
+    }
+    comparisonToPrevious {
+      previousScore
+      previousDate
+      assessmentNumber
+      keyChanges
+    }
+    aiOutput
+  }
+`;
+
 export const GET_INSIGHT = gql`
   query GetInsight($id: Int!) {
     getInsight(id: $id) {
-      id
-      innovationScore
-      scoreDelta
-      assessmentNumber
-      previousInsightId
-      companyName
-      sector
-      size
-      previousAnswers
-      opportunities {
-        id
-        type
-        title
-        rationale
-        executionPlan {
-          firstActions
-          resourcesNeeded
-          successMetric
-          milestones
-        }
-        impact
-        difficulty
-        timeframe
-        carryForwardFrom
-        carryForwardStatus
+      ...InsightFields
+      variants {
+        ...InsightFields
       }
-      nextSteps {
-        id
-        action
-        owner
-        timeframe
-      }
-      keyWeaknesses
-      progress {
-        improvements
-        persistentGaps
-        achievedMilestones
-      }
-      comparisonToPrevious {
-        previousScore
-        previousDate
-        assessmentNumber
-        keyChanges
-      }
-      aiOutput
     }
   }
+  ${INSIGHT_FRAGMENT}
 `;
 
 export const MY_INSIGHTS = gql`

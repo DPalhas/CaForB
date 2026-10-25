@@ -1,21 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useMutation, useQuery } from "@apollo/client/react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useMutation } from "@apollo/client/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ASK_INSIGHT, CHAT_SESSION } from "@/lib/graphql/chat";
+import { ASK_INSIGHT } from "@/lib/graphql/chat";
+import { useChatSession } from "@/lib/hooks/useChatSession";
 import type { ChatTag, ReportSection } from "@/lib/types";
 import { MessageSquare, X, Send, Sparkles, Loader2, Maximize2, Minimize2 } from "lucide-react";
-
-interface ChatMessage {
-  id: number;
-  role: string;
-  content: string;
-  taggedOpportunityId?: string | null;
-  taggedNextStepId?: string | null;
-  createdAt: string;
-}
 
 interface ChatPanelProps {
   insightId: number;
@@ -40,32 +32,18 @@ export default function ChatPanel({
   onConsumeTag,
   sections,
 }: ChatPanelProps) {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [sessionId, setSessionId] = useState<number | null>(null);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [picker, setPicker] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const { data, refetch } = useQuery(CHAT_SESSION, {
-    variables: { insightId },
-    skip: !open,
-    fetchPolicy: "network-only",
-  });
+  const { session, refetch } = useChatSession(insightId, open);
 
   const [askInsight] = useMutation(ASK_INSIGHT);
 
-  useEffect(() => {
-    const session = (data as any)?.chatSession;
-    if (session) {
-      setSessionId(session.id);
-      setMessages(session.messages ?? []);
-    } else if (data && !session) {
-      setSessionId(null);
-      setMessages([]);
-    }
-  }, [data]);
+  const sessionId = session?.id ?? null;
+  const messages = useMemo(() => session?.messages ?? [], [session]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -112,7 +90,7 @@ export default function ChatPanel({
   if (!open) return null;
 
   return (
-    <div className={`fixed z-50 flex flex-col shadow-2xl shadow-black/50 overflow-hidden print:hidden ${expanded ? "top-0 right-0 h-full w-full lg:w-1/3 bg-stone-950 border-l border-stone-800" : "bottom-6 right-6 w-[min(24rem,calc(100vw-3rem))] glass-card rounded-3xl border border-stone-700/70"}`}>
+    <div className={`fixed z-50 flex flex-col shadow-lg overflow-hidden print:hidden ${expanded ? "top-0 right-0 h-full w-full lg:w-1/3 bg-stone-950 border-l border-stone-800" : "bottom-6 right-6 w-[min(24rem,calc(100vw-3rem))] bg-stone-900/60 rounded-xl border border-stone-700/70"}`}>
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-3 border-b border-stone-800/80 bg-stone-900/40">
         <div className="w-8 h-8 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
@@ -120,7 +98,7 @@ export default function ChatPanel({
         </div>
         <div className="flex-1">
           <h3 className="text-sm font-bold text-white">Ask about this report</h3>
-          <p className="text-[10px] text-stone-500">Answers grounded in your assessment</p>
+          <p className="text-xs text-stone-500">Answers grounded in your assessment</p>
         </div>
         <button
           onClick={onToggleExpanded}
@@ -141,6 +119,7 @@ export default function ChatPanel({
       {/* Messages */}
       <div
         ref={scrollRef}
+        aria-live="polite"
         className={`flex-1 ${expanded ? "max-h-none" : "max-h-[22rem]"} min-h-[12rem] overflow-y-auto px-4 py-4 space-y-3`}
       >
         {messages.length === 0 && !sending && (
@@ -155,7 +134,7 @@ export default function ChatPanel({
             className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
           >
             <div
-              className={`max-w-[85%] px-3.5 py-2.5 rounded-2xl text-sm leading-relaxed ${
+              className={`max-w-[85%] px-4 py-2 rounded-xl text-sm leading-relaxed ${
                 m.role === "user"
                   ? "bg-amber-400 text-stone-950 whitespace-pre-wrap"
                   : "bg-stone-800/80 text-stone-100 border border-stone-700/60"
@@ -176,7 +155,7 @@ export default function ChatPanel({
 
         {sending && (
           <div className="flex justify-start">
-            <div className="px-3.5 py-2.5 rounded-2xl bg-stone-800/80 border border-stone-700/60 text-stone-400 flex items-center gap-2 text-sm">
+            <div className="px-4 py-2 rounded-xl bg-stone-800/80 border border-stone-700/60 text-stone-400 flex items-center gap-2 text-sm">
               <Loader2 className="w-3.5 h-3.5 animate-spin" />
               Thinking…
             </div>
@@ -191,7 +170,7 @@ export default function ChatPanel({
       {/* Tag chip + input */}
       <div className="border-t border-stone-800/80 px-3 py-3 space-y-2">
         {pendingTag && (
-          <div className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-amber-950/50 border border-amber-800/50 text-xs text-amber-300">
+          <div className="flex items-center gap-2 px-2 py-1 rounded-lg bg-amber-950/50 border border-amber-800/50 text-xs text-amber-300">
             <MessageSquare className="w-3.5 h-3.5 shrink-0" />
             <span className="truncate">Asking about: {pendingTag.label}</span>
             <button
@@ -217,7 +196,7 @@ export default function ChatPanel({
                   onSetTag({ kind: s.kind, id: s.id, label: s.label });
                 }
               }}
-              className="flex-1 min-w-0 bg-stone-900/70 border border-stone-700/60 rounded-xl px-2.5 py-2 text-xs text-stone-300 focus:border-amber-500/60 focus:ring-0"
+              className="flex-1 min-w-0 bg-stone-900/70 border border-stone-700/60 rounded-xl px-2 py-2 text-xs text-stone-300 focus:border-amber-500/60 focus:ring-0"
             >
               <option value="">Ask about a specific section…</option>
               {(["opportunity", "nextStep", "weakness"] as const).map((kind) => {
@@ -257,12 +236,12 @@ export default function ChatPanel({
             }}
             rows={1}
             placeholder="Ask a question…"
-            className="flex-1 resize-none max-h-32 bg-stone-900/70 border border-stone-700/60 rounded-xl px-3 py-2 text-sm text-stone-100 placeholder:text-stone-600 focus:border-amber-500/60 focus:ring-0"
+            className="flex-1 resize-none max-h-32 bg-stone-900/70 border border-stone-700/60 rounded-xl px-3 py-2 text-sm text-stone-100 placeholder:text-stone-500 focus:border-amber-500/60 focus:ring-0"
           />
           <button
             onClick={handleSend}
             disabled={sending || !input.trim()}
-            className="p-2.5 rounded-xl bg-amber-400 text-stone-950 hover:bg-amber-300 disabled:opacity-40 disabled:cursor-not-allowed transition shrink-0"
+            className="p-2 rounded-xl bg-amber-400 text-stone-950 hover:bg-amber-300 disabled:opacity-40 disabled:cursor-not-allowed transition shrink-0"
             aria-label="Send"
           >
             <Send className="w-4 h-4" />

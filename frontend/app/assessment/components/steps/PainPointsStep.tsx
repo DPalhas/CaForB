@@ -1,5 +1,6 @@
 import { AssessmentFormData } from "@/lib/types";
-import { AlertTriangle, Check, ShieldAlert, Zap } from "lucide-react";
+import { Check } from "lucide-react";
+import SectionBadge from "../SectionBadge";
 
 interface Props {
   data: AssessmentFormData;
@@ -21,7 +22,7 @@ const COMPETITIVE_LEVELS = [
   { value: "high", label: "High Urgency", description: "Competitors are innovating rapidly & disrupting market" },
 ];
 
-export default function Step5_PainPoints({ data, onChange }: Props) {
+export default function PainPointsStep({ data, onChange }: Props) {
   const toggleBarrier = (value: string) => {
     const current = data.mainBarrier;
     const updated = current.includes(value)
@@ -31,12 +32,11 @@ export default function Step5_PainPoints({ data, onChange }: Props) {
   };
 
   return (
-    <div className="space-y-7">
+    <div className="space-y-6">
       <div>
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2 border border-amber-800/40">
-          <AlertTriangle className="w-3.5 h-3.5" />
-          <span>Section 5 of 5</span>
-        </div>
+        <SectionBadge>
+          Section 5 of 5
+        </SectionBadge>
         <h2 className="text-2xl font-bold text-white">Barriers & Market Context</h2>
         <p className="text-sm text-stone-400 mt-1">
           Identifying your specific friction points ensures the AI designs realistic, high-leverage solutions.
@@ -57,9 +57,9 @@ export default function Step5_PainPoints({ data, onChange }: Props) {
                 key={value}
                 type="button"
                 onClick={() => toggleBarrier(value)}
-                className={`border rounded-2xl px-4 py-3.5 text-xs text-left font-semibold transition-all flex items-center gap-3 ${
+                className={`border rounded-xl px-4 py-3 text-xs text-left font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 flex items-center gap-3 ${
                   isSelected
-                    ? "border-amber-500 bg-amber-950/40 text-amber-300 ring-2 ring-amber-500/30 shadow-sm"
+                    ? "border-amber-500 bg-amber-950/40 text-amber-300 ring-2 ring-amber-500/30"
                     : "border-stone-800 text-stone-300 hover:border-stone-700 bg-stone-900/40"
                 }`}
               >
@@ -88,19 +88,18 @@ export default function Step5_PainPoints({ data, onChange }: Props) {
                 key={value}
                 type="button"
                 onClick={() => onChange("competitivePressure", value)}
-                className={`border rounded-2xl p-3.5 text-left transition-all ${
+                className={`border rounded-xl p-4 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 ${
                   isSelected
-                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30 shadow-sm"
+                    ? "border-amber-500 bg-amber-950/40 ring-2 ring-amber-500/30"
                     : "border-stone-800 hover:border-stone-700 bg-stone-900/40"
                 }`}
               >
-                <div className="flex items-center justify-between mb-1">
+                <div className="mb-1">
                   <span className={`text-xs font-bold ${isSelected ? "text-amber-300" : "text-stone-200"}`}>
                     {label}
                   </span>
-                  <Zap className={`w-3.5 h-3.5 ${isSelected ? "text-amber-400" : "text-stone-500"}`} />
                 </div>
-                <div className="text-[11px] text-stone-400 leading-tight">{description}</div>
+                <div className="text-xs text-stone-400 leading-tight">{description}</div>
               </button>
             );
           })}
@@ -109,15 +108,16 @@ export default function Step5_PainPoints({ data, onChange }: Props) {
 
       {/* Additional context */}
       <div className="space-y-2">
-        <label className="block text-sm font-semibold text-stone-200">
+        <label htmlFor="additionalContext" className="block text-sm font-semibold text-stone-200">
           Additional Strategic Context or Constraints
         </label>
         <textarea
+          id="additionalContext"
           value={data.additionalContext}
           onChange={(e) => onChange("additionalContext", e.target.value)}
           rows={3}
           placeholder="e.g. Preparing for series B fundraising in 6 months, or restructuring management team..."
-          className="w-full border border-stone-800 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none shadow-sm"
+          className="w-full border border-stone-800 rounded-lg px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
         />
       </div>
     </div>

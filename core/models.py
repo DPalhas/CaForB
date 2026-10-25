@@ -36,7 +36,7 @@ class QuestionnaireResponse(models.Model):
 
 
 class InnovationInsight(models.Model):
-    response = models.OneToOneField(QuestionnaireResponse, on_delete=models.CASCADE, related_name="insight")
+    response = models.ForeignKey(QuestionnaireResponse, on_delete=models.CASCADE, related_name="insights")
     previous_insight = models.ForeignKey(
         "self", null=True, blank=True, on_delete=models.SET_NULL,
         related_name="subsequent_insights"
@@ -46,6 +46,7 @@ class InnovationInsight(models.Model):
     innovation_score = models.FloatField(null=True, blank=True)
     score_delta = models.FloatField(null=True, blank=True)
     model_name = models.CharField(max_length=100, blank=True, default="")
+    is_selected = models.BooleanField(default=False)
     context_bundle = models.JSONField(default=dict)
     generated_at = models.DateTimeField(auto_now_add=True)
 

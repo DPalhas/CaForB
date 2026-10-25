@@ -2,6 +2,14 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Design tokens — see DESIGN-CONVENTIONS.md for the full scale.
+   Spacing uses Tailwind's built-in 4pt scale; colors live in the :root
+   custom properties below. These radius tokens are semantic aliases. */
+@theme {
+  --radius-control: 0.5rem;
+  --radius-card: 0.75rem;
+}
+
 @custom-variant dark (&:is(.dark *));
 @custom-variant horizontal (&[data-orientation="horizontal"]);
 @custom-variant vertical (&[data-orientation="vertical"]);
@@ -43,6 +51,20 @@
   --radius: 1rem;
 }
 
+/* Semantic color tokens — exact literal values already in use elsewhere.
+   Introduced during the 2026 refactor; no color value was changed. */
+:root {
+  --ui-stone-50: #fafaf9;
+  --ui-stone-200: #e7e5e4;
+  --ui-stone-300: #d6d3d1;
+  --ui-stone-500: #78716c;
+  --ui-amber-300: #fcd34d;
+  --ui-amber-400: #fbbf24;
+  --ui-amber-500: #f59e0b;
+  --ui-amber-800: #92400e;
+  --ui-glow-rgb: 251 146 60; /* orange-400 (#fb923c) — focus/glow accent */
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -52,16 +74,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fafaf9;
+  color: var(--ui-stone-50);
   letter-spacing: -0.02em;
 }
 
 p, label, li {
-  color: #d6d3d1;
+  color: var(--ui-stone-300);
 }
 
 input, textarea, select {
-  color: #fafaf9;
+  color: var(--ui-stone-50);
   background-color: oklch(0.19 0.01 60 / 80%);
   border: 1px solid oklch(0.24 0.01 60 / 60%);
   transition: all 0.2s ease-in-out;
@@ -69,12 +91,12 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
   border-color: oklch(0.52 0.12 40);
-  box-shadow: 0 0 10px rgba(251, 146, 60, 0.15);
+  box-shadow: 0 0 0 2px rgb(var(--ui-glow-rgb) / 0.3);
   outline: none;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #78716c;
+  color: var(--ui-stone-500);
 }
 
 .step-fade {
@@ -90,49 +112,6 @@ input::placeholder, textarea::placeholder {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(251, 146, 60, 0.2), 0 0 30px rgba(251, 146, 60, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(251, 146, 60, 0.4), 0 0 50px rgba(251, 146, 60, 0.2);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulseGlow 3s infinite ease-in-out;
-}
-
-.glass-card {
-  background: rgba(28, 25, 23, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3), 0 4px 12px -2px rgba(0, 0, 0, 0.2);
-}
-
-.glass-card-hover {
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 35px -5px rgba(251, 146, 60, 0.12), 0 6px 16px -2px rgba(0, 0, 0, 0.3);
-  border-color: rgba(251, 146, 60, 0.4);
-}
-
-.gradient-text {
-  color: #f59e0b;
-}
-
-.gradient-bg-subtle {
-  background: rgba(251, 146, 60, 0.12);
-}
-
-.badge-glow {
-  box-shadow: 0 0 12px rgba(251, 146, 60, 0.25);
 }
 
 * {
@@ -158,7 +137,7 @@ button {
 .chat-markdown h2,
 .chat-markdown h3,
 .chat-markdown h4 {
-  color: #fcd34d;
+  color: var(--ui-amber-300);
   font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0.75rem 0 0.35rem;
@@ -176,7 +155,7 @@ button {
   font-size: 0.9rem;
 }
 .chat-markdown p {
-  color: #e7e5e4;
+  color: var(--ui-stone-200);
   margin: 0.35rem 0;
   line-height: 1.6;
 }
@@ -185,7 +164,7 @@ button {
   font-weight: 600;
 }
 .chat-markdown em {
-  color: #e7e5e4;
+  color: var(--ui-stone-200);
 }
 .chat-markdown ul,
 .chat-markdown ol {
@@ -199,7 +178,7 @@ button {
   list-style: decimal;
 }
 .chat-markdown li {
-  color: #e7e5e4;
+  color: var(--ui-stone-200);
   margin: 0.2rem 0;
   line-height: 1.55;
 }
@@ -208,12 +187,12 @@ button {
   margin-top: 0.2rem;
 }
 .chat-markdown a {
-  color: #fbbf24;
+  color: var(--ui-amber-400);
   text-decoration: underline;
 }
 .chat-markdown code {
   background: rgba(255, 255, 255, 0.08);
-  color: #fcd34d;
+  color: var(--ui-amber-300);
   padding: 0.1rem 0.3rem;
   border-radius: 0.3rem;
   font-size: 0.85em;
@@ -227,13 +206,13 @@ button {
 }
 .chat-markdown pre code {
   background: transparent;
-  color: #e7e5e4;
+  color: var(--ui-stone-200);
   padding: 0;
 }
 .chat-markdown blockquote {
-  border-left: 2px solid #92400e;
+  border-left: 2px solid var(--ui-amber-800);
   padding-left: 0.75rem;
-  color: #d6d3d1;
+  color: var(--ui-stone-300);
   margin: 0.5rem 0;
 }
 .chat-markdown hr {
@@ -251,9 +230,20 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.14);
   padding: 0.35rem 0.5rem;
   text-align: left;
-  color: #e7e5e4;
+  color: var(--ui-stone-200);
 }
 .chat-markdown th {
   background: rgba(255, 255, 255, 0.06);
   color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

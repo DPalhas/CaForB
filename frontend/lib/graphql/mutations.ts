@@ -1,5 +1,15 @@
 import { gql } from "@apollo/client";
 
+export const SELECT_INSIGHT = gql`
+  mutation SelectInsight($insightId: Int!) {
+    selectInsight(insightId: $insightId) {
+      id
+      modelName
+      isSelected
+    }
+  }
+`;
+
 export const SUBMIT_QUESTIONNAIRE = gql`
   mutation SubmitQuestionnaire(
     $companyName: String!

@@ -15,6 +15,7 @@ from core.services.llm_services import (
     build_innovation_prompt,
     _extract_json,
     _estimate_budget,
+    _structure_valid,
     DEFAULT_MODEL,
     build_chat_system_prompt,
     chat_with_insight,
@@ -44,7 +45,7 @@ class MemoryServiceTests(TestCase):
         )
         InnovationInsight.objects.create(
             response=qr, raw_prompt="", ai_output="",
-            innovation_score=3.5, context_bundle={}
+            innovation_score=3.5, context_bundle={}, is_selected=True
         )
         trend = build_score_trend(self.company)
         self.assertEqual(trend["assessment_count"], 1)
@@ -58,14 +59,14 @@ class MemoryServiceTests(TestCase):
         )
         InnovationInsight.objects.create(
             response=qr1, raw_prompt="", ai_output="",
-            innovation_score=3.5, context_bundle={}
+            innovation_score=3.5, context_bundle={}, is_selected=True
         )
         qr2 = QuestionnaireResponse.objects.create(
             company=self.company, assessment_number=2, answers={}
         )
         InnovationInsight.objects.create(
             response=qr2, raw_prompt="", ai_output="",
-            innovation_score=5.0, context_bundle={}
+            innovation_score=5.0, context_bundle={}, is_selected=True
         )
         trend = build_score_trend(self.company)
         self.assertEqual(trend["assessment_count"], 2)
@@ -78,14 +79,14 @@ class MemoryServiceTests(TestCase):
         )
         InnovationInsight.objects.create(
             response=qr1, raw_prompt="", ai_output="",
-            innovation_score=7.0, context_bundle={}
+            innovation_score=7.0, context_bundle={}, is_selected=True
         )
         qr2 = QuestionnaireResponse.objects.create(
             company=self.company, assessment_number=2, answers={}
         )
         InnovationInsight.objects.create(
             response=qr2, raw_prompt="", ai_output="",
-            innovation_score=5.5, context_bundle={}
+            innovation_score=5.5, context_bundle={}, is_selected=True
         )
         trend = build_score_trend(self.company)
         self.assertEqual(trend["trend"], "declining")
@@ -104,7 +105,7 @@ class MemoryServiceTests(TestCase):
         )
         insight = InnovationInsight.objects.create(
             response=qr, raw_prompt="test", ai_output="{}",
-            innovation_score=5.5, context_bundle={
+            innovation_score=5.5, is_selected=True, context_bundle={
                 "opportunities": [
                     {"id": "opp_1", "type": "incremental",
                      "title": "Adopt CRM", "rationale": "...",
@@ -259,6 +260,32 @@ class BudgetEstimationTests(TestCase):
             "budgetPercentage": 10, "revenueRange": "unknown_key"
         })
         self.assertEqual(result, "10% of revenue")
+
+
+class StructureValidationTests(TestCase):
+    def _opp(self, first_actions, milestones):
+        return {
+            "type": "incremental",
+            "execution_plan": {
+                "first_actions": first_actions,
+                "resources_needed": ["€5,000 one-off"],
+                "success_metric": "Reduce churn by 5%",
+                "milestones": milestones,
+            },
+        }
+
+    def test_valid_structure(self):
+        ok, _ = _structure_valid({
+            "opportunities": [self._opp(["A"], ["Month 1: B"])]
+        })
+        self.assertTrue(ok)
+
+    def test_rejects_duplicated_milestones(self):
+        ok, reason = _structure_valid({
+            "opportunities": [self._opp(["A", "B"], ["A", "B"])]
+        })
+        self.assertFalse(ok)
+        self.assertIn("duplicate", reason)
 
 
 class AgentLoopTests(TestCase):

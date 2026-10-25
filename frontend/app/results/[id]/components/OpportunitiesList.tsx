@@ -1,17 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { Opportunity } from "@/lib/types";
 import OpportunityCard from "./OpportunityCard";
-
-interface Opportunity {
-  id: string;
-  type: string;
-  title: string;
-  rationale: string;
-  impact: string;
-  difficulty: string;
-  timeframe: string;
-}
 
 interface OpportunitiesListProps {
   opportunities: Opportunity[];
@@ -33,7 +24,7 @@ export default function OpportunitiesList({ opportunities, onAsk }: Opportunitie
       viewport={{ once: true, margin: "-40px" }}
       variants={containerReveal}
     >
-      <motion.h2 className="text-lg font-semibold text-white mb-4" variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0 } }}>
+      <motion.h2 className="text-xl font-semibold text-white mb-4" variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0 } }}>
         Innovation Opportunities
       </motion.h2>
       <div className="flex flex-col gap-3">

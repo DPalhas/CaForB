@@ -49,9 +49,9 @@ const MATCHERS: { code: string; match: RegExp; message: string }[] = [
 
 export function friendlyAssessmentError(err: unknown): AssessmentError {
   const raw =
-    (err as any)?.graphQLErrors?.[0]?.message ||
-    (err as any)?.networkError?.message ||
-    (err as any)?.message ||
+    (err as { graphQLErrors?: { message?: string }[] } | null)?.graphQLErrors?.[0]?.message ||
+    (err as { networkError?: { message?: string } } | null)?.networkError?.message ||
+    (err as { message?: string } | null)?.message ||
     "";
 
   for (const { code, match, message } of MATCHERS) {

@@ -17,6 +17,8 @@ from .services.llm_services import (
     _extract_json,
     chat_with_insight,
     CHAT_MODEL,
+    ACTIVE_MODELS,
+    DEFAULT_SELECTED_MODEL,
 )
 from .services.memory import build_assessment_history, build_score_trend
 
@@ -98,6 +100,10 @@ class InsightType:
     sector: str = ""
     size: str = ""
     previous_answers: str = ""
+    model_name: str = ""
+    response_id: Optional[int] = None
+    is_selected: bool = False
+    variants: List["InsightType"] = strawberry.field(default_factory=list)
 
 
 @strawberry.type
@@ -172,7 +178,8 @@ class ChatSessionType:
 
 # --- Helpers ---
 
-def _insight_to_type(insight: InnovationInsight) -> InsightType:
+def _insight_to_type(insight: InnovationInsight,
+                     include_variants: bool = True) -> InsightType:
     bundle = insight.context_bundle or {}
 
     opportunities = []
@@ -247,6 +254,13 @@ def _insight_to_type(insight: InnovationInsight) -> InsightType:
     company = insight.response.company
     previous_answers = json.dumps(insight.response.answers or {})
 
+    variants = []
+    if include_variants:
+        variants = [
+            _insight_to_type(sibling, include_variants=False)
+            for sibling in insight.response.insights.exclude(id=insight.id)
+        ]
+
     return InsightType(
         id=insight.id,
         ai_output=insight.ai_output,
@@ -263,6 +277,10 @@ def _insight_to_type(insight: InnovationInsight) -> InsightType:
         sector=company.sector,
         size=company.size,
         previous_answers=previous_answers,
+        model_name=insight.model_name or "",
+        response_id=insight.response_id,
+        is_selected=insight.is_selected,
+        variants=variants,
     )
 
 
@@ -318,7 +336,7 @@ def _next_assessment_number(company):
     return (last or 0) + 1
 
 
-def _create_response_and_insight(
+def _create_response_and_insights(
     company,
     answers,
     previous_insight,
@@ -327,10 +345,14 @@ def _create_response_and_insight(
     changes_since_last,
     recommendation_status,
     request,
-    model_name="",
 ) -> InsightType:
-    """Core logic shared by submitQuestionnaire and submitReassessment."""
-    effective_model = model_name or "gemma4:12B"
+    """Core logic shared by submitQuestionnaire and submitReassessment.
+
+    Generates one insight per model in ACTIVE_MODELS, stores them as peers on
+    the same response, and marks DEFAULT_SELECTED_MODEL (falling back to the
+    first successful model) as the selected one. Returns the selected insight
+    with its variants populated for side-by-side comparison.
+    """
     company_dict = {
         "name": company.name,
         "sector": company.sector,
@@ -354,69 +376,108 @@ def _create_response_and_insight(
     )
     actual_prompt = user_prompt
 
-    trace_rows = []
+    results = []
 
-    def trace_cb(step_name, input_payload, output_payload, duration_ms):
-        trace_rows.append({
-            "step_name": step_name,
-            "model_name": effective_model,
-            "input_payload": input_payload,
-            "output_payload": output_payload,
+    for model in ACTIVE_MODELS:
+        trace_rows = []
+
+        def trace_cb(step_name, input_payload, output_payload, duration_ms):
+            trace_rows.append({
+                "step_name": step_name,
+                "model_name": model,
+                "input_payload": input_payload,
+                "output_payload": output_payload,
+                "duration_ms": duration_ms,
+            })
+
+        ai_text, duration_ms = generate_innovation_insight(
+            company_dict, answers, history if history else None,
+            model=model, trace_cb=trace_cb
+        )
+
+        parsed = None
+        score = None
+        score_delta = None
+        error = None
+
+        if not ai_text or not ai_text.strip():
+            error = "LLM returned empty response"
+        else:
+            parsed = _extract_json(ai_text)
+            if not parsed:
+                error = "unparseable JSON: " + str(ai_text)[:500]
+            elif parsed.get("maturity_score") is None:
+                error = "no maturity score: " + str(ai_text)[:500]
+            else:
+                score = parsed.get("maturity_score", None)
+                score_delta = parsed.get("score_delta", None)
+
+        results.append({
+            "model": model,
+            "ai_text": ai_text or "",
+            "parsed": parsed,
+            "score": score,
+            "score_delta": score_delta,
+            "error": error,
             "duration_ms": duration_ms,
+            "trace_rows": trace_rows,
         })
 
-    ai_text, synth_duration_ms = generate_innovation_insight(
-        company_dict, answers, history if history else None,
-        model=effective_model, trace_cb=trace_cb
+    created = []
+    for r in results:
+        if r["error"]:
+            continue
+        insight = InnovationInsight.objects.create(
+            response=qr,
+            previous_insight=previous_insight,
+            raw_prompt=actual_prompt,
+            ai_output=r["ai_text"],
+            innovation_score=r["score"],
+            score_delta=r["score_delta"],
+            model_name=r["model"],
+            context_bundle=r["parsed"],
+        )
+        for tr in r["trace_rows"]:
+            LLMTrace.objects.create(
+                insight=insight,
+                step_name=tr["step_name"],
+                model_name=tr["model_name"],
+                input_payload=tr["input_payload"],
+                output_payload=tr["output_payload"],
+                duration_ms=tr["duration_ms"],
+            )
+        created.append(insight)
+
+    if not created:
+        qr.delete()
+        first_error = next(
+            (r["error"] for r in results if r["error"]),
+            "no model produced a valid result",
+        )
+        raise ValueError(
+            "Assessment generation failed for all models. " + first_error
+        )
+
+    selected = next(
+        (i for i in created if i.model_name == DEFAULT_SELECTED_MODEL),
+        created[0],
     )
+    InnovationInsight.objects.filter(response=qr).update(is_selected=False)
+    selected.is_selected = True
+    selected.save(update_fields=["is_selected"])
 
-    if not ai_text or not ai_text.strip():
-        qr.delete()
-        raise ValueError(
-            "LLM returned empty response. The model may be unavailable "
-            "or the prompt exceeded its context window."
-        )
+    for r in results:
+        if r["error"]:
+            LLMTrace.objects.create(
+                insight=selected,
+                step_name="model_failed",
+                model_name=r["model"],
+                input_payload={"model": r["model"]},
+                output_payload={"error": r["error"]},
+                duration_ms=r["duration_ms"],
+            )
 
-    parsed = _extract_json(ai_text)
-    if not parsed:
-        qr.delete()
-        raise ValueError(
-            "LLM response could not be parsed as JSON. "
-            "Raw output (first 500 chars): " + str(ai_text)[:500]
-        )
-
-    if parsed.get("maturity_score") is None:
-        qr.delete()
-        raise ValueError(
-            "Assessment generation failed: model returned no maturity score. "
-            "Raw output (first 500 chars): " + str(ai_text)[:500]
-        )
-
-    score = parsed.get("maturity_score", None)
-    score_delta = parsed.get("score_delta", None)
-
-    insight = InnovationInsight.objects.create(
-        response=qr,
-        previous_insight=previous_insight,
-        raw_prompt=actual_prompt,
-        ai_output=ai_text,
-        innovation_score=score,
-        score_delta=score_delta,
-        model_name=effective_model,
-        context_bundle=parsed,
-    )
-
-    for tr in trace_rows:
-        LLMTrace.objects.create(
-            insight=insight,
-            step_name=tr["step_name"],
-            model_name=tr["model_name"],
-            input_payload=tr["input_payload"],
-            output_payload=tr["output_payload"],
-            duration_ms=tr["duration_ms"],
-        )
-
-    return _insight_to_type(insight)
+    return _insight_to_type(selected)
 
 
 # --- Query ---
@@ -455,7 +516,8 @@ class Query:
         _guard(info)
         request = _get_request(info)
         insights = InnovationInsight.objects.filter(
-            response__company__user=request.user
+            response__company__user=request.user,
+            is_selected=True,
         ).order_by("-generated_at")
 
         return [
@@ -480,7 +542,7 @@ class Query:
             trend = build_score_trend(c)
             last_insight = (
                 InnovationInsight.objects
-                .filter(response__company=c)
+                .filter(response__company=c, is_selected=True)
                 .order_by("-generated_at")
                 .values_list("id", flat=True)
                 .first()
@@ -513,7 +575,7 @@ class Query:
         assessments = []
         insights = (
             InnovationInsight.objects
-            .filter(response__company=company)
+            .filter(response__company=company, is_selected=True)
             .order_by("response__assessment_number")
             .select_related("response")
         )
@@ -638,7 +700,7 @@ class Mutation:
         )
         assessment_number = _next_assessment_number(company)
 
-        return _create_response_and_insight(
+        return _create_response_and_insights(
             company=company,
             answers=answers,
             previous_insight=None,
@@ -680,7 +742,7 @@ class Mutation:
 
         assessment_number = _next_assessment_number(company)
 
-        return _create_response_and_insight(
+        return _create_response_and_insights(
             company=company,
             answers=answers,
             previous_insight=previous_insight,
@@ -690,6 +752,28 @@ class Mutation:
             recommendation_status=recommendation_status or {},
             request=request,
         )
+
+    @strawberry.mutation
+    def select_insight(
+        self,
+        info: strawberry.types.Info,
+        insight_id: int,
+    ) -> InsightType:
+        _guard(info)
+        request = _get_request(info)
+        try:
+            insight = InnovationInsight.objects.get(id=insight_id)
+        except InnovationInsight.DoesNotExist:
+            raise ValueError("Insight not found")
+        if insight.response.company.user_id != request.user.id:
+            raise PermissionError("Authentication required")
+
+        InnovationInsight.objects.filter(
+            response=insight.response
+        ).update(is_selected=False)
+        insight.is_selected = True
+        insight.save(update_fields=["is_selected"])
+        return _insight_to_type(insight)
 
     @strawberry.mutation
     def ask_insight(

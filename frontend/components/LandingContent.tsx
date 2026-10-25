@@ -2,18 +2,9 @@
 
 import Link from "next/link";
 import { motion, useInView } from "framer-motion"
-import { easeOut } from "@/lib/easing";
+import { easeOut } from "@/lib/motion";
 import { useRef } from "react";
-import { Sparkles, ArrowRight, Zap, Target, TrendingUp } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: easeOut, delay: i * 0.12 },
-  }),
-};
+import { buttonVariants } from "@/components/ui/button";
 
 const containerReveal = {
   hidden: { opacity: 0 },
@@ -48,7 +39,7 @@ function AnimatedHeading({ text, highlighted }: { text: string; highlighted?: st
   const words = text.split(" ");
   if (!highlighted) {
     return (
-      <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mb-6">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mb-6">
         {words.map((word, i) => (
           <motion.span
             key={i}
@@ -71,7 +62,7 @@ function AnimatedHeading({ text, highlighted }: { text: string; highlighted?: st
   const highlightIndex = before.length;
 
   return (
-    <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mb-6">
+    <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mb-6">
       {allWords.map((word, i) => (
         <motion.span
           key={i}
@@ -94,14 +85,13 @@ export default function LandingContent() {
       {/* Hero Section */}
       <section className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-20 lg:py-28 max-w-5xl mx-auto">
         <div className="w-full lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
-          <div className="lg:col-span-7 text-center lg:text-left">
+          <div className="lg:col-span-7 text-left">
         <motion.div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-950/80 border border-amber-800/60 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-8 shadow-inner"
+          className="inline-flex items-center px-4 py-2 rounded-full bg-amber-950/80 border border-amber-800/60 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-8"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, ease: easeOut }}
         >
-          <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
           <span>AI-Powered Innovation Advisor</span>
         </motion.div>
 
@@ -129,10 +119,9 @@ export default function LandingContent() {
         >
           <Link
             href="/assessment"
-            className="w-full sm:w-auto px-8 py-4 text-base font-semibold text-stone-950 bg-amber-400 rounded-xl hover:opacity-95 transition-all shadow-xl shadow-amber-500/25 flex items-center justify-center gap-3 group"
+            className={buttonVariants({ variant: "primary", size: "lg", className: "w-full sm:w-auto" })}
           >
-            <span>Begin Free Assessment</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            Begin Free Assessment
           </Link>
         </motion.div>
         </div>
@@ -159,13 +148,10 @@ export default function LandingContent() {
               return (
                 <motion.div
                   key={idx}
-                  className={`p-5 rounded-2xl border backdrop-blur-sm relative overflow-hidden group ${accentMap[stat.accent]}`}
+                  className={`p-4 rounded-xl border ${accentMap[stat.accent]}`}
                   variants={itemReveal}
                 >
-                  <div className={`absolute top-0 right-0 w-16 h-16 rounded-bl-3xl opacity-10 ${
-                    stat.accent === "amber" ? "bg-amber-500" : stat.accent === "indigo" ? "bg-indigo-500" : "bg-emerald-500"
-                  }`} />
-                  <p className="text-2xl font-bold text-white mb-1 group-hover:scale-105 transition-transform">{stat.value}</p>
+                  <p className="text-2xl font-bold text-white mb-1">{stat.value}</p>
                   <p className="text-xs font-semibold uppercase tracking-wider mb-1 opacity-90">{stat.label}</p>
                   <p className="text-xs text-stone-500">{stat.desc}</p>
                 </motion.div>
@@ -179,7 +165,7 @@ export default function LandingContent() {
       {/* Feature Showcase Grid */}
       <section className="relative z-10 bg-stone-900/60 border-t border-b border-stone-800/80 py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <SectionInView className="text-center max-w-2xl mx-auto mb-16">
+          <SectionInView className="max-w-2xl mb-16">
             <motion.h2 className="text-3xl font-bold text-white mb-4" variants={itemReveal}>
               Precision Intelligence for Corporate Growth
             </motion.h2>
@@ -191,30 +177,24 @@ export default function LandingContent() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Target className="w-6 h-6 text-amber-400" />,
                 title: "Context-Aware Scoring",
                 desc: "Evaluates your company size, regulatory pressure, risk appetite, and budget constraints to filter out unrealistic strategies.",
               },
               {
-                icon: <Zap className="w-6 h-6 text-orange-400" />,
                 title: "Prioritized Opportunities",
                 desc: "Distinguishes between quick-win incremental projects and high-impact radical transformations tailored to your industry.",
               },
               {
-                icon: <TrendingUp className="w-6 h-6 text-emerald-400" />,
                 title: "Actionable Execution Plans",
                 desc: "Get concrete first steps, required resources, key performance indicators, and timeline milestones for immediate adoption.",
               },
-            ].map(({ icon, title, desc }, idx) => (
+            ].map(({ title, desc }, idx) => (
               <SectionInView key={idx}>
                 <motion.div
-                  className="p-8 rounded-2xl bg-stone-950/80 border border-stone-800 hover:border-amber-500/50 transition-all group"
+                  className="p-6 rounded-xl bg-stone-950/80 border border-stone-800 hover:border-amber-500/50 transition-colors"
                   variants={itemReveal}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-stone-900 border border-stone-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    {icon}
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
+                  <h3 className="text-base font-semibold text-white mb-2">{title}</h3>
                   <p className="text-sm text-stone-400 leading-relaxed">{desc}</p>
                 </motion.div>
               </SectionInView>
@@ -225,7 +205,7 @@ export default function LandingContent() {
 
       {/* How it works */}
       <section className="relative z-10 py-20 px-6 max-w-5xl mx-auto">
-        <SectionInView className="text-center mb-16">
+        <SectionInView className="mb-16">
           <motion.h2 className="text-3xl font-bold text-white mb-3" variants={itemReveal}>
             Simple 3-Step Process
           </motion.h2>
@@ -242,7 +222,7 @@ export default function LandingContent() {
           ].map((item, idx) => (
             <motion.div
               key={idx}
-              className="p-6 rounded-2xl bg-stone-900/40 border border-stone-800 relative"
+              className="p-6 rounded-xl bg-stone-900/40 border border-stone-800"
               variants={itemReveal}
             >
               <span className="text-4xl font-extrabold text-amber-500/20 font-mono block mb-4">{item.step}</span>
@@ -253,7 +233,7 @@ export default function LandingContent() {
         </SectionInView>
 
         <motion.div
-          className="mt-16 text-center"
+          className="mt-16"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -261,10 +241,9 @@ export default function LandingContent() {
         >
           <Link
             href="/assessment"
-            className="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-stone-950 bg-amber-400 rounded-xl hover:bg-amber-300 transition shadow-lg shadow-amber-500/20"
+            className={buttonVariants({ variant: "secondary", size: "lg" })}
           >
-            <span>Launch Assessment Now</span>
-            <ArrowRight className="w-5 h-5" />
+            Launch Assessment Now
           </Link>
         </motion.div>
       </section>

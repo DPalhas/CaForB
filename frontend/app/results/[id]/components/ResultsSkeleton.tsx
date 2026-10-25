@@ -8,7 +8,7 @@ export default function ResultsSkeleton() {
       </div>
 
       {/* Score card skeleton */}
-      <div className="bg-stone-900/60 rounded-2xl p-6 mb-6 border border-stone-800/60">
+      <div className="bg-stone-900/60 rounded-xl p-6 mb-6 border border-stone-800/60">
         <div className="h-4 bg-stone-800 rounded w-40 mb-3" />
         <div className="h-14 bg-stone-800 rounded w-32 mb-4" />
         <div className="h-3 bg-stone-800 rounded w-full" />
@@ -27,7 +27,7 @@ export default function ResultsSkeleton() {
       </div>
 
       {/* Next steps skeleton */}
-      <div className="bg-stone-900/60 rounded-2xl p-6 mb-4 border border-stone-800/60">
+      <div className="bg-stone-900/60 rounded-xl p-6 mb-4 border border-stone-800/60">
         <div className="h-5 bg-stone-800 rounded w-48 mb-4" />
         {[1, 2, 3].map((i) => (
           <div key={i} className="h-3 bg-stone-800 rounded w-full mb-3" />

@@ -10,7 +10,7 @@ MAX_PRIOR_ASSESSMENTS = 5
 def build_score_trend(company: Company) -> dict:
     insights = (
         InnovationInsight.objects
-        .filter(response__company=company)
+        .filter(response__company=company, is_selected=True)
         .order_by("generated_at")
         .select_related("response")
     )
@@ -52,8 +52,7 @@ def build_score_trend(company: Company) -> dict:
 def _format_budget_history(company: Company) -> str:
     responses = list(
         company.responses
-        .order_by("assessment_number")
-        .select_related("insight")[:MAX_PRIOR_ASSESSMENTS]
+        .order_by("assessment_number")[:MAX_PRIOR_ASSESSMENTS]
     )
     lines = []
     for r in responses:
@@ -135,7 +134,7 @@ def build_assessment_history(company: Company,
         company.responses
         .exclude(pk=current_response.pk if current_response else None)
         .order_by("assessment_number")
-        .select_related("insight")[:MAX_PRIOR_ASSESSMENTS]
+        .prefetch_related("insights")[:MAX_PRIOR_ASSESSMENTS]
     )
     if not prior_responses:
         return ""
@@ -145,7 +144,10 @@ def build_assessment_history(company: Company,
              "---"]
 
     for i, qr in enumerate(prior_responses):
-        insight = getattr(qr, "insight", None)
+        insight = next(
+            (ins for ins in qr.insights.all() if ins.is_selected),
+            None,
+        )
         if insight is None:
             continue
 
@@ -225,14 +227,17 @@ def build_compact_history(company: Company,
         company.responses
         .exclude(pk=current_response.pk if current_response else None)
         .order_by("-assessment_number")[:3]
-        .select_related("insight")
+        .prefetch_related("insights")
     )
     if not prior_responses:
         return ""
 
     lines = ["Previous assessments:"]
     for qr in reversed(prior_responses):
-        insight = getattr(qr, "insight", None)
+        insight = next(
+            (ins for ins in qr.insights.all() if ins.is_selected),
+            None,
+        )
         score = insight.innovation_score if insight else "N/A"
         bundle = insight.context_bundle if insight else {}
         opp_count = len(bundle.get("opportunities", []))

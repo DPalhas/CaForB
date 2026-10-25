@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion"
-import { easeOut } from "@/lib/easing";
+import { easeOut } from "@/lib/motion";
 import { useAuth } from "@/lib/auth-context";
-import { ArrowRight, Clock, Sparkles, Route } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
 
 const containerReveal = {
   hidden: { opacity: 0 },
@@ -33,7 +33,7 @@ export default function OnboardingHome() {
         </span>
       </motion.h1>
       <motion.p className="text-base sm:text-lg text-stone-400 max-w-xl mb-12 leading-relaxed" variants={itemReveal}>
-        Let's measure your organization's innovation maturity and get an
+        Let&apos;s measure your organization&apos;s innovation maturity and get an
         AI-powered strategic roadmap tailored to your context.
       </motion.p>
 
@@ -41,7 +41,7 @@ export default function OnboardingHome() {
         <svg width="160" height="160" viewBox="0 0 160 160">
           <circle cx="80" cy="80" r="70" fill="none" stroke="rgb(120 113 108)" strokeWidth="10" />
           <circle cx="80" cy="80" r="70" fill="none" stroke="#f59e0b" strokeWidth="10"
-            strokeDasharray="55 385" strokeLinecap="round" transform="rotate(-90 80 80)" className="animate-pulse" />
+            strokeDasharray="55 385" strokeLinecap="round" transform="rotate(-90 80 80)" />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-amber-400 text-3xl font-bold">?</span>
@@ -50,14 +50,11 @@ export default function OnboardingHome() {
 
       <motion.div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl mb-12" variants={containerReveal}>
         {[
-          { icon: <Clock className="w-5 h-5 text-amber-400" />, title: "5-Minute Survey", desc: "Structured across 5 clear sections" },
-          { icon: <Sparkles className="w-5 h-5 text-orange-400" />, title: "AI-Powered Analysis", desc: "Gemma4 model with domain context" },
-          { icon: <Route className="w-5 h-5 text-emerald-400" />, title: "Actionable Roadmap", desc: "Concrete steps, KPIs, and milestones" },
-        ].map(({ icon, title, desc }, i) => (
-          <motion.div key={i} className="p-5 rounded-2xl bg-stone-900/60 border border-stone-800/80 backdrop-blur-sm text-center" variants={itemReveal}>
-            <div className="w-10 h-10 rounded-xl bg-stone-950 border border-stone-800 flex items-center justify-center mx-auto mb-3">
-              {icon}
-            </div>
+          { title: "5-Minute Survey", desc: "Structured across 5 clear sections" },
+          { title: "AI-Powered Analysis", desc: "Gemma4 model with domain context" },
+          { title: "Actionable Roadmap", desc: "Concrete steps, KPIs, and milestones" },
+        ].map(({ title, desc }, i) => (
+          <motion.div key={i} className="p-4 rounded-xl bg-stone-900/60 border border-stone-800/80 text-center" variants={itemReveal}>
             <h3 className="text-sm font-semibold text-white mb-1">{title}</h3>
             <p className="text-xs text-stone-500">{desc}</p>
           </motion.div>
@@ -67,10 +64,9 @@ export default function OnboardingHome() {
       <motion.div variants={itemReveal}>
         <Link
           href="/assessment"
-          className="px-10 py-4 text-base font-semibold text-stone-950 bg-amber-400 rounded-xl hover:opacity-95 transition-all shadow-xl shadow-amber-500/25 flex items-center gap-3 group"
+          className={buttonVariants({ variant: "primary", size: "lg" })}
         >
-          <span>Start Your First Assessment</span>
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          Start Your First Assessment
         </Link>
       </motion.div>
     </motion.div>
