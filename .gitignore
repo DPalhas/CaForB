@@ -16,3 +16,23 @@ frontend/node_modules/
 # IDE
 .idea/
 .vscode/
+
+# Agent / dev docs (local only, not part of the public repo)
+AGENTS.md
+frontend/AGENTS.md
+frontend/CLAUDE.md
+frontend/CONVENTIONS.md
+frontend/DESIGN-CONVENTIONS.md
+PROCESSO.md
+TODO
+SPEC.md
+
+# Fine-tuning artifacts (large / sensitive / regenerable)
+*.gguf
+datasets_treino_finetune/caforb-lora.zip
+datasets_treino_finetune/caforb-lora/
+datasets_treino_finetune/caforb_cloud.zip
+datasets_treino_finetune/raw/
+datasets_treino_finetune/raw_inputs.json
+datasets_treino_finetune/raw_inputs_reassessment.json
+datasets_treino_finetune/val_out.txt
